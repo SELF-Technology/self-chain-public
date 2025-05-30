@@ -1,6 +1,5 @@
 plugins {
     id 'java'
-    id 'com.github.johnrengelman.shadow' version '7.1.2'
 }
 
 repositories {
@@ -8,48 +7,5 @@ repositories {
 }
 
 dependencies {
-    // Add your dependencies here
     testImplementation 'junit:junit:4.13.2'
-    
-    // Private repository dependencies
-    implementation project(':self-chain-private')
 }
-
-// Configure shadowJar to include all dependencies
-shadowJar {
-    archiveClassifier.set('')
-    manifest {
-        attributes 'Main-Class': 'org.self.Main'
-    }
-    
-    // Include dependencies from private repository
-    configurations = [project.configurations.compileClasspath]
-}
-
-// Task to clone private repository
-tasks.register('clonePrivateRepo') {
-    doLast {
-        def privateRepoDir = new File('../private-repo')
-        if (!privateRepoDir.exists()) {
-            exec {
-                commandLine 'git', 'clone', 'https://github.com/SELF-Technology/self-chain-private.git', privateRepoDir
-            }
-        }
-    }
-}
-
-// Task to update private repository
-tasks.register('updatePrivateRepo') {
-    doLast {
-        def privateRepoDir = new File('../private-repo')
-        if (privateRepoDir.exists()) {
-            exec {
-                workingDir privateRepoDir
-                commandLine 'git', 'pull', 'origin', 'main'
-            }
-        }
-    }
-}
-
-// Build task that depends on private repository
-tasks.build.dependsOn tasks.clonePrivateRepo, tasks.updatePrivateRepo
