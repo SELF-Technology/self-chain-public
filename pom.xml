@@ -21,7 +21,7 @@
             <artifactId>self-chain-private</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>${SELF_PRIVATE_REPO_PATH}/target/self-chain-private-1.0-SNAPSHOT.jar</systemPath>
+            <systemPath>/Users/jmac/Documents/GitHub/self-chain-private/target/self-chain-private-1.0-SNAPSHOT.jar</systemPath>
         </dependency>
 
         <!-- Other dependencies -->
