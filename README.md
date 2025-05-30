@@ -8,39 +8,16 @@ This repository contains:
 - Core blockchain implementation
 - Public APIs and interfaces
 - Documentation
-- Test files and examples
-- Non-sensitive configuration templates
+- Test files
+- Example implementations
 
-## Security Note
-
-This repository does not contain any sensitive information such as:
+### Private Components
 - Database configurations
 - SSL certificates
 - Private keys
 - Production environment settings
 - Security-sensitive code
-
-These components are maintained in the private repository.
-
-## Getting Started
-
-1. Clone the repository:
-```bash
-git clone https://github.com/SELF-Technology/self-chain-public.git
-```
-
-2. To use the full system, you'll need access to the private repository which contains:
-   - Database configurations
-   - SSL certificates
-   - Private keys
-   - Production environment settings
-
-## Building the Project
-
-The project uses Gradle for building. To build:
-```bash
-./gradlew build
-```
+- Private network configurations
 
 ## Contributing
 
