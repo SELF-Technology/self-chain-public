@@ -1,0 +1,9 @@
+rootProject.name = 'self-chain-public'
+
+// Add the private repository as a subproject
+include 'private-repo'
+
+// Configure the private repository
+project(':private-repo') {
+    buildFileName = 'build.gradle'
+}

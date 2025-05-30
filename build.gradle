@@ -1,0 +1,56 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.github.jengelman.gradle.plugins:shadow:7.1.2'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'com.github.johnrengelman.shadow'
+
+// Define the private repository as a dependency
+ext {
+    privateRepoUrl = 'https://github.com/SELF-Technology/self-chain-private.git'
+    privateRepoBranch = 'main'
+}
+
+tasks.register('downloadPrivateRepo') {
+    doLast {
+        def privateRepoDir = new File('private-repo')
+        if (!privateRepoDir.exists()) {
+            exec {
+                commandLine 'git', 'clone', privateRepoUrl, privateRepoDir
+            }
+        }
+        
+        // Pull the latest changes
+        exec {
+            workingDir privateRepoDir
+            commandLine 'git', 'pull', 'origin', privateRepoBranch
+        }
+    }
+}
+
+// Configure the build to use private repository resources
+sourceSets {
+    main {
+        resources {
+            srcDir 'private-repo/resources'
+        }
+    }
+}
+
+dependencies {
+    // Add your dependencies here
+    testImplementation 'junit:junit:4.13.2'
+}
+
+// Configure shadowJar to include private repository classes
+shadowJar {
+    archiveClassifier.set('')
+    manifest {
+        attributes 'Main-Class': 'org.self.Main'
+    }
+}
