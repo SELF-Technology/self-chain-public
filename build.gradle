@@ -1,56 +1,55 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.github.jengelman.gradle.plugins:shadow:7.1.2'
-    }
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
 }
 
-apply plugin: 'java'
-apply plugin: 'com.github.johnrengelman.shadow'
-
-// Define the private repository as a dependency
-ext {
-    privateRepoUrl = 'https://github.com/SELF-Technology/self-chain-private.git'
-    privateRepoBranch = 'main'
-}
-
-tasks.register('downloadPrivateRepo') {
-    doLast {
-        def privateRepoDir = new File('private-repo')
-        if (!privateRepoDir.exists()) {
-            exec {
-                commandLine 'git', 'clone', privateRepoUrl, privateRepoDir
-            }
-        }
-        
-        // Pull the latest changes
-        exec {
-            workingDir privateRepoDir
-            commandLine 'git', 'pull', 'origin', privateRepoBranch
-        }
-    }
-}
-
-// Configure the build to use private repository resources
-sourceSets {
-    main {
-        resources {
-            srcDir 'private-repo/resources'
-        }
-    }
+repositories {
+    mavenCentral()
 }
 
 dependencies {
     // Add your dependencies here
     testImplementation 'junit:junit:4.13.2'
+    
+    // Private repository dependencies
+    implementation project(':self-chain-private')
 }
 
-// Configure shadowJar to include private repository classes
+// Configure shadowJar to include all dependencies
 shadowJar {
     archiveClassifier.set('')
     manifest {
         attributes 'Main-Class': 'org.self.Main'
     }
+    
+    // Include dependencies from private repository
+    configurations = [project.configurations.compileClasspath]
 }
+
+// Task to clone private repository
+tasks.register('clonePrivateRepo') {
+    doLast {
+        def privateRepoDir = new File('../private-repo')
+        if (!privateRepoDir.exists()) {
+            exec {
+                commandLine 'git', 'clone', 'https://github.com/SELF-Technology/self-chain-private.git', privateRepoDir
+            }
+        }
+    }
+}
+
+// Task to update private repository
+tasks.register('updatePrivateRepo') {
+    doLast {
+        def privateRepoDir = new File('../private-repo')
+        if (privateRepoDir.exists()) {
+            exec {
+                workingDir privateRepoDir
+                commandLine 'git', 'pull', 'origin', 'main'
+            }
+        }
+    }
+}
+
+// Build task that depends on private repository
+tasks.build.dependsOn tasks.clonePrivateRepo, tasks.updatePrivateRepo

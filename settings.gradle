@@ -1,9 +1,12 @@
-rootProject.name = 'self-chain-public'
+rootProject.name = 'self-chain'
 
-// Add the private repository as a subproject
-include 'private-repo'
+// Include the private repository as a composite build
+includeBuild '../private-repo'
 
-// Configure the private repository
-project(':private-repo') {
-    buildFileName = 'build.gradle'
+// Configure composite build settings
+gradle.beforeSettings { settings ->
+    // Configure the private repository location
+    settings.includeBuild('../private-repo') {
+        name = 'self-chain-private'
+    }
 }
