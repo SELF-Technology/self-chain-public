@@ -10,6 +10,7 @@ The SELF Chain SDK is available in multiple languages:
 - Python
 - Go
 - Rust
+- Solidity (Smart Contracts)
 
 ### Key Features
 
@@ -90,14 +91,23 @@ TransactionStatus status = sdk.blockchain().getTransactionStatus(txHash);
 ### Smart Contracts
 
 ```java
-// Deploy contract
-ContractDeploymentResult result = sdk.contracts().deploy(contractCode);
+// Deploy Solidity contract
+ContractDeploymentResult result = sdk.contracts().deploySolidityContract(
+    contractSourceCode,
+    compilerVersion: "0.8.0"
+);
 
 // Call contract method
 ContractResult result = sdk.contracts().callMethod(
     contractAddress,
     methodName,
     parameters
+);
+
+// Compile Solidity code
+String compiledCode = sdk.contracts().compileSolidity(
+    contractSourceCode,
+    compilerVersion: "0.8.0"
 );
 ```
 
@@ -205,6 +215,20 @@ Transaction transaction = new Transaction()
 // Sign and submit
 TransactionResult result = sdk.blockchain().submitTransaction(
     transaction.sign(privateKey)
+);
+
+// Deploy Solidity contract
+ContractDeploymentResult result = sdk.contracts().deploySolidityContract(
+    "pragma solidity ^0.8.0;\n" +
+    "contract SimpleStorage {\n" +
+    "    uint storedData;\n" +
+    "    function set(uint x) public {\n" +
+    "        storedData = x;\n" +
+    "    }\n" +
+    "    function get() public view returns (uint) {\n" +
+    "        return storedData;\n" +
+    "    }\n" +
+    "}";
 );
 ```
 
