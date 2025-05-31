@@ -1,0 +1,77 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Java
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+
+    - name: Cache Maven packages
+      uses: actions/cache@v3
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-maven-
+
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
+
+    - name: Run Tests
+      run: mvn test
+
+    - name: Check Test Coverage
+      run: |
+        mvn jacoco:report
+        # Add coverage threshold check here
+        # java -jar jacococli.jar report target/site/jacoco/jacoco.xml --csv coverage.csv
+        # cat coverage.csv
+
+    - name: Upload Test Results
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results
+        path: target/surefire-reports/
+
+    - name: Upload Code Coverage
+      uses: actions/upload-artifact@v3
+      with:
+        name: code-coverage
+        path: target/site/jacoco/
+
+    - name: Notify Slack
+      if: always()
+      uses: 8398a7/action-slack@v3
+      with:
+        status: ${{ job.status }}
+        author_name: SELF Chain CI
+        author_link: https://github.com/SELF-Technology/self-chain-public
+        title: Build Status
+        title_link: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        text: |
+          *Repository:* ${{ github.repository }}
+          *Branch:* ${{ github.ref }}
+          *Commit:* ${{ github.sha }}
+          *Workflow:* ${{ github.workflow }}
+          *Status:* ${{ job.status }}
+        fields: |
+          Build Number: ${{ github.run_number }}
+          Workflow ID: ${{ github.run_id }}
+        color: ${{ job.status }}
+        channel: '#ci-notifications'
+        username: SELF Chain CI
+        icon_emoji: :robot:
+        webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
