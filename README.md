@@ -10,8 +10,10 @@ This repository contains:
 - Documentation
 - Test files
 - Example implementations
+- Development tools and utilities
 
 ### Private Components
+The private components are maintained in a separate repository:
 - Database configurations
 - SSL certificates
 - Private keys
@@ -19,18 +21,142 @@ This repository contains:
 - Security-sensitive code
 - Private network configurations
 
+## Project Architecture
+
+The SELF Chain is built using a modular architecture with the following key components:
+
+### Core Components
+- Blockchain implementation
+- Consensus mechanisms
+- Transaction processing
+- Smart contract support
+- Public API endpoints
+
+### Integration Points
+- ERC20 bridge
+- Rosetta bridge
+- Wire protocol bridge
+
+## Building the Project
+
+### Prerequisites
+1. Java 17 or later
+2. Maven 3.8 or later
+3. Git
+4. Required environment variables (see `.env.example`)
+
+### Build Instructions
+
+1. Clone the repository:
+```bash
+git clone https://github.com/SELF-Technology/self-chain-public.git
+```
+
+2. Build the project:
+```bash
+cd self-chain-public
+mvn clean install
+```
+
+3. Run tests:
+```bash
+mvn test
+```
+
+### Running Locally
+
+1. Set up your environment:
+```bash
+cp .env.example .env
+# Edit .env with your configuration
+```
+
+2. Start the blockchain node:
+```bash
+mvn spring-boot:run
+```
+
 ## Contributing
 
 We welcome contributions to the public components of the SELF Chain. Please:
+
 1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Create a Pull Request
+
+### Code Style
+
+- Follow Java 17 best practices
+- Use meaningful variable names
+- Write comprehensive documentation
+- Include unit tests
+- Maintain code coverage above 80%
+
+## Documentation
+
+### API Documentation
+- REST API endpoints
+- Smart contract interfaces
+- Integration guides
+- Developer tutorials
+
+### Technical Guides
+- Blockchain architecture
+- Consensus mechanism
+- Security model
+- Performance optimization
+
+## Testing
+
+The project includes comprehensive test coverage:
+- Unit tests for core functionality
+- Integration tests for system components
+- Performance tests for critical paths
+- Security tests for public interfaces
+
+## Security
+
+### Public Security Features
+- Input validation
+- Rate limiting
+- API authentication
+- Smart contract security
+- Audit logging
+
+### Security Guidelines
+1. Never commit sensitive information
+2. Follow secure coding practices
+3. Review security implications of changes
+4. Report security issues through private channels
+
+## Monitoring
+
+The system includes monitoring for:
+- Network performance
+- Resource usage
+- Transaction throughput
+- Error rates
+- API response times
+
+## Support
+
+### Getting Help
+1. Check the documentation
+2. Search existing issues
+3. Create a new issue for bugs or feature requests
+4. Contact the core team for security concerns
+
+### Community
+- Join our developer community
+- Participate in discussions
+- Contribute to documentation
+- Report bugs and suggest improvements
 
 ## License
 
-[Insert license information here]
+The SELF Chain is licensed under the Apache License 2.0. See LICENSE for details.
 
 ## Contact
 
