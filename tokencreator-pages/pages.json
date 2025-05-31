@@ -1,0 +1,7 @@
+{
+  "framework": "none",
+  "build": {
+    "command": "cp -r index.html ./dist/",
+    "publish": "dist"
+  }
+}
