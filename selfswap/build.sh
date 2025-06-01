@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Navigate to the root of the project
-if [ -d "../.." ]; then
-  cd ../..
+# Navigate to selfswap directory
+if [ -d "../selfswap" ]; then
+  cd ../selfswap
 fi
 
 # Clean up previous build
@@ -28,11 +28,11 @@ fi
 
 # Copy public files
 mkdir -p output/public
-if [ -d "selfswap/public" ]; then
-  cp -r selfswap/public/* output/public/
+if [ -d "public" ]; then
+  cp -r public/* output/public/
 fi
 
 # Copy headers file
-if [ -f "selfswap/public/_headers" ]; then
-  cp selfswap/public/_headers output/public/_headers
+if [ -f "public/_headers" ]; then
+  cp public/_headers output/public/_headers
 fi
