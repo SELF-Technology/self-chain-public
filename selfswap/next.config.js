@@ -57,9 +57,7 @@ const nextConfig = {
     SELF_NETWORK: process.env.NEXT_PUBLIC_SELF_NETWORK,
     WEB3_PROVIDER_URL: process.env.NEXT_PUBLIC_WEB3_PROVIDER_URL,
   },
-  headers: async () => [
-    ...securityHeaders,
-  ],
+  headers: () => securityHeaders,
 }
 
 module.exports = nextConfig
