@@ -123,36 +123,80 @@
             <h1>Token Creator</h1>
                 <div class="form-group">
                     <label>Token Type</label>
-                    <div style="display: flex; gap: 1rem;">
-                        <button onclick="selectTokenType('erc20')" class="primary">ERC20 Token</button>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <button onclick="selectTokenType('erc20')" class="primary">Standard Token</button>
                         <button onclick="selectTokenType('nft')" class="secondary">NFT Collection</button>
+                        <button onclick="selectTokenType('utility')" class="secondary">Utility Token</button>
+                        <button onclick="selectTokenType('governance')" class="secondary">Governance Token</button>
+                    </div>
+                    <div style="margin-top: 0.5rem; color: var(--text-secondary);">
+                        <small>Select the type of token you want to create</small>
                     </div>
                 </div>
 
                 <div id="erc20-form" class="hidden">
                     <div class="form-group">
                         <label>Token Name</label>
-                        <input type="text" id="tokenName" placeholder="e.g., Self Token">
+                        <input type="text" id="tokenName" placeholder="e.g., Self Token" required>
+                        <div style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 0.25rem;">
+                            This will be displayed on wallets and exchanges
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>Token Symbol</label>
-                        <input type="text" id="tokenSymbol" placeholder="e.g., SELF">
+                        <input type="text" id="tokenSymbol" placeholder="e.g., SELF" pattern="^[A-Z]{3,5}$" required>
+                        <div style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 0.25rem;">
+                            3-5 uppercase letters
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>Decimals</label>
-                        <select id="decimals">
+                        <select id="decimals" required>
                             <option value="18">18 (Recommended)</option>
                             <option value="6">6</option>
                             <option value="0">0</option>
                         </select>
+                        <div style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 0.25rem;">
+                            Number of decimal places for token amounts
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>Total Supply</label>
-                        <input type="number" id="totalSupply" placeholder="e.g., 1000000">
+                        <input type="number" id="totalSupply" min="1" step="any" required>
+                        <div style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 0.25rem;">
+                            Maximum number of tokens that will ever exist
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Token Image</label>
+                        <input type="file" id="tokenImage" accept="image/*">
+                        <div style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 0.25rem;">
+                            Upload a logo for your token (optional)
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>Description</label>
-                        <textarea id="description" rows="3"></textarea>
+                        <textarea id="description" rows="3" required></textarea>
+                        <div style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 0.25rem;">
+                            A brief description of your token's purpose
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Permissions</label>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <label>
+                                <input type="checkbox" id="mintable"> Mintable
+                            </label>
+                            <label>
+                                <input type="checkbox" id="burnable"> Burnable
+                            </label>
+                            <label>
+                                <input type="checkbox" id="pausable"> Pausable
+                            </label>
+                        </div>
+                        <div style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 0.25rem;">
+                            Select additional token features
+                        </div>
                     </div>
                 </div>
 
@@ -175,12 +219,102 @@
                     </div>
                 </div>
 
-                <button onclick="createToken()" class="primary">
-                    Create Token
-                </button>
+                <div class="form-group">
+                    <button onclick="createToken()" class="primary">
+                        <span id="createButtonText">Create Token</span>
+                        <span id="loadingSpinner" style="display: none; margin-left: 0.5rem;">
+                            <svg class="animate-spin h-5 w-5" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" fill="none"></circle>
+                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div id="notification" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 8px;">
+                    <div id="notificationMessage"></div>
+                </div>
             <h1 class="text-3xl font-bold text-center mb-8">Create Your Token</h1>
             
             <div class="space-y-6">
+                <script>
+                    function selectTokenType(type) {
+                        document.querySelectorAll('.token-form').forEach(form => {
+                            form.classList.add('hidden');
+                        });
+                        document.getElementById(`${type}-form`).classList.remove('hidden');
+                        
+                        // Update button text based on token type
+                        const buttonText = document.getElementById('createButtonText');
+                        switch(type) {
+                            case 'erc20':
+                                buttonText.textContent = 'Create Standard Token';
+                                break;
+                            case 'nft':
+                                buttonText.textContent = 'Create NFT Collection';
+                                break;
+                            case 'utility':
+                                buttonText.textContent = 'Create Utility Token';
+                                break;
+                            case 'governance':
+                                buttonText.textContent = 'Create Governance Token';
+                                break;
+                        }
+                    }
+
+                    function createToken() {
+                        const button = document.querySelector('button.primary');
+                        const buttonText = document.getElementById('createButtonText');
+                        const loadingSpinner = document.getElementById('loadingSpinner');
+                        const notification = document.getElementById('notification');
+                        const notificationMessage = document.getElementById('notificationMessage');
+
+                        // Show loading state
+                        button.disabled = true;
+                        buttonText.style.display = 'none';
+                        loadingSpinner.style.display = 'inline-block';
+
+                        // Get form data
+                        const formData = new FormData();
+                        formData.append('tokenName', document.getElementById('tokenName').value);
+                        formData.append('tokenSymbol', document.getElementById('tokenSymbol').value);
+                        formData.append('decimals', document.getElementById('decimals').value);
+                        formData.append('totalSupply', document.getElementById('totalSupply').value);
+                        formData.append('description', document.getElementById('description').value);
+                        
+                        // Handle token image if uploaded
+                        const tokenImage = document.getElementById('tokenImage').files[0];
+                        if (tokenImage) {
+                            formData.append('tokenImage', tokenImage);
+                        }
+
+                        // Get permissions
+                        formData.append('mintable', document.getElementById('mintable').checked);
+                        formData.append('burnable', document.getElementById('burnable').checked);
+                        formData.append('pausable', document.getElementById('pausable').checked);
+
+                        // TODO: Add API call to create token
+                        // For now, just show a success message
+                        setTimeout(() => {
+                            notification.style.display = 'block';
+                            notification.style.backgroundColor = 'rgba(34, 197, 94, 0.1)';
+                            notification.style.color = '#22c55e';
+                            notificationMessage.textContent = 'Token creation initiated successfully!';
+
+                            // Reset loading state
+                            button.disabled = false;
+                            buttonText.style.display = 'inline';
+                            loadingSpinner.style.display = 'none';
+
+                            // Hide notification after 5 seconds
+                            setTimeout(() => {
+                                notification.style.display = 'none';
+                            }, 5000);
+                        }, 2000);
+                    }
+
+                    // Initialize with ERC20 form
+                    selectTokenType('erc20');
+                </script>
                 <!-- Token Type Selection -->
                 <div class="form-group">
                     <label class="block text-sm font-medium mb-2">Token Type</label>
