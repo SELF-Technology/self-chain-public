@@ -13,5 +13,6 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          args: --severity-threshold=high --file=selfswap/package.json
+          working-directory: selfswap
+          args: --severity-threshold=high
           command: test
