@@ -17,14 +17,13 @@ else
   exit 1
 fi
 
-# Copy public files
+# Copy static files
 mkdir -p output/public
 if [ -d "public" ]; then
   cp -r public/* output/public/
 fi
 
-# Copy app directory
-mkdir -p output/app
-if [ -d "app" ]; then
-  cp -r app/* output/app/
+# Copy headers file
+if [ -f "public/_headers" ]; then
+  cp public/_headers output/public/_headers
 fi
