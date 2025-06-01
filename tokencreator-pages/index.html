@@ -113,7 +113,7 @@
 
         .logo {
             display: block;
-            margin: 0 auto 1.5rem;
+            margin: 0 auto;
             max-width: 100px;
             height: auto;
         }
@@ -139,12 +139,14 @@
 <body class="bg-gray-100">
     <div class="container">
         <div class="card">
-            <img src="https://docs.self.app/img/SELFwhitelogo.png" alt="SELF Logo" class="logo">
-            <h1 class="text-3xl font-bold text-center mb-4">Token Creator</h1>
+            <div class="text-center mb-8">
+                <img src="https://docs.self.app/img/SELFwhitelogo.png" alt="SELF Logo" class="logo mb-4">
+                <h1 class="text-3xl font-bold mb-4">Token Creator</h1>
+                <label class="block text-sm font-medium mb-2">Token Type</label>
+            </div>
             
             <!-- Token Type Selection -->
             <div class="mb-6">
-                <label class="block text-sm font-medium text-center mb-2">Token Type</label>
                 <div class="flex flex-wrap gap-3">
                     <button onclick="selectTokenType('erc20')" class="w-full md:w-1/2 lg:w-1/4 px-4 py-2 bg-primary text-gray-900 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">
                         Standard Token
