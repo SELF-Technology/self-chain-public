@@ -8,18 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Set up Maven
-        uses: actions/setup-java@v3
-        with:
-          java-version: '17'
-          distribution: 'temurin'
-          server-id: github
-          settings-path: ${{ github.workspace }}
-
       - name: Run Snyk test
         uses: snyk/actions/node@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
+          working-directory: selfswap
           args: --severity-threshold=high
           command: test
