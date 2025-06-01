@@ -19,6 +19,8 @@ rm -rf output
 rm -rf node_modules
 rm -rf package-lock.json
 rm -rf "app" # Ensure app directory is removed
+rm -rf "dist"
+rm -rf "build"
 
 # Create output directory
 echo "Creating output directory..."
@@ -26,7 +28,10 @@ mkdir -p output
 
 # Install dependencies
 echo "Installing dependencies..."
-npm install --no-cache --legacy-peer-deps
+npm install --no-cache --legacy-peer-deps --force
+
+# Clear npm cache
+npm cache clean --force
 
 # Build the application
 echo "Building application..."

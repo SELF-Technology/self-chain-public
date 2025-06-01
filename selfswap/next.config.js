@@ -25,6 +25,19 @@ const nextConfig = {
       'node_modules'
     ]
     
+    // Disable CSS modules
+    config.module.rules = config.module.rules.map(rule => {
+      if (rule.test && rule.test.toString().includes('\\.css$')) {
+        rule.oneOf = rule.oneOf.map(oneOf => {
+          if (oneOf.test && oneOf.test.toString().includes('\\.module\\.css$')) {
+            return false
+          }
+          return oneOf
+        }).filter(Boolean)
+      }
+      return rule
+    })
+    
     return config
   },
   // Explicitly disable app directory and enable pages directory
@@ -46,6 +59,13 @@ const nextConfig = {
       ignored: ['**/app/**'],
     }
     return config
+  },
+  // Disable CSS modules
+  cssModules: false,
+  css: {
+    modules: {
+      enabled: false,
+    }
   }
 }
 
