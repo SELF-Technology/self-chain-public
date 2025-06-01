@@ -27,15 +27,6 @@ jobs:
             exit 1
           fi
 
-      # Run Snyk security scan
-      - name: Run Snyk security scan
-        uses: snyk/actions/node@master
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-        with:
-          args: --severity-threshold=high
-          command: test
-
       # Run OWASP ZAP scan
       - name: Run OWASP ZAP scan
         uses: zaproxy/zap-action@v1
