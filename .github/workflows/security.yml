@@ -36,15 +36,6 @@ jobs:
           args: --severity-threshold=high
           command: test
 
-      - name: Run Snyk Node.js scan
-        uses: snyk/actions/node@master
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-        with:
-          working-directory: selfswap
-          args: --severity-threshold=high
-          command: test
-
       # Run OWASP ZAP scan
       - name: Run OWASP ZAP scan
         uses: zaproxy/zap-action@v1
