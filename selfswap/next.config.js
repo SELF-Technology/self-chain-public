@@ -10,6 +10,11 @@ const nextConfig = {
     API_URL: process.env.NEXT_PUBLIC_API_URL,
     SELF_NETWORK: process.env.NEXT_PUBLIC_SELF_NETWORK,
     WEB3_PROVIDER_URL: process.env.NEXT_PUBLIC_WEB3_PROVIDER_URL,
+  },
+  // Explicitly disable app directory and enable pages directory
+  experimental: {
+    appDir: false,
+    pagesDir: true
   }
 }
 
