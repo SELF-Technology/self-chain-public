@@ -1,0 +1,12 @@
+name: "self-chain-public CodeQL configuration"
+
+# Exclude duplicate source directories from scanning
+exclude:
+  paths:
+    - "src/self/**"
+    - "test/org/self/**"
+
+# Specify which languages to analyze
+languages:
+  - java
+  - kotlin
