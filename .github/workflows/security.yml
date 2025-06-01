@@ -33,8 +33,7 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          working-directory: selfswap
-          args: --severity-threshold=high
+          args: --severity-threshold=high --all-projects
 
       # Run OWASP ZAP scan
       - name: Run OWASP ZAP scan
