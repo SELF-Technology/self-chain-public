@@ -35,9 +35,9 @@ jobs:
         with:
           args: --severity-threshold=high
 
-      # Run OWASP ZAP security scan
+      # Run OWASP ZAP scan
       - name: Run OWASP ZAP scan
-        uses: zaproxy/action@v1
+        uses: zaproxy/zap-action@v1
         with:
           target: 'http://localhost:3000'
           spider: true
