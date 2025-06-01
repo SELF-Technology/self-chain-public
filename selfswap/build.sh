@@ -30,14 +30,8 @@ npm install --no-cache --legacy-peer-deps
 
 # Build the application
 echo "Building application..."
-# Set the root directory explicitly
-export NEXT_PUBLIC_ROOT_DIR=$(pwd)
-export NEXT_PUBLIC_PAGES_DIR="pages"
-
-# Force pages directory structure
-export NEXT_PUBLIC_USE_PAGES=true
-
-npm run build
+# Use minimal config
+NODE_ENV=production NEXT_CONFIG_FILE=minimal.config.js npm run build
 
 # Copy build output
 echo "Copying build output..."
