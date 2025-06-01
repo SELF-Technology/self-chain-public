@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const securityHeaders = require('./config/headers');
-
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -13,7 +11,6 @@ const nextConfig = {
     SELF_NETWORK: process.env.NEXT_PUBLIC_SELF_NETWORK,
     WEB3_PROVIDER_URL: process.env.NEXT_PUBLIC_WEB3_PROVIDER_URL,
   },
-  headers: () => securityHeaders,
 }
 
 module.exports = nextConfig
