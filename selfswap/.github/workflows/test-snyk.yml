@@ -1,7 +1,7 @@
 name: Test Snyk Integration
 
 on:
-  workflow_dispatch:  # Allows manual trigger
+  workflow_dispatch:
 
 jobs:
   test-snyk:
@@ -15,5 +15,4 @@ jobs:
         with:
           args: --severity-threshold=high
           command: test
-          # Add a test file to scan
           file: package.json
