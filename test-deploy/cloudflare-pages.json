@@ -1,7 +1,0 @@
-{
-  "build": "echo 'Test deployment'",
-  "buildCommand": "echo 'Test deployment'",
-  "publish": "public",
-  "framework": "static",
-  "nodeVersion": "18.x"
-}
