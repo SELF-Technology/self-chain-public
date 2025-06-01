@@ -16,6 +16,8 @@ echo "Running in directory: $(pwd)"
 echo "Cleaning previous build..."
 rm -rf .next
 rm -rf output
+rm -rf node_modules
+rm -rf package-lock.json
 
 # Create output directory
 echo "Creating output directory..."
@@ -23,12 +25,13 @@ mkdir -p output
 
 # Install dependencies
 echo "Installing dependencies..."
-npm install
+npm install --no-cache
 
 # Build the application
 echo "Building application..."
 # Set the root directory explicitly
 export NEXT_PUBLIC_ROOT_DIR=$(pwd)
+export NEXT_PUBLIC_PAGES_DIR="pages"
 
 npm run build
 

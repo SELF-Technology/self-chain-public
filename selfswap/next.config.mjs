@@ -13,11 +13,18 @@ export default defineConfig({
     WEB3_PROVIDER_URL: process.env.NEXT_PUBLIC_WEB3_PROVIDER_URL,
   },
   webpack: (config) => {
-    // Remove any app directory related configurations
+    // Explicitly disable app directory
     config.resolve.alias = {
       ...config.resolve.alias,
       '@': __dirname,
+      'app': false, // Disable app directory alias
     }
     return config
+  },
+  // Explicitly disable app directory features
+  experimental: {
+    appDir: false,
+    serverComponents: false,
+    serverActions: false,
   }
 })
