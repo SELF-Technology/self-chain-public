@@ -1,0 +1,17 @@
+{
+  "build": {
+    "command": "bash build.sh",
+    "publish": "output"
+  },
+  "platform": {
+    "node": "18.x"
+  },
+  "routes": [
+    {
+      "pattern": "/(.*)",
+      "headers": {
+        "cache-control": "public, max-age=0, must-revalidate"
+      }
+    }
+  ]
+}
