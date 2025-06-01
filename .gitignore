@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # OS generated files
 .DS_Store
 .DS_Store?
@@ -165,3 +166,29 @@ logs/
 
 # Target directory
 /target/
+=======
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+>>>>>>> c9b7304 (Initial commit: Migrated from Next.js to Vite)
