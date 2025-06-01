@@ -1,83 +1,183 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SELF Chain Token Creator</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --primary-color: #2196f3;
+            --secondary-color: #f50057;
+            --background-color: #1f2937;
+            --surface-color: #111827;
+            --text-primary: #f3f4f6;
+            --text-secondary: #d1d5db;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .card {
+            background-color: var(--surface-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+            margin: 2rem auto;
+            max-width: 600px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            background-color: #1f2937;
+            color: var(--text-primary);
+            border-radius: 8px;
+            transition: border-color 0.2s ease;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        button.primary {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+        }
+
+        button.primary:hover {
+            background-color: #1976d2;
+        }
+
+        button.secondary {
+            background-color: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        button.secondary:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .logo {
+            height: 40px;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
-    <div class="min-h-screen bg-gray-900 text-white">
-        <div class="container mx-auto px-4 py-8">
-            <div class="max-w-4xl mx-auto bg-gray-800 rounded-lg shadow-md p-6">
-                <div class="flex justify-between items-center mb-8">
-                    <img src="https://docs.self.app/img/SELFwhitelogo.png" alt="SELF Logo" class="h-12">
-                    <h1 class="text-3xl font-bold">Token Creator</h1>
-                </div>
-                <div class="mb-6">
-                    <label class="block text-sm font-medium mb-2">Token Type</label>
-                    <div class="flex space-x-4">
-                        <button onclick="selectTokenType('erc20')" class="w-1/2 px-4 py-2 bg-primary text-gray-900 rounded-md hover:bg-blue-600">ERC20 Token</button>
-                        <button onclick="selectTokenType('nft')" class="w-1/2 px-4 py-2 bg-gray-700 text-gray-300 rounded-md hover:bg-gray-600">NFT Collection</button>
+    <div class="container">
+        <div class="card">
+            <img src="https://docs.self.app/img/SELFwhitelogo.png" alt="SELF Logo" class="logo">
+            <h1>Token Creator</h1>
+                <div class="form-group">
+                    <label>Token Type</label>
+                    <div style="display: flex; gap: 1rem;">
+                        <button onclick="selectTokenType('erc20')" class="primary">ERC20 Token</button>
+                        <button onclick="selectTokenType('nft')" class="secondary">NFT Collection</button>
                     </div>
                 </div>
+
                 <div id="erc20-form" class="hidden">
-                    <div class="space-y-6">
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Token Name</label>
-                            <input type="text" id="tokenName" class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:border-primary" placeholder="e.g., Self Token">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Token Symbol</label>
-                            <input type="text" id="tokenSymbol" class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:border-primary" placeholder="e.g., SELF">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Decimals</label>
-                            <select id="decimals" class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:border-primary">
-                                <option value="18">18 (Recommended)</option>
-                                <option value="6">6</option>
-                                <option value="0">0</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Total Supply</label>
-                            <input type="number" id="totalSupply" class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:border-primary" placeholder="e.g., 1000000">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Description</label>
-                            <textarea id="description" class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:border-primary" rows="3"></textarea>
-                        </div>
+                    <div class="form-group">
+                        <label>Token Name</label>
+                        <input type="text" id="tokenName" placeholder="e.g., Self Token">
+                    </div>
+                    <div class="form-group">
+                        <label>Token Symbol</label>
+                        <input type="text" id="tokenSymbol" placeholder="e.g., SELF">
+                    </div>
+                    <div class="form-group">
+                        <label>Decimals</label>
+                        <select id="decimals">
+                            <option value="18">18 (Recommended)</option>
+                            <option value="6">6</option>
+                            <option value="0">0</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Total Supply</label>
+                        <input type="number" id="totalSupply" placeholder="e.g., 1000000">
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea id="description" rows="3"></textarea>
                     </div>
                 </div>
 
-                <!-- NFT Form -->
                 <div id="nft-form" class="hidden">
-                    <div class="space-y-6">
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Collection Name</label>
-                            <input type="text" id="collectionName" class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:border-primary" placeholder="e.g., Self Art Collection">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Collection Symbol</label>
-                            <input type="text" id="collectionSymbol" class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:border-primary" placeholder="e.g., SART">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Base URI</label>
-                            <input type="text" id="baseURI" class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:border-primary" placeholder="e.g., https://api.self.app/nfts/">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Description</label>
-                            <textarea id="nftDescription" class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:border-primary" rows="3"></textarea>
-                        </div>
+                    <div class="form-group">
+                        <label>Collection Name</label>
+                        <input type="text" id="collectionName" placeholder="e.g., Self Art Collection">
+                    </div>
+                    <div class="form-group">
+                        <label>Collection Symbol</label>
+                        <input type="text" id="collectionSymbol" placeholder="e.g., SART">
+                    </div>
+                    <div class="form-group">
+                        <label>Base URI</label>
+                        <input type="text" id="baseURI" placeholder="e.g., https://api.self.app/nfts/">
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea id="nftDescription" rows="3"></textarea>
                     </div>
                 </div>
 
-                <!-- Submit Button -->
-                <div class="mt-6">
-                    <button onclick="createToken()" class="w-full px-4 py-2 bg-primary text-gray-900 rounded-md hover:bg-blue-600">
-                        Create Token
-                    </button>
-                </div>
+                <button onclick="createToken()" class="primary">
+                    Create Token
+                </button>
             <h1 class="text-3xl font-bold text-center mb-8">Create Your Token</h1>
             
             <div class="space-y-6">
