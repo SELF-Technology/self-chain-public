@@ -8,4 +8,5 @@ npm run build
 
 # Copy the build output to the output directory
 mkdir -p output
-mv .next output/
+mkdir -p output/.next
+mv .next/* output/.next/
