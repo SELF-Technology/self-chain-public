@@ -11,11 +11,12 @@
         :root {
             --primary-color: #2196f3;
             --secondary-color: #f50057;
-            --background-color: #1f2937;
-            --surface-color: #111827;
-            --text-primary: #f3f4f6;
-            --text-secondary: #d1d5db;
+            --background-color: #0a0a0a;
+            --surface-color: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
             --border-color: rgba(255, 255, 255, 0.1);
+            --hover-bg: rgba(255, 255, 255, 0.05);
         }
 
         * {
@@ -40,39 +41,43 @@
         .card {
             background-color: var(--surface-color);
             border-radius: 12px;
-            padding: 1.5rem;
+            padding: 2rem;
             border: 1px solid var(--border-color);
             margin: 2rem auto;
             max-width: 600px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .form-group {
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
 
         label {
             display: block;
             margin-bottom: 0.5rem;
-            color: var(--text-primary);
+            color: var(--text-secondary);
+            font-size: 0.875rem;
         }
 
         input, select, textarea {
             width: 100%;
-            padding: 0.75rem;
+            padding: 1rem;
             border: 1px solid var(--border-color);
-            background-color: #1f2937;
+            background-color: var(--background-color);
             color: var(--text-primary);
             border-radius: 8px;
-            transition: border-color 0.2s ease;
+            transition: all 0.2s ease;
+            font-size: 0.875rem;
         }
 
         input:focus, select:focus, textarea:focus {
             outline: none;
             border-color: var(--primary-color);
+            background-color: var(--hover-bg);
         }
 
         button {
-            padding: 0.75rem 1.5rem;
+            padding: 1rem;
             border-radius: 8px;
             border: none;
             font-weight: 600;
@@ -80,41 +85,53 @@
             transition: all 0.2s ease;
             width: 100%;
             margin-top: 1rem;
+            font-size: 0.875rem;
         }
 
         button.primary {
             background-color: var(--primary-color);
             color: var(--background-color);
+            font-weight: 500;
         }
 
         button.primary:hover {
             background-color: #1976d2;
+            transform: translateY(-1px);
         }
 
         button.secondary {
             background-color: transparent;
             color: var(--text-primary);
             border: 1px solid var(--border-color);
+            font-weight: 500;
         }
 
         button.secondary:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-
-        h1 {
-            color: var(--text-primary);
-            margin-bottom: 1rem;
-            font-weight: 700;
+            background-color: var(--hover-bg);
+            transform: translateY(-1px);
         }
 
         .logo {
-            height: 40px;
-            margin-bottom: 1rem;
+            display: block;
+            margin: 0 auto 1.5rem;
+            max-width: 100px;
+            height: auto;
         }
 
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
+        .hidden {
+            display: none;
+        }
+
+        .animate-spin {
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
             }
         }
     </style>
@@ -123,21 +140,119 @@
     <div class="container">
         <div class="card">
             <img src="https://docs.self.app/img/SELFwhitelogo.png" alt="SELF Logo" class="logo">
-            <h1>Token Creator</h1>
+            <h1 class="text-3xl font-bold mb-4">Token Creator</h1>
+            
+            <!-- Token Type Selection -->
+            <div class="mb-6">
+                <label class="block text-sm font-medium mb-2">Token Type</label>
+                <div class="flex flex-wrap gap-3">
+                    <button onclick="selectTokenType('erc20')" class="w-full md:w-1/2 lg:w-1/4 px-4 py-2 bg-primary text-gray-900 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">
+                        <span class="flex items-center justify-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                            </svg>
+                            Standard Token
+                        </span>
+                    </button>
+                    <button onclick="selectTokenType('nft')" class="w-full md:w-1/2 lg:w-1/4 px-4 py-2 bg-gray-700 text-gray-300 rounded-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50">
+                        <span class="flex items-center justify-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                            NFT Collection
+                        </span>
+                    </button>
+                    <button onclick="selectTokenType('utility')" class="w-full md:w-1/2 lg:w-1/4 px-4 py-2 bg-gray-700 text-gray-300 rounded-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50">
+                        <span class="flex items-center justify-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                            </svg>
+                            Utility Token
+                        </span>
+                    </button>
+                    <button onclick="selectTokenType('governance')" class="w-full md:w-1/2 lg:w-1/4 px-4 py-2 bg-gray-700 text-gray-300 rounded-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50">
+                        <span class="flex items-center justify-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                            </svg>
+                            Governance Token
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div style="margin-top: 0.5rem; color: var(--text-secondary);">
+                <small>Select the type of token you want to create</small>
+            </div>
+            <div id="erc20-form" class="hidden">
                 <div class="form-group">
-                    <label>Token Type</label>
-                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                        <button onclick="selectTokenType('erc20')" class="primary">Standard Token</button>
-                        <button onclick="selectTokenType('nft')" class="secondary">NFT Collection</button>
-                        <button onclick="selectTokenType('utility')" class="secondary">Utility Token</button>
-                        <button onclick="selectTokenType('governance')" class="secondary">Governance Token</button>
-                    </div>
-                    <div style="margin-top: 0.5rem; color: var(--text-secondary);">
-                        <small>Select the type of token you want to create</small>
+                    <label>Token Name</label>
+                    <input type="text" id="tokenName" placeholder="e.g., Self Token" required>
+                    <div style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 0.25rem;">
+                        This will be displayed on wallets and exchanges
                     </div>
                 </div>
+                <div class="form-group">
+                    <label>Token Symbol</label>
+                    <input type="text" id="tokenSymbol" placeholder="e.g., SELF" pattern="^[A-Z]{3,5}$" required>
+                    <div style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 0.25rem;">
+                        3-5 uppercase letters
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Decimals</label>
+                    <select id="decimals" required>
+                        <option value="18">18 (Recommended)</option>
+                        <option value="6">6</option>
+                        <option value="0">0</option>
+                    </select>
+                    <div style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 0.25rem;">
+                        Number of decimal places for token amounts
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Total Supply</label>
+                    <input type="number" id="totalSupply" min="1" step="any" required>
+                    <div style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 0.25rem;">
+                        Maximum number of tokens that will ever exist
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Token Image</label>
+                    <input type="file" id="tokenImage" accept="image/*">
+                    <div style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 0.25rem;">
+                        Upload a logo for your token (optional)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea id="description" rows="3" required></textarea>
+                    <div style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 0.25rem;">
+                        A brief description of your token's purpose
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Permissions</label>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <label>
+                            <input type="checkbox" id="mintable"> Mintable
+                        </label>
+                        <label>
+                            <input type="checkbox" id="burnable"> Burnable
+                        </label>
+                        <label>
+                            <input type="checkbox" id="pausable"> Pausable
+                        </label>
+                    </div>
+                    <div style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 0.25rem;">
+                        Select additional token features
+                    </div>
+                </div>
+            </div>
 
-                <div id="erc20-form" class="hidden">
+            <div id="nft-form" class="hidden">
+                <div class="form-group">
+                    <label>Collection Name</label>
+                    <input type="text" id="collectionName" placeholder="e.g., Self Art Collection">
                     <div class="form-group">
                         <label>Token Name</label>
                         <input type="text" id="tokenName" placeholder="e.g., Self Token" required>
@@ -222,14 +337,16 @@
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <button onclick="createToken()" class="primary">
-                        <span id="createButtonText">Create Token</span>
-                        <span id="loadingSpinner" style="display: none; margin-left: 0.5rem;">
-                            <svg class="animate-spin h-5 w-5" viewBox="0 0 24 24">
-                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" fill="none"></circle>
-                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                            </svg>
+                <div class="mt-6">
+                    <button onclick="createToken()" class="w-full px-4 py-3 bg-primary text-gray-900 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">
+                        <span id="createButtonText" class="flex items-center justify-center">
+                            <span>Create Token</span>
+                            <span id="loadingSpinner" class="ml-2 hidden">
+                                <svg class="animate-spin h-5 w-5" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" fill="none"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                            </span>
                         </span>
                     </button>
                 </div>
