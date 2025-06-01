@@ -27,6 +27,9 @@ npm install
 
 # Build the application
 echo "Building application..."
+# Set the root directory explicitly
+export NEXT_PUBLIC_ROOT_DIR=$(pwd)
+
 npm run build
 
 # Copy build output
