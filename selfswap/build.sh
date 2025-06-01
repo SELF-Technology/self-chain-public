@@ -18,6 +18,7 @@ rm -rf .next
 rm -rf output
 rm -rf node_modules
 rm -rf package-lock.json
+rm -rf "app" # Ensure app directory is removed
 
 # Create output directory
 echo "Creating output directory..."
@@ -25,13 +26,16 @@ mkdir -p output
 
 # Install dependencies
 echo "Installing dependencies..."
-npm install --no-cache
+npm install --no-cache --legacy-peer-deps
 
 # Build the application
 echo "Building application..."
 # Set the root directory explicitly
 export NEXT_PUBLIC_ROOT_DIR=$(pwd)
 export NEXT_PUBLIC_PAGES_DIR="pages"
+
+# Force pages directory structure
+export NEXT_PUBLIC_USE_PAGES=true
 
 npm run build
 

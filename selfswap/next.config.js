@@ -11,10 +11,21 @@ const nextConfig = {
     SELF_NETWORK: process.env.NEXT_PUBLIC_SELF_NETWORK,
     WEB3_PROVIDER_URL: process.env.NEXT_PUBLIC_WEB3_PROVIDER_URL,
   },
+  webpack: (config) => {
+    // Remove app directory from resolve
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      'app': false,
+      '@': __dirname,
+    }
+    return config
+  },
   // Explicitly disable app directory and enable pages directory
   experimental: {
     appDir: false,
-    pagesDir: true
+    pagesDir: true,
+    serverComponents: false,
+    serverActions: false,
   }
 }
 
