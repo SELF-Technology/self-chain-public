@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "directories": {
+    "pages": "pages"
+  },
   "dependencies": {
     "@apollo/client": "^3.7.17",
     "@headlessui/react": "^1.7.17",
