@@ -1,7 +1,7 @@
 {
   "framework": "other",
   "build": {
-    "command": "bash scripts/build.sh",
+    "command": "mkdir -p dist && cp tokencreator-pages/index.html dist/",
     "publish": "dist"
   },
   "compatibility_date": "2025-06-01"
