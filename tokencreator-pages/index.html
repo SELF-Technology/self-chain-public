@@ -125,6 +125,46 @@
             min-width: 100px;
         }
 
+        .token-address {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .transaction-status {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .success {
+            background-color: #22c55e;
+            color: white;
+        }
+
+        .error {
+            background-color: #ef4444;
+            color: white;
+        }
+
+        .warning {
+            background-color: #f59e0b;
+            color: white;
+        }
+
+        .loader {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: #2196f3;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
         .card .text-center {
             text-align: center;
         }
@@ -509,18 +549,35 @@
                     <div class="flex justify-between items-center mb-4">
                         <div>
                             <label class="block text-sm font-medium mb-2">Token Address</label>
-                            <input type="text" id="tokenAddress" class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:border-primary" placeholder="Enter token address">
+                            <input type="text" id="tokenAddress" class="token-address px-3 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:border-primary" placeholder="Enter token address">
+                            <div id="tokenAddressStatus" class="mt-1 text-xs text-gray-400"></div>
                         </div>
                         <button onclick="addAddressRow()" class="px-4 py-2 bg-primary text-gray-900 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">
                             Add Recipient
                         </button>
                     </div>
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium mb-2">Transaction Fee</label>
+                        <div class="flex items-center">
+                            <span class="text-gray-400">Base Fee:</span>
+                            <span id="baseFee" class="ml-2 text-white">100 SELF</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gray-400">Per Recipient Fee:</span>
+                            <span id="perRecipientFee" class="ml-2 text-white">0.1 SELF</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gray-400">Total Fee:</span>
+                            <span id="totalFee" class="ml-2 text-white">100 SELF</span>
+                        </div>
+                    </div>
                     <div id="addressRows"></div>
                     <div class="mt-6">
-                        <button onclick="sendTokens()" class="w-full px-4 py-3 bg-primary text-gray-900 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">
+                        <button onclick="sendTokens()" id="sendTokensButton" class="w-full px-4 py-3 bg-primary text-gray-900 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">
                             Send Tokens
                         </button>
                     </div>
+                    <div id="transactionStatus" class="mt-4"></div>
                 </div>
             </div>
         </div>
@@ -529,8 +586,21 @@
     <script>
         // Constants for SELF chain
         const SELF_FEE = 100;
+        const MULTISENDER_FEE_PER_RECIPIENT = 0.1; // 0.1 SELF per recipient
         const NETWORK = 'SELF Chain';
         const TOKEN_STANDARD = 'ERC20 Compatible';
+
+        // Mock API endpoints (to be replaced with actual SELF chain API)
+        const API_BASE_URL = 'https://api.self.app/v1';
+        const TOKEN_API = `${API_BASE_URL}/tokens`;
+        const TRANSACTION_API = `${API_BASE_URL}/transactions`;
+
+        // Transaction status constants
+        const TRANSACTION_STATUS = {
+            PENDING: 'pending',
+            SUCCESS: 'success',
+            FAILED: 'failed'
+        };
 
         function selectTokenType(type) {
             document.querySelectorAll('.form-group').forEach(group => group.classList.add('hidden'));
@@ -646,24 +716,82 @@
             addressRows = addressRows.filter(r => r !== row);
         };
 
+        const updateFeeDisplay = () => {
+            const recipientCount = addressRows.length;
+            const totalFee = SELF_FEE + (recipientCount * MULTISENDER_FEE_PER_RECIPIENT);
+            document.getElementById('totalFee').textContent = `${totalFee} SELF`;
+        };
+
+        const validateTokenAddress = async (address) => {
+            try {
+                const response = await fetch(`${TOKEN_API}/${address}`);
+                if (!response.ok) {
+                    throw new Error('Invalid token address');
+                }
+                const token = await response.json();
+                document.getElementById('tokenAddressStatus').textContent = `Valid token: ${token.name}`;
+                document.getElementById('tokenAddressStatus').classList.remove('text-red-400');
+                document.getElementById('tokenAddressStatus').classList.add('text-green-400');
+                return true;
+            } catch (error) {
+                document.getElementById('tokenAddressStatus').textContent = 'Invalid token address';
+                document.getElementById('tokenAddressStatus').classList.remove('text-green-400');
+                document.getElementById('tokenAddressStatus').classList.add('text-red-400');
+                return false;
+            }
+        };
+
+        const validateAddress = (address) => {
+            // Basic SELF address validation (to be replaced with actual validation)
+            return /^[a-zA-Z0-9]{43}$/.test(address);
+        };
+
+        const updateTransactionStatus = (status, message) => {
+            const statusDiv = document.getElementById('transactionStatus');
+            statusDiv.innerHTML = `
+                <div class="transaction-status ${status === TRANSACTION_STATUS.SUCCESS ? 'success' : 
+                    status === TRANSACTION_STATUS.FAILED ? 'error' : 'warning'}">
+                    <div class="flex items-center">
+                        ${status === TRANSACTION_STATUS.PENDING ? '<div class="loader"></div>' : ''}
+                        <span>${message}</span>
+                    </div>
+                </div>
+            `;
+        };
+
         const sendTokens = async () => {
             const tokenAddress = document.getElementById('tokenAddress').value;
-            if (!tokenAddress) {
-                alert('Please enter a token address');
+            const tokenAddressInput = document.getElementById('tokenAddress');
+            
+            // Validate token address
+            if (!await validateTokenAddress(tokenAddress)) {
+                updateTransactionStatus(TRANSACTION_STATUS.ERROR, 'Invalid token address');
                 return;
             }
 
+            // Validate all recipients
             const recipients = [];
+            let hasInvalidRecipient = false;
+            
             addressRows.forEach(row => {
                 const address = row.children[0].value;
                 const amount = parseFloat(row.children[1].value);
-                if (address && !isNaN(amount)) {
-                    recipients.push({ address, amount });
+                
+                if (!address || !amount || !validateAddress(address)) {
+                    hasInvalidRecipient = true;
+                    return;
                 }
+                
+                recipients.push({ address, amount });
             });
 
+            if (hasInvalidRecipient) {
+                updateTransactionStatus(TRANSACTION_STATUS.ERROR, 'One or more invalid recipient addresses');
+                return;
+            }
+
             if (recipients.length === 0) {
-                alert('Please add at least one recipient');
+                updateTransactionStatus(TRANSACTION_STATUS.ERROR, 'Please add at least one valid recipient');
                 return;
             }
 
@@ -672,21 +800,55 @@
             const balance = await checkBalance();
 
             if (balance < totalFee) {
-                alert(`Insufficient balance. Required: ${totalFee} SELF, Available: ${balance} SELF`);
+                updateTransactionStatus(TRANSACTION_STATUS.ERROR, `Insufficient balance. Required: ${totalFee} SELF, Available: ${balance} SELF`);
                 return;
             }
 
-            // Mock transaction - replace with actual SELF chain integration
-            await deductFee(totalFee);
-            
-            // Show success message
-            alert(`Successfully sent tokens to ${recipients.length} recipients. Total fee: ${totalFee} SELF`);
-            
-            // Reset form
-            document.getElementById('tokenAddress').value = '';
-            addressRows.forEach(row => row.remove());
-            addressRows = [];
-            addAddressRow(); // Add one default row back
+            // Start transaction
+            updateTransactionStatus(TRANSACTION_STATUS.PENDING, 'Processing transaction...');
+            document.getElementById('sendTokensButton').disabled = true;
+
+            try {
+                // Deduct fee
+                await deductFee(totalFee);
+
+                // Create transaction
+                const transaction = {
+                    type: 'multisend',
+                    tokenAddress,
+                    recipients,
+                    fee: totalFee
+                };
+
+                // Send transaction to SELF chain
+                const response = await fetch(TRANSACTION_API, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(transaction)
+                });
+
+                if (!response.ok) {
+                    throw new Error('Transaction failed');
+                }
+
+                const result = await response.json();
+                
+                // Show success message
+                updateTransactionStatus(TRANSACTION_STATUS.SUCCESS, `Successfully sent tokens to ${recipients.length} recipients.\nTransaction hash: ${result.txHash}`);
+
+                // Reset form
+                tokenAddressInput.value = '';
+                addressRows.forEach(row => row.remove());
+                addressRows = [];
+                addAddressRow(); // Add one default row back
+                updateFeeDisplay(); // Reset fee display
+            } catch (error) {
+                updateTransactionStatus(TRANSACTION_STATUS.ERROR, `Transaction failed: ${error.message}`);
+            } finally {
+                document.getElementById('sendTokensButton').disabled = false;
+            }
         };
     </script>
 </body>
