@@ -1,16 +1,19 @@
 #!/bin/bash
 
 # Print current directory
-echo "Current directory: $(pwd)"
+echo "Starting in directory: $(pwd)"
 
-# Navigate to selfswap directory
-if [ -d "../selfswap" ]; then
-  cd ../selfswap
-  echo "Navigated to: $(pwd)"
+# Navigate to selfswap directory if running from root
+current_dir=$(basename $(pwd))
+if [ "$current_dir" != "selfswap" ]; then
+  echo "Navigating to selfswap directory"
+  cd selfswap
 fi
 
+echo "Running in directory: $(pwd)"
+
 # Clean up previous build
-echo "Cleaning up previous build..."
+echo "Cleaning previous build..."
 rm -rf .next
 rm -rf output
 
