@@ -30,8 +30,8 @@ npm install --no-cache --legacy-peer-deps
 
 # Build the application
 echo "Building application..."
-# Use minimal config
-NODE_ENV=production NEXT_CONFIG_FILE=minimal.config.js npm run build
+# Force Next.js to use pages directory
+NODE_ENV=production NEXT_PUBLIC_USE_PAGES=true npm run build
 
 # Copy build output
 echo "Copying build output..."

@@ -18,6 +18,13 @@ const nextConfig = {
       'app': false,
       '@': __dirname,
     }
+    
+    // Add explicit ignore for app directory
+    config.resolve.modules = [
+      path.resolve(__dirname, 'pages'),
+      'node_modules'
+    ]
+    
     return config
   },
   // Explicitly disable app directory and enable pages directory
@@ -26,6 +33,19 @@ const nextConfig = {
     pagesDir: true,
     serverComponents: false,
     serverActions: false,
+  },
+  // Force pages directory structure
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
+  // Disable app directory
+  appDir: false,
+  // Force pages directory
+  pagesDir: true,
+  // Disable any automatic imports
+  webpackDevMiddleware: (config) => {
+    config.watchOptions = {
+      ignored: ['**/app/**'],
+    }
+    return config
   }
 }
 
