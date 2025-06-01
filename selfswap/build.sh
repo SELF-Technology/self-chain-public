@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Navigate to the root of the project
+if [ -d "../.." ]; then
+  cd ../..
+fi
+
 # Install dependencies
 npm install
 
@@ -10,8 +15,8 @@ npm run build
 mkdir -p output
 
 # Copy build output
-if [ -d ".next" ]; then
-  cp -r .next output/.next
+if [ -d "selfswap/.next" ]; then
+  cp -r selfswap/.next output/.next
 else
   echo ".next directory not found"
   exit 1
@@ -19,11 +24,11 @@ fi
 
 # Copy static files
 mkdir -p output/public
-if [ -d "public" ]; then
-  cp -r public/* output/public/
+if [ -d "selfswap/public" ]; then
+  cp -r selfswap/public/* output/public/
 fi
 
 # Copy headers file
-if [ -f "public/_headers" ]; then
-  cp public/_headers output/public/_headers
+if [ -f "selfswap/public/_headers" ]; then
+  cp selfswap/public/_headers output/public/_headers
 fi
