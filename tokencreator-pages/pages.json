@@ -1,7 +1,8 @@
 {
-  "framework": "none",
+  "framework": "other",
   "build": {
-    "command": "cp -r index.html ./dist/",
+    "command": "bash scripts/build.sh",
     "publish": "dist"
-  }
+  },
+  "compatibility_date": "2025-06-01"
 }
