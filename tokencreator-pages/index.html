@@ -160,8 +160,28 @@
                     </button>
                 </div>
             </div>
-            <div style="margin-top: 0.5rem; color: var(--text-secondary);">
-                <small>Select the type of token you want to create</small>
+            <div class="mb-6">
+                <div class="text-sm font-medium mb-2">Network Information</div>
+                <div class="bg-gray-800 rounded-md p-4">
+                    <div class="flex items-center mb-2">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="text-gray-300">Network: SELF Chain</span>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                        <span class="text-gray-300">Token Standard: ERC20 Compatible</span>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                        <span class="text-gray-300">Transaction Fee: 0.01 SELF</span>
+                    </div>
+                </div>
             </div>
             <div id="erc20-form" class="hidden">
                 <div class="form-group">
@@ -330,6 +350,9 @@
                         </span>
                     </button>
                 </div>
+                <div id="notification" class="mt-4 p-4 rounded-md bg-gray-800 hidden">
+                    <div id="notificationMessage" class="text-gray-300"></div>
+                </div>
                 <div id="notification" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 8px;">
                     <div id="notificationMessage"></div>
                 </div>
@@ -391,58 +414,93 @@
     </div>
 
     <script>
+        // Constants for SELF chain
+        const SELF_FEE = 0.01;
+        const NETWORK = 'SELF Chain';
+        const TOKEN_STANDARD = 'ERC20 Compatible';
+
         function selectTokenType(type) {
-            document.getElementById('erc20-form').classList.add('hidden');
-            document.getElementById('nft-form').classList.add('hidden');
-            
-            if (type === 'erc20') {
-                document.getElementById('erc20-form').classList.remove('hidden');
-            } else if (type === 'nft') {
-                document.getElementById('nft-form').classList.remove('hidden');
-            }
+            document.querySelectorAll('.form-group').forEach(group => group.classList.add('hidden'));
+            document.getElementById(`${type}-form`).classList.remove('hidden');
         }
 
         async function createToken() {
-            const type = document.querySelector('button[onclick*="selectTokenType"]').dataset.type;
-            let formData;
-
-            if (type === 'erc20') {
-                formData = {
-                    type: 'erc20',
-                    name: document.getElementById('tokenName').value,
-                    symbol: document.getElementById('tokenSymbol').value,
-                    decimals: document.getElementById('decimals').value,
-                    totalSupply: document.getElementById('totalSupply').value,
-                    description: document.getElementById('description').value
-                };
-            } else {
-                formData = {
-                    type: 'nft',
-                    name: document.getElementById('collectionName').value,
-                    symbol: document.getElementById('collectionSymbol').value,
-                    baseURI: document.getElementById('baseURI').value,
-                    description: document.getElementById('nftDescription').value
-                };
+            // Check if user has sufficient SELF balance
+            const userBalance = await checkBalance();
+            if (userBalance < SELF_FEE) {
+                document.getElementById('notificationMessage').textContent = `Insufficient SELF balance. Required: ${SELF_FEE} SELF`;
+                document.getElementById('notification').style.display = 'block';
+                setTimeout(() => {
+                    document.getElementById('notification').style.display = 'none';
+                }, 3000);
+                return;
             }
+
+            const tokenType = document.querySelector('.form-group:not(.hidden)').id.replace('-form', '');
+            const formData = new FormData();
+            
+            // Add token type
+            formData.append('type', tokenType);
+
+            // Add common fields
+            formData.append('name', document.getElementById('tokenName')?.value || '');
+            formData.append('symbol', document.getElementById('tokenSymbol')?.value || '');
+            formData.append('description', document.getElementById('tokenDescription')?.value || '');
+            formData.append('image', document.getElementById('tokenImage')?.files[0] || '');
+
+            // Add type-specific fields
+            if (tokenType === 'erc20') {
+                formData.append('decimals', document.getElementById('decimals')?.value || '');
+                formData.append('initialSupply', document.getElementById('initialSupply')?.value || '');
+                formData.append('mintable', document.getElementById('mintable')?.checked || false);
+                formData.append('burnable', document.getElementById('burnable')?.checked || false);
+                formData.append('pausable', document.getElementById('pausable')?.checked || false);
+            }
+            
+            // Show loading state
+            document.getElementById('createButtonText').innerHTML = '<span>Loading...</span>';
+            document.getElementById('loadingSpinner').classList.remove('hidden');
 
             try {
+                // Deduct SELF fee
+                await deductFee(SELF_FEE);
+
                 const response = await fetch('/api/create-token', {
                     method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(formData)
+                    body: formData
                 });
 
-                const result = await response.json();
-                if (response.ok) {
-                    alert('Token created successfully! Contract address: ' + result.contractAddress);
-                } else {
-                    alert('Error creating token: ' + result.error);
+                if (!response.ok) {
+                    throw new Error('Token creation failed');
                 }
+
+                const result = await response.json();
+                document.getElementById('notificationMessage').textContent = `Token created successfully!\nNetwork: ${NETWORK}\nStandard: ${TOKEN_STANDARD}`;
+                document.getElementById('notification').style.display = 'block';
+                setTimeout(() => {
+                    document.getElementById('notification').style.display = 'none';
+                }, 3000);
             } catch (error) {
-                alert('An error occurred: ' + error.message);
+                document.getElementById('notificationMessage').textContent = 'Error creating token: ' + error.message;
+                document.getElementById('notification').style.display = 'block';
+                setTimeout(() => {
+                    document.getElementById('notification').style.display = 'none';
+                }, 3000);
+            } finally {
+                document.getElementById('createButtonText').innerHTML = '<span>Create Token</span>';
+                document.getElementById('loadingSpinner').classList.add('hidden');
             }
+        }
+
+        // Mock functions for SELF chain integration
+        async function checkBalance() {
+            // TODO: Implement actual balance check
+            return 1.0; // For testing
+        }
+
+        async function deductFee(amount) {
+            // TODO: Implement actual fee deduction
+            console.log(`Deducting ${amount} SELF`);
         }
     </script>
 </body>
