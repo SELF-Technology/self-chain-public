@@ -10,12 +10,6 @@ const nextConfig = {
     API_URL: process.env.NEXT_PUBLIC_API_URL,
     SELF_NETWORK: process.env.NEXT_PUBLIC_SELF_NETWORK,
     WEB3_PROVIDER_URL: process.env.NEXT_PUBLIC_WEB3_PROVIDER_URL,
-  },
-  pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
-  webpack: (config, { isServer }) => {
-    // Add CSS module resolution
-    config.resolve.modules = [...(config.resolve.modules || []), path.join(__dirname, 'styles')];
-    return config;
   }
 }
 
