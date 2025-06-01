@@ -151,6 +151,51 @@
             color: white;
         }
 
+        .transaction-history {
+            display: none;
+        }
+
+        .transaction-history.active {
+            display: block;
+        }
+
+        .transaction-item {
+            background-color: var(--surface-color);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .token-snapshot {
+            display: none;
+        }
+
+        .token-snapshot.active {
+            display: block;
+        }
+
+        .snapshot-item {
+            background-color: var(--surface-color);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .snapshot-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .snapshot-table th,
+        .snapshot-table td {
+            padding: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .snapshot-table th {
+            text-align: left;
+        }
+
         .loader {
             display: inline-block;
             width: 20px;
@@ -282,6 +327,12 @@
                 <div class="text-center mb-6">
                     <button onclick="showMultisender()" class="px-4 py-2 bg-primary text-gray-900 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">
                         Token Multisender
+                    </button>
+                    <button onclick="showTransactionHistory()" class="ml-4 px-4 py-2 bg-gray-600 text-gray-900 rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
+                        Transaction History
+                    </button>
+                    <button onclick="showTokenSnapshot()" class="ml-4 px-4 py-2 bg-gray-600 text-gray-900 rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
+                        Token Snapshot
                     </button>
                 </div>
             </div>
@@ -546,6 +597,37 @@
             <div id="multisender-form" class="multisender-form">
                 <div class="mb-6">
                     <h2 class="text-xl font-bold mb-4">Token Multisender</h2>
+                </div>
+            </div>
+
+            <div id="transaction-history" class="transaction-history">
+                <div class="mb-6">
+                    <h2 class="text-xl font-bold mb-4">Transaction History</h2>
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Token Address</label>
+                            <input type="text" id="historyTokenAddress" class="token-address px-3 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:border-primary" placeholder="Enter token address to filter">
+                        </div>
+                    </div>
+                    <div id="transactionsList"></div>
+                </div>
+            </div>
+
+            <div id="token-snapshot" class="token-snapshot">
+                <div class="mb-6">
+                    <h2 class="text-xl font-bold mb-4">Token Snapshot</h2>
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Token Address</label>
+                            <input type="text" id="snapshotTokenAddress" class="token-address px-3 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:border-primary" placeholder="Enter token address">
+                        </div>
+                        <button onclick="takeSnapshot()" class="px-4 py-2 bg-primary text-gray-900 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">
+                            Take Snapshot
+                        </button>
+                    </div>
+                    <div id="snapshotList"></div>
+                </div>
+            </div>
                     <div class="flex justify-between items-center mb-4">
                         <div>
                             <label class="block text-sm font-medium mb-2">Token Address</label>
@@ -594,9 +676,21 @@
         const API_BASE_URL = 'https://api.self.app/v1';
         const TOKEN_API = `${API_BASE_URL}/tokens`;
         const TRANSACTION_API = `${API_BASE_URL}/transactions`;
+        const SNAPSHOT_API = `${API_BASE_URL}/snapshots`;
 
         // Transaction status constants
         const TRANSACTION_STATUS = {
+            PENDING: 'pending',
+            SUCCESS: 'success',
+            FAILED: 'failed'
+        };
+
+        // Snapshot status constants
+        const SNAPSHOT_STATUS = {
+            PENDING: 'pending',
+            COMPLETE: 'complete',
+            FAILED: 'failed'
+        };
             PENDING: 'pending',
             SUCCESS: 'success',
             FAILED: 'failed'
@@ -689,10 +783,25 @@
         let addressRows = [];
 
         const showMultisender = () => {
-            document.getElementById('token-form').classList.add('hidden');
-            document.getElementById('erc20-form').classList.add('hidden');
-            document.getElementById('nft-form').classList.add('hidden');
+            document.querySelectorAll('.form-group').forEach(group => group.classList.add('hidden'));
             document.getElementById('multisender-form').classList.add('active');
+            document.getElementById('transaction-history').classList.remove('active');
+            document.getElementById('token-snapshot').classList.remove('active');
+        };
+
+        const showTransactionHistory = () => {
+            document.querySelectorAll('.form-group').forEach(group => group.classList.add('hidden'));
+            document.getElementById('multisender-form').classList.remove('active');
+            document.getElementById('transaction-history').classList.add('active');
+            document.getElementById('token-snapshot').classList.remove('active');
+            loadTransactionHistory();
+        };
+
+        const showTokenSnapshot = () => {
+            document.querySelectorAll('.form-group').forEach(group => group.classList.add('hidden'));
+            document.getElementById('multisender-form').classList.remove('active');
+            document.getElementById('transaction-history').classList.remove('active');
+            document.getElementById('token-snapshot').classList.add('active');
         };
 
         const addAddressRow = () => {
@@ -757,6 +866,139 @@
                     </div>
                 </div>
             `;
+        };
+
+        const loadTransactionHistory = async () => {
+            const tokenAddress = document.getElementById('historyTokenAddress').value;
+            const params = tokenAddress ? `?tokenAddress=${tokenAddress}` : '';
+            
+            try {
+                const response = await fetch(`${TRANSACTION_API}${params}`);
+                if (!response.ok) {
+                    throw new Error('Failed to load transaction history');
+                }
+                
+                const transactions = await response.json();
+                const transactionsList = document.getElementById('transactionsList');
+                transactionsList.innerHTML = transactions.map(tx => `
+                    <div class="transaction-item">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-gray-400">Transaction ID:</span>
+                            <span>${tx.txId}</span>
+                        </div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-gray-400">Token:</span>
+                            <span>${tx.tokenAddress}</span>
+                        </div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-gray-400">Recipients:</span>
+                            <span>${tx.recipients.length}</span>
+                        </div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-gray-400">Total Amount:</span>
+                            <span>${tx.totalAmount} ${tx.symbol}</span>
+                        </div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-gray-400">Status:</span>
+                            <span class="${tx.status === 'success' ? 'text-green-400' : tx.status === 'failed' ? 'text-red-400' : 'text-yellow-400'}">
+                                ${tx.status}
+                            </span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Timestamp:</span>
+                            <span>${new Date(tx.timestamp).toLocaleString()}</span>
+                        </div>
+                    </div>
+                `).join('');
+            } catch (error) {
+                updateTransactionStatus(TRANSACTION_STATUS.ERROR, `Failed to load transaction history: ${error.message}`);
+            }
+        };
+
+        const takeSnapshot = async () => {
+            const tokenAddress = document.getElementById('snapshotTokenAddress').value;
+            if (!tokenAddress) {
+                updateTransactionStatus(TRANSACTION_STATUS.ERROR, 'Please enter a token address');
+                return;
+            }
+
+            try {
+                const response = await fetch(`${SNAPSHOT_API}/${tokenAddress}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to take snapshot');
+                }
+
+                const snapshot = await response.json();
+                updateTransactionStatus(SNAPSHOT_STATUS.PENDING, 'Taking snapshot...');
+
+                // Poll for snapshot completion
+                const checkSnapshot = async () => {
+                    const checkResponse = await fetch(`${SNAPSHOT_API}/${snapshot.id}`);
+                    if (!checkResponse.ok) {
+                        throw new Error('Failed to check snapshot status');
+                    }
+
+                    const status = await checkResponse.json();
+                    if (status.status === SNAPSHOT_STATUS.COMPLETE) {
+                        updateTransactionStatus(SNAPSHOT_STATUS.COMPLETE, 'Snapshot complete!');
+                        loadSnapshot(snapshot.id);
+                    } else if (status.status === SNAPSHOT_STATUS.FAILED) {
+                        updateTransactionStatus(SNAPSHOT_STATUS.FAILED, 'Snapshot failed');
+                    } else {
+                        setTimeout(checkSnapshot, 5000); // Check again in 5 seconds
+                    }
+                };
+
+                checkSnapshot();
+            } catch (error) {
+                updateTransactionStatus(SNAPSHOT_STATUS.FAILED, `Failed to take snapshot: ${error.message}`);
+            }
+        };
+
+        const loadSnapshot = async (snapshotId) => {
+            try {
+                const response = await fetch(`${SNAPSHOT_API}/${snapshotId}`);
+                if (!response.ok) {
+                    throw new Error('Failed to load snapshot');
+                }
+
+                const snapshot = await response.json();
+                const snapshotList = document.getElementById('snapshotList');
+                
+                if (!snapshot.holders || snapshot.holders.length === 0) {
+                    snapshotList.innerHTML = '<div class="text-gray-400">No holders found</div>';
+                    return;
+                }
+
+                snapshotList.innerHTML = `
+                    <table class="snapshot-table">
+                        <thead>
+                            <tr>
+                                <th>Address</th>
+                                <th>Balance</th>
+                                <th>Percentage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${snapshot.holders.map(holder => `
+                                <tr>
+                                    <td>${holder.address}</td>
+                                    <td>${holder.balance}</td>
+                                    <td>${(holder.percentage * 100).toFixed(2)}%</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                `;
+            } catch (error) {
+                updateTransactionStatus(SNAPSHOT_STATUS.ERROR, `Failed to load snapshot: ${error.message}`);
+            }
         };
 
         const sendTokens = async () => {
