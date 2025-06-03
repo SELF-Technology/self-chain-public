@@ -1,0 +1,92 @@
+name: Benchmark
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 0 * * 0'  # Run every Sunday at midnight
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        rust-version: [1.70]
+        node-count: [10, 50, 100]
+        scenario: [surge, ramp-up, real-world, network-partition, hardware-failure]
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install Rust
+      uses: dtolnay/rust-toolchain@stable
+      with:
+        toolchain: ${{ matrix.rust-version }}
+
+    - name: Install Dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libssl-dev pkg-config
+
+    - name: Build
+      run: |
+        cargo build --release
+
+    - name: Setup Test Environment
+      run: |
+        # Create test configuration
+        echo "[benchmark]" > test-config.toml
+        echo "node_count = ${{ matrix.node-count }}" >> test-config.toml
+        echo "scenario = \"${{ matrix.scenario }}\"" >> test-config.toml
+        
+        # Start test nodes
+        ./target/release/self-chain-node --config test-config.toml
+
+    - name: Run Benchmark
+      run: |
+        # Run benchmark scenarios
+        ./target/release/self-chain-benchmark --scenario ${{ matrix.scenario }}
+        
+        # Generate report
+        ./target/release/self-chain-report --output benchmark-report.json
+
+    - name: Upload Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: benchmark-report
+        path: benchmark-report.json
+
+    - name: Analyze Results
+      run: |
+        # Parse and analyze benchmark results
+        python3 -m pip install pandas matplotlib
+        python3 analyze_benchmark.py benchmark-report.json
+
+    - name: Generate Visualization
+      run: |
+        # Generate visualization from results
+        python3 generate_visualization.py benchmark-report.json
+
+    - name: Store Metrics
+      run: |
+        # Store metrics in database
+        python3 store_metrics.py benchmark-report.json
+
+    - name: Generate Summary
+      run: |
+        # Generate summary report
+        python3 generate_summary.py benchmark-report.json
+
+    - name: Send Notifications
+      run: |
+        # Send notifications on failure
+        if [ $? -ne 0 ]; then
+          echo "Benchmark failed" | mail -s "Benchmark Alert" admin@example.com
+        fi
+
+    - name: Cleanup
+      run: |
+        # Cleanup test environment
+        ./target/release/self-chain-node --cleanup
