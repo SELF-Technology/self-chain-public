@@ -147,7 +147,7 @@ This documentation uses several tools and technologies:
 ## Directory Structure
 
 ```mermaid
-dag TD
+graph TD
     A[docs] --> B[architecture]
     A --> C[api]
     A --> D[development]
