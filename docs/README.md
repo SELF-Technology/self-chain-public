@@ -169,6 +169,84 @@ graph TD
     I --> I3[storage_integration.md]
 ```
 
+## SELF Chain Architecture
+
+```mermaid
+graph TD
+    // User Layer
+    user_node[User Node] --> cloud_node[Cloud Node]
+    user_node --> SELF_assistant[SELF Assistant]
+    user_node --> PoAI_validator[PoAI Validator]
+    user_node --> SDK[SDK]
+
+    // SELF Assistant Layer
+    SELF_assistant --> SA_user_interface[User Interface]
+    SELF_assistant --> SA_AI_context[AI Context]
+    SELF_assistant --> SA_PoAI[PoAI]
+    SELF_assistant --> SA_SDK_integration[SDK Integration]
+
+    // SDK Layer
+    SDK --> SDK_multi_language[Multi-language]
+    SDK --> SDK_token[Token Operations]
+    SDK --> SDK_storage[Storage]
+    SDK --> SDK_SELF_assistant[SELF Assistant]
+
+    // dApp Layer
+    dApp --> dApp_token[Token]
+    dApp --> dApp_storage[Storage]
+    dApp --> dApp_SELF_assistant[SELF Assistant]
+
+    // Block Building Layer
+    block_builder[Block Builder] --> ML_model[ML Model]
+    block_builder --> transaction_sorter[Transaction Sorter]
+    block_builder --> efficiency_calculator[Efficiency Calculator]
+    block_builder --> point_price[Point Price]
+
+    // AI Validator Layer
+    AI_validator[AI Validator] --> wallet_color[Wallet Color]
+    AI_validator --> hex_validator[Hex Validator]
+    AI_validator --> voting_power[Voting Power]
+
+    // Smart Contract Layer
+    smart_contract[Smart Contract] --> solidity[Solidity]
+    smart_contract --> token_creation[Token Creation]
+    smart_contract --> token_operations[Token Operations]
+    smart_contract --> storage_operations[Storage Operations]
+
+    // SELFSwap Layer
+    SELFSwap[SELFSwap] --> DEX[DEX]
+    SELFSwap --> liquidity[Liquidity]
+    SELFSwap --> trading[Trading]
+    SELFSwap --> cross_chain[Cross-chain]
+
+    // Grid Compute Layer
+    grid_compute[Grid Compute] --> node_network[Node Network]
+    grid_compute --> distributed_compute[Distributed Compute]
+    grid_compute --> TPS_optimization[TPS Optimization]
+    grid_compute --> resource_pooling[Resource Pooling]
+
+    // Cross-layer relationships
+    user_node --> SDK
+    user_node --> SELF_assistant
+    user_node --> PoAI_validator
+
+    SDK --> dApp
+    SDK --> SELFSwap
+    SDK --> smart_contract
+
+    SELFSwap --> grid_compute
+    smart_contract --> grid_compute
+    dApp --> grid_compute
+
+    block_builder --> AI_validator
+    block_builder --> SDK
+    block_builder --> SELFSwap
+
+    AI_validator --> SDK
+    AI_validator --> SELFSwap
+    AI_validator --> smart_contract
+```
+
 This diagram shows the complete documentation structure, with each component linked to its respective subcomponents. The documentation is designed to be both comprehensive and modular, allowing developers to dive deep into specific areas while maintaining an overview of the entire system.
 
 ## Additional Resources
