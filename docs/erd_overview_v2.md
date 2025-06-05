@@ -2,37 +2,127 @@
 
 // Custom Icons
 icon:custom:SELF-WHEEL-WHITE {
-    url: "https://www.dropbox.com/scl/fi/53aychsn4khgbput3b2m7/SELF-WHEEL-WHITE.png?rlkey=ju6sjk9m1mvvm5epdxd0p5ex1&dl=0"
+    url: "https://self.app/images/favicon.png"
 }
 
 // User Layer
-user_node [icon: aws-ec2] {
-    cloud_node [icon: aws-ec2]
+user_node [icon: computer] {
+    cloud_node [icon: cloud]
     SELF_assistant [icon: custom:SELF-WHEEL-WHITE]
-    PoAI_validator [icon: aws-lambda]
-    SDK [icon: aws-ec2]
+    PoAI_validator [icon: robot]
+    SDK [icon: code]
 }
 
-// SDK Components
-SDK_multi_language [icon: aws-codebuild]
-SDK_token [icon: aws-lambda]
-SDK_storage [icon: aws-s3]
-SDK_SELF_assistant [icon: custom:SELF-WHEEL-WHITE]
+// SELF Assistant Layer
+SELF_assistant [icon: custom:SELF-WHEEL-WHITE] {
+    user_interface string
+    AI_context string
+    PoAI string
+    SDK_integration string
+}
 
-// dApp Components
-dApp_token [icon: aws-lambda]
-dApp_storage [icon: aws-s3]
-dApp_SELF_assistant [icon: custom:SELF-WHEEL-WHITE]
+// SDK Layer
+SDK [icon: code] {
+    SDK_multi_language [icon: aws-codebuild]
+    SDK_token [icon: aws-lambda]
+    SDK_storage [icon: aws-s3]
+    SDK_SELF_assistant [icon: custom:SELF-WHEEL-WHITE]
+}
 
-// SDK Relationships
+// dApp Layer
+dApp [icon: app] {
+    dApp_token [icon: aws-lambda]
+    dApp_storage [icon: aws-s3]
+    dApp_SELF_assistant [icon: custom:SELF-WHEEL-WHITE]
+}
+
+// Block Building Layer
+block_builder [icon: robot] {
+    ML_model [icon: database]
+    transaction_sorter [icon: robot]
+    efficiency_calculator [icon: robot]
+    point_price [icon: robot]
+}
+
+// AI Validator Layer
+AI_validator [icon: robot] {
+    wallet_color [icon: robot]
+    hex_validator [icon: robot]
+    voting_power [icon: robot]
+}
+
+// Smart Contract Layer
+smart_contract [icon: code] {
+    solidity [icon: code]
+    token_creation [icon: aws-lambda]
+    token_operations [icon: aws-lambda]
+    storage_operations [icon: aws-s3]
+}
+
+// SELFSwap Layer
+SELFSwap [icon: exchange] {
+    DEX [icon: exchange]
+    liquidity [icon: pool]
+    trading [icon: chart]
+    cross_chain [icon: network]
+}
+
+// Grid Compute Layer
+grid_compute [icon: grid] {
+    node_network [icon: network]
+    distributed_compute [icon: cpu]
+    TPS_optimization [icon: speed]
+    resource_pooling [icon: database]
+}
+
+// Relationships between layers
+user_node -> SDK
+user_node -> SELF_assistant
+user_node -> PoAI_validator
+
 SDK -> SDK_multi_language
 SDK -> SDK_token
 SDK -> SDK_storage
 SDK -> SDK_SELF_assistant
 
-// dApp Relationships
+SELF_assistant -> SA_user_interface
+SELF_assistant -> SA_AI_context
+SELF_assistant -> SA_PoAI
+SELF_assistant -> SA_SDK_integration
+
+SDK -> dApp
+SDK -> SELFSwap
+SDK -> smart_contract
+
+SELFSwap -> DEX
+SELFSwap -> liquidity
+SELFSwap -> trading
+SELFSwap -> cross_chain
+
 dApp -> dApp_token
 dApp -> dApp_storage
+dApp -> dApp_SELF_assistant
+
+dApp -> grid_compute
+SELFSwap -> grid_compute
+smart_contract -> grid_compute
+
+block_builder -> AI_validator
+block_builder -> SDK
+block_builder -> SELFSwap
+
+AI_validator -> SDK
+AI_validator -> SELFSwap
+AI_validator -> smart_contract
+
+smart_contract -> SELFSwap
+smart_contract -> grid_compute
+smart_contract -> SDK
+
+grid_compute -> node_network
+grid_compute -> distributed_compute
+grid_compute -> TPS_optimization
+grid_compute -> resource_pooling
 dApp -> dApp_SELF_assistant
 
 // Legend

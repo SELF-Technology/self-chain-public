@@ -1,0 +1,136 @@
+@startuml
+
+!define RECTANGLE class
+!define RECTANGLE2 class
+!define RECTANGLE3 class
+!define RECTANGLE4 class
+!define RECTANGLE5 class
+!define RECTANGLE6 class
+!define RECTANGLE7 class
+!define RECTANGLE8 class
+!define RECTANGLE9 class
+!define RECTANGLE10 class
+
+' Colors
+!define BLUE #3498db
+!define PURPLE #9b59b6
+!define ORANGE #e67e22
+!define GREEN #2ecc71
+!define DARK_BLUE #3498db
+!define GRAY #95a5a6
+!define YELLOW #f1c40f
+!define DARK_GREEN #27ae60
+
+' User Layer
+RECTANGLE user_node as "User Node" #BLUE {
+    RECTANGLE cloud_node as "Cloud Node" #BLUE
+    RECTANGLE SELF_assistant as "SELF Assistant" #BLUE
+    RECTANGLE PoAI_validator as "PoAI Validator" #BLUE
+    RECTANGLE SDK as "SDK" #BLUE
+}
+
+' SELF Assistant Layer
+RECTANGLE SELF_assistant_layer as "SELF Assistant" #BLUE {
+    RECTANGLE user_interface as "User Interface" #BLUE
+    RECTANGLE AI_context as "AI Context" #BLUE
+    RECTANGLE PoAI as "PoAI" #BLUE
+    RECTANGLE SDK_integration as "SDK Integration" #BLUE
+}
+
+' SDK Layer
+RECTANGLE SDK_layer as "SDK" #PURPLE {
+    RECTANGLE multi_language as "Multi-language" #PURPLE
+    RECTANGLE token_operations as "Token Operations" #PURPLE
+    RECTANGLE storage as "Storage" #PURPLE
+    RECTANGLE SELF_assistant as "SELF Assistant" #BLUE
+}
+
+' dApp Layer
+RECTANGLE dApp_layer as "dApp" #ORANGE {
+    RECTANGLE SDK as "SDK" #PURPLE
+    RECTANGLE SELF_assistant as "SELF Assistant" #BLUE
+    RECTANGLE token as "Token" #PURPLE
+    RECTANGLE storage as "Storage" #PURPLE
+}
+
+' Block Building Layer
+RECTANGLE block_builder as "Block Builder" #GREEN {
+    RECTANGLE ML_model as "ML Model" #GREEN
+    RECTANGLE transaction_sorter as "Transaction Sorter" #GREEN
+    RECTANGLE efficiency_calculator as "Efficiency Calculator" #GREEN
+    RECTANGLE point_price as "Point Price" #GREEN
+}
+
+' AI Validator Layer
+RECTANGLE AI_validator as "AI Validator" #DARK_BLUE {
+    RECTANGLE wallet_color as "Wallet Color" #DARK_BLUE
+    RECTANGLE hex_validator as "Hex Validator" #DARK_BLUE
+    RECTANGLE voting_power as "Voting Power" #DARK_BLUE
+}
+
+' Smart Contract Layer
+RECTANGLE smart_contract as "Smart Contract" #GRAY {
+    RECTANGLE solidity as "Solidity" #GRAY
+    RECTANGLE token_creation as "Token Creation" #GRAY
+    RECTANGLE token_operations as "Token Operations" #GRAY
+    RECTANGLE storage_operations as "Storage Operations" #GRAY
+}
+
+' SELFSwap Layer
+RECTANGLE SELFSwap as "SELFSwap" #YELLOW {
+    RECTANGLE DEX as "DEX" #YELLOW
+    RECTANGLE liquidity as "Liquidity" #YELLOW
+    RECTANGLE trading as "Trading" #YELLOW
+    RECTANGLE cross_chain as "Cross-chain" #YELLOW
+}
+
+' Grid Compute Layer
+RECTANGLE grid_compute as "Grid Compute" #DARK_GREEN {
+    RECTANGLE node_network as "Node Network" #DARK_GREEN
+    RECTANGLE distributed_compute as "Distributed Compute" #DARK_GREEN
+    RECTANGLE TPS_optimization as "TPS Optimization" #DARK_GREEN
+    RECTANGLE resource_pooling as "Resource Pooling" #DARK_GREEN
+}
+
+' Relationships
+user_node --> cloud_node
+user_node --> SELF_assistant
+user_node --> PoAI_validator
+user_node --> SDK
+
+SDK_layer --> multi_language
+SDK_layer --> token_operations
+SDK_layer --> storage
+SDK_layer --> SELF_assistant
+
+dApp_layer --> SDK
+SELF_assistant_layer --> user_interface
+SELF_assistant_layer --> AI_context
+SELF_assistant_layer --> PoAI
+SELF_assistant_layer --> SDK_integration
+
+block_builder --> ML_model
+block_builder --> transaction_sorter
+block_builder --> efficiency_calculator
+block_builder --> point_price
+
+AI_validator --> wallet_color
+AI_validator --> hex_validator
+AI_validator --> voting_power
+
+smart_contract --> solidity
+smart_contract --> token_creation
+smart_contract --> token_operations
+smart_contract --> storage_operations
+
+SELFSwap --> DEX
+SELFSwap --> liquidity
+SELFSwap --> trading
+SELFSwap --> cross_chain
+
+grid_compute --> node_network
+grid_compute --> distributed_compute
+grid_compute --> TPS_optimization
+grid_compute --> resource_pooling
+
+@enduml
