@@ -171,7 +171,7 @@ graph TD
 
 ## SELF Chain Architecture
 
-![SELF Chain Architecture](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/Diagrams/SELF_Chain_Architecture.png)
+![SELF Chain Architecture](Diagrams/SELF%20Chain%20Architecture.png)
 
 This diagram shows the complete architecture of the SELF Chain system, including all layers and their relationships.
 
