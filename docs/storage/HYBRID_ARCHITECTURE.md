@@ -12,6 +12,18 @@ The SELF Chain hybrid storage architecture combines multiple decentralized stora
 - Permanent file storage
 - Cross-chain file sharing
 
+#### Validation Proof Storage
+- Permanent storage of validation proofs
+- Content-addressable validation records
+- Cross-chain data storage
+- Immutable validation history
+
+#### Use Cases
+- Store validator certificates
+- Store validation proofs
+- Store cross-chain validation data
+- Store reputation history
+
 ### 2. OrbitDB Integration
 - Decentralized database
 - Real-time synchronization
