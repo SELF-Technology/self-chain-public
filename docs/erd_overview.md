@@ -6,12 +6,20 @@ user_node [icon: computer, color: blue] {
     SDK string
 }
 
+# SELF Assistant Layer
+SELF_assistant [icon: robot, color: blue] {
+    user_interface string
+    AI_context string
+    PoAI string
+    SDK_integration string
+}
+
 # SDK Layer
 SDK [icon: code, color: purple] {
     multi_language string
     token_operations string
     storage string
-    AI string
+    SELF_assistant string
 }
 
 # dApp Layer
