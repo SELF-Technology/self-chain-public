@@ -54,7 +54,7 @@ This documentation provides comprehensive technical documentation for the SELF b
 
 ### 10. Storage
 - [/storage/](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/storage:0:0-0:0)
-  - `HYBRID_ARCHITECTURE.md`: Hybrid storage architecture with OrbitDB
+  - `HYBRID_ARCHITECTURE.md`: Hybrid storage architecture (IPFS + OrbitDB)
 
 ### 11. Wire Network
 - [/Wire/](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/Wire:0:0-0:0)
@@ -64,11 +64,12 @@ This documentation provides comprehensive technical documentation for the SELF b
 
 ### 1. Core Architecture
 - Proof-of-AI (PoAI) consensus mechanism
-- Hybrid storage architecture with OrbitDB
+- Hybrid storage architecture (IPFS + OrbitDB)
 - Cross-chain capabilities
 - AI integration with Ollama Cloud
 
 ### 2. Storage Layer
+- Decentralized storage using IPFS
 - Real-time database with OrbitDB
 - Cross-chain data synchronization
 
