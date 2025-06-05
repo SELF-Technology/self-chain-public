@@ -13,33 +13,32 @@
 *.war
 *.ear
 *.jar
-*.zip
-*.tar.gz
-*.tar.bz2
-*.rar
 
 # Maven
 .mvnw
 .mvnw.cmd
 mvnw
 mvnw.cmd
-!.mvn/wrapper/maven-wrapper.jar
-!.mvn/wrapper/maven-wrapper.properties
+.m2/repository
+.m2/wrapper
 
 # IDE
-.idea/
+.idea
 *.iml
 *.iws
 *.ipr
+.vscode/
+
+# Rust
+/target/
+/debug/
+/release/
+**/*.rs.bk
 
 # Build directories
 target/
 out/
 build/
-
-# Rust
-/target/
-**/*.rs.bk
 
 # Logs
 logs
