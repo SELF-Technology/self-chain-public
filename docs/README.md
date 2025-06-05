@@ -186,7 +186,7 @@ This diagram shows the complete documentation structure, with each component lin
 
 ## Contact
 
-For questions or contributions, please contact the SELF development team.
+For questions or contributions, please email [j@self.app](mailto:j@self.app).
 
 ## Documentation References
 
