@@ -180,10 +180,16 @@ This diagram shows the complete documentation structure, with each component lin
 ## Additional Resources
 
 - PoAI Documentation: https://proofofai.com
-- Ollama Cloud Documentation: [Link](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/README.md:0:0-0:0)
-- IPFS Integration Guide: [Link](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/README.md:0:0-0:0)
-- OrbitDB Documentation: [Link](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/README.md:0:0-0:0)
+- Ollama Cloud Documentation: https://ollama.ai/docs
+- IPFS Integration Guide: https://docs.ipfs.tech/
+- OrbitDB Documentation: https://orbitdb.org/docs/
 
 ## Contact
 
 For questions or contributions, please contact the SELF development team.
+
+## Documentation References
+
+- Ollama Cloud: https://ollama.ai/docs
+- IPFS: https://docs.ipfs.tech/
+- OrbitDB: https://orbitdb.org/docs/
