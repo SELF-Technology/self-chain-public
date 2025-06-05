@@ -3,6 +3,23 @@
 ## Overview
 The SELF SDK provides a comprehensive toolkit for interacting with the SELF blockchain and its various components. The SDK supports multiple programming languages and offers a unified interface for blockchain operations.
 
+### Supported Languages
+- Rust (primary implementation)
+- Java (legacy support)
+- JavaScript (web integration)
+- Solidity (smart contract development)
+
+### Key Features
+- Blockchain operations
+- Smart contract integration
+- Storage integration
+- AI capabilities
+- Cross-chain functionality
+- Key management
+- Authentication
+- Local development tools
+- Testing utilities
+
 ## Key Components
 
 ### 1. Core SDK
@@ -28,6 +45,8 @@ The SELF SDK provides a comprehensive toolkit for interacting with the SELF bloc
 - Ollama Cloud integration
 - AI-powered validation
 - Context management
+- Smart contract AI verification
+- Cross-chain AI validation
 
 ## Implementation Details
 
