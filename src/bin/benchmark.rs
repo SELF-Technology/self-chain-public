@@ -3,16 +3,12 @@ use std::path::Path;
 use std::fs;
 use std::env;
 use serde::Deserialize;
-use crate::visualization::BenchmarkVisualizer;
-use crate::benchmark_report::BenchmarkReporter;
-use crate::benchmark_scenarios::BenchmarkScenarioRunner;
-use crate::benchmark_scenarios::BenchmarkScenario;
-use crate::benchmark_scenarios::ScenarioResult;
-use crate::benchmark_scenarios::ScenarioMetrics;
-use crate::benchmark_scenarios::TransactionProfile;
-use crate::benchmark_suite::BenchmarkSuite;
-use crate::grid::advanced_sharding::ShardingManager;
-use crate::monitoring::performance::PerformanceMonitor;
+use visualization::BenchmarkVisualizer;
+use benchmark_report::BenchmarkReporter;
+use benchmark_scenarios::{BenchmarkScenarioRunner, BenchmarkScenario, ScenarioResult, ScenarioMetrics, TransactionProfile};
+use benchmark_suite::BenchmarkSuite;
+use grid::advanced_sharding::ShardingManager;
+use monitoring::performance::PerformanceMonitor;
 
 #[derive(Debug, Deserialize)]
 pub struct BenchmarkConfig {
@@ -27,7 +23,7 @@ pub struct BenchmarkConfigInner {
 
 #[derive(Debug, Deserialize)]
 pub struct ScenarioConfig {
-    pub type: String,
+    pub scenario_type: String,
     pub baseline_tps: Option<u64>,
     pub peak_tps: Option<u64>,
     pub duration: Option<u64>,
@@ -74,7 +70,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Run scenarios
     let mut results = Vec::new();
     for scenario_config in config.benchmark.scenarios {
-        let scenario = match scenario_config.type.as_str() {
+        let scenario = match scenario_config.scenario_type.as_str() {
             "Surge" => BenchmarkScenario::Surge {
                 baseline_tps: scenario_config.baseline_tps.unwrap(),
                 peak_tps: scenario_config.peak_tps.unwrap(),

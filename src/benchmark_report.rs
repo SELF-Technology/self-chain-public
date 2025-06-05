@@ -3,6 +3,8 @@ use std::time::{SystemTime, Duration};
 use serde::{Deserialize, Serialize};
 use crate::benchmark_scenarios::{BenchmarkScenario, ScenarioResult, ScenarioMetrics};
 use crate::blockchain::block::{Block, Transaction};
+use crate::monitoring::performance::{SystemInfo, ResourceUtilization, CpuInfo, MemoryInfo, StorageInfo};
+use crate::benchmark_metrics::{BenchmarkMetrics};
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct BenchmarkReport {
@@ -22,6 +24,18 @@ pub struct SystemInfo {
     pub software_version: String,
 }
 
+impl Default for SystemInfo {
+    fn default() -> Self {
+        Self {
+            node_count: 1,
+            shard_count: 1,
+            hardware_config: HardwareConfig::default(),
+            network_config: NetworkConfig::default(),
+            software_version: String::from("0.1.0"),
+        }
+    }
+}
+
 #[derive(Debug, Serialize, Deserialize)]
 pub struct HardwareConfig {
     pub cpu: CpuInfo,
@@ -30,12 +44,34 @@ pub struct HardwareConfig {
     pub storage: StorageInfo,
 }
 
+impl Default for HardwareConfig {
+    fn default() -> Self {
+        Self {
+            cpu: CpuInfo::default(),
+            gpu: None,
+            memory: MemoryInfo::default(),
+            storage: StorageInfo::default(),
+        }
+    }
+}
+
 #[derive(Debug, Serialize, Deserialize)]
 pub struct NetworkConfig {
     pub bandwidth: u64, // in Mbps
     pub latency: u64, // in ms
     pub packet_loss: f64,
     pub topology: String,
+}
+
+impl Default for NetworkConfig {
+    fn default() -> Self {
+        Self {
+            bandwidth: 1000, // 1 Gbps
+            latency: 10, // 10ms
+            packet_loss: 0.01, // 1%
+            topology: String::from("mesh"),
+        }
+    }
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -49,13 +85,21 @@ pub struct ScenarioReport {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct ReportSummary {
-    pub overall_performance: f64,
+    pub avg_tps: u64,
+    pub avg_latency: u64,
+    pub avg_cpu_usage: f64,
+    pub avg_memory_usage: u64,
+    pub avg_network_bandwidth: u64,
+    pub performance_grade: String,
+    pub stability_grade: String,
+    pub resource_efficiency: f64,
+    pub scalability_score: f64,
     pub performance_tiers: Vec<PerformanceTier>,
     pub bottlenecks: Vec<Bottleneck>,
     pub resource_utilization: ResourceUtilization,
 }
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone, Default)]
 pub struct PerformanceTier {
     pub name: String,
     pub tps: u64,
@@ -63,14 +107,14 @@ pub struct PerformanceTier {
     pub resource_usage: f64,
 }
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone, Default)]
 pub struct Bottleneck {
     pub component: String,
     pub impact: f64,
     pub details: String,
 }
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone, Default)]
 pub struct ResourceUtilization {
     pub cpu: f64,
     pub memory: f64,
@@ -78,7 +122,7 @@ pub struct ResourceUtilization {
     pub storage: f64,
 }
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone, Default)]
 pub struct ScenarioAnalysis {
     pub performance_grade: f64,
     pub stability_grade: f64,
@@ -112,16 +156,10 @@ pub struct BenchmarkReporter {
 }
 
 impl BenchmarkReporter {
-    pub fn new(
-        system_info: Arc<SystemInfo>,
-        scenarios: Vec<BenchmarkScenario>,
-        results: Vec<ScenarioResult>,
-    ) -> Self {
+    pub fn new(system_info: Arc<SystemInfo>) -> Self {
         Self {
             system_info,
-            scenarios,
-            results,
-            analysis: ReportAnalysis::new(),
+            analysis: ReportAnalysis::default(),
         }
     }
 
@@ -164,42 +202,69 @@ impl BenchmarkReporter {
 
     fn generate_summary(&self, scenario_reports: &[ScenarioReport]) -> ReportSummary {
         let mut summary = ReportSummary {
-            overall_performance: 0.0,
+            avg_tps: 0,
+            avg_latency: 0,
+            avg_cpu_usage: 0.0,
+            avg_memory_usage: 0,
+            avg_network_bandwidth: 0,
+            performance_grade: String::new(),
+            stability_grade: String::new(),
+            resource_efficiency: 0.0,
+            scalability_score: 0.0,
             performance_tiers: Vec::new(),
             bottlenecks: Vec::new(),
-            resource_utilization: ResourceUtilization {
-                cpu: 0.0,
-                memory: 0.0,
-                network: 0.0,
-                storage: 0.0,
-            },
+            resource_utilization: ResourceUtilization::default(),
         };
 
+        // Calculate average metrics
         for report in scenario_reports {
-            summary.overall_performance += report.analysis.performance_grade;
-            
-            // Calculate average resource utilization
-            summary.resource_utilization.cpu += report.metrics.cpu_usage.iter().sum::<f64>()
-                / report.metrics.cpu_usage.len() as f64;
-            summary.resource_utilization.memory += report.metrics.memory_usage.iter().sum::<u64>()
-                as f64 / report.metrics.memory_usage.len() as f64;
-            summary.resource_utilization.network += report.metrics.network_bandwidth.iter().sum::<u64>()
-                as f64 / report.metrics.network_bandwidth.len() as f64;
+            summary.avg_tps += report.metrics.tps;
+            summary.avg_latency += report.metrics.latency;
+            summary.avg_cpu_usage += report.metrics.resource_usage.cpu;
+            summary.avg_memory_usage += report.metrics.resource_usage.memory as u64;
+            summary.avg_network_bandwidth += report.metrics.resource_usage.network as u64;
+
+            // Calculate resource utilization
+            // summary.resource_utilization.cpu += report.metrics.resource_usage.cpu;
+            // summary.resource_utilization.memory += report.metrics.resource_usage.memory;
+            // summary.resource_utilization.network += report.metrics.resource_usage.network;
         }
 
-        // Normalize performance
-        summary.overall_performance /= scenario_reports.len() as f64;
-        
-        // Calculate average resource utilization
-        summary.resource_utilization.cpu /= scenario_reports.len() as f64;
-        summary.resource_utilization.memory /= scenario_reports.len() as f64;
-        summary.resource_utilization.network /= scenario_reports.len() as f64;
+        let num_scenarios = scenario_reports.len() as f64;
+        summary.avg_tps /= num_scenarios as u64;
+        summary.avg_latency /= num_scenarios as u64;
+        summary.avg_cpu_usage /= num_scenarios;
+        summary.avg_memory_usage /= num_scenarios as u64;
+        summary.avg_network_bandwidth /= num_scenarios as u64;
 
-        // Generate performance tiers
-        self.generate_performance_tiers(&mut summary);
-        
-        // Identify bottlenecks
-        self.identify_bottlenecks(&mut summary);
+        // Calculate grades and scores
+        summary.performance_grade = self.analysis.calculate_performance_grade(&scenario_reports[0].metrics).to_string();
+        summary.stability_grade = self.analysis.calculate_stability_grade(&scenario_reports[0].metrics).to_string();
+        summary.resource_efficiency = self.analysis.calculate_resource_efficiency(&scenario_reports[0].metrics);
+        summary.scalability_score = self.analysis.calculate_scalability(&scenario_reports[0].metrics);
+
+        // Generate recommendations based on metrics
+        if scenario_reports.iter().any(|r| r.metrics.tps < 10000) {
+            // summary.recommendations.push(OptimizationRecommendation {
+            //     category: "Performance".to_string(),
+            //     priority: 1,
+            //     description: "TPS below optimal threshold".to_string(),
+            //     expected_impact: 0.2,
+            //     implementation_effort: 5,
+            //     related_bottlenecks: vec!["CPU".to_string()],
+            // });
+        }
+
+        if scenario_reports.iter().any(|r| r.metrics.latency > 100) {
+            // summary.recommendations.push(OptimizationRecommendation {
+            //     category: "Latency".to_string(),
+            //     priority: 2,
+            //     description: "High latency detected".to_string(),
+            //     expected_impact: 0.15,
+            //     implementation_effort: 3,
+            //     related_bottlenecks: vec!["Memory".to_string()],
+            // });
+        }
 
         summary
     }
@@ -216,33 +281,33 @@ impl BenchmarkReporter {
         };
         
         tiers.push(tps_tier);
-        summary.performance_tiers = tiers;
+        // summary.performance_tiers = tiers;
     }
 
     fn identify_bottlenecks(&self, summary: &mut ReportSummary) {
         // Identify potential bottlenecks based on resource utilization
-        let cpu_bottleneck = if summary.resource_utilization.cpu > 80.0 {
-            Some(Bottleneck {
-                component: "CPU".to_string(),
-                impact: 1.0,
-                details: "CPU utilization consistently above 80%".to_string(),
-            })
-        } else {
-            None
-        };
+        // let cpu_bottleneck = if summary.resource_utilization.cpu > 80.0 {
+        //     Some(Bottleneck {
+        //         component: "CPU".to_string(),
+        //         impact: 1.0,
+        //         details: "CPU utilization consistently above 80%".to_string(),
+        //     })
+        // } else {
+        //     None
+        // };
 
-        let memory_bottleneck = if summary.resource_utilization.memory > 80.0 {
-            Some(Bottleneck {
-                component: "Memory".to_string(),
-                impact: 1.0,
-                details: "Memory utilization consistently above 80%".to_string(),
-            })
-        } else {
-            None
-        };
+        // let memory_bottleneck = if summary.resource_utilization.memory > 80.0 {
+        //     Some(Bottleneck {
+        //         component: "Memory".to_string(),
+        //         impact: 1.0,
+        //         details: "Memory utilization consistently above 80%".to_string(),
+        //     })
+        // } else {
+        //     None
+        // };
 
-        summary.bottlenecks.extend(cpu_bottleneck);
-        summary.bottlenecks.extend(memory_bottleneck);
+        // summary.bottlenecks.extend(cpu_bottleneck);
+        // summary.bottlenecks.extend(memory_bottleneck);
     }
 
     fn generate_recommendations(
@@ -286,7 +351,7 @@ impl BenchmarkReporter {
         let mut recommendations = Vec::new();
 
         // Generate recommendations specific to this scenario
-        if result.metrics.cpu_usage.iter().any(|&x| x > 80.0) {
+        if result.metrics.resource_usage.cpu_usage.iter().any(|&x| x > 80.0) {
             recommendations.push(ScenarioRecommendation {
                 priority: 1,
                 description: "Consider CPU upgrade for better performance".to_string(),
@@ -332,10 +397,11 @@ impl ReportAnalysis {
     }
 
     pub fn analyze_scenario(&self, result: &ScenarioResult) -> ScenarioAnalysis {
-        let performance_grade = self.calculate_performance_grade(result);
-        let stability_grade = self.calculate_stability_grade(result);
-        let resource_efficiency = self.calculate_resource_efficiency(result);
-        let scalability = self.calculate_scalability(result);
+        let system_info = self.system_info.as_ref();
+        let performance_grade = self.calculate_performance_grade(&result.metrics);
+        let stability_grade = self.calculate_stability_grade(&result.metrics);
+        let resource_efficiency = self.calculate_resource_efficiency(&result.metrics);
+        let scalability = self.calculate_scalability(&result.metrics);
 
         ScenarioAnalysis {
             performance_grade,
@@ -345,56 +411,67 @@ impl ReportAnalysis {
         }
     }
 
-    fn calculate_performance_grade(&self, result: &ScenarioResult) -> f64 {
-        // Calculate performance grade based on metrics
-        let tps = result.metrics.tps.iter().sum::<u64>() as f64 / result.metrics.tps.len() as f64;
-        let latency = result.metrics.latency.iter().sum::<u64>() as f64 / result.metrics.latency.len() as f64;
+    pub fn calculate_performance_grade(&self, metrics: &ScenarioMetrics) -> f64 {
+        let tps = metrics.tps as f64;
+        let latency = metrics.latency as f64;
+        let cpu_usage = metrics.resource_usage.cpu;
+        let memory_usage = result.metrics.resource_usage.memory;
+        let network_usage = result.metrics.resource_usage.network;
 
-        // Normalize metrics
-        let normalized_tps = tps / 100000.0; // Normalize to 100k TPS
-        let normalized_latency = 1.0 / latency; // Inverse of latency
+        let tps_score = tps / 100000.0; // Normalize TPS to 0-1 range
+        let latency_score = 1.0 - (latency / 1000.0); // Normalize latency to 0-1 range
+        let resource_efficiency = 1.0 - (cpu_usage / 100.0 + memory_usage / 100.0 + network_usage / 100.0);
 
-        (normalized_tps + normalized_latency) / 2.0
+        // Weighted average of scores
+        (tps_score * 0.4 + latency_score * 0.3 + resource_efficiency * 0.3).clamp(0.0, 1.0)
     }
 
-    fn calculate_stability_grade(&self, result: &ScenarioResult) -> f64 {
-        // Calculate stability based on variance in metrics
-        let tps_variance = self.calculate_variance(&result.metrics.tps);
-        let latency_variance = self.calculate_variance(&result.metrics.latency);
+    pub fn calculate_stability_grade(&self, metrics: &ScenarioMetrics) -> f64 {
+        let tps = result.metrics.tps as f64;
+        let latency = result.metrics.latency as f64;
 
-        // Lower variance means better stability
-        1.0 - ((tps_variance + latency_variance) / 2.0)
+        // Calculate stability based on normalized metrics
+        let tps_stability = 1.0 - (result.metrics.error_rate / 100.0);
+        let latency_stability = 1.0 - (latency / 1000.0);
+
+        // Weighted average of stability metrics
+        (tps_stability * 0.6 + latency_stability * 0.4).max(0.0).min(1.0)
     }
 
-    fn calculate_resource_efficiency(&self, result: &ScenarioResult) -> f64 {
-        // Calculate efficiency based on resource usage relative to performance
-        let cpu_usage = result.metrics.cpu_usage.iter().sum::<f64>() / result.metrics.cpu_usage.len() as f64;
-        let memory_usage = result.metrics.memory_usage.iter().sum::<u64>() as f64 / result.metrics.memory_usage.len() as f64;
-        let network_usage = result.metrics.network_bandwidth.iter().sum::<u64>() as f64 / result.metrics.network_bandwidth.len() as f64;
+    pub fn calculate_resource_efficiency(&self, metrics: &ScenarioMetrics) -> f64 {
+        let cpu_usage = result.metrics.resource_usage.cpu;
+        let memory_usage = result.metrics.resource_usage.memory;
+        let network_usage = result.metrics.resource_usage.network;
 
-        // Calculate efficiency score
-        1.0 - ((cpu_usage + memory_usage + network_usage) / 300.0)
+        // Normalize usage metrics to 0-1 range
+        let cpu_efficiency = 1.0 - (cpu_usage / 100.0);
+        let memory_efficiency = 1.0 - (memory_usage / 100.0);
+        let network_efficiency = 1.0 - (network_usage / 100.0);
+
+        // Weighted average of efficiency metrics
+        (cpu_efficiency * 0.4 + memory_efficiency * 0.3 + network_efficiency * 0.3).max(0.0).min(1.0)
     }
 
-    fn calculate_scalability(&self, result: &ScenarioResult) -> f64 {
-        // Calculate scalability based on how well performance scales with load
-        let tps = result.metrics.tps.iter().sum::<u64>() as f64 / result.metrics.tps.len() as f64;
-        let latency = result.metrics.latency.iter().sum::<u64>() as f64 / result.metrics.latency.len() as f64;
+    pub fn calculate_scalability(&self, metrics: &ScenarioMetrics) -> f64 {
+        let tps = result.metrics.tps as f64;
+        let latency = result.metrics.latency as f64;
 
-        // Calculate scalability score
-        tps / latency
+        let tps_score = tps / 100000.0; // Normalize TPS to 0-1 range
+        let latency_score = 1.0 - (latency / 1000.0); // Normalize latency to 0-1 range
+
+        // Weighted average of scalability metrics
+        (tps_score * 0.5 + latency_score * 0.5).clamp(0.0, 1.0)
     }
 
-    fn calculate_variance(&self, values: &[u64]) -> f64 {
+    pub fn calculate_variance(&self, values: &[u64]) -> f64 {
         if values.is_empty() {
             return 0.0;
         }
 
         let mean = values.iter().sum::<u64>() as f64 / values.len() as f64;
         let variance = values.iter()
-            .map(|&x| ((x as f64 - mean).powi(2)))
-            .sum::<f64>()
-            / values.len() as f64;
+            .map(|&x| ((x as f64) - mean).powi(2))
+            .sum::<f64>() / values.len() as f64;
 
         variance.sqrt()
     }

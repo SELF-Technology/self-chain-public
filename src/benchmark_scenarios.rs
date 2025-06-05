@@ -6,8 +6,10 @@ use crate::blockchain::block::{Block, Transaction};
 use crate::benchmark_suite::BenchmarkSuite;
 use crate::grid::advanced_sharding::ShardingManager;
 use crate::monitoring::performance::PerformanceMonitor;
+use crate::benchmark_metrics::{ScenarioMetrics, ScenarioResult, BenchmarkError};
+use rand::Rng;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub enum BenchmarkScenario {
     /// Simulates a sudden surge of transactions
     Surge {
@@ -40,10 +42,9 @@ pub enum BenchmarkScenario {
     },
 }
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct TransactionProfile {
     pub frequency: f64, // transactions per second
-    pub size: usize,    // transaction size in bytes
     pub complexity: u8, // validation complexity (1-10)
     pub priority: u8,   // transaction priority (1-10)
 }
@@ -220,40 +221,39 @@ impl BenchmarkScenarioRunner {
     }
 
     fn create_transaction(&self) -> Transaction {
-        Transaction {
-            sender: format!("sender_{}", rand::random::<u64>()),
-            recipient: format!("recipient_{}", rand::random::<u64>()),
-            amount: rand::random::<u64>() % 1000000,
-            signature: format!("signature_{}", rand::random::<u64>()),
-            timestamp: SystemTime::now().duration_since(SystemTime::UNIX_EPOCH).unwrap().as_secs(),
-            nonce: rand::random::<u64>(),
-        }
+        let mut rng = rand::thread_rng();
+        
+        Transaction::new(
+            format!("tx_{}", rng.gen::<u64>()),
+            format!("sender_{}", rng.gen::<u64>()),
+            format!("recipient_{}", rng.gen::<u64>()),
+            rng.gen::<u64>() % 1000000,
+            format!("signature_{}", rng.gen::<u64>()),
+            rng.gen::<u64>(),
+            SystemTime::now().duration_since(SystemTime::UNIX_EPOCH).unwrap().as_secs(),
+        )
     }
 
     fn create_transaction_with_profile(&self, profile: &TransactionProfile) -> Transaction {
         let mut tx = self.create_transaction();
         
-        // Adjust transaction size based on profile
-        tx.signature = format!("{}", "0".repeat(profile.size));
-        
+        // Adjust transaction amount based on profile
         // Adjust validation complexity
-        tx.amount = profile.complexity as u64 * 100000;
+        tx.amount = (profile.complexity as u64) * 100000;
         
         tx
     }
 }
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone, Default)]
 pub struct ScenarioMetrics {
-    pub tps: Vec<u64>,
-    pub latency: Vec<u64>,
-    pub memory_usage: Vec<u64>,
-    pub cpu_usage: Vec<f64>,
-    pub network_bandwidth: Vec<u64>,
-    pub validation_time: Vec<u64>,
-    pub block_time: Vec<u64>,
-    pub cache_hits: Vec<u64>,
-    pub cache_misses: Vec<u64>,
+    pub tps: u64,
+    pub latency: u64,
+    pub resource_usage: ResourceUtilization,
+    pub error_rate: f64,
+    pub scalability_score: f64,
+    pub stability_score: f64,
+    pub bottlenecks: Vec<Bottleneck>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
