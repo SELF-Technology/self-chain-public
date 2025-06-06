@@ -8,7 +8,7 @@ This documentation provides comprehensive technical documentation for the SELF b
 
 ### 1. Architecture Documentation
 - [Architecture/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Architecture)
-  - [SELF_chain_architecture.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Architecture/SELF_chain_architecture.md): Comprehensive system architecture
+  - [Self_chain_architecture.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Architecture/Self_chain_architecture.md): Comprehensive system architecture
 
 ### 2. Consensus
 - [PoAI/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/PoAI)
@@ -49,8 +49,8 @@ This documentation provides comprehensive technical documentation for the SELF b
 ### 9. SDK
 - [SDK/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/SDK)
   - [README.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/SDK/README.md): SDK overview and features
-  - [Token_operations.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/SDK/Token_operations.md): Token operations documentation
-  - [Storage_integration.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/SDK/Storage_integration.md): Storage integration documentation
+  - [Token_Operations.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/SDK/Token_Operations.md): Token operations documentation
+  - [Storage_Integration.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/SDK/Storage_Integration.md): Storage integration documentation
 
 ### 10. Security
 - [Security/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Security)
