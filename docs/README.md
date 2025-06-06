@@ -10,7 +10,11 @@ This documentation provides comprehensive technical documentation for the SELF b
 - [architecture/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/architecture)
   - [SELF_chain_architecture.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/architecture/SELF_chain_architecture.md): Comprehensive system architecture
 
-### 2. API Documentation
+### 2. Consensus
+- [PoAI/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/PoAI)
+  - [TAXONOMY.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/PoAI/TAXONOMY.md): PoAI taxonomy and classification
+
+### 3. API Documentation
 - [api/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/api)
   - [API_DOCUMENTATION.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/api/API_DOCUMENTATION.md): Comprehensive API reference
 
