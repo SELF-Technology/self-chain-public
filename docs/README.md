@@ -7,59 +7,59 @@ This documentation provides comprehensive technical documentation for the SELF b
 ## Core Documentation Structure
 
 ### 1. Architecture Documentation
-- [architecture/](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/architecture:0:0-0:0)
-  - [SELF_chain_architecture.md](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/architecture/SELF_chain_architecture.md:0:0-0:0): Comprehensive system architecture
-- [Diagrams/](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/Diagrams:0:0-0:0)
-  - [SELF_Chain_Architecture](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/Diagrams/SELF_Chain_Architecture:0:0-0:0): Comprehensive system architecture diagram
+- [architecture/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/architecture)
+  - [SELF_chain_architecture.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/architecture/SELF_chain_architecture.md): Comprehensive system architecture
+- [Diagrams/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Diagrams)
+  - [SELF_Chain_Architecture](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/Diagrams/SELF_Chain_Architecture.png): Comprehensive system architecture diagram
 
 ### 2. API Documentation
-- [api/](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/api:0:0-0:0)
-  - [API_DOCUMENTATION.md](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/api/API_DOCUMENTATION.md:0:0-0:0): Comprehensive API reference
-  - [tps_optimization.md](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/api/tps_optimization.md:0:0-0:0): Performance optimization details
-  - [advanced_tps_optimization.md](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/api/advanced_tps_optimization.md:0:0-0:0): Advanced optimization techniques
+- [api/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/api)
+  - [API_DOCUMENTATION.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/api/API_DOCUMENTATION.md): Comprehensive API reference
+  - [tps_optimization.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/api/tps_optimization.md): Performance optimization details
+  - [advanced_tps_optimization.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/api/advanced_tps_optimization.md): Advanced optimization techniques
 
 ### 3. Development
-- [development/](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/development:0:0-0:0)
-  - [CODE_STYLE_GUIDE.md](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/development/CODE_STYLE_GUIDE.md:0:0-0:0): Code style and conventions
-  - [TESTING_REQUIREMENTS.md](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/development/TESTING_REQUIREMENTS.md:0:0-0:0): Testing framework and requirements
+- [development/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/development)
+  - [CODE_STYLE_GUIDE.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/development/CODE_STYLE_GUIDE.md): Code style and conventions
+  - [TESTING_REQUIREMENTS.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/development/TESTING_REQUIREMENTS.md): Testing framework and requirements
 
 ### 4. Governance
-- [governance/](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/governance:0:0-0:0)
-  - [AI_TRAINING_SYSTEM.md](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/governance/AI_TRAINING_SYSTEM.md:0:0-0:0): AI governance documentation
-  - [GOVERNANCE_IMPLEMENTATION.md](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/governance/GOVERNANCE_IMPLEMENTATION.md:0:0-0:0): Governance implementation details
+- [governance/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/governance)
+  - [AI_TRAINING_SYSTEM.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/governance/AI_TRAINING_SYSTEM.md): AI governance documentation
+  - [GOVERNANCE_IMPLEMENTATION.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/governance/GOVERNANCE_IMPLEMENTATION.md): Governance implementation details
 
 ### 5. Integration
-- [integration/](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/integration:0:0-0:0)
-  - [COINBASE_INTEGRATION.md](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/integration/COINBASE_INTEGRATION.md:0:0-0:0): Coinbase integration details
-  - [ROSETTA_ERC20_INTEGRATION.md](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/integration/ROSETTA_ERC20_INTEGRATION.md:0:0-0:0): Rosetta ERC20 integration
+- [integration/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/integration)
+  - [COINBASE_INTEGRATION.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/integration/COINBASE_INTEGRATION.md): Coinbase integration details
+  - [ROSETTA_ERC20_INTEGRATION.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/integration/ROSETTA_ERC20_INTEGRATION.md): Rosetta ERC20 integration
 
 ### 6. Monitoring
-- [monitoring/](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/monitoring:0:0-0:0)
-  - [monitoring_and_alerting.md](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/monitoring/monitoring_and_alerting.md:0:0-0:0): Monitoring system documentation
+- [monitoring/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/monitoring)
+  - [monitoring_and_alerting.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/monitoring/monitoring_and_alerting.md): Monitoring system documentation
 
 ### 7. Performance
-- [performance/](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/performance:0:0-0:0)
-  - [tps_optimization.md](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/performance/tps_optimization.md:0:0-0:0): Transaction processing optimization
-  - [advanced_tps_optimization.md](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/performance/advanced_tps_optimization.md:0:0-0:0): Advanced optimization techniques
+- [performance/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/performance)
+  - [tps_optimization.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/performance/tps_optimization.md): Transaction processing optimization
+  - [advanced_tps_optimization.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/performance/advanced_tps_optimization.md): Advanced optimization techniques
 
 ### 8. SDK
-- [sdk/](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/sdk:0:0-0:0)
-  - [README.md](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/sdk/README.md:0:0-0:0): SDK overview and features
-  - [token_operations.md](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/sdk/token_operations.md:0:0-0:0): Token operations documentation
-  - [storage_integration.md](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/sdk/storage_integration.md:0:0-0:0): Storage integration documentation
+- [sdk/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/sdk)
+  - [README.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/sdk/README.md): SDK overview and features
+  - [token_operations.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/sdk/token_operations.md): Token operations documentation
+  - [storage_integration.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/sdk/storage_integration.md): Storage integration documentation
 
 ### 9. Security
-- [security/](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/security:0:0-0:0)
-  - [AI_CAPACITY_IMPLEMENTATION.md](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/security/AI_CAPACITY_IMPLEMENTATION.md:0:0-0:0): AI capacity implementation
-  - [SECURITY.md](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/security/SECURITY.md:0:0-0:0): Core security documentation
+- [security/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/security)
+  - [AI_CAPACITY_IMPLEMENTATION.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/security/AI_CAPACITY_IMPLEMENTATION.md): AI capacity implementation
+  - [SECURITY.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/security/SECURITY.md): Core security documentation
 
 ### 10. Storage
-- [storage/](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/storage:0:0-0:0)
-  - [HYBRID_ARCHITECTURE.md](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/storage/HYBRID_ARCHITECTURE.md:0:0-0:0): Hybrid storage architecture (IPFS + OrbitDB)
+- [storage/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/storage)
+  - [HYBRID_ARCHITECTURE.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/storage/HYBRID_ARCHITECTURE.md): Hybrid storage architecture (IPFS + OrbitDB)
 
 ### 11. Wire Network
-- [Wire/](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/Wire:0:0-0:0)
-  - [WIRE_NETWORK_INTEGRATION.md](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/Wire/WIRE_NETWORK_INTEGRATION.md:0:0-0:0): Wire Network integration details
+- [Wire/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Wire)
+  - [WIRE_NETWORK_INTEGRATION.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/Wire/WIRE_NETWORK_INTEGRATION.md): Wire Network integration details
 
 ## Key Technical Components
 
