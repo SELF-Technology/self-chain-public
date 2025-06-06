@@ -15,8 +15,8 @@ This documentation provides comprehensive technical documentation for the SELF b
   - [Taxonomy.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/PoAI/Taxonomy.md): PoAI taxonomy and classification
 
 ### 3. API Documentation
-- [Api/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Api)
-  - [Api_documentation.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Api/Api_documentation.md): Comprehensive API reference
+- [API/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/API)
+  - [Api_documentation.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/API/Api_documentation.md): Comprehensive API reference
 
 ### 4. Development
 - [Development/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Development)
@@ -47,10 +47,10 @@ This documentation provides comprehensive technical documentation for the SELF b
   - [Advanced_Tps_Optimization.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Performance/Advanced_Tps_Optimization.md): Advanced optimization techniques
 
 ### 9. SDK
-- [Sdk/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Sdk)
-  - [README.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Sdk/README.md): SDK overview and features
-  - [Token_operations.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Sdk/Token_operations.md): Token operations documentation
-  - [Storage_integration.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Sdk/Storage_integration.md): Storage integration documentation
+- [SDK/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/SDK)
+  - [README.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/SDK/README.md): SDK overview and features
+  - [Token_operations.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/SDK/Token_operations.md): Token operations documentation
+  - [Storage_integration.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/SDK/Storage_integration.md): Storage integration documentation
 
 ### 10. Security
 - [Security/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Security)
