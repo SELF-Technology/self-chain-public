@@ -18,6 +18,8 @@ This documentation provides comprehensive technical documentation for the SELF b
 - [development/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/development)
   - [CODE_STYLE_GUIDE.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/development/CODE_STYLE_GUIDE.md): Code style and conventions
   - [TESTING_REQUIREMENTS.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/development/TESTING_REQUIREMENTS.md): Testing framework and requirements
+  - [SELFScript/SELFSCRIPT_SPEC.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/SELFScript/SELFSCRIPT_SPEC.md): SELFScript specification
+  - [SELFScript/SELFSCRIPT_DEVELOPER_GUIDE.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/SELFScript/SELFSCRIPT_DEVELOPER_GUIDE.md): SELFScript developer guide
 
 ### 4. Governance
 - [governance/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/governance)
