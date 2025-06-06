@@ -11,7 +11,6 @@ This documentation provides comprehensive technical documentation for the SELF b
   - `SELF_chain_architecture.md`: Comprehensive system architecture
 - [/Diagrams/](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/Diagrams:0:0-0:0)
   - `SELF_Chain_Architecture`: Comprehensive system architecture diagram
-  - Other architectural diagrams and visualizations
 
 ### 2. API Documentation
 - [/api/](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-public/docs/api:0:0-0:0)
