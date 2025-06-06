@@ -28,6 +28,8 @@ This documentation provides comprehensive technical documentation for the SELF b
 - [integration/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/integration)
   - [COINBASE_INTEGRATION.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/integration/COINBASE_INTEGRATION.md): Coinbase integration details
   - [ROSETTA_ERC20_INTEGRATION.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/integration/ROSETTA_ERC20_INTEGRATION.md): Rosetta ERC20 integration
+  - [Minima/backward_compatibility.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/integration/Minima/backward_compatibility.md): Minima backward compatibility
+  - [Wire/WIRE_NETWORK_INTEGRATION.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/integration/Wire/WIRE_NETWORK_INTEGRATION.md): Wire Network integration
 
 ### 6. Monitoring
 - [monitoring/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/monitoring)
@@ -52,10 +54,6 @@ This documentation provides comprehensive technical documentation for the SELF b
 ### 10. Storage
 - [storage/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/storage)
   - [HYBRID_ARCHITECTURE.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/storage/HYBRID_ARCHITECTURE.md): Hybrid storage architecture (IPFS + OrbitDB)
-
-### 11. Wire Network
-- [Wire/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Wire)
-  - [WIRE_NETWORK_INTEGRATION.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Wire/WIRE_NETWORK_INTEGRATION.md): Wire Network integration details
 
 ## Key Technical Components
 
