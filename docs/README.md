@@ -27,8 +27,8 @@ This documentation provides comprehensive technical documentation for the SELF b
 
 ### 5. Governance
 - [Governance/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Governance)
-  - [ai_training_system.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Governance/ai_training_system.md): AI governance documentation
-  - [governance_implementation.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Governance/governance_implementation.md): Governance implementation details
+  - [Ai_training_system.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Governance/Ai_training_system.md): AI governance documentation
+  - [Governance_implementation.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Governance/Governance_implementation.md): Governance implementation details
 
 ### 6. Integration
 - [Integration/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Integration)
