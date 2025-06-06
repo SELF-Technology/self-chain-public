@@ -9,14 +9,10 @@ This documentation provides comprehensive technical documentation for the SELF b
 ### 1. Architecture Documentation
 - [architecture/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/architecture)
   - [SELF_chain_architecture.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/architecture/SELF_chain_architecture.md): Comprehensive system architecture
-- [Diagrams/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Diagrams)
-  - [SELF_Chain_Architecture](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Diagrams/SELF_Chain_Architecture.png): Comprehensive system architecture diagram
 
 ### 2. API Documentation
 - [api/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/api)
   - [API_DOCUMENTATION.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/api/API_DOCUMENTATION.md): Comprehensive API reference
-  - [tps_optimization.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/api/tps_optimization.md): Performance optimization details
-  - [advanced_tps_optimization.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/api/advanced_tps_optimization.md): Advanced optimization techniques
 
 ### 3. Development
 - [development/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/development)
@@ -51,7 +47,7 @@ This documentation provides comprehensive technical documentation for the SELF b
 ### 9. Security
 - [security/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/security)
   - [AI_CAPACITY_IMPLEMENTATION.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/security/AI_CAPACITY_IMPLEMENTATION.md): AI capacity implementation
-  - [SECURITY.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/security/SECURITY.md): Core security documentation
+  - [overview.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/security/overview.md): Core security documentation
 
 ### 10. Storage
 - [storage/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/storage)
