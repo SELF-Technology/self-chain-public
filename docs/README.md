@@ -8,58 +8,58 @@ This documentation provides comprehensive technical documentation for the SELF b
 
 ### 1. Architecture Documentation
 - [architecture/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/architecture)
-  - [SELF_chain_architecture.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/architecture/SELF_chain_architecture.md): Comprehensive system architecture
+  - [SELF_chain_architecture.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/architecture/SELF_chain_architecture.md): Comprehensive system architecture
 - [Diagrams/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Diagrams)
-  - [SELF_Chain_Architecture](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/Diagrams/SELF_Chain_Architecture.png): Comprehensive system architecture diagram
+  - [SELF_Chain_Architecture](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Diagrams/SELF_Chain_Architecture.png): Comprehensive system architecture diagram
 
 ### 2. API Documentation
 - [api/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/api)
-  - [API_DOCUMENTATION.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/api/API_DOCUMENTATION.md): Comprehensive API reference
-  - [tps_optimization.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/api/tps_optimization.md): Performance optimization details
-  - [advanced_tps_optimization.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/api/advanced_tps_optimization.md): Advanced optimization techniques
+  - [API_DOCUMENTATION.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/api/API_DOCUMENTATION.md): Comprehensive API reference
+  - [tps_optimization.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/api/tps_optimization.md): Performance optimization details
+  - [advanced_tps_optimization.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/api/advanced_tps_optimization.md): Advanced optimization techniques
 
 ### 3. Development
 - [development/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/development)
-  - [CODE_STYLE_GUIDE.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/development/CODE_STYLE_GUIDE.md): Code style and conventions
-  - [TESTING_REQUIREMENTS.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/development/TESTING_REQUIREMENTS.md): Testing framework and requirements
+  - [CODE_STYLE_GUIDE.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/development/CODE_STYLE_GUIDE.md): Code style and conventions
+  - [TESTING_REQUIREMENTS.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/development/TESTING_REQUIREMENTS.md): Testing framework and requirements
 
 ### 4. Governance
 - [governance/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/governance)
-  - [AI_TRAINING_SYSTEM.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/governance/AI_TRAINING_SYSTEM.md): AI governance documentation
-  - [GOVERNANCE_IMPLEMENTATION.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/governance/GOVERNANCE_IMPLEMENTATION.md): Governance implementation details
+  - [AI_TRAINING_SYSTEM.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/governance/AI_TRAINING_SYSTEM.md): AI governance documentation
+  - [GOVERNANCE_IMPLEMENTATION.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/governance/GOVERNANCE_IMPLEMENTATION.md): Governance implementation details
 
 ### 5. Integration
 - [integration/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/integration)
-  - [COINBASE_INTEGRATION.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/integration/COINBASE_INTEGRATION.md): Coinbase integration details
-  - [ROSETTA_ERC20_INTEGRATION.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/integration/ROSETTA_ERC20_INTEGRATION.md): Rosetta ERC20 integration
+  - [COINBASE_INTEGRATION.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/integration/COINBASE_INTEGRATION.md): Coinbase integration details
+  - [ROSETTA_ERC20_INTEGRATION.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/integration/ROSETTA_ERC20_INTEGRATION.md): Rosetta ERC20 integration
 
 ### 6. Monitoring
 - [monitoring/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/monitoring)
-  - [monitoring_and_alerting.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/monitoring/monitoring_and_alerting.md): Monitoring system documentation
+  - [monitoring_and_alerting.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/monitoring/monitoring_and_alerting.md): Monitoring system documentation
 
 ### 7. Performance
 - [performance/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/performance)
-  - [tps_optimization.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/performance/tps_optimization.md): Transaction processing optimization
-  - [advanced_tps_optimization.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/performance/advanced_tps_optimization.md): Advanced optimization techniques
+  - [tps_optimization.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/performance/tps_optimization.md): Transaction processing optimization
+  - [advanced_tps_optimization.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/performance/advanced_tps_optimization.md): Advanced optimization techniques
 
 ### 8. SDK
 - [sdk/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/sdk)
-  - [README.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/sdk/README.md): SDK overview and features
-  - [token_operations.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/sdk/token_operations.md): Token operations documentation
-  - [storage_integration.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/sdk/storage_integration.md): Storage integration documentation
+  - [README.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/sdk/README.md): SDK overview and features
+  - [token_operations.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/sdk/token_operations.md): Token operations documentation
+  - [storage_integration.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/sdk/storage_integration.md): Storage integration documentation
 
 ### 9. Security
 - [security/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/security)
-  - [AI_CAPACITY_IMPLEMENTATION.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/security/AI_CAPACITY_IMPLEMENTATION.md): AI capacity implementation
-  - [SECURITY.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/security/SECURITY.md): Core security documentation
+  - [AI_CAPACITY_IMPLEMENTATION.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/security/AI_CAPACITY_IMPLEMENTATION.md): AI capacity implementation
+  - [SECURITY.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/security/SECURITY.md): Core security documentation
 
 ### 10. Storage
 - [storage/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/storage)
-  - [HYBRID_ARCHITECTURE.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/storage/HYBRID_ARCHITECTURE.md): Hybrid storage architecture (IPFS + OrbitDB)
+  - [HYBRID_ARCHITECTURE.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/storage/HYBRID_ARCHITECTURE.md): Hybrid storage architecture (IPFS + OrbitDB)
 
 ### 11. Wire Network
 - [Wire/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Wire)
-  - [WIRE_NETWORK_INTEGRATION.md](https://raw.githubusercontent.com/SELF-Technology/self-chain-public/main/docs/Wire/WIRE_NETWORK_INTEGRATION.md): Wire Network integration details
+  - [WIRE_NETWORK_INTEGRATION.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Wire/WIRE_NETWORK_INTEGRATION.md): Wire Network integration details
 
 ## Key Technical Components
 
