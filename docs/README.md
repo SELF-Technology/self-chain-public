@@ -44,7 +44,7 @@ This documentation provides comprehensive technical documentation for the SELF b
 ### 8. Performance
 - [Performance/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Performance)
   - [TPS_Optimization.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Performance/TPS_Optimization.md): Transaction Processing Optimization
-  - [Advanced_Tps_Optimization.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Performance/Advanced_TPS_Optimization.md): Advanced Optimization Techniques
+  - [Advanced_TPS_Optimization.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Performance/Advanced_TPS_Optimization.md): Advanced Optimization Techniques
 
 ### 9. SDK
 - [SDK/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/SDK)
