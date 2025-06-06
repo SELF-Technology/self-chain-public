@@ -16,7 +16,7 @@ This documentation provides comprehensive technical documentation for the SELF b
 
 ### 3. API Documentation
 - [API/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/API)
-  - [API_DOCUMENTATION.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/API/API_DOCUMENTATION.md): Comprehensive API reference
+  - [Api_documentation.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/API/Api_documentation.md): Comprehensive API reference
 
 ### 4. Development
 - [Development/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Development)
