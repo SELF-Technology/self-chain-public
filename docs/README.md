@@ -15,20 +15,20 @@ This documentation provides comprehensive technical documentation for the SELF b
   - [Taxonomy.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/PoAI/Taxonomy.md): PoAI taxonomy and classification
 
 ### 3. API Documentation
-- [api/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/api)
-  - [Api_documentation.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/api/Api_documentation.md): Comprehensive API reference
+- [API/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/API)
+  - [Api_documentation.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/API/Api_documentation.md): Comprehensive API reference
 
 ### 4. Development
 - [Development/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Development)
   - [Code_Style_Guide.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Development/Code_Style_Guide.md): Code style and conventions
   - [Testing_Requirements.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Development/Testing_Requirements.md): Testing framework and requirements
-  - [SELFScript/Selfscript_spec.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/SELFScript/Selfscript_spec.md): SelfScript specification
-  - [SELFScript/Selfscript_developer_guide.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/SELFScript/Selfscript_developer_guide.md): SelfScript developer guide
+  - [SELFScript/SELFSCRIPT_SPEC.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/SELFScript/SELFSCRIPT_SPEC.md): SelfScript specification
+  - [SELFScript/SELFSCRIPT_DEVELOPER_GUIDE.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/SELFScript/SELFSCRIPT_DEVELOPER_GUIDE.md): SelfScript developer guide
 
 ### 5. Governance
 - [Governance/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Governance)
-  - [Ai_training_system.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Governance/Ai_training_system.md): AI governance documentation
-  - [Governance_implementation.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Governance/Governance_implementation.md): Governance implementation details
+  - [ai_training_system.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Governance/ai_training_system.md): AI governance documentation
+  - [governance_implementation.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Governance/governance_implementation.md): Governance implementation details
 
 ### 6. Integration
 - [Integration/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Integration)
@@ -47,10 +47,10 @@ This documentation provides comprehensive technical documentation for the SELF b
   - [Advanced_Tps_Optimization.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Performance/Advanced_Tps_Optimization.md): Advanced optimization techniques
 
 ### 9. SDK
-- [sdk/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/sdk)
-  - [README.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/sdk/README.md): SDK overview and features
-  - [Token_operations.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/sdk/Token_operations.md): Token operations documentation
-  - [Storage_integration.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/sdk/Storage_integration.md): Storage integration documentation
+- [SDK/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/SDK)
+  - [README.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/SDK/README.md): SDK overview and features
+  - [Token_operations.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/SDK/Token_operations.md): Token operations documentation
+  - [Storage_integration.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/SDK/Storage_integration.md): Storage integration documentation
 
 ### 10. Security
 - [Security/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Security)
