@@ -135,6 +135,10 @@ This documentation uses several tools and technologies:
    - Step-by-step guides
    - Visual aids
 
+## Contact
+
+For questions, please email [j@self.app](mailto:j@self.app).
+
 ## Directory Structure
 
 ```mermaid
