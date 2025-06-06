@@ -20,8 +20,8 @@ This documentation provides comprehensive technical documentation for the SELF b
 
 ### 4. Development
 - [development/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/development)
-  - [Code_style_guide.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/development/Code_style_guide.md): Code style and conventions
-  - [Testing_requirements.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/development/Testing_requirements.md): Testing framework and requirements
+  - [Code_Style_Guide.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/development/Code_Style_Guide.md): Code style and conventions
+  - [Testing_Requirements.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/development/Testing_Requirements.md): Testing framework and requirements
   - [SelfScript/Selfscript_spec.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/SelfScript/Selfscript_spec.md): SelfScript specification
   - [SelfScript/Selfscript_developer_guide.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/SelfScript/Selfscript_developer_guide.md): SelfScript developer guide
 
@@ -32,10 +32,10 @@ This documentation provides comprehensive technical documentation for the SELF b
 
 ### 6. Integration
 - [integration/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/integration)
-  - [Coinbase_integration.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/integration/Coinbase_integration.md): Coinbase integration details
-  - [Rosetta_erc20_integration.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/integration/Rosetta_erc20_integration.md): Rosetta ERC20 integration
+  - [Coinbase_Integration.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/integration/Coinbase_Integration.md): Coinbase integration details
+  - [Rosetta_Erc20_Integration.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/integration/Rosetta_Erc20_Integration.md): Rosetta ERC20 integration
   - [Minima/backward_compatibility.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/integration/Minima/backward_compatibility.md): Minima backward compatibility
-  - [Wire/wire_network_integration.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/integration/Wire/wire_network_integration.md): Wire Network integration
+  - [Wire/Wire_Network_Integration.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/integration/Wire/Wire_Network_Integration.md): Wire Network integration
 
 ### 7. Monitoring
 - [monitoring/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/monitoring)
