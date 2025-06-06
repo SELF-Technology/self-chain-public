@@ -8,7 +8,7 @@ This documentation provides comprehensive technical documentation for the SELF b
 
 ### 1. Architecture Documentation
 - [Architecture/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Architecture)
-  - [Self_chain_architecture.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Architecture/Self_chain_architecture.md): Comprehensive system architecture
+  - [SELF_Chain_Architecture.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Architecture/SELF_Chain_Architecture.md): Comprehensive system architecture
 
 ### 2. Consensus
 - [PoAI/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/PoAI)
