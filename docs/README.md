@@ -22,7 +22,7 @@ This documentation provides comprehensive technical documentation for the SELF b
 - [Development/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Development)
   - [Code_Style_Guide.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Development/Code_Style_Guide.md): Code style and conventions
   - [Testing_Requirements.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Development/Testing_Requirements.md): Testing framework and requirements
-  - [SELFScript/SELFScript_Spec.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/SELFScript/SELFScript_SPEC.md): SELFScript specification
+  - [SELFScript/SELFScript_Spec.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/SELFScript/SELFScript_Spec.md): SELFScript Specification
   - [SELFScript/SELFScript_Developer_Guide.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/SELFScript/SELFScript_Developer_Guide.md): SELFScript Developer Guide
 
 ### 5. Governance
@@ -54,7 +54,7 @@ This documentation provides comprehensive technical documentation for the SELF b
 
 ### 10. Security
 - [Security/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Security)
-  - [AI_Capacity_Implementation.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Security/Ai_Capacity_Implementation.md): AI capacity implementation
+  - [AI_Capacity_Implementation.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Security/Ai_Capacity_Implementation.md): AI Capacity Implementation
   - [Overview.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Security/Overview.md): Security Overview Documentation
 
 ### 11. Storage
