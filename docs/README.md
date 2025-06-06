@@ -64,23 +64,55 @@ This documentation provides comprehensive technical documentation for the SELF b
 - Hybrid storage architecture (IPFS + OrbitDB)
 - Cross-chain capabilities
 - AI integration with Ollama Cloud
+- Advanced sharding implementation
+- Compute distribution system
+- Resource optimization
+- Load balancing
 
 ### 2. Storage Layer
 - Decentralized storage using IPFS
 - Real-time database with OrbitDB
 - Cross-chain data synchronization
+- Advanced sharding
+- Storage optimization
+- Data consistency
 
 ### 3. AI Integration
 - Ollama Cloud integration
-- Context-aware AI assistants
+- Context management
 - AI-powered validation
+- Assistant functionality
 - Validator reputation system
+- AI-powered security validation
 
 ### 4. Security Features
 - Decentralized key management
 - Transaction signing and verification
 - Network security
 - AI-powered security validation
+- Validator reputation system
+- Context-aware security
+
+### 5. SDK Layer
+- Multi-language support (Rust, Java, JavaScript, Solidity)
+- Token operations
+- Storage integration
+- AI capabilities
+- Cross-chain functionality
+- Key management
+- Authentication
+- Local development tools
+- Testing utilities
+- Integration examples
+
+### 6. Grid Compute
+- Advanced sharding implementation
+- Compute distribution
+- Resource optimization
+- Load balancing
+- Performance monitoring
+- Resource allocation
+- Fault tolerance
 
 ## Documentation Tools
 
@@ -90,16 +122,36 @@ This documentation uses several tools and technologies:
    - Interactive diagram generation
    - GitHub rendering support
    - Architecture visualization
+   - Real-time updates
+   - Flowchart support
 
 2. **Markdown**
    - Structured documentation
    - Easy maintenance
    - GitHub compatibility
+   - Cross-referencing
+   - Code highlighting
 
 3. **Version Control**
    - Git integration
    - Documentation history
    - Branch management
+   - Change tracking
+   - Collaboration support
+
+4. **Development Tools**
+   - Local development environment
+   - Testing utilities
+   - Integration testing
+   - Performance monitoring
+   - Debugging tools
+
+5. **Integration Tools**
+   - Cross-chain integration
+   - Storage integration
+   - AI integration
+   - Network tools
+   - Monitoring tools
 
 ## Getting Started
 
