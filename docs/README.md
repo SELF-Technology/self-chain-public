@@ -54,7 +54,7 @@ This documentation provides comprehensive technical documentation for the SELF b
 
 ### 10. Security
 - [Security/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Security)
-  - [AI_Capacity_Implementation.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Security/Ai_Capacity_Implementation.md): AI Capacity Implementation
+  - [AI_Capacity_Implementation.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Security/AI_Capacity_Implementation.md): AI Capacity Implementation
   - [Overview.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Security/Overview.md): Security Overview Documentation
 
 ### 11. Storage
