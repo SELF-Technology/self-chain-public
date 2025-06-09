@@ -34,11 +34,22 @@ To complement Kyber's key exchange capabilities, SELF Chain implements SPHINCS+,
 
 During the transition period, SELF Chain employs a hybrid approach that combines:
 
-- Classical cryptography (ECDSA with secp256k1) for backward compatibility
-- Post-quantum algorithms (Kyber + SPHINCS+) for forward security
+- Classical cryptography (ECDSA with secp256k1, X25519) for backward compatibility and immediate security
+- Post-quantum algorithms (Kyber + SPHINCS+) for forward security against quantum threats
 - Versioned cryptographic operations for smooth transition
 
-**Implementation Status:** Hybrid signature scheme designed that combines ECDSA and SPHINCS+ signatures with unified verification protocol.
+#### Hybrid Key Exchange
+
+SELF Chain implements a hybrid key exchange mechanism combining X25519 (classical) with Kyber-1024 (post-quantum):
+
+- Follows NIST recommendations for post-quantum transition
+- Combines strengths of well-established classical and quantum-resistant algorithms
+- Ensures security against both conventional and quantum adversaries
+- Provides cryptographic agility through modular design
+
+**Implementation Status:** 
+- Hybrid X25519+Kyber key exchange fully implemented with proper encapsulation/decapsulation
+- Hybrid signature scheme designed that combines ECDSA and SPHINCS+ signatures with unified verification protocol
 
 ## Implementation Architecture
 
@@ -64,11 +75,20 @@ This architecture provides:
 The post-quantum security roadmap follows a phased approach:
 
 1. **Phase 1** (Q3 2025): Module structure and Kyber integration ✓
-2. **Phase 2** (Q4 2025): SPHINCS+ integration and hybrid signatures ◐
-3. **Phase 3** (Q1 2026): Blockchain integration and performance optimizations ○
-4. **Phase 4** (Q2 2026): Full network deployment and security hardening ○
+2. **Phase 2** (Q4 2025): X25519+Kyber hybrid key exchange implementation ✓
+3. **Phase 3** (Q4 2025): SPHINCS+ integration and hybrid signatures ◐
+4. **Phase 4** (Q1 2026): Blockchain integration and performance optimizations ○
+5. **Phase 5** (Q2 2026): Full network deployment and security hardening ○
 
 _Legend: ✓ Complete, ◐ In Progress, ○ Planned_
+
+### X25519 Implementation Enhancement Timeline
+
+In addition to the main roadmap, we have a specific timeline to enhance the X25519 implementation:
+
+1. **Q3 2025**: Interim solution for improved X25519 key exchange functionality ○
+2. **Q4 2025**: Upstream contributions to X25519 libraries or custom implementation ○
+3. **Q1 2026**: Final implementation of enhanced X25519 key exchange with proper deterministic behavior ○
 
 ## Security Benefits
 
@@ -92,9 +112,11 @@ The transition to post-quantum cryptography will be designed to minimize disrupt
 While detailed implementation details remain in the private repository for security purposes, the approach includes:
 
 1. **Cryptographic Agility**: Algorithm-agnostic interfaces for future upgrades
-2. **Performance Optimization**: Techniques to minimize blockchain bloat from larger signatures
-3. **Secure Implementation**: Following best practices for cryptographic code
+2. **Performance Optimization**: Techniques to minimize blockchain bloat from larger signatures and key material
+3. **Secure Implementation**: Following best practices for cryptographic code and proper key material handling
 4. **Integration Testing**: Comprehensive test suite for all cryptographic primitives
+5. **Secure Key Management**: Proper zeroization of sensitive private key material
+6. **Hybrid Design**: Careful composition of classical and post-quantum algorithms
 
 ## References
 
