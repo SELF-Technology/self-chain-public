@@ -4,17 +4,23 @@
 
 The SELF Chain implements a multi-layered security approach incorporating:
 
-1. **AI-Powered Validation**
+1. **Post-Quantum Cryptography**
+   - Hybrid cryptographic approach combining classical and quantum-resistant algorithms
+   - Kyber-1024 for quantum-resistant key exchange
+   - SPHINCS+ for quantum-resistant signatures
+   - Forward security against future quantum threats
+
+2. **AI-Powered Validation**
    - Uses Ollama Cloud for AI validation
    - Context-aware validation system
    - Validator reputation tracking
 
-2. **Consensus Security**
+3. **Consensus Security**
    - PoAI (Proof-of-AI) consensus mechanism
    - Voting-based validation
    - Validator reputation system
 
-3. **Network Security**
+4. **Network Security**
    - Secure peer discovery
    - Encrypted communication
    - Message validation
@@ -22,6 +28,13 @@ The SELF Chain implements a multi-layered security approach incorporating:
 ## 2. Security Features
 
 ### 2.1 Core Security Components
+
+- **Quantum-Resistant Cryptography**
+  - Hybrid key exchange combining X25519 and Kyber-1024
+  - Quantum-resistant signature schemes with SPHINCS+
+  - Future-proof cryptographic architecture
+  - Phased implementation approach
+  - Cryptographic agility for algorithm transitions
 
 - **AI Validation**
   - AI-powered block and transaction validation
