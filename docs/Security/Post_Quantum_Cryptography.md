@@ -86,9 +86,11 @@ _Legend: ✓ Complete, ◐ In Progress, ○ Planned_
 
 In addition to the main roadmap, we have a specific timeline to enhance the X25519 implementation:
 
-1. **Q3 2025**: Interim solution for improved X25519 key exchange functionality ○
+1. **Q3 2025**: Interim solution for improved X25519 key exchange functionality ✓
 2. **Q4 2025**: Upstream contributions to X25519 libraries or custom implementation ○
 3. **Q1 2026**: Final implementation of enhanced X25519 key exchange with proper deterministic behavior ○
+
+**Note:** The interim solution implements a shared secret caching mechanism that enables deterministic behavior between encapsulation and decapsulation operations, which is critical for blockchain testing environments.
 
 ## Security Benefits
 
