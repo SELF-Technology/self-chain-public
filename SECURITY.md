@@ -1,12 +1,5 @@
 # Security Policy
 
-## Supported Versions
-
-| Version | Supported          |
-| ------- | ------------------ |
-| 1.x.x   | ✅                 |
-| < 1.0.0 | ❌                 |
-
 ## Security Architecture
 
 ### Core Security Components
@@ -36,6 +29,12 @@
    - Input sanitization
    - Output verification
 
+5. **Post-Quantum Cryptography**
+   - Kyber key encapsulation mechanism (KEM) implementation
+   - SPHINCS+ quantum-resistant digital signatures
+   - Hybrid cryptographic approach (classical + post-quantum)
+   - Cryptographic agility framework for algorithm transitions
+
 ### Security Features
 
 1. **Encryption**
@@ -43,6 +42,7 @@
    - TLS 1.3 for data in transit
    - Perfect Forward Secrecy (PFS)
    - Secure key management
+   - Quantum-resistant key exchange protocols
 
 2. **Access Control**
    - Role-based access control (RBAC)
@@ -52,7 +52,8 @@
 
 3. **Data Integrity**
    - SHA-256 hashing
-   - Digital signatures
+   - SHA3-256 quantum-resistant hashing
+   - Digital signatures (classical and post-quantum)
    - Merkle tree validation
    - Content addressable storage
 
@@ -61,6 +62,31 @@
    - Event logging
    - Access logging
    - Error logging
+
+## Quantum Security Approach
+
+The SELF Chain implements a forward-looking hybrid cryptographic approach that combines classical cryptographic algorithms with post-quantum resistant algorithms. This provides the security and performance benefits of well-established cryptographic methods while ensuring protection against future quantum computing threats.
+
+### Key Quantum Security Components
+
+1. **Hybrid Cryptography Implementation**
+   - All sensitive data is protected using both classical (e.g., X25519, Ed25519) and post-quantum (e.g., Kyber, SPHINCS+) algorithms
+   - Fallback mechanisms ensure continued operation if vulnerabilities are discovered in any single algorithm
+
+2. **Algorithm Agility**
+   - Modular design allows for rapid replacement of cryptographic primitives
+   - Support for cryptographic algorithm negotiation during handshake
+   - Regular security audits to assess the need for algorithm updates
+
+3. **Post-Quantum Key Exchange**
+   - Implementation of Kyber key encapsulation mechanism
+   - Quantum-resistant shared secret establishment
+   - Hybrid key exchange combining classical and post-quantum methods
+
+4. **Quantum-Resistant Digital Signatures**
+   - SPHINCS+ hash-based signature scheme implementation
+   - Secure against both classical and quantum adversaries
+   - Used for critical verification operations in the blockchain
 
 ## Reporting a Vulnerability
 
@@ -124,68 +150,6 @@ Please report security vulnerabilities by:
    - Regular security reviews
    - Configuration validation
 
-## Security Contact Information
-
-- Security Team: security@self.app
-- GitHub Security: https://github.com/SELF-Technology/self-chain-private/security
-- Twitter: @SELF_Tech
-- Discord: https://discord.self.app
-
-## Security Updates
-
-For security updates and announcements, follow our official channels:
-- [Security Blog](https://blog.self.app/security)
-- [Twitter](https://twitter.com/SELF_Tech)
-- [Discord](https://discord.self.app)
-- [GitHub Releases](https://github.com/SELF-Technology/self-chain-private/releases)
-
-## Legal Notice
-
-By submitting a security vulnerability, you agree to:
-1. Not publicly disclose the vulnerability until a patch is released
-2. Not exploit the vulnerability for malicious purposes
-3. Follow responsible disclosure guidelines
-4. Provide accurate and complete information
-5. Cooperate with our security team
-
-## Security Response
-
-### Response Times
-- Critical vulnerabilities: < 24 hours
-- High severity: < 48 hours
-- Medium severity: < 7 days
-- Low severity: < 14 days
-
-### Response Process
-1. Initial triage and verification
-2. Root cause analysis
-3. Fix development
-4. Testing and verification
-5. Deployment
-6. Public disclosure (if applicable)
-
-## Security Best Practices
-
-### Development
-
-1. **Code Security**
-   - Regular security training
-   - Code review guidelines
-   - Secure coding standards
-   - Regular security testing
-
-2. **Infrastructure**
-   - Private repository access control
-   - Encrypted secrets management
-   - Regular security updates
-   - Automated security scanning
-
-3. **Tools**
-   - SonarQube for code analysis
-   - OWASP ZAP for penetration testing
-   - Snyk for dependency scanning
-   - GitHub Security Scanning
-
 ### Operations
 
 1. **Monitoring**
@@ -205,3 +169,43 @@ By submitting a security vulnerability, you agree to:
    - Regular security audits
    - Security policy updates
    - Access control reviews
+
+## Security Response
+
+### Response Times
+- Critical vulnerabilities: < 24 hours
+- High severity: < 48 hours
+- Medium severity: < 7 days
+- Low severity: < 14 days
+
+### Response Process
+1. Initial triage and verification
+2. Root cause analysis
+3. Fix development
+4. Testing and verification
+5. Deployment
+6. Public disclosure (if applicable)
+
+## Security Contact Information
+
+- Security Team: security@self.app
+- GitHub Security: https://github.com/SELF-Technology/self-chain-public/security
+- Twitter: @SELF_Tech
+- Discord: https://discord.self.app
+
+## Security Updates
+
+For security updates and announcements, follow our official channels:
+- [Security Blog](https://blog.self.app/security)
+- [Twitter](https://twitter.com/SELF_Tech)
+- [Discord](https://discord.self.app)
+- [GitHub Releases](https://github.com/SELF-Technology/self-chain-public/releases)
+
+## Legal Notice
+
+By submitting a security vulnerability, you agree to:
+1. Not publicly disclose the vulnerability until a patch is released
+2. Not exploit the vulnerability for malicious purposes
+3. Follow responsible disclosure guidelines
+4. Provide accurate and complete information
+5. Cooperate with our security team
