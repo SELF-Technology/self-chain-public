@@ -189,17 +189,6 @@ Please report security vulnerabilities by:
 ## Security Contact Information
 
 - Security Team: security@self.app
-- GitHub Security: https://github.com/SELF-Technology/self-chain-public/security
-- Twitter: @SELF_Tech
-- Discord: https://discord.self.app
-
-## Security Updates
-
-For security updates and announcements, follow our official channels:
-- [Security Blog](https://blog.self.app/security)
-- [Twitter](https://twitter.com/SELF_Tech)
-- [Discord](https://discord.self.app)
-- [GitHub Releases](https://github.com/SELF-Technology/self-chain-public/releases)
 
 ## Legal Notice
 
