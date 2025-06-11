@@ -97,14 +97,9 @@ async fn validate_document(file_path: &str) -> Result<ValidationProof, Validatio
 }
 ```
 
-## Documentation
+## Pricing
 
-For detailed documentation on SELF Validate:
-
-- [API Reference](../api/validate.md)
-- [Integration Guide](../guides/validate-integration.md)
-- [Verification Methods](./verification-methods.md)
-- [Report Generation](./reports.md)
+A volume of API tokens per month will be allocated to various pricing tiers, suitable for any size development team or organization. Details to follow.
 
 ## Security
 
