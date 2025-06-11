@@ -27,9 +27,9 @@ graph TD
     Verify --> |Results| User
     RP --> |PDF/NFT| User
     
-    style Chain fill:#f9f,stroke:#333,stroke-width:2px
-    style VE fill:#bbf,stroke:#33f,stroke-width:2px
-    style User fill:#dfd,stroke:#080,stroke-width:1px
+    style Chain fill:#f9f,stroke:#333,stroke-width:2px,color:#000
+    style VE fill:#bbf,stroke:#33f,stroke-width:2px,color:#000
+    style User fill:#dfd,stroke:#080,stroke-width:1px,color:#000
 ```
 
 ## Key Features
