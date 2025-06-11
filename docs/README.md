@@ -63,8 +63,8 @@ This documentation provides comprehensive technical documentation for the SELF b
   - [Hybrid_Architecture.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Storage/Hybrid_Architecture.md): Hybrid Storage Architecture (IPFS + OrbitDB)
 
 ### 12. SELF Validate
-- [validate/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/validate)
-  - [README.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/validate/README.md): Data integrity and verification system
+- [Validate/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Validate)
+  - [README.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Validate/README.md): Data integrity and verification system
 
 ## Key Technical Components
 
