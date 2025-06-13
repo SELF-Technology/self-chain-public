@@ -55,6 +55,7 @@ This documentation provides comprehensive technical documentation for the SELF b
 ### 10. Security
 - [Security/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Security)
   - [Overview.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Security/Overview.md): Security Overview Documentation
+  - [Pattern_Analysis_Security.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Security/Pattern_Analysis_Security.md): Transaction Pattern Analysis Security System
   - [Post_Quantum_Cryptography.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Security/Post_Quantum_Cryptography.md): Post-Quantum Cryptography Implementation
   - [AI_Capacity_Implementation.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Security/AI_Capacity_Implementation.md): AI Capacity Implementation
 
