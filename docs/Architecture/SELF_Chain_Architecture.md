@@ -1,5 +1,51 @@
 # SELF Chain Public Architecture
 
+## SELF Ecosystem Overview
+
+### SaaS Platform Model
+
+SELF Chain operates as a managed service platform:
+
+1. **User Node Provisioning**
+   - Automatic node deployment when users create a SELF account
+   - Free trial period with managed infrastructure
+   - Subscription-based model after trial period
+   - Seamless transition between free and paid tiers
+
+2. **AI Model Integration**
+   - Default AI model provided with each user account
+   - User-configurable AI preferences stored persistently
+   - Model upgrade options for subscription users
+   - Custom AI training with user preferences
+
+3. **Super-App Integration**
+   - Blockchain nodes integrated with SELF Super-App
+   - Cross-app communication protocols
+   - Persistent user data synchronization
+   - Unified authentication and authorization
+
+### B2B Constellation Architecture
+
+SELF provides enterprise-grade blockchain solutions:
+
+1. **Corporate Layer-1 Chains**
+   - Managed provisioning of parallel Layer-1 blockchains
+   - Similar to Polkadot parachains but for full Layer-1 chains
+   - Configurable AI model deployment for enterprise nodes
+   - Custom token generation capabilities
+
+2. **Enterprise Management**
+   - SaaS management of corporate blockchain infrastructure
+   - Monitoring and health dashboards for enterprise clients
+   - Resource allocation and scaling for business needs
+   - Enterprise billing and subscription management
+
+3. **Ecosystem Interoperability**
+   - Inter-chain communication between SELF and corporate chains
+   - Shared security and validation model
+   - Cross-chain transactions and data sharing
+   - Unified analytics and monitoring
+
 ## 1. Core Architecture
 
 ### 1.1 Cloud-First Architecture
