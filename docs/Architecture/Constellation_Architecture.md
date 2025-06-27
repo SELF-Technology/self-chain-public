@@ -12,7 +12,7 @@ The **SELF Chain Constellation Architecture** enables enterprises to launch thei
 
 ## 🎯 Core Value Proposition
 
-### **Enterprise Blockchain-as-a-Service (CBaaS)**
+### **Enterprise Blockchain-as-a-Service (EBaaS)**
 - **Zero Setup Costs**: No upfront fees, subscriptions, or infrastructure expenses
 - **Sovereign Blockchains**: Each enterprise gets their own Layer-1 chain
 - **AI-Powered Validation**: Industry-specific AI models for consensus and compliance
