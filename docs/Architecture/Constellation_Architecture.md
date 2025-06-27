@@ -18,6 +18,7 @@ The **SELF Chain Constellation Architecture** enables enterprises to launch thei
 - **AI-Powered Validation**: Industry-specific AI models for consensus and compliance
 - **Seamless Integration**: Native interoperability with SELF Chain ecosystem
 - **Quality Assurance**: Curated approval process ensures ecosystem excellence
+- **Grid Compute Economies of Scale**: Each Constellation chain benefits from the massive distributed computing efficiencies of the entire SELF Constellation network of nodes, providing cost advantages and performance optimization that individual chains cannot achieve independently
 
 ## 💰 Revolutionary Business Model
 
@@ -25,17 +26,17 @@ The **SELF Chain Constellation Architecture** enables enterprises to launch thei
 SELF Chain operates on a **token-sharing model** with complete alignment between platform success and enterprise success.
 
 ```
-🌟 Constellation Ecosystem Token Distribution 🌟
+🌟 Constellation Native Coin Distribution 🌟
 
 LAYER-1 (Native Chain Tokens):
 ├── 60% - Enterprise Organization (operational use)
-├── 20% - SELF Chain (platform revenue share)
+├── 20% - SELF Chain (allocation for creating the chain)
 ├── 15% - Network Validators/Stakers
 └── 5% - Ecosystem Development Fund
 
 APPLICATION LAYER (dApp/Application Tokens):
 ├── 77.5% - Application Developer/Organization
-├── 7.5% - SELF Chain (platform revenue share)
+├── 7.5% - SELF Chain (allocation to SELF)
 ├── 10% - Application Validators/Stakers  
 └── 5% - Application Development Fund
 ```
