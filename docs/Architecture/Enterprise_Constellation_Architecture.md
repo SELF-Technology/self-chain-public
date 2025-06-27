@@ -1,8 +1,12 @@
-# B2B Constellation Architecture
+# Enterprise Constellation Architecture
 
 ## Overview
 
-The SELF Constellation is a B2B blockchain ecosystem that enables corporate clients to have their own managed Layer-1 blockchains running in parallel to the main SELF Chain. This architecture is similar to Polkadot's parachain model but operates with full Layer-1 autonomy while benefiting from SELF's managed infrastructure and AI capabilities.
+The SELF Constellation is an Enterprise blockchain ecosystem that enables corporate clients to have their own managed Layer-1 blockchains running in parallel to the main SELF Chain. This architecture is similar to Polkadot's parachain model but operates with full Layer-1 autonomy while benefiting from SELF's managed infrastructure and AI capabilities.
+
+## Key Advantages
+
+**Grid Compute Economies of Scale**: Each Constellation chain benefits from the massive distributed computing efficiencies of the entire SELF Constellation network of nodes, providing cost advantages and performance optimization that individual chains cannot achieve independently.
 
 ## Core Architecture
 
