@@ -9,6 +9,8 @@ This documentation provides comprehensive technical documentation for the SELF b
 ### 1. Architecture Documentation
 - [Architecture/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Architecture)
   - [SELF_Chain_Architecture.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Architecture/SELF_Chain_Architecture.md): Comprehensive system architecture
+  - [Constellation_Architecture.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Architecture/Constellation_Architecture.md): Enterprise blockchain solutions with 7.5%/20% token revenue model
+  - [B2B_Constellation_Architecture.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Architecture/B2B_Constellation_Architecture.md): Business-focused enterprise overview
 
 ### 2. Consensus
 - [PoAI/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/PoAI)
