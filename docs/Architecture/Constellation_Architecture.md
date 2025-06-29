@@ -41,7 +41,7 @@ APPLICATION LAYER (dApp/Application Tokens):
 └── 5% - Application Development Fund
 ```
 
-### **Core Revenue Mechanism**
+### **Tokenomics Model**
 - **20% Native L1 Token Allocation**: SELF automatically receives 20% of all newly minted native tokens from enterprise Layer-1 chains
 - **7.5% Application Token Allocation**: SELF automatically receives 7.5% of all newly minted tokens from applications/dApps built on top of enterprise chains
 - **No Vesting Period**: All SELF allocations are immediately liquid with no lock-up or vesting requirements
