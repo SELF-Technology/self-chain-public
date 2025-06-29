@@ -1,8 +1,53 @@
-# SELF Chain - AI-Native Blockchain Platform
+# 🚀 SELF Chain - AI-Native Blockchain Platform
 
-**The world's first AI-native blockchain platform combining Proof-of-AI (PoAI) consensus with decentralized computing and enterprise-grade solutions.**
+<div align="center">
 
-📖 **[Complete Documentation →](docs/README.md)**
+**The world's first AI-native blockchain platform**
+
+[![Documentation](https://img.shields.io/badge/📖_Documentation-Complete_Guide-blue?style=for-the-badge)](docs/README.md)
+[![Grid Compute](https://img.shields.io/badge/🤖_Grid_Compute-Personal_AI-green?style=for-the-badge)](docs/Grid%20Compute/Overview.md)
+[![Constellation](https://img.shields.io/badge/🏢_Constellation-Enterprise-purple?style=for-the-badge)](docs/constellation/Overview.md)
+
+</div>
+
+---
+
+## ⚡ **Quick Start**
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+### 🤖 **Personal AI**
+**Get your own AI cloud in 5 minutes**
+
+🎮 [Try Innovation Sandbox](docs/Grid%20Compute/Overview.md)
+
+*Free exploration • No setup required*
+
+</td>
+<td width="33%" align="center">
+
+### 🏢 **Enterprise Platform**
+**Blockchain innovation for regulated industries**
+
+💼 [Explore Constellation](docs/constellation/Overview.md)
+
+*50+ validation frameworks • Innovation positioning*
+
+</td>
+<td width="33%" align="center">
+
+### 👨‍💻 **Developers**
+**Build AI-native blockchain applications**
+
+🔧 [SDK & APIs](docs/SDK/README.md)
+
+*Multi-language support • Comprehensive tools*
+
+</td>
+</tr>
+</table>
 
 ---
 
