@@ -1,0 +1,28 @@
+name: Documentation Validation
+
+on:
+  pull_request:
+    paths:
+      - 'docs/**'
+
+jobs:
+  validate-folder-names:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Validate docs folder naming convention
+        run: |
+          # Check for lowercase folder names in docs/
+          lowercase_folders=$(find docs/ -maxdepth 1 -type d -name '[a-z]*' | grep -v '^docs/$' || true)
+          
+          if [ ! -z "$lowercase_folders" ]; then
+            echo "❌ ERROR: Found lowercase folders in /docs:"
+            echo "$lowercase_folders"
+            echo ""
+            echo "RULE: All folders in /docs must start with a capital letter"
+            echo "Examples: Architecture/, Grid Compute/, API/, SDK/, Constellation/"
+            exit 1
+          fi
+          
+          echo "✅ All docs folders follow proper capitalization"
