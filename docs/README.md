@@ -1,6 +1,40 @@
-# SELF Documentation
+# SELF Chain - Complete Platform Documentation
 
-## Overview
+**Welcome to the comprehensive documentation for the SELF Chain AI-native blockchain platform.**
+
+---
+
+## 🌟 Platform Overview
+
+SELF Chain is the world's first AI-native blockchain platform featuring three revolutionary innovations:
+
+### 🤖 **Grid Compute** - *Decentralized AI Computing*
+**Personal AI cloud with complete digital sovereignty**
+- Your own OpenLLM AI assistant on your chosen infrastructure
+- Free Innovation Sandbox → Easy Cloud ($4/month) → Your Cloud → SELF Grid Network
+- Complete control over AI, blockchain, and data
+
+📖 **[Grid Compute Documentation →](Grid%20Compute/Overview.md)**
+
+### 🏢 **Constellation Architecture** - *Enterprise Innovation Platform*
+**Blockchain innovation platform for regulated industries**
+- Innovation Sandbox (Free) → Commercial Tiers ($50K-$750K+ annually)
+- 50+ validation rules across Finance, Healthcare, Supply Chain, Government, Energy
+- Technology innovation positioning with compliance as competitive advantage
+
+📖 **[Constellation Documentation →](constellation/Overview.md)**
+
+### ⚡ **PoAI Consensus** - *AI-Powered Blockchain*
+**First blockchain with native AI consensus mechanism**
+- 99.2% consensus accuracy with 1000+ TPS capability
+- Byzantine Fault Tolerance validated against 33% malicious nodes
+- Post-quantum cryptography ready for future-proof security
+
+📖 **[PoAI Documentation →](PoAI/Taxonomy.md)**
+
+---
+
+## 📚 Documentation Structure
 
 This documentation provides comprehensive technical documentation for the SELF blockchain project, covering all aspects from core architecture to implementation details. The documentation is organized into several key sections to facilitate easy navigation and understanding.
 
@@ -61,11 +95,24 @@ This documentation provides comprehensive technical documentation for the SELF b
   - [Post_Quantum_Cryptography.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Security/Post_Quantum_Cryptography.md): Post-Quantum Cryptography Implementation
   - [AI_Capacity_Implementation.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Security/AI_Capacity_Implementation.md): AI Capacity Implementation
 
-### 11. Storage
+### 11. Grid Compute
+- [Grid Compute/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Grid%20Compute)
+  - [Overview.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Grid%20Compute/Overview.md): Decentralized AI-native computing platform
+  - [User_Journey.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Grid%20Compute/User_Journey.md): Complete user experience from signup to sovereignty
+  - [Competitive_Advantages.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Grid%20Compute/Competitive_Advantages.md): Market advantages and differentiators
+  - [Business_Model.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Grid%20Compute/Business_Model.md): Platform economics and revenue model
+
+### 12. Constellation Architecture
+- [constellation/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/constellation)
+  - [Overview.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/constellation/Overview.md): Enterprise blockchain innovation platform
+  - [Industry_Validation_Rules.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/constellation/Industry_Validation_Rules.md): Comprehensive industry-specific compliance
+  - [Regulatory_Compliance.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/constellation/Regulatory_Compliance.md): 25+ automated regulatory frameworks
+
+### 13. Storage
 - [Storage/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Storage)
   - [Hybrid_Architecture.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Storage/Hybrid_Architecture.md): Hybrid Storage Architecture (IPFS + OrbitDB)
 
-### 12. SELF Validate
+### 14. SELF Validate
 - [Validate/](https://github.com/SELF-Technology/self-chain-public/tree/main/docs/Validate)
   - [README.md](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Validate/README.md): Data integrity and verification system
 
@@ -197,7 +244,7 @@ This documentation uses several tools and technologies:
 
 ## Contact
 
-For questions, please email [j@self.app](mailto:j@self.app).
+For questions, please email [devs@self.app](mailto:devs@self.app).
 
 ## Directory Structure
 
@@ -241,7 +288,7 @@ This diagram shows the complete documentation structure, with each component lin
 
 ## Contact
 
-For questions or contributions, please email [j@self.app](mailto:j@self.app).
+For questions or contributions, please email [devs@self.app](mailto:devs@self.app).
 
 ## Documentation References
 

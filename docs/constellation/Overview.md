@@ -503,7 +503,7 @@ Production Innovation Platform → Custom Solutions → Ongoing Innovation Partn
 3. **Innovation Partnership**: Ongoing collaboration for continuous innovation
 
 ### **Enterprise Innovation Inquiry**
-- **Email**: innovation@selfchain.org
+- **Email**: [devs@self.app](mailto:devs@self.app)
 - **Sandbox Access**: Immediate access to Innovation Sandbox environment
 - **Innovation Demo**: Live demonstration of breakthrough blockchain capabilities
 - **Strategy Session**: Free innovation consultation and solution architecture planning

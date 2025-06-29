@@ -172,7 +172,7 @@ Our step-by-step migration wizard helps you:
 
 ### 1. Sign Up for Free Trial
 ```
-Visit: selfchain.cloud
+Visit: self.app
 ├── Create your account
 ├── Verify your email
 ├── Choose your username
@@ -182,7 +182,7 @@ Visit: selfchain.cloud
 ### 2. Explore Your Services
 ```
 Your Personal Dashboard Shows:
-├── AI Assistant endpoint: http://your-instance.selfchain.cloud/ai
+├── AI Assistant endpoint: http://your-instance.self.app/ai
 ├── Blockchain node status: Active, syncing...
 ├── Storage usage: 15% of 30GB used
 └── Shine %: 100% (Full capacity!)
@@ -256,7 +256,7 @@ Use Your Services:
 
 **Experience true digital sovereignty with SELF Chain**
 
-[Sign Up for Free Trial](https://selfchain.cloud) | [View Pricing](https://selfchain.cloud/pricing) | [Developer Docs](https://docs.selfchain.cloud)
+[Contact for Access](mailto:devs@self.app) | [View Documentation](docs/README.md) | [Developer Docs](docs/SDK/README.md)
 
 ---
 
