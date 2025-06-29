@@ -407,4 +407,4 @@ By the end of this journey, SELF Chain users achieve:
 
 ---
 
-*Ready to start your journey? [Sign up for free](https://selfchain.cloud) and take the first step toward digital sovereignty.*
+*Ready to start your journey? [Contact us](mailto:devs@self.app) to begin your path toward digital sovereignty.*

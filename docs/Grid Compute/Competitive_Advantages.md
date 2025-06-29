@@ -486,4 +486,4 @@ This approach creates:
 
 ---
 
-*Ready to experience the advantages firsthand? [Start your free trial](https://selfchain.cloud) and see why users are choosing sovereignty over vendor dependency.*
+*Ready to experience the advantages firsthand? [Contact us](mailto:devs@self.app) to learn about access and see why users are choosing sovereignty over vendor dependency.*
