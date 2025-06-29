@@ -502,4 +502,4 @@ SELF Grid Compute's business model creates sustainable value through:
 
 ---
 
-*Ready to be part of the sovereignty economy? [Join our platform](https://selfchain.cloud) or [explore partnership opportunities](mailto:partnerships@selfchain.cloud).*
+*Ready to be part of the sovereignty economy? [Contact us](mailto:devs@self.app) to learn about platform access or explore partnership opportunities.*

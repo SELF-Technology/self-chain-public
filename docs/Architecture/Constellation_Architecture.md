@@ -223,7 +223,7 @@ ICB = Inter-Chain Bridge
 4. **Deployment**: Production-ready launch in 3-5 weeks
 
 ### **Enterprise Inquiry Process**
-- **Email**: enterprise@selfchain.org
+- **Email**: [devs@self.app](mailto:devs@self.app)
 - **Documentation**: Complete technical specifications available
 - **Demo**: Live demonstration of enterprise capabilities
 - **Consultation**: Free technical consultation and architecture planning

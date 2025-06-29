@@ -86,7 +86,7 @@ Timestamp and validate creative works, research, and intellectual property to es
 use self_chain::validate::{ValidationClient, ValidationOptions};
 
 async fn validate_document(file_path: &str) -> Result<ValidationProof, ValidationError> {
-    let client = ValidationClient::new("https://api.selfchain.org/validate");
+    let client = ValidationClient::new("https://api.self.app/validate");
     
     let options = ValidationOptions::new()
         .with_full_verification(true)
