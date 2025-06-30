@@ -21,7 +21,7 @@
 ### 🤖 **Personal AI**
 **Get your own AI cloud in 5 minutes**
 
-🎮 [Try Innovation Sandbox](docs/Grid%20Compute/Overview.md)
+🎮 [Create a SELF account](https://your.self.app)
 
 *Free exploration • No setup required*
 
