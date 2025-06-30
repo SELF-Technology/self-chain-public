@@ -5,7 +5,7 @@
 <div align="center">
 
 [![🤖 Grid Compute](https://img.shields.io/badge/Grid_Compute-Personal_AI_Cloud-blue?style=for-the-badge)](Grid%20Compute/Overview.md)
-[![🏢 Constellation](https://img.shields.io/badge/Constellation-Enterprise_Platform-green?style=for-the-badge)](constellation/Overview.md) 
+[![🏢 Constellation](https://img.shields.io/badge/Constellation-Enterprise_Platform-green?style=for-the-badge)](Constellation/Overview.md) 
 [![⚡ PoAI Consensus](https://img.shields.io/badge/PoAI-AI_Powered_Blockchain-purple?style=for-the-badge)](PoAI/Taxonomy.md)
 
 </div>
