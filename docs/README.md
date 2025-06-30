@@ -89,7 +89,7 @@
 - [Business Model](Grid%20Compute/Business_Model.md)
 
 🎮 **Get Started**
-- [Free Innovation Sandbox](Grid%20Compute/Overview.md#getting-started)
+- [Create a SELF account](https://your.self.app)
 - Easy Cloud ($4/month)
 - [Contact for Access](mailto:devs@self.app)
 
