@@ -143,9 +143,12 @@ npm run create-self-app
 ## 🌍 Join the Movement
 
 ### Community
-- **Discord**: [Join our community](https://discord.gg/self)
-- **Twitter**: [@SELFTechnology](https://twitter.com/SELFTechnology)
-- **Telegram**: [t.me/selfchain](https://t.me/selfchain)
+- **Discord**: [Join our community](https://discord.gg/selfcommunity)
+- **Twitter/X**: [@self_hq](https://x.com/self_hq)
+- **Telegram**: [SELF Community Chat](https://t.me/selfcommunitychat)
+- **Instagram**: [@selfappofficial](https://instagram.com/selfappofficial)
+- **YouTube**: [SELF Community](https://www.youtube.com/@selfcommunityvideos)
+- **LinkedIn**: [SELF Technology](https://www.linkedin.com/company/selftechnology/)
 
 ### Contribute
 - **GitHub**: Star and contribute to the project
@@ -205,7 +208,7 @@ SELF Chain is open source software licensed under the [MIT License](LICENSE).
 
 **Ready to reclaim your digital sovereignty?**
 
-[**Download SELF →**](https://self.app) | [**Read the Docs →**](docs/) | [**Join Discord →**](https://discord.gg/self)
+[**Download SELF →**](https://self.app) | [**Read the Docs →**](docs/) | [**Join Discord →**](https://discord.gg/selfcommunity)
 
 ---
 
