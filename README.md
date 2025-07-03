@@ -167,7 +167,6 @@ npm run create-self-app
 ### ✅ Completed
 - [x] PoAI consensus implementation
 - [x] Quantum-secure cryptography
-- [x] Token economics design
 
 ### 🚧 In Progress
 - [ ] Mobile app beta testing
