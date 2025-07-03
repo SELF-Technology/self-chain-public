@@ -1,11 +1,11 @@
-# 🌟 SELF - Your Privacy-First Super-App
+# <img src="https://self.app/images/SELF%20WHEEL%20WHITE.png" alt="SELF Wheel" width="30" height="30"> SELF - The Future Of Technology Belongs To You
 
 **Take back control of your digital life with SELF** - the advanced alternative to how modern technology works. No ads, no data harvesting, just pure functionality powered by blockchain and AI.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Blockchain: PoAI](https://img.shields.io/badge/Blockchain-PoAI-blue.svg)](docs/Technical/Consensus.md)
-[![Security: Quantum-Safe](https://img.shields.io/badge/Security-Quantum%20Safe-green.svg)](docs/Technical/Cryptography.md)
-[![Token: SELF](https://img.shields.io/badge/Token-SELF-purple.svg)](docs/Token/Tokenomics.md)
+[![Blockchain: PoAI](https://img.shields.io/badge/Blockchain-PoAI-blue.svg)](docs/PoAI/Taxonomy.md)
+[![Security: Quantum-Safe](https://img.shields.io/badge/Security-Quantum%20Safe-green.svg)](docs/Security/Post_Quantum_Cryptography.md)
+[![Token: SELF](https://img.shields.io/badge/Token-SELF-purple.svg)](#-subscription-tiers)
 
 ---
 
