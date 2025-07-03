@@ -1,4 +1,4 @@
-# <img src="https://docs.self.app/img/SELFwhitelogo.png" alt="SELF" height="30"> - The Future Of Technology Belongs To You
+# <img src="https://docs.self.app/img/SELFwhitelogo.png" alt="SELF" height="45"> - The Future Of Technology Belongs To You
 
 **Take back control of your digital life with SELF** - the advanced alternative to how modern technology works. No ads, no data harvesting, just pure functionality powered by blockchain and AI.
 
