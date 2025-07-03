@@ -9,7 +9,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Blockchain: PoAI](https://img.shields.io/badge/Blockchain-PoAI-blue.svg)](docs/PoAI/Taxonomy.md)
 [![Security: Quantum-Safe](https://img.shields.io/badge/Security-Quantum%20Safe-green.svg)](docs/Security/Post_Quantum_Cryptography.md)
-[![Token: SELF](https://img.shields.io/badge/Token-SELF-purple.svg)](#-subscription-tiers)
 
 ---
 
