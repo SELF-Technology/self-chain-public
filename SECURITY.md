@@ -22,7 +22,7 @@ This information will help us triage your report more quickly.
 
 ## Open Source Model
 
-SELF follows a selective open source model inspired by Signal's approach to security:
+SELF follows a selective open source model inspired by Signal's approach to security. The SELF Chain project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ### What We Keep Open Source
 - **Core Protocol**: The fundamental blockchain and network protocols
