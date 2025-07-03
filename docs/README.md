@@ -148,7 +148,7 @@ No DeFi complexity
 | **Star** ⭐ | $15 | 2GB data/compute, priority AI, faster responses |
 | **Galaxy** 🌌 | $50 | 10GB data/compute, advanced AI, developer tools |
 | **Universe** 🪐 | $150 | 50GB data/compute, unlimited AI, beta features |
-| **Multiverse** 🌠 | $10K+ | Cross-Constellation access, governance power |
+| **Multiverse** 🌠 | $10K+ | Cross-Constellation access, enterprise features |
 
 ---
 

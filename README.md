@@ -187,7 +187,6 @@ Unlike traditional tech companies that profit from your data, SELF creates a sus
 1. **You maintain privacy** - No data harvesting, ever
 2. **You earn rewards** - Get tokens for participation
 3. **You own your experience** - No ads or corporate interference
-4. **You shape the future** - Governance through token holding
 
 ---
 
