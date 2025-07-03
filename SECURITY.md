@@ -1,5 +1,50 @@
 # Security Policy
 
+## Reporting Security Vulnerabilities
+
+We take the security of SELF seriously. If you believe you have found a security vulnerability in any SELF-owned repository, please report it to us as described below.
+
+**Please do not report security vulnerabilities through public GitHub issues.**
+
+Instead, please report them via email to devs@self.app. You should receive a response within 48 hours. If for some reason you do not, please follow up via email to ensure we received your original message.
+
+Please include the requested information listed below (as much as you can provide) to help us better understand the nature and scope of the possible issue:
+
+- Type of issue (e.g. buffer overflow, SQL injection, cross-site scripting, etc.)
+- Full paths of source file(s) related to the manifestation of the issue
+- The location of the affected source code (tag/branch/commit or direct URL)
+- Any special configuration required to reproduce the issue
+- Step-by-step instructions to reproduce the issue
+- Proof-of-concept or exploit code (if possible)
+- Impact of the issue, including how an attacker might exploit the issue
+
+This information will help us triage your report more quickly.
+
+## Open Source Model
+
+SELF follows a selective open source model inspired by Signal's approach to security:
+
+### What We Keep Open Source
+- **Core Protocol**: The fundamental blockchain and network protocols
+- **Cryptographic Implementations**: All encryption and post-quantum cryptography
+- **Client Applications**: Super-App interfaces and user-facing code
+- **SDKs and APIs**: Developer tools and integration libraries
+
+### What Remains Closed Source
+Similar to how Signal keeps their anti-spam system private, we must depart from a totally-open posture for certain security-critical components:
+
+- **AI Validation Rules**: The specific thresholds and patterns used in our Proof-of-AI consensus
+- **Pattern Matching Algorithms**: Detection mechanisms that could be gamed if public
+- **Security Thresholds**: Specific values that determine consensus and validation
+
+**Why?** Unlike cryptographic protocols which benefit from public scrutiny, AI validation systems are vulnerable to gaming. If malicious actors know the exact patterns and thresholds we use to validate transactions and detect attacks, they can craft exploits to bypass our security. Transparency here would be a major disadvantage to the security of the network.
+
+## Export Control Notice
+
+This distribution includes cryptographic software. The country in which you currently reside may have restrictions on the import, possession, use, and/or re-export to another country, of encryption software. BEFORE using any encryption software, please check your country's laws, regulations and policies concerning the import, possession, or use, and re-export of encryption software, to see if this is permitted. See https://www.wassenaar.org/ for more information.
+
+The U.S. Government Department of Commerce, Bureau of Industry and Security (BIS), has classified this software as Export Commodity Control Number (ECCN) 5D002.C.1, which includes information security software using or performing cryptographic functions with asymmetric algorithms. The form and manner of this distribution makes it eligible for export under the License Exception ENC Technology Software Unrestricted (TSU) exception (see the BIS Export Administration Regulations, Section 740.13) for both object code and source code.
+
 ## Security Architecture
 
 ### Core Security Components
@@ -90,10 +135,7 @@ The SELF Chain implements a forward-looking hybrid cryptographic approach that c
 
 ## Reporting a Vulnerability
 
-Please report security vulnerabilities by:
-1. Emailing security@self.app
-2. Creating a private GitHub issue
-3. Contacting us through our official channels
+Please report security vulnerabilities by emailing devs@self.app as described at the top of this document.
 
 ### Responsible Disclosure
 
@@ -188,7 +230,7 @@ Please report security vulnerabilities by:
 
 ## Security Contact Information
 
-- Security Team: security@self.app
+- Security Team: devs@self.app
 
 ## Legal Notice
 

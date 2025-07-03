@@ -191,9 +191,15 @@ Unlike traditional tech companies that profit from your data, SELF creates a sus
 
 ---
 
-## 📄 License
+## 📄 License & Security
 
 SELF Chain is open source software licensed under the [MIT License](LICENSE).
+
+### Open Source Model
+SELF follows a selective open source approach similar to Signal. While our core protocol, cryptographic implementations, and client applications are fully open source, certain security-critical components (AI validation rules, pattern matching algorithms) remain closed source to prevent gaming of our consensus mechanism. [Learn more →](SECURITY.md)
+
+### Export Control Notice
+This distribution includes cryptographic software. The country in which you currently reside may have restrictions on the import, possession, use, and/or re-export to another country, of encryption software. See our [Security Policy](SECURITY.md) for full export control information.
 
 ---
 
@@ -212,4 +218,4 @@ SELF Chain is open source software licensed under the [MIT License](LICENSE).
 
 ---
 
-*SELF - Because your data should work for you, not against you.*
+*SELF - The Future Of Technology Belongs To You*
