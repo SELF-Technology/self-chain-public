@@ -283,11 +283,13 @@ Start Here → [PoAI Consensus](PoAI/Taxonomy.md) → [Architecture](Architectur
 
 ## 🔗 Community & Support
 
-- 📧 **General Support**: [devs@self.app](mailto:devs@self.app)
-- 💬 **Discord**: [Join Community](https://discord.gg/self)
-- 🐦 **Twitter**: [@SELFTechnology](https://twitter.com/SELFTechnology)
-- 📱 **Telegram**: [t.me/selfchain](https://t.me/selfchain)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/SELF-Technology/self-chain-public/issues)
+- 💬 **Discord**: [Join Community](https://discord.gg/selfcommunity)
+- 🐦 **Twitter/X**: [@self_hq](https://x.com/self_hq)
+- 📱 **Telegram**: [SELF Community Chat](https://t.me/selfcommunitychat)
+- 📸 **Instagram**: [@selfappofficial](https://instagram.com/selfappofficial)
+- 📺 **YouTube**: [SELF Community](https://www.youtube.com/@selfcommunityvideos)
+- 💼 **LinkedIn**: [SELF Technology](https://www.linkedin.com/company/selftechnology/)
+- 🐛 **GitHub**: [Issues & Code](https://github.com/SELF-Technology/self-chain-public)
 
 ---
 
