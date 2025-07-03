@@ -1,336 +1,212 @@
-# 🚀 SELF Chain - AI-Native Blockchain Platform
+# 🌟 SELF - Your Privacy-First Super-App
 
-<div align="center">
+**Take back control of your digital life with SELF** - the advanced alternative to how modern technology works. No ads, no data harvesting, just pure functionality powered by blockchain and AI.
 
-**The world's first AI-native blockchain platform**
-
-[![Documentation](https://img.shields.io/badge/📖_Documentation-Complete_Guide-blue?style=for-the-badge)](docs/README.md)
-[![Grid Compute](https://img.shields.io/badge/🤖_Grid_Compute-Personal_AI-green?style=for-the-badge)](docs/Grid%20Compute/Overview.md)
-[![Constellation](https://img.shields.io/badge/🏢_Constellation-Enterprise-purple?style=for-the-badge)](docs/constellation/Overview.md)
-
-</div>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Blockchain: PoAI](https://img.shields.io/badge/Blockchain-PoAI-blue.svg)](docs/Technical/Consensus.md)
+[![Security: Quantum-Safe](https://img.shields.io/badge/Security-Quantum%20Safe-green.svg)](docs/Technical/Cryptography.md)
+[![Token: SELF](https://img.shields.io/badge/Token-SELF-purple.svg)](docs/Token/Tokenomics.md)
 
 ---
 
-## ⚡ **Quick Start**
+## 🚀 What is SELF?
 
-<table>
-<tr>
-<td width="33%" align="center">
+SELF is a revolutionary Super-App that combines four essential digital services in one secure, privacy-focused platform:
 
-### 🤖 **Personal AI**
-**Get your own AI cloud in 5 minutes**
+### 🤖 **Personal AI Assistant**
+- AI that actually remembers your conversations
+- Learns your preferences over time
+- No data sold to advertisers
 
-🎮 [Create a SELF account](https://your.self.app)
+### 💬 **Private Messenger**
+- True end-to-end encryption
+- Node-to-node communication
+- Your messages stay yours
 
-*Free exploration • No setup required*
+### 🌐 **Secure Browser**
+- Built-in VPN protection
+- No tracking or surveillance
+- Browse freely and privately
 
-</td>
-<td width="33%" align="center">
-
-### 🏢 **Enterprise Platform**
-**Blockchain innovation for regulated industries**
-
-💼 [Explore Constellation](docs/constellation/Overview.md)
-
-*50+ validation frameworks • Innovation positioning*
-
-</td>
-<td width="33%" align="center">
-
-### 👨‍💻 **Developers**
-**Build AI-native blockchain applications**
-
-🔧 [SDK & APIs](docs/SDK/README.md)
-
-*Multi-language support • Comprehensive tools*
-
-</td>
-</tr>
-</table>
+### 💰 **Crypto Wallet**
+- Store, send, and receive digital assets
+- Earn SELF tokens just by using the app
+- No complex DeFi knowledge required
 
 ---
 
-## 🌍 Platform Overview
+## 💎 Why Choose SELF?
 
-SELF Chain is a comprehensive blockchain ecosystem featuring three revolutionary innovations:
+### For Privacy-Conscious Users
+- **No Ads**: Pure functionality without interruptions
+- **No Data Mining**: Your data is never sold or analyzed
+- **You Own Your Data**: Complete sovereignty over your digital life
 
-### 🤖 **1. SELF Grid Compute**
-*Decentralized AI-Native Computing Platform*
+### For Crypto Enthusiasts
+- **Earn While You Use**: Get SELF tokens for daily activities
+- **Token-Based Subscriptions**: No credit cards needed
+- **Future-Proof**: Quantum-secure cryptography
 
-- **Personal AI Cloud**: Your own OpenLLM AI assistant on your choice of infrastructure
-- **Digital Sovereignty**: Complete control over your AI, blockchain, and data
-- **Progressive Scaling**: Free trial → Easy Cloud ($4/month) → Your Cloud → SELF Grid Network
-- **Shine % System**: Intuitive resource management with natural upgrade paths
+### For Developers
+- **Open Source**: Build on top of SELF
+- **Multilingual SDK**: Create privacy-first apps
+- **Blockchain Infrastructure**: Leverage PoAI consensus
 
-📖 **[Grid Compute Documentation →](docs/Grid%20Compute/Overview.md)**
+---
 
-### 🏢 **2. Constellation Architecture**
-*Enterprise Blockchain Innovation Platform*
+## 🎯 Subscription Tiers
 
-- **Innovation Sandbox**: Free exploration of enterprise blockchain capabilities
-- **Industry Validation**: 50+ compliance rules across Finance, Healthcare, Supply Chain, Government, Energy
-- **Commercial Tiers**: $50K-$750K+ annually for production innovation platforms
-- **Token Economics**: 20% L1 + 7.5% application token revenue model
+Choose your tier by staking SELF tokens:
 
-📖 **[Constellation Documentation →](docs/constellation/Overview.md)**
+| Tier | Monthly Value | Benefits |
+|------|---------------|----------|
+| **Free** 💫 | $0 | 100 minutes AI, basic features |
+| **Star** ⭐ | $15 | 2GB data/compute, priority access |
+| **Galaxy** 🌌 | $50 | 10GB data/compute, advanced AI |
+| **Universe** 🪐 | $150 | 50GB data/compute, unlimited AI |
+| **Multiverse** 🌠 | $10K+ | Access across entire Constellation |
 
-### ⚡ **3. PoAI Consensus**
-*Proof-of-AI Blockchain Consensus*
+*All tiers start with 100% Shine that depletes based on usage*
 
-- **AI-Powered Validation**: First blockchain with native AI consensus mechanism
-- **Byzantine Fault Tolerance**: Validated against 33% malicious nodes
-- **Performance**: 1000+ TPS capability with 99.2% consensus accuracy
-- **Post-Quantum Ready**: Hybrid cryptography for future-proof security
+---
 
-📖 **[PoAI Documentation →](docs/PoAI/Taxonomy.md)**
+## 🔧 Powered by Advanced Technology
 
-## 🏗️ Technical Architecture
+### Proof-of-AI (PoAI) Blockchain
+SELF runs on the world's first AI-native blockchain, where:
+- AI validates transactions instead of energy-intensive mining
+- Quantum-secure cryptography protects your future
+- Decentralized architecture ensures no single point of failure
 
-### **Core Infrastructure**
-- **Consensus**: Proof-of-AI (PoAI) with AI-powered validation
-- **Storage**: Hybrid IPFS + OrbitDB for decentralized data sovereignty
-- **Cryptography**: Post-quantum hybrid (Kyber, SPHINCS+) with classical compatibility
-- **Network**: Cloud-native P2P with secure node communication
-- **Performance**: 1000+ TPS with sub-second finality
+### Key Technical Features
+- **🔐 Quantum-Safe**: Post-quantum cryptography (Kyber-1024, SPHINCS+)
+- **🤖 AI-Native**: OpenLLM integration for intelligent validation
+- **🌐 Decentralized**: P2P architecture with no central servers
+- **⚡ Scalable**: Designed for millions of users
 
-### **AI Integration**
-- **OpenLLM Platform**: Multi-model AI deployment and management
-- **Context Management**: Persistent AI memory and learning
-- **Pattern Analysis**: Advanced transaction validation and security
-- **Reputation System**: AI-powered validator assessment
+[Learn more about the technology →](docs/Technical/Architecture.md)
 
-### **Enterprise Features**
-- **Multi-Tenant Architecture**: Isolated enterprise blockchain instances
-- **Regulatory Compliance**: 25+ automated compliance frameworks
-- **Audit Readiness**: Complete immutable audit trails
-- **SLA Guarantees**: Enterprise-grade reliability and support
-
-## 📚 Documentation Hub
-
-### **🚀 Getting Started**
-- [Quick Start Guide](docs/README.md) - Complete platform overview
-- [Grid Compute User Journey](docs/Grid%20Compute/User_Journey.md) - Personal AI cloud setup
-- [Developer SDK](docs/SDK/README.md) - Build on SELF Chain
-- [API Reference](docs/API/API_documentation.md) - Complete API documentation
-
-### **🏗️ Architecture**
-- [Core System Architecture](docs/Architecture/SELF_Chain_Architecture.md) - Technical foundation
-- [PoAI Consensus](docs/PoAI/Taxonomy.md) - AI-powered consensus mechanism
-- [Hybrid Storage](docs/Storage/Hybrid_Architecture.md) - IPFS + OrbitDB architecture
-- [Security Framework](docs/Security/Overview.md) - Comprehensive security model
-
-### **🌐 Platform Solutions**
-- [Grid Compute Platform](docs/Grid%20Compute/Overview.md) - Decentralized AI computing
-- [Constellation Enterprise](docs/constellation/Overview.md) - Enterprise blockchain innovation
-- [Regulatory Compliance](docs/constellation/Regulatory_Compliance.md) - 25+ automated frameworks
-- [Industry Validation](docs/constellation/Industry_Validation_Rules.md) - Sector-specific compliance
-
-### **⚡ Performance & Integration**
-- [TPS Optimization](docs/Performance/TPS_Optimization.md) - Scalability architecture
-- [Post-Quantum Crypto](docs/Security/Post_Quantum_Cryptography.md) - Future-proof security
-- [Cross-Chain Integration](docs/Integration/Wire/Wire_Network_Integration.md) - Multi-blockchain protocols
-- [Exchange Integration](docs/Integration/Coinbase_Integration.md) - Trading platform connectivity
-
-## 🎯 Market Solutions
-
-### **🤖 Grid Compute (Individual Users)**
-- **Digital Sovereignty Seekers**: Complete control over personal AI and data
-- **Developers**: AI-native blockchain development platform
-- **Privacy-Conscious Users**: Zero-knowledge personal AI assistants
-- **Web3 Enthusiasts**: Next-generation decentralized computing
-
-### **🏢 Constellation (Enterprise)**
-- **Technology Innovators**: Blockchain innovation platform for regulated industries
-- **Financial Services**: Basel III, SOX, PCI-DSS automated compliance
-- **Healthcare Systems**: HIPAA, FDA, HL7-FHIR regulatory automation
-- **Supply Chain Leaders**: ISO-28000, C-TPAT, WCO-SAFE compliance
-- **Government Agencies**: FISMA, NIST-800-53, FedRAMP frameworks
-- **Energy Companies**: NERC-CIP, IEC-62351, IEEE-1547 standards
-
-### **💼 Platform Benefits**
-- **Cost Efficiency**: 70% reduction in compliance operational expenses
-- **Innovation Speed**: 80% faster regulatory approval processes
-- **Risk Mitigation**: 95% improvement in violation prevention
-- **Competitive Advantage**: First-mover in AI-native enterprise blockchain
+---
 
 ## 🚀 Getting Started
 
-### **🤖 Grid Compute (Personal AI Cloud)**
-1. **Free Trial**: Experience SELF Chain with 30-day Innovation Sandbox
-2. **Choose Infrastructure**: Easy Cloud ($4/month) or Your Cloud Account
-3. **Scale Naturally**: Shine % system guides your upgrade path
-4. **Join SELF Grid**: Future decentralized compute network (2026)
+### For Users
+1. **Download SELF** from [self.app](https://self.app)
+2. **Create your account** with quantum-secure encryption
+3. **Start with Free Tier** - 100% Shine to explore
+4. **Earn tokens** by using the app daily
 
-📖 **[Start Your Grid Compute Journey →](docs/Grid%20Compute/Overview.md)**
+### For Developers
+```bash
+# Clone the repository
+git clone https://github.com/SELF-Technology/self-chain-public.git
 
-### **🏢 Constellation (Enterprise Innovation)**
-1. **Innovation Sandbox**: Free 30-60 day exploration of capabilities
-2. **Choose Innovation Tier**: $50K-$750K+ annually for production
-3. **Industry Deployment**: Healthcare, Finance, Government, Supply Chain, Energy
-4. **Custom Development**: White-glove implementation and support
+# Explore the SDK
+cd sdk/
+npm install @self/sdk
 
-📧 **Enterprise Contact**: [devs@self.app](mailto:devs@self.app)
-
-### **⚡ Developer Platform**
-1. **SDK Access**: Multi-language development libraries
-2. **API Integration**: RESTful and GraphQL endpoints
-3. **Local Development**: Testing utilities and examples
-4. **Community**: Discord, GitHub, and documentation support
-
-📖 **[Developer Documentation →](docs/SDK/README.md)**
-
-## 🔧 Platform Specifications
-
-### **Consensus & Performance**
-- **Consensus**: Proof-of-AI (PoAI) with 99.2% accuracy
-- **Throughput**: 1000+ TPS with sub-second finality
-- **Byzantine Tolerance**: Validated against 33% malicious nodes
-- **Finality**: Probabilistic with AI confidence scoring
-
-### **Security & Cryptography**
-- **Post-Quantum Ready**: Kyber KEM + SPHINCS+ signatures
-- **Hybrid Security**: Classical + quantum-resistant algorithms
-- **Zero-Knowledge**: Privacy-preserving transaction validation
-- **Audit Trails**: Immutable compliance and security logging
-
-### **Infrastructure & Deployment**
-- **Cloud-Native**: AWS, GCP, Azure, Hetzner deployment
-- **Multi-Tenant**: Isolated enterprise blockchain instances
-- **Container Orchestration**: Docker + Kubernetes architecture
-- **Global Availability**: Multi-region deployment support
-
-### **AI & Storage**
-- **OpenLLM Integration**: Multi-model AI deployment platform
-- **Hybrid Storage**: IPFS + OrbitDB for data sovereignty
-- **Context Management**: Persistent AI memory and learning
-- **Pattern Analysis**: Advanced transaction security validation
-
-## 💡 Innovation Leadership
-
-### **🥇 Industry Firsts**
-- **AI-Native Consensus**: First blockchain with Proof-of-AI consensus mechanism
-- **Decentralized AI Computing**: Personal AI assistants on user-controlled infrastructure
-- **Innovation Platform Positioning**: Compliance as competitive advantage, not constraint
-- **Grid Compute Economics**: Multi-revenue streams for compute providers
-
-### **🚀 Technical Breakthroughs**
-- **Hybrid Cryptography**: Seamless classical to post-quantum migration
-- **25+ Regulatory Frameworks**: Automated compliance across 5 major industries
-- **Digital Sovereignty**: Complete user control over AI, blockchain, and data
-- **Cloud-Agnostic Architecture**: Deploy on any infrastructure provider
-
-### **📈 Market Advantages**
-- **Proven Performance**: Battle-tested consensus with 7 Byzantine attack scenarios
-- **Production Ready**: AWS Free Tier multi-tenant deployment system
-- **Token Economics**: Sustainable 20% L1 + 7.5% application revenue model
-- **Innovation Tiers**: $50K-$750K+ enterprise blockchain innovation platform
-
-## 📊 Platform Economics
-
-### **🤖 Grid Compute Model**
-- **Innovation Sandbox**: Free 30-day exploration
-- **Easy Cloud**: $4/month Hetzner managed infrastructure
-- **Your Cloud**: Direct cloud provider billing (typically $15-30/month)
-- **SELF Grid Network**: 20-30% cost reduction through grid efficiency (2026)
-
-### **🏢 Constellation Innovation Tiers**
-- **Innovation Sandbox**: Free development and testing environment
-- **Innovation Starter**: $50K-$150K annually (single industry)
-- **Multi-Domain Professional**: $200K-$500K annually (multiple industries)
-- **Enterprise Innovation Platform**: $750K+ annually (unlimited capabilities)
-
-### **💰 Revenue Distribution**
+# Build your first privacy-first app
+npm run create-self-app
 ```
-Enterprise Layer-1 Tokens:
-├── 60% - Enterprise Organization
-├── 20% - SELF Chain Platform
-├── 15% - Network Validators
-└── 5% - Development Fund
 
-Application Layer Tokens:
-├── 77.5% - Application Developer
-├── 7.5% - SELF Chain Platform
-├── 10% - Application Validators
-└── 5% - Development Fund
-```  
-
-## 🔒 Security & Compliance
-
-### **🛡️ Security Architecture**
-- **Zero-Trust Design**: Network isolation and micro-segmentation
-- **Post-Quantum Cryptography**: Future-proof against quantum attacks
-- **Multi-Factor Authentication**: Hardware tokens and biometric support
-- **End-to-End Encryption**: Data protection in transit and at rest
-- **Continuous Monitoring**: Real-time threat detection and response
-
-### **📋 Regulatory Compliance (25+ Frameworks)**
-- **Financial Services**: SOX, PCI-DSS, Basel III, KYC/AML, GDPR, Dodd-Frank
-- **Healthcare**: HIPAA, FDA, HL7-FHIR, HITECH, ICD-10, DICOM
-- **Supply Chain**: ISO-28000, C-TPAT, WCO-SAFE, FSMA, CPSIA
-- **Government**: FISMA, NIST-800-53, FedRAMP, FIPS-140-2, Section 508
-- **Energy**: NERC-CIP, IEC-62351, IEEE-1547, FERC, NRC, EPA
-
-### **🏆 Compliance Achievements**
-- **95% Automation**: Reduced manual compliance activities
-- **70% Cost Reduction**: Lower operational compliance expenses
-- **99% Violation Prevention**: Proactive compliance monitoring
-- **100% Audit Readiness**: Continuous audit trail maintenance
-
-## 📈 Market Opportunity
-
-### **🌍 Total Addressable Market**
-- **Enterprise Blockchain**: $67B+ by 2026
-- **AI Computing Services**: $150B+ by 2027
-- **Regulatory Technology**: $55B+ by 2025
-- **Decentralized Infrastructure**: $25B+ by 2026
-
-### **🎯 Competitive Positioning**
-- **Unique Innovation**: Only AI-native blockchain with decentralized compute
-- **First-Mover Advantage**: Proof-of-AI consensus mechanism
-- **Regulatory Leadership**: 25+ automated compliance frameworks
-- **Technology Innovation**: Compliance as competitive advantage, not constraint
-
-### **📊 Growth Metrics**
-- **Production Ready**: Multi-tenant AWS deployment system operational
-- **Proven Performance**: 99.2% consensus accuracy, 1000+ TPS capability
-- **Enterprise Interest**: Innovation platform positioning drives premium pricing
-- **Token Economics**: Sustainable revenue model aligned with customer success
-
-## 🌐 Connect & Resources
-
-### **📧 Contact**
-- **General Inquiries**: [devs@self.app](mailto:devs@self.app)
-- **Enterprise Solutions**: [devs@self.app](mailto:devs@self.app)
-- **Developer Support**: [devs@self.app](mailto:devs@self.app)
-- **Partnership Opportunities**: [devs@self.app](mailto:devs@self.app)
-
-### **📚 Documentation & Support**
-- **Complete Documentation**: [docs/README.md](docs/README.md)
-- **Grid Compute Guide**: [docs/Grid Compute/Overview.md](docs/Grid%20Compute/Overview.md)
-- **Constellation Platform**: [docs/constellation/Overview.md](docs/constellation/Overview.md)
-- **Developer Resources**: [docs/SDK/README.md](docs/SDK/README.md)
-- **API Reference**: [docs/API/API_documentation.md](docs/API/API_documentation.md)
-
-### **🔗 Repository Structure**
-```
-SELF Chain Platform:
-├── Grid Compute: Decentralized AI-native computing
-├── Constellation: Enterprise blockchain innovation
-├── PoAI Consensus: AI-powered blockchain validation
-├── Developer SDK: Multi-language development tools
-└── Regulatory Framework: 25+ automated compliance standards
-```
+[Developer Documentation →](docs/SDK/README.md)
 
 ---
 
-## 🚀 Ready to Build the Future?
+## 📚 Documentation
 
-**Choose Your Path:**
-- **🤖 Personal AI Cloud**: [Start Grid Compute Journey](docs/Grid%20Compute/Overview.md)
-- **🏢 Enterprise Innovation**: [Explore Constellation Platform](docs/constellation/Overview.md)
-- **⚡ Developer Platform**: [Build with SELF Chain SDK](docs/SDK/README.md)
+### User Guides
+- [Super-App User Journey](docs/Super-App/User_Journey.md)
+- [Understanding Shine %](docs/User-Guides/Shine_System.md)
+- [Token Subscriptions](docs/Token/Subscription_Model.md)
+- [Privacy Features](docs/User-Guides/Privacy_First.md)
+
+### Technical Documentation
+- [Architecture Overview](docs/Architecture/SELF_Chain_Architecture.md)
+- [PoAI Consensus](docs/PoAI/Taxonomy.md)
+- [Quantum Cryptography](docs/Security/Post_Quantum_Cryptography.md)
+- [Node Deployment](docs/Technical/Node_Setup.md)
+
+### Token Economics
+- [SELF Token Overview](docs/Token/Overview.md)
+- [Earning Mechanisms](docs/Token/Earning.md)
+- [Staking for Tiers](docs/Token/Staking.md)
+- [Constellation Economics](docs/constellation/Overview.md)
+
+### Future Vision
+- [Grid Compute (2026+)](docs/Grid%20Compute/Overview.md)
+- [Constellation Partners](docs/constellation/Overview.md)
+- [Decentralized AI](docs/Future/Distributed_AI.md)
 
 ---
 
-*SELF Chain: Where AI meets blockchain, sovereignty meets innovation, and enterprises meet unlimited possibilities.*
+## 🌍 Join the Movement
+
+### Community
+- **Discord**: [Join our community](https://discord.gg/self)
+- **Twitter**: [@SELFTechnology](https://twitter.com/SELFTechnology)
+- **Telegram**: [t.me/selfchain](https://t.me/selfchain)
+
+### Contribute
+- **GitHub**: Star and contribute to the project
+- **Bug Bounty**: Help us improve security
+- **Translations**: Make SELF accessible globally
+- **Run a Node**: Strengthen the network
+
+---
+
+## 🎯 Roadmap
+
+### ✅ Completed
+- [x] PoAI consensus implementation
+- [x] Quantum-secure cryptography
+- [x] Core Super-App features
+- [x] Token economics design
+
+### 🚧 In Progress
+- [ ] Mobile app beta testing
+- [ ] Token launch (ERC-20)
+- [ ] Testnet scaling
+- [ ] SDK finalization
+
+### 🔮 Future
+- [ ] Mainnet launch
+- [ ] Native SELF coin
+- [ ] Constellation partnerships
+- [ ] Grid compute network
+
+---
+
+## 💡 The SELF Difference
+
+Unlike traditional tech companies that profit from your data, SELF creates a sustainable ecosystem where:
+
+1. **You maintain privacy** - No data harvesting, ever
+2. **You earn rewards** - Get tokens for participation
+3. **You own your experience** - No ads or corporate interference
+4. **You shape the future** - Governance through token holding
+
+---
+
+## 📄 License
+
+SELF Chain is open source software licensed under the [MIT License](LICENSE).
+
+---
+
+## 🤝 Partners & Supporters
+
+- Infrastructure partners pending announcement
+- Academic institutions researching PoAI
+- Privacy advocacy organizations
+- Open source communities
+
+---
+
+**Ready to reclaim your digital sovereignty?**
+
+[**Download SELF →**](https://self.app) | [**Read the Docs →**](docs/) | [**Join Discord →**](https://discord.gg/self)
+
+---
+
+*SELF - Because your data should work for you, not against you.*
