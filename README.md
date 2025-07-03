@@ -87,7 +87,7 @@ SELF runs on the world's first AI-native blockchain, where:
 - **🌐 Decentralized**: P2P architecture with no central servers
 - **⚡ Scalable**: Designed for millions of users
 
-[Learn more about the technology →](docs/Technical/Architecture.md)
+Learn more about the technology in our documentation below.
 
 ---
 
@@ -108,26 +108,18 @@ The SELF Super-App is coming soon! Join our waitlist to be among the first to ex
 
 ### User Guides
 - [Super-App User Journey](docs/Super-App/User_Journey.md)
-- [Understanding Shine %](docs/User-Guides/Shine_System.md)
-- [Token Subscriptions](docs/Token/Subscription_Model.md)
-- [Privacy Features](docs/User-Guides/Privacy_First.md)
 
 ### Technical Documentation
 - [Architecture Overview](docs/Architecture/SELF_Chain_Architecture.md)
 - [PoAI Consensus](docs/PoAI/Taxonomy.md)
 - [Quantum Cryptography](docs/Security/Post_Quantum_Cryptography.md)
-- [Node Deployment](docs/Technical/Node_Setup.md)
 
 ### Token Economics
-- [SELF Token Overview](docs/Token/Overview.md)
-- [Earning Mechanisms](docs/Token/Earning.md)
-- [Staking for Tiers](docs/Token/Staking.md)
-- [Constellation Economics](docs/constellation/Overview.md)
+- [Constellation Economics](docs/Constellation/Overview.md)
 
 ### Future Vision
 - [Grid Compute (2026+)](docs/Grid%20Compute/Overview.md)
-- [Constellation Partners](docs/constellation/Overview.md)
-- [Decentralized AI](docs/Future/Distributed_AI.md)
+- [Constellation Partners](docs/Constellation/Overview.md)
 
 ---
 
@@ -186,7 +178,7 @@ Unlike traditional tech companies that profit from your data, SELF creates a sus
 
 ## 📄 License & Security
 
-SELF Chain is open source software licensed under the [MIT License](LICENSE).
+SELF Chain is open source software licensed under the MIT License.
 
 ### Open Source Model
 SELF follows a selective open source approach similar to Signal. While our core protocol, cryptographic implementations, and client applications are fully open source, certain security-critical components (AI validation rules, pattern matching algorithms) remain closed source to prevent gaming of our consensus mechanism. [Learn more →](SECURITY.md)
@@ -207,7 +199,7 @@ This distribution includes cryptographic software. The country in which you curr
 
 **Ready to reclaim your digital sovereignty?**
 
-[**Download SELF →**](https://self.app) | [**Read the Docs →**](docs/) | [**Join Discord →**](https://discord.gg/selfcommunity)
+[**Join the Waitlist →**](https://self.app) | [**Read the Docs →**](docs/) | [**Join Discord →**](https://discord.gg/selfcommunity)
 
 ---
 
