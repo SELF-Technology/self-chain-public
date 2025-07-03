@@ -100,9 +100,9 @@ When you're ready to upgrade, choose your tier by staking SELF tokens:
 #### 3. "Web3 Pioneer" (5% of users) → Universe Tier 🪐
 **Priya, Crypto Entrepreneur**
 - Wants: Maximum AI capabilities, DeFi integration, future features
-- Values: Innovation, early access, governance participation
+- Values: Innovation, early access, exclusive features
 - Choice: Stakes $150 of SELF tokens monthly
-- Benefits: 50GB allocation, beta features, voting rights
+- Benefits: 50GB allocation, beta features, priority support
 
 ### The Upgrade Experience
 ```javascript
@@ -149,7 +149,7 @@ As you progress through tiers:
 As SELF evolves, token holders can:
 - **Contribute compute**: Run a node, earn more SELF
 - **Participate in AI training**: Help improve models
-- **Vote on features**: Shape the platform's future
+- **Access exclusive features**: Early access to new capabilities
 
 ### The Virtuous Cycle
 ```
