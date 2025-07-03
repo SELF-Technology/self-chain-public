@@ -94,10 +94,13 @@ SELF runs on the world's first AI-native blockchain, where:
 ## 🚀 Getting Started
 
 ### For Users
-1. **Download SELF** from [self.app](https://self.app)
-2. **Create your account** with quantum-secure encryption
-3. **Start with Free Tier** - 100% Shine to explore
-4. **Earn tokens** by using the app daily
+The SELF Super-App is coming soon! Join our waitlist to be among the first to experience:
+- **Quantum-secure accounts** with advanced encryption
+- **Free Tier access** to explore the ecosystem
+- **Token rewards** for daily engagement
+- **Privacy-first features** built on blockchain
+
+[Join the Waitlist →](https://self.app)
 
 ---
 
