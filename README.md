@@ -94,13 +94,11 @@ Learn more about the technology in our documentation below.
 ## 🚀 Getting Started
 
 ### For Users
-The SELF Super-App is coming soon! Join our waitlist to be among the first to experience:
+The SELF Super-App is coming soon! Experience:
 - **Quantum-secure accounts** with advanced encryption
 - **Free Tier access** to explore the ecosystem
 - **Token rewards** for daily engagement
 - **Privacy-first features** built on blockchain
-
-[Join the Waitlist →](https://self.app)
 
 ---
 
@@ -199,7 +197,7 @@ This distribution includes cryptographic software. The country in which you curr
 
 **Ready to reclaim your digital sovereignty?**
 
-[**Join the Waitlist →**](https://self.app) | [**Read the Docs →**](docs/) | [**Join Discord →**](https://discord.gg/selfcommunity)
+[**Learn More →**](https://self.app) | [**Read the Docs →**](docs/) | [**Join Discord →**](https://discord.gg/selfcommunity)
 
 ---
 
