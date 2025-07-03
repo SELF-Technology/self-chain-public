@@ -99,31 +99,6 @@ SELF runs on the world's first AI-native blockchain, where:
 3. **Start with Free Tier** - 100% Shine to explore
 4. **Earn tokens** by using the app daily
 
-### For Developers
-
-Build on SELF Chain's privacy-first blockchain infrastructure:
-
-**SDK Integration**
-```bash
-# Install the SELF SDK
-npm install @self/sdk
-
-# Create a new privacy-first application
-npx create-self-app my-app
-```
-
-**Key Features for Builders**
-- **Privacy SDK**: Build applications with built-in privacy controls
-- **AI Validation APIs**: Integrate with our Proof-of-AI consensus
-- **Zero-Knowledge Proofs**: Privacy-preserving smart contracts
-- **Hybrid Cryptography**: Future-proof with post-quantum security
-
-**Developer Resources**
-- [SDK Documentation →](docs/SDK/README.md)
-- [API Reference →](docs/API/README.md)
-- [Integration Guides →](docs/integration/README.md)
-- [Example Applications →](examples/README.md)
-
 ---
 
 ## 📚 Documentation
