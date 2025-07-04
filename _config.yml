@@ -1,14 +1,54 @@
-theme: jekyll-theme-cayman
+# Theme
+theme: jekyll-theme-hydejack
+remote_theme: hydecorp/hydejack@v9
+
+# Site settings
 title: SELF Chain Documentation
 description: Documentation for SELF Chain - A self-sovereign blockchain platform
 baseurl: "/self-chain-public"
 url: "https://self-technology.github.io"
+lang: en
+
+# Hydejack Settings
+hydejack:
+  no_navbar: false
+  no_drawer: false
+  no_breadcrumbs: false
+  no_structured_data: false
+  no_theme_color: false
+  no_google_fonts: false
+  
+  # Set to true to disable CSS transitions
+  no_transition: false
+  
+  # Set to true to enable the cookie banner
+  cookies_banner: true
+  
+  # Dark mode
+  dark_mode:
+    always: false
+    dynamic: true
+    icon: true
 
 # Build settings
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+  math_engine: mathjax
+  footnote_backlink: '&#x21a9;&#xfe0e;'
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-redirect-from
+
+# Pagination
+paginate: 10
+paginate_path: "/page/:num/"
 
 # Collections for organizing docs
 collections:
@@ -20,13 +60,33 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "docs"
     values:
       layout: "default"
   - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
       path: "docs"
     values:
-      layout: "default"
+      layout: "page"
+      sidebar: true
+
+# Sidebar navigation
+sidebar_options:
+  no_groups: false
+  logo_dark: false
+
+# Author information
+author:
+  name: SELF Technology
+  email: contact@self.app
+
+# Social links
+social:
+  twitter: selftech
+  github: SELF-Technology
 
 # Exclude files from build
 exclude:
@@ -40,3 +100,18 @@ exclude:
   - setup-migration.sh
   - setup-public-repo.sh
   - target/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .sass-cache/
+  - .jekyll-cache/
+  - .jekyll-metadata
+
+# Include custom CSS
+sass:
+  style: compressed
+  sass_dir: _sass
+
+# Custom CSS file
+custom_css: /assets/css/custom.css
