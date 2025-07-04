@@ -73,9 +73,10 @@ $base-button-color-dark: #2a3348;
 $border-color: #eeeeee;
 $border-color-dark: #3a4358;
 
-// Navigation width
-$nav-width: 280px;
-$nav-width-md: 280px;
+// Navigation width (fixed like Minima docs)
+$nav-width: 300px;
+$nav-width-md: 300px;
+$content-width: 1200px;
 
 // Custom styles
 .site-title {
@@ -95,4 +96,45 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'THICCCBOI', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !important;
+}
+
+// Layout improvements
+.side-bar {
+  background-color: $sidebar-color;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  .side-bar {
+    background-color: $sidebar-color-dark;
+  }
+}
+
+// Content area styling
+.main {
+  margin-left: $nav-width;
+  max-width: $content-width;
+  padding: 2rem 3rem;
+}
+
+@media (min-width: 50rem) {
+  .main {
+    margin-left: calc((100% - #{$nav-width} + #{$content-width}) / 2);
+  }
+}
+
+// Improve readability
+.main-content {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+// Dark mode toggle positioning
+.color-scheme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1001;
 }
