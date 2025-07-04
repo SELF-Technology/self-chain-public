@@ -77,10 +77,14 @@ author:
 
 # Menu
 menu:
-  - title: About
-    url: /about/
   - title: Documentation
     url: /documentation/
+  - title: Getting Started
+    url: /docs/About%20SELF/1.%20Introduction/Welcome
+  - title: Architecture
+    url: /docs/Architecture/SELF_Chain_Architecture
+  - title: Development
+    url: /docs/SDK/README
 
 # Exclude files from build
 exclude:
