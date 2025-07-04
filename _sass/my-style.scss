@@ -1,7 +1,7 @@
 // Custom fonts
 @font-face {
   font-family: 'THICCCBOI';
-  src: url('/fonts/thicccboi/THICCCBOI-Regular.woff2') format('woff2');
+  src: url('/self-chain-public/fonts/thicccboi/THICCCBOI-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -9,7 +9,23 @@
 
 @font-face {
   font-family: 'THICCCBOI';
-  src: url('/fonts/thicccboi/THICCCBOI-Bold.woff2') format('woff2');
+  src: url('/self-chain-public/fonts/thicccboi/THICCCBOI-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'THICCCBOI';
+  src: url('/self-chain-public/fonts/thicccboi/THICCCBOI-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'THICCCBOI';
+  src: url('/self-chain-public/fonts/thicccboi/THICCCBOI-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -19,12 +35,24 @@
 $font-family-heading: 'THICCCBOI', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !default;
 $font-family: 'THICCCBOI', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !default;
 
+// Apply THICCCBOI font to all elements
 body {
-  font-family: $font-family;
+  font-family: 'THICCCBOI', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font-family-heading;
+  font-family: 'THICCCBOI', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-weight: 700;
+}
+
+// Ensure font is applied to Hydejack elements
+.sidebar, .content, .navbar, .footer {
+  font-family: 'THICCCBOI', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+// Apply to specific elements
+p, li, a, span, div {
+  font-family: 'THICCCBOI', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
 
 // SELF brand colors
