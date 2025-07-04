@@ -1,8 +1,7 @@
 ---
-sidebar_label: "Welcome"
-sidebar_position: 1
-slug: /
-title: Welcome
+layout: page
+title: Welcome to SELF
+description: SELF is a new AI-powered blockchain ecosystem, where your data is owned and controlled by you.
 ---
 
 # SELF Documentation

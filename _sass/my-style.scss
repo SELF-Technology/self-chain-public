@@ -1,10 +1,3 @@
----
----
-
-// Hydejack theme variables need to be set before import
-$font-family-heading: 'THICCCBOI', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-$font-family: 'THICCCBOI', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-
 // Custom fonts
 @font-face {
   font-family: 'THICCCBOI';
@@ -22,202 +15,53 @@ $font-family: 'THICCCBOI', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto
   font-display: swap;
 }
 
-// Font family overrides
+// Override font families
+$font-family-heading: 'THICCCBOI', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !default;
+$font-family: 'THICCCBOI', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !default;
+
 body {
-  font-family: 'THICCCBOI', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: $font-family;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'THICCCBOI', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: $font-family-heading;
 }
 
-// Light mode colors
+// SELF brand colors
 :root {
-  // Primary colors - black
   --hy-color-primary: #000000;
   --hy-color-primary-dark: #000000;
   --hy-color-primary-darker: #000000;
   --hy-color-primary-darkest: #000000;
-  --hy-color-primary-light: #000000;
-  --hy-color-primary-lighter: #000000;
-  --hy-color-primary-lightest: #000000;
-  
-  // Background colors
-  --hy-color-background: #ffffff;
-  --hy-color-background-secondary: #f8f9fa;
-  
-  // Text colors
-  --hy-color-text: #333333;
-  --hy-color-text-secondary: #666666;
-  
-  // Border colors
-  --hy-color-border: #141b2b;
-  
-  // Code
-  --hy-code-font-size: 95%;
-  
-  // Hydejack specific
-  --gray-bg: #f8f9fa;
-  --gray-text: #666666;
 }
 
 // Dark mode colors
 @media (prefers-color-scheme: dark) {
   :root {
-    // Primary colors - light
     --hy-color-primary: #eff1f6;
     --hy-color-primary-dark: #eff1f6;
-    --hy-color-primary-darker: #eff1f6;
-    --hy-color-primary-darkest: #eff1f6;
-    --hy-color-primary-light: #eff1f6;
-    --hy-color-primary-lighter: #eff1f6;
-    --hy-color-primary-lightest: #eff1f6;
-    
-    // Background colors
     --hy-color-background: #1d263b;
     --hy-color-background-secondary: #141b2b;
-    
-    // Text colors
-    --hy-color-text: #eff1f6;
-    --hy-color-text-secondary: #b8bfc9;
-    
-    // Border colors
-    --hy-color-border: #eff1f6;
-    
-    // Hydejack specific
-    --gray-bg: #141b2b;
-    --gray-text: #b8bfc9;
   }
 }
 
-// Explicit dark mode class
 .dark-mode {
-  // Primary colors - light
   --hy-color-primary: #eff1f6;
-  --hy-color-primary-dark: #eff1f6;
-  --hy-color-primary-darker: #eff1f6;
-  --hy-color-primary-darkest: #eff1f6;
-  --hy-color-primary-light: #eff1f6;
-  --hy-color-primary-lighter: #eff1f6;
-  --hy-color-primary-lightest: #eff1f6;
-  
-  // Background colors
   --hy-color-background: #1d263b;
   --hy-color-background-secondary: #141b2b;
-  
-  // Text colors
-  --hy-color-text: #eff1f6;
-  --hy-color-text-secondary: #b8bfc9;
-  
-  // Border colors
-  --hy-color-border: #eff1f6;
-  
-  // Hydejack specific
-  --gray-bg: #141b2b;
-  --gray-text: #b8bfc9;
-  
-  background-color: var(--hy-color-background);
-  color: var(--hy-color-text);
 }
 
-// Video container styles
-.video-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-  overflow: hidden;
-  margin: 1.5rem 0;
-  
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
-}
-
-// Accordion/Details styling
-details,
-details[open] {
-  background: transparent !important;
-  box-shadow: none !important;
-  border: 1.5px solid var(--hy-color-border) !important;
-  border-radius: 8px;
-  margin: 1rem 0;
-  
-  > summary {
-    background: transparent !important;
-    box-shadow: none !important;
-    outline: none !important;
-    border-bottom: none !important;
-    border-radius: 8px 8px 0 0;
-    cursor: pointer;
-    padding: 1rem;
-    
-    &:focus,
-    &:active,
-    &:hover {
-      border-bottom: none !important;
-      box-shadow: none !important;
-      outline: none !important;
-      background: transparent !important;
+.dl-table {
+  a {
+    @supports ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
+      text-underline-offset: .8rem;
     }
-    
-    &::after {
-      display: none !important;
+    @supports not ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
+      padding-bottom: .45rem;
     }
   }
-}
 
-// Link styling
-.navbar__link,
-.navbar a,
-.menu__link,
-.menu__link--active,
-.menu__list-item > a,
-.sidebar a {
-  text-decoration: none !important;
-}
-
-// Main content links should have underlines
-.content a:not(.btn):not(.no-underline) {
-  text-decoration: underline !important;
-}
-
-// Table of contents links
-.toc a,
-.table-of-contents a {
-  text-decoration: none !important;
-  border-bottom: none !important;
-  background-image: none !important;
-  box-shadow: none !important;
-}
-
-// Footer styling
-.footer {
-  background-color: var(--hy-color-background-secondary);
-}
-
-// Code blocks
-pre {
-  background-color: var(--hy-color-background-secondary);
-  border: 1px solid var(--hy-color-border);
-}
-
-code {
-  font-size: var(--hy-code-font-size);
-  background-color: var(--hy-color-background-secondary);
-  padding: 0.125rem 0.25rem;
-  border-radius: 3px;
-}
-
-// Syntax highlighting for dark mode
-.dark-mode {
-  .highlight,
-  .highlighter-rouge {
-    background-color: var(--hy-color-background-secondary);
+  .btn, .gumroad-button  {
+    margin: 1rem 0;
   }
 }
