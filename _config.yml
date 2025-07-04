@@ -2,7 +2,7 @@
 theme: jekyll-theme-hydejack
 
 # Site settings
-title: SELF Chain Documentation
+title: SELF Chain
 description: Documentation for SELF Chain - A self-sovereign blockchain platform
 baseurl: "/self-chain-public"
 url: "https://self-technology.github.io"
