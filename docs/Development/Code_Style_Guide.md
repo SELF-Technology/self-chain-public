@@ -1,3 +1,8 @@
+---
+layout: page
+title: Code Style Guide
+---
+
 # SELF Chain Code Style Guide
 
 ## 1. Naming Conventions

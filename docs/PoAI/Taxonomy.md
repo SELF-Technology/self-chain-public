@@ -1,3 +1,8 @@
+---
+layout: page
+title: Taxonomy
+---
+
 # Proof-of-AI (PoAI) Taxonomy
 
 This document outlines the core data types and their meanings in the Proof-of-AI system. These types replace the legacy Mini* classes with AI-capacity focused equivalents that better reflect their purpose in the PoAI system.

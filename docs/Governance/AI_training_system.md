@@ -1,3 +1,8 @@
+---
+layout: page
+title: AI training system
+---
+
 # AI Training System
 
 ## Overview

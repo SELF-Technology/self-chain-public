@@ -1,3 +1,8 @@
+---
+layout: page
+title: SDK
+---
+
 # SELF SDK Documentation
 
 ## Overview

@@ -1,3 +1,8 @@
+---
+layout: page
+title: SELFScript Developer Guide
+---
+
 # SELFScript Developer Guide
 
 Welcome to the SELFScript Developer Guide! This comprehensive guide will help you understand and develop with SELFScript, the native smart contract language of SELF Chain.

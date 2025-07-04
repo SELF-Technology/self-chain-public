@@ -1,3 +1,8 @@
+---
+layout: page
+title: Testing Requirements
+---
+
 # SELF Chain Testing Requirements
 
 ## 1. Test Coverage Requirements

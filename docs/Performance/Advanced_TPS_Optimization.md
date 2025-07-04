@@ -1,3 +1,8 @@
+---
+layout: page
+title: Advanced TPS Optimization
+---
+
 # SELF Chain Advanced TPS Optimization
 
 ## Overview

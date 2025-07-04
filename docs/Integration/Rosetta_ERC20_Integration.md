@@ -1,3 +1,8 @@
+---
+layout: page
+title: Rosetta ERC20 Integration
+---
+
 # Rosetta and ERC-20 Integration Technical Documentation
 
 ## 1. Integration Overview

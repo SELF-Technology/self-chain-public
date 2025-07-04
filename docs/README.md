@@ -1,3 +1,8 @@
+---
+layout: page
+title: SELF Documentation Hub
+---
+
 # 🌟 SELF Documentation Hub
 
 **Your guide to the privacy-first Super-App and the revolutionary technology that powers it.**

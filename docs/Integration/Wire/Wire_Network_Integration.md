@@ -1,3 +1,8 @@
+---
+layout: page
+title: Wire Network Integration
+---
+
 # Wire Network Integration Technical Documentation
 
 ## 1. Integration Overview

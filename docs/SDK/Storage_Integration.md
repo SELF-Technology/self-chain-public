@@ -1,3 +1,8 @@
+---
+layout: page
+title: Storage Integration
+---
+
 # Storage Integration Documentation
 
 ## Overview

@@ -1,3 +1,8 @@
+---
+layout: page
+title: ERD Overview v2
+---
+
 # SELF Chain Architecture
 
 // Custom Icons

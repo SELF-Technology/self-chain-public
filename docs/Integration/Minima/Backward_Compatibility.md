@@ -1,3 +1,8 @@
+---
+layout: page
+title: Backward Compatibility
+---
+
 # SELF Chain Backward Compatibility with Minima
 
 ## Overview

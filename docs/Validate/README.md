@@ -1,3 +1,8 @@
+---
+layout: page
+title: Validate
+---
+
 # SELF Validate
 
 ## Overview

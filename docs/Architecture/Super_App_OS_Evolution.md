@@ -1,3 +1,8 @@
+---
+layout: page
+title: Super App OS Evolution
+---
+
 # SELF Super-App and OS Evolution Architecture
 
 ## Super-App Architecture

@@ -1,3 +1,8 @@
+---
+layout: page
+title: Token Operations
+---
+
 # Token Operations Documentation
 
 ## Overview

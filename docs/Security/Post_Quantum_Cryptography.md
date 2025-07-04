@@ -1,3 +1,8 @@
+---
+layout: page
+title: Post Quantum Cryptography
+---
+
 # SELF Chain Post-Quantum Cryptography
 
 ## Introduction

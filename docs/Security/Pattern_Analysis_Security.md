@@ -1,3 +1,8 @@
+---
+layout: page
+title: Pattern Analysis Security
+---
+
 # Pattern Analysis Security System
 
 ## Overview

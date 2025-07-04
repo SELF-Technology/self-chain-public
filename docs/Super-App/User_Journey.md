@@ -1,3 +1,8 @@
+---
+layout: page
+title: User Journey
+---
+
 # 🌟 SELF Super-App User Journey
 
 ## Welcome to Your Privacy-First Digital Life

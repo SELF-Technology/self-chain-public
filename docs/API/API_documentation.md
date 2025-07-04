@@ -1,3 +1,8 @@
+---
+layout: page
+title: API documentation
+---
+
 # SELF Chain API Documentation
 
 ## 1. API Overview

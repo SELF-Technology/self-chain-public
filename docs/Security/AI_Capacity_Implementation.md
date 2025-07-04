@@ -1,3 +1,8 @@
+---
+layout: page
+title: AI Capacity Implementation
+---
+
 # AI-Capacity Class Implementation
 
 ## Overview

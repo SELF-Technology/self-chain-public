@@ -1,3 +1,8 @@
+---
+layout: page
+title: SELF Chain Architecture
+---
+
 # SELF Chain Public Architecture
 
 ## SELF Ecosystem Overview

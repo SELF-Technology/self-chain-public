@@ -1,3 +1,8 @@
+---
+layout: page
+title: Industry Validation Rules
+---
+
 # 🏛️ SELF Chain Industry Validation Rules
 
 **Version:** 1.0.0  

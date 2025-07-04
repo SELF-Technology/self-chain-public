@@ -1,3 +1,8 @@
+---
+layout: page
+title: Overview
+---
+
 # SELF Chain Security Overview
 
 ## 1. Security Architecture

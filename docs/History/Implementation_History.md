@@ -1,3 +1,8 @@
+---
+layout: page
+title: Implementation History
+---
+
 # SELF Chain Implementation History
 
 ## Project Overview

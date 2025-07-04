@@ -1,3 +1,8 @@
+---
+layout: page
+title: Stake and Participation
+---
+
 # SELF Chain Stake and Participation System
 
 ## 1. Stake System Overview

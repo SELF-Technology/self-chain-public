@@ -1,3 +1,8 @@
+---
+layout: page
+title: Index
+---
+
 # SELF Chain Documentation
 
 ## Core Components

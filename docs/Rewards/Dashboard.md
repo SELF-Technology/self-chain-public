@@ -1,3 +1,8 @@
+---
+layout: page
+title: Dashboard
+---
+
 # SELF Chain Reward Dashboard
 
 The SELF Chain Reward Dashboard provides real-time monitoring and visualization of the reward distribution system, enabling administrators and validators to track reward metrics, performance indicators, and validation statistics.
