@@ -81,8 +81,6 @@ menu:
     url: /about/
   - title: Documentation
     url: /documentation/
-  - title: Getting Started
-    url: /docs/About%20SELF/1.%20Introduction/Welcome
 
 # Exclude files from build
 exclude:
