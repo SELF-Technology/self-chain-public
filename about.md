@@ -17,4 +17,4 @@ SELF Chain is a revolutionary blockchain platform designed to give users true so
 - **Grid Compute**: Distributed computing capabilities
 - **Post-Quantum Security**: Future-proof cryptography
 
-For more detailed information, explore our [comprehensive documentation](/).
+For more detailed information, explore our [comprehensive documentation]({{ '/documentation/' | relative_url }}).
