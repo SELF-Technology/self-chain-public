@@ -30,6 +30,12 @@ back_to_top_text: "Back to top"
 # Footer content
 footer_content: "Copyright &copy; 2024 SELF Technology. All rights reserved."
 
+# Color scheme supports "light" (default) and "dark"
+color_scheme: custom
+
+# Enable dark mode toggle
+color_scheme_toggle: true
+
 # Process all markdown files in docs
 defaults:
   - scope:
