@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: default
 title: SELF Chain Architecture
+parent: Architecture
+nav_order: 1
 ---
 
 # SELF Chain Public Architecture
