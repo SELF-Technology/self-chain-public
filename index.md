@@ -1,9 +1,7 @@
 ---
-layout: home
-title: Home
-nav_order: 1
-description: "SELF - The Future Of Technology Belongs To You"
-permalink: /
+layout: welcome
+title: SELF Documentation
+cover: true
 ---
 
 <div class="hero-section">
@@ -44,8 +42,6 @@ SELF is building the future of technology where users maintain complete sovereig
   </div>
 </div>
 
----
-
 ## The Six Core Commitments
 
 SELF is built on six unbreakable commitments to our users:
@@ -58,8 +54,6 @@ SELF is built on six unbreakable commitments to our users:
 6. **Quantum-Ready Security** - Future-proof from the start
 
 [Learn More About Our Philosophy →](/docs/approach/philosophy/)
-
----
 
 ## Quick Links
 
@@ -77,7 +71,3 @@ SELF is built on six unbreakable commitments to our users:
 - [Roadmap](/docs/roadmap/)
 - [Contributing Guide](/docs/community/contributing/)
 - [Join the Discussion](https://github.com/SELF-Technology/self-chain-public/discussions)
-
----
-
-<small>SELF is open source software released under the [MIT License](https://github.com/SELF-Technology/self-chain-public/blob/main/LICENSE).</small>
