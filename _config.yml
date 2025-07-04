@@ -21,6 +21,31 @@ hydejack:
     dynamic: true
     icon: true
 
+# Sidebar and theme customization
+tagline: A self-sovereign blockchain platform
+logo: /assets/img/logo.png
+accent_image: /assets/img/sidebar-bg.jpg
+accent_color: '#000000'
+theme_color: '#000000'
+
+# Permalinks
+permalink: pretty
+
+# Pagination
+paginate: 10
+paginate_path: /page/:num/
+
+# Collections
+collections:
+  featured_categories:
+    permalink: /:name/
+    output: true
+
+# File inclusion/exclusion
+include:
+  - .well-known
+  - LICENSE.md
+
 # Build settings
 markdown: kramdown
 kramdown:
