@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: default
 title: Welcome to SELF
-description: SELF is a new AI-powered blockchain ecosystem, where your data is owned and controlled by you.
+parent: About SELF
+nav_order: 1
 ---
 
 # SELF Documentation

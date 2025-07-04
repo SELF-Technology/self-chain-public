@@ -1,7 +1,9 @@
 ---
-layout: page
-title: Documentation
+layout: home
+title: Home
+nav_order: 1
 description: Complete documentation for SELF Chain
+permalink: /
 ---
 
 # SELF Chain Documentation

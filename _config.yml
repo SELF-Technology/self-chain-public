@@ -1,5 +1,5 @@
-# Theme
-theme: jekyll-theme-hydejack
+# Theme - Just the Docs
+remote_theme: just-the-docs/just-the-docs@v0.8.2
 
 # Site settings
 title: SELF Chain
@@ -8,52 +8,36 @@ baseurl: "/self-chain-public"
 url: "https://self-technology.github.io"
 lang: en
 
-# Hydejack Settings
-hydejack:
-  no_navbar: false
-  no_drawer: false
-  no_breadcrumbs: false
-  no_structured_data: false
-  no_theme_color: false
-  
-  # Dark mode
-  dark_mode:
-    dynamic: true
-    icon: true
+# Just the Docs settings
+color_scheme: custom
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
 
-# Sidebar and theme customization
-tagline: A self-sovereign blockchain platform
-logo: /assets/img/logo.png
-accent_image: /assets/img/sidebar-bg.jpg
-accent_color: '#000000'
-theme_color: '#000000'
+# Enable copy button on code blocks
+enable_copy_code_button: true
 
-# Permalinks
-permalink: pretty
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
 
-# Pagination
-paginate: 10
-paginate_path: /page/:num/
-
-# Collections
-collections:
-  featured_categories:
-    permalink: /:name/
-    output: true
+# Footer content
+footer_content: "Copyright &copy; 2024 SELF Technology. All rights reserved."
 
 # Process all markdown files in docs
 defaults:
   - scope:
       path: "docs"
-      type: "pages"
     values:
-      layout: "page"
-      sitemap: true
-
-# File inclusion/exclusion
-include:
-  - .well-known
-  - LICENSE.md
+      layout: "default"
+      nav_exclude: false
+      search_exclude: false
 
 # Build settings
 markdown: kramdown
@@ -67,8 +51,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-include-cache
+  - jekyll-remote-theme
 
 # Author information
 author:
