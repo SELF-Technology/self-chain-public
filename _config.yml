@@ -1,5 +1,4 @@
-# Theme
-theme: jekyll-theme-hydejack
+# Theme - using remote_theme for GitHub Pages
 remote_theme: hydecorp/hydejack@v9
 
 # Site settings
@@ -38,13 +37,12 @@ kramdown:
   math_engine: mathjax
   footnote_backlink: '&#x21a9;&#xfe0e;'
 
-# Plugins
+# Plugins (GitHub Pages supported)
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-redirect-from
 
 # Pagination
 paginate: 10
