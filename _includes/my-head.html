@@ -41,3 +41,24 @@
     document.querySelectorAll('.gumroad-button').forEach(el => io2.observe(el));
   });
 </script>
+
+<!-- Custom script to modify logo behavior -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Override logo/site title link to prevent navigation
+    const logoLinks = document.querySelectorAll('.sidebar-title, .navbar-brand');
+    logoLinks.forEach(function(link) {
+      if (link) {
+        link.style.cursor = 'pointer';
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          // Close drawer if open
+          const drawer = document.querySelector('#_drawer');
+          if (drawer && drawer.classList.contains('open')) {
+            drawer.classList.remove('open');
+          }
+        });
+      }
+    });
+  });
+</script>
