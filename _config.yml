@@ -1,0 +1,144 @@
+# SELF Documentation - Jekyll Configuration
+title: SELF Documentation
+description: The Future Of Technology Belongs To You
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://self-technology.github.io" # the base hostname & protocol for your site
+
+# Theme configuration
+remote_theme: just-the-docs/just-the-docs@v0.8.2
+color_scheme: nil  # We'll use custom styling instead
+
+# Enable search
+search_enabled: true
+search:
+  # Split pages into sections that can be searched individually
+  heading_level: 2
+  # Maximum search results
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+
+# Aux links for the top navigation
+aux_links:
+  "SELF on GitHub":
+    - "//github.com/SELF-Technology/self-chain-public"
+  "Main Site":
+    - "//self.app"
+
+# Makes Aux links open in a new tab
+aux_links_new_tab: true
+
+# Footer content
+footer_content: "Copyright &copy; 2024 SELF Technology. Distributed under <a href=\"https://github.com/SELF-Technology/self-chain-public/blob/main/LICENSE\">MIT license</a>."
+
+# Footer last edited timestamp
+last_edit_timestamp: true
+last_edit_time_format: "%b %e %Y at %I:%M %p"
+
+# Footer "Edit this page on GitHub" link text
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/SELF-Technology/self-chain-public"
+gh_edit_branch: "main"
+gh_edit_source: docs
+gh_edit_view_mode: "tree"
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Heading anchor links
+heading_anchors: true
+
+# External navigation links
+nav_external_links:
+  - title: SELF Whitepaper
+    url: https://self.app/whitepaper
+    hide_icon: false
+
+# Collections for changelog
+collections:
+  changelog:
+    output: true
+    permalink: /changelog/:path/
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-github-metadata
+  - jekyll-include-cache
+
+# SEO settings
+twitter:
+  username: SELFTechnology
+  card: summary_large_image
+
+logo: "/assets/images/self-logo.png"
+
+# Google Analytics (if needed)
+# ga_tracking: UA-XXXXXXXXX-X
+
+# Compress HTML output
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - .github/
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - README.md
+  - scripts/
+  - tests/
+
+# Build settings
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# Just the Docs settings
+# Enable copy button on code blocks
+enable_copy_code_button: true
+
+# Color scheme supports "light" (default) and "dark"
+color_scheme: self
+
+# Navigation structure
+nav_sort: case_sensitive
+
+# External links configuration
+callouts_level: quiet
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
