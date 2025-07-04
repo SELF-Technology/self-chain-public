@@ -1,6 +1,7 @@
 ---
-layout: default
-title: Home
+layout: home
+title: SELF Chain Documentation
+cover: true
 ---
 
 # SELF Chain Documentation
