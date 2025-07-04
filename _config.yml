@@ -1,5 +1,5 @@
 # Theme - using remote_theme for GitHub Pages
-remote_theme: hydecorp/hydejack@v9
+remote_theme: hydecorp/hydejack@9.1.6
 
 # Site settings
 title: SELF Chain Documentation
@@ -7,27 +7,6 @@ description: Documentation for SELF Chain - A self-sovereign blockchain platform
 baseurl: "/self-chain-public"
 url: "https://self-technology.github.io"
 lang: en
-
-# Hydejack Settings
-hydejack:
-  no_navbar: false
-  no_drawer: false
-  no_breadcrumbs: false
-  no_structured_data: false
-  no_theme_color: false
-  no_google_fonts: false
-  
-  # Set to true to disable CSS transitions
-  no_transition: false
-  
-  # Set to true to enable the cookie banner
-  cookies_banner: true
-  
-  # Dark mode
-  dark_mode:
-    always: false
-    dynamic: true
-    icon: true
 
 # Build settings
 markdown: kramdown
@@ -44,47 +23,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Pagination
-paginate: 10
-paginate_path: "/page/:num/"
-
-# Collections for organizing docs
-collections:
-  docs:
-    output: true
-    permalink: /:collection/:path/
-
-# Default front matter
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: "docs"
-    values:
-      layout: "page"
-      sidebar: true
-
-# Sidebar navigation
-sidebar_options:
-  no_groups: false
-  logo_dark: false
-
 # Author information
 author:
   name: SELF Technology
   email: contact@self.app
-
-# Social links
-social:
-  twitter: selftech
-  github: SELF-Technology
 
 # Exclude files from build
 exclude:
@@ -109,7 +51,3 @@ exclude:
 # Include custom CSS
 sass:
   style: compressed
-  sass_dir: _sass
-
-# Custom CSS file
-custom_css: /assets/css/custom.css
