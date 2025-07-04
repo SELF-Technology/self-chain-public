@@ -3,17 +3,6 @@ name: Deploy Documentation to GitHub Pages
 on:
   push:
     branches: [ main ]
-    paths:
-      - 'docs/**'
-      - '_config.yml'
-      - 'Gemfile'
-      - 'Gemfile.lock'
-      - 'assets/**'
-      - '_sass/**'
-      - '_layouts/**'
-      - '_includes/**'
-      - 'index.md'
-      - '.github/workflows/deploy-docs.yml'
   
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -24,8 +13,7 @@ permissions:
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Allow only one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -42,17 +30,23 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
-          bundler-cache: true # runs 'bundle install' and caches installed gems
+          bundler-cache: false  # We'll handle bundler manually
+          
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle config set --local path 'vendor/bundle'
+          bundle install --jobs 4 --retry 3
           
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
         
       - name: Build with Jekyll
-        # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
