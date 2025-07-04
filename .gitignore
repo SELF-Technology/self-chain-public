@@ -1,84 +1,27 @@
-# Java
-*.class
-*.log
-*.war
-*.ear
-*.jar
-*.zip
-*.tar.gz
-*.tar.bz2
-*.rar
-*.class
-*.log
-*.war
-*.ear
-*.jar
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 
-# Maven
-.mvnw
-.mvnw.cmd
-mvnw
-mvnw.cmd
-.m2/repository
-.m2/wrapper
+# Ruby
+vendor/bundle/
+.bundle/
+Gemfile.lock
 
-# IDE
-.idea
-*.iml
-*.iws
-*.ipr
-.vscode/
-
-# Rust
-/target/
-/debug/
-/release/
-**/*.rs.bk
-
-# Build directories
-target/
-out/
-build/
-
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# OS generated files
+# macOS
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
 
-# Dependencies
-node_modules/
-vendor/
-
-# IDE
+# Editor directories and files
 .idea/
 .vscode/
 *.swp
 *.swo
+*~
+
+# Logs
+*.log
 
 # Environment variables
 .env
 .env.local
-.env.*.local
-
-# Debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Local env files
-.env*.local
-
-# Public web files
-/build
-/dist
