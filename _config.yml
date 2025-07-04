@@ -1,5 +1,5 @@
-# Theme - using remote_theme for GitHub Pages
-remote_theme: hydecorp/hydejack@9.1.6
+# Theme
+theme: jekyll-theme-hydejack
 
 # Site settings
 title: SELF Chain Documentation
@@ -7,6 +7,19 @@ description: Documentation for SELF Chain - A self-sovereign blockchain platform
 baseurl: "/self-chain-public"
 url: "https://self-technology.github.io"
 lang: en
+
+# Hydejack Settings
+hydejack:
+  no_navbar: false
+  no_drawer: false
+  no_breadcrumbs: false
+  no_structured_data: false
+  no_theme_color: false
+  
+  # Dark mode
+  dark_mode:
+    dynamic: true
+    icon: true
 
 # Build settings
 markdown: kramdown
@@ -16,12 +29,12 @@ kramdown:
   math_engine: mathjax
   footnote_backlink: '&#x21a9;&#xfe0e;'
 
-# Plugins (GitHub Pages supported)
+# Plugins
 plugins:
-  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-include-cache
 
 # Author information
 author:
