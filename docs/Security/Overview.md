@@ -1,0 +1,72 @@
+# SELF Chain Security Overview
+
+## 1. Security Architecture
+
+The SELF Chain implements a multi-layered security approach incorporating:
+
+1. **Post-Quantum Cryptography**
+   - Hybrid cryptographic approach combining classical and quantum-resistant algorithms
+   - Kyber-1024 for quantum-resistant key exchange
+   - SPHINCS+ for quantum-resistant signatures
+   - Forward security against future quantum threats
+
+2. **AI-Powered Validation**
+   - Uses Ollama Cloud for AI validation
+   - Context-aware validation system
+   - Validator reputation tracking
+
+3. **Consensus Security**
+   - PoAI (Proof-of-AI) consensus mechanism
+   - Voting-based validation
+   - Validator reputation system
+
+4. **Network Security**
+   - Secure peer discovery
+   - Encrypted communication
+   - Message validation
+
+## 2. Security Features
+
+### 2.1 Core Security Components
+
+- **Quantum-Resistant Cryptography**
+  - Hybrid key exchange combining X25519 and Kyber-1024
+  - Quantum-resistant signature schemes with SPHINCS+
+  - Future-proof cryptographic architecture
+  - Phased implementation approach
+  - Cryptographic agility for algorithm transitions
+
+- **AI Validation**
+  - AI-powered block and transaction validation
+  - Context-aware validation
+  - Validator reputation tracking
+
+- **Consensus Security**
+  - Voting-based validation
+  - Validator reputation system
+  - Block proposal mechanism
+
+- **Network Security**
+  - Secure peer discovery
+  - Encrypted communication
+  - Message validation
+
+## 3. Security Process
+
+### 3.1 Automated Security Audits
+
+- CI pipeline integration
+- Regular dependency updates
+- Security testing on every PR
+
+### 3.2 Security Best Practices
+
+- Secure coding guidelines
+- Regular security reviews
+- Code signing for critical components
+
+## 4. Security Contact
+
+For security-related inquiries or to report vulnerabilities, please contact:
+- Security Team Lead: [security-lead@selfchain.com](mailto:security-lead@selfchain.com)
+- Security Reporting Portal: [security.selfchain.com](https://security.selfchain.com)
