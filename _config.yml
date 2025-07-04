@@ -1,165 +1,26 @@
-# SELF Documentation - Jekyll Configuration with Hydejack Theme
+# SELF Documentation
 title: SELF Documentation
 description: The Future Of Technology Belongs To You
-baseurl: "" 
+baseurl: "/self-chain-public" 
 url: "https://self-technology.github.io"
 
-# Theme configuration
-remote_theme: hydecorp/hydejack@v9.1.6
+# Use minimal theme that GitHub Pages supports
+theme: minima
 
-# Hydejack Settings
-hydejack:
-  no_inline_css: false
-  no_break_layout: true
-  no_toc_heading: true
-  no_breadcrumbs: false
-  no_structured_data: false
-  
-  # Dark mode as default
-  dark_mode:
-    always: false
-    dynamic: true
-    sunrise: 6
-    sunset: 18
-    icon: true
+# Basic settings
+markdown: kramdown
+highlighter: rouge
 
-  # Cookies
-  cookies_banner: false
-  
-  # Post
-  post_addons: []
-  
-  # Collections
-  clap_button: false
-
-# Theme configuration
-theme_color: '#1d263b'
-font: "'THICCCBOI', 'Montserrat', sans-serif"
-font_heading: "'THICCCBOI', 'Montserrat', sans-serif"
-google_fonts: Montserrat:300,400,600,700
-
-# Accent colors
-accent_color: '#2d21b2'
-accent_image:
-  background: '#1d263b'
-  overlay: false
-
-# Sidebar
-sidebar:
-  sticky: true
-
-# Menu
-menu:
-  - title: Documentation
-    url: /docs/
-  - title: Introduction
-    url: /docs/introduction/
-  - title: Technical
-    url: /docs/technical/
-  - title: Roadmap
-    url: /docs/roadmap/
-  - title: GitHub
-    url: https://github.com/SELF-Technology/self-chain-public
-
-# Footer
-copyright: "© 2024 SELF Technology. All rights reserved."
-
-# Plugins
+# Plugins (only GitHub Pages supported ones)
 plugins:
-  - jekyll-default-layout
   - jekyll-feed
-  - jekyll-optional-front-matter
-  - jekyll-paginate
-  - jekyll-readme-index
-  - jekyll-redirect-from
-  - jekyll-relative-links
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-titles-from-headings
-  - jekyll-include-cache
-  - jekyll-github-metadata
 
-# SEO
-twitter:
-  username: SELFTechnology
-  card: summary_large_image
-
-logo: /assets/img/SELFwhitelogo.png
-
-# Pagination
-paginate: 10
-paginate_path: '/page-:num/'
-
-# Build settings
-markdown: kramdown
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    block:
-      line_numbers: false
-
-# Exclude from build
+# Exclude files
 exclude:
-  - .jekyll-cache
-  - .sass-cache
-  - vendor
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - package.json
-  - package-lock.json
+  - vendor/
+  - .bundle/
   - README.md
-  - LICENSE
-  - CNAME
-  - Rakefile
-
-# Include in build
-include:
-  - .well-known
-  - LICENSE.md
-
-# Collections
-collections:
-  featured_categories:
-    permalink: /docs/:name/
-    output: true
-  featured_tags:
-    permalink: /tag/:name/
-    output: true
-
-# Defaults
-defaults:
-  # Documentation
-  - scope:
-      path: docs
-    values:
-      layout: page
-      sitemap: true
-  # Posts
-  - scope:
-      type: posts
-    values:
-      layout: post
-      comments: true
-  # Collections
-  - scope:
-      type: featured_categories
-    values:
-      layout: list
-  - scope:
-      type: featured_tags
-    values:
-      layout: list
-
-# Compress HTML
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  ignore:
-    envs: [development]
-
-# Sass
-sass:
-  style: compressed
