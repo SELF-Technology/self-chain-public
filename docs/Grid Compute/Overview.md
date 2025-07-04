@@ -1,3 +1,8 @@
+---
+layout: page
+title: Overview
+---
+
 # SELF Grid Compute - User Experience Overview
 
 **Document Version:** 1.0  

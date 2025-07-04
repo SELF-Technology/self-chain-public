@@ -1,3 +1,8 @@
+---
+layout: page
+title: Coinbase Integration
+---
+
 # SELF Chain Coinbase Integration Technical Documentation
 
 ## 1. Integration Overview

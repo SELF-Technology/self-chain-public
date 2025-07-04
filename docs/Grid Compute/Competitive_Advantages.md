@@ -1,3 +1,8 @@
+---
+layout: page
+title: Competitive Advantages
+---
+
 # SELF Grid Compute - Competitive Advantages
 
 **Document Version:** 1.0  

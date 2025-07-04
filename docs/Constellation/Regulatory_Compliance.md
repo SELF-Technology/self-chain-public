@@ -1,3 +1,8 @@
+---
+layout: page
+title: Regulatory Compliance
+---
+
 # 📋 SELF Chain Regulatory Compliance Framework
 
 **Version:** 1.0.0  

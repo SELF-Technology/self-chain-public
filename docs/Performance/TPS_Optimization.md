@@ -1,3 +1,8 @@
+---
+layout: page
+title: TPS Optimization
+---
+
 # SELF Chain TPS Optimization Strategy
 
 ## Overview
