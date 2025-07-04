@@ -77,8 +77,8 @@ author:
 
 # Menu
 menu:
-  - title: Documentation
-    url: /documentation/
+  - title: Home
+    url: /
   - title: Getting Started
     url: /docs/About%20SELF/1.%20Introduction/Welcome
   - title: Architecture
