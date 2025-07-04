@@ -1,135 +1,91 @@
-# SELF Documentation - Jekyll Migration
+# SELF Chain
 
-This directory contains the Jekyll setup for migrating SELF documentation from Docusaurus to GitHub Pages.
+A self-sovereign blockchain ecosystem where your data is owned and controlled by you.
 
-## 🚀 Quick Start
+## 🌟 Overview
 
-1. **Copy to Public Repository**
-   ```bash
-   cp -r docs-migration/jekyll-setup/* /path/to/self-chain-public/
-   ```
+SELF Chain represents a paradigm shift in blockchain technology, combining AI-powered validation with true self-sovereignty. We're building a future where personal data ownership isn't just a promise—it's a fundamental right encoded in our technology.
 
-2. **Install Dependencies**
-   ```bash
-   cd /path/to/self-chain-public/
-   bundle install --path vendor/bundle
-   ```
+## 🚀 Key Features
 
-3. **Run Locally**
-   ```bash
-   ./serve-local.sh
-   # Or manually:
-   bundle exec jekyll serve --livereload
-   ```
+- **AI-Powered Consensus**: Revolutionary Proof-of-AI (PoAI) consensus mechanism
+- **Self-Sovereign Identity**: Complete control over your personal data and digital identity
+- **Enterprise-Ready**: Constellation Architecture for industry-specific blockchain deployments
+- **High Performance**: Optimized for thousands of transactions per second
+- **Developer-Friendly**: Comprehensive SDK and development tools
 
-4. **Deploy to GitHub Pages**
-   - Push to main branch
-   - Enable GitHub Pages in repository settings
-   - Select "GitHub Actions" as the source
+## 📖 Documentation
 
-## 📁 Structure
+Visit our documentation portal: [docs.self.app](https://docs.self.app)
 
-```
-.
-├── _config.yml              # Jekyll configuration
-├── _sass/                   # Custom styles
-│   └── color_schemes/       
-│       └── self.scss        # SELF brand colors
-├── assets/                  
-│   └── css/
-│       └── custom.scss      # Additional styling
-├── docs/                    # Documentation content
-│   ├── introduction/
-│   ├── approach/
-│   ├── technical/
-│   └── ...
-├── .github/workflows/       
-│   └── deploy-docs.yml      # Auto-deployment
-├── Gemfile                  # Ruby dependencies
-├── index.md                 # Homepage
-└── setup-migration.sh       # Setup helper script
-```
+### Quick Links
 
-## 🎨 Customization
+- [Introduction to SELF](docs/About%20SELF/1.%20Introduction/Welcome.md)
+- [Technical Architecture](docs/Architecture/SELF_Chain_Architecture.md)
+- [Developer Guide](docs/Development/Code_Style_Guide.md)
+- [SDK Documentation](docs/SDK/README.md)
+- [Security Overview](docs/Security/Overview.md)
 
-### Color Scheme
-Edit `_sass/color_schemes/self.scss` to modify brand colors.
+## 🛠️ Getting Started
 
-### Styling
-Add custom CSS to `assets/css/custom.scss`.
+### For Developers
 
-### Navigation
-Update `_data/navigation.yml` for menu structure.
-
-## 📝 Writing Documentation
-
-### Front Matter
-```yaml
----
-layout: default
-title: Page Title
-nav_order: 1
-has_children: true
-permalink: /section/
----
-```
-
-### Callout Boxes
-```markdown
-{: .callout .callout-info}
-> **Note:** This is an informational callout.
-
-{: .callout .callout-warning}
-> **Warning:** This is a warning callout.
-```
-
-### Code Blocks
-````markdown
-```rust
-fn main() {
-    println!("Hello, SELF!");
-}
-```
-````
-
-## 🚢 Deployment
-
-The GitHub Actions workflow automatically deploys to GitHub Pages when you push to main.
-
-### Manual Deployment
 ```bash
-# Build the site
-bundle exec jekyll build
+# Clone the repository
+git clone https://github.com/SELF-Technology/self-chain-public.git
 
-# The output is in _site/
+# Navigate to the SDK
+cd self-chain-public/SDK
+
+# Follow the SDK setup guide
+cat README.md
 ```
 
-## 🔧 Configuration
+### For Enterprise
 
-### Custom Domain
-1. Add `docs.self.app` to repository settings
-2. Create `CNAME` file with domain
-3. Update DNS records
+Contact us for enterprise deployment options and Constellation Architecture licensing.
 
-### SEO
-Configure in `_config.yml`:
-```yaml
-title: Your Title
-description: Your Description
-twitter:
-  username: YourTwitter
-```
+## 🏗️ Architecture
 
-## 📚 Resources
+SELF Chain implements a unique multi-layer architecture:
 
-- [Jekyll Documentation](https://jekyllrb.com/docs/)
-- [Just the Docs Theme](https://just-the-docs.github.io/just-the-docs/)
-- [GitHub Pages Guide](https://docs.github.com/en/pages)
+1. **Core Layer**: AI-powered blockchain with PoAI consensus
+2. **Constellation Layer**: Industry-specific parallel chains
+3. **Application Layer**: Super-App and developer SDKs
+4. **Storage Layer**: Hybrid IPFS/OrbitDB implementation
 
-## ✅ Migration Checklist
+Learn more in our [Architecture Documentation](docs/Architecture/SELF_Chain_Architecture.md).
 
-See `MIGRATION_CHECKLIST.md` for detailed migration tasks.
+## 🔒 Security
+
+Security is paramount in SELF Chain:
+
+- Post-quantum cryptography ready
+- AI-powered threat detection
+- Multi-layer validation
+- Enterprise-grade security audits
+
+Read our [Security Overview](docs/Security/Overview.md) for details.
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our contributing guidelines (coming soon).
+
+## 📜 License
+
+This project is licensed under [License Type] - see the LICENSE file for details.
+
+## 📞 Contact
+
+- Website: [self.app](https://self.app)
+- Documentation: [docs.self.app](https://docs.self.app)
+- Twitter: [@self_hq](https://twitter.com/self_hq)
+- Email: contact@self.app
+
+## 🙏 Acknowledgments
+
+Built by the SELF Technology team with contributions from our amazing community.
 
 ---
 
-For questions or issues, please open an issue in the SELF repository.
+*"Freedom is a two-edged sword of which one edge is liberty and the other, responsibility."* - Jack Parsons
