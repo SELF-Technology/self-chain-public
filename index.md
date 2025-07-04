@@ -8,17 +8,12 @@ cover: true
 
 Welcome to the official documentation for SELF Chain - a self-sovereign blockchain platform that empowers users with true ownership and control over their digital assets and data.
 
-## Documentation Sections
+## Quick Start
 
-### 📚 About SELF
-- [Introduction](docs/About%20SELF/1.%20Introduction/Welcome)
-  - [A self-sovereign alternative](docs/About%20SELF/1.%20Introduction/A%20self-sovereign%20alternative)
-  - [Evolution of tech](docs/About%20SELF/1.%20Introduction/Evolution%20of%20tech)
-- [Approach](docs/About%20SELF/2.%20Approach/The%20Long-Term%20Goal)
-- [Roadmap](docs/About%20SELF/3%20Roadmap/Introduction)
-- [Technical Docs](docs/About%20SELF/4%20Technical%20Docs/Architecture%20Overview)
-- [Team](docs/About%20SELF/5%20Team/)
-- [Media Coverage](docs/About%20SELF/6%20Media%20Coverage/Articles)
+- 📖 [Browse All Documentation](/documentation/) - Complete documentation index
+- 🚀 [Getting Started Guide](docs/About%20SELF/1.%20Introduction/Welcome)
+- 🏗️ [Architecture Overview](docs/Architecture/SELF_Chain_Architecture)
+- 💻 [Developer SDK](docs/SDK/README)
 
 ### 🏗️ Architecture
 - [SELF Chain Architecture](docs/Architecture/SELF_Chain_Architecture)

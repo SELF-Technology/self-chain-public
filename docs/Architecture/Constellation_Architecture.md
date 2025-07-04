@@ -1,3 +1,8 @@
+---
+layout: page
+title: Constellation Architecture
+---
+
 # 🌟 SELF Chain Constellation Architecture
 
 **Version:** 1.0.0  

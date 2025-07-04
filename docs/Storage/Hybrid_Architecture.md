@@ -1,3 +1,8 @@
+---
+layout: page
+title: Hybrid Architecture
+---
+
 # Hybrid Storage Architecture
 
 ## Overview

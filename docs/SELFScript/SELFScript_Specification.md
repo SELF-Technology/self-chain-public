@@ -1,3 +1,8 @@
+---
+layout: page
+title: SELFScript Specification
+---
+
 # SELFScript Language Specification
 
 ## 1. Introduction

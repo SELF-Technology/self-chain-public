@@ -1,3 +1,8 @@
+---
+layout: page
+title: Monitoring and Alerting
+---
+
 # SELF Chain Monitoring and Alerting System
 
 ## Overview

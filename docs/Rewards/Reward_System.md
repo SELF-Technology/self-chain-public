@@ -1,3 +1,8 @@
+---
+layout: page
+title: Reward System
+---
+
 # SELF Chain Reward System Documentation
 
 ## 1. System Overview

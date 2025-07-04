@@ -1,3 +1,8 @@
+---
+layout: page
+title: Business Model
+---
+
 # SELF Grid Compute - Business Model & Economics
 
 **Document Version:** 1.0  

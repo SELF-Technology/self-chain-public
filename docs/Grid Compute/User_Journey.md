@@ -1,3 +1,8 @@
+---
+layout: page
+title: User Journey
+---
+
 # SELF Grid Compute - Complete User Journey
 
 **Document Version:** 1.0  

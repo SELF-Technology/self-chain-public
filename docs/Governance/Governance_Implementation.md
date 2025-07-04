@@ -1,3 +1,8 @@
+---
+layout: page
+title: Governance Implementation
+---
+
 # SELF Chain Governance Implementation
 
 ## Overview
