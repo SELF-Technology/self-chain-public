@@ -4,6 +4,29 @@ title: SELF Chain Architecture
 
 # SELF Chain Public Architecture
 
+## 📂 Explore the Open Source Code
+
+Our blockchain implementation is fully open source. Explore the core components:
+
+<div className="opensource-links">
+
+- **[Blockchain Core](https://github.com/SELF-Technology/self-chain-public/tree/main/src/blockchain)** - Core blockchain implementation
+  - Block structure, chain management, transaction processing
+- **[Consensus (PoAI)](https://github.com/SELF-Technology/self-chain-public/tree/main/src/consensus)** - Proof of AI consensus mechanism
+  - Validator logic, voting system, reputation management
+- **[Networking](https://github.com/SELF-Technology/self-chain-public/tree/main/src/network)** - P2P and cloud communication
+  - libp2p integration, TLS security, cloud protocol
+- **[Storage](https://github.com/SELF-Technology/self-chain-public/tree/main/src/storage)** - Hybrid distributed storage
+  - IPFS integration, OrbitDB, cloud storage adapters
+- **[Cryptography](https://github.com/SELF-Technology/self-chain-public/tree/main/src/crypto)** - Post-quantum security
+  - Kyber, SPHINCS+, hybrid cryptographic systems
+- **[AI Integration](https://github.com/SELF-Technology/self-chain-public/tree/main/src/ai)** - AI-powered validation system
+  - Pattern analysis, context management, validation services
+
+</div>
+
+---
+
 ## SELF Ecosystem Overview
 
 ![SELF Chain Architecture](./SELF%20Chain%20Architecture.png)
