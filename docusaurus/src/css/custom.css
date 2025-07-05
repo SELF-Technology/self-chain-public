@@ -85,6 +85,12 @@ html[data-theme="dark"] {
 .footer--dark {
   --ifm-footer-background-color: #141b2b;
 }
+
+/* Force footer background color */
+footer.footer {
+  background-color: #141b2b !important;
+}
+
 details,
 details[open],
 details > summary,
@@ -341,38 +347,72 @@ html[data-theme="dark"] .opensource-links a {
   color: #4a9eff;
 }
 
-/* Hero section styles */
-.hero-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 3rem 0;
-  margin-bottom: 3rem;
+/* Hero section styles - Respects sidebar boundaries */
+.hero-section-wrapper {
   position: relative;
-  overflow: hidden;
+  background-image: url('/img/SELF GALAXY transparent 620kb.png');
+  background-position: center center; /* Center the galaxy for better alignment */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: visible;
+  margin: 0; /* Remove negative margin */
+  padding: 0;
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Add overlay for better text readability */
+.hero-section-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, 
+    rgba(255,255,255,0.85) 0%, 
+    rgba(255,255,255,0.6) 50%, 
+    rgba(255,255,255,0) 70%
+  );
+  z-index: 1;
+}
+
+html[data-theme="dark"] .hero-section-wrapper::before {
+  background: linear-gradient(to right, 
+    rgba(29,38,59,0.85) 0%, 
+    rgba(29,38,59,0.6) 50%, 
+    rgba(29,38,59,0) 70%
+  );
+}
+
+.hero-section {
+  position: relative;
+  z-index: 2;
+  padding: 2rem 2rem 12rem 2rem; /* Further reduce top padding */
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh; /* Ensure full height */
+  display: flex;
+  align-items: flex-start; /* Align content to top */
+  justify-content: center; /* Center horizontally */
+  flex-direction: column; /* Stack content vertically */
 }
 
 .hero-content {
-  flex: 1;
   max-width: 600px;
-  z-index: 2;
+  margin-top: 0; /* Remove margin to position text at the top */
 }
 
-.hero-content h1 {
-  font-size: 3rem;
+.hero-title {
+  font-size: 3.5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #1649ff 0%, #0658f7 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  margin-bottom: 1.5rem;
+  color: #1d263b;
+  line-height: 1.2;
 }
 
-html[data-theme="dark"] .hero-content h1 {
-  background: linear-gradient(135deg, #4a9eff 0%, #1649ff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+html[data-theme="dark"] .hero-title {
+  color: #eff1f6;
 }
 
 .hero-tagline {
@@ -386,70 +426,130 @@ html[data-theme="dark"] .hero-tagline {
   color: #a6acbb;
 }
 
-.hero-image {
-  position: absolute;
-  right: -10%;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 600px;
-  opacity: 0.8;
-  z-index: 1;
+/* Hide the automatic h1 from Docusaurus */
+.markdown > h1:first-child {
+  display: none;
 }
 
-.hero-image img {
-  width: 100%;
-  height: auto;
-  filter: brightness(1.1);
+/* Remove breadcrumb transparency - keep default background */
+
+/* Remove negative margin that was pulling content up */
+
+/* Ensure breadcrumb text remains visible */
+.breadcrumbs__item {
+  color: var(--ifm-color-primary);
+  opacity: 1;
 }
 
-html[data-theme="dark"] .hero-image img {
-  filter: brightness(0.8);
-}
-
-/* Animation */
-@keyframes float {
-  0% { transform: translateY(-50%) translateX(0px); }
-  50% { transform: translateY(-50%) translateX(-20px); }
-  100% { transform: translateY(-50%) translateX(0px); }
-}
-
-.hero-image {
-  animation: float 6s ease-in-out infinite;
+html[data-theme="dark"] .breadcrumbs__item {
+  color: var(--ifm-color-primary);
+  opacity: 1;
 }
 
 /* Responsive design */
-@media (max-width: 996px) {
-  .hero-section {
-    flex-direction: column;
-    text-align: center;
-    padding: 2rem 0;
-  }
-  
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-  
-  .hero-image {
-    position: relative;
-    right: auto;
-    top: auto;
-    transform: none;
-    width: 400px;
-    margin: 2rem auto 0;
-    animation: none;
+@media (max-width: 1200px) {
+  .hero-section-wrapper {
+    background-position: center center;
+    background-size: cover;
   }
 }
 
+@media (max-width: 996px) {
+  .hero-section {
+    padding: 4rem 2rem;
+    min-height: 70vh; /* Reduce height on tablet */
+    align-items: flex-start; /* Align content to top */
+    padding-top: 6rem; /* Add top padding */
+  }
+  
+  .hero-title {
+    font-size: clamp(2rem, 5vw + 1rem, 3rem);
+  }
+  
+  .hero-section-wrapper {
+    background-attachment: scroll; /* Better performance on mobile */
+    background-size: 150%; /* Moderate zoom for tablet */
+    background-position: center center; /* Center for transparent version */
+    margin-top: -2rem; /* Less negative margin on mobile */
+    min-height: 70vh;
+  }
+  
+  .hero-section-wrapper::before {
+    background: radial-gradient(
+      ellipse at center top,
+      rgba(255,255,255,0.9) 0%,
+      rgba(255,255,255,0.8) 30%,
+      rgba(255,255,255,0.6) 50%,
+      rgba(255,255,255,0.4) 70%,
+      rgba(255,255,255,0.2) 100%
+    );
+  }
+  
+  html[data-theme="dark"] .hero-section-wrapper::before {
+    background: radial-gradient(
+      ellipse at center top,
+      rgba(29,38,59,0.9) 0%,
+      rgba(29,38,59,0.8) 30%,
+      rgba(29,38,59,0.6) 50%,
+      rgba(29,38,59,0.4) 70%,
+      rgba(29,38,59,0.2) 100%
+    );
+  }
+  
+}
+
 @media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2rem;
+  .hero-section {
+    padding: 3rem 1.5rem;
+    min-height: 60vh;
+    padding-top: 4rem;
+  }
+  
+  .hero-content {
+    /* Remove glass box effect on mobile */
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    backdrop-filter: none;
+    box-shadow: none;
+  }
+  
+  html[data-theme="dark"] .hero-content {
+    background: transparent;
+    box-shadow: none;
+  }
+  
+  .hero-title {
+    font-size: clamp(1.75rem, 4vw + 0.5rem, 2.5rem);
+    margin-bottom: 1rem;
   }
   
   .hero-tagline {
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 2vw + 0.5rem, 1.25rem);
   }
   
-  .hero-image {
-    width: 300px;
+  .hero-section-wrapper {
+    background-size: 200%; /* Zoom in to make galaxy prominent */
+    background-position: center center; /* Center the galaxy for transparent version */
+    min-height: 60vh;
+    margin-top: 0; /* Remove negative margin on mobile */
+    padding-top: 0;
+  }
+  
+  /* Simplify overlay on mobile for better performance */
+  .hero-section-wrapper::before {
+    background: linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.5) 0%,
+      rgba(255,255,255,0.2) 100%
+    );
+  }
+  
+  html[data-theme="dark"] .hero-section-wrapper::before {
+    background: linear-gradient(
+      to bottom,
+      rgba(29,38,59,0.5) 0%,
+      rgba(29,38,59,0.2) 100%
+    );
   }
 }

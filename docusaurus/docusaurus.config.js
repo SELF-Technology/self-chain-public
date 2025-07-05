@@ -25,6 +25,11 @@ const config = {
   ],
 
   themeConfig: {
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+    },
     navbar: {
       logo: {
         alt: 'SELF Logo',
@@ -38,7 +43,7 @@ const config = {
       items: [],
     },
     footer: {
-      copyright: `Copyright © ${new Date().getFullYear()} SELF Technology`,
+      copyright: `Copyright © ${new Date().getFullYear()} SELF`,
     },
   },
 };
