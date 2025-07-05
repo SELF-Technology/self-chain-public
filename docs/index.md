@@ -178,25 +178,38 @@ Our blockchain is fully open source for transparency and community audit:
 
 <h3 style="margin-bottom: 2rem;">Join the Self-Sovereign Technology Movement</h3>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 <div style="margin-bottom: 1.5rem;">
 <a href="https://discord.gg/selfcommunity" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
-  💬 Discord Community
+  <i class="fab fa-discord" style="margin-right: 0.5rem;"></i> Discord Community
 </a>
 
 <a href="https://github.com/SELF-Technology/self-chain-public" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
-  💻 GitHub Code
+  <i class="fab fa-github" style="margin-right: 0.5rem;"></i> GitHub Code
 </a>
 
 <a href="https://x.com/self_hq" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
-  🐦 Twitter Updates
+  <i class="fab fa-x-twitter" style="margin-right: 0.5rem;"></i> X (formerly Twitter)
 </a>
 </div>
 
-<div style="font-size: 1.1rem;">
-<a href="https://t.me/selfcommunitychat" style="color: #1649ff; margin: 0 0.5rem;">Telegram</a> • 
-<a href="https://instagram.com/selfappofficial" style="color: #1649ff; margin: 0 0.5rem;">Instagram</a> • 
-<a href="https://www.youtube.com/@selfcommunityvideos" style="color: #1649ff; margin: 0 0.5rem;">YouTube</a> • 
-<a href="https://www.linkedin.com/company/selftechnology/" style="color: #1649ff; margin: 0 0.5rem;">LinkedIn</a>
+<div style="margin-bottom: 1.5rem;">
+<a href="https://t.me/selfcommunitychat" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
+  <i class="fab fa-telegram" style="margin-right: 0.5rem;"></i> Telegram
+</a>
+
+<a href="https://instagram.com/selfappofficial" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
+  <i class="fab fa-instagram" style="margin-right: 0.5rem;"></i> Instagram
+</a>
+
+<a href="https://www.youtube.com/@selfcommunityvideos" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
+  <i class="fab fa-youtube" style="margin-right: 0.5rem;"></i> YouTube
+</a>
+
+<a href="https://www.linkedin.com/company/selftechnology/" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
+  <i class="fab fa-linkedin" style="margin-right: 0.5rem;"></i> LinkedIn
+</a>
 </div>
 
 </div>
