@@ -1,16 +1,17 @@
 ---
-title: Welcome to the SELF Docs
 sidebar_label: "🏠 Documentation Hub"
 sidebar_position: 0
+hide_table_of_contents: true
+hide_title: true
+className: landing-page
 ---
 
-<div className="hero-section">
-  <div className="hero-content">
-    <h1>Welcome to the SELF Docs</h1>
-    <p className="hero-tagline">Creating the infrastructure for self-sovereign technology, privacy-first applications, and human-centric AI</p>
-  </div>
-  <div className="hero-image">
-    <img src="/img/SELF GALAXY transparent 620kb.png" alt="SELF Galaxy" />
+<div className="hero-section-wrapper">
+  <div className="hero-section">
+    <div className="hero-content">
+      <h1 className="hero-title">SELF Documentation</h1>
+      <p className="hero-tagline">Creating the infrastructure for self-sovereign technology, privacy-first applications, and human-centric AI.</p>
+    </div>
   </div>
 </div>
 
