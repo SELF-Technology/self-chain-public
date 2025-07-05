@@ -1,5 +1,6 @@
 const config = {
   title: 'SELF Documentation',
+  tagline: 'Creating the infrastructure for self-sovereign technology, privacy-first applications, and human-centric AI',
   url: 'https://docs.self.app',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
