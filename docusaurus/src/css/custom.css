@@ -245,41 +245,30 @@ details > summary:hover::after {
 
 /* Second button - Constellation */
 .button-container a:nth-child(2) {
-  background-color: transparent;
-  color: #525872 !important;
-  border-color: #A6ACBB;
+  background-color: #525B72;
+  color: white !important;
+  border-color: #525B72;
 }
 
 .button-container a:nth-child(2):hover {
-  background-color: #F7F8FC;
-  border-color: #525872;
-  color: #1D263B !important;
+  background-color: #414859;
+  border-color: #414859;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(82, 91, 114, 0.25);
 }
 
 /* Third button - Open Source */
 .button-container a:nth-child(3) {
-  background-color: #1D263B;
-  color: #EFF1F6 !important;
-  border-color: #1D263B;
+  background-color: #A0A9BD;
+  color: white !important;
+  border-color: #A0A9BD;
 }
 
 .button-container a:nth-child(3):hover {
-  background-color: #141B2B;
-  border-color: #141B2B;
+  background-color: #8B94A8;
+  border-color: #8B94A8;
   transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(29, 38, 59, 0.25);
-}
-
-/* Dark mode adjustments */
-html[data-theme="dark"] .button-container a:nth-child(2) {
-  color: #A6ACBB !important;
-  border-color: #525872;
-}
-
-html[data-theme="dark"] .button-container a:nth-child(2):hover {
-  background-color: #1D263B;
-  border-color: #A6ACBB;
-  color: #EFF1F6 !important;
+  box-shadow: 0 2px 8px rgba(160, 169, 189, 0.25);
 }
 
 /* Community section styles */
