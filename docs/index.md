@@ -156,7 +156,7 @@ Our blockchain is fully open source for transparency and community audit:
 | **Open Source Blockchain** | ✅ Released | Fully auditable codebase |
 | **Constellation Network** | ✅ Available | Enterprise blockchain platform |
 | **Super-App Beta** | 🔄 Testing | Privacy-first services |
-| **SDK & APIs** | ✅ Ready | Multi-language support |
+| **SDK & APIs** | 📅 Planned | Multi-language support |
 | **Token Launch** | 📅 Planned | Economic model finalized |
 | **Grid Compute** | 🔄 2026 | Distributed AI network |
 
