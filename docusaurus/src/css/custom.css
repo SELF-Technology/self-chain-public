@@ -1,0 +1,207 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+@import url(https://docs.self.app/docsearch-v2.css);
+
+@font-face {
+  font-family: 'THICCCBOI';
+  src: url('/fonts/thicccboi/THICCCBOI-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'THICCCBOI';
+  src: url('/fonts/thicccboi/THICCCBOI-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'THICCCBOI', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'THICCCBOI', sans-serif;
+}
+
+
+/* You can override the default Infima variables here. */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+:root {
+  --ifm-color-primary: #000000;
+  --ifm-color-primary-dark: #000000;
+  --ifm-color-primary-darker: #000000;
+  --ifm-color-primary-darkest: #000000;
+  --ifm-color-primary-light: #000000;
+  --ifm-color-primary-lighter: #000000;
+  --ifm-color-primary-lightest: #000000;
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: "THICCCBOI", "Montserrat", sans-serif;
+
+  --docusaurus-highlighted-code-line-bg: #121212(0, 0, 0, 0.1);
+}
+
+
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+html[data-theme="dark"] {
+  --ifm-color-primary: #eff1f6;
+  --ifm-color-primary-dark: #eff1f6;
+  --ifm-color-primary-darker: #eff1f6;
+  --ifm-color-primary-darkest: #eff1f6;
+  --ifm-color-primary-light: #eff1f6;
+  --ifm-color-primary-lighter: #eff1f6;
+  --ifm-color-primary-lightest: #eff1f6;
+  --ifm-background-color: #1d263b;
+  --ifm-background-surface-color: #141b2b;
+  --docusaurus-highlighted-code-line-bg: #121212rgba(0, 0, 0, 0.3);
+}
+.redocusaurus pre {
+  --ifm-background-color: initial;
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #141b2b;
+}
+details,
+details[open],
+details > summary,
+details[open] > summary {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+/* Light mode accordion borders */
+details,
+details[open] {
+  border: 1.5px solid #141b2b !important;
+  border-radius: 8px;
+}
+details > summary {
+  border-bottom: none !important;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Dark mode accordion borders */
+html[data-theme="dark"] details,
+html[data-theme="dark"] details[open] {
+  border: 1.5px solid #eff1f6 !important;
+}
+html[data-theme="dark"] details > summary {
+  border-bottom: none !important;
+}
+details > summary {
+  border-bottom: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Remove Infima/Docusaurus focus/active/hover border for summary */
+details > summary:focus,
+details > summary:active,
+details > summary:hover {
+  border-bottom: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+/* Ensure Algolia search dropdown uses a dark background in dark mode */
+html[data-theme="dark"] .DocSearch-Dropdown,
+html[data-theme="dark"] .DocSearch-Modal,
+html[data-theme="dark"] .DocSearch-Container,
+html[data-theme="dark"] .DocSearch-Hit,
+html[data-theme="dark"] .DocSearch-Hit-content {
+  background: #1d263b !important;
+  color: #fff !important;
+}
+
+/* Optional: Style the highlighted (active) search result */
+html[data-theme="dark"] .DocSearch-Hit[aria-selected="true"],
+html[data-theme="dark"] .DocSearch-Hit--active {
+  background: #1d263b !important;
+  color: #fff !important;
+}
+details > summary,
+details > summary:focus,
+details > summary:active,
+details > summary:hover {
+  border-bottom: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background: transparent !important;
+}
+/* Remove Infima/Docusaurus blue line (often a ::after pseudo-element) */
+details > summary::after,
+details > summary:focus::after,
+details > summary:active::after,
+details > summary:hover::after {
+  border-bottom: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  content: none !important;
+  height: 0 !important;
+}
+.DocSearch-Hit[aria-selected="true"] a {
+  background-color: #1649ff !important;
+}
+/* Remove underline from navbar and sidebar menu links */
+.navbar__link,
+.navbar a,
+.menu__link,
+.menu__link--active,
+.menu__list-item > a {
+  text-decoration: none !important;
+}
+
+/* Underline links only in main docs content, but never in menu/sidebar/navbar */
+.main-wrapper .markdown a,
+.main-wrapper a:not(.menu__link):not(.navbar__link),
+.markdown a:not(.menu__link):not(.navbar__link) {
+  text-decoration: underline !important;
+}
+/* Remove underline from right-hand-side ToC (table of contents) links, with higher specificity */
+.main-wrapper .table-of-contents a,
+.table-of-contents a,
+.table-of-contents a:link,
+.table-of-contents a:visited,
+.table-of-contents a:hover,
+.table-of-contents a:active {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background-image: none !important;
+}
+/* Remove underline from right-hand-side ToC (table of contents) links with maximum specificity */
+.main-wrapper .table-of-contents a,
+.main-wrapper .table-of-contents a:link,
+.main-wrapper .table-of-contents a:visited,
+.main-wrapper .table-of-contents a:hover,
+.main-wrapper .table-of-contents a:active {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background-image: none !important;
+}
+
+/* Also target Infima's possible underline via box-shadow */
+.main-wrapper .table-of-contents a {
+  box-shadow: none !important;
+}

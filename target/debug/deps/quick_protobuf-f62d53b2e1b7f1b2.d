@@ -1,0 +1,10 @@
+/Users/jmac/Documents/GitHub/self-chain-public/target/debug/deps/libquick_protobuf-f62d53b2e1b7f1b2.rmeta: /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quick-protobuf-0.8.1/src/lib.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quick-protobuf-0.8.1/src/errors.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quick-protobuf-0.8.1/src/message.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quick-protobuf-0.8.1/src/reader.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quick-protobuf-0.8.1/src/sizeofs.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quick-protobuf-0.8.1/src/writer.rs
+
+/Users/jmac/Documents/GitHub/self-chain-public/target/debug/deps/quick_protobuf-f62d53b2e1b7f1b2.d: /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quick-protobuf-0.8.1/src/lib.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quick-protobuf-0.8.1/src/errors.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quick-protobuf-0.8.1/src/message.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quick-protobuf-0.8.1/src/reader.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quick-protobuf-0.8.1/src/sizeofs.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quick-protobuf-0.8.1/src/writer.rs
+
+/Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quick-protobuf-0.8.1/src/lib.rs:
+/Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quick-protobuf-0.8.1/src/errors.rs:
+/Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quick-protobuf-0.8.1/src/message.rs:
+/Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quick-protobuf-0.8.1/src/reader.rs:
+/Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quick-protobuf-0.8.1/src/sizeofs.rs:
+/Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quick-protobuf-0.8.1/src/writer.rs:

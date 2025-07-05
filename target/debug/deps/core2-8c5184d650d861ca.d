@@ -1,0 +1,12 @@
+/Users/jmac/Documents/GitHub/self-chain-public/target/debug/deps/libcore2-8c5184d650d861ca.rmeta: /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/lib.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/error.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/io/mod.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/io/cursor.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/io/error.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/io/impls.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/io/traits.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/io/util.rs
+
+/Users/jmac/Documents/GitHub/self-chain-public/target/debug/deps/core2-8c5184d650d861ca.d: /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/lib.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/error.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/io/mod.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/io/cursor.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/io/error.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/io/impls.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/io/traits.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/io/util.rs
+
+/Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/lib.rs:
+/Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/error.rs:
+/Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/io/mod.rs:
+/Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/io/cursor.rs:
+/Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/io/error.rs:
+/Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/io/impls.rs:
+/Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/io/traits.rs:
+/Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/core2-0.4.0/src/io/util.rs:
