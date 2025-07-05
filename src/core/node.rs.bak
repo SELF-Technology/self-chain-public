@@ -1,0 +1,563 @@
+use std::sync::Arc;
+use tokio::sync::RwLock;
+use tracing::{info, error, warn};
+use anyhow::Result;
+use std::net::SocketAddr;
+use crate::core::message_handler::MessageHandler;
+use crate::core::network_node::NetworkNode;
+use crate::blockchain::{Blockchain, Block, Transaction};
+use crate::network::NetworkNode;
+use crate::core::types::*;
+use std::sync::Arc;
+
+pub struct Node {
+    config: NodeConfig,
+    blockchain: Arc<RwLock<Blockchain>>,
+    network: Arc<RwLock<NetworkNode>>,
+    ai: Arc<RwLock<AIService>>,
+    message_handler: Arc<RwLock<MessageHandler>>,
+    validator: Arc<RwLock<AIValidator>>,
+    voting_system: Arc<RwLock<VotingSystem>>,
+    storage: Arc<RwLock<HybridStorage>>,
+    auth_service: Arc<RwLock<AuthService>>,
+    ai_context: Arc<RwLock<AIContextManager>>,
+    validator_reputation: Arc<RwLock<ValidatorReputation>>,
+    ai_capacity: Arc<RwLock<AICapacityManager>>,
+
+impl Node {
+    // ... existing methods ...
+    pub async fn new(config: NodeConfig) -> Result<Self> {
+        info!("Initializing PoAI node with ID: {}", config.id);
+        
+        // Initialize blockchain
+        let blockchain = Arc::new(RwLock::new(Blockchain::new(config.difficulty)?));
+        
+        // Initialize network
+        let network = Arc::new(RwLock::new(NetworkNode::new(config.network.clone())?));
+        
+        // Initialize AI service with Ollama Cloud
+        let ai = Arc::new(RwLock::new(AIService::new_with_ollama(
+            config.ai.ollama_api_key.clone(),
+            config.ai.model.clone()
+        )?));
+        ai.write().await.initialize().await?;
+        
+        // Initialize storage
+        let storage = Arc::new(RwLock::new(HybridStorage::new(
+            config.storage.ipfs_url.clone(),
+            config.storage.orbitdb_timeout_secs
+        )?));
+        
+        // Initialize auth service
+        let auth_service = Arc::new(RwLock::new(AuthService::new(
+            config.auth.api_key.clone(),
+            config.auth.key_store_path.clone()
+        )?));
+        
+        // Initialize AI context manager
+        let ai_context = Arc::new(RwLock::new(AIContextManager::new(
+            config.ai.context_window_size,
+            config.ai.max_tokens
+        )?));
+        
+        // Initialize validator reputation
+        let validator_reputation = Arc::new(RwLock::new(ValidatorReputation::new(
+            config.validator.min_stake,
+            config.validator.min_active_hours
+        )?));
+        
+        // Initialize AI capacity manager
+        let ai_capacity = Arc::new(RwLock::new(AICapacityManager::new(
+            config.ai.max_capacity,
+            config.ai.capacity_refresh_interval
+        )?));
+        
+        // Initialize validator with PoAI consensus
+        let validator = Arc::new(RwLock::new(AIValidator::new_with_poai(
+            ai.clone(),
+            validator_reputation.clone(),
+            ai_capacity.clone(),
+            config.validator.validation_window
+        )?));
+        
+        // Initialize voting system
+        let voting_system = Arc::new(RwLock::new(VotingSystem::new(
+            validator.clone(),
+            network.clone(),
+            config.voting.voting_window
+        )?));
+        
+        // Create node instance
+        let node = Self {
+            config,
+            blockchain,
+            network,
+            ai,
+            message_handler,
+            validator,
+            voting_system,
+            storage,
+            auth_service,
+            ai_context,
+            validator_reputation,
+            ai_capacity,
+        };
+
+        // Start components with PoAI consensus
+        node.start_poai_components().await?;
+        
+        info!("PoAI node initialized successfully");
+        Ok(node)
+    }
+
+    async fn start_poai_components(&self) -> Result<()> {
+        // Start storage synchronization
+        self.storage.write().await.start_sync_daemon().await?;
+        
+        // Start network
+        self.network.write().await.start().await?;
+        
+        // Start message handler
+        self.message_handler.write().await.start().await?;
+        
+        // Start validator
+        self.validator.write().await.start().await?;
+        
+        // Start voting system
+        self.voting_system.write().await.start().await?;
+        
+        Ok(())
+    }
+
+    pub async fn start(&self) -> Result<()> {
+        info!("Starting node...");
+        
+        // Connect to peers
+        self.connect_to_peers().await?;
+        
+        // Start mining
+        self.start_mining().await?;
+        
+        info!("Node started successfully");
+        Ok(())
+    }
+
+    async fn connect_to_peers(&self) -> Result<()> {
+        let peers = &self.config.network.initial_peers;
+        info!("Connecting to {} initial peers", peers.len());
+        
+        for peer in peers {
+            match self.network.write().await.connect(peer).await {
+                Ok(_) => info!("Connected to peer: {}", peer),
+                Err(e) => warn!("Failed to connect to peer {}: {}", peer, e),
+            }
+        }
+        
+        // Start peer discovery if enabled
+        if self.config.network.discovery_interval_secs > 0 {
+            self.start_peer_discovery().await;
+        }
+        
+        Ok(())
+    }
+
+    async fn start_peer_discovery(&self) {
+        let node = self.clone();
+        tokio::spawn(async move {
+            loop {
+                // Run discovery
+                if let Err(e) = node.run_peer_discovery().await {
+                    error!("Peer discovery failed: {}", e);
+                }
+
+                // Wait before next discovery
+                tokio::time::sleep(std::time::Duration::from_secs(
+                    node.config.network.discovery_interval_secs
+                )).await;
+            }
+        });
+    }
+
+    async fn run_peer_discovery(&self) -> Result<()> {
+        info!("Starting peer discovery");
+
+        // Get current peer count
+        let current_peers = self.network.read().await.get_peers().await?;
+        let current_count = current_peers.len();
+
+        // Check if we need more peers
+        if current_count >= self.config.network.max_connections as usize {
+            info!("Max peer connections reached ({}), skipping discovery", current_count);
+            return Ok(());
+        }
+
+        // Calculate peers needed
+        let peers_needed = self.config.network.max_connections as usize - current_count;
+        info!("Need to discover {} more peers", peers_needed);
+
+        // Perform discovery
+        let discovered_peers = self.discover_peers(peers_needed).await?;
+        info!("Discovered {} new peers", discovered_peers.len());
+
+        // Connect to discovered peers
+        for peer in discovered_peers {
+            if let Err(e) = self.connect_to_peer(peer).await {
+                warn!("Failed to connect to discovered peer {}: {}", peer, e);
+            }
+        }
+
+        Ok(())
+    }
+
+    async fn discover_peers(&self, count: usize) -> Result<Vec<String>> {
+        // Try DHT discovery if enabled
+        if self.config.network.peer_discovery.dht_enabled {
+            return self.discover_peers_dht(count).await;
+        }
+
+        // Fallback to bootstrap nodes
+        self.discover_peers_bootstrap(count).await
+    }
+
+    async fn discover_peers_dht(&self, count: usize) -> Result<Vec<String>> {
+        info!("Starting DHT peer discovery");
+        
+        // Initialize Kademlia DHT
+        let kademlia = Kademlia::new(
+            self.config.network.kademlia_config.clone().unwrap_or_default(),
+            self.config.network.bootstrap_nodes.clone(),
+        );
+
+        // Run discovery query
+        let discovered = kademlia.find_peers(count).await?;
+        
+        info!("DHT discovered {} peers", discovered.len());
+        Ok(discovered)
+    }
+
+    async fn discover_peers_bootstrap(&self, count: usize) -> Result<Vec<String>> {
+        info!("Starting bootstrap peer discovery");
+        
+        // Use bootstrap nodes for discovery
+        let mut discovered = Vec::new();
+        
+        for bootstrap in &self.config.network.bootstrap_nodes {
+            if discovered.len() >= count {
+                break;
+            }
+            
+            let peers = self.discover_from_bootstrap(bootstrap).await?;
+            discovered.extend(peers);
+        }
+        
+        discovered.truncate(count);
+        Ok(discovered)
+    }
+
+    async fn discover_from_bootstrap(&self, bootstrap: &str) -> Result<Vec<String>> {
+        info!("Discovering from bootstrap node: {}", bootstrap);
+        
+        // Connect to bootstrap node
+        let bootstrap_peer = self.network.write().await.connect(bootstrap).await?;
+        
+        // Request peer list
+        let message = NetworkMessage::PeerDiscoveryRequest;
+        let response = self.message_handler.write().await.send_message_and_wait_response(
+            message,
+            bootstrap_peer.address
+        ).await?;
+        
+        // Parse response
+        if let NetworkMessage::PeerDiscoveryResponse(peers) = response {
+            Ok(peers)
+        } else {
+            Err(anyhow::anyhow!("Invalid peer discovery response"))
+        }
+    }
+
+    async fn connect_to_peer(&self, peer: String) -> Result<()> {
+        info!("Connecting to peer: {}", peer);
+        
+        // Check if peer is already connected
+        if self.network.read().await.is_connected(&peer).await? {
+            info!("Peer {} already connected", peer);
+            return Ok(());
+        }
+
+        // Connect to peer
+        let result = self.network.write().await.connect(&peer).await;
+        
+        match result {
+            Ok(_) => {
+                info!("Successfully connected to peer: {}", peer);
+                Ok(())
+            }
+            Err(e) => {
+                warn!("Failed to connect to peer {}: {}", peer, e);
+                Err(e)
+            }
+        }
+    }
+
+    pub async fn get_peer_stats(&self) -> PeerStats {
+        let network = self.network.read().await;
+        PeerStats {
+            total_peers: network.get_total_peers().await,
+            active_peers: network.get_active_peers().await,
+            failed_connections: network.get_failed_connections().await,
+            connection_attempts: network.get_connection_attempts().await,
+            discovery_attempts: network.get_discovery_attempts().await,
+            discovery_successes: network.get_discovery_successes().await,
+        }
+    }
+
+    pub async fn get_peer_info(&self, peer_id: &str) -> Option<PeerInfo> {
+        self.network.read().await.get_peer_info(peer_id).await
+    }
+
+    pub async fn get_all_peer_info(&self) -> Vec<PeerInfo> {
+        self.network.read().await.get_all_peer_info().await
+    }
+
+
+
+pub async fn disconnect_peer(&self, peer_id: &str) -> Result<()> {
+    self.network.write().await.disconnect(peer_id).await
+
+pub async fn ban_peer(&self, peer_id: &str, duration_secs: u64) -> Result<()> {
+    self.network.write().await.ban_peer(peer_id, duration_secs).await
+
+pub async fn unban_peer(&self, peer_id: &str) -> Result<()> {
+    self.network.write().await.unban_peer(peer_id).await
+
+pub async fn start_mining(&self) -> Result<(), anyhow::Error> {
+    loop {
+        // Get pending transactions
+        let pending_tx = self.get_pending_transactions().await?;
+        
+        if !pending_tx.is_empty() {
+            // Create new block
+            let block = self.create_block(pending_tx).await?;
+            
+            // Validate block with AI
+            self.ai.write().await.validate_block(&block).await?;
+            
+            // Mine block
+            let mined_block = self.mine_block(block).await?;
+            
+            // Add to blockchain
+            self.add_block(&mined_block).await?;
+            
+            // Broadcast block
+            self.broadcast_block(mined_block).await?;
+        }
+        
+        // Wait before next mining attempt
+        tokio::time::sleep(std::time::Duration::from_secs(1)).await;
+    }
+    Ok(())
+
+    async fn create_block(&self, transactions: Vec<Transaction>) -> Result<Block> {
+        let blockchain = self.blockchain.read().await;
+        let last_block = blockchain.get_last_block().await?;
+        
+        Block::new(
+            last_block.index + 1,
+            last_block.hash.clone(),
+            transactions,
+            self.config.difficulty,
+            self.ai.read().await.get_validator_key().await?,
+        )
+    }
+
+    async fn mine_block(&self, block: Block) -> Result<Block> {
+        let mut blockchain = self.blockchain.write().await;
+        blockchain.mine_block(&block).await
+    }
+
+    async fn add_block(&self, block: Block) -> Result<(), String> {
+        let mut blockchain = self.blockchain.write().await;
+        blockchain.add_block(&block).await.map_err(|e| e.to_string())?
+    }
+
+    async fn broadcast_block(&self, block: Block) -> Result<()> {
+        let message = NetworkMessage::NewBlock(block);
+        self.message_handler.write().await.broadcast_message(message).await
+    }
+
+    async fn handle_message(&mut self, message: NetworkMessage, addr: SocketAddr) -> Result<(), String> {
+        match message {
+            NetworkMessage::NewBlock(block) => {
+                self.add_block(block).await.map_err(|e| e.to_string())?
+            }
+            NetworkMessage::Transaction(tx) => {
+                self.handle_transaction(tx).await.map_err(|e| e.to_string())?
+            }
+            NetworkMessage::GetBlocks => {
+                let blocks = self.blockchain.read().await.get_last_blocks(10).await.map_err(|e| e.to_string())?;
+                self.broadcast_message(NetworkMessage::Blocks(blocks), addr).await?
+            }
+            NetworkMessage::Blocks(blocks) => {
+                for block in blocks {
+                    self.add_block(block).await.map_err(|e| e.to_string())?
+                }
+            }
+            NetworkMessage::Ping => {
+                self.broadcast_message(NetworkMessage::Pong, addr).await?
+            }
+            NetworkMessage::Pong => {
+                self.network.write().await.update_peer_latency(addr).await?
+            }
+            NetworkMessage::PeerDiscoveryRequest => {
+                let peers = self.network.read().await.get_all_peer_info().await?;
+                self.broadcast_message(NetworkMessage::PeerDiscoveryResponse(peers), addr).await?
+            }
+            NetworkMessage::PeerDiscoveryResponse(peers) => {
+                self.network.write().await.add_peers(peers).await?
+            }
+            NetworkMessage::PeerInfoRequest => {
+                let info = self.get_peer_info(&addr.to_string()).await.ok_or_else(|| "Peer not found".to_string())?;
+                self.broadcast_message(NetworkMessage::PeerInfoResponse(info), addr).await?
+            }
+            NetworkMessage::PeerInfoResponse(info) => {
+                self.network.write().await.update_peer_info(info).await?
+            }
+            NetworkMessage::PeerStatsRequest => {
+                let stats = self.network.read().await.get_peer_stats().await?;
+                self.broadcast_message(NetworkMessage::PeerStatsResponse(stats), addr).await?
+            }
+            NetworkMessage::PeerStatsResponse(stats) => {
+                self.network.write().await.update_peer_stats(stats).await?
+            }
+        }
+        Ok(())
+    }
+
+    async fn broadcast_message(&self, message: NetworkMessage, addr: SocketAddr) -> Result<(), String> {
+        self.message_handler.write().await.broadcast_message(message, addr).await.map_err(|e| e.to_string())
+    }
+
+    async fn handle_new_block(&self, block: Block) -> Result<()> {
+        
+        // Validate block
+        self.validator.write().await.validate_block(&block).await?;
+        
+        // Add to blockchain
+        self.add_block(&block).await?;
+        
+        Ok(())
+    }
+
+    async fn handle_transaction(&self, tx: Transaction) -> Result<()> {
+        info!("Received new transaction");
+        
+        // Validate transaction
+        self.validator.write().await.validate_transaction(&tx).await?;
+        
+        // Add to blockchain
+        self.blockchain.write().await.add_transaction(&tx).await.map_err(|e| anyhow::anyhow!(e))?;
+        
+        Ok(())
+    }
+
+    async fn handle_get_blocks(&self, addr: SocketAddr) -> Result<(), String> {
+        info!("Received blocks request");
+        
+        // Get last blocks
+        let blocks = self.blockchain.read().await.get_last_blocks(10).await.map_err(|e| e.to_string())?;
+        self.broadcast_message(NetworkMessage::Blocks(blocks), addr).await
+    }
+
+    async fn handle_ping(&self, addr: SocketAddr) -> Result<(), String> {
+        info!("Received ping from {}", addr);
+        self.broadcast_message(NetworkMessage::Pong, addr).await
+    }
+
+    pub async fn start(&mut self) -> Result<(), String> {
+        info!("Starting node with ID: {}", self.config.id);
+        self.initialize().await.map_err(|e| e.to_string())?
+
+        // Start message handling
+        self.message_handler.write().await.broadcast_message(NetworkMessage::Ping).await?;
+        Ok(())
+    }
+
+    pub async fn add_block(&mut self, block: &Block) -> Result<(), String> {
+        // Validate block with AI
+        self.ai.write().await.validate_block(block).await?;
+
+        // Add block to blockchain
+        self.blockchain.write().await.add_block(block).await?;
+
+        // Broadcast block
+        self.message_handler.write().await.broadcast_message(NetworkMessage::NewBlock(block.clone())).await?;
+
+        Ok(())
+    }
+
+    pub async fn add_transaction(&mut self, tx: &Transaction) -> Result<(), String> {
+        // Validate transaction with AI
+        self.ai.write().await.validate_transaction(tx).await?;
+
+        // Add transaction to blockchain
+        let mut blockchain = self.blockchain.write().await;
+        blockchain.add_transaction(tx)?;
+
+        // Broadcast transaction
+        self.message_handler.write().await.broadcast_message(NetworkMessage::Transaction(tx.clone())).await?;
+
+        Ok(())
+    }
+
+    pub async fn validate(&self) -> Result<(), anyhow::Error> {
+        // Validate network config
+        if self.config.network.max_connections < 1 {
+            return Err(anyhow::anyhow!("Max connections must be at least 1"));
+        }
+
+        // Validate blockchain config
+        if self.config.blockchain.difficulty < 1 {
+            return Err(anyhow::anyhow!("Block difficulty must be at least 1"));
+        }
+
+        // Validate mining config
+        if self.config.mining.difficulty < 1 {
+            return Err(anyhow::anyhow!("Mining difficulty must be at least 1"));
+        }
+
+        // Validate storage config
+        if self.config.storage.max_block_size < 1 {
+            return Err(anyhow::anyhow!("Max block size must be at least 1"));
+        }
+
+        // Validate AI config
+        if self.config.ai.model.is_empty() {
+            return Err(anyhow::anyhow!("AI model must be specified"));
+        }
+        if self.config.ai.max_tokens < 1 {
+            return Err(anyhow::anyhow!("AI max tokens must be at least 1"));
+        }
+
+        // Validate PoAI config
+        if self.config.poai.max_attempts < 1 {
+            return Err(anyhow::anyhow!("PoAI max attempts must be at least 1"));
+        }
+
+        // Validate peer discovery config
+        if self.config.peer_discovery.interval_secs < 1 {
+            return Err(anyhow::anyhow!("Peer discovery interval must be at least 1 second"));
+        }
+
+        // Validate transaction config
+        if self.config.transaction.max_amount < 0.0 {
+            return Err(anyhow::anyhow!("Max transaction amount must be positive"));
+        }
+
+        // Validate block config
+        if self.config.block.max_transactions < 1 {
+            return Err(anyhow::anyhow!("Max transactions per block must be at least 1"));
+        }
+
+        Ok(())
+    }
+} // End of impl Node

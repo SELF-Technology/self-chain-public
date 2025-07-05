@@ -1,0 +1,10 @@
+/Users/jmac/Documents/GitHub/self-chain-public/target/debug/deps/libhex_conservative-20add167b10c6c1e.rmeta: /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hex-conservative-0.3.0/src/lib.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hex-conservative-0.3.0/src/buf_encoder.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hex-conservative-0.3.0/src/display.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hex-conservative-0.3.0/src/error.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hex-conservative-0.3.0/src/iter.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hex-conservative-0.3.0/src/parse.rs
+
+/Users/jmac/Documents/GitHub/self-chain-public/target/debug/deps/hex_conservative-20add167b10c6c1e.d: /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hex-conservative-0.3.0/src/lib.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hex-conservative-0.3.0/src/buf_encoder.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hex-conservative-0.3.0/src/display.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hex-conservative-0.3.0/src/error.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hex-conservative-0.3.0/src/iter.rs /Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hex-conservative-0.3.0/src/parse.rs
+
+/Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hex-conservative-0.3.0/src/lib.rs:
+/Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hex-conservative-0.3.0/src/buf_encoder.rs:
+/Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hex-conservative-0.3.0/src/display.rs:
+/Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hex-conservative-0.3.0/src/error.rs:
+/Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hex-conservative-0.3.0/src/iter.rs:
+/Users/jmac/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hex-conservative-0.3.0/src/parse.rs:

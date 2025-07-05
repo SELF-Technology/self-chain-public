@@ -1,14 +1,3 @@
-# Jekyll
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-
-# Ruby
-vendor/bundle/
-.bundle/
-Gemfile.lock
-
 # macOS
 .DS_Store
 
@@ -25,3 +14,13 @@ Gemfile.lock
 # Environment variables
 .env
 .env.local
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build directories
+build/
+dist/
