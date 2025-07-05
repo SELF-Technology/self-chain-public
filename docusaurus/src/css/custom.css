@@ -5,6 +5,7 @@
  */
 
 @import url(https://docs.self.app/docsearch-v2.css);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
 
 @font-face {
   font-family: 'THICCCBOI';
@@ -204,4 +205,62 @@ details > summary:hover::after {
 /* Also target Infima's possible underline via box-shadow */
 .main-wrapper .table-of-contents a {
   box-shadow: none !important;
+}
+
+/* Custom button styles for landing page */
+.button-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.button-container a {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  margin: 0.5rem;
+  background-color: #1649ff;
+  color: white !important;
+  text-decoration: none !important;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);
+}
+
+.button-container a:hover {
+  background-color: #0d3dd8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(22, 73, 255, 0.3);
+}
+
+/* Community section styles */
+.community-section {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.social-buttons {
+  margin-top: 2rem;
+}
+
+.social-buttons a {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  margin: 0.5rem;
+  background-color: #1649ff;
+  color: white !important;
+  text-decoration: none !important;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);
+}
+
+.social-buttons a:hover {
+  background-color: #0d3dd8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(22, 73, 255, 0.3);
+}
+
+.social-buttons i {
+  margin-right: 0.5rem;
 }

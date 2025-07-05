@@ -8,19 +8,11 @@ sidebar_position: 0
 
 **Creating the infrastructure for self-sovereign technology, privacy-first applications, and human-centric AI**
 
-<div align="center" style="margin: 2rem 0;">
+<div className="button-container">
 
-<a href="Roadmap/Introduction" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
-  🗺️ Explore Roadmap
-</a>
-
-<a href="Technical%20Docs/Constellation/Overview" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
-  🌟 Learn Constellation Network
-</a>
-
-<a href="#-open-source-blockchain" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
-  💻 View Opensource Code
-</a>
+[🗺️ Explore Roadmap](Roadmap/Introduction)
+[🌟 Learn Constellation Network](Technical%20Docs/Constellation/Overview)
+[💻 View Opensource Code](#-open-source-blockchain)
 
 </div>
 
@@ -174,42 +166,20 @@ Our blockchain is fully open source for transparency and community audit:
 
 ## 🔗 Community & Resources
 
-<div align="center" style="margin: 3rem 0;">
+<div className="community-section">
 
-<h3 style="margin-bottom: 2rem;">Join the Self-Sovereign Technology Movement</h3>
+### Join the Self-Sovereign Technology Movement
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<div className="social-buttons">
 
-<div style="margin-bottom: 1.5rem;">
-<a href="https://discord.gg/selfcommunity" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
-  <i class="fab fa-discord" style="margin-right: 0.5rem;"></i> Discord Community
-</a>
+[<i className="fab fa-discord"></i> Discord Community](https://discord.gg/selfcommunity)
+[<i className="fab fa-github"></i> GitHub Code](https://github.com/SELF-Technology/self-chain-public)
+[<i className="fab fa-x-twitter"></i> X (formerly Twitter)](https://x.com/self_hq)
+[<i className="fab fa-telegram"></i> Telegram](https://t.me/selfcommunitychat)
+[<i className="fab fa-instagram"></i> Instagram](https://instagram.com/selfappofficial)
+[<i className="fab fa-youtube"></i> YouTube](https://www.youtube.com/@selfcommunityvideos)
+[<i className="fab fa-linkedin"></i> LinkedIn](https://www.linkedin.com/company/selftechnology/)
 
-<a href="https://github.com/SELF-Technology/self-chain-public" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
-  <i class="fab fa-github" style="margin-right: 0.5rem;"></i> GitHub Code
-</a>
-
-<a href="https://x.com/self_hq" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
-  <i class="fab fa-x-twitter" style="margin-right: 0.5rem;"></i> X (formerly Twitter)
-</a>
-</div>
-
-<div style="margin-bottom: 1.5rem;">
-<a href="https://t.me/selfcommunitychat" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
-  <i class="fab fa-telegram" style="margin-right: 0.5rem;"></i> Telegram
-</a>
-
-<a href="https://instagram.com/selfappofficial" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
-  <i class="fab fa-instagram" style="margin-right: 0.5rem;"></i> Instagram
-</a>
-
-<a href="https://www.youtube.com/@selfcommunityvideos" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
-  <i class="fab fa-youtube" style="margin-right: 0.5rem;"></i> YouTube
-</a>
-
-<a href="https://www.linkedin.com/company/selftechnology/" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
-  <i class="fab fa-linkedin" style="margin-right: 0.5rem;"></i> LinkedIn
-</a>
 </div>
 
 </div>
