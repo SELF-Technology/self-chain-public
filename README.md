@@ -26,25 +26,6 @@ Visit our documentation portal: [docs.self.app](https://docs.self.app)
 - [SDK Documentation](docs/SDK/README.md)
 - [Security Overview](docs/Security/Overview.md)
 
-## 🛠️ Getting Started
-
-### For Developers
-
-```bash
-# Clone the repository
-git clone https://github.com/SELF-Technology/self-chain-public.git
-
-# Navigate to the SDK
-cd self-chain-public/SDK
-
-# Follow the SDK setup guide
-cat README.md
-```
-
-### For Enterprise
-
-Contact us for enterprise deployment options and Constellation Architecture licensing.
-
 ## 🏗️ Architecture
 
 SELF Chain implements a unique multi-layer architecture:
@@ -67,24 +48,25 @@ Security is paramount in SELF Chain:
 
 Read our [Security Overview](docs/Security/Overview.md) for details.
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our contributing guidelines (coming soon).
-
 ## 📜 License
 
-This project is licensed under [License Type] - see the LICENSE file for details.
+This project is licensed under the MIT License. We follow an open source model inspired by Signal, where core components remain open source while certain security-critical elements are kept closed source to prevent exploitation.
 
-## 📞 Contact
+Open source components include:
+- Core Protocol
+- Cryptographic Implementations
+- Client Applications
+- SDKs and APIs
 
-- Website: [self.app](https://self.app)
-- Documentation: [docs.self.app](https://docs.self.app)
-- Twitter: [@self_hq](https://twitter.com/self_hq)
-- Email: contact@self.app
+## 🔗 Community & Support
 
-## 🙏 Acknowledgments
-
-Built by the SELF Technology team with contributions from our amazing community.
+- 💬 **Discord**: [Join Community](https://discord.gg/selfcommunity)
+- 🐦 **Twitter/X**: [@self_hq](https://x.com/self_hq)
+- 📱 **Telegram**: [SELF Community Chat](https://t.me/selfcommunitychat)
+- 📸 **Instagram**: [@selfappofficial](https://instagram.com/selfappofficial)
+- 📺 **YouTube**: [SELF Community](https://www.youtube.com/@selfcommunityvideos)
+- 💼 **LinkedIn**: [SELF Technology](https://www.linkedin.com/company/selftechnology/)
+- 🐛 **GitHub**: [Issues & Code](https://github.com/SELF-Technology/self-chain-public)
 
 ---
 
