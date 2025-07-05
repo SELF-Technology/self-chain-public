@@ -10,9 +10,9 @@ sidebar_position: 0
 
 <div className="button-container">
 
-[🗺️ Explore Roadmap](Roadmap/Introduction)
-[🌟 Learn Constellation Network](Technical%20Docs/Constellation/Overview)
-[💻 View Opensource Code](#-open-source-blockchain)
+[Roadmap](Roadmap/Introduction)
+[Constellation Network](Technical%20Docs/Constellation/Overview)
+[Opensource Code](#-open-source-blockchain)
 
 </div>
 
