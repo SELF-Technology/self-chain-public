@@ -8,11 +8,19 @@ sidebar_position: 0
 
 **Creating the infrastructure for self-sovereign technology, privacy-first applications, and human-centric AI**
 
-<div align="center">
+<div align="center" style="margin: 2rem 0;">
 
-[![🗺️ Roadmap](https://img.shields.io/badge/Explore-Roadmap-green?style=for-the-badge)](Roadmap/Introduction)
-[![🌟 Constellation](https://img.shields.io/badge/Learn-Constellation_Network-blue?style=for-the-badge)](Technical%20Docs/Constellation/Overview)
-[![💻 Open Source](https://img.shields.io/badge/View-Opensource_Code-purple?style=for-the-badge)](#-open-source-blockchain)
+<a href="Roadmap/Introduction" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
+  🗺️ Explore Roadmap
+</a>
+
+<a href="Technical%20Docs/Constellation/Overview" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
+  🌟 Learn Constellation Network
+</a>
+
+<a href="#-open-source-blockchain" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
+  💻 View Opensource Code
+</a>
 
 </div>
 
@@ -166,14 +174,29 @@ Our blockchain is fully open source for transparency and community audit:
 
 ## 🔗 Community & Resources
 
-<div align="center">
+<div align="center" style="margin: 3rem 0;">
 
-**Join the Self-Sovereign Technology Movement**
+<h3 style="margin-bottom: 2rem;">Join the Self-Sovereign Technology Movement</h3>
 
-[![Discord](https://img.shields.io/badge/Discord-Community-blue?style=for-the-badge)](https://discord.gg/selfcommunity)
-[![GitHub](https://img.shields.io/badge/GitHub-Code-black?style=for-the-badge)](https://github.com/SELF-Technology/self-chain-public)
-[![Twitter](https://img.shields.io/badge/Twitter-Updates-blue?style=for-the-badge)](https://x.com/self_hq)
+<div style="margin-bottom: 1.5rem;">
+<a href="https://discord.gg/selfcommunity" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
+  💬 Discord Community
+</a>
 
-[Telegram](https://t.me/selfcommunitychat) • [Instagram](https://instagram.com/selfappofficial) • [YouTube](https://www.youtube.com/@selfcommunityvideos) • [LinkedIn](https://www.linkedin.com/company/selftechnology/)
+<a href="https://github.com/SELF-Technology/self-chain-public" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
+  💻 GitHub Code
+</a>
+
+<a href="https://x.com/self_hq" style="display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; background-color: #1649ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);">
+  🐦 Twitter Updates
+</a>
+</div>
+
+<div style="font-size: 1.1rem;">
+<a href="https://t.me/selfcommunitychat" style="color: #1649ff; margin: 0 0.5rem;">Telegram</a> • 
+<a href="https://instagram.com/selfappofficial" style="color: #1649ff; margin: 0 0.5rem;">Instagram</a> • 
+<a href="https://www.youtube.com/@selfcommunityvideos" style="color: #1649ff; margin: 0 0.5rem;">YouTube</a> • 
+<a href="https://www.linkedin.com/company/selftechnology/" style="color: #1649ff; margin: 0 0.5rem;">LinkedIn</a>
+</div>
 
 </div>
