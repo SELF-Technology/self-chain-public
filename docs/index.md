@@ -10,9 +10,9 @@ sidebar_position: 0
 
 <div align="center">
 
-[![🌟 Constellation](https://img.shields.io/badge/Build-Constellation_Network-blue?style=for-the-badge)](Technical%20Docs/Constellation/Overview)
+[![🌟 Constellation](https://img.shields.io/badge/Learn-Constellation_Network-blue?style=for-the-badge)](Technical%20Docs/Constellation/Overview)
 [![🗺️ Roadmap](https://img.shields.io/badge/Explore-Roadmap-green?style=for-the-badge)](Roadmap/Introduction)
-[![🔗 Why Blockchain](https://img.shields.io/badge/Learn-Why_Build_A_Blockchain-purple?style=for-the-badge)](Technical%20Docs/PoAI/Why%20Build%20A%20Blockchain)
+[![💻 Open Source](https://img.shields.io/badge/View-Opensource_Code-purple?style=for-the-badge)](#-open-source-blockchain)
 
 </div>
 
