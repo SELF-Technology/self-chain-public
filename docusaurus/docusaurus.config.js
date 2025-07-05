@@ -36,6 +36,8 @@ const config = {
         alt: 'SELF Logo',
         src: 'img/SELF BLACK.png',
         srcDark: 'img/SELFwhitelogo.png',
+        href: 'https://self.app',
+        target: '_blank',
         style: {
           height: '32px',
           marginRight: '8px',
