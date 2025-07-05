@@ -340,3 +340,116 @@ html[data-theme="dark"] .opensource-links {
 html[data-theme="dark"] .opensource-links a {
   color: #4a9eff;
 }
+
+/* Hero section styles */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 0;
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #1649ff 0%, #0658f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+html[data-theme="dark"] .hero-content h1 {
+  background: linear-gradient(135deg, #4a9eff 0%, #1649ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-tagline {
+  font-size: 1.25rem;
+  color: #525872;
+  line-height: 1.6;
+  margin: 0;
+}
+
+html[data-theme="dark"] .hero-tagline {
+  color: #a6acbb;
+}
+
+.hero-image {
+  position: absolute;
+  right: -10%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 600px;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  filter: brightness(1.1);
+}
+
+html[data-theme="dark"] .hero-image img {
+  filter: brightness(0.8);
+}
+
+/* Animation */
+@keyframes float {
+  0% { transform: translateY(-50%) translateX(0px); }
+  50% { transform: translateY(-50%) translateX(-20px); }
+  100% { transform: translateY(-50%) translateX(0px); }
+}
+
+.hero-image {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Responsive design */
+@media (max-width: 996px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-image {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: 400px;
+    margin: 2rem auto 0;
+    animation: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-tagline {
+    font-size: 1.1rem;
+  }
+  
+  .hero-image {
+    width: 300px;
+  }
+}

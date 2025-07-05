@@ -4,9 +4,15 @@ sidebar_label: "🏠 Documentation Hub"
 sidebar_position: 0
 ---
 
-# Welcome to the SELF Docs
-
-**Creating the infrastructure for self-sovereign technology, privacy-first applications, and human-centric AI**
+<div className="hero-section">
+  <div className="hero-content">
+    <h1>Welcome to the SELF Docs</h1>
+    <p className="hero-tagline">Creating the infrastructure for self-sovereign technology, privacy-first applications, and human-centric AI</p>
+  </div>
+  <div className="hero-image">
+    <img src="/img/SELF GALAXY transparent 620kb.png" alt="SELF Galaxy" />
+  </div>
+</div>
 
 ---
 
