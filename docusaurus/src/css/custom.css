@@ -211,25 +211,75 @@ details > summary:hover::after {
 .button-container {
   text-align: center;
   margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .button-container a {
-  display: inline-block;
-  padding: 0.8rem 2rem;
-  margin: 0.5rem;
-  background-color: #1649ff;
-  color: white !important;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 500;
   text-decoration: none !important;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(22, 73, 255, 0.2);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
 }
 
-.button-container a:hover {
-  background-color: #0d3dd8;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(22, 73, 255, 0.3);
+/* First button - Roadmap */
+.button-container a:nth-child(1) {
+  background-color: #1F35FF;
+  color: white !important;
+  border-color: #1F35FF;
+}
+
+.button-container a:nth-child(1):hover {
+  background-color: #0658F7;
+  border-color: #0658F7;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(31, 53, 255, 0.25);
+}
+
+/* Second button - Constellation */
+.button-container a:nth-child(2) {
+  background-color: transparent;
+  color: #525872 !important;
+  border-color: #A6ACBB;
+}
+
+.button-container a:nth-child(2):hover {
+  background-color: #F7F8FC;
+  border-color: #525872;
+  color: #1D263B !important;
+}
+
+/* Third button - Open Source */
+.button-container a:nth-child(3) {
+  background-color: #1D263B;
+  color: #EFF1F6 !important;
+  border-color: #1D263B;
+}
+
+.button-container a:nth-child(3):hover {
+  background-color: #141B2B;
+  border-color: #141B2B;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(29, 38, 59, 0.25);
+}
+
+/* Dark mode adjustments */
+html[data-theme="dark"] .button-container a:nth-child(2) {
+  color: #A6ACBB !important;
+  border-color: #525872;
+}
+
+html[data-theme="dark"] .button-container a:nth-child(2):hover {
+  background-color: #1D263B;
+  border-color: #A6ACBB;
+  color: #EFF1F6 !important;
 }
 
 /* Community section styles */
