@@ -6,7 +6,7 @@ title: SELF Chain Architecture
 
 ## 📂 Explore the Open Source Code
 
-Our blockchain implementation is fully open source. Explore the core components:
+Our blockchain implementation is open source. Explore the core components:
 
 <div className="opensource-links">
 
