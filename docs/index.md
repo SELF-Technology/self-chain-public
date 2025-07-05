@@ -8,14 +8,6 @@ sidebar_position: 0
 
 **Creating the infrastructure for self-sovereign technology, privacy-first applications, and human-centric AI**
 
-<div className="button-container">
-
-[Roadmap](Roadmap/Introduction)
-[Constellation Network](Technical%20Docs/Constellation/Overview)
-[Opensource Code](#-open-source-blockchain)
-
-</div>
-
 ---
 
 ## Background
