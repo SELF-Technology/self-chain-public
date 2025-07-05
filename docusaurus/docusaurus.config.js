@@ -1,7 +1,7 @@
 const config = {
   title: 'SELF Documentation',
   url: 'https://docs.self.app',
-  baseUrl: '/self-chain-public/',
+  baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'SELF Technology',
   projectName: 'self-docs',
