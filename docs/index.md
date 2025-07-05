@@ -1,4 +1,6 @@
 ---
+title: "SELF Documentation"
+description: "Creating the infrastructure for self-sovereign technology, privacy-first applications, and human-centric AI."
 sidebar_label: "🏠 Documentation Hub"
 sidebar_position: 0
 hide_table_of_contents: true
