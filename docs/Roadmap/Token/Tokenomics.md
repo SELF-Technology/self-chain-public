@@ -34,7 +34,7 @@ sidebar_position: 4
 
 ### Token Distribution Visualization
 
-![SELF Token Distribution Over Time](/img/token-distribution-graph.svg)
+![SELF Token Distribution Over Time](/img/token%20graph.png)
 
 The chart above shows the cumulative token distribution over 48 months, illustrating how tokens are gradually released according to their vesting schedules. Key observations:
 
