@@ -1,0 +1,59 @@
+/* Style social buttons to show only white icons */
+
+/* Hide text in social buttons, show only icons */
+.social-buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  padding: 0;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  font-size: 0; /* Hide text */
+  text-decoration: none !important;
+}
+
+/* Style the icons */
+.social-buttons a i {
+  font-size: 24px;
+  color: #ffffff !important;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.social-buttons a:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  transform: translateY(-2px);
+}
+
+.social-buttons a:hover i {
+  color: #ffffff !important;
+  transform: scale(1.1);
+}
+
+/* Container styling */
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 2rem 0;
+}
+
+/* Ensure icons stay white in both themes */
+[data-theme='light'] .social-buttons a i,
+[data-theme='dark'] .social-buttons a i {
+  color: #ffffff !important;
+}
+
+/* Remove any button styling from theme */
+.social-buttons a.button,
+.social-buttons a[class*="button"] {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
