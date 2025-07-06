@@ -151,14 +151,6 @@ Revenue from SELF services is used for buybacks:
 - Staking rewards immediately available
 - Subscription discounts active at launch
 
-## Migration to Native Coin
-
-When SELF Chain launches mainnet:
-1. **1:1 Swap**: ERC-20 SELF → Native SELF Coin
-2. **Bridge Period**: Both tokens coexist
-3. **Incentives**: Higher rewards on native chain
-4. **CEX Support**: Gradual migration with exchange partners
-
 ---
 
 *Note: Tokenomics are subject to change based on market conditions and regulatory requirements. Always refer to official announcements for the most current information.*
