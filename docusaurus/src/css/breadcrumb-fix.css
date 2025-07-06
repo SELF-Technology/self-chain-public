@@ -1,15 +1,42 @@
-/* Fix breadcrumb z-index only - no color changes */
+/* Fix breadcrumb z-index to ensure visibility over galaxy background */
 
-/* Ensure breadcrumbs appear above galaxy background */
-.theme-doc-breadcrumbs {
-  position: relative;
-  z-index: 10;
+/* Force breadcrumbs to top layer */
+.theme-doc-breadcrumbs,
+nav[aria-label="Breadcrumbs"],
+.breadcrumbs,
+.breadcrumbs__list {
+  position: relative !important;
+  z-index: 9999 !important;
 }
 
-/* Fix for tablet/mobile views */
+/* Ensure the entire breadcrumb container is above backgrounds */
+.theme-doc-page__aside nav,
+.thin-scrollbar {
+  z-index: 9998 !important;
+}
+
+/* Force galaxy/hero backgrounds to stay behind */
+.hero-section-wrapper,
+.hero-section,
+.landing-page .hero-section-wrapper,
+.landing-page::before,
+.landing-page::after {
+  position: relative;
+  z-index: 1 !important;
+}
+
+/* Additional specificity for mobile/tablet */
 @media (max-width: 996px) {
   .theme-doc-breadcrumbs {
-    position: relative;
-    z-index: 100 !important;
+    position: relative !important;
+    z-index: 10000 !important;
+  }
+  
+  /* Ensure navbar and breadcrumbs stay on top */
+  .navbar,
+  .navbar__inner,
+  nav[aria-label="Breadcrumbs"] {
+    position: relative !important;
+    z-index: 10001 !important;
   }
 }
