@@ -361,7 +361,6 @@ html[data-theme="dark"] .opensource-links a {
   margin: 0; /* Remove negative margin */
   padding: 0;
   min-height: 100vh; /* Full viewport height */
-  z-index: 0; /* Ensure background stays behind navigation elements */
 }
 
 /* Add overlay for better text readability */

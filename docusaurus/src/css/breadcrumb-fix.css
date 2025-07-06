@@ -1,46 +1,54 @@
-/* Fix breadcrumb z-index issue - ensure breadcrumbs appear above background images */
+/* Fix breadcrumb visibility on dark backgrounds */
 
-/* Make sure breadcrumbs are above any background images/elements */
+/* Ensure breadcrumbs have better contrast */
 .theme-doc-breadcrumbs {
-  position: relative;
-  z-index: 10;
+  --ifm-breadcrumb-color-active: #ffffff;
+  --ifm-breadcrumb-item-background-active: transparent;
 }
 
-/* Ensure the breadcrumb navigation stays above backgrounds */
+/* Light mode breadcrumbs */
+[data-theme='light'] .breadcrumbs__item {
+  color: var(--ifm-color-emphasis-700);
+}
+
+[data-theme='light'] .breadcrumbs__item--active .breadcrumbs__link {
+  color: var(--ifm-color-emphasis-900);
+}
+
+/* Dark mode breadcrumbs - ensure visibility */
+[data-theme='dark'] .breadcrumbs__item {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme='dark'] .breadcrumbs__item--active .breadcrumbs__link {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .breadcrumbs__link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme='dark'] .breadcrumbs__link:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Breadcrumb separator */
+[data-theme='dark'] .breadcrumbs__item:not(:last-child):after {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Add subtle background for better readability on gradient backgrounds */
 .theme-doc-breadcrumbs nav {
-  position: relative;
-  z-index: 10;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
-/* Fix any galaxy/hero background overlapping issues */
-.hero-section,
-.hero-section-wrapper,
-.galaxy-hero,
-[class*="galaxy"],
-[class*="hero"] {
-  z-index: 0 !important;
-}
-
-/* Ensure main navigation and breadcrumbs stay on top */
-.navbar,
-.theme-doc-breadcrumbs,
-nav[aria-label="Breadcrumbs"] {
-  position: relative;
-  z-index: 100 !important;
-}
-
-/* Additional fix for tablet/mobile views */
-@media (max-width: 996px) {
-  .theme-doc-breadcrumbs {
-    position: relative;
-    z-index: 1000 !important;
-  }
-  
-  /* Ensure any background elements stay behind */
-  .landing-page::before,
-  .landing-page::after,
-  [class*="background"]::before,
-  [class*="background"]::after {
-    z-index: -1 !important;
-  }
+/* Ensure home icon is visible */
+[data-theme='dark'] .breadcrumbs__home-icon {
+  filter: brightness(1.5);
 }
