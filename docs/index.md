@@ -83,7 +83,7 @@ No corporate servers, no single points of failure - just a pure peer-to-peer net
 - [Intro](Roadmap/Introduction) - Our journey
 - [Beta](Roadmap/Beta%20Web%20App) - Current phase
 - [Super-App & Testnet](Roadmap/Super-App%20Testnet) - Coming soon with complete user experience
-- [Token](Roadmap/Token) - SELF token economy
+- [Token](Roadmap/Token/Overview) - SELF token economy
 - [SDK](Roadmap/SDK) - Developer tools
 - [Operating System](Roadmap/SELF%20OS) - SELF OS vision
 
