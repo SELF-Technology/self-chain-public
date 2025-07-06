@@ -1,57 +1,74 @@
 /* Custom styling for category/index pages */
 
-/* Remove underlines from category page links */
-.theme-doc-sidebar-item-category .menu__list-item-collapsible:hover {
-  text-decoration: none;
+/* Remove underlines from generated index page links - Docusaurus specific */
+.theme-doc-sidebar-item-category-html-list a,
+.pagination-nav__link,
+article a.card,
+article ul li a,
+.theme-doc-markdown a,
+.generatedIndexPage_node_modules-\@docusaurus-theme-classic-lib-theme-DocCategoryGeneratedIndexPage-styles-module a {
+  text-decoration: none !important;
 }
 
-/* Style for generated index pages */
-article .generated-index-page {
-  padding: 2rem 0;
+.theme-doc-sidebar-item-category-html-list a:hover,
+.pagination-nav__link:hover,
+article a.card:hover,
+article ul li a:hover,
+.theme-doc-markdown a:hover,
+.generatedIndexPage_node_modules-\@docusaurus-theme-classic-lib-theme-DocCategoryGeneratedIndexPage-styles-module a:hover {
+  text-decoration: none !important;
 }
 
-/* Card-style links for category pages */
-.generated-index-page .link-list {
+/* Specifically target category pages */
+[class*="generatedIndexPage"] a {
+  text-decoration: none !important;
+}
+
+[class*="generatedIndexPage"] a:hover {
+  text-decoration: none !important;
+}
+
+/* Card styling for generated index items */
+[class*="generatedIndexPage"] ul {
+  list-style: none;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
-  margin-top: 2rem;
 }
 
-.generated-index-page .link-item {
-  padding: 1.5rem;
+[class*="generatedIndexPage"] ul li {
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 8px;
   transition: all 0.2s ease;
-  text-decoration: none !important;
-  display: block;
-  height: 100%;
+  overflow: hidden;
 }
 
-.generated-index-page .link-item:hover {
+[class*="generatedIndexPage"] ul li:hover {
   border-color: var(--ifm-color-primary);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
-  text-decoration: none !important;
 }
 
-.generated-index-page .link-item h3 {
+[class*="generatedIndexPage"] ul li a {
+  display: block;
+  padding: 1.5rem;
+  height: 100%;
+  color: inherit;
+}
+
+[class*="generatedIndexPage"] ul li article {
+  height: 100%;
+}
+
+[class*="generatedIndexPage"] h2 {
   margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
   color: var(--ifm-color-primary);
-  text-decoration: none !important;
 }
 
-.generated-index-page .link-item p {
+[class*="generatedIndexPage"] p {
   margin: 0;
   color: var(--ifm-color-emphasis-700);
   font-size: 0.9rem;
-}
-
-/* Remove underlines from all links in generated index */
-.generated-index-page a {
-  text-decoration: none !important;
-}
-
-.generated-index-page a:hover {
-  text-decoration: none !important;
 }
