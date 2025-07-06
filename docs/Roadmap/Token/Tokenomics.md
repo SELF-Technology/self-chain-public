@@ -12,7 +12,7 @@ sidebar_position: 4
 - **Token Standard**: ERC-20 
 - **TGE Supply**: 105,500,000 (21.1% of total supply)
 - **Public Sale Price**: $0.06
-- **Listing Price**: $tbc
+- **Listing Price**: $TBC
 - **TGE Market Cap**: $6,330,000
 - **Fully Diluted Valuation**: $30,000,000
 
@@ -51,27 +51,27 @@ The chart above shows the cumulative token distribution over 48 months, illustra
 | Seed | $0.04 | $400,000 | $20M FDV |
 | Private | $0.05 | $500,000 | $25M FDV |
 | Public | $0.06 | $300,000 | $30M FDV |
-| **Total Raised** | - | **$2,700,000** | - |
+| **Total Raise** | - | **$2,700,000** | - |
 
 ## Staking Program
 
 ### Regular Staking (All Users)
 
-| Lock Period | Base APR | Additional Benefits |
-|-------------|----------|-------------------|
-| No lockup | 8% | Basic tier access |
-| 3 months | 12% | Priority support |
-| 6 months | 16% | Enhanced features |
-| 9 months | 20% | Premium features |
-| 12 months | 22% | Governance rights |
-| 18 months | 25% | Partner benefits |
-| 24 months | 30% | Maximum benefits |
+| Lock Period | Base APR
+|-------------|----------|
+| No lockup | 8%
+| 3 months | 12%
+| 6 months | 16%
+| 9 months | 20%
+| 12 months | 22%
+| 18 months | 25%
+| 24 months | 30%
 
 *Note: Longer lockup periods qualify for additional benefits such as discounts, whitelists, and airdrops (TBC).*
 
-### Bonus Staking Program (Investors Only)
+### Bonus Staking Program (Pre-Seed/Seed Investors Only)
 
-Available only for investors who lock tokens before exchange listing:
+Available only for investors who lock tokens before TGE:
 
 | Lock Period | Extra Tokens | APR |
 |-------------|--------------|-----|
@@ -79,20 +79,19 @@ Available only for investors who lock tokens before exchange listing:
 | 3 months | +20% | 80% |
 | 6 months | +30% | 60% |
 
-*Example: Locking 1,000 tokens for 3 months gives you 1,200 tokens total earning 80% APR*
+*Example: Locking 1,000 tokens for 3 months gives you 1,200 tokens total*
 
 ## Token Utility
 
 ### 1. **Subscription Payments**
-- Purchase SELF subscriptions with token discounts
+- Purchase SELF subscriptions with token discounts (TBC)
 - Dynamic USD-based pricing with token payments
 - Tier access based on staked amount
 
 ### 2. **Staking Benefits**
 - Earn APR on staked tokens
-- Access higher service tiers
-- Participate in governance
-- Receive partner airdrops
+- Access higher service tiers (TBC)
+- Receive partner airdrops (TBC)
 
 ### 3. **Ecosystem Currency**
 - Primary currency within SELF ecosystem
@@ -100,7 +99,7 @@ Available only for investors who lock tokens before exchange listing:
 - Cross-chain transaction fees (on SELF Chain)
 - Trading within decentralized applications
 
-### 4. **Governance**
+### 4. **Governance (TBC)**
 - Vote on protocol upgrades
 - Participate in DAO decisions
 - Influence feature development
@@ -109,17 +108,17 @@ Available only for investors who lock tokens before exchange listing:
 ## Deflationary Mechanisms
 
 ### 1. **Subscription Burns**
-- 50% of subscription payments are burned
+- % of subscription payments are burned (TBC)
 - Reduces circulating supply over time
 
 ### 2. **Buyback & Burn**
 Revenue from SELF services is used for buybacks:
-- 40% of buyback tokens are burned
-- 40% distributed to stakers
-- 20% for premium user rebates
+- 40% of buyback tokens are burned (TBC)
+- 40% distributed to stakers (TBC)
+- 20% for premium user rebates (TBC)
 
 ### 3. **Transaction Burns**
-- Small percentage of SELF Chain transactions burned
+- Small percentage of SELF Chain transactions burned (TBC)
 - Increases scarcity as network usage grows
 
 ## Supply Schedule
@@ -134,26 +133,12 @@ Revenue from SELF services is used for buybacks:
 - **Year 3**: ~450M tokens (90%)
 - **Year 4+**: Approaching full circulation
 
-## Key Metrics
-
-### Launch Metrics
-- **TGE Market Cap**: $6.93M (115.5M × $0.06)
-- **Listing Market Cap**: $9.24M (115.5M × $0.08)
-- **TGE Liquidity**: Target $500K+ on DEX
-- **Initial Staking APR**: 8-30% based on lockup
-
-### Success Targets
-- **Month 1**: 10,000+ token holders
-- **Month 3**: $10M+ market cap
-- **Month 6**: Major CEX listing
-- **Month 12**: Native SELF Chain migration
-
 ## Investor Protection
 
 ### 1. **Vesting Schedules**
 - Team tokens locked for 3 years
 - Investor tokens vest over 10-15 months
-- Prevents large dumps at launch
+- Limited sell pressure at launch
 
 ### 2. **Liquidity Provisions**
 - 10% supply dedicated to liquidity
