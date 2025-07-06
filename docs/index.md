@@ -163,8 +163,3 @@ Our blockchain is fully open source for transparency and community audit:
 
 </div>
 
----
-
-## 🔗 Join the Self-Sovereign Technology Movement
-
-Connect with our community through the social links in the footer below.
