@@ -165,22 +165,6 @@ Our blockchain is fully open source for transparency and community audit:
 
 ---
 
-## 🔗 Community & Resources
+## 🔗 Join the Self-Sovereign Technology Movement
 
-<div className="community-section">
-
-### Join the Self-Sovereign Technology Movement
-
-<div className="social-buttons">
-
-[<i className="fab fa-discord"></i> Discord Community](https://discord.gg/selfcommunity)
-[<i className="fab fa-github"></i> GitHub Code](https://github.com/SELF-Technology/self-chain-public)
-[<i className="fab fa-x-twitter"></i> X](https://x.com/self_hq)
-[<i className="fab fa-telegram"></i> Telegram](https://t.me/selfcommunitychat)
-[<i className="fab fa-instagram"></i> Instagram](https://instagram.com/selfappofficial)
-[<i className="fab fa-youtube"></i> YouTube](https://www.youtube.com/@selfcommunityvideos)
-[<i className="fab fa-linkedin"></i> LinkedIn](https://www.linkedin.com/company/selftechnology/)
-
-</div>
-
-</div>
+Connect with our community through the social links in the footer below.

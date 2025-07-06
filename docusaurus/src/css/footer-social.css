@@ -1,0 +1,57 @@
+/* Footer social icons styling */
+
+/* Ensure footer is dark in both themes */
+[data-theme='light'] .footer,
+[data-theme='dark'] .footer {
+  background-color: #242526 !important;
+  color: #ffffff !important;
+}
+
+[data-theme='light'] .footer__title {
+  color: #ffffff !important;
+}
+
+[data-theme='light'] .footer__link-item {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Social icons container */
+.footer-social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+/* Social icon links */
+.footer-social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+}
+
+/* Icon styling */
+.footer-social-icons a i {
+  font-size: 22px;
+  color: #ffffff !important;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.footer-social-icons a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+}
+
+.footer-social-icons a:hover i {
+  transform: scale(1.1);
+}
+
+/* Ensure copyright text is white in light mode */
+[data-theme='light'] .footer__copyright {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
