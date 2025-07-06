@@ -86,14 +86,7 @@ html[data-theme="dark"] {
   --ifm-background-color: initial;
 }
 
-.footer--dark {
-  --ifm-footer-background-color: #141b2b;
-}
-
-/* Force footer background color */
-footer.footer {
-  background-color: #141b2b !important;
-}
+/* Footer styles moved to footer-social.css */
 
 details,
 details[open],

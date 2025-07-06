@@ -1,18 +1,24 @@
 /* Footer social icons styling */
 
 /* Match footer color to header/navbar */
-[data-theme='light'] .footer {
+[data-theme='light'] .footer,
+[data-theme='light'] .footer--dark,
+[data-theme='light'] footer.footer {
   background-color: #ffffff !important;
   border-top: 1px solid var(--ifm-color-emphasis-200);
 }
 
-[data-theme='dark'] .footer {
+[data-theme='dark'] .footer,
+[data-theme='dark'] .footer--dark,
+[data-theme='dark'] footer.footer {
   background-color: #1b1b1d !important;
   border-top: 1px solid var(--ifm-color-emphasis-200);
 }
 
 /* Reduce footer height to half */
-.footer {
+.footer,
+.footer--dark,
+footer.footer {
   padding: 0 !important;
 }
 
@@ -20,6 +26,7 @@
   text-align: center !important;
   padding: 0.5rem 0 !important; /* Reduced from 1rem to 0.5rem */
   margin: 0 !important;
+  max-width: 100% !important;
 }
 
 /* Social icons container - centered */
