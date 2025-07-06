@@ -7,19 +7,18 @@
   color: #ffffff !important;
 }
 
-[data-theme='light'] .footer__title {
-  color: #ffffff !important;
+/* Center the footer copyright section */
+.footer__copyright {
+  text-align: center !important;
+  padding: 2rem 0;
 }
 
-[data-theme='light'] .footer__link-item {
-  color: rgba(255, 255, 255, 0.8) !important;
-}
-
-/* Social icons container */
+/* Social icons container - centered */
 .footer-social-icons {
   display: flex;
+  justify-content: center;
   gap: 20px;
-  margin-top: 10px;
+  margin-bottom: 1rem;
 }
 
 /* Social icon links */
@@ -51,7 +50,20 @@
   transform: scale(1.1);
 }
 
-/* Ensure copyright text is white in light mode */
-[data-theme='light'] .footer__copyright {
+/* Copyright text styling */
+.footer-copyright-text {
   color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Ensure text is white in light mode */
+[data-theme='light'] .footer__copyright,
+[data-theme='light'] .footer-copyright-text {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Remove any default footer links section */
+.footer__links {
+  display: none !important;
 }
