@@ -1,17 +1,10 @@
 /* Footer social icons styling */
 
-/* Match footer color to header/navbar */
-[data-theme='light'] .footer,
-[data-theme='light'] .footer--dark,
-[data-theme='light'] footer.footer {
-  background-color: #ffffff !important;
-  border-top: 1px solid var(--ifm-color-emphasis-200);
-}
-
-[data-theme='dark'] .footer,
-[data-theme='dark'] .footer--dark,
-[data-theme='dark'] footer.footer {
-  background-color: #1b1b1d !important;
+/* Match footer color to header/navbar using same variables */
+.footer,
+.footer--dark,
+footer.footer {
+  background-color: var(--ifm-navbar-background-color) !important;
   border-top: 1px solid var(--ifm-color-emphasis-200);
 }
 
