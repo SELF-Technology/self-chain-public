@@ -553,3 +553,41 @@ html[data-theme="dark"] .breadcrumbs__item {
     );
   }
 }
+
+/* Full-width styles for landing page */
+.landing-page .container {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.landing-page .col--3 {
+  display: none !important;
+}
+
+.landing-page .col {
+  max-width: 100% !important;
+  flex: 0 0 100% !important;
+}
+
+.landing-page article {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Adjust hero section for full width */
+.landing-page .hero-section {
+  max-width: 1400px;
+  padding: 2rem 4rem 12rem 4rem;
+}
+
+.landing-page .hero-content {
+  max-width: 800px;
+}
+
+/* Platform status table full width */
+.landing-page table {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
