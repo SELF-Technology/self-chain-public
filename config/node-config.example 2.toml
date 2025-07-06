@@ -1,0 +1,82 @@
+# SELF Chain Node Configuration Example
+# Copy this file to node-config.toml and update with your settings
+
+[node]
+# Node identifier (will be auto-generated if not specified)
+node_id = ""
+
+# Node name for display purposes
+name = "my-self-node"
+
+# Node role: "validator", "full", or "light"
+role = "full"
+
+# Data directory for blockchain storage
+data_dir = "./data"
+
+[network]
+# P2P listening address
+listen_addr = "/ip4/0.0.0.0/tcp/9000"
+
+# Bootstrap nodes (mainnet values will be provided at launch)
+bootstrap_peers = [
+    # "/ip4/1.2.3.4/tcp/9000/p2p/QmNodeId1",
+    # "/ip4/5.6.7.8/tcp/9000/p2p/QmNodeId2"
+]
+
+# Maximum number of peers
+max_peers = 50
+
+# Enable peer discovery
+enable_discovery = true
+
+[consensus]
+# Consensus type (always "poai" for SELF Chain)
+consensus_type = "poai"
+
+# AI validator endpoint (if running as validator)
+ai_validator_endpoint = ""
+
+# Validator stake amount (in SELF tokens)
+validator_stake = 0
+
+[storage]
+# Storage backend: "ipfs" or "hybrid"
+backend = "hybrid"
+
+# IPFS configuration
+ipfs_path = "./ipfs"
+ipfs_api_port = 5001
+ipfs_gateway_port = 8080
+
+# OrbitDB configuration
+orbitdb_directory = "./orbitdb"
+
+[api]
+# Enable HTTP API
+enable_http = true
+http_port = 8545
+
+# Enable WebSocket API
+enable_ws = true
+ws_port = 8546
+
+# API access control
+allowed_origins = ["*"]
+allowed_methods = ["GET", "POST"]
+
+[logging]
+# Log level: "debug", "info", "warn", "error"
+level = "info"
+
+# Log output: "stdout", "file", or "both"
+output = "both"
+
+# Log file path (if output includes "file")
+log_file = "./logs/node.log"
+
+# Maximum log file size in MB
+max_file_size = 100
+
+# Number of log files to keep
+max_backups = 10
