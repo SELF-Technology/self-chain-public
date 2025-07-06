@@ -1,24 +1,33 @@
 /* Footer social icons styling */
 
-/* Ensure footer is dark in both themes */
-[data-theme='light'] .footer,
-[data-theme='dark'] .footer {
-  background-color: #242526 !important;
-  color: #ffffff !important;
+/* Match footer color to header/navbar */
+[data-theme='light'] .footer {
+  background-color: #ffffff !important;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
 }
 
-/* Center the footer copyright section */
+[data-theme='dark'] .footer {
+  background-color: #1b1b1d !important;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+/* Reduce footer height to half */
+.footer {
+  padding: 0 !important;
+}
+
 .footer__copyright {
   text-align: center !important;
-  padding: 2rem 0;
+  padding: 0.5rem 0 !important; /* Reduced from 1rem to 0.5rem */
+  margin: 0 !important;
 }
 
 /* Social icons container - centered */
 .footer-social-icons {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  margin-bottom: 1rem;
+  gap: 15px;
+  margin-bottom: 0.25rem; /* Reduced from 0.5rem */
 }
 
 /* Social icon links */
@@ -26,16 +35,22 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   transition: all 0.3s ease;
   text-decoration: none !important;
 }
 
-/* Icon styling */
-.footer-social-icons a i {
-  font-size: 22px;
+/* Icon styling - match theme */
+[data-theme='light'] .footer-social-icons a i {
+  font-size: 18px;
+  color: #606770 !important;
+  transition: all 0.3s ease;
+}
+
+[data-theme='dark'] .footer-social-icons a i {
+  font-size: 18px;
   color: #ffffff !important;
   transition: all 0.3s ease;
 }
@@ -52,15 +67,20 @@
 
 /* Copyright text styling */
 .footer-copyright-text {
-  color: rgba(255, 255, 255, 0.8) !important;
   font-size: 14px;
   margin: 0;
 }
 
-/* Ensure text is white in light mode */
+/* Light mode - dark text on white background */
 [data-theme='light'] .footer__copyright,
 [data-theme='light'] .footer-copyright-text {
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Dark mode - light text on dark background */
+[data-theme='dark'] .footer__copyright,
+[data-theme='dark'] .footer-copyright-text {
+  color: rgba(255, 255, 255, 0.6) !important;
 }
 
 /* Remove any default footer links section */
