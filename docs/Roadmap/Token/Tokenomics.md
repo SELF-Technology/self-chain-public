@@ -124,14 +124,14 @@ Revenue from SELF services is used for buybacks:
 ## Supply Schedule
 
 ### Year 1 Circulating Supply
-- **TGE**: 115.5M tokens (23.1%)
-- **Month 6**: ~180M tokens (36%)
-- **Month 12**: ~250M tokens (50%)
+- **TGE**: 105.5M tokens (21.1%)
+- **Month 6**: ~163M tokens (32.6%)
+- **Month 12**: ~246M tokens (49.2%)
 
 ### Long-term Supply
-- **Year 2**: ~350M tokens (70%)
-- **Year 3**: ~450M tokens (90%)
-- **Year 4+**: Approaching full circulation
+- **Year 2**: ~351M tokens (70.3%)
+- **Year 3**: ~449M tokens (89.9%)
+- **Year 4**: 500M tokens (100%) - Full circulation
 
 ## Investor Protection
 
