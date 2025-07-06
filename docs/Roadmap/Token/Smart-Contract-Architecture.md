@@ -183,9 +183,9 @@ npx hardhat run scripts/deploy.js --network mainnet
 ## Resources
 
 - [GitHub Repository](https://github.com/SELF-Technology/self-chain-public/tree/main/contracts)
-- [Technical Documentation](/contracts/README.md)
-- [Integration Examples](/contracts/examples)
-- [Security Audits](/contracts/audits)
+- [Technical Documentation](https://github.com/SELF-Technology/self-chain-public/tree/main/contracts)
+- [Integration Examples](https://github.com/SELF-Technology/self-chain-public/tree/main/contracts)
+- [Security Audits](https://github.com/SELF-Technology/self-chain-public/tree/main/contracts)
 
 ---
 

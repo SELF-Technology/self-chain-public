@@ -103,7 +103,7 @@ Enterprise blockchain platform for launching sovereign chains
 ### [Grid Compute](Technical%20Docs/Grid-Compute/Future-Vision)
 Distributed computing network for AI and resources
 
-### [Integration](Technical%20Docs/Integration/)
+### [Integration](Technical%20Docs/Integration/Coinbase_Integration)
 Connect with other systems and blockchains
 
 ### [Performance](Technical%20Docs/Performance/Advanced_TPS_Optimization)
