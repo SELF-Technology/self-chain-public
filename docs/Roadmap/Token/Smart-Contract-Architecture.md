@@ -1,6 +1,7 @@
 ---
 sidebar_label: "Smart Contract Architecture"
 sidebar_position: 3
+description: "Technical details of the SELF token smart contracts, including staking, vesting, and security features"
 ---
 
 # SELF Token Smart Contract Architecture

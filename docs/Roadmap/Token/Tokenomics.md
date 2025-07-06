@@ -1,6 +1,7 @@
 ---
 sidebar_label: "Tokenomics"
 sidebar_position: 4
+description: "Token distribution, vesting schedules, staking programs, and economic model of the SELF token"
 ---
 
 # SELF Tokenomics

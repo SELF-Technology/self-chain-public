@@ -1,6 +1,7 @@
 ---
 sidebar_label: "Overview"
 sidebar_position: 1
+description: "Introduction to the SELF token, its purpose, utility, and role in the ecosystem"
 ---
 
 # SELF Token Overview
