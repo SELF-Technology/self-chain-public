@@ -36,21 +36,23 @@ The SELF Chain hybrid storage architecture combines multiple decentralized stora
 - Validator data storage
 
 ### 3. Storage Layer Integration
-```mermaid
-graph TD
-    A[Storage Layer] --> B[IPFS]
-    A --> C[OrbitDB]
-    A --> D[Validator Storage]
-    
-    B --> E[File Storage]
-    B --> F[Content Addressing]
-    
-    C --> G[Database]
-    C --> H[Real-time Sync]
-    
-    D --> I[Validator Data]
-    D --> J[Cross-chain Sync]
-```
+**Storage Layer Architecture:**
+
+The hybrid storage architecture consists of three main components connected to the Storage Layer:
+
+1. **IPFS (InterPlanetary File System)**:
+   - File Storage: Handles decentralized file storage and retrieval
+   - Content Addressing: Uses content-based addressing for immutable file references
+
+2. **OrbitDB**:
+   - Database: Provides decentralized database functionality
+   - Real-time Sync: Enables real-time data synchronization across nodes
+
+3. **Validator Storage**:
+   - Validator Data: Stores validator profiles, certificates, and performance metrics
+   - Cross-chain Sync: Synchronizes validator data across different blockchain networks
+
+This architecture combines the strengths of each storage solution to provide a robust, decentralized storage system for SELF Chain.
 
 ## Data Flow
 

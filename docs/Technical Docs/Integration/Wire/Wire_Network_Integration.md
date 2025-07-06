@@ -134,23 +134,16 @@ This comprehensive implementation ensures that SELF Chain can seamlessly integra
 - Manages nodes, connections, and transactions
 - Integrates with SELF's bridge service
 
-```mermaid
-graph TD
-    A[WireNetworkService] --> B[Wire Network Integration]
-    A --> C[Bridge Service]
-    A --> D[Transaction Processor]
-    A --> E[Address Validator]
-    
-    %% Styles
-    classDef manager fill:#bbf,stroke:#333,stroke-width:2px,color:#000
-    classDef integration fill:#bfb,stroke:#333,stroke-width:2px,color:#000
-    classDef service fill:#fbb,stroke:#333,stroke-width:2px,color:#000
-    classDef processor fill:#f9f,stroke:#333,stroke-width:2px,color:#000
-    
-    class A manager
-    class B integration
-    class C,D,E service
-```
+**WireNetworkService Architecture:**
+
+The WireNetworkService acts as the central manager that coordinates the following components:
+
+- **Wire Network Integration**: Handles the connection and communication with the Wire Network
+- **Bridge Service**: Manages cross-chain operations between SELF and Wire networks
+- **Transaction Processor**: Processes and validates transactions for Wire Network compatibility
+- **Address Validator**: Validates Wire Network addresses and ensures proper formatting
+
+These components work together to provide seamless integration between SELF Chain and Wire Network, with the WireNetworkService orchestrating all operations.
 
 ### 2.2 WireNetworkMetrics
 - Performance monitoring system
@@ -446,40 +439,32 @@ The Wire integration includes comprehensive transaction monitoring through the W
 
 ### 5.1 Security Flow
 
-```mermaid
-graph TD
-    A[Transaction] --> B[Address Validation]
-    B --> C[Amount Validation]
-    C --> D[Fee Validation]
-    D --> E[Duplicate Check]
-    E --> F[Unique ID Check]
-    F --> G[Transaction Approved]
-    
-    %% Styles
-    classDef validation fill:#bbf,stroke:#333,stroke-width:2px,color:#000
-    classDef check fill:#fbb,stroke:#333,stroke-width:2px,color:#000
-    
-    class A,G validation
-    class B,C,D,E,F check
-```
+**Transaction Security Flow:**
+
+When a transaction is submitted, it goes through the following security validation steps:
+
+1. **Address Validation**: Verifies the destination address format is valid for Wire Network
+2. **Amount Validation**: Ensures the transaction amount is within acceptable limits
+3. **Fee Validation**: Checks that appropriate fees are included for cross-chain operations
+4. **Duplicate Check**: Prevents duplicate transactions from being processed
+5. **Unique ID Check**: Verifies the transaction has a unique identifier
+6. **Transaction Approved**: Once all checks pass, the transaction is approved for processing
+
+This multi-layer validation ensures transaction security and prevents common attack vectors.
 
 ### 5.2 Security Measures
 
-```mermaid
-graph LR
-    A[Security Measures] --> B[Address Validation]
-    A --> C[Transaction Limits]
-    A --> D[Duplicate Prevention]
-    A --> E[Unique IDs]
-    A --> F[Encryption]
-    
-    %% Styles
-    classDef measure fill:#fbb,stroke:#333,stroke-width:2px,color:#000
-    classDef component fill:#bbf,stroke:#333,stroke-width:2px,color:#000
-    
-    class A measure
-    class B,C,D,E,F component
-```
+**Security Measures Overview:**
+
+The Wire integration implements comprehensive security measures including:
+
+- **Address Validation**: Ensures all Wire Network addresses follow the correct format and are valid
+- **Transaction Limits**: Enforces maximum transaction amounts to prevent large-scale attacks
+- **Duplicate Prevention**: Blocks duplicate transactions from being processed multiple times
+- **Unique IDs**: Requires unique identifiers for each transaction to ensure traceability
+- **Encryption**: Implements end-to-end encryption for all cross-chain communications
+
+These security components work together to protect the integrity of cross-chain operations between SELF and Wire networks.
 
 ## 6. Performance Monitoring
 

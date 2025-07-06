@@ -10,42 +10,26 @@ This document outlines the backward compatibility strategy implemented in SELF C
 
 ### Compatibility Architecture
 
-```mermaid
-graph TD
-    A[Minima Chain] --> B[Compatibility Layer]
-    B --> C[AI Analysis]
-    C --> D[SELF Chain]
-    
-    %% Backward Flow
-    D --> E[Minima Compatibility]
-    E --> F[Minima Chain]
-    
-    %% Subgraphs
-    subgraph Minima Network
-        A
-        F
-    end
-    
-    subgraph SELF Network
-        D
-        E
-    end
-    
-    subgraph Compatibility Layer
-        B --> C
-    end
-    
-    %% Styles
-    classDef minima fill:#fbb,stroke:#333,stroke-width:2px,color:#000
-    classDef self fill:#bbf,stroke:#333,stroke-width:2px,color:#000
-    classDef compatibility fill:#bfb,stroke:#333,stroke-width:2px,color:#000
-    classDef ai fill:#f9f,stroke:#333,stroke-width:2px,color:#000
-    
-    class A,F minima
-    class D,E self
-    class B compatibility
-    class C ai
-```
+**Compatibility Architecture Flow:**
+
+The backward compatibility system enables bidirectional communication between Minima and SELF chains:
+
+**Forward Flow (Minima to SELF):**
+1. Minima Chain sends transactions to the Compatibility Layer
+2. Compatibility Layer processes the data and sends it to AI Analysis
+3. AI Analysis validates and forwards to SELF Chain
+
+**Backward Flow (SELF to Minima):**
+1. SELF Chain sends transactions to Minima Compatibility module
+2. Minima Compatibility module converts SELF format to Minima format
+3. Converted transactions are sent back to Minima Chain
+
+**Network Organization:**
+- **Minima Network**: Contains the original Minima Chain nodes
+- **SELF Network**: Contains SELF Chain and Minima Compatibility components
+- **Compatibility Layer**: Bridges the two networks with AI Analysis capabilities
+
+This architecture ensures seamless interoperability between the two consensus mechanisms.
 
 ## Chain Switching Implementation
 
@@ -401,22 +385,29 @@ private SELFNumber getDynamicAdjustmentFactor() {
 
 ### 4. Message Processing Pipeline
 
-```mermaid
-graph TD
-    A[Incoming Message] --> B{Is Minima Message?}
-    B -->|Yes| C[Process as TxPOW]
-    B -->|No| D{Is SELF Message?}
-    D -->|Yes| E[Process as Validation]
-    D -->|No| F[Reject Message]
-    
-    C --> G[Update TxPoW Tables]
-    E --> H[Update Validation Tables]
-    
-    G --> I[Update Chain State]
-    H --> I
-    
-    I --> J[Update Validator Reputation]
-```
+**Message Processing Pipeline:**
+
+The system processes incoming messages through the following decision flow:
+
+1. **Message Reception**: An incoming message is received by the system
+
+2. **Message Type Detection**:
+   - First check: Is it a Minima message?
+     - If YES → Process as TxPOW (traditional Proof-of-Work)
+     - If NO → Continue to next check
+   - Second check: Is it a SELF message?
+     - If YES → Process as Validation (Proof-of-AI)
+     - If NO → Reject the message as invalid
+
+3. **Database Updates**:
+   - TxPOW messages → Update TxPoW Tables
+   - Validation messages → Update Validation Tables
+
+4. **State Management**:
+   - Both table updates converge to Update Chain State
+   - Chain state updates trigger Update Validator Reputation
+
+This pipeline ensures proper handling of both consensus mechanisms while maintaining data integrity.
 
 ### 5. Cross-Chain Validation Proof
 
