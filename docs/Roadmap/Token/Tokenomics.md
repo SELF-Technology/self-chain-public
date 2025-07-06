@@ -1,5 +1,5 @@
 ---
-sidebar_label: "📊 Tokenomics"
+sidebar_label: "Tokenomics"
 sidebar_position: 4
 ---
 

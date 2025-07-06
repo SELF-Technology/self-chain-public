@@ -1,5 +1,5 @@
 ---
-sidebar_label: "📜 Smart Contract Architecture"
+sidebar_label: "Smart Contract Architecture"
 sidebar_position: 3
 ---
 

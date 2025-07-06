@@ -1,8 +1,10 @@
 {
-  "label": "🪙 Token",
+  "label": "💎 Token",
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "SELF Token economics, utility, and implementation details"
+    "title": "SELF Token",
+    "description": "Explore the SELF token ecosystem, including tokenomics, smart contract architecture, and distribution details. Learn how the token powers the SELF network and provides utility for users.",
+    "keywords": ["token", "tokenomics", "smart contracts", "distribution"]
   }
 }
