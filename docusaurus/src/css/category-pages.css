@@ -19,6 +19,11 @@ main article ul li a:hover {
 }
 
 /* Hide the default document icons on category pages */
-.cardContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocCard-styles-module svg {
-  display: none;
+.cardContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocCard-styles-module svg,
+.cardContainer article h2 svg,
+article h2 svg.iconEdit_node_modules-\@docusaurus-theme-classic-lib-theme-DocCard-styles-module,
+.theme-doc-card svg,
+.card svg.docCardIcon,
+svg[class*="iconEdit"] {
+  display: none !important;
 }
