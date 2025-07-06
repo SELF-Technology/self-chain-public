@@ -24,12 +24,17 @@ Price oracle for USD-based subscription pricing:
 ### Key Features
 
 #### 1. Staking System
-- **Non-custodial**: Tokens remain in user's wallet
-- **Tier benefits**:
-  - Pioneer (1,000 SELF): 10% bonus APR
-  - Explorer (10,000 SELF): 25% bonus APR
-  - Multiverse (100,000 SELF): 50% bonus APR
-- **Base APR**: 10% (before tier bonuses)
+- **Lock-up periods**: Flexible options from no lock-up to 24 months
+- **Base APR**: 
+  - No lock-up: 8%
+  - 3 months: 12%
+  - 6 months: 16%
+  - 9 months: 20%
+  - 12 months: 22%
+  - 18 months: 25%
+  - 24 months: 30%
+- **Additional benefits**: For lock-ups of 12+ months
+- **Bonus staking program**: For early investors with 10-30% extra tokens
 
 #### 2. Subscription System
 - **Three tiers** with increasing benefits
@@ -71,8 +76,8 @@ npx hardhat test
 ## Token Economics
 
 ### Initial Supply
-- **Total**: 10 billion SELF tokens
-- **Distribution**: TBD based on tokenomics plan
+- **Total**: 500 million SELF tokens
+- **Distribution**: See tokenomics documentation
 
 ### Deflationary Mechanism
 - 50% of subscription payments burned
@@ -107,15 +112,10 @@ uint256 tier = self.getUserTier(userAddress);
 
 ## Future Enhancements
 
-### Phase 2 - Bridge to SELF Chain
-- Snapshot capability for migration
-- Bridge contract development
-- Dual token support
-
-### Phase 3 - Native SELF Coin
-- Full migration to SELF Chain
-- Enhanced features on native chain
-- CEX support for native coin
+- Enhanced governance features
+- Additional DeFi integrations
+- Cross-chain compatibility
+- Advanced staking mechanisms
 
 ## License
 MIT License - See LICENSE file for details
