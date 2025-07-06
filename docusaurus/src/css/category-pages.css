@@ -27,3 +27,13 @@ article h2 svg.iconEdit_node_modules-\@docusaurus-theme-classic-lib-theme-DocCar
 svg[class*="iconEdit"] {
   display: none !important;
 }
+
+/* More specific targeting for generated index pages */
+main[class*="docMainContainer"] article h2 > svg:first-child {
+  display: none !important;
+}
+
+/* Hide any SVG that appears before the text in h2 elements */
+article.margin-top--lg h2 svg {
+  display: none !important;
+}
