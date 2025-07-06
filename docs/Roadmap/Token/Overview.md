@@ -1,9 +1,9 @@
 ---
-sidebar_label: "🪙 Token"
-sidebar_position: 4
+sidebar_label: "🪙 Overview"
+sidebar_position: 1
 ---
 
-# SELF Token
+# SELF Token Overview
 
 ## Leverage Your Data
 
