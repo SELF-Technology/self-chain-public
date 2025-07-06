@@ -17,3 +17,52 @@ main article ul li a:hover {
 .theme-doc-markdown ul li a:hover {
   text-decoration: none !important;
 }
+
+/* Hide default document icons on category pages */
+[class*="generatedIndexPage"] .cardContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocCard-styles-module svg,
+[class*="generatedIndexPage"] article h2 svg,
+article.margin-top--lg svg.iconEdit_node_modules-\@docusaurus-theme-classic-lib-theme-DocCard-styles-module {
+  display: none;
+}
+
+/* Style category page items as cards */
+[class*="generatedIndexPage"] ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+[class*="generatedIndexPage"] ul li {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0;
+  transition: all 0.2s ease;
+  background: var(--ifm-card-background-color);
+}
+
+[class*="generatedIndexPage"] ul li:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+[class*="generatedIndexPage"] ul li a {
+  display: block;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+[class*="generatedIndexPage"] ul li h2 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.5rem;
+  color: var(--ifm-color-primary);
+}
+
+[class*="generatedIndexPage"] ul li p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.6;
+}
