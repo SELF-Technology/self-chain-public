@@ -1,13 +1,34 @@
-/* Style social buttons to show only white icons */
+/* Style social buttons to show only icons */
+
+/* Make the community section flex container */
+.community-section {
+  text-align: center;
+}
+
+.community-section h3 {
+  display: inline-block;
+  margin-right: 2rem;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+/* Container styling - inline with heading */
+.social-buttons {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  vertical-align: middle;
+}
 
 /* Hide text in social buttons, show only icons */
 .social-buttons a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  margin: 0 10px;
+  width: 36px;
+  height: 36px;
+  margin: 0;
   padding: 0;
   background: transparent !important;
   border: none !important;
@@ -19,35 +40,35 @@
 
 /* Style the icons */
 .social-buttons a i {
-  font-size: 24px;
-  color: #ffffff !important;
+  font-size: 20px;
   transition: all 0.3s ease;
+}
+
+/* Light mode - dark icons */
+[data-theme='light'] .social-buttons a i {
+  color: #333333 !important;
+}
+
+/* Dark mode - white icons */
+[data-theme='dark'] .social-buttons a i {
+  color: #ffffff !important;
 }
 
 /* Hover effect */
 .social-buttons a:hover {
-  background: rgba(255, 255, 255, 0.1) !important;
   transform: translateY(-2px);
 }
 
+[data-theme='light'] .social-buttons a:hover {
+  background: rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-theme='dark'] .social-buttons a:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
 .social-buttons a:hover i {
-  color: #ffffff !important;
-  transform: scale(1.1);
-}
-
-/* Container styling */
-.social-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin: 2rem 0;
-}
-
-/* Ensure icons stay white in both themes */
-[data-theme='light'] .social-buttons a i,
-[data-theme='dark'] .social-buttons a i {
-  color: #ffffff !important;
+  transform: scale(1.15);
 }
 
 /* Remove any button styling from theme */
