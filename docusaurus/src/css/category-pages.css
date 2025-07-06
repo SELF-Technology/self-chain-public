@@ -1,57 +1,19 @@
 /* Custom styling for category/index pages */
 
-/* Remove underlines from category page links */
-.theme-doc-sidebar-item-category .menu__list-item-collapsible:hover {
-  text-decoration: none;
-}
-
-/* Style for generated index pages */
-article .generated-index-page {
-  padding: 2rem 0;
-}
-
-/* Card-style links for category pages */
-.generated-index-page .link-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.generated-index-page .link-item {
-  padding: 1.5rem;
-  border: 1px solid var(--ifm-color-emphasis-300);
-  border-radius: 8px;
-  transition: all 0.2s ease;
-  text-decoration: none !important;
-  display: block;
-  height: 100%;
-}
-
-.generated-index-page .link-item:hover {
-  border-color: var(--ifm-color-primary);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
+/* Remove underlines from Docusaurus generated category page links */
+main article ul li a {
   text-decoration: none !important;
 }
 
-.generated-index-page .link-item h3 {
-  margin: 0 0 0.5rem 0;
-  color: var(--ifm-color-primary);
+main article ul li a:hover {
   text-decoration: none !important;
 }
 
-.generated-index-page .link-item p {
-  margin: 0;
-  color: var(--ifm-color-emphasis-700);
-  font-size: 0.9rem;
-}
-
-/* Remove underlines from all links in generated index */
-.generated-index-page a {
+/* Target the specific container for category pages */
+.theme-doc-markdown ul li a {
   text-decoration: none !important;
 }
 
-.generated-index-page a:hover {
+.theme-doc-markdown ul li a:hover {
   text-decoration: none !important;
 }
