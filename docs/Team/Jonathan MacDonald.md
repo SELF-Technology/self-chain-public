@@ -8,7 +8,7 @@ sidebar_position: 1
 
 <img src="/self-chain-public/img/Jonathan MacDonald.png" alt="Jonathan MacDonald" width="200"/>
 
-Jonathan MacDonald is one of the world's most in-demand and internationally renowned strategic change-makers. From being involved in the earliest days of cryptographic tech in the 90's that later became the Web3/Blockchain world decades later, he most recently founded the Sovereign Ethical Lifestyle Filter (SELF) which is an AI-powered, private & secure super-app, and soon to be a layer-1 blockchain, SDK and, in the future, a full-scale personal Operating System. Jonathan is also the host of Ethics TV, discussing ethics in a digital world.
+Jonathan MacDonald is one of the world's most in-demand and internationally renowned strategic change-makers. From being involved in the earliest days of cryptographic tech in the 90's that later became the Web3/Blockchain world decades later, he most recently founded the Sovereign Ethical Lifestyle Filter (SELF) which is an AI-powered, private & secure super-app, layer-1 blockchain, SDK and, in the future, a full-scale personal Operating System. Jonathan is also the host of Ethics TV, discussing ethics in a digital world.
 
 He has recently been featured in "The 10 Most Dynamic Entrepreneurs To Watch In 2024" and awarded "The Most Impactful Leader Pioneering Ethical Technology" (links below).
 
