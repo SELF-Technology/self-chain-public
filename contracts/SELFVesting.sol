@@ -28,14 +28,17 @@ contract SELFVesting is Ownable, ReentrancyGuard {
 
     // Allocation categories based on tokenomics
     enum AllocationCategory {
-        PreSeed,      // 10% supply, 50% TGE, 10 month vesting
-        Seed,         // 2% supply, 25% TGE, 12 month vesting
-        Private,      // 2% supply, 25% TGE, 3 month cliff, 15 month vesting
-        Public,       // 1% supply, 20% TGE, 3 month cliff, 15 month vesting
-        Partners,     // 4% supply, 10% TGE, 3 month cliff, 15 month vesting
-        Team,         // 10% supply, 0% TGE, 3 month cliff, 36 month vesting
-        Community,    // 20% supply, 20% TGE, 3 month cliff, 48 month vesting
-        Ecosystem     // 20% supply, 25% TGE, 36 month vesting
+        PreSeed,             // 10% supply, 50% TGE, 10 month vesting
+        Seed,                // 2% supply, 25% TGE, 12 month vesting
+        Private,             // 2% supply, 25% TGE, 3 month cliff, 15 month vesting
+        Public,              // 1% supply, 20% TGE, 1 month cliff, 15 month vesting
+        Partners,            // 4% supply, 10% TGE, 3 month cliff, 15 month vesting
+        TeamAndAdvisors,     // 10% supply, 0% TGE, 3 month cliff, 36 month vesting
+        Liquidity,           // 10% supply, 100% TGE, no vesting
+        UserAdoption,        // 15% supply, 10% TGE, 48 month vesting
+        DeveloperIncentives, // 15% supply, 10% TGE, 48 month vesting
+        Ecosystem,           // 15% supply, 10% TGE, 48 month vesting
+        Staking              // 16% supply, 0% TGE, 36 month linear release
     }
 
     mapping(address => mapping(AllocationCategory => VestingSchedule)) public vestingSchedules;
@@ -80,23 +83,35 @@ contract SELFVesting is Ownable, ReentrancyGuard {
             schedule.vestingDuration = 15 * 30 days; // 15 months
         } else if (category == AllocationCategory.Public) {
             schedule.tgePercent = 2000; // 20%
-            schedule.cliffDuration = 3 * 30 days; // 3 months
+            schedule.cliffDuration = 1 * 30 days; // 1 month
             schedule.vestingDuration = 15 * 30 days; // 15 months
         } else if (category == AllocationCategory.Partners) {
             schedule.tgePercent = 1000; // 10%
             schedule.cliffDuration = 3 * 30 days; // 3 months
             schedule.vestingDuration = 15 * 30 days; // 15 months
-        } else if (category == AllocationCategory.Team) {
+        } else if (category == AllocationCategory.TeamAndAdvisors) {
             schedule.tgePercent = 0; // 0%
             schedule.cliffDuration = 3 * 30 days; // 3 months
             schedule.vestingDuration = 36 * 30 days; // 36 months
             schedule.revocable = true; // Team vesting is revocable
-        } else if (category == AllocationCategory.Community) {
-            schedule.tgePercent = 2000; // 20%
-            schedule.cliffDuration = 3 * 30 days; // 3 months
+        } else if (category == AllocationCategory.Liquidity) {
+            schedule.tgePercent = 10000; // 100%
+            schedule.cliffDuration = 0;
+            schedule.vestingDuration = 0; // No vesting
+        } else if (category == AllocationCategory.UserAdoption) {
+            schedule.tgePercent = 1000; // 10%
+            schedule.cliffDuration = 0;
+            schedule.vestingDuration = 48 * 30 days; // 48 months
+        } else if (category == AllocationCategory.DeveloperIncentives) {
+            schedule.tgePercent = 1000; // 10%
+            schedule.cliffDuration = 0;
             schedule.vestingDuration = 48 * 30 days; // 48 months
         } else if (category == AllocationCategory.Ecosystem) {
-            schedule.tgePercent = 2500; // 25%
+            schedule.tgePercent = 1000; // 10%
+            schedule.cliffDuration = 0;
+            schedule.vestingDuration = 48 * 30 days; // 48 months
+        } else if (category == AllocationCategory.Staking) {
+            schedule.tgePercent = 0; // 0%
             schedule.cliffDuration = 0;
             schedule.vestingDuration = 36 * 30 days; // 36 months
         }

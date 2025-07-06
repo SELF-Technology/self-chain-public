@@ -10,9 +10,10 @@ sidebar_position: 4
 - **Token Symbol**: $SELF
 - **Total Supply**: 500,000,000 (500 Million)
 - **Token Standard**: ERC-20 (initially), then native SELF Chain coin
-- **TGE Supply**: 78,000,000 (16% of total supply)
-- **Initial Price**: $0.06 (public sale price)
-- **Initial Market Cap**: $4,680,000
+- **TGE Supply**: 115,500,000 (23.1% of total supply)
+- **Public Sale Price**: $0.06
+- **Listing Price**: $0.08
+- **TGE Market Cap**: $6,930,000
 - **Fully Diluted Valuation**: $30,000,000
 
 ## Token Distribution
@@ -22,13 +23,27 @@ sidebar_position: 4
 | **Pre-Seed** | 10% | 50,000,000 | 50% (25M) | 10 months linear |
 | **Seed** | 2% | 10,000,000 | 25% (2.5M) | 12 months linear |
 | **Private** | 2% | 10,000,000 | 25% (2.5M) | 3 month cliff, 15 months linear |
-| **Public** | 1% | 5,000,000 | 20% (1M) | 3 month cliff, 15 months linear |
+| **Public** | 1% | 5,000,000 | 20% (1M) | 1 month cliff, 15 months linear |
 | **Partners** | 4% | 20,000,000 | 10% (2M) | 3 month cliff, 15 months linear |
 | **Team & Advisors** | 10% | 50,000,000 | 0% | 3 month cliff, 36 months linear |
-| **Staking Rewards** | 21% | 105,000,000 | 0% | Released via staking |
-| **Community & Grants** | 20% | 100,000,000 | 20% (20M) | 3 month cliff, 48 months linear |
-| **Ecosystem** | 20% | 100,000,000 | 25% (25M) | 36 months linear |
-| **Liquidity** | 10% | 50,000,000 | As needed | For DEX/CEX liquidity |
+| **Liquidity** | 10% | 50,000,000 | 100% (50M) | For DEX/CEX liquidity |
+| **User Adoption** | 15% | 75,000,000 | 10% (7.5M) | 48 months linear |
+| **Developer Incentives** | 15% | 75,000,000 | 10% (7.5M) | 48 months linear |
+| **Ecosystem** | 15% | 75,000,000 | 10% (7.5M) | 48 months linear |
+| **Staking** | 16% | 80,000,000 | 0% | 36 months linear |
+
+### Token Distribution Visualization
+
+<div style="text-align: center; margin: 40px 0;">
+  <img src="/img/token-distribution-graph.svg" alt="SELF Token Distribution Over Time" style="max-width: 100%; height: auto;" />
+</div>
+
+The chart above shows the cumulative token distribution over 48 months, illustrating how tokens are gradually released according to their vesting schedules. Key observations:
+
+- **Immediate liquidity**: 50M tokens (10%) available at TGE for DEX/CEX liquidity
+- **Controlled release**: Team & Advisor tokens have the longest vesting (36 months) with a 3-month cliff
+- **Community focus**: 61% of tokens allocated to ecosystem growth (User Adoption, Developer Incentives, Ecosystem, Staking)
+- **Investor protection**: Gradual vesting prevents large sell pressure
 
 ## Fundraising Details
 
@@ -112,9 +127,9 @@ Revenue from SELF services is used for buybacks:
 ## Supply Schedule
 
 ### Year 1 Circulating Supply
-- **TGE**: 78M tokens (16%)
-- **Month 6**: ~150M tokens (30%)
-- **Month 12**: ~220M tokens (44%)
+- **TGE**: 115.5M tokens (23.1%)
+- **Month 6**: ~180M tokens (36%)
+- **Month 12**: ~250M tokens (50%)
 
 ### Long-term Supply
 - **Year 2**: ~350M tokens (70%)
@@ -124,7 +139,8 @@ Revenue from SELF services is used for buybacks:
 ## Key Metrics
 
 ### Launch Metrics
-- **TGE Market Cap**: $4.68M (78M × $0.06)
+- **TGE Market Cap**: $6.93M (115.5M × $0.06)
+- **Listing Market Cap**: $9.24M (115.5M × $0.08)
 - **TGE Liquidity**: Target $500K+ on DEX
 - **Initial Staking APR**: 8-30% based on lockup
 
