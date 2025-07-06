@@ -26,7 +26,7 @@ The **SELF Chain Constellation Architecture** enables enterprises to launch thei
 - **AI-Powered Validation**: Industry-specific AI models for consensus and compliance
 - **Seamless Integration**: Native interoperability with SELF Chain ecosystem
 - **Quality Assurance**: Curated approval process ensures ecosystem excellence
-- **Grid Compute Economies of Scale**: Each Constellation chain benefits from the massive distributed computing efficiencies of the entire SELF Constellation network of nodes
+- **Grid Compute Economies of Scale**: Each Constellation chain benefits from the massively distributed computing efficiencies of the entire SELF Constellation network of nodes
 
 ### **Key Features**
 - **50+ Industry Validation Frameworks**: Pre-built compliance and validation rules
@@ -37,12 +37,12 @@ The **SELF Chain Constellation Architecture** enables enterprises to launch thei
 ## 💰 Innovation Platform Business Model
 
 ### **Innovation-Focused Revenue Structure**
-SELF Chain operates on an **Innovation Platform** model combining platform subscriptions with token-native revenue sharing, enabling enterprises to transform regulatory compliance into competitive innovation advantage.
+SELF Chain operates on an **Innovation Platform** model combining platform subscriptions with allocation sharing, enabling enterprises to transform regulatory compliance into competitive innovation advantage.
 
 ```
 🌟 Constellation Native Coin Distribution 🌟
 
-LAYER-1 (Native Chain Tokens):
+LAYER-1 (Native Chain Coins):
 ├── 60% - Enterprise Organization (operational use)
 ├── 20% - SELF Chain (allocation for creating the chain)
 ├── 15% - Network Validators/Stakers
@@ -56,11 +56,10 @@ APPLICATION LAYER (dApp/Application Tokens):
 ```
 
 ### **Tokenomics Model**
-- **20% Native L1 Token Allocation**: SELF automatically receives 20% of all newly minted native tokens
+- **20% Native L1 Coin Allocation**: SELF automatically receives 20% of all newly minted native coins
 - **7.5% Application Token Allocation**: SELF automatically receives 7.5% of all application tokens
 - **No Vesting Period**: All SELF allocations are immediately liquid
 - **Quality Control Gate**: SELF curates and approves all enterprise applicants
-- **Perpetual Revenue**: Continuous token shares as ecosystem grows
 
 ### **Innovation Platform Tiers**
 
@@ -263,7 +262,6 @@ Go live in 3-5 weeks with:
 - **Email**: devs@self.app
 - **Documentation**: [Industry Validation Rules](Industry_Validation_Rules.md)
 - **Innovation Consultation**: Schedule a workshop
-- **Demo**: Live platform demonstration
 
 ## 🔒 Enterprise Security & Compliance
 
@@ -308,7 +306,7 @@ Go live in 3-5 weeks with:
 1. **Streamlined Setup**: Fully automated blockchain provisioning
 2. **AI-Native Architecture**: Built-in AI validation and optimization
 3. **Industry Specialization**: Pre-built templates for specific industries
-4. **Token-Native Economics**: Aligned incentives through token sharing
+4. **Partnership Tokenomics**: Aligned incentives through allocations
 5. **Enterprise Security**: Bank-grade security and compliance
 6. **Seamless Integration**: Native interoperability across all chains
 7. **Grid Compute Efficiency**: Shared infrastructure cost advantages
@@ -321,8 +319,6 @@ Ready to launch your sovereign blockchain and transform your enterprise with AI-
 1. **Innovation Sandbox**: [Request free access](mailto:devs@self.app)
 2. **Schedule Workshop**: Design your blockchain solution
 3. **Review Documentation**: Explore technical specifications
-4. **Join Webinar**: See live demonstrations
-5. **Contact Sales**: Discuss enterprise requirements
 
 ---
 
