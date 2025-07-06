@@ -21,8 +21,9 @@ contract SELFToken is ERC20, ERC20Burnable, ERC20Snapshot, AccessControl, Pausab
     bytes32 public constant TREASURY_ROLE = keccak256("TREASURY_ROLE");
 
     // Token configuration
-    uint256 public constant INITIAL_SUPPLY = 10_000_000_000 * 10**18; // 10 billion tokens
-    uint256 public constant MAX_SUPPLY = 10_000_000_000 * 10**18; // Maximum supply cap
+    uint256 public constant INITIAL_SUPPLY = 500_000_000 * 10**18; // 500 million tokens
+    uint256 public constant MAX_SUPPLY = 500_000_000 * 10**18; // Maximum supply cap
+    uint256 public constant TGE_SUPPLY = 78_000_000 * 10**18; // 78M at TGE (16%)
 
     // Staking tiers (in tokens)
     uint256 public constant PIONEER_TIER = 1_000 * 10**18;        // 1,000 SELF
@@ -135,15 +136,18 @@ contract SELFToken is ERC20, ERC20Burnable, ERC20Snapshot, AccessControl, Pausab
         if (userStake.amount == 0) return 0;
 
         uint256 timeStaked = block.timestamp - userStake.timestamp;
-        uint256 baseReward = (userStake.amount * timeStaked * 10) / (365 days * 100); // 10% base APR
-
-        // Tier multipliers
-        uint256 multiplier = 100; // 1x
-        if (userStake.tier >= 3) multiplier = 150; // 1.5x for Multiverse
-        else if (userStake.tier >= 2) multiplier = 125; // 1.25x for Explorer
-        else if (userStake.tier >= 1) multiplier = 110; // 1.1x for Pioneer
-
-        return (baseReward * multiplier) / 100;
+        
+        // Base APR is 8% (no lockup rate)
+        uint256 baseAPR = 8;
+        
+        // For simplicity, using tier-based approximation of lockup periods
+        // In production, would track actual lockup periods
+        if (userStake.tier >= 3) baseAPR = 22; // Multiverse tier ~12 month rate
+        else if (userStake.tier >= 2) baseAPR = 16; // Explorer tier ~6 month rate  
+        else if (userStake.tier >= 1) baseAPR = 12; // Pioneer tier ~3 month rate
+        
+        uint256 reward = (userStake.amount * timeStaked * baseAPR) / (365 days * 100);
+        return reward;
     }
 
     function _calculateTier(uint256 amount) internal pure returns (uint256) {
