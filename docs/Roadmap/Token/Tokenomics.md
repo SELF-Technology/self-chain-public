@@ -10,10 +10,10 @@ sidebar_position: 4
 - **Token Symbol**: $SELF
 - **Total Supply**: 500,000,000 (500 Million)
 - **Token Standard**: ERC-20 
-- **TGE Supply**: 115,500,000 (23.1% of total supply)
+- **TGE Supply**: 105,500,000 (21.1% of total supply)
 - **Public Sale Price**: $0.06
 - **Listing Price**: $tbc
-- **TGE Market Cap**: $6,930,000
+- **TGE Market Cap**: $6,330,000
 - **Fully Diluted Valuation**: $30,000,000
 
 ## Token Distribution
