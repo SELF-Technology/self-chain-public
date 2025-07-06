@@ -8,33 +8,20 @@ title: Validate
 
 SELF Validate is a comprehensive data validation and verification system built on SELF Chain. It provides tamper-evident proof of data integrity using blockchain technology, enabling users to validate, verify, and certify digital assets with cryptographic certainty.
 
-```mermaid
-graph TD
-    User([User/Application]) --> Upload[Upload Data]
-    Upload --> VE[Validation Engine]
-    
-    subgraph "SELF Validate System"
-        VE --> |Full Hash| FV[Full Validation]
-        VE --> |Segmented| SV[Segmented Validation]
-        VE --> |Byte Pattern| BV[Byte-by-byte Validation]
-        
-        FV --> BC[Blockchain Storage]
-        SV --> BC
-        BV --> BC
-        
-        BC --> |Store Hash| Chain[(SELF Chain)]
-        BC --> |Generate| RP[Reports & Proofs]
-    end
-    
-    Chain --> |Verify| Verify[Verification Process]
-    User --> |Request Verification| Verify
-    Verify --> |Results| User
-    RP --> |PDF/NFT| User
-    
-    style Chain fill:#f9f,stroke:#333,stroke-width:2px,color:#000
-    style VE fill:#bbf,stroke:#33f,stroke-width:2px,color:#000
-    style User fill:#dfd,stroke:#080,stroke-width:1px,color:#000
-```
+### System Architecture
+
+The SELF Validate system follows this workflow:
+
+1. **Data Upload**: Users or applications upload data for validation
+2. **Validation Engine**: Processes data using one of three methods:
+   - **Full Validation**: Complete file hashing using SHA3-256
+   - **Segmented Validation**: Validates large files in configurable segments
+   - **Byte-by-byte Validation**: Pattern matching for partial integrity checks
+3. **Blockchain Storage**: All validation hashes are stored immutably on SELF Chain
+4. **Report Generation**: Creates PDF certificates or NFT-based validation proofs
+5. **Verification**: Users can verify data integrity against blockchain records at any time
+
+The entire process ensures cryptographic proof of data integrity with tamper-evident blockchain storage.
 
 ## Key Features
 
