@@ -64,7 +64,6 @@ PoAI provides:
 - **Maximum Efficiency**: AI optimizes for the most useful block composition
 - **Energy Efficiency**: No computational waste like proof-of-work
 - **Decentralization**: Prevents centralization issues of proof-of-stake
-EOF < /dev/null
 
 ## Future Evolution
 
@@ -79,4 +78,3 @@ While SELF Chain is focused on implementing the pure PoAI invention as described
 These potential enhancements would be additive to the core PoAI mechanism, maintaining the elegance of the three-algorithm design while providing additional capabilities for enterprise deployments.
 
 The current implementation focus remains on delivering PoAI 1.0 - the pure, patent-pending consensus mechanism that revolutionizes blockchain validation through artificial intelligence.
-EOF < /dev/null
