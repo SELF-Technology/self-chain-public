@@ -3,8 +3,30 @@ name: CI
 on:
   push:
     branches: [ main, develop ]
+    paths:
+      - '**.rs'
+      - 'Cargo.toml'
+      - 'Cargo.lock'
+      - '.github/workflows/ci.yml'
+      - 'src/**'
+      - 'tests/**'
+      - 'crates/**'
+      - '!docs/**'
+      - '!docusaurus/**'
+      - '!**.md'
   pull_request:
     branches: [ main, develop ]
+    paths:
+      - '**.rs'
+      - 'Cargo.toml'
+      - 'Cargo.lock'
+      - '.github/workflows/ci.yml'
+      - 'src/**'
+      - 'tests/**'
+      - 'crates/**'
+      - '!docs/**'
+      - '!docusaurus/**'
+      - '!**.md'
 
 env:
   CARGO_TERM_COLOR: always
