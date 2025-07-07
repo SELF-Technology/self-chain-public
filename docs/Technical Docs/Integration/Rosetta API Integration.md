@@ -123,7 +123,7 @@ The Rosetta API translates SELF Chain's unique PoAI operations into standard blo
 - **Target TPS**: 50,000 transactions per second
 - **Block Time**: ~1-2 seconds (AI-optimized)
 - **Finality**: Instant with PoAI consensus
-- **API Response Time**: <100ms for data queries
+- **API Response Time**: Under 100ms for data queries
 
 ## Exchange Integration Guide
 
