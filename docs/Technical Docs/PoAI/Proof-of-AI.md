@@ -17,6 +17,8 @@ In contrast, PoAI is based on the work of the following three algorithms that ca
 
 **The AI-Validator Algorithm:** this votes for the choice of block builder and determines the node with the permission to enter a block into the chain.
 
+A critical component of PoAI is the **[Color Marker System](Color%20Marker%20System)**, which provides cryptographic validation of wallet states and prevents double-spending through deterministic color transitions.
+
 An overview of the PoAI architecture is shown below:
 
 <div>
