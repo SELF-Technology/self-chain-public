@@ -25,3 +25,43 @@ An overview of the PoAI architecture is shown below:
 <img src="/img/Screenshot 2024-05-01 at 8.59.57 AM.png" alt="PoAI Architecture"/>
 </div>
 
+
+## How PoAI Works
+
+The Proof-of-AI mechanism operates through the coordinated action of three algorithms:
+
+### 1. Block Formation Process
+- **AI-Block Builders** generate potential blocks from the transaction mempool
+- **The PoAI mechanism** generates a reference block for comparison
+- Multiple block builders compete to create the most efficient block
+
+### 2. Voting Process
+- The **Voting Algorithm** organizes the selection process among block builders
+- **AI-Validators** vote to choose the most efficient block
+- The voting algorithm facilitates communication between the AI algorithms
+
+### 3. Validation and Finalization
+- The winning block builder is determined through AI validator votes
+- An AI validator (who did not vote for the winning block) performs color marker validation
+- The validated block is added to the blockchain
+
+### Reward Distribution
+
+The PoAI system distributes rewards as follows:
+- **90%** to the winning block builder
+- **8%** to voting AI validators
+- **1%** to the block-checking validator
+- **1%** to the PoAI mechanism reserve
+
+### Performance Target
+
+SELF Chain targets 50,000 TPS through optimized AI consensus algorithms and efficient transaction processing.
+
+### Key Advantages
+
+PoAI provides:
+- **Objective Consensus**: Removes human interference from validation
+- **Maximum Efficiency**: AI optimizes for the most useful block composition
+- **Energy Efficiency**: No computational waste like proof-of-work
+- **Decentralization**: Prevents centralization issues of proof-of-stake
+EOF < /dev/null

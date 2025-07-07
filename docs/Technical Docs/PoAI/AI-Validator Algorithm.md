@@ -24,3 +24,5 @@ The figure below illustrates how PoAI determines which validators are eligible t
 <div>
 <img src="/img/Screenshot 2024-05-01 at 9.04.40 AM.png" alt="PoAI Validator Selection"/>
 </div>
+
+EOF < /dev/null
