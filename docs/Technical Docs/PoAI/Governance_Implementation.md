@@ -166,7 +166,7 @@ Each proposal tracks:
 - Network stability post-execution
 
 ### Alert Thresholds
-- Low participation warnings (<20%)
+- Low participation warnings (below 20%)
 - Efficiency degradation alerts
 - Unusual voting patterns
 - Failed execution notifications
