@@ -1,6 +1,6 @@
 ---
 sidebar_label: "Proof-of-AI"
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # Proof-of-AI

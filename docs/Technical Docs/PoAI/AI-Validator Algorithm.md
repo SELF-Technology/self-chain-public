@@ -1,6 +1,6 @@
 ---
 sidebar_label: "AI-Validator Algorithm"
-sidebar_position: 7
+sidebar_position: 6
 ---
 
 # AI-Validator Algorithm
