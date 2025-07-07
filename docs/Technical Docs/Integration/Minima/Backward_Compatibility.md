@@ -108,25 +108,29 @@ SELF Chain (PoAI) <---> Compatibility Layer <---> Minima (TxPOW)
 
 ## Use Cases
 
-### When to Use Each Chain
+### Cross-Chain Integration Scenarios
 
-**Use SELF Chain for:**
-- High-throughput applications
-- AI-optimized transaction processing
-- Energy-efficient operations
-- Privacy-focused transactions
+The compatibility layer enables various integration scenarios:
 
-**Use Minima for:**
-- Maximum decentralization
-- User-contributed security
-- Mobile-first applications
-- Lightweight node operations
+1. **Asset Bridging**
+   - Transfer tokens between chains
+   - Maintain value across ecosystems
+   - Enable liquidity sharing
 
-### Cross-Chain Scenarios
-- Asset diversification across consensus types
-- Leveraging strengths of each chain
-- Regulatory compliance requiring specific consensus
-- Risk management through consensus diversity
+2. **Ecosystem Expansion**
+   - Access users from both networks
+   - Expand application reach
+   - Share network effects
+
+3. **Technical Interoperability**
+   - Cross-chain smart contract calls
+   - Shared data availability
+   - Unified developer experience
+
+4. **Risk Distribution**
+   - Diversify across different consensus mechanisms
+   - Hedge against single-chain risks
+   - Enable failover capabilities
 
 ## Future Enhancements
 
