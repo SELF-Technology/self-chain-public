@@ -1,9 +1,9 @@
 ---
-sidebar_label: "Backward Compatibility"
-sidebar_position: 1
+sidebar_label: "Minima Integration"
+sidebar_position: 3
 ---
 
-# Minima Integration - Backward Compatibility
+# Minima Integration
 
 ## Overview
 
