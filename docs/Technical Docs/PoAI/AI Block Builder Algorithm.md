@@ -1,6 +1,6 @@
 ---
 sidebar_label: "AI Block Builder Algorithm"
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 # AI Block Builder Algorithm

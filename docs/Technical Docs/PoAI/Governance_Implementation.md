@@ -1,6 +1,6 @@
 ---
 title: Governance Implementation
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 # PoAI Governance Implementation

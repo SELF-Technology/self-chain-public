@@ -1,6 +1,6 @@
 ---
 sidebar_label: "Validation Process"
-sidebar_position: 8
+sidebar_position: 7
 ---
 
 # Validation Process

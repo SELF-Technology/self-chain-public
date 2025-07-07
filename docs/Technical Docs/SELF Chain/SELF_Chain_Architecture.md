@@ -1,5 +1,6 @@
 ---
 title: SELF Chain Architecture
+sidebar_position: 1
 ---
 
 # SELF Chain Public Architecture
