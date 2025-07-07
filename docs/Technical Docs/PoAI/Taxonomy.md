@@ -5,12 +5,12 @@ sidebar_position: 3
 
 # Proof-of-AI (PoAI) Taxonomy
 
-This document outlines the core data types and their meanings in the Proof-of-AI system. These types replace the legacy Mini* classes with AI-capacity focused equivalents that better reflect their purpose in the PoAI system.
+This document outlines the core data types and their meanings in the Proof-of-AI system. These types represent AI-capacity focused data structures that reflect their purpose in the PoAI system.
 
 ## Core Types
 
 ### AICapacityNumber
-Replaces: `MiniNumber`
+Core numeric type for AI capacity measurements
 
 Represents various AI capacities and metrics:
 - Stake capacity (computational resources)
@@ -24,7 +24,7 @@ Key operations:
 - Conversion methods for different capacity scales
 
 ### AIData
-Replaces: `MiniData`
+Core data type for AI-specific structures
 
 Represents AI-specific data structures:
 - Validator IDs
@@ -38,7 +38,7 @@ Key features:
 - Data integrity verification
 
 ### AIString
-Replaces: `MiniString`
+Core string type for AI-specific text data
 
 Represents AI-specific string data:
 - Hex colors for pattern recognition
@@ -51,7 +51,7 @@ Key features:
 - String validation methods
 
 ### AIFile
-Replaces: `MiniFile`
+Core file type for AI-specific operations
 
 Represents AI-specific file operations:
 - Model storage
@@ -110,12 +110,12 @@ Key features:
   - Validator tracking
   - Update recording
 
-## Migration Notes
+## Type Purpose
 
-When migrating from Mini* classes to their AI-capacity equivalents:
-1. Replace all MiniNumber instances with AICapacityNumber
-2. Replace all MiniData instances with AIData
-3. Replace all MiniString instances with AIString
-4. Replace all MiniFile instances with AIFile
+The PoAI taxonomy types are designed to:
+1. AICapacityNumber - Handle numeric calculations for AI capacity metrics
+2. AIData - Store and manage AI-specific data structures
+3. AIString - Process and validate AI-related text patterns
+4. AIFile - Manage file operations for AI models and data
 
-Each new type maintains the same core functionality as its Mini* predecessor but with enhanced AI-specific features and naming that better reflects its purpose in the PoAI system.
+Each type provides enhanced AI-specific features that reflect its purpose in the PoAI system.
