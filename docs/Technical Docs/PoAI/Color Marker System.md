@@ -1,6 +1,6 @@
 ---
 sidebar_label: "Color Marker System"
-sidebar_position: 8
+sidebar_position: 6
 ---
 
 # Color Marker System

@@ -1,6 +1,6 @@
 ---
 sidebar_label: "Voting Algorithm"
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 # Voting Algorithm
