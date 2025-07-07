@@ -431,6 +431,7 @@ impl AIValidator {
 
         Ok(new_color)
     }
+
 }
 
 #[cfg(test)]

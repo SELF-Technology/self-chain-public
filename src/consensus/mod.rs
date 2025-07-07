@@ -1,16 +1,22 @@
+pub mod builder_rotation;
 pub mod cache;
+pub mod efficiency;
 pub mod error;
 pub mod metrics;
 pub mod peer_validator;
+pub mod rewards;
 pub mod runtime_adapter;
 pub mod validator;
 pub mod vote;
 pub mod voting;
 
 // Re-export key types
+pub use builder_rotation::{BuilderRotation, BuilderSelector, RotationStats};
+pub use efficiency::{EfficiencyCalculator, EfficiencyCoefficient};
 pub use error::ConsensusError;
 pub use metrics::ConsensusMetrics;
 pub use peer_validator::PeerValidator;
+pub use rewards::{RewardManager, RewardDistribution, BlockRewards};
 pub use runtime_adapter::PoAIConsensusAdapter;
 pub use validator::AIValidator;
 pub use vote::{Vote, VotingResult};
