@@ -1,6 +1,6 @@
 ---
 sidebar_label: "The Incentive"
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 # The Incentive
