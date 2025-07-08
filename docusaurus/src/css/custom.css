@@ -443,54 +443,27 @@ html[data-theme="dark"] .breadcrumbs__item {
   opacity: 1;
 }
 
-/* Fix duplicate logo issue on mobile */
+/* Fix duplicate logo issue on mobile - simplified approach */
 @media (max-width: 996px) {
-  /* Ensure the mobile sidebar shows properly */
-  .navbar-sidebar__brand {
-    display: flex;
-    align-items: center;
-    height: var(--ifm-navbar-height);
-    padding: 0 1rem;
+  /* Hide duplicate logo that appears in the sidebar menu */
+  /* Target the "Documentation Hub" link that contains a duplicate logo */
+  .menu__list > .menu__list-item:first-child > .menu__link > img {
+    display: none !important;
   }
   
-  /* Target the specific duplicate logo in the menu */
-  /* The duplicate appears to be in the first menu item */
-  .menu__list-item:first-child .menu__link[href="/"] {
+  /* Alternative selector if the above doesn't work */
+  .menu__link[href="/"] > img {
+    display: none !important;
+  }
+  
+  /* Ensure close button remains functional */
+  .navbar-sidebar__close {
     display: flex !important;
     align-items: center !important;
-    justify-content: flex-start !important;
-  }
-  
-  /* Hide any logo images within menu links that point to home */
-  .menu__list-item .menu__link[href="/"] img,
-  .menu__list-item .menu__link[href="https://self.app"] img,
-  .menu__list-item:first-child img[src*="SELF"],
-  .menu__list-item:first-child img[src*="self"],
-  .menu__list-item:first-child img[alt*="SELF"] {
-    display: none !important;
-    visibility: hidden !important;
-    width: 0 !important;
-    height: 0 !important;
-    opacity: 0 !important;
-    position: absolute !important;
-    left: -9999px !important;
-  }
-  
-  /* If the duplicate is in the navbar items that get moved to mobile menu */
-  .navbar-sidebar__item img[src*="SELF"],
-  .navbar-sidebar__item img[src*="self"],
-  .navbar-sidebar__items img[alt*="SELF"]:not(.navbar__logo) {
-    display: none !important;
-  }
-  
-  /* Ensure the main logo in brand area stays visible */
-  .navbar-sidebar__brand .navbar__logo {
-    display: block !important;
-    height: 2rem !important;
-    width: auto !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    position: static !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    position: relative !important;
+    z-index: 10 !important;
   }
 }
 
