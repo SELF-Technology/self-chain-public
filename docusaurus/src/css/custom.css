@@ -443,16 +443,15 @@ html[data-theme="dark"] .breadcrumbs__item {
   opacity: 1;
 }
 
-/* Fix duplicate logo issue on mobile - simplified approach */
+/* Mobile menu fixes */
 @media (max-width: 996px) {
-  /* Hide duplicate logo that appears in the sidebar menu */
-  /* Target the "Documentation Hub" link that contains a duplicate logo */
-  .menu__list > .menu__list-item:first-child > .menu__link > img {
+  /* Hide the logo in the mobile navbar brand area (top left) */
+  .navbar-sidebar__brand .navbar__logo {
     display: none !important;
   }
   
-  /* Alternative selector if the above doesn't work */
-  .menu__link[href="/"] > img {
+  /* Also hide any logo in the brand link */
+  .navbar-sidebar__brand img {
     display: none !important;
   }
   
