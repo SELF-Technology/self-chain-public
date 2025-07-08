@@ -156,7 +156,7 @@ Grid Compute will evolve through stages:
 - **Design for Distribution**: Build applications that can leverage distributed compute
 - **Think Constellation**: Consider industry-specific use cases
 - **Contribute Ideas**: Help define APIs and interfaces
-- **Experiment Early**: Be ready to test when the network launches
+- **Experiment Today**: Test with our current infrastructure while planning for Grid Compute integration
 
 ### For Enterprises
 
