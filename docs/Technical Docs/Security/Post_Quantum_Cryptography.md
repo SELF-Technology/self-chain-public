@@ -9,6 +9,8 @@ sidebar_position: 2
 
 SELF Chain is implementing a comprehensive post-quantum cryptography (PQC) strategy to ensure long-term security against threats posed by quantum computing advancements. This document provides an overview of our approach to quantum-resistant security and current implementation status.
 
+> 🚧 **Development Notice**: Post-quantum cryptography implementation is currently in the design and planning phase. The features described here represent our architectural approach and roadmap.
+
 ## Multi-Layered Defense Strategy
 
 Our post-quantum security implementation leverages multiple complementary cryptographic approaches:
@@ -22,7 +24,7 @@ SELF Chain implements Kyber, a lattice-based key encapsulation mechanism (KEM) s
 - Excellent performance characteristics compared to other PQC candidates
 - Well-analyzed security properties with conservative parameter selection
 
-**Implementation Status:** Module structure created with interfaces for both Kyber-768 and Kyber-1024 variants, with Kyber-1024 as the default for maximum security margin.
+**Implementation Status:** Module structure designed with planned interfaces for both Kyber-768 and Kyber-1024 variants, with Kyber-1024 as the default for maximum security margin.
 
 ### 2. Quantum-Resistant Signatures (SPHINCS+)
 
@@ -33,7 +35,7 @@ To complement Kyber's key exchange capabilities, SELF Chain implements SPHINCS+,
 - Purely hash-based security (no number-theoretic assumptions)
 - Stateless design for practical blockchain implementation
 
-**Implementation Status:** Module structure created with interfaces for SPHINCS+-SHA3-256 in both fast (larger signatures) and small (slower generation) parameter sets.
+**Implementation Status:** Module structure designed with planned interfaces for SPHINCS+-SHA3-256 in both fast (larger signatures) and small (slower generation) parameter sets.
 
 ### 3. Hybrid Cryptographic Approach
 
@@ -53,8 +55,8 @@ SELF Chain implements a hybrid key exchange mechanism combining X25519 (classica
 - Provides cryptographic agility through modular design
 
 **Implementation Status:** 
-- Hybrid X25519+Kyber key exchange fully implemented with proper encapsulation/decapsulation
-- Hybrid signature scheme designed that combines ECDSA and SPHINCS+ signatures with unified verification protocol
+- Hybrid X25519+Kyber key exchange architecture designed with proper encapsulation/decapsulation flow
+- Hybrid signature scheme planned that combines ECDSA and SPHINCS+ signatures with unified verification protocol
 
 ## Implementation Architecture
 
@@ -79,9 +81,9 @@ This architecture provides:
 
 The post-quantum security roadmap follows a phased approach:
 
-1. **Phase 1** (Q3 2025): Module structure and Kyber integration ✓
-2. **Phase 2** (Q4 2025): X25519+Kyber hybrid key exchange implementation ✓
-3. **Phase 3** (Q4 2025): SPHINCS+ integration and hybrid signatures ◐
+1. **Phase 1** (Q2 2025): Module structure and Kyber integration design ◐
+2. **Phase 2** (Q3 2025): X25519+Kyber hybrid key exchange implementation ○
+3. **Phase 3** (Q4 2025): SPHINCS+ integration and hybrid signatures ○
 4. **Phase 4** (Q1 2026): Blockchain integration and performance optimizations ○
 5. **Phase 5** (Q2 2026): Full network deployment and security hardening ○
 
@@ -91,9 +93,9 @@ _Legend: ✓ Complete, ◐ In Progress, ○ Planned_
 
 In addition to the main roadmap, we have a specific timeline to enhance the X25519 implementation:
 
-1. **Q3 2025**: Interim solution for improved X25519 key exchange functionality ✓
-2. **Q4 2025**: Upstream contributions to X25519 libraries or custom implementation ○
-3. **Q1 2026**: Final implementation of enhanced X25519 key exchange with proper deterministic behavior ○
+1. **Q2 2025**: Design interim solution for improved X25519 key exchange functionality ◐
+2. **Q3 2025**: Implement X25519 enhancements or custom implementation ○
+3. **Q4 2025**: Final implementation of enhanced X25519 key exchange with proper deterministic behavior ○
 
 **Note:** The interim solution implements a shared secret caching mechanism that enables deterministic behavior between encapsulation and decapsulation operations, which is critical for blockchain testing environments.
 

@@ -5,6 +5,8 @@ sidebar_position: 3
 
 # AI-Capacity Class Implementation
 
+> 🚧 **Development Notice**: The AI capacity implementation is currently under active development. Code examples and features described here represent our architectural approach and are subject to change.
+
 ## Overview
 This document outlines the implementation of AI-capacity classes throughout the SELF Chain system, replacing the legacy Mini* classes with more AI-focused counterparts.
 
@@ -147,18 +149,18 @@ This document outlines the implementation of AI-capacity classes throughout the 
 - Integration with AI validator system
 
 #### AICapacityNumber Usage
-```java
+```rust
 // Example usage:
-AICapacityNumber stake = new AICapacityNumber(1000);
-AICapacityNumber resources = new AICapacityNumber(500);
-AICapacityNumber total = stake.add(resources);
+let stake = AICapacityNumber::new(1000);
+let resources = AICapacityNumber::new(500);
+let total = stake.add(&resources);
 ```
 
 #### AIData Usage
-```java
+```rust
 // Example usage:
-AIData nodeId = new AIData("node_123");
-AIData proposalId = new AIData("proposal_456");
+let node_id = AIData::new("node_123");
+let proposal_id = AIData::new("proposal_456");
 ```
 
 ### 6. Migration Path
@@ -196,6 +198,6 @@ AIData proposalId = new AIData("proposal_456");
    - Verify node participation
 
 ## References
-- [GOVERNANCE_IMPLEMENTATION.md](cci:7://file:///Users/jmac/Documents/GitHub/chain/docs/GOVERNANCE_IMPLEMENTATION.md:0:0-0:0)
-- [IMPLEMENTATION_HISTORY.md](cci:7://file:///Users/jmac/Documents/GitHub/chain/docs/IMPLEMENTATION_HISTORY.md:0:0-0:0)
+- GOVERNANCE_IMPLEMENTATION.md (coming soon)
+- IMPLEMENTATION_HISTORY.md (coming soon)
 - [Proof of AI concept](https://proofofai.com/)
