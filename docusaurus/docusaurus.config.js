@@ -52,11 +52,13 @@ const config = {
   ],
 
   themeConfig: {
-    algolia: {
-      appId: '0X1QYF886S',
-      apiKey: '529f2d29487ab836fe56f52b39493466',
-      indexName: 'self',
-    },
+    ...(process.env.ALGOLIA_APP_ID && process.env.ALGOLIA_SEARCH_API_KEY ? {
+      algolia: {
+        appId: process.env.ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
+        indexName: 'self',
+      },
+    } : {}),
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: false,
