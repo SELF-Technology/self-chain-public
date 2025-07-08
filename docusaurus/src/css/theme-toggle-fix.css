@@ -1,0 +1,48 @@
+/**
+ * Fix for the mobile menu light/dark toggle
+ * Addresses both positioning and clickability issues
+ */
+
+/* Fix for the theme toggle in mobile menu */
+@media (max-width: 996px) {
+  /* Position the color mode toggle properly in the mobile menu */
+  .navbar-sidebar .navbar__items .dropdown {
+    position: relative;
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  /* Ensure the toggle button is clickable */
+  .navbar-sidebar .navbar__items .dropdown button {
+    position: relative;
+    z-index: 10;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    pointer-events: auto !important; /* Force enable clicking */
+  }
+  
+  /* Make sure toggle isn't overlapped by other elements */
+  .navbar-sidebar .colorModeToggle {
+    position: relative;
+    z-index: 10;
+    display: block;
+    width: auto;
+    margin: 0.5rem 1rem;
+  }
+  
+  /* Fix any elements that might be overlapping */
+  .navbar-sidebar__brand {
+    overflow: visible;
+  }
+
+  /* Additional space to prevent overlap */
+  .navbar-sidebar__brand + .navbar-sidebar__items {
+    padding-top: 1rem;
+  }
+}
