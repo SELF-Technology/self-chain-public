@@ -40,6 +40,10 @@ Instead of using the basic search API key, generate a secured API key with restr
 
 Make sure your Algolia index named 'self' exists and is populated with your documentation content.
 
+## Status
+
+✅ GitHub secrets configured - Search functionality enabled
+
 ## Note on Hardcoding
 
 Avoid hardcoding API keys directly in source code as security scanners will flag this as a vulnerability (SCT-1035). Always use environment variables for production deployments.
