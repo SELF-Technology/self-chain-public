@@ -445,23 +445,7 @@ html[data-theme="dark"] .breadcrumbs__item {
 
 /* Fix duplicate logo issue on mobile */
 @media (max-width: 996px) {
-  /* Target only duplicate SELF logos in the menu, not menu icons */
-  .menu__list img[alt="SELF Logo"],
-  .menu__list img[src*="SELFwhitelogo"],
-  .menu__list img[src*="SELFblacklogo"],
-  .menu__list img[src*="SELF BLACK"],
-  .menu__list img[src*="SELF%20BLACK"] {
-    display: none !important;
-  }
-  
-  /* Hide logo duplicates that appear in menu items specifically */
-  .menu__link img[alt="SELF Logo"],
-  .menu__list-item a > img[alt="SELF Logo"],
-  .navbar-sidebar__items img[alt="SELF Logo"] {
-    display: none !important;
-  }
-  
-  /* Clean up mobile sidebar header - keep the main logo here */
+  /* First, ensure the sidebar brand area is properly structured */
   .navbar-sidebar__brand {
     display: flex;
     align-items: center;
@@ -469,19 +453,55 @@ html[data-theme="dark"] .breadcrumbs__item {
     padding: 0 1rem;
     position: relative;
     z-index: 10;
+    overflow: hidden; /* Hide any overflow */
   }
   
-  /* Ensure proper logo sizing on mobile */
-  .navbar-sidebar__brand .navbar__logo,
-  .navbar-sidebar__brand img {
+  /* Ensure only one logo shows - use child selectors */
+  .navbar-sidebar__brand > a:nth-child(n+2),
+  .navbar-sidebar__brand > .navbar__logo:nth-child(n+2) {
+    position: absolute !important;
+    left: -9999px !important;
+    opacity: 0 !important;
+  }
+  
+  /* Alternative approach - if logos are in menu items */
+  .menu__list .navbar__logo,
+  .menu__list .navbar__brand,
+  .menu__list a[href="https://self.app"] img,
+  .menu__list a[href="/"] img[alt*="SELF"] {
+    position: absolute !important;
+    left: -9999px !important;
+    width: 1px !important;
+    height: 1px !important;
+    opacity: 0 !important;
+  }
+  
+  /* Specific targeting for "Documentation Hub" area if it has a logo */
+  .menu__list-item:first-child img[alt*="SELF"],
+  .menu__link:first-child img[alt*="SELF"] {
+    display: none !important;
+  }
+  
+  /* Ensure proper logo sizing for the one we want to keep */
+  .navbar-sidebar__brand img:first-of-type {
     height: 2rem !important;
     width: auto !important;
     max-height: 2rem !important;
+    display: block !important;
+    opacity: 1 !important;
+    position: static !important;
   }
   
-  /* If there's a duplicate logo with specific class or container */
-  .navbar-sidebar .navbar__logo:not(.navbar-sidebar__brand .navbar__logo) {
-    display: none !important;
+  /* Last resort - use container query to hide duplicate */
+  .navbar-sidebar__items > :first-child img[src*="SELF"],
+  .navbar-sidebar__items > :first-child img[src*="self"],
+  .theme-doc-sidebar-menu > :first-child img,
+  nav[class*="sidebar"] li:first-child > a > img {
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
 
