@@ -32,14 +32,11 @@ const config = {
       respectPrefersColorScheme: false,
     },
     navbar: {
+      title: '',
       logo: {
         alt: 'SELF Logo',
         src: 'img/SELF BLACK.png',
         srcDark: 'img/SELFwhitelogo.png',
-        style: {
-          height: '32px',
-          marginRight: '8px',
-        },
       },
       items: [],
     },
