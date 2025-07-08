@@ -235,7 +235,7 @@ All SDK development follows:
 
 ## Questions?
 
-- Discord: [#sdk-development](https://discord.gg/selfcommunity)
+- Discord: [#sdk-development](https://discord.gg/WdMdVpA4C8)
 - GitHub: Create an issue with [SDK] tag
 - Email: sdk@self.app
 

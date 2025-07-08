@@ -5,7 +5,7 @@
   <p>A revolutionary blockchain ecosystem powered by Proof-of-AI consensus, where your data sovereignty is guaranteed by AI validation</p>
   
   [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-  [![Discord](https://img.shields.io/discord/1234567890?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.gg/selfcommunity)
+  [![Discord](https://img.shields.io/discord/1234567890?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.gg/WdMdVpA4C8)
   [![Twitter Follow](https://img.shields.io/twitter/follow/self_hq?style=social)](https://twitter.com/self_hq)
   [![GitHub Stars](https://img.shields.io/github/stars/SELF-Technology/self-chain-public?style=social)](https://github.com/SELF-Technology/self-chain-public/stargazers)
 </div>
@@ -61,7 +61,7 @@ cargo run --bin self-chain-node -- --testnet
 
 ### Get Testnet Tokens
 
-Join our [Discord](https://discord.gg/selfcommunity) and use the `!faucet` command to receive testnet tokens.
+Join our [Discord](https://discord.gg/WdMdVpA4C8) and use the `!faucet` command to receive testnet tokens.
 
 ## 📚 Documentation
 
@@ -181,7 +181,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 ### Official Resources
 - 🌍 [Website](https://self.app)
 - 📖 [Documentation](https://docs.self.app)
-- 💬 [Discord Community](https://discord.gg/selfcommunity)
+- 💬 [Discord Community](https://discord.gg/WdMdVpA4C8)
 - 🐦 [Twitter/X](https://x.com/self_hq)
 - 📺 [YouTube](https://www.youtube.com/@selfcommunityvideos)
 
@@ -226,7 +226,7 @@ SELF Chain stands on the shoulders of giants:
 ### For Developers
 1. ⭐ Star this repository
 2. 🍴 Fork and experiment
-3. 💬 Join our [Discord](https://discord.gg/selfcommunity)
+3. 💬 Join our [Discord](https://discord.gg/WdMdVpA4C8)
 4. 🐛 Report bugs or request features
 5. 🤝 Submit pull requests
 
@@ -240,7 +240,7 @@ SELF Chain stands on the shoulders of giants:
 ## 📞 Contact
 
 - 🐛 **Bug Reports**: [GitHub Issues](https://github.com/SELF-Technology/self-chain-public/issues)
-- 💬 **General Discussion**: [Discord](https://discord.gg/selfcommunity)
+- 💬 **General Discussion**: [Discord](https://discord.gg/WdMdVpA4C8)
 - 📧 **Security**: security@self.app
 - 🤝 **Partnerships**: partnerships@self.app
 - 📰 **Media**: press@self.app

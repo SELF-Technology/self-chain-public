@@ -123,7 +123,7 @@ const config = {
             },
             {
               label: "Discord",
-              href: "https://discord.gg/selfcommunity",
+              href: "https://discord.gg/WdMdVpA4C8",
             },
           ],
         },

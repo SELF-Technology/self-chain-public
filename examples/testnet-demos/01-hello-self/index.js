@@ -151,7 +151,7 @@ async function main() {
     console.log('\nTroubleshooting:');
     console.log('• Check your internet connection');
     console.log('• Verify you\'re using testnet configuration');
-    console.log('• Join Discord for help: https://discord.gg/selfcommunity');
+    console.log('• Join Discord for help: https://discord.gg/WdMdVpA4C8');
   }
 }
 

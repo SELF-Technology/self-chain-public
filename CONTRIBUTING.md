@@ -29,7 +29,7 @@ By participating in this project, you agree to abide by our [Code of Conduct](CO
 ## Getting Started
 
 1. **Join our Community**
-   - Discord: [Join SELF Community](https://discord.gg/selfcommunity)
+   - Discord: [Join SELF Community](https://discord.gg/WdMdVpA4C8)
    - Follow us on [Twitter/X](https://x.com/self_hq)
    - Star and watch this repository
 
@@ -233,7 +233,7 @@ When contributing:
 
 ### Communication Channels
 
-- **Discord**: [SELF Community](https://discord.gg/selfcommunity) - Real-time chat
+- **Discord**: [SELF Community](https://discord.gg/WdMdVpA4C8) - Real-time chat
 - **GitHub Discussions**: Long-form technical discussions
 - **Twitter/X**: [@self_hq](https://x.com/self_hq) - Updates and announcements
 
