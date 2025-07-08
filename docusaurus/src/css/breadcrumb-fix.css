@@ -40,3 +40,42 @@ nav[aria-label="Breadcrumbs"],
     z-index: 10001 !important;
   }
 }
+
+/* Fix mobile menu overlap with breadcrumb */
+@media (max-width: 996px) {
+  /* When mobile menu is open, adjust breadcrumb positioning */
+  .navbar-sidebar--show ~ .main-wrapper .theme-doc-breadcrumbs,
+  .navbar-sidebar--show ~ main .theme-doc-breadcrumbs {
+    margin-left: 0 !important;
+    padding-left: 1rem !important;
+  }
+  
+  /* Hide breadcrumb when mobile menu is open to prevent overlap */
+  .navbar-sidebar--show ~ .main-wrapper nav[aria-label="Breadcrumbs"],
+  .navbar-sidebar--show ~ main nav[aria-label="Breadcrumbs"] {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Alternative: Push breadcrumb to the right when menu is open */
+  /*
+  .navbar-sidebar--show ~ .main-wrapper .theme-doc-breadcrumbs {
+    transform: translateX(250px);
+    transition: transform 0.3s ease;
+  }
+  */
+}
+
+/* Ensure proper spacing on mobile */
+@media (max-width: 768px) {
+  .theme-doc-breadcrumbs {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+  
+  /* Reduce breadcrumb container height on mobile */
+  nav[aria-label="Breadcrumbs"] {
+    min-height: auto;
+  }
+}
