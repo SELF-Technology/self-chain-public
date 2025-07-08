@@ -628,24 +628,17 @@ html[data-theme="dark"] .breadcrumbs__item {
   display: none !important;
 }
 
-/* Add spacing between theme toggle and search on mobile */
+/* Hide theme toggle on mobile navbar */
 @media (max-width: 996px) {
-  /* Force flex layout with gap */
-  .navbar__items--right {
-    display: flex !important;
-    gap: 0.75rem !important;
-    align-items: center !important;
+  /* Hide the theme toggle button in mobile navbar */
+  .navbar__items--right button[class*="colorModeToggle"] {
+    display: none !important;
   }
   
-  /* Ensure theme toggle has margin */
-  .navbar__items--right button[class*="colorModeToggle"],
-  .navbar__items--right > button:first-child {
-    margin-right: 0.75rem !important;
-  }
-  
-  /* Ensure search button doesn't have negative margins */
+  /* Ensure search button is properly displayed */
   .navbar__items--right [class*="searchBox"],
   .navbar__items--right .DocSearch-Button {
+    display: flex !important;
     margin-left: 0 !important;
   }
 }
