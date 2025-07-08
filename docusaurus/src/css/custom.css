@@ -455,14 +455,29 @@ html[data-theme="dark"] .breadcrumbs__item {
     display: none !important;
   }
   
-  /* Ensure close button remains functional */
+  /* When mobile menu is open, hide the main navbar to prevent overlap */
+  .navbar-sidebar--show ~ .navbar {
+    display: none !important;
+  }
+  
+  /* Ensure the mobile sidebar has proper z-index */
+  .navbar-sidebar {
+    z-index: 1000 !important;
+  }
+  
+  /* Ensure close button remains functional with high z-index */
   .navbar-sidebar__close {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     cursor: pointer !important;
     position: relative !important;
-    z-index: 10 !important;
+    z-index: 1001 !important;
+  }
+  
+  /* Make sure the backdrop works properly */
+  .navbar-sidebar__backdrop {
+    z-index: 999 !important;
   }
 }
 
