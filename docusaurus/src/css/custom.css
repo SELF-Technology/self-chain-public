@@ -445,30 +445,43 @@ html[data-theme="dark"] .breadcrumbs__item {
 
 /* Fix duplicate logo issue on mobile */
 @media (max-width: 996px) {
-  /* Hide any duplicate logos in mobile sidebar */
-  .navbar-sidebar__brand .navbar__logo:not(:first-child),
-  .navbar-sidebar__brand .navbar__logo ~ .navbar__logo {
+  /* Target only duplicate SELF logos in the menu, not menu icons */
+  .menu__list img[alt="SELF Logo"],
+  .menu__list img[src*="SELFwhitelogo"],
+  .menu__list img[src*="SELFblacklogo"],
+  .menu__list img[src*="SELF BLACK"],
+  .menu__list img[src*="SELF%20BLACK"] {
     display: none !important;
   }
   
-  /* Ensure only one logo is visible */
-  .navbar-sidebar__items .navbar__logo,
-  .menu__list .navbar__logo {
+  /* Hide logo duplicates that appear in menu items specifically */
+  .menu__link img[alt="SELF Logo"],
+  .menu__list-item a > img[alt="SELF Logo"],
+  .navbar-sidebar__items img[alt="SELF Logo"] {
     display: none !important;
   }
   
-  /* Clean up mobile sidebar header */
+  /* Clean up mobile sidebar header - keep the main logo here */
   .navbar-sidebar__brand {
     display: flex;
     align-items: center;
     height: var(--ifm-navbar-height);
     padding: 0 1rem;
+    position: relative;
+    z-index: 10;
   }
   
   /* Ensure proper logo sizing on mobile */
-  .navbar-sidebar__brand .navbar__logo {
-    height: 2rem;
-    width: auto;
+  .navbar-sidebar__brand .navbar__logo,
+  .navbar-sidebar__brand img {
+    height: 2rem !important;
+    width: auto !important;
+    max-height: 2rem !important;
+  }
+  
+  /* If there's a duplicate logo with specific class or container */
+  .navbar-sidebar .navbar__logo:not(.navbar-sidebar__brand .navbar__logo) {
+    display: none !important;
   }
 }
 
