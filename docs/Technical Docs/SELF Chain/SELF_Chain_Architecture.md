@@ -26,6 +26,15 @@ Our blockchain implementation is open source. Explore the core components:
 
 </div>
 
+### 👨‍💻 Developer Resources
+
+Get started building on SELF Chain:
+
+- **[Getting Started Guide (Testnet)](/Technical%20Docs/Developer%20Resources/Getting_Started_Testnet)** - Begin your journey with SELF Chain development
+  - Testnet setup, configuration, and safety guidelines
+- **[Public Interfaces Specification](/Technical%20Docs/Developer%20Resources/PUBLIC_INTERFACES)** - Security-safe APIs for developers
+  - Understand what can be safely accessed and built upon
+
 ---
 
 ## SELF Ecosystem Overview

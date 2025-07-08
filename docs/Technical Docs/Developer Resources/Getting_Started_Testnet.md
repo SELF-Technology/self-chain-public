@@ -1,3 +1,8 @@
+---
+title: Getting Started (Testnet)
+sidebar_position: 1
+---
+
 # Getting Started with SELF Chain (Testnet)
 
 > ⚠️ **TESTNET WARNING**: SELF Chain is currently in testnet phase. Do not use real assets or deploy production applications. Testnet tokens have no value and the network may be reset at any time.

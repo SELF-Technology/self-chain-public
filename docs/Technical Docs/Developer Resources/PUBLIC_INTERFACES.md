@@ -1,3 +1,8 @@
+---
+title: Public Interfaces
+sidebar_position: 2
+---
+
 # SELF Chain Public Interfaces Specification
 
 > This document defines the security-safe public interfaces that can be exposed in SDKs and public repositories without compromising SELF Chain's security.
