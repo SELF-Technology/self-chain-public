@@ -15,13 +15,13 @@ sidebar_position: 1
 
 ## 📋 Executive Summary
 
-The **SELF Chain Constellation Architecture** enables enterprises to launch their own sovereign blockchain networks with built-in AI validation, regulatory compliance, and seamless integration with the SELF ecosystem. Through an **Innovation Platform** model, organizations start with a free Innovation Sandbox, then scale through commercial tiers ($50K-$750K+ annually) while leveraging comprehensive AI-powered validation frameworks and token-native revenue sharing.
+The **SELF Chain Constellation Architecture** enables enterprises to launch their own sovereign blockchain networks with built-in AI validation, regulatory compliance, and seamless integration with the SELF ecosystem. Through an **Innovation Platform** model, organizations can explore capabilities in a sandbox environment before scaling to production deployments, leveraging comprehensive AI-powered validation frameworks and token-native revenue sharing.
 
 ## 🎯 Core Value Proposition
 
 ### **Innovation Platform Model**
-- **Innovation Sandbox (Free)**: 30-60 day exploration of enterprise blockchain capabilities
-- **Commercial Tiers**: $50K-$750K+ annually for production innovation platforms
+- **Innovation Sandbox**: Exploration environment for enterprise blockchain capabilities
+- **Production Deployment**: Scalable commercial options for live implementations
 - **Sovereign Blockchains**: Each enterprise gets their own dedicated Layer-1 chain
 - **AI-Powered Validation**: Industry-specific AI models for consensus and compliance
 - **Seamless Integration**: Native interoperability with SELF Chain ecosystem
@@ -61,29 +61,20 @@ APPLICATION LAYER (dApp/Application Tokens):
 - **No Vesting Period**: All SELF allocations are immediately liquid
 - **Quality Control Gate**: SELF curates and approves all enterprise applicants
 
-### **Innovation Platform Tiers**
+### **Innovation Platform Options**
 
-#### **Innovation Sandbox (Free)**
+#### **Innovation Sandbox**
 - Full platform access for development and testing
-- 30-60 day innovation exploration periods
+- Innovation exploration environment
 - Complete feature access in non-production environments
 - Community support and comprehensive documentation
 
-#### **Commercial Tiers (Production)**
-- **Tier 1: Innovation Starter** ($50K-$150K annually - paid via purchase of SELF token)
-  - Single industry focus
-  - Standard validation frameworks
-  - Basic support package
-  
-- **Tier 2: Multi-Domain Professional** ($200K-$500K annually - paid via purchase of SELF token)
-  - Multiple industry support
-  - Custom validation rules
-  - Priority support
-  
-- **Tier 3: Enterprise Innovation Platform** ($750K+ annually - paid via purchase of SELF token)
-  - Unlimited capabilities
-  - White-glove support
-  - Custom development
+#### **Production Deployment**
+- Various tiers available based on enterprise needs
+- Single to multi-industry support options
+- Standard to custom validation frameworks
+- Scalable support packages
+- Enterprise-grade capabilities and customization
 
 ## 🏗️ Technical Architecture
 
@@ -238,10 +229,10 @@ ICB = Inter-Chain Bridge
 ### For Enterprises
 
 #### 1. Innovation Sandbox
-Start with our free 30-60 day exploration:
+Start with our exploration environment:
 - Full access to all features
 - Test your use cases
-- No commitment required
+- Flexible exploration period
 - Community support included
 
 #### 2. Innovation Workshop
@@ -280,17 +271,17 @@ Go live in 3-5 weeks with:
 
 ## 📈 Market Opportunity & Success Metrics
 
-### Total Addressable Market (TAM)
-- **Enterprise Blockchain**: $67 billion by 2026
-- **Blockchain-as-a-Service**: $15 billion by 2025
-- **AI-Powered Solutions**: $125 billion by 2025
+### Market Opportunity
+- **Enterprise Blockchain**: Growing rapidly across industries
+- **Blockchain-as-a-Service**: Emerging market segment
+- **AI-Powered Solutions**: Expanding enterprise adoption
 
 ### Platform Benefits
 
 #### For Enterprises
 - **Innovation Focus**: Transform compliance into competitive advantage
-- **Graduated Investment**: Free exploration to enterprise platform
-- **Fast Deployment**: Production-ready in 3-5 weeks
+- **Flexible Deployment**: Start with exploration, scale to production
+- **Fast Deployment**: Production-ready in significantly less time than standard
 - **Proven Technology**: Built on battle-tested infrastructure
 - **Unlimited Scalability**: Grow from pilot to enterprise-wide
 
@@ -316,7 +307,7 @@ Go live in 3-5 weeks with:
 Ready to launch your sovereign blockchain and transform your enterprise with AI-powered innovation?
 
 ### Start Your Journey:
-1. **Innovation Sandbox**: [Request free access](mailto:devs@self.app)
+1. **Innovation Sandbox**: [Request access](mailto:devs@self.app)
 2. **Schedule Workshop**: Design your blockchain solution
 3. **Review Documentation**: Explore technical specifications
 
