@@ -76,7 +76,15 @@
     const html = document.documentElement;
     
     // Set initial state based on current theme
-    const currentTheme = html.getAttribute('data-theme') || 'light';
+    // Default to 'dark' if no theme is set (matching Docusaurus config)
+    const currentTheme = html.getAttribute('data-theme') || localStorage.getItem('theme') || 'dark';
+    
+    // Ensure the theme is applied
+    if (!html.getAttribute('data-theme')) {
+      html.setAttribute('data-theme', currentTheme);
+      localStorage.setItem('theme', currentTheme);
+    }
+    
     checkbox.checked = currentTheme === 'light';
     
     // Handle toggle
