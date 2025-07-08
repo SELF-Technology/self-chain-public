@@ -4,6 +4,8 @@ title: Hybrid Architecture
 
 # Hybrid Storage Architecture
 
+> 🏛️ **Architectural Vision**: This document describes the planned hybrid storage architecture for SELF Chain. Implementation is ongoing as we build towards this comprehensive decentralized storage vision.
+
 ## Overview
 The SELF Chain hybrid storage architecture combines multiple decentralized storage solutions to provide a robust and efficient storage system. This architecture leverages the strengths of each storage solution while mitigating their weaknesses.
 

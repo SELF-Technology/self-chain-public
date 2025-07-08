@@ -5,6 +5,8 @@ sidebar_position: 4
 
 # Pattern Analysis Security System
 
+> 🔍 **Development Status**: The Pattern Analysis Security System is currently in active development. Features described here represent our security architecture vision and implementation roadmap.
+
 ## Overview
 
 The SELF Chain incorporates an advanced Pattern Analysis Security System as a core component of its blockchain security architecture. This system systematically detects suspicious transaction patterns and anomalous behaviors through AI-driven analysis, providing proactive protection against various forms of blockchain attacks and fraudulent activities.

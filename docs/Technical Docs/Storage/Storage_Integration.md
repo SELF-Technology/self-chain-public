@@ -4,6 +4,8 @@ title: Storage Integration
 
 # Storage Integration Documentation
 
+> 📦 **SDK Notice**: The code examples in this document represent the planned SDK interface design. The SELF SDK is currently under development and these APIs are subject to change.
+
 ## Overview
 The SELF SDK provides seamless integration with the SELF storage layer, including IPFS and OrbitDB. This documentation covers the available storage operations and their usage.
 

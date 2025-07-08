@@ -4,12 +4,14 @@ title: Advanced TPS Optimization
 
 # SELF Chain Advanced TPS Optimization
 
+> 🎯 **Performance Targets**: The metrics described in this document represent our performance optimization targets and architectural design goals. Actual performance may vary based on network conditions, hardware specifications, and implementation progress.
+
 ## Overview
-This document outlines the advanced optimizations and benchmarking capabilities of SELF Chain, designed to achieve Solana-level performance (50,000+ TPS).
+This document outlines the advanced optimizations and benchmarking capabilities of SELF Chain, designed to target Solana-level performance (50,000+ TPS).
 
 ## Core Optimizations
 
-### 1. Advanced Sharding ([advanced_sharding.rs](cci:7://file:///Users/jmac/Documents/GitHub/self-chain-private/src/grid/advanced_sharding.rs:0:0-0:0))
+### 1. Advanced Sharding
 - Geographic-based sharding
 - Dynamic load balancing
 - Network latency optimization
@@ -58,14 +60,14 @@ struct BenchmarkSuite {
 }
 ```
 
-## Performance Metrics
-- Target TPS: 50,000+ transactions per second
-- Peak TPS: 100,000+ transactions per second
-- Average latency: &lt; 1ms
-- Network latency: &lt; 10ms
-- Memory usage: Optimized
-- CPU utilization: &lt; 90%
-- GPU utilization: &lt; 90%
+## Performance Targets
+- Target TPS: 50,000+ transactions per second (design goal)
+- Peak TPS Target: 100,000+ transactions per second (theoretical maximum)
+- Target Average Latency: < 1ms (under optimal conditions)
+- Target Network Latency: < 10ms (datacenter environments)
+- Memory Usage: Optimization in progress
+- Target CPU Utilization: < 90% (at full load)
+- Target GPU Utilization: < 90% (when GPU acceleration enabled)
 
 ## Benchmarking Scenarios
 1. Constant Load
