@@ -301,5 +301,5 @@ After building:
 ## Getting Help
 
 - GitHub Issues: [Report build issues](https://github.com/SELF-Technology/self-chain-public/issues)
-- Discord: [Join #dev-building](https://discord.gg/selfcommunity)
+- Discord: [Join #dev-building](https://discord.gg/WdMdVpA4C8)
 - Docs: [Full documentation](https://docs.self.app)

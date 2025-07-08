@@ -49,7 +49,7 @@ const config = {
       style: 'dark',
       copyright: `
         <div class="footer-social-icons">
-          <a href="https://discord.gg/selfcommunity" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+          <a href="https://discord.gg/WdMdVpA4C8" target="_blank" rel="noopener noreferrer" aria-label="Discord">
             <i class="fab fa-discord"></i>
           </a>
           <a href="https://github.com/SELF-Technology/self-chain-public" target="_blank" rel="noopener noreferrer" aria-label="GitHub">

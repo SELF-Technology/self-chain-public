@@ -54,7 +54,7 @@ Testnet tokens are available from our faucet:
 
 ```bash
 # Coming soon - Discord faucet bot
-# Join our Discord: https://discord.gg/selfcommunity
+# Join our Discord: https://discord.gg/WdMdVpA4C8
 # Use command: !faucet <your_testnet_address>
 ```
 
@@ -195,7 +195,7 @@ Even on testnet, follow security best practices:
 ## Getting Help
 
 ### Community Support
-- **Discord**: [Join our community](https://discord.gg/selfcommunity)
+- **Discord**: [Join our community](https://discord.gg/WdMdVpA4C8)
   - `#testnet-help` - Technical support
   - `#dev-general` - Development discussion
   - `#bug-reports` - Report issues
@@ -246,7 +246,7 @@ See [CONTRIBUTING.md](../CONTRIBUTING.md) for guidelines.
 
 ## Next Steps
 
-1. Join our [Discord](https://discord.gg/selfcommunity)
+1. Join our [Discord](https://discord.gg/WdMdVpA4C8)
 2. Get testnet tokens from the faucet
 3. Try the [Hello World Tutorial](tutorials/hello_world_testnet.md) (Coming Soon)
 4. Build something amazing!

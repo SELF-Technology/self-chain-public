@@ -141,7 +141,7 @@ We welcome new example contributions! Please ensure:
 
 ## Getting Help
 
-- **Discord**: [#testnet-examples](https://discord.gg/selfcommunity)
+- **Discord**: [#testnet-examples](https://discord.gg/WdMdVpA4C8)
 - **Issues**: Use `example` label
 - **Discussions**: Share your creations!
 

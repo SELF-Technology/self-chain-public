@@ -116,7 +116,7 @@ SELF Chain uses AI-powered consensus instead of traditional mining. The `aiScore
 - Ensure you're not accidentally using mainnet config
 
 ### Need Testnet Tokens?
-1. Join our [Discord](https://discord.gg/selfcommunity)
+1. Join our [Discord](https://discord.gg/WdMdVpA4C8)
 2. Go to #testnet-faucet channel
 3. Use command: `!faucet your_testnet_address`
 
@@ -138,7 +138,7 @@ Even though this is testnet:
 
 ## Questions?
 
-- Discord: [#testnet-help](https://discord.gg/selfcommunity)
+- Discord: [#testnet-help](https://discord.gg/WdMdVpA4C8)
 - GitHub: Create an issue with `[example]` tag
 
 ---
