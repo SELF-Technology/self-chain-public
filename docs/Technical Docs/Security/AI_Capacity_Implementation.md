@@ -8,13 +8,13 @@ sidebar_position: 3
 > 🚧 **Development Notice**: The AI capacity implementation is currently under active development. Code examples and features described here represent our architectural approach and are subject to change.
 
 ## Overview
-This document outlines the implementation of AI-capacity classes throughout the SELF Chain system, replacing the legacy Mini* classes with more AI-focused counterparts.
+This document outlines the implementation of AI-capacity classes throughout the SELF Chain system, providing AI-focused data representation and numeric calculations.
 
 ## Core Components
 
 ### 1. AI-Capacity Classes
-- **AIData**: Replaces MiniData for AI-focused data representation
-- **AICapacityNumber**: Replaces MiniNumber for AI-capacity focused numeric calculations
+- **AIData**: AI-focused data representation for identifiers and data structures
+- **AICapacityNumber**: AI-capacity focused numeric calculations with enhanced precision
 
 ### 2. System Components Updated
 
@@ -93,10 +93,10 @@ This document outlines the implementation of AI-capacity classes throughout the 
 ### 3. Key Changes
 
 #### Type System
-- Replaced `MiniData` with `AIData` for all identifier types
-- Replaced `MiniNumber` with `AICapacityNumber` for all numeric calculations
-- Updated all arithmetic operations to use AICapacityNumber methods
-- Updated comparison operations to use AICapacityNumber
+- `AIData` used for all identifier types
+- `AICapacityNumber` used for all numeric calculations
+- All arithmetic operations use AICapacityNumber methods
+- All comparison operations use AICapacityNumber
 
 #### Data Structures
 - Updated stake maps to use AICapacityNumber
