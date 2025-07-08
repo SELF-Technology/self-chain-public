@@ -31,9 +31,38 @@
 
 /* Hide the toggle in the mobile sidebar since it's now in the top navbar */
 @media (max-width: 996px) {
-  .navbar-sidebar .navbar__items [class*="colorModeToggle"],
-  .navbar-sidebar .navbar__items [class*="toggleButton"] {
+  /* Remove all color mode toggles from the mobile sidebar */
+  .navbar-sidebar [class*="colorModeToggle"],
+  .navbar-sidebar [class*="toggleButton"],
+  .navbar-sidebar .react-toggle,
+  .navbar-sidebar__brand [class*="colorModeToggle"],
+  .navbar-sidebar__brand [class*="toggleButton"],
+  .navbar-sidebar__brand .react-toggle,
+  .navbar-sidebar__items [class*="colorModeToggle"],
+  .navbar-sidebar__items [class*="toggleButton"],
+  .navbar-sidebar__items .react-toggle {
     display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    position: absolute !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+  }
+  
+  /* Also remove from the mobile sidebar header */
+  .navbar-sidebar [class*="navbarSidebarHeader"] [class*="colorModeToggle"],
+  .navbar-sidebar [class*="navbarSidebarHeader"] [class*="toggleButton"],
+  .navbar-sidebar [class*="navbarSidebarHeader"] .react-toggle {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    position: absolute !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
   }
   
   /* Ensure the navbar toggle button doesn't overlap with our relocated toggle */
