@@ -27,14 +27,14 @@ Instead of using the basic search API key, generate a secured API key with restr
    - Referer restrictions (only from your domain)
    - Valid until date (optional)
 
-## Setting up in Cloudflare Pages
+## Setting up in GitHub (for GitHub Pages deployment)
 
-1. Go to your Cloudflare Pages project dashboard
-2. Navigate to Settings → Environment variables
-3. Add the following variables for Production:
-   - `ALGOLIA_APP_ID` = `0X1QYF886S`
-   - `ALGOLIA_SEARCH_API_KEY` = `[your secured API key]`
-4. Redeploy the site for changes to take effect
+1. Go to your GitHub repository (SELF-Technology/self-chain-public)
+2. Navigate to Settings → Secrets and variables → Actions
+3. Click "New repository secret" and add:
+   - Name: `ALGOLIA_APP_ID`, Value: `0X1QYF886S`
+   - Name: `ALGOLIA_SEARCH_API_KEY`, Value: `529f2d29487ab836fe56f52b39493466` (or your secured key)
+4. The next deployment will automatically use these secrets
 
 ## Verifying Algolia Index
 
