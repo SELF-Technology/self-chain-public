@@ -1,48 +1,44 @@
 /**
- * Fix for the mobile menu light/dark toggle
- * Addresses both positioning and clickability issues
+ * Move the light/dark toggle to the top right navbar
+ * Completely outside of the burger menu
  */
 
-/* Fix for the theme toggle in mobile menu */
+/* Always show the theme toggle in the top navbar instead of in mobile menu */
+.navbar__items--right {
+  position: relative;
+}
+
+/* Move the toggle to the top right navbar */
+.colorModeToggle,
+[class*="colorModeToggle"],
+[class*="toggleButton"] {
+  position: relative !important;
+  display: flex !important;
+  align-items: center;
+  margin-left: auto !important;
+  margin-right: 1rem !important;
+  z-index: 10;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+/* Ensure toggle is visible and clickable */
+.react-toggle {
+  z-index: 100;
+  pointer-events: all !important;
+  opacity: 1 !important;
+}
+
+/* Hide the toggle in the mobile sidebar since it's now in the top navbar */
 @media (max-width: 996px) {
-  /* Position the color mode toggle properly in the mobile menu */
-  .navbar-sidebar .navbar__items .dropdown {
-    position: relative;
-    display: block;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    width: 100%;
-  }
-
-  /* Ensure the toggle button is clickable */
-  .navbar-sidebar .navbar__items .dropdown button {
-    position: relative;
-    z-index: 10;
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 1rem;
-    pointer-events: auto !important; /* Force enable clicking */
+  .navbar-sidebar .navbar__items [class*="colorModeToggle"],
+  .navbar-sidebar .navbar__items [class*="toggleButton"] {
+    display: none !important;
   }
   
-  /* Make sure toggle isn't overlapped by other elements */
-  .navbar-sidebar .colorModeToggle {
-    position: relative;
-    z-index: 10;
-    display: block;
-    width: auto;
-    margin: 0.5rem 1rem;
+  /* Ensure the navbar toggle button doesn't overlap with our relocated toggle */
+  .navbar__toggle {
+    margin-right: 3.5rem;
   }
-  
-  /* Fix any elements that might be overlapping */
-  .navbar-sidebar__brand {
-    overflow: visible;
-  }
-
-  /* Additional space to prevent overlap */
-  .navbar-sidebar__brand + .navbar-sidebar__items {
-    padding-top: 1rem;
-  }
+}
 }
