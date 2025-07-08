@@ -242,7 +242,7 @@ SELF Chain stands on the shoulders of giants:
 - 🐛 **Bug Reports**: [GitHub Issues](https://github.com/SELF-Technology/self-chain-public/issues)
 - 💬 **General Discussion**: [Discord](https://discord.gg/WdMdVpA4C8)
 - 📧 **Security**: security@self.app
-- 🤝 **Partnerships**: partnerships@self.app
+- 🤝 **Partnerships**: partners@self.app
 - 📰 **Media**: press@self.app
 
 ---
