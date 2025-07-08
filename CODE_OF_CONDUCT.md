@@ -50,7 +50,7 @@ This Code of Conduct also applies when an individual is representing the project
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at:
 
-- **Email**: conduct@self.app
+- **Email**: devs@self.app
 - **Discord**: Direct message to moderators
 - **Anonymous form**: [Coming soon]
 
@@ -115,7 +115,7 @@ This Code of Conduct is adapted from the [Contributor Covenant](https://www.cont
 ## Contact
 
 For questions about this Code of Conduct, please contact:
-- Email: conduct@self.app
+- Email: devs@self.app
 - Discord: #community-guidelines channel
 
 ## Commitment
