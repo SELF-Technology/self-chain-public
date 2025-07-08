@@ -443,6 +443,35 @@ html[data-theme="dark"] .breadcrumbs__item {
   opacity: 1;
 }
 
+/* Fix duplicate logo issue on mobile */
+@media (max-width: 996px) {
+  /* Hide any duplicate logos in mobile sidebar */
+  .navbar-sidebar__brand .navbar__logo:not(:first-child),
+  .navbar-sidebar__brand .navbar__logo ~ .navbar__logo {
+    display: none !important;
+  }
+  
+  /* Ensure only one logo is visible */
+  .navbar-sidebar__items .navbar__logo,
+  .menu__list .navbar__logo {
+    display: none !important;
+  }
+  
+  /* Clean up mobile sidebar header */
+  .navbar-sidebar__brand {
+    display: flex;
+    align-items: center;
+    height: var(--ifm-navbar-height);
+    padding: 0 1rem;
+  }
+  
+  /* Ensure proper logo sizing on mobile */
+  .navbar-sidebar__brand .navbar__logo {
+    height: 2rem;
+    width: auto;
+  }
+}
+
 /* Responsive design */
 @media (max-width: 1200px) {
   .hero-section-wrapper {
