@@ -455,6 +455,11 @@ html[data-theme="dark"] .breadcrumbs__item {
     display: none !important;
   }
   
+  /* Hide the X close button since it's not clickable */
+  .navbar-sidebar__close {
+    display: none !important;
+  }
+  
   /* When mobile menu is open, hide the main navbar to prevent overlap */
   .navbar-sidebar--show ~ .navbar {
     display: none !important;
@@ -463,16 +468,6 @@ html[data-theme="dark"] .breadcrumbs__item {
   /* Ensure the mobile sidebar has proper z-index */
   .navbar-sidebar {
     z-index: 1000 !important;
-  }
-  
-  /* Ensure close button remains functional with high z-index */
-  .navbar-sidebar__close {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    cursor: pointer !important;
-    position: relative !important;
-    z-index: 1001 !important;
   }
   
   /* Make sure the backdrop works properly */
