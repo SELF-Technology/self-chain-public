@@ -69,7 +69,63 @@
       try {
         localStorage.setItem('theme', next);
       } catch(e) {}
+      
+      // Force logo update
+      updateLogos(next);
     };
+    
+    // Function to update logos
+    function updateLogos(theme) {
+      // Update all possible logo selectors
+      const logoSelectors = [
+        '.navbar__logo img',
+        '.navbar__brand img',
+        'img[alt*="SELF Logo"]',
+        'img[alt*="logo"]',
+        '[class*="logo"] img'
+      ];
+      
+      logoSelectors.forEach(selector => {
+        const logos = document.querySelectorAll(selector);
+        logos.forEach(img => {
+          if (img && img.src) {
+            if (theme === 'dark') {
+              img.src = '/img/SELFwhitelogo.png';
+              img.srcset = '/img/SELFwhitelogo.png';
+            } else {
+              img.src = '/img/SELF BLACK.png';
+              img.srcset = '/img/SELF BLACK.png';
+            }
+          }
+        });
+      });
+    }
+    
+    // Update logos on initial load
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+    updateLogos(currentTheme);
+    
+    // Also update after a delay to catch any late-loading elements
+    setTimeout(() => updateLogos(currentTheme), 100);
+    setTimeout(() => updateLogos(currentTheme), 500);
+    setTimeout(() => updateLogos(currentTheme), 1000);
+    
+    // Watch for theme changes
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.attributeName === 'data-theme') {
+          const theme = document.documentElement.getAttribute('data-theme');
+          updateLogos(theme);
+          // Update again after a short delay
+          setTimeout(() => updateLogos(theme), 100);
+        }
+      });
+    });
+    
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme']
+    });
     
     // Add to page
     if (!document.querySelector('.theme-toggle-switch')) {
