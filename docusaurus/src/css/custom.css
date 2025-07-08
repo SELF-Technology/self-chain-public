@@ -11,6 +11,7 @@
 @import './social-icons.css';
 @import './footer-social.css';
 @import './theme-toggle-fix.css';
+@import './custom-theme-toggle.css';
 
 @font-face {
   font-family: 'THICCCBOI';
@@ -129,6 +130,27 @@ details > summary:hover {
   box-shadow: none !important;
   outline: none !important;
 }
+/* Fix Algolia search z-index to appear above breadcrumbs */
+.DocSearch-Modal {
+  z-index: 999999 !important;
+}
+
+.DocSearch-Container {
+  z-index: 999999 !important;
+}
+
+/* Ensure the search modal backdrop also has high z-index */
+.DocSearch-SearchBar {
+  z-index: 999999 !important;
+}
+
+/* Fix breadcrumb z-index to be lower */
+.theme-doc-breadcrumbs,
+.breadcrumbs {
+  z-index: 1 !important;
+  position: relative;
+}
+
 /* Ensure Algolia search dropdown uses a dark background in dark mode */
 html[data-theme="dark"] .DocSearch-Dropdown,
 html[data-theme="dark"] .DocSearch-Modal,
@@ -583,6 +605,25 @@ html[data-theme="dark"] .breadcrumbs__item {
       rgba(29,38,59,0.2) 100%
     );
   }
+}
+
+/* NUCLEAR OPTION - Hide ALL theme toggles everywhere */
+button[class*="colorModeToggle"],
+button[class*="toggle"][class*="color"],
+button[class*="toggle"][class*="Color"],
+button[class*="toggle"][class*="theme"],
+button[class*="toggle"][class*="Theme"],
+[class*="colorModeToggle"],
+[class*="ColorModeToggle"],
+.menu__link[href="#!"],
+.menu__list-item:last-child button,
+.navbar-sidebar__items > :last-child button {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
 
 /* Full-width styles for landing page */

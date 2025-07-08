@@ -1,3 +1,11 @@
+// Load environment variables
+require('dotenv').config();
+
+// console.log('Algolia Config:', {
+//   appId: process.env.ALGOLIA_APP_ID,
+//   apiKey: process.env.ALGOLIA_SEARCH_API_KEY ? 'Set' : 'Not set'
+// });
+
 const config = {
   title: 'SELF Documentation',
   tagline: 'Creating the infrastructure for self-sovereign technology, privacy-first applications, and human-centric AI',
@@ -8,6 +16,7 @@ const config = {
   projectName: 'self-docs',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
+  scripts: [{src: '/theme-fix.js', async: false}],
 
   presets: [
     [
@@ -26,9 +35,16 @@ const config = {
   ],
 
   themeConfig: {
+    ...(process.env.ALGOLIA_APP_ID && process.env.ALGOLIA_SEARCH_API_KEY ? {
+      algolia: {
+        appId: process.env.ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
+        indexName: 'self',
+      },
+    } : {}),
     colorMode: {
       defaultMode: 'dark',
-      disableSwitch: false,
+      disableSwitch: true,
       respectPrefersColorScheme: false,
     },
     navbar: {
@@ -43,6 +59,7 @@ const config = {
     footer: {
       style: 'dark',
       copyright: `
+        <div class="custom-theme-toggle-wrapper"></div>
         <div class="footer-social-icons">
           <a href="https://discord.gg/WdMdVpA4C8" target="_blank" rel="noopener noreferrer" aria-label="Discord">
             <i class="fab fa-discord"></i>
