@@ -17,6 +17,24 @@ const config = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   scripts: [{src: '/theme-fix.js', async: false}],
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preload',
+        href: '/img/SELF BLACK.png',
+        as: 'image',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preload',
+        href: '/img/SELFwhitelogo.png',
+        as: 'image',
+      },
+    },
+  ],
 
   presets: [
     [

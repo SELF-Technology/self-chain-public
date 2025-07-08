@@ -4,7 +4,7 @@
  * work well for content-centric websites.
  */
 
-@import url(https://docs.self.app/docsearch-v2.css);
+@import url('https://cdn.jsdelivr.net/npm/@docsearch/css@3');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
 @import './category-pages.css';
 @import './breadcrumb-fix.css';
@@ -89,6 +89,21 @@ html[data-theme="dark"] {
 }
 
 /* Footer styles moved to footer-social.css */
+
+/* Preload logo images to prevent flashing on theme switch */
+.navbar__logo {
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Ensure both logos are loaded */
+.navbar__brand::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  background-image: url('/img/SELF BLACK.png'), url('/img/SELFwhitelogo.png');
+}
 
 details,
 details[open],
@@ -336,7 +351,8 @@ details > summary:hover::after {
   border: 1px solid #e9ecef;
   border-radius: 8px;
   padding: 1.5rem;
-  margin: 1.5rem 0;
+  margin: 1.5rem auto;
+  max-width: 800px;
 }
 
 html[data-theme="dark"] .opensource-links {
