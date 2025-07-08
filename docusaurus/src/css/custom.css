@@ -623,24 +623,31 @@ html[data-theme="dark"] .breadcrumbs__item {
   }
 }
 
-/* Hide ONLY the broken theme toggles, NOT search */
-button[class*="colorModeToggle"],
-[class*="ColorModeToggle"],
+/* Only hide the theme toggle in mobile menu */
 .menu__link[href="#!"] {
   display: none !important;
 }
 
-/* ENSURE SEARCH IS VISIBLE */
-.DocSearch,
-.DocSearch-Button,
-[class*="searchBox"],
-button[class*="DocSearch"] {
-  display: flex !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  width: auto !important;
-  height: auto !important;
-  pointer-events: auto !important;
+/* Add spacing between theme toggle and search on mobile */
+@media (max-width: 996px) {
+  /* Force flex layout with gap */
+  .navbar__items--right {
+    display: flex !important;
+    gap: 0.75rem !important;
+    align-items: center !important;
+  }
+  
+  /* Ensure theme toggle has margin */
+  .navbar__items--right button[class*="colorModeToggle"],
+  .navbar__items--right > button:first-child {
+    margin-right: 0.75rem !important;
+  }
+  
+  /* Ensure search button doesn't have negative margins */
+  .navbar__items--right [class*="searchBox"],
+  .navbar__items--right .DocSearch-Button {
+    margin-left: 0 !important;
+  }
 }
 
 /* Full-width styles for landing page */

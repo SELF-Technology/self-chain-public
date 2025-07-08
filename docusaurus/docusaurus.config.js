@@ -16,7 +16,6 @@ const config = {
   projectName: 'self-docs',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-  scripts: [{src: '/theme-fix.js', async: false}],
   headTags: [
     {
       tagName: 'link',
@@ -62,7 +61,7 @@ const config = {
     } : {}),
     colorMode: {
       defaultMode: 'dark',
-      disableSwitch: true,
+      disableSwitch: false,
       respectPrefersColorScheme: false,
     },
     navbar: {
