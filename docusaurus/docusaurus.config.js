@@ -16,12 +16,6 @@ const config = {
   projectName: 'self-docs',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-  scripts: [
-    {
-      src: '/custom-theme-toggle.js',
-      async: false,
-    }
-  ],
   headTags: [
     {
       tagName: 'link',
