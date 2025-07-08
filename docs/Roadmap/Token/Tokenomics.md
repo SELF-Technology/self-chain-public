@@ -5,25 +5,29 @@ sidebar_position: 4
 
 # SELF Tokenomics
 
+The SELF Token ($SELF) is the foundational utility and governance token powering the SELF ecosystem, the upcoming super-app, any future SELF-related products developed in-house or by external teams, SELF Constellation and SELF chain governance. Designed for long-term sustainability and value accrual, $SELF facilitates network operations, rewards participation, and incentivizes growth. 
+
 ## Token Overview
 
 - **Token Symbol**: $SELF
 - **Total Supply**: 500,000,000 (500 Million)
 - **Token Standard**: ERC-20 
-- **TGE Supply**: 105,500,000 (21.1% of total supply)
-- **Public Sale Price**: $0.06
-- **Listing Price**: $TBC
-- **TGE Market Cap**: $6,330,000
-- **Fully Diluted Valuation**: $30,000,000
+- **Public Sale Price**: $0.06 ($30m Fully Diluted Valuation)
+- **Listing Price**: TBC
+- **Estimated Initial Circulating Supply**: 40,500,000 (8.1% of total supply)
+
+**Estimated Initial Circulating Supply** represents the portion of tokens anticipated to be actively traded at launch, including estimated amounts for initial exchange liquidity, early community distribution, and investor/partner unlocks.
 
 ## Token Distribution
+
+The total supply of SELF is strategically allocated across key areas to ensure robust ecosystem development, incentivize community participation, and maintain long-term stability.
 
 | Category | Allocation | Tokens | TGE Release | Vesting Schedule |
 |----------|-----------|---------|-------------|------------------|
 | **Pre-Seed** | 10% | 50,000,000 | 50% (25M) | 10 months linear |
 | **Seed** | 2% | 10,000,000 | 25% (2.5M) | 12 months linear |
-| **Private** | 2% | 10,000,000 | 25% (2.5M) | 3 month cliff, 15 months linear |
-| **Public** | 1% | 5,000,000 | 20% (1M) | 1 month cliff, 15 months linear |
+| **Private** | 2% | 10,000,000 | 25% (2.5M) | 1 month cliff, 12 months linear |
+| **Public** | 1% | 5,000,000 | 20% (1M) | 1 month cliff, 10 months linear |
 | **Partners** | 4% | 20,000,000 | 10% (2M) | 3 month cliff, 15 months linear |
 | **Team & Advisors** | 10% | 50,000,000 | 0% | 3 month cliff, 36 months linear |
 | **Liquidity** | 10% | 50,000,000 | 100% (50M) | For DEX/CEX liquidity |
@@ -32,16 +36,6 @@ sidebar_position: 4
 | **Ecosystem** | 15% | 75,000,000 | 10% (7.5M) | 48 months linear |
 | **Staking** | 16% | 80,000,000 | 0% | 36 months linear |
 
-### Token Distribution Visualization
-
-![SELF Token Distribution Over Time](/img/token%20graph.png)
-
-The chart above shows the cumulative token distribution over 48 months, illustrating how tokens are gradually released according to their vesting schedules. Key observations:
-
-- **Immediate liquidity**: 50M tokens (10%) available at TGE for DEX/CEX liquidity
-- **Controlled release**: Team & Advisor tokens have the longest vesting (36 months) with a 3-month cliff
-- **Community focus**: 61% of tokens allocated to ecosystem growth (User Adoption, Developer Incentives, Ecosystem, Staking)
-- **Investor protection**: Gradual vesting prevents large sell pressure
 
 ## Fundraising Details
 
@@ -59,19 +53,29 @@ The chart above shows the cumulative token distribution over 48 months, illustra
 
 | Lock Period | Base APR
 |-------------|----------|
-| No lockup | 8%
-| 3 months | 12%
-| 6 months | 16%
-| 9 months | 20%
-| 12 months | 22%
-| 18 months | 25%
-| 24 months | 30%
+| No lockup | 6%
+| 3 months | 10%
+| 6 months | 14%
+| 9 months | 18%
+| 12 months | 20%
+| 18 months | 22%
+| 24 months | 25%
 
-*Note: Longer lockup periods qualify for additional benefits such as discounts, whitelists, and airdrops (TBC).*
+*Note: These are the initial base staking rates, likely to be lowered at some point. Longer lockup periods qualify for additional benefits such as discounts, whitelists, and airdrops (TBC).*
+
+## Tier System
+
+Three tiers provide increasing benefits (extra APR bonus percentage on top of base APR rates):
+
+| Tier | Required SELF | APR Bonus | Benefits |
+|-------|-------|--------------|-----------|
+| Pioneer | 1000 | +10% | Basic features, priority support |
+| Explorer | 10 000 | +25% | Advanced features, governance voting |
+| Multiverse | 100 000 | +50% | Full access, cross-chain privileges |
 
 ### Bonus Staking Program (Pre-Seed/Seed Investors Only)
 
-Available only for investors who lock tokens before TGE:
+Available only as a one-time boost, for pre-seed/seed investors who lock their TGE allocation, prior to exchange listing.
 
 | Lock Period | Extra Tokens | APR |
 |-------------|--------------|-----|
@@ -112,7 +116,7 @@ Available only for investors who lock tokens before TGE:
 - Reduces circulating supply over time
 
 ### 2. **Buyback & Burn**
-Revenue from SELF services is used for buybacks:
+A percentage of the revenue from SELF services is used for buybacks:
 - 40% of buyback tokens are burned (TBC)
 - 40% distributed to stakers (TBC)
 - 20% for premium user rebates (TBC)
@@ -121,34 +125,15 @@ Revenue from SELF services is used for buybacks:
 - Small percentage of SELF Chain transactions burned (TBC)
 - Increases scarcity as network usage grows
 
-## Supply Schedule
+## Tokenomics Highlights
 
-### Year 1 Circulating Supply
-- **TGE**: 105.5M tokens (21.1%)
-- **Month 6**: ~163M tokens (32.6%)
-- **Month 12**: ~246M tokens (49.2%)
-
-### Long-term Supply
-- **Year 2**: ~351M tokens (70.3%)
-- **Year 3**: ~449M tokens (89.9%)
-- **Year 4**: 500M tokens (100%) - Full circulation
-
-## Investor Protection
-
-### 1. **Vesting Schedules**
-- Team tokens locked for 3 years
-- Investor tokens vest over 10-15 months
-- Limited sell pressure at launch
-
-### 2. **Liquidity Provisions**
-- 10% supply dedicated to liquidity
-- Deep liquidity pools on major DEXs
-- Market making partnerships
-
-### 3. **Utility First**
-- Real utility from day one
-- Staking rewards immediately available
-- Subscription discounts active at launch
+- Real significant utility from day one
+- Continuously evolving utility long-term
+- Robust multi-faceted deflationary mechanisms
+- 61% of total supply dedicated to ecosystem growth, developer incentives and user adoption
+- Team tokens vested for 39 months
+- Quality market maker and CEX partnerships
+- Commitment to compliance, building a trustworthy and future-proof ecosystem
 
 ---
 
