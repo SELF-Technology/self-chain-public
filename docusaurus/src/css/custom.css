@@ -623,23 +623,24 @@ html[data-theme="dark"] .breadcrumbs__item {
   }
 }
 
-/* NUCLEAR OPTION - Hide ALL theme toggles everywhere */
+/* Hide ONLY the broken theme toggles, NOT search */
 button[class*="colorModeToggle"],
-button[class*="toggle"][class*="color"],
-button[class*="toggle"][class*="Color"],
-button[class*="toggle"][class*="theme"],
-button[class*="toggle"][class*="Theme"],
-[class*="colorModeToggle"],
 [class*="ColorModeToggle"],
-.menu__link[href="#!"],
-.menu__list-item:last-child button,
-.navbar-sidebar__items > :last-child button {
+.menu__link[href="#!"] {
   display: none !important;
-  visibility: hidden !important;
-  width: 0 !important;
-  height: 0 !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
+}
+
+/* ENSURE SEARCH IS VISIBLE */
+.DocSearch,
+.DocSearch-Button,
+[class*="searchBox"],
+button[class*="DocSearch"] {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: auto !important;
+  height: auto !important;
+  pointer-events: auto !important;
 }
 
 /* Full-width styles for landing page */
