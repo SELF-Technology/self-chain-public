@@ -5,6 +5,8 @@ sidebar_position: 2
 
 # SELF Chain Public Interfaces Specification
 
+> 🚧 **BETA NOTICE**: These public interfaces are currently in beta and under active development. The specifications described here represent our target API design, but implementation is ongoing. Check back regularly for updates!
+
 > This document defines the security-safe public interfaces that can be exposed in SDKs and public repositories without compromising SELF Chain's security.
 
 ## Overview
