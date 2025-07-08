@@ -34,7 +34,7 @@ SELF isn't just another blockchain or cryptocurrency. It's a complete reimaginin
 - **No Third-Parties**: Direct peer-to-peer interactions without corporate intermediaries
 - **User-Control by Design**: Not just an afterthought, but the foundation of every feature
 - **Private AI for Everyone**: Distributed AI that serves users, not corporations
-- **100% Open Source**: Transparent, auditable, and community-driven development
+- **Open Source Core**: Transparent blockchain protocol with community-driven development
 
 ## Why SELF Matters Now
 
@@ -55,15 +55,15 @@ We're building technology that:
 
 ## 🌍 The Open Source Revolution
 
-**SELF Chain is proudly 100% open source** - because we believe that technology this important shouldn't be controlled by any single entity. As everyone should own and control their own data, we believe that everyone should be able to help construct and verify the chain.
+**SELF Chain's core protocol is open source** - because we believe that the fundamental infrastructure of digital freedom must be transparent and auditable. As everyone should own and control their own data, we believe that everyone should be able to help construct and verify the chain.
 
-### Why Open Source Matters
+### Our Open Source Approach
 
-- **Transparency**: Every line of code is auditable by the community
+- **Core Protocol**: The blockchain, consensus, networking, and cryptography are fully open
+- **Security Balance**: Following best practices like Signal, some security parameters remain private
 - **Collaboration**: Developers worldwide contribute to make SELF better
-- **Security**: More eyes on the code means stronger security
-- **No Lock-in**: Fork it, modify it, make it yours - true freedom
-- **Community Ownership**: This isn't our chain, it's everyone's chain
+- **Community Audit**: The essential infrastructure is transparent and verifiable
+- **No Lock-in**: Fork the protocol, modify it, make it yours - true freedom
 
 ### 🛠️ Get Involved
 
@@ -75,7 +75,7 @@ We're building technology that:
 
 ### The Future: SELF DAO
 
-In the future, we'll be creating **SELF DAO** to govern the secure aspects too, ensuring there are no central elements of control for the entire project. Every decision, every upgrade, every change - voted on by the community.
+In the future, we'll be creating **SELF DAO** to progressively decentralize governance, including oversight of security-critical components. This will ensure community control over the entire project. Every major decision, upgrade, and change will be voted on by the community.
 
 ## The Technical Revolution
 
