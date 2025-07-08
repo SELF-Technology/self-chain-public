@@ -27,7 +27,7 @@ const config = {
       tagName: 'link',
       attributes: {
         rel: 'preload',
-        href: '/img/SELF BLACK.png',
+        href: '/img/SELF-BLACK.png',
         as: 'image',
       },
     },
@@ -74,7 +74,7 @@ const config = {
       title: '',
       logo: {
         alt: 'SELF Logo',
-        src: 'img/SELF BLACK.png',
+        src: 'img/SELF-BLACK.png',
         srcDark: 'img/SELFwhitelogo.png',
       },
       items: [],
