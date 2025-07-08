@@ -5,6 +5,8 @@ sidebar_position: 1
 
 # Getting Started with SELF Chain (Testnet)
 
+> 🚧 **BETA NOTICE**: These developer resources are currently in beta and under active development. Many features described here are coming soon. We're working hard to bring you a complete development experience!
+
 > ⚠️ **TESTNET WARNING**: SELF Chain is currently in testnet phase. Do not use real assets or deploy production applications. Testnet tokens have no value and the network may be reset at any time.
 
 ## Welcome Developers!
@@ -66,7 +68,7 @@ const { SELFClient } = require('@self-chain/sdk');
 
 const client = new SELFClient({
   network: 'testnet',
-  endpoint: 'https://testnet-api.self.app',
+  endpoint: 'https://testnet-api.self.app', // Coming soon
   // WARNING: This is a testnet endpoint - do not send real assets!
 });
 ```
@@ -79,7 +81,7 @@ SELF Chain uses Proof-of-AI (PoAI) consensus, which is fundamentally different f
 2. **Voting Algorithm** coordinates consensus
 3. **AI-Validators** determine the winning block
 
-Learn more: [Proof-of-AI Documentation](Technical%20Docs/PoAI/Proof-of-AI.md)
+Learn more: [Proof-of-AI Documentation](/Technical%20Docs/PoAI/Proof-of-AI)
 
 ## Testnet Limitations
 
@@ -153,24 +155,24 @@ self-chain-cli --help
 - **Go SDK**: For backend services
 
 ### Documentation
-- [Architecture Overview](Architecture/SELF_Chain_Architecture.md)
-- [PoAI Consensus](Technical%20Docs/PoAI/Proof-of-AI.md)
-- [API Reference](https://testnet-api.self.app/docs) (Testnet)
+- [Architecture Overview](/Technical%20Docs/SELF%20Chain/SELF_Chain_Architecture)
+- [PoAI Consensus](/Technical%20Docs/PoAI/Proof-of-AI)
+- API Reference (Coming soon)
 
 ## Common Testnet Issues
 
 ### Connection Problems
 ```bash
-# Check testnet status
-curl https://testnet-api.self.app/status
+# Check testnet status (Coming soon)
+# curl https://testnet-api.self.app/status
 
 # Expected response:
-{
-  "network": "testnet",
-  "status": "operational",
-  "block_height": 12345,
-  "warning": "This is a test network - do not use real assets"
-}
+# {
+#   "network": "testnet",
+#   "status": "operational",
+#   "block_height": 12345,
+#   "warning": "This is a test network - do not use real assets"
+# }
 ```
 
 ### Faucet Issues
@@ -203,7 +205,7 @@ Even on testnet, follow security best practices:
 ### Resources
 - [GitHub Issues](https://github.com/SELF-Technology/self-chain-public/issues)
 - [Documentation](https://docs.self.app)
-- [Testnet Explorer](https://testnet-explorer.self.app) (Coming Soon)
+- Testnet Explorer (Coming Soon)
 
 ## Contributing
 
@@ -214,7 +216,7 @@ We love contributions! Even in testnet phase, you can:
 3. **Write documentation** - Help others get started
 4. **Build example apps** - Show what's possible
 
-See [CONTRIBUTING.md](../CONTRIBUTING.md) for guidelines.
+See [CONTRIBUTING.md](https://github.com/SELF-Technology/self-chain-public/blob/main/CONTRIBUTING.md) for guidelines.
 
 ## Testnet Roadmap
 
@@ -248,7 +250,7 @@ See [CONTRIBUTING.md](../CONTRIBUTING.md) for guidelines.
 
 1. Join our [Discord](https://discord.gg/WdMdVpA4C8)
 2. Get testnet tokens from the faucet
-3. Try the [Hello World Tutorial](tutorials/hello_world_testnet.md) (Coming Soon)
+3. Try the Hello World Tutorial (Coming Soon)
 4. Build something amazing!
 5. Share your feedback
 
