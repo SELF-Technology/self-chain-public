@@ -96,7 +96,7 @@
         if (theme === 'dark') {
           img.src = '/img/SELFwhitelogo.png';
         } else {
-          img.src = '/img/SELF BLACK.png';
+          img.src = '/img/SELF-BLACK.png';
         }
       });
     }
