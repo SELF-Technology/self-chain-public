@@ -38,10 +38,14 @@ SELF Chain represents a paradigm shift in blockchain technology, combining AI-po
 
 ### Developer First
 - **Comprehensive SDKs**: JavaScript, Rust, Python, and Go (coming soon)
-- **Testnet Available**: Build and test today with our live testnet
+- **Testnet Available**: Early testnet for testing core functionality
 - **Extensive Documentation**: World-class docs to get you started quickly
 
 ## 🛠️ Quick Start
+
+> 🚧 **BETA NOTICE**: These developer resources are currently in beta and under active development. Many features described here are coming soon. We're working hard to bring you a complete development experience!
+
+> ⚠️ **TESTNET WARNING**: SELF Chain is currently in testnet phase. Do not use real assets or deploy production applications. Testnet tokens have no value and the network may be reset at any time.
 
 ### For Developers
 
@@ -50,21 +54,21 @@ SELF Chain represents a paradigm shift in blockchain technology, combining AI-po
 git clone https://github.com/SELF-Technology/self-chain-public.git
 cd self-chain-public
 
-# Copy testnet configuration
-cp config/testnet.example.toml config/testnet.toml
+# Copy testnet configuration (Coming soon - config file not yet available)
+# cp config/testnet.example.toml config/testnet.toml
 
 # Build the project
 cargo build --release
 
-# Run a testnet node
+# Run a testnet node (Note: Requires additional setup - see docs)
 cargo run --bin self-chain-node -- --testnet
 ```
 
-> ⚠️ **Testnet Notice**: SELF Chain is currently in testnet. Tokens have no value and the network may reset.
+> 📄 **Important**: The above commands are provided for reference. Please see our [detailed testnet guide](https://docs.self.app/Technical%20Docs/Developer%20Resources/Getting_Started_Testnet) for complete setup instructions and current limitations.
 
 ### Get Testnet Tokens
 
-Join our [Discord](https://discord.gg/WdMdVpA4C8) and use the `!faucet` command to receive testnet tokens.
+Join our [Discord](https://discord.gg/WdMdVpA4C8) and use the `!faucet` command to receive testnet tokens (faucet bot coming soon).
 
 ## 📚 Documentation
 
@@ -148,30 +152,32 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
 ## 🗺️ Roadmap
 
-### Q1 2024 - Foundation ✅
+> 📌 **Note**: This roadmap is subject to change as we continue development. Join our [Discord](https://discord.gg/WdMdVpA4C8) for the latest updates.
+
+### Q1 2025 - Foundation ✅
 - [x] Core blockchain implementation
-- [x] PoAI consensus mechanism
-- [x] Testnet deployment
+- [x] PoAI consensus mechanism  
+- [x] Testnet deployment (early version)
 - [x] Basic documentation
 
-### Q2 2024 - Developer Experience 🚧
+### Q2 2025 - Developer Experience 🚧 (Current Phase)
 - [ ] JavaScript/TypeScript SDK
 - [ ] Public API gateway
 - [ ] CLI tool distribution
 - [ ] Discord faucet bot
 - [ ] Block explorer
 
-### Q3 2024 - Ecosystem Growth
-- [ ] Smart contract support
-- [ ] Cross-chain bridges
-- [ ] Mobile SDK
-- [ ] Developer grants program
+### Q3 2025 - Ecosystem Growth
+- [ ] Enhanced testnet features
+- [ ] Developer documentation expansion
+- [ ] Community tools and resources
+- [ ] Beta testing program
 
-### Q4 2024 - Mainnet Preparation
+### Q4 2025 - Mainnet Preparation
 - [ ] Security audits
 - [ ] Performance optimization
-- [ ] Mainnet launch
-- [ ] Token generation event
+- [ ] Mainnet candidate release
+- [ ] Final testing phase
 
 ## 📊 Project Status
 
