@@ -39,6 +39,9 @@ jobs:
           npm ci
           
       - name: Build Docusaurus
+        env:
+          ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
+          ALGOLIA_SEARCH_API_KEY: ${{ secrets.ALGOLIA_SEARCH_API_KEY }}
         run: |
           cd docusaurus
           npm run build
