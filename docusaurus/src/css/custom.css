@@ -468,11 +468,43 @@ html[data-theme="dark"] .breadcrumbs__item {
   /* Ensure the mobile sidebar has proper z-index */
   .navbar-sidebar {
     z-index: 1000 !important;
+    display: flex !important;
+    flex-direction: column !important;
   }
   
   /* Make sure the backdrop works properly */
   .navbar-sidebar__backdrop {
     z-index: 999 !important;
+  }
+  
+  /* Move the theme toggle to the bottom of mobile menu */
+  .navbar-sidebar__items {
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 !important;
+  }
+  
+  /* Position color mode toggle at the bottom */
+  .navbar-sidebar .navbar__item.navbar__toggle {
+    order: 999 !important;
+    margin-top: auto !important;
+    margin-bottom: 2rem !important;
+    padding: 1rem !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  
+  /* Ensure the toggle is clickable with proper z-index */
+  .navbar-sidebar .navbar__toggle,
+  .navbar-sidebar .react-toggle {
+    position: relative !important;
+    z-index: 1002 !important;
+    pointer-events: auto !important;
+  }
+  
+  /* Hide the theme toggle from the main navbar when menu is open */
+  .navbar-sidebar--show ~ .navbar .navbar__toggle {
+    display: none !important;
   }
 }
 
