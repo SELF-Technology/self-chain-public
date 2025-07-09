@@ -1,0 +1,73 @@
+/* Mobile Performance Optimizations */
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Optimize touch targets for mobile */
+@media (max-width: 768px) {
+  /* Increase touch target size */
+  a, button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Optimize sidebar for mobile */
+  .navbar__toggle {
+    width: 48px;
+    height: 48px;
+  }
+  
+  /* Reduce font sizes slightly for better mobile fit */
+  :root {
+    --ifm-font-size-base: 15px;
+  }
+  
+  /* Optimize images for mobile */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Enable GPU acceleration for smooth scrolling */
+  .navbar, .sidebar {
+    will-change: transform;
+    transform: translateZ(0);
+  }
+}
+
+/* Lazy loading for images */
+img[loading="lazy"] {
+  background-color: var(--ifm-background-surface-color);
+}
+
+/* Optimize code blocks for mobile */
+@media (max-width: 768px) {
+  pre {
+    font-size: 0.875rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Reduce layout shifts */
+.navbar__logo img {
+  width: auto;
+  height: 32px;
+}
+
+/* Optimize font loading */
+.font-preload {
+  font-family: 'THICCCBOI', sans-serif;
+  font-weight: 400;
+}
+
+/* Critical CSS for above-the-fold content */
+.navbar {
+  contain: layout style;
+}
