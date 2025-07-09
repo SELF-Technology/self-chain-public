@@ -71,7 +71,24 @@ const config = {
         src: 'img/SELF-BLACK.png',
         srcDark: 'img/SELFwhitelogo.png',
       },
-      items: [],
+      items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Documentation',
+        },
+        {
+          href: 'https://github.com/SELF-Technology/self-chain-public',
+          label: 'GitHub',
+          position: 'right',
+        },
+        {
+          href: 'https://discord.gg/WdMdVpA4C8',
+          label: 'Discord',
+          position: 'right',
+        },
+      ],
     },
     footer: {
       style: 'dark',
