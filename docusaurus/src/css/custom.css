@@ -504,6 +504,11 @@ html[data-theme="dark"] .breadcrumbs__item {
   .navbar-sidebar__close {
     display: none !important;
   }
+  
+  /* Hide "Back to main menu" text */
+  .navbar-sidebar__back {
+    display: none !important;
+  }
 }
 
 /* Responsive design */
