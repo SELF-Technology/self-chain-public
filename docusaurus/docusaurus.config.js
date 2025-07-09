@@ -23,6 +23,7 @@ const config = {
         rel: 'preload',
         href: '/img/SELF-BLACK.png',
         as: 'image',
+        fetchpriority: 'high',
       },
     },
     {
@@ -31,6 +32,22 @@ const config = {
         rel: 'preload',
         href: '/img/SELFwhitelogo.png',
         as: 'image',
+        fetchpriority: 'high',
+      },
+    },
+    // Preconnect to external domains
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://cdn.jsdelivr.net',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://cdnjs.cloudflare.com',
       },
     },
   ],
@@ -47,6 +64,31 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+      },
+    ],
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-pwa',
+      {
+        offlineModeActivationStrategies: [
+          'appInstalled',
+          'standalone',
+          'queryString',
+        ],
+        pwaHead: [
+          {
+            tagName: 'link',
+            rel: 'manifest',
+            href: '/manifest.json',
+          },
+          {
+            tagName: 'meta',
+            name: 'theme-color',
+            content: '#1d263b',
+          },
+        ],
       },
     ],
   ],
@@ -70,6 +112,8 @@ const config = {
         alt: 'SELF Logo',
         src: 'img/SELF-BLACK.png',
         srcDark: 'img/SELFwhitelogo.png',
+        width: 150,
+        height: 32,
       },
       hideOnScroll: false,
       items: [

@@ -1,0 +1,68 @@
+{
+  "name": "SELF Chain Documentation",
+  "short_name": "SELF Docs",
+  "description": "Creating the infrastructure for self-sovereign technology, privacy-first applications, and human-centric AI",
+  "theme_color": "#1d263b",
+  "background_color": "#1d263b",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/img/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/favicongen/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Getting Started",
+      "short_name": "Start",
+      "description": "Quick start guide for SELF Chain",
+      "url": "/getting-started",
+      "icons": [{ "src": "/img/icon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "API Reference",
+      "short_name": "API",
+      "description": "SELF Chain API documentation",
+      "url": "/api",
+      "icons": [{ "src": "/img/icon-96x96.png", "sizes": "96x96" }]
+    }
+  ],
+  "categories": ["developer", "documentation", "blockchain", "technology"],
+  "screenshots": [
+    {
+      "src": "/img/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/img/screenshot-mobile.png",
+      "sizes": "720x1280",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
+}
