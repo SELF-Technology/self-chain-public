@@ -61,7 +61,7 @@ const config = {
     } : {}),
     colorMode: {
       defaultMode: 'dark',
-      disableSwitch: true,
+      disableSwitch: false,
       respectPrefersColorScheme: false,
     },
     navbar: {
@@ -80,14 +80,14 @@ const config = {
           label: 'Documentation',
         },
         {
-          href: 'https://github.com/SELF-Technology/self-chain-public',
-          label: 'GitHub',
+          type: 'search',
           position: 'right',
         },
         {
-          href: 'https://discord.gg/WdMdVpA4C8',
-          label: 'Discord',
+          href: 'https://github.com/SELF-Technology/self-chain-public',
           position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
         },
       ],
     },
