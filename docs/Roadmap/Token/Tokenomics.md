@@ -14,9 +14,9 @@ The SELF Token ($SELF) is the foundational utility and governance token powering
 - **Token Standard**: ERC-20 
 - **Public Sale Price**: $0.06 ($30m Fully Diluted Valuation)
 - **Listing Price**: TBC
-- **Estimated Initial Circulating Supply**: 40,500,000 (8.1% of total supply)
+- **Estimated Initial Circulating Supply**: 55,500,000 (11.1% of total supply)
 
-**Estimated Initial Circulating Supply** represents the portion of tokens anticipated to be actively traded at launch, including estimated amounts for initial exchange liquidity, early community distribution, and investor/partner unlocks.
+**Estimated Initial Circulating Supply** represents the portion of tokens anticipated to be actively traded at launch, including early community distribution and investor/partner unlocks.
 
 ## Token Distribution
 
@@ -62,16 +62,6 @@ The total supply of SELF is strategically allocated across key areas to ensure r
 | 24 months | 25%
 
 *Note: These are the initial base staking rates, likely to be lowered at some point. Longer lockup periods qualify for additional benefits such as discounts, whitelists, and airdrops (TBC).*
-
-## Tier System
-
-Three tiers provide increasing benefits (extra APR bonus percentage on top of base APR rates):
-
-| Tier | Required SELF | APR Bonus | Benefits |
-|-------|-------|--------------|-----------|
-| Pioneer | 1000 | +10% | Basic features, priority support |
-| Explorer | 10 000 | +25% | Advanced features, governance voting |
-| Multiverse | 100 000 | +50% | Full access, cross-chain privileges |
 
 ### Bonus Staking Program (Pre-Seed/Seed Investors Only)
 

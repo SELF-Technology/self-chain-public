@@ -47,17 +47,7 @@ struct StakeInfo {
 - Simplified tax implications
 - Better user experience
 
-### 2. Tier System
-
-Three tiers provide increasing benefits:
-
-| Tier | Required SELF | APR Bonus | Benefits |
-|------|---------------|-----------|----------|
-| Pioneer | 1,000 | +10% | Basic features, priority support |
-| Explorer | 10,000 | +25% | Advanced features, governance voting |
-| Multiverse | 100,000 | +50% | Full access, cross-chain privileges |
-
-### 3. Dynamic Subscription Pricing
+### 2. Dynamic Subscription Pricing
 
 Oracle integration enables USD-based pricing:
 
@@ -69,14 +59,14 @@ function purchaseSubscription(uint256 tierUSD, uint256 duration) {
 }
 ```
 
-### 4. Deflationary Mechanics
+### 3. Deflationary Mechanics
 
 Multiple burn mechanisms create deflationary pressure:
 - 50% of subscription payments burned
 - Buyback program burns 40% of repurchased tokens
 - Optional user burns for special features
 
-### 5. Security Features
+### 4. Security Features
 
 **Access Control**:
 - Role-based permissions (DEFAULT_ADMIN, PAUSER, TREASURY)
