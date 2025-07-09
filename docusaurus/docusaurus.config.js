@@ -74,12 +74,6 @@ const config = {
       hideOnScroll: false,
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Documentation',
-        },
-        {
           type: 'search',
           position: 'right',
         },
