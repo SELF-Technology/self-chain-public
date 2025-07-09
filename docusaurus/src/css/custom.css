@@ -673,12 +673,12 @@ html[data-theme="dark"] .breadcrumbs__item {
   
   /* Move Algolia search box left to prevent overlap with theme toggle */
   .DocSearch {
-    margin-right: 30px !important;
+    margin-right: 45px !important;
   }
   
   /* Alternative selector if above doesn't work */
   [class*="searchBox"] {
-    margin-right: 30px !important;
+    margin-right: 45px !important;
   }
 }
 
