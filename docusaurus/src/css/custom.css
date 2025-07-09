@@ -664,11 +664,73 @@ html[data-theme="dark"] .breadcrumbs__item {
 
 /* Mobile navbar adjustments */
 @media (max-width: 996px) {
-  /* Ensure burger menu is visible on mobile */
+  /* Style mobile menu toggle as arrow instead of burger */
   .navbar__toggle {
     display: flex !important;
     visibility: visible !important;
     opacity: 1 !important;
+  }
+  
+  /* Hide default burger icon spans */
+  .navbar__toggle span {
+    display: none;
+  }
+  
+  /* Add arrow icon */
+  .navbar__toggle::before {
+    content: '▼';
+    font-size: 12px;
+    color: var(--ifm-navbar-link-color);
+  }
+  
+  /* Rotate arrow when menu is open */
+  [data-theme] .navbar-sidebar--show + .navbar .navbar__toggle::before {
+    transform: rotate(180deg);
+  }
+  
+  /* Keep search visible on mobile */
+  .navbar__search {
+    display: flex !important;
+  }
+  
+  /* Hide theme toggle and github from top navbar on mobile - they'll be in dropdown */
+  .navbar__items--right .clean-btn.colorModeToggle_DEke,
+  .navbar__items--right .header-github-link {
+    display: none !important;
+  }
+  
+  /* Style mobile sidebar footer */
+  .navbar-sidebar__footer {
+    padding: 1rem;
+    margin-top: auto;
+  }
+  
+  .navbar-sidebar__footer-divider {
+    height: 1px;
+    background-color: var(--ifm-color-emphasis-300);
+    margin-bottom: 1rem;
+  }
+  
+  .navbar-sidebar__footer-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar-sidebar__footer-github {
+    color: var(--ifm-navbar-link-color);
+    padding: 0.5rem;
+  }
+  
+  .navbar-sidebar__footer-github:hover {
+    color: var(--ifm-navbar-link-hover-color);
+  }
+  
+  /* Make sidebar flex to push footer to bottom */
+  .navbar-sidebar__items {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 }
 
