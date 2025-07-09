@@ -645,6 +645,11 @@ html[data-theme="dark"] .breadcrumbs__item {
   display: none !important;
 }
 
+/* Remove shadow on theme toggle hover */
+[class*="colorModeToggle"]:hover {
+  box-shadow: none !important;
+}
+
 /* Style GitHub link as icon */
 .header-github-link:hover {
   opacity: 0.6;
