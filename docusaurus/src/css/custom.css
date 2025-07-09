@@ -642,8 +642,8 @@ html[data-theme="dark"] .breadcrumbs__item {
     display: none !important;
   }
   
-  /* More specific targeting */
-  .navbar__inner .navbar__items--right > button:not(.DocSearch-Button) {
+  /* More specific targeting - exclude navbar toggle */
+  .navbar__inner .navbar__items--right > button:not(.DocSearch-Button):not(.navbar__toggle) {
     display: none !important;
   }
   
@@ -653,6 +653,13 @@ html[data-theme="dark"] .breadcrumbs__item {
   .navbar__items--right button.DocSearch-Button {
     display: flex !important;
     margin-left: 0 !important;
+  }
+  
+  /* Ensure burger menu is visible on mobile */
+  .navbar__toggle {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
 }
 
