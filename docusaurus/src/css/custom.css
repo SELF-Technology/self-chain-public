@@ -670,6 +670,16 @@ html[data-theme="dark"] .breadcrumbs__item {
     visibility: visible !important;
     opacity: 1 !important;
   }
+  
+  /* Adjust spacing to prevent theme toggle overlapping search */
+  .navbar__items--right > :not(:last-child) {
+    margin-right: 0.5rem;
+  }
+  
+  /* Ensure proper spacing for navbar items */
+  .navbar__items--right {
+    gap: 0.5rem;
+  }
 }
 
 /* Full-width styles for landing page */
