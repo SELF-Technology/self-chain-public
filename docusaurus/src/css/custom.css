@@ -484,26 +484,6 @@ html[data-theme="dark"] .breadcrumbs__item {
 
 /* Mobile menu fixes */
 @media (max-width: 996px) {
-  /* Hide the logo in the mobile navbar brand area (top left) */
-  .navbar-sidebar__brand .navbar__logo {
-    display: none !important;
-  }
-  
-  /* Also hide any logo in the brand link */
-  .navbar-sidebar__brand img {
-    display: none !important;
-  }
-  
-  /* Hide the X close button since it's not clickable */
-  .navbar-sidebar__close {
-    display: none !important;
-  }
-  
-  /* When mobile menu is open, hide the main navbar to prevent overlap */
-  .navbar-sidebar--show ~ .navbar {
-    display: none !important;
-  }
-  
   /* Ensure the mobile sidebar has proper z-index */
   .navbar-sidebar {
     z-index: 1000 !important;
@@ -630,29 +610,10 @@ html[data-theme="dark"] .breadcrumbs__item {
 
 /* Hide theme toggle on mobile navbar */
 @media (max-width: 996px) {
-  /* Hide the theme toggle button in mobile navbar - multiple selectors for specificity */
+  /* Only hide theme-specific toggles since theme switching is disabled */
   .navbar__items--right button[class*="colorModeToggle"],
-  .navbar__items--right button[class*="ColorModeToggle"],
-  .navbar__items--right button[class*="toggle"][aria-label*="theme"],
-  .navbar__items--right button[class*="toggle"][aria-label*="Dark"],
-  .navbar__items--right button[title*="dark"],
-  .navbar__items--right button[title*="light"],
-  .navbar__items button[class*="clean-btn"],
-  .navbar button.clean-btn:has(svg) {
+  .navbar__items--right button[class*="ColorModeToggle"] {
     display: none !important;
-  }
-  
-  /* More specific targeting - exclude navbar toggle */
-  .navbar__inner .navbar__items--right > button:not(.DocSearch-Button):not(.navbar__toggle) {
-    display: none !important;
-  }
-  
-  /* Ensure search button is properly displayed */
-  .navbar__items--right [class*="searchBox"],
-  .navbar__items--right .DocSearch-Button,
-  .navbar__items--right button.DocSearch-Button {
-    display: flex !important;
-    margin-left: 0 !important;
   }
   
   /* Ensure burger menu is visible on mobile */

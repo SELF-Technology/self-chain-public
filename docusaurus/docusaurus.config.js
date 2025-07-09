@@ -71,6 +71,7 @@ const config = {
         src: 'img/SELF-BLACK.png',
         srcDark: 'img/SELFwhitelogo.png',
       },
+      hideOnScroll: false,
       items: [
         {
           type: 'docSidebar',
