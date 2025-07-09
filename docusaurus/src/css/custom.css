@@ -671,8 +671,13 @@ html[data-theme="dark"] .breadcrumbs__item {
     opacity: 1 !important;
   }
   
-  /* Move search button left to prevent overlap with theme toggle */
-  .navbar__search button {
+  /* Move Algolia search box left to prevent overlap with theme toggle */
+  .DocSearch {
+    margin-right: 30px !important;
+  }
+  
+  /* Alternative selector if above doesn't work */
+  [class*="searchBox"] {
     margin-right: 30px !important;
   }
 }
