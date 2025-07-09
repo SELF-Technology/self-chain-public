@@ -493,6 +493,12 @@ html[data-theme="dark"] .breadcrumbs__item {
   .navbar-sidebar__backdrop {
     z-index: 999 !important;
   }
+  
+  /* Hide logo in mobile sidebar */
+  .navbar-sidebar__brand .navbar__logo,
+  .navbar-sidebar__brand img {
+    display: none !important;
+  }
 }
 
 /* Responsive design */
