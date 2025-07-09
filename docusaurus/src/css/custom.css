@@ -512,11 +512,23 @@ html[data-theme="dark"] .breadcrumbs__item {
   
   /* Move logo closer to burger menu on mobile/tablet */
   .navbar__brand {
-    margin-left: 0.5rem !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
   }
   
   .navbar__logo {
     margin: 0 !important;
+  }
+  
+  /* Reduce gap between toggle and logo */
+  .navbar__toggle {
+    margin-right: 0.5rem !important;
+  }
+  
+  /* Adjust navbar inner spacing */
+  .navbar__inner {
+    padding: 0 0.5rem !important;
   }
 }
 
