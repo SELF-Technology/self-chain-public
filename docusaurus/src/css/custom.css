@@ -499,6 +499,11 @@ html[data-theme="dark"] .breadcrumbs__item {
   .navbar-sidebar__brand img {
     display: none !important;
   }
+  
+  /* Hide the X close button in mobile sidebar */
+  .navbar-sidebar__close {
+    display: none !important;
+  }
 }
 
 /* Responsive design */
