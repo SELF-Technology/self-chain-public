@@ -509,6 +509,15 @@ html[data-theme="dark"] .breadcrumbs__item {
   .navbar-sidebar__back {
     display: none !important;
   }
+  
+  /* Move logo closer to burger menu on mobile/tablet */
+  .navbar__brand {
+    margin-left: 0.5rem !important;
+  }
+  
+  .navbar__logo {
+    margin: 0 !important;
+  }
 }
 
 /* Responsive design */
