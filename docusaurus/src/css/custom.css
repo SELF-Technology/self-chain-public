@@ -521,7 +521,7 @@ html[data-theme="dark"] .breadcrumbs__item {
     margin: 0 !important;
   }
   
-  /* Reduce gap between toggle and logo */
+  /* Reduce gap between burger menu and logo */
   .navbar__toggle {
     margin-right: 0.5rem !important;
   }
