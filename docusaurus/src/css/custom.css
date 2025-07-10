@@ -4,8 +4,7 @@
  * work well for content-centric websites.
  */
 
-@import url('https://cdn.jsdelivr.net/npm/@docsearch/css@3');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+/* External CSS now loaded via link tags for better performance */
 @import './category-pages.css';
 @import './breadcrumb-fix.css';
 @import './social-icons.css';
@@ -111,7 +110,7 @@ html[data-theme="dark"] {
   width: 0;
   height: 0;
   overflow: hidden;
-  background-image: url('/img/SELF-BLACK.png'), url('/img/SELFwhitelogo.png');
+  background-image: url('/img/SELF-BLACK.png'), url('/img/SELFwhitelogo.webp');
 }
 
 details,
@@ -395,7 +394,7 @@ html[data-theme="dark"] .opensource-links a {
 /* Hero section styles - Respects sidebar boundaries */
 .hero-section-wrapper {
   position: relative;
-  background-image: url('/img/SELF GALAXY transparent 620kb.png');
+  background-image: url('/img/SELF GALAXY transparent 620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp');
   background-position: center center; /* Center the galaxy for better alignment */
   background-repeat: no-repeat;
   background-size: cover;
