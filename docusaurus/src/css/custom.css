@@ -503,20 +503,30 @@ html[data-theme="dark"] .breadcrumbs__item {
     z-index: 999 !important;
   }
   
-  /* Hide logo in mobile sidebar */
+  /* Keep logo visible but smaller in mobile sidebar */
   .navbar-sidebar__brand .navbar__logo,
   .navbar-sidebar__brand img {
-    display: none !important;
+    max-height: 2rem;
   }
   
-  /* Hide the X close button in mobile sidebar */
+  /* Keep close button visible for better UX */
   .navbar-sidebar__close {
-    display: none !important;
+    display: flex !important;
   }
   
-  /* Hide "Back to main menu" text */
-  .navbar-sidebar__back {
-    display: none !important;
+  /* Style the mobile sidebar items */
+  .navbar-sidebar__items {
+    padding: 1rem;
+  }
+  
+  /* Ensure sidebar content is visible */
+  .navbar-sidebar .menu__list {
+    display: block !important;
+  }
+  
+  .navbar-sidebar .menu__link {
+    display: block !important;
+    padding: 0.5rem 1rem;
   }
   
   /* Move logo closer to burger menu on mobile/tablet */
