@@ -3,18 +3,15 @@
  * Completely outside of the burger menu
  */
 
-/* Always show the theme toggle in the top navbar instead of in mobile menu */
-.navbar__items--right {
-  position: relative;
-}
+/* Already styled in custom.css */
 
 /* Move the toggle to the top right navbar */
 .colorModeToggle,
 [class*="colorModeToggle"],
 [class*="toggleButton"] {
-  position: relative !important;
   display: flex !important;
-  align-items: center;
+  align-items: center !important;
+  justify-content: center !important;
   margin-left: auto !important;
   margin-right: 1rem !important;
   z-index: 10;
