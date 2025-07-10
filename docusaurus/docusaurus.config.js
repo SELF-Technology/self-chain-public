@@ -68,7 +68,7 @@ const config = {
     ],
   ],
 
-  plugins: [
+  /* plugins: [
     [
       '@docusaurus/plugin-pwa',
       {
@@ -91,7 +91,7 @@ const config = {
         ],
       },
     ],
-  ],
+  ], */
 
   themeConfig: {
     ...(process.env.ALGOLIA_APP_ID && process.env.ALGOLIA_SEARCH_API_KEY ? {
@@ -112,20 +112,28 @@ const config = {
         alt: 'SELF Logo',
         src: 'img/SELF-BLACK.png',
         srcDark: 'img/SELFwhitelogo.png',
-        width: 150,
-        height: 32,
       },
       hideOnScroll: false,
       items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Documentation',
+        },
         {
           type: 'search',
           position: 'right',
         },
         {
           href: 'https://github.com/SELF-Technology/self-chain-public',
+          label: 'GitHub',
           position: 'right',
-          className: 'header-github-link',
-          'aria-label': 'GitHub repository',
+        },
+        {
+          href: 'https://discord.gg/WdMdVpA4C8',
+          label: 'Discord',
+          position: 'right',
         },
       ],
     },
