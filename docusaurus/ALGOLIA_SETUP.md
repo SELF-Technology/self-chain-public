@@ -5,8 +5,8 @@ The Algolia search is configured but needs environment variables set in producti
 ## Environment Variables Required
 
 ```
-ALGOLIA_APP_ID=0X1QYF886S
-ALGOLIA_SEARCH_API_KEY=529f2d29487ab836fe56f52b39493466
+ALGOLIA_APP_ID=<your-app-id>
+ALGOLIA_SEARCH_API_KEY=<your-search-api-key>
 ```
 
 ## Security Considerations
@@ -32,8 +32,8 @@ Instead of using the basic search API key, generate a secured API key with restr
 1. Go to your GitHub repository (SELF-Technology/self-chain-public)
 2. Navigate to Settings → Secrets and variables → Actions
 3. Click "New repository secret" and add:
-   - Name: `ALGOLIA_APP_ID`, Value: `0X1QYF886S`
-   - Name: `ALGOLIA_SEARCH_API_KEY`, Value: `529f2d29487ab836fe56f52b39493466` (or your secured key)
+   - Name: `ALGOLIA_APP_ID`, Value: Your Algolia App ID
+   - Name: `ALGOLIA_SEARCH_API_KEY`, Value: Your secured search API key
 4. The next deployment will automatically use these secrets
 
 ## Verifying Algolia Index
