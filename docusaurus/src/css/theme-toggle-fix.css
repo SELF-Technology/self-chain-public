@@ -67,6 +67,6 @@
   
   /* Ensure the navbar toggle button doesn't overlap with our relocated toggle */
   .navbar__toggle {
-    margin-right: 0.5rem;
+    margin-right: 3.5rem;
   }
 }
