@@ -116,24 +116,14 @@ const config = {
       hideOnScroll: false,
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Documentation',
-        },
-        {
           type: 'search',
           position: 'right',
         },
         {
           href: 'https://github.com/SELF-Technology/self-chain-public',
-          label: 'GitHub',
           position: 'right',
-        },
-        {
-          href: 'https://discord.gg/WdMdVpA4C8',
-          label: 'Discord',
-          position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
         },
       ],
     },
