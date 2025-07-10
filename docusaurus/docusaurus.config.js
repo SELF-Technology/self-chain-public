@@ -30,24 +30,55 @@ const config = {
       tagName: 'link',
       attributes: {
         rel: 'preload',
-        href: '/img/SELFwhitelogo.png',
+        href: '/img/SELFwhitelogo.webp',
         as: 'image',
         fetchpriority: 'high',
       },
     },
-    // Preconnect to external domains
+    // Preload galaxy background for hero section
     {
       tagName: 'link',
       attributes: {
-        rel: 'preconnect',
-        href: 'https://cdn.jsdelivr.net',
+        rel: 'preload',
+        href: '/img/SELF GALAXY transparent 620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp',
+        as: 'image',
+        fetchpriority: 'low',
+      },
+    },
+    // Preload critical CSS
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preload',
+        href: '/css/vendor/docsearch.min.css',
+        as: 'style',
+        onload: "this.onload=null;this.rel='stylesheet'",
       },
     },
     {
       tagName: 'link',
       attributes: {
-        rel: 'preconnect',
-        href: 'https://cdnjs.cloudflare.com',
+        rel: 'preload',
+        href: '/css/vendor/fontawesome-minimal.css',
+        as: 'style',
+        onload: "this.onload=null;this.rel='stylesheet'",
+      },
+    },
+    // Fallback for no-JS
+    {
+      tagName: 'noscript',
+      attributes: {},
+      innerHTML: '<link rel="stylesheet" href="/css/vendor/docsearch.min.css"><link rel="stylesheet" href="/css/vendor/fontawesome-minimal.css">',
+    },
+    // Preload Font Awesome font
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preload',
+        href: '/webfonts/fa-brands-400.woff2',
+        as: 'font',
+        type: 'font/woff2',
+        crossorigin: 'anonymous',
       },
     },
   ],
@@ -111,7 +142,7 @@ const config = {
       logo: {
         alt: 'SELF Logo',
         src: 'img/SELF-BLACK.png',
-        srcDark: 'img/SELFwhitelogo.png',
+        srcDark: 'img/SELFwhitelogo.webp',
       },
       hideOnScroll: false,
       items: [

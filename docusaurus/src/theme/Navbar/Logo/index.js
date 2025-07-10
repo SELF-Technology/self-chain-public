@@ -10,7 +10,7 @@ export default function LogoWrapper(props) {
     ...props,
     logo: {
       ...props.logo,
-      src: colorMode === 'dark' ? '/img/SELFwhitelogo.png' : '/img/SELF-BLACK.png'
+      src: colorMode === 'dark' ? '/img/SELFwhitelogo.webp' : '/img/SELF-BLACK.png'
     }
   };
   
