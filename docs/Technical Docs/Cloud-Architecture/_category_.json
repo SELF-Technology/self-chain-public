@@ -1,0 +1,8 @@
+{
+  "label": "Cloud Architecture",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn about SELF Chain's cloud infrastructure and how every user gets their own private cloud instance."
+  }
+}

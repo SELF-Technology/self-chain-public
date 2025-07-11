@@ -1,0 +1,206 @@
+# SELF Chain Testnet Configuration
+# 
+# ⚠️  WARNING: This is a TESTNET configuration file
+# ⚠️  Do NOT use these settings for production
+# ⚠️  Testnet tokens have NO real value
+#
+# Copy this file to testnet.toml and adjust settings as needed
+
+[network]
+# Network identifier
+chain_id = "self-testnet-001"
+network_name = "SELF Chain Testnet"
+
+# ⚠️  TESTNET WARNING: These are public test nodes - do not send real tokens!
+bootstrap_nodes = [
+    "http://13.220.156.247:3030",     # Bootstrap node (ap-southeast-2)
+    "http://34.203.202.6:3030",       # Peer node 1 (us-east-1)
+    "http://52.23.226.218:3030"       # Peer node 2 (us-east-1)
+]
+
+# P2P network settings
+p2p_port = 8000
+api_port = 3030
+external_address = ""  # Leave empty for automatic detection
+
+[node]
+# Node type: "validator", "full", "light"
+node_type = "full"
+data_dir = "./testnet-data"
+
+# Node identity (will be auto-generated if not provided)
+node_id = ""
+node_name = "my-testnet-node"
+
+[consensus]
+# Consensus algorithm
+algorithm = "poai"  # Proof of AI
+block_time_seconds = 10
+min_validators = 3
+
+# AI validation settings
+ai_threshold = 0.7  # Minimum AI confidence score
+ai_validation_enabled = true
+
+[wallet]
+# ⚠️  TESTNET WARNING: Use a NEW wallet for testnet - never use mainnet keys!
+# Leave empty to generate a new testnet wallet
+private_key = ""
+keystore_path = "./testnet-keystore"
+
+# Testnet faucet for free tokens
+faucet_url = "https://faucet.testnet.self.app"  # Coming soon
+faucet_amount = "1000 TEST"  # 1000 testnet tokens per request
+
+[storage]
+# Storage configuration
+ipfs_enabled = true
+ipfs_api = "http://127.0.0.1:5001"
+ipfs_gateway = "http://127.0.0.1:8080"
+
+# OrbitDB settings
+orbitdb_enabled = true
+orbitdb_directory = "./testnet-data/orbitdb"
+
+# Storage limits for testnet
+max_storage_gb = 10
+max_bandwidth_gb = 50
+
+[ai]
+# AI model configuration for testnet
+# ⚠️  TESTNET uses smaller models to reduce resource usage
+
+# Local AI endpoint (if running your own)
+ai_endpoint = "http://localhost:11434/v1"
+ai_model = "mistral:7b"  # Recommended for testnet
+
+# Fallback to testnet AI service (coming soon)
+use_testnet_ai = true
+testnet_ai_endpoint = "https://ai.testnet.self.app/v1"
+testnet_ai_api_key = ""  # Request from Discord
+
+# AI resource limits
+max_tokens = 1024
+temperature = 0.7
+timeout_seconds = 30
+
+[security]
+# ⚠️  TESTNET WARNING: Reduced security for easier testing
+tls_enabled = false  # Disabled for testnet
+jwt_expiration_hours = 24
+
+# API rate limiting (more permissive for testing)
+rate_limit_per_minute = 100
+rate_limit_burst = 20
+
+[monitoring]
+# Testnet monitoring
+metrics_enabled = true
+metrics_port = 9100
+
+# Testnet block explorer
+explorer_url = "https://explorer.testnet.self.app"  # Coming soon
+
+# Health check
+health_check_interval = 30
+health_check_timeout = 10
+
+[logging]
+# Verbose logging for testnet
+log_level = "debug"
+log_format = "json"
+log_file = "./testnet-logs/node.log"
+
+# Log rotation
+max_log_size_mb = 100
+max_log_files = 5
+
+[development]
+# Development features (testnet only)
+enable_debug_endpoints = true
+enable_test_commands = true
+mock_ai_responses = false  # Set to true if no AI endpoint available
+
+# Test transaction generator
+auto_generate_transactions = false
+transaction_interval_seconds = 60
+
+[cloud]
+# Cloud provider settings for your own node
+
+# Oracle Cloud Free Tier (Recommended for MVP)
+# - 4 OCPU ARM Ampere A1
+# - 24 GB RAM
+# - 200 GB storage
+# - Always Free
+oracle_cloud = { 
+    enabled = false,
+    region = "us-ashburn-1",
+    shape = "VM.Standard.A1.Flex",
+    ocpus = 4,
+    memory_gb = 24
+}
+
+# AWS Free Tier (Limited to 750 hours/month)
+aws = {
+    enabled = false,
+    region = "us-east-1",
+    instance_type = "t2.micro",
+    ami_id = "ami-0c02fb55956c7d316"  # Amazon Linux 2
+}
+
+# Hetzner (Not free, but very affordable at €3.79/month)
+hetzner = {
+    enabled = false,
+    location = "fsn1",  # Falkenstein, Germany
+    server_type = "cx11",  # 1 vCPU, 2GB RAM
+    image = "ubuntu-22.04"
+}
+
+[upgrade]
+# Upgrade paths from testnet
+upgrade_options = [
+    "Oracle Cloud Free → Growth (8 OCPU, 48GB RAM)",
+    "AWS Free → t3.medium ($0.0416/hour)",
+    "Hetzner CX11 → CX21 (€5.83/month)",
+    "Free Tier → Your Own Cloud (BYOC)"
+]
+
+# Benefits of upgrading
+upgrade_benefits = [
+    "Larger AI models (13B+ parameters)",
+    "Faster inference speeds",
+    "More storage space",
+    "Priority support",
+    "Production-ready security"
+]
+
+# ============================================================================
+# QUICK START GUIDE
+# ============================================================================
+# 
+# 1. Copy this file:
+#    cp testnet.example.toml testnet.toml
+#
+# 2. Connect to testnet:
+#    self-chain-node --config testnet.toml
+#
+# 3. Get testnet tokens:
+#    self-chain-cli faucet request --amount 1000
+#
+# 4. Check node status:
+#    self-chain-cli node info
+#
+# 5. View testnet explorer:
+#    https://explorer.testnet.self.app
+#
+# ============================================================================
+# TESTNET RESOURCES
+# ============================================================================
+#
+# Discord: https://discord.gg/selfchain (Request testnet tokens in #faucet)
+# Docs: https://docs.self.app/testnet
+# Status: https://status.testnet.self.app
+# API Docs: https://api-docs.testnet.self.app
+#
+# ============================================================================
