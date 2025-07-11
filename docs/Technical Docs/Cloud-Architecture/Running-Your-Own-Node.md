@@ -1,8 +1,39 @@
 # Running Your Own Node
 
-## Overview
+## IMPORTANT: Who This Guide Is For
 
-While SELF Chain automatically provisions cloud infrastructure for Super-App users, developers and power users can run their own nodes. This guide explains how to set up and operate a SELF Chain node on your own infrastructure.
+### This guide is for:
+- 🔬 **Developers** testing applications locally
+- 🖥️ **Power users** who want to run infrastructure
+- 🏢 **Enterprises** running private deployments
+- 🧪 **Researchers** experimenting with SELF Chain
+
+### This guide is NOT for:
+- ❌ **Regular users** - You get cloud automatically via Super-App!
+- ❌ **App developers** - You don't need to run nodes, just use the SDK
+- ❌ **People trying to "save money"** - The Super-App is easier and managed
+
+## Why Run Your Own Node?
+
+**Most users should NOT run their own node.** The SELF Super-App automatically provisions and manages everything for you. However, you might want to run a node if:
+
+1. **Local Development**: Test your apps without using testnet resources
+2. **Enterprise Deployment**: Run SELF Chain in your private infrastructure  
+3. **Network Support**: Contribute to network decentralization as a validator
+4. **Research**: Experiment with blockchain and AI integration
+
+---
+
+## The Easy Way: Use the Super-App
+
+Before diving into manual node operation, remember:
+
+**For 99% of users, just:**
+1. Download SELF Super-App
+2. Sign up
+3. Done! Your cloud is ready
+
+**Only continue if you have a specific technical need.**
 
 ## System Requirements
 

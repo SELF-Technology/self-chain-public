@@ -1,356 +1,449 @@
 # Developer Integration Guide
 
-## Integrating with SELF Chain Cloud Infrastructure
-
-This guide explains how developers can integrate with SELF Chain's automatic cloud provisioning system to create applications that leverage our user-sovereign infrastructure.
-
-## Overview
-
-When a user signs up for SELF through your application, our infrastructure automatically:
-1. Provisions isolated cloud resources
-2. Deploys a SELF Chain node
-3. Sets up a private LLM instance
-4. Configures decentralized storage
-5. Returns API endpoints for interaction
-
-## Authentication
-
-### API Keys
-Request API access by contacting our developer relations team. You'll receive:
-- `CLIENT_ID`: Your application identifier
-- `CLIENT_SECRET`: Your application secret
-- `WEBHOOK_SECRET`: For verifying webhook signatures
-
-### OAuth 2.0 Flow
-For user-authorized actions, implement OAuth 2.0:
-
-```javascript
-// 1. Redirect user to authorization
-const authUrl = `https://auth.self.app/oauth/authorize?
-  client_id=${CLIENT_ID}&
-  redirect_uri=${REDIRECT_URI}&
-  response_type=code&
-  scope=provision:create provision:read`;
-
-// 2. Exchange code for token
-const token = await fetch('https://auth.self.app/oauth/token', {
-  method: 'POST',
-  body: JSON.stringify({
-    grant_type: 'authorization_code',
-    code: authorizationCode,
-    client_id: CLIENT_ID,
-    client_secret: CLIENT_SECRET
-  })
-});
-```
-
-## Provisioning API
-
-### Create User Instance
-
-```bash
-POST https://api.self.app/v1/provision
-Authorization: Bearer YOUR_ACCESS_TOKEN
-Content-Type: application/json
-
-{
-  "userId": "unique-user-id",
-  "email": "user@example.com",
-  "tier": "free",
-  "preferences": {
-    "aiModel": "default",
-    "region": "us-east"
-  }
-}
-```
-
-**Response:**
-```json
-{
-  "success": true,
-  "instanceId": "inst_abc123xyz",
-  "userId": "unique-user-id",
-  "status": "provisioning",
-  "endpoints": {
-    "api": "https://user-abc123.api.self.app",
-    "websocket": "wss://user-abc123.ws.self.app",
-    "ai": "https://user-abc123.ai.self.app"
-  },
-  "credentials": {
-    "apiKey": "sk_user_...",
-    "nodeId": "node_..."
-  }
-}
-```
-
-### Check Instance Status
-
-```bash
-GET https://api.self.app/v1/provision/{instanceId}
-Authorization: Bearer YOUR_ACCESS_TOKEN
-```
-
-**Response:**
-```json
-{
-  "instanceId": "inst_abc123xyz",
-  "status": "active",
-  "health": "healthy",
-  "resources": {
-    "cpu": "0.5 vCPU",
-    "memory": "1GB",
-    "storage": "10GB"
-  },
-  "usage": {
-    "shinePercent": 45,
-    "cpuPercent": 23,
-    "memoryPercent": 67,
-    "storageUsed": "3.2GB"
-  }
-}
-```
-
-### Upgrade Instance
-
-```bash
-POST https://api.self.app/v1/provision/{instanceId}/upgrade
-Authorization: Bearer YOUR_ACCESS_TOKEN
-Content-Type: application/json
-
-{
-  "tier": "growth",
-  "immediate": true
-}
-```
-
-## Webhooks
-
-Configure webhook endpoints to receive real-time updates:
-
-### Webhook Events
-
-#### `instance.created`
-Fired when provisioning completes successfully.
-
-```json
-{
-  "event": "instance.created",
-  "timestamp": "2025-07-11T10:30:00Z",
-  "data": {
-    "instanceId": "inst_abc123xyz",
-    "userId": "unique-user-id",
-    "endpoints": {...}
-  }
-}
-```
-
-#### `instance.upgraded`
-Fired when a tier upgrade completes.
-
-```json
-{
-  "event": "instance.upgraded",
-  "timestamp": "2025-07-11T11:00:00Z",
-  "data": {
-    "instanceId": "inst_abc123xyz",
-    "previousTier": "free",
-    "newTier": "growth"
-  }
-}
-```
-
-#### `instance.usage_alert`
-Fired when usage exceeds thresholds.
-
-```json
-{
-  "event": "instance.usage_alert",
-  "timestamp": "2025-07-11T12:00:00Z",
-  "data": {
-    "instanceId": "inst_abc123xyz",
-    "alert": "high_memory_usage",
-    "current": 85,
-    "threshold": 80
-  }
-}
-```
-
-### Webhook Security
-
-Verify webhook signatures to ensure authenticity:
-
-```javascript
-const crypto = require('crypto');
-
-function verifyWebhook(payload, signature, secret) {
-  const expectedSignature = crypto
-    .createHmac('sha256', secret)
-    .update(payload)
-    .digest('hex');
-  
-  return crypto.timingSafeEqual(
-    Buffer.from(signature),
-    Buffer.from(expectedSignature)
-  );
-}
-```
-
-## User Instance API
-
-Once provisioned, interact with user instances directly:
-
-### AI Chat API
-
-```bash
-POST https://user-abc123.ai.self.app/v1/chat
-Authorization: Bearer USER_API_KEY
-Content-Type: application/json
-
-{
-  "messages": [
-    {"role": "user", "content": "Hello, how are you?"}
-  ],
-  "temperature": 0.7,
-  "max_tokens": 150
-}
-```
-
-### Node API
-
-```bash
-GET https://user-abc123.api.self.app/v1/node/info
-Authorization: Bearer USER_API_KEY
-```
-
-### Storage API
-
-```bash
-POST https://user-abc123.api.self.app/v1/storage/upload
-Authorization: Bearer USER_API_KEY
-Content-Type: multipart/form-data
-
-[Binary data]
-```
-
-## SDKs
-
-### JavaScript/TypeScript
-
-```bash
-npm install @selfchain/cloud-sdk
-```
-
-```javascript
-import { SelfChainCloud } from '@selfchain/cloud-sdk';
-
-const client = new SelfChainCloud({
-  clientId: CLIENT_ID,
-  clientSecret: CLIENT_SECRET
-});
-
-// Provision new instance
-const instance = await client.provision({
-  userId: 'user123',
-  tier: 'free'
-});
-
-// Check status
-const status = await client.getInstanceStatus(instance.instanceId);
-```
-
-### Python
-
-```bash
-pip install selfchain-cloud
-```
-
-```python
-from selfchain_cloud import Client
-
-client = Client(
-    client_id=CLIENT_ID,
-    client_secret=CLIENT_SECRET
-)
-
-# Provision new instance
-instance = client.provision(
-    user_id='user123',
-    tier='free'
-)
-
-# Check status
-status = client.get_instance_status(instance.instance_id)
-```
-
-## Rate Limits
-
-| Endpoint | Rate Limit |
-|----------|------------|
-| Provisioning | 100 requests/hour |
-| Status checks | 1000 requests/hour |
-| Upgrades | 10 requests/hour |
-| User APIs | Based on tier |
-
-## Error Handling
-
-### Error Response Format
-
-```json
-{
-  "error": {
-    "code": "insufficient_resources",
-    "message": "Unable to provision instance due to resource constraints",
-    "details": {
-      "region": "us-east",
-      "tier": "free"
-    }
-  }
-}
-```
-
-### Common Error Codes
-
-| Code | Description | Action |
-|------|-------------|--------|
-| `invalid_tier` | Requested tier doesn't exist | Check available tiers |
-| `insufficient_resources` | No resources available | Try different region |
-| `payment_required` | Payment method needed | Add payment method |
-| `rate_limited` | Too many requests | Implement backoff |
-| `invalid_credentials` | Auth failed | Check API keys |
-
-## Best Practices
-
-1. **Implement Exponential Backoff**: For retries on failures
-2. **Cache Instance Status**: Don't poll excessively
-3. **Handle Webhooks Asynchronously**: Process events in background
-4. **Monitor Usage**: Set up alerts for high usage
-5. **Implement Graceful Degradation**: Handle provisioning delays
-
-## Testing
-
-### Sandbox Environment
-
-Test your integration without provisioning real resources:
-
-- Base URL: `https://sandbox.api.self.app`
-- Test credentials provided upon request
-- Simulated delays and failures for testing
-- No charges for sandbox usage
-
-### Test Credit Cards
-
-For testing paid tiers in sandbox:
-- Success: `4242 4242 4242 4242`
-- Decline: `4000 0000 0000 0002`
-- Insufficient funds: `4000 0000 0000 9995`
-
-## Support
-
-- **Documentation**: https://docs.self.app
-- **API Status**: https://status.self.app
-- **Developer Discord**: https://discord.gg/selfchain
-- **Email**: developers@self.app
+## CRITICAL: What This Guide Is About
+
+**This guide is for developers who want to:**
+- ✅ Build apps that interact with SELF user instances
+- ✅ Access user data and AI (with permission)
+- ✅ Create experiences on top of SELF infrastructure
+
+**This guide is NOT for:**
+- ❌ Provisioning cloud infrastructure (SELF does this automatically)
+- ❌ Managing servers or containers (SELF handles this)
+- ❌ Creating user instances (happens automatically on signup)
 
 ---
 
-*Note: This guide covers the public API for integrating with SELF Chain's cloud infrastructure. Implementation details and internal APIs are subject to change. Always refer to the latest documentation.*
+## Understanding Your Role as a Developer
+
+### The SELF Ecosystem
+
+```
+┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
+│ SELF Super-App  │────▶│ SELF Cloud Infra │────▶│ User Instance   │
+│ (User signs up) │     │ (Auto-provision) │     │ (Ready to use)  │
+└─────────────────┘     └──────────────────┘     └─────────────────┘
+                                                           │
+                                                           ▼
+                                                   ┌───────────────┐
+                                                   │  YOUR APP     │
+                                                   │ (Interacts    │
+                                                   │  with users)  │
+                                                   └───────────────┘
+```
+
+### What You Build
+
+Your applications:
+1. **Enhance** user's AI capabilities
+2. **Utilize** user's private storage
+3. **Respect** user's privacy
+4. **Add value** to user's digital life
+
+---
+
+## Core Concepts
+
+### User Instances
+
+Every SELF user automatically has:
+- **Private LLM**: Their own AI that never shares data
+- **Blockchain Node**: For network participation
+- **Sovereign Storage**: Encrypted, user-controlled data
+- **API Gateway**: Secure access point for apps
+
+### Permission Model
+
+Your app must request permission to:
+- Chat with user's AI
+- Read/write user's storage
+- Access user's blockchain data
+- Use user's compute resources
+
+---
+
+## Getting Started
+
+### 1. Register as a Developer
+
+```bash
+# Register for developer account
+curl -X POST https://developers.self.app/register \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Your Name",
+    "email": "dev@example.com",
+    "project": "My Awesome App",
+    "description": "What your app does"
+  }'
+```
+
+You'll receive:
+- `APP_ID`: Your application identifier
+- `APP_SECRET`: Your application secret (keep secure!)
+- Testnet access credentials
+
+### 2. Install the SDK
+
+```bash
+# JavaScript/TypeScript
+npm install @selfchain/sdk
+
+# Python
+pip install selfchain-sdk
+
+# Go
+go get github.com/self-chain/sdk-go
+```
+
+### 3. Initialize Your App
+
+```javascript
+import { SELF } from '@selfchain/sdk';
+
+const app = new SELF.App({
+  appId: process.env.APP_ID,
+  appSecret: process.env.APP_SECRET,
+  environment: 'testnet' // or 'production'
+});
+```
+
+---
+
+## User Authentication Flow
+
+### How Users Connect to Your App
+
+1. **User Initiates Connection**
+```javascript
+// In your app, create a connection request
+const connectionUrl = app.createConnectionUrl({
+  permissions: ['ai:chat', 'storage:read', 'storage:write'],
+  redirectUrl: 'https://yourapp.com/callback'
+});
+
+// Redirect user to authorize
+window.location.href = connectionUrl;
+```
+
+2. **User Grants Permissions**
+- User sees what permissions your app requests
+- User approves/denies in SELF app
+- User is redirected back to your app
+
+3. **Your App Receives Access Token**
+```javascript
+// In your callback handler
+app.handleCallback(async (err, auth) => {
+  if (err) {
+    console.error('User denied access');
+    return;
+  }
+  
+  // Store the user session
+  const session = auth.session;
+  
+  // Now you can interact with user's instance
+  const ai = auth.ai;
+  const storage = auth.storage;
+});
+```
+
+---
+
+## Interacting with User Instances
+
+### Chat with User's Private AI
+
+```javascript
+// Simple chat
+const response = await session.ai.chat({
+  message: "What's on my calendar today?"
+});
+
+// Chat with context
+const response = await session.ai.chat({
+  message: "Summarize this document",
+  context: {
+    document: documentContent,
+    style: "brief"
+  }
+});
+
+// Streaming response
+const stream = await session.ai.chatStream({
+  message: "Write a story about space"
+});
+
+stream.on('data', (chunk) => {
+  console.log(chunk.text);
+});
+```
+
+### Use User's Storage
+
+```javascript
+// Save data to user's storage
+await session.storage.set({
+  key: 'app:preferences',
+  value: {
+    theme: 'dark',
+    notifications: true
+  },
+  encrypted: true // Optional encryption
+});
+
+// Read data
+const prefs = await session.storage.get('app:preferences');
+
+// List user's data (that your app created)
+const items = await session.storage.list({
+  prefix: 'app:',
+  limit: 100
+});
+
+// Delete data
+await session.storage.delete('app:preferences');
+```
+
+### Query Blockchain Data
+
+```javascript
+// Get user's blockchain info
+const info = await session.blockchain.getInfo();
+console.log(info.address, info.balance);
+
+// Get user's transaction history
+const transactions = await session.blockchain.getTransactions({
+  limit: 50,
+  offset: 0
+});
+```
+
+---
+
+## Building Different Types of Apps
+
+### AI-Enhanced Apps
+
+```javascript
+// Example: Smart Note-Taking App
+class SmartNotes {
+  async createNote(session, content) {
+    // Use AI to enhance the note
+    const enhanced = await session.ai.chat({
+      message: "Enhance these notes with key points and action items",
+      context: { notes: content }
+    });
+    
+    // Save to user's storage
+    await session.storage.set({
+      key: `notes:${Date.now()}`,
+      value: {
+        original: content,
+        enhanced: enhanced.response,
+        created: new Date()
+      }
+    });
+  }
+}
+```
+
+### Privacy-First Apps
+
+```javascript
+// Example: Encrypted Messaging
+class SecureChat {
+  async sendMessage(session, recipientId, message) {
+    // Encrypt using user's keys
+    const encrypted = await session.crypto.encrypt({
+      data: message,
+      recipientId: recipientId
+    });
+    
+    // Store in user's outbox
+    await session.storage.set({
+      key: `messages:sent:${Date.now()}`,
+      value: encrypted
+    });
+    
+    // Notify recipient (through SELF network)
+    await session.network.notify({
+      recipientId: recipientId,
+      type: 'new_message'
+    });
+  }
+}
+```
+
+### Data Analysis Apps
+
+```javascript
+// Example: Personal Analytics
+class PersonalAnalytics {
+  async analyzeData(session) {
+    // Get user's data (with permission)
+    const data = await session.storage.list({
+      prefix: 'health:',
+      limit: 1000
+    });
+    
+    // Use AI for analysis
+    const insights = await session.ai.chat({
+      message: "Analyze this health data and provide insights",
+      context: { data: data }
+    });
+    
+    return insights.response;
+  }
+}
+```
+
+---
+
+## Testnet Development
+
+### Getting Test Users
+
+```javascript
+// Create test users for development
+const testUser = await app.createTestUser({
+  tier: 'free' // or 'growth', 'pro'
+});
+
+console.log(testUser.credentials);
+// Use these credentials to simulate user interactions
+```
+
+### Simulating User Flows
+
+```javascript
+// Simulate user authentication
+const testSession = await app.authenticateTestUser(testUser);
+
+// Now develop as if real user
+await testSession.ai.chat({ message: "Hello, test!" });
+```
+
+---
+
+## Best Practices
+
+### 1. Respect User Privacy
+```javascript
+// ❌ BAD: Trying to access without permission
+const data = await session.storage.get('private:key'); // Will fail
+
+// ✅ GOOD: Only access what you have permission for
+const data = await session.storage.get('app:your-data');
+```
+
+### 2. Handle Permissions Properly
+```javascript
+// Always check permissions before operations
+if (session.hasPermission('ai:chat')) {
+  const response = await session.ai.chat({...});
+} else {
+  // Request additional permissions
+  const newPerms = await session.requestPermissions(['ai:chat']);
+}
+```
+
+### 3. Optimize for User Resources
+```javascript
+// ❌ BAD: Excessive AI calls
+for (let i = 0; i < 1000; i++) {
+  await session.ai.chat({...}); // User pays for compute!
+}
+
+// ✅ GOOD: Batch operations
+const batchResponse = await session.ai.analyze({
+  documents: allDocuments,
+  operation: 'summarize'
+});
+```
+
+---
+
+## Common Mistakes to Avoid
+
+### ❌ Trying to Provision Infrastructure
+```javascript
+// THIS WILL NOT WORK - SELF handles all provisioning
+const instance = await createUserInstance(); // NO!
+```
+
+### ❌ Accessing Other Users' Data
+```javascript
+// THIS WILL FAIL - Strong isolation between users
+const otherUserData = await session.storage.get('user:123:data'); // NO!
+```
+
+### ❌ Storing Sensitive Data Unencrypted
+```javascript
+// BAD: Storing passwords in plain text
+await session.storage.set({ key: 'password', value: '123456' });
+
+// GOOD: Always encrypt sensitive data
+await session.storage.set({ 
+  key: 'credentials', 
+  value: hashedPassword,
+  encrypted: true 
+});
+```
+
+---
+
+## SDK Reference
+
+### JavaScript/TypeScript
+- [Full API Documentation](https://sdk.self.app/js)
+- [Example Apps](https://github.com/self-chain/sdk-examples)
+- [TypeScript Types](https://sdk.self.app/types)
+
+### Error Handling
+```javascript
+try {
+  const response = await session.ai.chat({...});
+} catch (error) {
+  if (error.code === 'PERMISSION_DENIED') {
+    // Handle permission issues
+  } else if (error.code === 'RATE_LIMITED') {
+    // Handle rate limiting
+  }
+}
+```
+
+---
+
+## Support & Resources
+
+### Getting Help
+- **Discord**: [Join #developers channel](https://discord.gg/selfchain)
+- **Forum**: [developers.self.app](https://developers.self.app)
+- **Email**: developers@self.app
+
+### Resources
+- [Example Apps](https://github.com/self-chain/examples)
+- [Video Tutorials](https://youtube.com/selfchain)
+- [API Status](https://status.self.app)
+
+---
+
+## Summary
+
+**Remember:**
+1. You build apps, SELF manages infrastructure
+2. Always respect user privacy and permissions
+3. Users own their data, you just interact with it
+4. Focus on adding value to users' digital lives
+
+**Next Steps:**
+1. Register as developer
+2. Get testnet access
+3. Build something amazing
+4. Share with the community
+
+---
+
+*This guide is for building on SELF, not building SELF itself. For contribution to core infrastructure, see our [GitHub](https://github.com/self-chain).*

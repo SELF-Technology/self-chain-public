@@ -1,201 +1,253 @@
 # Cloud Architecture Overview
 
-## Every User Gets Their Own Private Cloud
+## IMPORTANT: How SELF Chain Cloud Works
 
-SELF Chain provides each user with their own isolated cloud instance, ensuring complete data sovereignty and privacy. When you sign up through the SELF Super-App, we automatically provision dedicated cloud resources just for you.
+### What SELF Does (Not You)
+When a user signs up through the **SELF Super-App**, we automatically:
+1. ✅ Provision their private cloud instance
+2. ✅ Deploy their SELF Chain node
+3. ✅ Set up their private LLM
+4. ✅ Configure their decentralized storage
+5. ✅ Manage all infrastructure
 
-## Architecture Principles
+**Users get their cloud automatically. Developers don't provision anything.**
 
-### 1. **User Sovereignty**
-- Your data never leaves your instance
-- Your AI model is completely private
-- No shared resources between users
-- Full control over your digital life
+### What Developers Do
+As a developer, you:
+1. 🔨 Build apps that interact with user instances
+2. 🔨 Access user data (with permission) via APIs
+3. 🔨 Create experiences using their private LLM
+4. 🔨 Store data in their sovereign storage
 
-### 2. **Automatic Provisioning**
-- Sign up in the Super-App
-- Cloud resources provisioned in < 30 seconds
-- No technical knowledge required
-- Instant access to your private AI assistant
-
-### 3. **Resource Isolation**
-- Dedicated compute resources
-- Isolated storage
-- Private networking
-- Secure boundaries between users
-
-## What's Included in Your Cloud Instance
-
-Each user's private cloud includes:
-
-### SELF Chain Node
-- Participates in the blockchain network
-- Validates transactions using Proof-of-AI (PoAI)
-- Stores your personal data securely
-- Manages your digital identity
-
-### Private LLM (Large Language Model)
-- Your own AI assistant that learns from you
-- Complete privacy - conversations never leave your instance
-- Customizable based on your preferences
-- No data sharing with other users or SELF
-
-### Decentralized Storage
-- OrbitDB for distributed data
-- IPFS for content addressing
-- Encrypted personal storage
-- Automatic backups
-
-### Monitoring & Analytics
-- Track your resource usage (Shine %)
-- Performance metrics
-- Health monitoring
-- Usage insights
-
-## Service Tiers
-
-### Free Tier
-- **Resources**: Basic CPU and memory allocation
-- **AI Model**: Efficient small language model
-- **Storage**: 10GB personal storage
-- **Bandwidth**: 50GB monthly transfer
-- **Perfect for**: Getting started, personal use
-
-### Growth Tier
-- **Resources**: Enhanced CPU and memory
-- **AI Model**: Larger, more capable models
-- **Storage**: 50GB personal storage
-- **Bandwidth**: 200GB monthly transfer
-- **Perfect for**: Active users, content creators
-
-### Pro Tier
-- **Resources**: Premium compute resources
-- **AI Model**: State-of-the-art models
-- **Storage**: 200GB personal storage
-- **Bandwidth**: 1TB monthly transfer
-- **Perfect for**: Professionals, businesses
-
-### Enterprise Tier
-- **Resources**: Dedicated high-performance infrastructure
-- **AI Model**: Custom models and fine-tuning
-- **Storage**: Unlimited
-- **Bandwidth**: Unlimited
-- **Perfect for**: Organizations, high-demand users
-
-## Security & Privacy
-
-### Isolation Guarantees
-- Hardware-level separation between users
-- Encrypted data at rest and in transit
-- No cross-user data access possible
-- Regular security audits
-
-### Compliance
-- GDPR compliant by design
-- Data residency options
-- Right to deletion
-- Full data portability
-
-### Zero-Knowledge Architecture
-- SELF cannot access your data
-- End-to-end encryption
-- Private key management
-- Cryptographic proofs
-
-## Migration Path
-
-As you grow, seamlessly upgrade your resources:
-
-1. **Monitor Usage**: Track your Shine % in the app
-2. **Upgrade Notification**: Get alerted when you're reaching limits
-3. **One-Click Upgrade**: Upgrade tier without downtime
-4. **Instant Resources**: Additional resources available immediately
-
-## Developer Integration
-
-### API Access
-Developers can integrate with the provisioning system:
-
-```javascript
-// Example: Provision a new user instance
-const response = await selfChain.provision({
-  userId: 'user123',
-  tier: 'free',
-  region: 'us-east'
-});
-
-// Returns
-{
-  success: true,
-  instanceId: 'inst_abc123',
-  endpoints: {
-    api: 'https://user123.api.self.app',
-    websocket: 'wss://user123.ws.self.app'
-  }
-}
-```
-
-### Webhooks
-Get notified of provisioning events:
-- `instance.created`
-- `instance.upgraded`
-- `instance.suspended`
-- `instance.deleted`
-
-### SDKs Available
-- JavaScript/TypeScript
-- Python
-- Go
-- Rust
-
-## Future Enhancements
-
-### Bring Your Own Cloud (BYOC)
-- Use your existing AWS/GCP/Azure account
-- Maintain full infrastructure control
-- SELF provides orchestration only
-
-### Edge Computing
-- Deploy instances closer to you
-- Reduced latency
-- Enhanced performance
-- Global presence
-
-### Federation
-- Connect with other SELF users
-- Maintain privacy boundaries
-- Collaborative features
-- Decentralized social
-
-## Getting Started
-
-1. **Download the SELF Super-App** (Coming Soon)
-2. **Create Your Account**
-3. **Automatic Provisioning** begins
-4. **Access Your Private Cloud** in seconds
-
-For developers looking to build on SELF Chain or integrate with our cloud infrastructure, see our [Developer Guide](../Developer%20Resources/Getting_Started_Testnet.md).
-
-## Technical Specifications
-
-### Minimum Resources (Free Tier)
-- CPU: 0.5 vCPU
-- Memory: 512MB - 1GB
-- Storage: 10GB
-- Network: 1Gbps shared
-
-### Recommended Resources (Growth Tier)
-- CPU: 1-2 vCPU
-- Memory: 2-4GB
-- Storage: 50GB
-- Network: 10Gbps shared
-
-### Performance Targets
-- Provisioning Time: < 30 seconds
-- API Response Time: < 100ms
-- LLM Inference: < 2 seconds
-- Uptime: 99.9%
+**You build on top of the infrastructure, you don't create it.**
 
 ---
 
-*Note: This document describes the architecture and goals of the SELF Chain cloud infrastructure. Specific implementation details may vary as we optimize for performance, cost, and user experience.*
+## For Users: Your Private Cloud
+
+When you sign up for SELF through our Super-App, you automatically get:
+
+### Your Own Private Universe
+- **Dedicated Resources**: CPU, memory, and storage just for you
+- **Private AI Assistant**: An LLM that learns from you and never shares your data
+- **Blockchain Node**: Participate in the network and earn rewards
+- **Sovereign Storage**: Your data, encrypted and under your control
+
+### Complete Privacy
+- Your conversations never leave your instance
+- Your data is never accessible to SELF or other users
+- End-to-end encryption by default
+- You own your digital life
+
+### Service Tiers
+
+#### Free Tier
+- Get started with basic resources
+- Small but capable AI model
+- 10GB storage
+- Perfect for personal use
+
+#### Growth Tier ($XX/month)
+- More powerful AI models
+- 50GB storage
+- Faster responses
+- Great for creators
+
+#### Pro Tier ($XX/month)
+- Premium AI capabilities
+- 200GB storage
+- Priority performance
+- Ideal for professionals
+
+#### Enterprise
+- Custom resources
+- Dedicated support
+- SLA guarantees
+- Built for organizations
+
+---
+
+## For Developers: Building on SELF
+
+### You Don't Manage Infrastructure
+
+**SELF handles:**
+- ❌ Server provisioning
+- ❌ Docker containers
+- ❌ Cloud accounts
+- ❌ Resource allocation
+- ❌ Scaling
+- ❌ Monitoring
+
+**You focus on:**
+- ✅ Building great apps
+- ✅ Creating user experiences
+- ✅ Integrating with user instances
+- ✅ Respecting user privacy
+
+### How to Build Apps for SELF Users
+
+#### 1. User Authentication
+Users log in with their SELF account:
+```javascript
+// User authorizes your app
+const auth = await SELF.authenticate({
+  appId: 'your-app-id',
+  permissions: ['ai:chat', 'storage:read']
+});
+```
+
+#### 2. Interact with User's Private LLM
+```javascript
+// Chat with user's private AI (with permission)
+const response = await auth.ai.chat({
+  message: "Help me plan my day",
+  context: "productivity"
+});
+```
+
+#### 3. Store in User's Sovereign Storage
+```javascript
+// Save to user's private storage (with permission)
+await auth.storage.save({
+  key: 'app-data',
+  value: { preferences: {...} },
+  encrypted: true
+});
+```
+
+### What You Can Build
+
+#### ✅ Apps That Enhance User's AI
+- Custom AI personalities
+- Specialized knowledge bases
+- AI-powered tools
+- Workflow automation
+
+#### ✅ Privacy-Preserving Services
+- Encrypted messaging using user's instance
+- Private document analysis
+- Secure collaboration tools
+- Personal data insights
+
+#### ✅ Decentralized Applications
+- Social networks where users own their data
+- Content platforms with user sovereignty
+- Marketplaces with privacy
+- Gaming with persistent user state
+
+### What You Cannot Do
+
+#### ❌ Access Without Permission
+- Cannot read user data without explicit consent
+- Cannot use their AI without authorization
+- Cannot bypass privacy controls
+- Cannot see other users' data
+
+#### ❌ Provision Infrastructure
+- Cannot create user instances (SELF does this)
+- Cannot manage cloud resources
+- Cannot access underlying servers
+- Cannot modify user's node
+
+---
+
+## Getting Started as a Developer
+
+### 1. Get Testnet Access
+```bash
+# Request testnet developer account
+curl -X POST https://testnet.self.app/developers/register \
+  -d '{"email": "dev@example.com", "project": "My App"}'
+```
+
+### 2. Install SDK
+```bash
+npm install @selfchain/sdk
+```
+
+### 3. Build Your First App
+```javascript
+import { SELFClient } from '@selfchain/sdk';
+
+const client = new SELFClient({
+  appId: 'your-app-id',
+  environment: 'testnet'
+});
+
+// Your app interacts with authorized user instances
+```
+
+### 4. Test Locally
+Use our testnet to develop without real users:
+- Get test user credentials
+- Simulate user interactions
+- Test permission flows
+- Validate privacy model
+
+---
+
+## Architecture Details
+
+### User Instance Components
+
+Each user's cloud instance includes:
+
+```
+User's Private Cloud Instance
+├── SELF Chain Node (Blockchain participation)
+├── Private LLM (AI assistant)
+├── OrbitDB (Decentralized database)
+├── IPFS Node (Distributed storage)
+└── API Gateway (Secure access point)
+```
+
+### Security Boundaries
+
+```
+┌─────────────────────────────────┐
+│   User A's Instance (Isolated)  │
+│  ┌─────────────┐ ┌────────────┐ │
+│  │ Private LLM │ │   Storage  │ │
+│  └─────────────┘ └────────────┘ │
+└─────────────────────────────────┘
+         ⚡ No Connection ⚡
+┌─────────────────────────────────┐
+│   User B's Instance (Isolated)  │
+│  ┌─────────────┐ ┌────────────┐ │
+│  │ Private LLM │ │   Storage  │ │
+│  └─────────────┘ └────────────┘ │
+└─────────────────────────────────┘
+```
+
+### Developer Access Model
+
+```
+Your App → SELF SDK → User Authorization → User's Instance API
+                           ↓
+                    Permission Granted
+                           ↓
+                    Scoped Access Only
+```
+
+---
+
+## Summary
+
+### For Users
+- Sign up in SELF Super-App
+- Get automatic private cloud
+- Own your data and AI
+- Complete privacy
+
+### For Developers  
+- Build apps on top of user instances
+- Use SDK to interact with authorized users
+- Respect privacy and permissions
+- Focus on user experience, not infrastructure
+
+**Remember: SELF provisions and manages all infrastructure. Developers build experiences. Users own their digital lives.**
+
+---
+
+*Questions? Join our [Developer Discord](https://discord.gg/selfchain) or check our [Developer Guide](./Developer-Integration.md)*
