@@ -341,10 +341,8 @@ To participate in consensus as a validator:
 
 ## Getting Help
 
-- **Discord**: Join #node-operators channel
-- **Forums**: https://forum.self.app
+- **Discord**: https://discord.gg/WdMdVpA4C8
 - **Issues**: https://github.com/SELF-Software/self-chain-public/issues
-- **Docs**: https://docs.self.app
 
 ---
 
