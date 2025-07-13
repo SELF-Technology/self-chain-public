@@ -700,14 +700,14 @@ button[class*="colorModeToggle"]:hover,
     opacity: 1 !important;
   }
   
-  /* Move Algolia search box left to prevent overlap with theme toggle */
+  /* Position search icon properly on mobile */
   .DocSearch {
-    margin-right: 90px !important;
+    margin-right: 0 !important;
   }
   
   /* Alternative selector if above doesn't work */
   [class*="searchBox"] {
-    margin-right: 90px !important;
+    margin-right: 0 !important;
   }
 }
 
