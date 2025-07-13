@@ -1,3 +1,4 @@
+<!---
 ---
 title: "SELF Documentation"
 description: "Creating the infrastructure for self-sovereign technology, privacy-first applications, and human-centric AI."
@@ -8,6 +9,7 @@ hide_title: true
 className: landing-page
 slug: /
 ---
+-->
 
 <div className="hero-section-wrapper">
   <div className="hero-section">
