@@ -1,69 +1,18 @@
 /**
- * Move the light/dark toggle to the top right navbar
- * Completely outside of the burger menu
+ * Hide any default theme toggle elements since we have a custom one in the footer
  */
 
-/* Already styled in custom.css */
-
-/* Move the toggle to the top right navbar */
+/* Hide any default theme toggle that might appear */
 .colorModeToggle,
 [class*="colorModeToggle"],
-[class*="toggleButton"] {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  margin-left: auto !important;
-  margin-right: 1rem !important;
-  z-index: 10;
-  opacity: 1 !important;
-  pointer-events: auto !important;
-}
-
-/* Ensure toggle is visible and clickable */
+[class*="toggleButton"],
 .react-toggle {
-  z-index: 100;
-  pointer-events: all !important;
-  opacity: 1 !important;
+  display: none !important;
 }
 
-/* Hide the toggle in the mobile sidebar since it's now in the top navbar */
-@media (max-width: 996px) {
-  /* Remove all color mode toggles from the mobile sidebar */
-  .navbar-sidebar [class*="colorModeToggle"],
-  .navbar-sidebar [class*="toggleButton"],
-  .navbar-sidebar .react-toggle,
-  .navbar-sidebar__brand [class*="colorModeToggle"],
-  .navbar-sidebar__brand [class*="toggleButton"],
-  .navbar-sidebar__brand .react-toggle,
-  .navbar-sidebar__items [class*="colorModeToggle"],
-  .navbar-sidebar__items [class*="toggleButton"],
-  .navbar-sidebar__items .react-toggle {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
-    position: absolute !important;
-    width: 0 !important;
-    height: 0 !important;
-    overflow: hidden !important;
-  }
-  
-  /* Also remove from the mobile sidebar header */
-  .navbar-sidebar [class*="navbarSidebarHeader"] [class*="colorModeToggle"],
-  .navbar-sidebar [class*="navbarSidebarHeader"] [class*="toggleButton"],
-  .navbar-sidebar [class*="navbarSidebarHeader"] .react-toggle {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
-    position: absolute !important;
-    width: 0 !important;
-    height: 0 !important;
-    overflow: hidden !important;
-  }
-  
-  /* Ensure the navbar toggle button doesn't overlap with our relocated toggle */
-  .navbar__toggle {
-    margin-right: 3.5rem;
-  }
+/* Also hide in mobile sidebar */
+.navbar-sidebar [class*="colorModeToggle"],
+.navbar-sidebar [class*="toggleButton"],
+.navbar-sidebar .react-toggle {
+  display: none !important;
 }
