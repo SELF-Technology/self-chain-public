@@ -31,8 +31,9 @@
   transition: color 0.2s ease;
 }
 
-.footer-theme-toggle:hover svg {
-  color: #fff;
+/* Dark theme styles */
+[data-theme='dark'] .footer-theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 [data-theme='dark'] .footer-theme-toggle svg {
@@ -41,6 +42,19 @@
 
 [data-theme='dark'] .footer-theme-toggle:hover svg {
   color: #fff;
+}
+
+/* Light theme styles */
+[data-theme='light'] .footer-theme-toggle:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='light'] .footer-theme-toggle svg {
+  color: #666;
+}
+
+[data-theme='light'] .footer-theme-toggle:hover svg {
+  color: #000;
 }
 
 /* Optional: Add a subtle separator before the theme toggle */
@@ -52,6 +66,10 @@
   background: rgba(255, 255, 255, 0.2);
   margin-right: 12px;
   vertical-align: middle;
+}
+
+[data-theme='light'] .footer-theme-toggle-wrapper::before {
+  background: rgba(0, 0, 0, 0.1);
 }
 
 /* Mobile adjustments */
