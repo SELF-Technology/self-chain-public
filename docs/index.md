@@ -51,7 +51,7 @@ SELF isn't just another blockchain or cryptocurrency. It's a complete reimaginin
 
 We're building technology that:
 - Operates without central servers or control points
-- Encrypts everything with quantum-resistant algorithms
+- Employs quantum-resistant algorithms that are regularly updated as the threat landscape evolves
 - Gives users true ownership of their digital assets
 - Creates economic incentives for privacy and decentralization
 
@@ -87,7 +87,7 @@ SELF introduces groundbreaking innovations:
 The world's first AI-powered blockchain consensus mechanism that uses distributed intelligence for validation.
 
 ### Quantum-Secure Architecture
-Built from the ground up with post-quantum cryptography, ensuring security against future threats.
+Built with post-quantum cryptography that continuously evolves to address emerging quantum threats.
 
 ### True Decentralization
 No corporate servers, no single points of failure - just a pure peer-to-peer network.

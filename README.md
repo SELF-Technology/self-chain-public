@@ -116,7 +116,7 @@ graph TB
 
 SELF Chain implements defense-in-depth security:
 
-- ✅ **Post-Quantum Cryptography**: Future-proof against quantum attacks
+- ✅ **Post-Quantum Cryptography**: Continuously evolving defenses against quantum threats
 - ✅ **AI-Powered Threat Detection**: Real-time anomaly detection
 - ✅ **Multi-Layer Validation**: Defense at every level
 - ✅ **Security Audits**: Regular third-party audits
