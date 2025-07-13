@@ -1,44 +1,66 @@
-.custom-theme-toggle-wrapper {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+/* Footer theme toggle - smaller, inline with social icons */
+.footer-theme-toggle-wrapper {
+  display: inline-flex;
+  vertical-align: middle;
+  margin-left: 12px;
 }
 
-.custom-theme-toggle {
+.footer-theme-toggle {
   background: transparent;
-  border: 1px solid var(--ifm-color-emphasis-300);
-  border-radius: 8px;
-  padding: 8px;
+  border: none;
+  padding: 0;
   cursor: pointer;
   transition: all 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: relative;
 }
 
-.custom-theme-toggle:hover {
-  background: var(--ifm-color-emphasis-100);
-  border-color: var(--ifm-color-emphasis-400);
+.footer-theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 
-.custom-theme-toggle svg {
-  width: 20px;
+.footer-theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  color: #999;
+  transition: color 0.2s ease;
+}
+
+.footer-theme-toggle:hover svg {
+  color: #fff;
+}
+
+[data-theme='dark'] .footer-theme-toggle svg {
+  color: #999;
+}
+
+[data-theme='dark'] .footer-theme-toggle:hover svg {
+  color: #fff;
+}
+
+/* Optional: Add a subtle separator before the theme toggle */
+.footer-theme-toggle-wrapper::before {
+  content: '';
+  display: inline-block;
+  width: 1px;
   height: 20px;
-  color: var(--ifm-color-emphasis-600);
-}
-
-[data-theme='dark'] .custom-theme-toggle svg {
-  color: var(--ifm-color-emphasis-700);
+  background: rgba(255, 255, 255, 0.2);
+  margin-right: 12px;
+  vertical-align: middle;
 }
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
-  .custom-theme-toggle-wrapper {
-    position: static;
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: center;
+  .footer-theme-toggle-wrapper {
+    margin-left: 8px;
+  }
+  
+  .footer-theme-toggle-wrapper::before {
+    margin-right: 8px;
   }
 }

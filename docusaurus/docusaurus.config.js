@@ -161,7 +161,6 @@ const config = {
     footer: {
       style: 'dark',
       copyright: `
-        <div class="custom-theme-toggle-wrapper"></div>
         <div class="footer-social-icons">
           <a href="https://discord.gg/WdMdVpA4C8" target="_blank" rel="noopener noreferrer" aria-label="Discord">
             <i class="fab fa-discord"></i>
@@ -184,6 +183,7 @@ const config = {
           <a href="https://www.linkedin.com/company/selftechnology/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <i class="fab fa-linkedin"></i>
           </a>
+          <div class="footer-theme-toggle-wrapper"></div>
         </div>
         <div class="footer-copyright-text">Copyright © ${new Date().getFullYear()} SELF</div>
       `,

@@ -7,10 +7,10 @@ function FooterWrapper(props) {
 
   React.useEffect(() => {
     // Add theme toggle to footer after it's rendered
-    const footerThemeToggleWrapper = document.querySelector('.custom-theme-toggle-wrapper');
+    const footerThemeToggleWrapper = document.querySelector('.footer-theme-toggle-wrapper');
     if (footerThemeToggleWrapper && !footerThemeToggleWrapper.hasChildNodes()) {
       const button = document.createElement('button');
-      button.className = 'custom-theme-toggle';
+      button.className = 'footer-theme-toggle';
       button.setAttribute('aria-label', 'Toggle theme');
       button.setAttribute('title', `Switch to ${colorMode === 'dark' ? 'light' : 'dark'} mode`);
       
