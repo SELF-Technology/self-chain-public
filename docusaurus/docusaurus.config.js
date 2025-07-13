@@ -143,6 +143,8 @@ const config = {
         alt: 'SELF Logo',
         src: 'img/SELF-BLACK.png',
         srcDark: 'img/SELFwhitelogo.webp',
+        href: 'https://self.app',
+        target: '_self', // Opens in same tab
       },
       hideOnScroll: false,
       items: [
