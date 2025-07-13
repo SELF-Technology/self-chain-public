@@ -22,11 +22,12 @@ footer.footer {
   max-width: 100% !important;
 }
 
-/* Social icons container - left aligned in flex layout */
+/* Social icons container - centered */
 .footer-social-icons {
   display: flex;
   gap: 12px;
   align-items: center;
+  justify-content: center;
 }
 
 /* Social icon links */
