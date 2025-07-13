@@ -134,7 +134,7 @@ const config = {
     } : {}),
     colorMode: {
       defaultMode: 'dark',
-      disableSwitch: false,
+      disableSwitch: true, // Theme toggle now in footer only
       respectPrefersColorScheme: false,
     },
     navbar: {
