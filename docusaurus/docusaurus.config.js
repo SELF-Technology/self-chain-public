@@ -150,12 +150,6 @@ const config = {
           type: 'search',
           position: 'right',
         },
-        {
-          href: 'https://github.com/SELF-Technology/self-chain-public',
-          position: 'right',
-          className: 'header-github-link',
-          'aria-label': 'GitHub repository',
-        },
       ],
     },
     footer: {
