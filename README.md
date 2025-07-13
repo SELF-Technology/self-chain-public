@@ -198,11 +198,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 - 🐦 [Twitter/X](https://x.com/self_hq)
 - 📺 [YouTube](https://www.youtube.com/@selfcommunityvideos)
 
-### Community Projects
-- 🔍 [SELF Explorer](https://explorer.self.app) (Coming Soon)
-- 🔧 [SELF Tools](https://github.com/topics/self-chain)
-- 📱 [Mobile Wallets](https://docs.self.app/wallets)
-
 ## 📜 License
 
 This project is licensed under the MIT License - see [LICENSE](LICENSE) for details.
