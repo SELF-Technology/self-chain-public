@@ -183,7 +183,13 @@ const config = {
           </div>
           <div class="footer-theme-toggle-wrapper"></div>
         </div>
-        <div class="footer-copyright-text">Copyright © ${new Date().getFullYear()} SELF</div>
+        <div class="footer-copyright-text">
+          © SELF ${new Date().getFullYear()} | 
+          <a href="https://self.app/terms" target="_blank">Terms & Conditions</a> | 
+          <a href="https://self.app/cookies" target="_blank">Cookie Policy</a> | 
+          <a href="https://self.app/privacy" target="_blank">Privacy Policy</a> | 
+          <a href="mailto:info@self.app?subject=Mail%20from%20site">Contact Us</a>
+        </div>
       `,
     },
   },
