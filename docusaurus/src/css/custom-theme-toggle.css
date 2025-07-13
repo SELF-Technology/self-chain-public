@@ -1,14 +1,21 @@
-/* Footer theme toggle - smaller, inline with social icons */
+/* Footer content wrapper - flex container for social icons and theme toggle */
+.footer-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+/* Footer theme toggle - positioned far right like Vercel */
 .footer-theme-toggle-wrapper {
-  display: inline-flex;
-  vertical-align: middle;
-  margin-left: 12px;
+  display: flex;
+  align-items: center;
 }
 
 .footer-theme-toggle {
   background: transparent;
   border: none;
-  padding: 0;
+  padding: 6px;
   cursor: pointer;
   transition: all 0.2s ease;
   display: flex;
@@ -16,7 +23,7 @@
   justify-content: center;
   width: 32px;
   height: 32px;
-  border-radius: 50%;
+  border-radius: 6px;
   position: relative;
 }
 
@@ -57,28 +64,14 @@
   color: #000;
 }
 
-/* Optional: Add a subtle separator before the theme toggle */
-.footer-theme-toggle-wrapper::before {
-  content: '';
-  display: inline-block;
-  width: 1px;
-  height: 20px;
-  background: rgba(255, 255, 255, 0.2);
-  margin-right: 12px;
-  vertical-align: middle;
-}
-
-[data-theme='light'] .footer-theme-toggle-wrapper::before {
-  background: rgba(0, 0, 0, 0.1);
-}
-
 /* Mobile adjustments */
 @media (max-width: 768px) {
-  .footer-theme-toggle-wrapper {
-    margin-left: 8px;
+  .footer-content-wrapper {
+    flex-direction: column;
+    gap: 16px;
   }
   
-  .footer-theme-toggle-wrapper::before {
-    margin-right: 8px;
+  .footer-social-icons {
+    margin-bottom: 0;
   }
 }
