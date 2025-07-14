@@ -5,17 +5,17 @@
  */
 
 /* External CSS now loaded via link tags for better performance */
-@import './category-pages.css';
-@import './breadcrumb-fix.css';
-@import './social-icons.css';
-@import './footer-social.css';
-@import './theme-toggle-fix.css';
-@import './custom-theme-toggle.css';
+@import "./category-pages.css";
+@import "./breadcrumb-fix.css";
+@import "./social-icons.css";
+@import "./footer-social.css";
+@import "./theme-toggle-fix.css";
+@import "./custom-theme-toggle.css";
 /* @import './mobile-performance.css'; */
 
 @font-face {
-  font-family: 'THICCCBOI';
-  src: url('/fonts/thicccboi/THICCCBOI-Regular.woff2') format('woff2');
+  font-family: "THICCCBOI";
+  src: url("/fonts/thicccboi/THICCCBOI-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -25,8 +25,8 @@
   line-gap-override: 0%;
 }
 @font-face {
-  font-family: 'THICCCBOI';
-  src: url('/fonts/thicccboi/THICCCBOI-Bold.woff2') format('woff2');
+  font-family: "THICCCBOI";
+  src: url("/fonts/thicccboi/THICCCBOI-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -37,13 +37,17 @@
 }
 
 body {
-  font-family: 'THICCCBOI', sans-serif;
+  font-family: "THICCCBOI", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'THICCCBOI', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "THICCCBOI", sans-serif;
 }
-
 
 /* You can override the default Infima variables here. */
 .video-container {
@@ -77,8 +81,6 @@ h1, h2, h3, h4, h5, h6 {
   --docusaurus-highlighted-code-line-bg: #121212(0, 0, 0, 0.1);
 }
 
-
-
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 html[data-theme="dark"] {
   --ifm-color-primary: #eff1f6;
@@ -105,12 +107,12 @@ html[data-theme="dark"] {
 
 /* Ensure both logos are loaded */
 .navbar__brand::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 0;
   overflow: hidden;
-  background-image: url('/img/SELF-BLACK.png'), url('/img/SELFwhitelogo.webp');
+  background-image: url("/img/SELF-BLACK.png"), url("/img/SELFwhitelogo.webp");
 }
 
 details,
@@ -280,23 +282,23 @@ details > summary:hover::after {
 
 /* First button - Roadmap */
 .button-container a:nth-child(1) {
-  background-color: #1F35FF;
+  background-color: #1f35ff;
   color: white !important;
-  border-color: #1F35FF;
+  border-color: #1f35ff;
 }
 
 .button-container a:nth-child(1):hover {
-  background-color: #0658F7;
-  border-color: #0658F7;
+  background-color: #0658f7;
+  border-color: #0658f7;
   transform: translateY(-1px);
   box-shadow: 0 2px 8px rgba(31, 53, 255, 0.25);
 }
 
 /* Second button - Constellation */
 .button-container a:nth-child(2) {
-  background-color: #525B72;
+  background-color: #525b72;
   color: white !important;
-  border-color: #525B72;
+  border-color: #525b72;
 }
 
 .button-container a:nth-child(2):hover {
@@ -308,14 +310,14 @@ details > summary:hover::after {
 
 /* Third button - Open Source */
 .button-container a:nth-child(3) {
-  background-color: #A0A9BD;
+  background-color: #a0a9bd;
   color: white !important;
-  border-color: #A0A9BD;
+  border-color: #a0a9bd;
 }
 
 .button-container a:nth-child(3):hover {
-  background-color: #8B94A8;
-  border-color: #8B94A8;
+  background-color: #8b94a8;
+  border-color: #8b94a8;
   transform: translateY(-1px);
   box-shadow: 0 2px 8px rgba(160, 169, 189, 0.25);
 }
@@ -394,7 +396,7 @@ html[data-theme="dark"] .opensource-links a {
 /* Hero section styles - Respects sidebar boundaries */
 .hero-section-wrapper {
   position: relative;
-  background-image: url('/img/SELF GALAXY transparent 620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp');
+  background-image: url("/img/SELF GALAXY transparent 620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp");
   background-position: center center; /* Center the galaxy for better alignment */
   background-repeat: no-repeat;
   background-size: cover;
@@ -407,25 +409,27 @@ html[data-theme="dark"] .opensource-links a {
 
 /* Add overlay for better text readability */
 .hero-section-wrapper::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to right, 
-    rgba(255,255,255,0.85) 0%, 
-    rgba(255,255,255,0.6) 50%, 
-    rgba(255,255,255,0) 70%
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.85) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 70%
   );
   z-index: 1;
 }
 
 html[data-theme="dark"] .hero-section-wrapper::before {
-  background: linear-gradient(to right, 
-    rgba(29,38,59,0.85) 0%, 
-    rgba(29,38,59,0.6) 50%, 
-    rgba(29,38,59,0) 70%
+  background: linear-gradient(
+    to right,
+    rgba(29, 38, 59, 0.85) 0%,
+    rgba(29, 38, 59, 0.6) 50%,
+    rgba(29, 38, 59, 0) 70%
   );
 }
 
@@ -475,6 +479,55 @@ html[data-theme="dark"] .hero-tagline {
   display: none;
 }
 
+/* Make Technology section headings same size as Our Purpose section */
+#technology ~ h3,
+#technology ~ div h3,
+[id="technology"] ~ h3,
+[id="technology"] ~ div h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Left-justify community section content */
+.community-section {
+  text-align: left !important;
+}
+
+.community-section h3 {
+  text-align: left !important;
+  margin-left: 0 !important;
+}
+
+.community-section p {
+  text-align: left !important;
+  margin-left: 0 !important;
+}
+
+/* Move Developer Resources box to the left and left-justify text */
+.opensource-links {
+  text-align: left !important;
+  margin-left: 0 !important;
+  padding-left: 2rem !important;
+}
+
+.opensource-links h4 {
+  text-align: left !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+.opensource-links ul {
+  text-align: left !important;
+  margin-left: 0 !important;
+  padding-left: 3.5rem !important;
+}
+
+.opensource-links li {
+  text-align: left !important;
+}
+
 /* Remove breadcrumb transparency - keep default background */
 
 /* Remove negative margin that was pulling content up */
@@ -496,44 +549,44 @@ html[data-theme="dark"] .breadcrumbs__item {
   .navbar-sidebar {
     z-index: 1000 !important;
   }
-  
+
   /* Make sure the backdrop works properly */
   .navbar-sidebar__backdrop {
     z-index: 999 !important;
   }
-  
+
   /* Hide logo in mobile sidebar */
   .navbar-sidebar__brand .navbar__logo,
   .navbar-sidebar__brand img {
     display: none !important;
   }
-  
+
   /* Hide the X close button in mobile sidebar */
   .navbar-sidebar__close {
     display: none !important;
   }
-  
+
   /* Hide "Back to main menu" text */
   .navbar-sidebar__back {
     display: none !important;
   }
-  
+
   /* Move logo closer to burger menu on mobile/tablet */
   .navbar__brand {
     margin-left: 0 !important;
     margin-right: auto !important;
     padding-left: 0 !important;
   }
-  
+
   .navbar__logo {
     margin: 0 !important;
   }
-  
+
   /* Reduce gap between burger menu and logo */
   .navbar__toggle {
     margin-right: 0.5rem !important;
   }
-  
+
   /* Adjust navbar inner spacing */
   .navbar__inner {
     padding: 0 0.5rem !important;
@@ -555,11 +608,11 @@ html[data-theme="dark"] .breadcrumbs__item {
     align-items: flex-start; /* Align content to top */
     padding-top: 6rem; /* Add top padding */
   }
-  
+
   .hero-title {
     font-size: clamp(2rem, 5vw + 1rem, 3rem);
   }
-  
+
   .hero-section-wrapper {
     background-attachment: scroll; /* Better performance on mobile */
     background-size: 150%; /* Moderate zoom for tablet */
@@ -567,29 +620,28 @@ html[data-theme="dark"] .breadcrumbs__item {
     margin-top: -2rem; /* Less negative margin on mobile */
     min-height: 70vh;
   }
-  
+
   .hero-section-wrapper::before {
     background: radial-gradient(
       ellipse at center top,
-      rgba(255,255,255,0.9) 0%,
-      rgba(255,255,255,0.8) 30%,
-      rgba(255,255,255,0.6) 50%,
-      rgba(255,255,255,0.4) 70%,
-      rgba(255,255,255,0.2) 100%
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.8) 30%,
+      rgba(255, 255, 255, 0.6) 50%,
+      rgba(255, 255, 255, 0.4) 70%,
+      rgba(255, 255, 255, 0.2) 100%
     );
   }
-  
+
   html[data-theme="dark"] .hero-section-wrapper::before {
     background: radial-gradient(
       ellipse at center top,
-      rgba(29,38,59,0.9) 0%,
-      rgba(29,38,59,0.8) 30%,
-      rgba(29,38,59,0.6) 50%,
-      rgba(29,38,59,0.4) 70%,
-      rgba(29,38,59,0.2) 100%
+      rgba(29, 38, 59, 0.9) 0%,
+      rgba(29, 38, 59, 0.8) 30%,
+      rgba(29, 38, 59, 0.6) 50%,
+      rgba(29, 38, 59, 0.4) 70%,
+      rgba(29, 38, 59, 0.2) 100%
     );
   }
-  
 }
 
 @media (max-width: 768px) {
@@ -598,7 +650,7 @@ html[data-theme="dark"] .breadcrumbs__item {
     min-height: 60vh;
     padding-top: 4rem;
   }
-  
+
   .hero-content {
     /* Remove glass box effect on mobile */
     background: transparent;
@@ -607,21 +659,21 @@ html[data-theme="dark"] .breadcrumbs__item {
     backdrop-filter: none;
     box-shadow: none;
   }
-  
+
   html[data-theme="dark"] .hero-content {
     background: transparent;
     box-shadow: none;
   }
-  
+
   .hero-title {
     font-size: clamp(1.75rem, 4vw + 0.5rem, 2.5rem);
     margin-bottom: 1rem;
   }
-  
+
   .hero-tagline {
     font-size: clamp(1rem, 2vw + 0.5rem, 1.25rem);
   }
-  
+
   .hero-section-wrapper {
     background-size: 200%; /* Zoom in to make galaxy prominent */
     background-position: center center; /* Center the galaxy for transparent version */
@@ -629,21 +681,21 @@ html[data-theme="dark"] .breadcrumbs__item {
     margin-top: 0; /* Remove negative margin on mobile */
     padding-top: 0;
   }
-  
+
   /* Simplify overlay on mobile for better performance */
   .hero-section-wrapper::before {
     background: linear-gradient(
       to bottom,
-      rgba(255,255,255,0.5) 0%,
-      rgba(255,255,255,0.2) 100%
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.2) 100%
     );
   }
-  
+
   html[data-theme="dark"] .hero-section-wrapper::before {
     background: linear-gradient(
       to bottom,
-      rgba(29,38,59,0.5) 0%,
-      rgba(29,38,59,0.2) 100%
+      rgba(29, 38, 59, 0.5) 0%,
+      rgba(29, 38, 59, 0.2) 100%
     );
   }
 }
@@ -680,15 +732,17 @@ button[class*="colorModeToggle"]:hover,
 }
 
 .header-github-link::before {
-  content: '';
+  content: "";
   width: 24px;
   height: 24px;
   display: flex;
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
+    no-repeat;
 }
 
-[data-theme='light'] .header-github-link::before {
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='black' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat;
+[data-theme="light"] .header-github-link::before {
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='black' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
+    no-repeat;
 }
 
 /* Mobile navbar adjustments */
@@ -699,12 +753,12 @@ button[class*="colorModeToggle"]:hover,
     visibility: visible !important;
     opacity: 1 !important;
   }
-  
+
   /* Position search icon properly on mobile */
   .DocSearch {
     margin-right: 0 !important;
   }
-  
+
   /* Alternative selector if above doesn't work */
   [class*="searchBox"] {
     margin-right: 0 !important;
@@ -733,8 +787,8 @@ button[class*="colorModeToggle"]:hover,
 
 /* GitHub icon using Font Awesome */
 .header-github-link::before {
-  content: '\f09b';
-  font-family: 'Font Awesome 6 Brands';
+  content: "\f09b";
+  font-family: "Font Awesome 6 Brands";
   font-size: 28px;
   font-weight: 400;
   display: block;
