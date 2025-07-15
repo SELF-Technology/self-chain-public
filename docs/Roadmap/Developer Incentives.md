@@ -1,17 +1,17 @@
 ---
-sidebar_label: "🛠️ SDK"
-sidebar_position: 5
+sidebar_label: "🎁 Developer Incentives"
+sidebar_position: 6
 ---
 
 # Developer Incentives
 
-In time, or developer incentives program is set to launch. We intend to reward developers and teams who build on our cutting-edge, privacy-first, and AI-powered infrastructure. 
+We intend to reward developers and teams who build on our cutting-edge, privacy-first, and AI-powered infrastructure. 
 
 Here are some initial ideas for the program.
 
 **Microgrants for tools, docs and tutorials**
 
-- For community contributors, tool builders, educators.
+- For community contributors, tool builders, and educators.
 - Bounties for specific bug fixes or features. Fast review process.   
 - Lowers the barrier to contribution.
 
@@ -23,10 +23,10 @@ Here are some initial ideas for the program.
 
 **Open-ended proposals**
 
-- Developers apply through form and the team evaluates the proposal.
+- Developers apply through a form, and the team evaluates the proposal
 - The SELF team offers support and guidance throughout the process
 
-**List of suggested applications to be created by external developer or in-house**
+**List of suggested applications to be created by an external developer or in-house**
 
 - The SELF team offers various suggestions for developers
 - The SELF team offers support and guidance throughout the process
@@ -38,19 +38,19 @@ Here are some initial ideas for the program.
 
 **Secure Document Storage and Sharing**
 
-- Store documents on the blockchain with encryption, share securely via the messenger, and use AI to organize them.
+- Store documents on the blockchain with encryption, share securely via SELF Messenger, and use SELF AI to organise them.
 
-**Decentralized Freelance Marketplace**
+**Decentralised Freelance Marketplace**
 
-- A platform where freelancers and clients connect, with smart contracts managing payments and the AI matching skills, using the messenger for communication.
+- A platform where freelancers and clients connect, with smart contracts managing payments and the AI matching skills, using SELF Messenger for communication.
 
 **Decentralised Finance Applications**
 
-- Access decentralised finance appliations directly through the SELF app.
+- Access decentralised finance applications directly through the SELF app.
 
 **Footprint - Next Generation Social Media**
 
-SELF will be working on behalf of each user, connecting two or more SELF’s together creates new opportunities including:
+SELF will be working on behalf of each user, connecting two or more SELFs creates new opportunities, including:
 
 - The ability to assist in planning collaborative adventures and journeys.
 
