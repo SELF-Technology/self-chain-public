@@ -13,6 +13,58 @@
 @import "./custom-theme-toggle.css";
 /* @import './mobile-performance.css'; */
 
+/* Global box-sizing to prevent width calculation issues */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Ensure no default margins on root elements */
+#__docusaurus {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Fixed positioning for navbar and sidebar */
+.navbar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 1000 !important;
+}
+
+/* Ensure main content has top padding to account for fixed navbar */
+.main-wrapper {
+  padding-top: var(--ifm-navbar-height) !important;
+}
+
+/* Fixed sidebar on desktop */
+@media (min-width: 997px) {
+  aside[class*="docSidebarContainer"],
+  .theme-doc-sidebar-container {
+    position: fixed !important;
+    top: var(--ifm-navbar-height) !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: var(--doc-sidebar-width, 300px) !important;
+    z-index: 100 !important;
+    overflow: hidden !important; /* Hide all scrollbars */
+  }
+  
+  /* Shift main content to account for fixed sidebar */
+  main[class*="docMainContainer"],
+  .main-wrapper main {
+    margin-left: var(--doc-sidebar-width, 300px) !important;
+  }
+  
+  /* Landing page should not have margin */
+  .landing-page main {
+    margin-left: 0 !important;
+  }
+}
+
 /* FAQ style test - comment out to disable */
 /* @import "./faq-style-test.css"; */
 
@@ -41,6 +93,7 @@
 
 body {
   font-family: "THICCCBOI", sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 h1,
@@ -113,10 +166,12 @@ html[data-theme='light'] {
 html[data-theme='dark'] {
   /* Darker gradient for entire page */
   background: 
-    linear-gradient(135deg, #050a15 0%, #0d1520 25%, #070d1a 50%, #0d1520 75%, #050a15 100%) !important;
+    linear-gradient(135deg, #0138ae 0%, #1b2e49 25%, #070d1a 50%, #0d1520 75%, #011c57 100%) !important;
   background-attachment: fixed !important;
   min-height: 100vh !important;
+  overflow-x: hidden !important; /* Prevent horizontal scroll */
 }
+
 
 html[data-theme='dark'] body {
   background: transparent !important;
@@ -476,12 +531,14 @@ html[data-theme="dark"] .opensource-links a {
 .hero-section-wrapper {
   position: relative; /* Keep in document flow */
   width: 100%; /* Full container width */
+  max-width: 100%; /* Prevent exceeding viewport */
   margin-left: 0; /* No negative margin */
   margin-top: 0; /* No negative margin */
   min-height: 100vh; /* Full viewport height */
   overflow: visible;
   padding: 0;
   z-index: 0; /* Ensure it stays behind navbar and sidebar */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 /* Add background as pseudo-element to extend it behind navbar */
@@ -490,20 +547,22 @@ html[data-theme="dark"] .opensource-links a {
   position: absolute;
   top: -60px; /* Extend 60px above to cover navbar area */
   left: 0;
-  right: 0;
   bottom: 0;
+  width: 100%; /* Use percentage width */
   background-image: url("/img/SELF GALAXY transparent 620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp");
-  background-position: center calc(50% + 40px); /* Move background down 40px */
+  background-position: center center; /* Center the galaxy */
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; /* Cover the full area */
   z-index: 0;
   pointer-events: none;
+  box-sizing: border-box;
 }
 
 /* Mobile-specific fix for galaxy background */
 @media (max-width: 768px) {
   .hero-section-wrapper::before {
-    background-attachment: scroll; /* Override fixed attachment on mobile */
+    background-attachment: scroll; /* Better performance on mobile */
+    background-position: calc(50% - 150px) center; /* Move 150px to the left */
   }
 }
 
@@ -662,9 +721,34 @@ html[data-theme="dark"] .breadcrumbs__item {
   z-index: 100 !important;
 }
 
+/* Sidebar z-index only, position handled by fixed rule */
 .theme-doc-sidebar-container {
   z-index: 50 !important;
-  position: relative !important;
+}
+
+/* Hide all scrollbars in sidebar */
+.theme-doc-sidebar-container,
+.theme-doc-sidebar-container *,
+aside[class*="docSidebarContainer"],
+aside[class*="docSidebarContainer"] *,
+.thin-scrollbar,
+[class*="thin-scrollbar"] {
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* IE/Edge */
+  overflow: -moz-scrollbars-none !important; /* Older Firefox */
+}
+
+/* Hide scrollbars for Chrome/Safari/Opera */
+.theme-doc-sidebar-container::-webkit-scrollbar,
+.theme-doc-sidebar-container *::-webkit-scrollbar,
+aside[class*="docSidebarContainer"]::-webkit-scrollbar,
+aside[class*="docSidebarContainer"] *::-webkit-scrollbar,
+.thin-scrollbar::-webkit-scrollbar,
+[class*="thin-scrollbar"]::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
 }
 
 /* Mobile menu fixes */
@@ -750,7 +834,8 @@ html[data-theme="dark"] .breadcrumbs__item {
 /* Tablet-specific styling (between mobile and desktop) */
 @media (min-width: 769px) and (max-width: 996px) {
   .hero-content {
-    padding-left: 60px; /* Adjust horizontal position for tablet */
+    padding-left: 0px; /* Move left by reducing padding from 60px to 0 */
+    margin-left: -30px; /* Additional left shift */
     margin-top: 0px; /* Move up by 200px from previous 200px position */
   }
 
@@ -777,8 +862,8 @@ html[data-theme="dark"] .breadcrumbs__item {
     background: transparent;
     padding: 0;
     padding-left: 0px; /* Moved left by reducing padding */
-    margin-left: -15px; /* Move left by additional 15px */
-    margin-top: 380px; /* Move hero text down by additional 70px on mobile */
+    margin-left: -25px; /* Move left by 15px to align with shifted galaxy */
+    margin-top: 320px; /* Move hero text down by additional 70px on mobile */
     margin-bottom: 100px; /* Create space below hero text on mobile */
     border-radius: 0;
     backdrop-filter: none;
@@ -858,12 +943,7 @@ button[class*="colorModeToggle"]:hover,
 
 /* Mobile navbar adjustments */
 @media (max-width: 996px) {
-  /* Make navbar sticky on mobile */
-  .navbar {
-    position: sticky !important;
-    top: 0 !important;
-    z-index: 100 !important;
-  }
+  /* Navbar already fixed by global rule */
 
   /* Ensure burger menu is visible on mobile */
   .navbar__toggle {
@@ -1047,18 +1127,16 @@ html[data-theme="dark"] div[class*="Layout"] {
 /* Let sidebar expand naturally without scrollbar */
 @media (min-width: 997px) {
   /* Remove height constraints to allow natural expansion */
+  /* Sidebar fixed positioning handled by rule at top of file */
   .theme-doc-sidebar-container {
-    position: sticky !important;
-    top: var(--ifm-navbar-height) !important;
-    height: auto !important; /* Allow natural height */
-    max-height: none !important; /* Remove max height constraint */
-    overflow: visible !important; /* No overflow scrolling */
+    height: calc(100vh - var(--ifm-navbar-height)) !important; /* Full height minus navbar */
     padding-bottom: 100px !important; /* Space for logo at bottom */
+    overflow: hidden !important; /* Ensure no scrollbars */
   }
   
   /* Let sidebar menu expand naturally */
   .theme-doc-sidebar-menu {
-    height: auto !important; /* Natural height */
+    height: auto !important; /* Let it expand naturally */
     overflow: visible !important; /* No scrolling */
     padding-bottom: 2rem !important;
     max-width: 100% !important;
@@ -1092,12 +1170,12 @@ html[data-theme="dark"] [class*="footer"] {
 }
 
 
-/* Galaxy image removed - using consistent gradient throughout */
+/* Galaxy image - centered on all devices */
 
-/* Shift galaxy image to the left on mobile */
+/* Shift galaxy image left on mobile */
 @media (max-width: 768px) {
   .hero-section-wrapper::before {
-    background-position: calc(50% - 160px) calc(50% + 40px) !important; /* Move left by 65px */
+    background-position: calc(50% - 150px) center !important; /* Move 150px to the left */
     background-attachment: scroll !important; /* Ensure scroll on mobile */
     display: block !important; /* Ensure it's displayed */
     opacity: 1 !important; /* Ensure it's visible */
@@ -1149,6 +1227,7 @@ html[data-theme="dark"] [class*="footer"] {
 .landing-page .container {
   max-width: 100% !important;
   padding: 0 !important;
+  overflow-x: hidden !important; /* Prevent content overflow */
 }
 
 .landing-page .col--3 {
@@ -1173,6 +1252,9 @@ html[data-theme="dark"] [class*="footer"] {
 }
 
 /* CRITICAL: Force main containers to be transparent in dark mode */
+html[data-theme="dark"] #__docusaurus {
+  overflow-x: hidden !important; /* Prevent horizontal scroll at root */
+}
 html[data-theme="dark"] #__docusaurus,
 html[data-theme="dark"] #__docusaurus > div,
 html[data-theme="dark"] .main-wrapper,
@@ -1189,6 +1271,7 @@ html[data-theme="dark"] .col {
 .main-wrapper {
   position: relative;
   z-index: 1;
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 /* Ensure sections use transparent background except hero-wrapper which has galaxy */
@@ -1213,21 +1296,24 @@ html[data-theme="dark"] pre {
 
 /* Reset all hero styling and use exact same as article */
 .landing-page .hero-section {
-  /* Use exact same container as markdown article */
+  /* Make hero section full width to match galaxy background */
+  max-width: 100%;
+  margin: 0;
+  padding: 6rem 0 12rem 0; /* Remove horizontal padding */
+}
+
+/* Add padding to inner content instead */
+.landing-page .hero-content {
   max-width: var(--ifm-container-width);
   margin: 0 auto;
-  padding: 6rem 2rem 12rem 2rem;
+  padding: 0 2rem;
+  text-align: left;
 }
 
 @media (min-width: 997px) {
-  .landing-page .hero-section {
-    padding: 6rem 3rem 12rem 3rem;
+  .landing-page .hero-content {
+    padding: 0 3rem;
   }
-}
-
-.landing-page .hero-content {
-  /* No extra styling */
-  text-align: left;
 }
 
 /* Platform status table full width */
