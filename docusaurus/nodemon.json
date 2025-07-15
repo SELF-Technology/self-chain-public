@@ -1,0 +1,12 @@
+{
+  "watch": ["src", "static", "docs", "blog"],
+  "ext": "js,jsx,json,css,md,mdx",
+  "ignore": ["node_modules", ".docusaurus", "build"],
+  "exec": "docusaurus start",
+  "delay": "500",
+  "verbose": true,
+  "events": {
+    "restart": "echo 'Docusaurus restarted due to file changes'",
+    "crash": "echo 'Docusaurus crashed, restarting in 2 seconds...' && sleep 2"
+  }
+}
