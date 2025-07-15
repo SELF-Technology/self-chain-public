@@ -117,37 +117,27 @@ No corporate servers, no single points of failure - just a pure peer-to-peer net
 
 ## Technology
 
-### [Architecture](Technical%20Docs/SELF%20Chain/SELF_Chain_Architecture)
+- [Architecture](Technical%20Docs/SELF%20Chain/SELF_Chain_Architecture)
 Complete technical overview of the SELF ecosystem
-
-### [Proof-of-AI](Technical%20Docs/PoAI/Proof-of-AI)
+- [Proof-of-AI](Technical%20Docs/PoAI/Proof-of-AI)
 Revolutionary consensus mechanism powered by AI
-
-### [Constellation](Technical%20Docs/Constellation/Overview)
+- [Constellation](Technical%20Docs/Constellation/Overview)
 Enterprise blockchain platform for launching sovereign chains
-
-### [Grid Compute](Technical%20Docs/Grid-Compute/Future-Vision)
+- [Grid Compute](Technical%20Docs/Grid-Compute/Future-Vision)
 Distributed computing network for AI and resources
-
-### [Integration](Technical%20Docs/Integration/Coinbase_Integration)
+- [Integration](Technical%20Docs/Integration/Coinbase_Integration)
 Connect with other systems and blockchains
-
-### [Performance](Technical%20Docs/Performance/Advanced_TPS_Optimization)
+- [Performance](Technical%20Docs/Performance/Advanced_TPS_Optimization)
 Scaling to 50,000 TPS and beyond
-
-### [Rewards](Technical%20Docs/PoAI/The%20Incentive)
+- [Rewards](Technical%20Docs/PoAI/The%20Incentive)
 Earn while using the SELF ecosystem
-
-### [SDK](Roadmap/SDK)
+- [SDK](Roadmap/SDK)
 Multi-language developer tools and libraries
-
-### [Security](Technical%20Docs/Security/Overview)
+- [Security](Technical%20Docs/Security/Overview)
 Post-quantum cryptography and privacy guarantees
-
-### [Storage](Technical%20Docs/Storage/Hybrid_Architecture)
+- [Storage](Technical%20Docs/Storage/Hybrid_Architecture)
 Hybrid distributed storage with IPFS and OrbitDB
-
-### [Validate](Technical%20Docs/Validate/)
+- [Validate](Technical%20Docs/Validate/)
 Participate in network consensus as a validator
 
 ---
@@ -178,8 +168,7 @@ Dive into our fully open source blockchain and contribute to the future:
 ### 🌟 Join the Revolution
 
 <div className="community-section">
-  <h3>Be Part of Something Bigger</h3>
-  <p>SELF isn't built by a corporation - it's built by people like you who believe in digital freedom. Whether you're a developer, designer, writer, or just someone who cares about privacy, there's a place for you here.</p>
+  <p>SELF isn't built by a faceless corporation - it's built by people like you who believe in digital freedom. Whether you're a developer, designer, writer, or just someone who cares about privacy, there's a place for you here.</p>
   
   <div className="opensource-links">
     <h4>🚀 Developer Resources</h4>
