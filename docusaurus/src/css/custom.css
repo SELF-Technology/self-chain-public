@@ -496,9 +496,15 @@ html[data-theme="dark"] .opensource-links a {
   background-position: center calc(50% + 40px); /* Move background down 40px */
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   z-index: 0;
   pointer-events: none;
+}
+
+/* Mobile-specific fix for galaxy background */
+@media (max-width: 768px) {
+  .hero-section-wrapper::before {
+    background-attachment: scroll; /* Override fixed attachment on mobile */
+  }
 }
 
 /* Keep the background pseudo-element visible */
@@ -1092,6 +1098,9 @@ html[data-theme="dark"] [class*="footer"] {
 @media (max-width: 768px) {
   .hero-section-wrapper::before {
     background-position: calc(50% - 160px) calc(50% + 40px) !important; /* Move left by 65px */
+    background-attachment: scroll !important; /* Ensure scroll on mobile */
+    display: block !important; /* Ensure it's displayed */
+    opacity: 1 !important; /* Ensure it's visible */
   }
 }
 
