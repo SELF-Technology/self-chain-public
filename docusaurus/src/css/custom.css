@@ -545,7 +545,7 @@ html[data-theme="dark"] .opensource-links a {
 .hero-content {
   /* Let landing page override this */
   padding-left: 0px; /* Reduced by 200px to move text left on desktop */
-  padding-top: 390px; /* Move hero text down on desktop - increased by 30px */
+  padding-top: 340px; /* Move hero text up by 50px from 390px */
 }
 
 .hero-title {
@@ -1182,14 +1182,18 @@ html[data-theme="dark"] .col {
   z-index: 1;
 }
 
-/* Ensure ALL sections use transparent background to show the main gradient */
-html[data-theme="dark"] .hero-section-wrapper,
+/* Ensure sections use transparent background except hero-wrapper which has galaxy */
 html[data-theme="dark"] .hero-section,
 html[data-theme="dark"] .landing-page,
 html[data-theme="dark"] section,
 html[data-theme="dark"] .main-wrapper {
   background: transparent !important;
   background-color: transparent !important;
+}
+
+/* Hero wrapper needs to show its pseudo-element background */
+html[data-theme="dark"] .hero-section-wrapper {
+  background: transparent;
 }
 
 /* Only allow specific elements to have backgrounds if needed */
