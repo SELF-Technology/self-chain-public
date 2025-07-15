@@ -125,13 +125,18 @@ const config = {
   ], */
 
   themeConfig: {
-    ...(process.env.ALGOLIA_APP_ID && process.env.ALGOLIA_SEARCH_API_KEY ? {
-      algolia: {
-        appId: process.env.ALGOLIA_APP_ID,
-        apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
-        indexName: 'self',
-      },
-    } : {}),
+    // Always include Algolia config - it will work when deployed with GitHub secrets
+    algolia: {
+      appId: process.env.ALGOLIA_APP_ID || 'BH4D9OD16A', // Fallback to demo app ID for local dev
+      apiKey: process.env.ALGOLIA_SEARCH_API_KEY || 'demo-api-key', // Fallback for local dev
+      indexName: 'self',
+      // Optional: Add contextualSearch to improve search relevance
+      contextualSearch: true,
+      // Optional: Add searchParameters for more control
+      searchParameters: {},
+      // Optional: Path to custom search page
+      searchPagePath: 'search',
+    },
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: true, // Theme toggle now in footer only

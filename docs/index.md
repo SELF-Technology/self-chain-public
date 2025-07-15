@@ -12,13 +12,11 @@ slug: /
 <div className="hero-section-wrapper">
   <div className="hero-section">
     <div className="hero-content">
-      <h1 className="hero-title">SELF Documentation</h1>
-      <p className="hero-tagline">Creating the infrastructure for self-sovereign technology, privacy-first applications, and human-centric AI.</p>
+      <h1 className="hero-title">SELF<br />Documentation</h1>
+      <p className="hero-tagline">Creating the infrastructure for self-sovereign technology,<br className="desktop-only" /> privacy-first applications, and human-centric AI.</p>
     </div>
   </div>
 </div>
-
----
 
 ## Background
 

@@ -13,6 +13,9 @@
 @import "./custom-theme-toggle.css";
 /* @import './mobile-performance.css'; */
 
+/* FAQ style test - comment out to disable */
+/* @import "./faq-style-test.css"; */
+
 @font-face {
   font-family: "THICCCBOI";
   src: url("/fonts/thicccboi/THICCCBOI-Regular.woff2") format("woff2");
@@ -90,15 +93,90 @@ html[data-theme="dark"] {
   --ifm-color-primary-light: #eff1f6;
   --ifm-color-primary-lighter: #eff1f6;
   --ifm-color-primary-lightest: #eff1f6;
-  --ifm-background-color: #1d263b;
-  --ifm-background-surface-color: #141b2b;
-  --docusaurus-highlighted-code-line-bg: #121212rgba(0, 0, 0, 0.3);
+  --ifm-background-color: transparent; /* Use gradient from html element */
+  --ifm-background-surface-color: rgba(15, 27, 46, 0.6); /* Semi-transparent navy */
+  --docusaurus-highlighted-code-line-bg: rgba(26, 35, 50, 0.5);
 }
 .redocusaurus pre {
   --ifm-background-color: initial;
 }
 
 /* Footer styles moved to footer-social.css */
+
+/* Set the base background color for the entire page */
+/* Base html background - only for light mode */
+html[data-theme='light'] {
+  background-color: #ffffff !important;
+}
+
+/* Dark theme specific backgrounds - Single consistent gradient */
+html[data-theme='dark'] {
+  /* Darker gradient for entire page */
+  background: 
+    linear-gradient(135deg, #050a15 0%, #0d1520 25%, #070d1a 50%, #0d1520 75%, #050a15 100%) !important;
+  background-attachment: fixed !important;
+  min-height: 100vh !important;
+}
+
+html[data-theme='dark'] body {
+  background: transparent !important;
+  min-height: 100vh !important;
+}
+
+/* Body inherits gradient from above rule */
+
+/* Enhanced grain texture overlay for more visual interest */
+html[data-theme='dark']::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.4; /* Increased for better grain visibility */
+  z-index: 9999; /* High z-index to ensure it's on top */
+  pointer-events: none;
+  /* Complex noise pattern for realistic grain */
+  background-image: 
+    /* Fine grain layer */
+    repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(255,255,255,.03) 2px, rgba(255,255,255,.03) 4px),
+    repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(255,255,255,.02) 2px, rgba(255,255,255,.02) 4px),
+    /* Noise dots */
+    radial-gradient(circle at 25% 25%, rgba(255,255,255,0.08) 0%, transparent 1px),
+    radial-gradient(circle at 75% 75%, rgba(255,255,255,0.08) 0%, transparent 1px),
+    radial-gradient(circle at 50% 50%, rgba(255,255,255,0.05) 0%, transparent 1px);
+  background-size: 
+    30px 30px,
+    30px 30px,
+    10px 10px,
+    10px 10px,
+    15px 15px;
+  background-position:
+    0 0,
+    0 0,
+    0 0,
+    5px 5px,
+    0 0;
+  /* Add slight blur for softer grain effect */
+  filter: contrast(1.1) brightness(1.05);
+}
+
+/* TEMPORARILY DISABLED - Add a fixed gradient overlay that extends to the very top in dark mode - DESKTOP ONLY */
+/* @media (min-width: 997px) {
+  html[data-theme='dark'] body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.3) 0%, rgba(22, 73, 255, 0.2) 25%, transparent 50%);
+    z-index: -1;
+    pointer-events: none;
+  }
+} */
 
 /* Preload logo images to prevent flashing on theme switch */
 .navbar__logo {
@@ -169,11 +247,12 @@ details > summary:hover {
   z-index: 999999 !important;
 }
 
-/* Fix breadcrumb z-index to be lower */
+/* Hide breadcrumb bar entirely */
 .theme-doc-breadcrumbs,
-.breadcrumbs {
-  z-index: 1 !important;
-  position: relative;
+.breadcrumbs,
+nav[aria-label="Breadcrumbs"],
+nav[aria-label="breadcrumbs"] {
+  display: none !important;
 }
 
 /* Ensure Algolia search dropdown uses a dark background in dark mode */
@@ -393,66 +472,84 @@ html[data-theme="dark"] .opensource-links a {
   color: #4a9eff;
 }
 
-/* Hero section styles - Respects sidebar boundaries */
+/* Hero section styles - Full width and height */
 .hero-section-wrapper {
-  position: relative;
-  background-image: url("/img/SELF GALAXY transparent 620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp");
-  background-position: center center; /* Center the galaxy for better alignment */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  overflow: visible;
-  margin: 0; /* Remove negative margin */
-  padding: 0;
+  position: relative; /* Keep in document flow */
+  width: 100%; /* Full container width */
+  margin-left: 0; /* No negative margin */
+  margin-top: 0; /* No negative margin */
   min-height: 100vh; /* Full viewport height */
+  overflow: visible;
+  padding: 0;
+  z-index: 0; /* Ensure it stays behind navbar and sidebar */
 }
 
-/* Add overlay for better text readability */
+/* Add background as pseudo-element to extend it behind navbar */
 .hero-section-wrapper::before {
   content: "";
   position: absolute;
+  top: -60px; /* Extend 60px above to cover navbar area */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/img/SELF GALAXY transparent 620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp");
+  background-position: center calc(50% + 40px); /* Move background down 40px */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Keep the background pseudo-element visible */
+
+/* TEMPORARILY DISABLED - Add the radial gradient starting from the very top of the page */
+/* .landing-page::after {
+  content: "";
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0.85) 0%,
-    rgba(255, 255, 255, 0.6) 50%,
-    rgba(255, 255, 255, 0) 70%
-  );
-  z-index: 1;
-}
+  background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.3) 0%, rgba(22, 73, 255, 0.2) 25%, transparent 50%);
+  z-index: -3;
+  pointer-events: none;
+} */
 
-html[data-theme="dark"] .hero-section-wrapper::before {
-  background: linear-gradient(
-    to right,
-    rgba(29, 38, 59, 0.85) 0%,
-    rgba(29, 38, 59, 0.6) 50%,
-    rgba(29, 38, 59, 0) 70%
-  );
-}
+/* TEMPORARILY DISABLED - Add galaxy background to the entire landing page */
+/* .landing-page::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/img/SELF GALAXY transparent 620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -2;
+} */
 
 .hero-section {
   position: relative;
   z-index: 2;
-  padding: 2rem 2rem 12rem 2rem; /* Further reduce top padding */
-  max-width: 1200px;
-  margin: 0 auto;
   min-height: 100vh; /* Ensure full height */
   display: flex;
   align-items: flex-start; /* Align content to top */
-  justify-content: center; /* Center horizontally */
+  justify-content: flex-start; /* Left align */
   flex-direction: column; /* Stack content vertically */
 }
 
 .hero-content {
-  max-width: 600px;
-  margin-top: 0; /* Remove margin to position text at the top */
+  /* Let landing page override this */
+  padding-left: 0px; /* Reduced by 200px to move text left on desktop */
+  padding-top: 390px; /* Move hero text down on desktop - increased by 30px */
 }
 
 .hero-title {
-  font-size: 3.5rem;
+  font-size: 72px;
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: #1d263b;
@@ -477,6 +574,17 @@ html[data-theme="dark"] .hero-tagline {
 /* Hide the automatic h1 from Docusaurus */
 .markdown > h1:first-child {
   display: none;
+}
+
+/* Show line break only on desktop */
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 997px) {
+  .desktop-only {
+    display: inline;
+  }
 }
 
 /* Make Technology section headings same size as Our Purpose section */
@@ -543,6 +651,16 @@ html[data-theme="dark"] .breadcrumbs__item {
   opacity: 1;
 }
 
+/* Ensure navbar and sidebar stay above hero background */
+.navbar {
+  z-index: 100 !important;
+}
+
+.theme-doc-sidebar-container {
+  z-index: 50 !important;
+  position: relative !important;
+}
+
 /* Mobile menu fixes */
 @media (max-width: 996px) {
   /* Ensure the mobile sidebar has proper z-index */
@@ -569,6 +687,15 @@ html[data-theme="dark"] .breadcrumbs__item {
   /* Hide "Back to main menu" text */
   .navbar-sidebar__back {
     display: none !important;
+  }
+  
+  /* Darker background for mobile menu ONLY when expanded */
+  html[data-theme="dark"] .navbar-sidebar {
+    background-color: rgba(10, 14, 24, 0.98) !important;
+  }
+  
+  html[data-theme="light"] .navbar-sidebar {
+    background-color: rgba(255, 255, 255, 0.98) !important;
   }
 
   /* Move logo closer to burger menu on mobile/tablet */
@@ -610,7 +737,15 @@ html[data-theme="dark"] .breadcrumbs__item {
   }
 
   .hero-title {
-    font-size: clamp(2rem, 5vw + 1rem, 3rem);
+    font-size: 48px;
+  }
+}
+
+/* Tablet-specific styling (between mobile and desktop) */
+@media (min-width: 769px) and (max-width: 996px) {
+  .hero-content {
+    padding-left: 60px; /* Adjust horizontal position for tablet */
+    margin-top: 0px; /* Move up by 200px from previous 200px position */
   }
 
   .hero-section-wrapper {
@@ -621,27 +756,7 @@ html[data-theme="dark"] .breadcrumbs__item {
     min-height: 70vh;
   }
 
-  .hero-section-wrapper::before {
-    background: radial-gradient(
-      ellipse at center top,
-      rgba(255, 255, 255, 0.9) 0%,
-      rgba(255, 255, 255, 0.8) 30%,
-      rgba(255, 255, 255, 0.6) 50%,
-      rgba(255, 255, 255, 0.4) 70%,
-      rgba(255, 255, 255, 0.2) 100%
-    );
-  }
-
-  html[data-theme="dark"] .hero-section-wrapper::before {
-    background: radial-gradient(
-      ellipse at center top,
-      rgba(29, 38, 59, 0.9) 0%,
-      rgba(29, 38, 59, 0.8) 30%,
-      rgba(29, 38, 59, 0.6) 50%,
-      rgba(29, 38, 59, 0.4) 70%,
-      rgba(29, 38, 59, 0.2) 100%
-    );
-  }
+  /* Keep galaxy image on tablet - removed gradient override */
 }
 
 @media (max-width: 768px) {
@@ -655,6 +770,10 @@ html[data-theme="dark"] .breadcrumbs__item {
     /* Remove glass box effect on mobile */
     background: transparent;
     padding: 0;
+    padding-left: 0px; /* Moved left by reducing padding */
+    margin-left: -15px; /* Move left by additional 15px */
+    margin-top: 380px; /* Move hero text down by additional 70px on mobile */
+    margin-bottom: 100px; /* Create space below hero text on mobile */
     border-radius: 0;
     backdrop-filter: none;
     box-shadow: none;
@@ -666,7 +785,7 @@ html[data-theme="dark"] .breadcrumbs__item {
   }
 
   .hero-title {
-    font-size: clamp(1.75rem, 4vw + 0.5rem, 2.5rem);
+    font-size: 48px;
     margin-bottom: 1rem;
   }
 
@@ -680,24 +799,10 @@ html[data-theme="dark"] .breadcrumbs__item {
     min-height: 60vh;
     margin-top: 0; /* Remove negative margin on mobile */
     padding-top: 0;
+    position: relative; /* Ensure proper stacking context */
   }
 
-  /* Simplify overlay on mobile for better performance */
-  .hero-section-wrapper::before {
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.5) 0%,
-      rgba(255, 255, 255, 0.2) 100%
-    );
-  }
-
-  html[data-theme="dark"] .hero-section-wrapper::before {
-    background: linear-gradient(
-      to bottom,
-      rgba(29, 38, 59, 0.5) 0%,
-      rgba(29, 38, 59, 0.2) 100%
-    );
-  }
+  /* Keep galaxy image on mobile - removed gradient override */
 }
 
 /* Only hide the theme toggle in mobile menu */
@@ -747,6 +852,13 @@ button[class*="colorModeToggle"]:hover,
 
 /* Mobile navbar adjustments */
 @media (max-width: 996px) {
+  /* Make navbar sticky on mobile */
+  .navbar {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 100 !important;
+  }
+
   /* Ensure burger menu is visible on mobile */
   .navbar__toggle {
     display: flex !important;
@@ -770,6 +882,217 @@ button[class*="colorModeToggle"]:hover,
   display: flex !important;
   align-items: center !important;
   height: 100% !important;
+}
+
+/* Remove navbar shadow/border on desktop only */
+@media (min-width: 997px) {
+  .navbar,
+  nav.navbar,
+  header.navbar,
+  .navbar--fixed-top,
+  .theme-layout-navbar,
+  nav.theme-layout-navbar.navbar {
+    box-shadow: none !important;
+    border-bottom: none !important;
+    border: none !important;
+    --ifm-navbar-shadow: none !important;
+  }
+
+  /* Also remove any shadow from the navbar in light/dark themes */
+  [data-theme='light'] .navbar,
+  [data-theme='dark'] .navbar,
+  html[data-theme='light'] .navbar,
+  html[data-theme='dark'] .navbar,
+  html[data-theme='light'] .theme-layout-navbar,
+  html[data-theme='dark'] .theme-layout-navbar,
+  html[data-theme='light'] nav.theme-layout-navbar.navbar,
+  html[data-theme='dark'] nav.theme-layout-navbar.navbar {
+    box-shadow: none !important;
+    border-bottom: none !important;
+    border: none !important;
+    --ifm-navbar-shadow: none !important;
+  }
+  
+  /* Target the navbar after pseudo-element if it exists */
+  .navbar::after,
+  .navbar::before,
+  .theme-layout-navbar::after,
+  .theme-layout-navbar::before {
+    display: none !important;
+  }
+  
+  /* Removed conflicting dark mode navbar rule */
+}
+
+/* Make navbar transparent again and add gradient behind it */
+@media (min-width: 997px) {
+  /* Override CSS variables */
+  html[data-theme="dark"],
+  html[data-theme="light"] {
+    --ifm-navbar-background-color: transparent !important;
+  }
+  
+  /* Make ALL navbars transparent */
+  .navbar,
+  nav.navbar,
+  .theme-layout-navbar,
+  .navbar--fixed-top,
+  html[data-theme="dark"] .navbar,
+  html[data-theme="dark"] nav.navbar,
+  html[data-theme="dark"] .theme-layout-navbar,
+  html[data-theme="light"] .navbar,
+  html[data-theme="light"] nav.navbar,
+  html[data-theme="light"] .theme-layout-navbar {
+    background-color: transparent !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+  }
+  
+  /* Remove any background on scroll */
+  .navbar--has-shadow,
+  .navbar[class*="shadow"],
+  .navbar.scrolled,
+  .navbar.is-scrolled {
+    background-color: transparent !important;
+    background: transparent !important;
+  }
+  
+  /* Force transparency even at top of page */
+  .navbar:not(.navbar-sidebar),
+  .navbar--fixed-top:not(.navbar-sidebar),
+  body:not(.navbar--hidden) .navbar:not(.navbar-sidebar) {
+    background-color: transparent !important;
+    background: transparent !important;
+  }
+  
+  /* Override any inline styles or JS-added backgrounds */
+  [data-theme="dark"] .navbar[style*="background"],
+  [data-theme="dark"] .navbar--fixed-top[style*="background"] {
+    background-color: transparent !important;
+    background: transparent !important;
+  }
+}
+
+/* Remove landing page specific backgrounds to use global gradient */
+@media (min-width: 997px) {
+  .landing-page,
+  html[data-theme="dark"] .landing-page {
+    background: transparent !important;
+    background-color: transparent !important;
+    --ifm-background-color: transparent !important;
+  }
+}
+
+/* Ultimate navbar transparency override for desktop - MUST BE LAST */
+@media (min-width: 997px) {
+  html .navbar,
+  html body .navbar,
+  html[data-theme="dark"] body .navbar,
+  html[data-theme="light"] body .navbar,
+  #__docusaurus .navbar,
+  .navbar.navbar--fixed-top,
+  nav.theme-layout-navbar.navbar.navbar--fixed-top {
+    background-color: transparent !important;
+    background: transparent !important;
+    background-image: none !important;
+  }
+  
+  /* Specific dark mode override to match light mode behavior */
+  html[data-theme="dark"] .navbar,
+  html[data-theme="dark"] nav.navbar,
+  html[data-theme="dark"] .navbar--fixed-top,
+  html[data-theme="dark"] nav.theme-layout-navbar {
+    background-color: transparent !important;
+    background: transparent !important;
+    background-image: none !important;
+  }
+}
+
+/* Override the radial gradient from faq-style-test.css */
+html[data-theme="dark"] .main-wrapper::before {
+  display: none !important;
+}
+
+/* Ensure consistent background throughout the page */
+html[data-theme="dark"] .main-wrapper {
+  background: transparent !important;
+}
+
+/* Remove any background from containers that might interfere */
+html[data-theme="dark"] .container,
+html[data-theme="dark"] .markdown,
+html[data-theme="dark"] article,
+html[data-theme="dark"] main,
+html[data-theme="dark"] [class*="docMainContainer"],
+html[data-theme="dark"] [class*="docPage"] {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Remove any gradients or backgrounds from sections */
+html[data-theme="dark"] section,
+html[data-theme="dark"] .hero-section,
+html[data-theme="dark"] .hero-section-wrapper,
+html[data-theme="dark"] div[class*="Layout"] {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Let sidebar expand naturally without scrollbar */
+@media (min-width: 997px) {
+  /* Remove height constraints to allow natural expansion */
+  .theme-doc-sidebar-container {
+    position: sticky !important;
+    top: var(--ifm-navbar-height) !important;
+    height: auto !important; /* Allow natural height */
+    max-height: none !important; /* Remove max height constraint */
+    overflow: visible !important; /* No overflow scrolling */
+    padding-bottom: 100px !important; /* Space for logo at bottom */
+  }
+  
+  /* Let sidebar menu expand naturally */
+  .theme-doc-sidebar-menu {
+    height: auto !important; /* Natural height */
+    overflow: visible !important; /* No scrolling */
+    padding-bottom: 2rem !important;
+    max-width: 100% !important;
+  }
+  
+  /* Ensure menu items don't cause horizontal overflow */
+  .menu__link {
+    white-space: normal !important; /* Allow text to wrap */
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    max-width: 100% !important;
+  }
+  
+  /* Add padding to the bottom of the menu list */
+  .menu__list:last-child {
+    padding-bottom: 2rem !important;
+  }
+  
+  /* Ensure nested menu items don't cause overflow */
+  .menu__list {
+    max-width: 100% !important;
+  }
+}
+
+/* Remove any footer background in dark mode */
+html[data-theme="dark"] footer,
+html[data-theme="dark"] .footer,
+html[data-theme="dark"] [class*="footer"] {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+
+/* Galaxy image removed - using consistent gradient throughout */
+
+/* Shift galaxy image to the left on mobile */
+@media (max-width: 768px) {
+  .hero-section-wrapper::before {
+    background-position: calc(50% - 160px) calc(50% + 40px) !important; /* Move left by 65px */
+  }
 }
 
 /* Navbar icon links - same size as theme toggle */
@@ -829,19 +1152,69 @@ button[class*="colorModeToggle"]:hover,
 }
 
 .landing-page article {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative; /* For hero background positioning */
 }
 
-/* Adjust hero section for full width */
+/* Hero alignment - simplified approach */
+.landing-page .hero-section-wrapper {
+  /* Keep full width for background */
+}
+
+/* CRITICAL: Force main containers to be transparent in dark mode */
+html[data-theme="dark"] #__docusaurus,
+html[data-theme="dark"] #__docusaurus > div,
+html[data-theme="dark"] .main-wrapper,
+html[data-theme="dark"] main,
+html[data-theme="dark"] article,
+html[data-theme="dark"] .container,
+html[data-theme="dark"] .row,
+html[data-theme="dark"] .col {
+  background: none !important;
+  background-color: transparent !important;
+}
+
+/* Ensure main content area has proper z-index */
+.main-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* Ensure ALL sections use transparent background to show the main gradient */
+html[data-theme="dark"] .hero-section-wrapper,
+html[data-theme="dark"] .hero-section,
+html[data-theme="dark"] .landing-page,
+html[data-theme="dark"] section,
+html[data-theme="dark"] .main-wrapper {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Only allow specific elements to have backgrounds if needed */
+html[data-theme="dark"] code:not(.token),
+html[data-theme="dark"] pre {
+  background-color: rgba(26, 35, 50, 0.5) !important; /* Semi-transparent for code blocks */
+}
+
+/* Reset all hero styling and use exact same as article */
 .landing-page .hero-section {
-  max-width: 1400px;
-  padding: 2rem 4rem 12rem 4rem;
+  /* Use exact same container as markdown article */
+  max-width: var(--ifm-container-width);
+  margin: 0 auto;
+  padding: 6rem 2rem 12rem 2rem;
+}
+
+@media (min-width: 997px) {
+  .landing-page .hero-section {
+    padding: 6rem 3rem 12rem 3rem;
+  }
 }
 
 .landing-page .hero-content {
-  max-width: 800px;
+  /* No extra styling */
+  text-align: left;
 }
 
 /* Platform status table full width */
