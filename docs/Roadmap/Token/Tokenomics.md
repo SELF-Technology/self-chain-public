@@ -14,7 +14,13 @@ The SELF Token ($SELF) is the foundational utility and governance token powering
 - **Token Standard**: ERC-20 
 - **Public Sale Price**: $0.06 ($30m Fully Diluted Valuation)
 - **Listing Price**: TBC
-- **Estimated Initial Circulating Supply**: 55,500,000 (11.1% of total supply)
+- **Available Supply at TGE (excl. liquidity)**: 55.5m
+
+Note: This figure includes all unlocked tokens, however only a smaller portion of the User Adoption, Developer Incentives and Ecosystem tokens will be circulating.
+
+**Estimated Initial Circulating Supply (excl. liquidity)**: 40.5m
+
+Note: This figure includes our current estimate of the initial circulating supply. It includes investor/partner unlocks and initial community/developer distributions.
 
 **Estimated Initial Circulating Supply** represents the portion of tokens anticipated to be actively traded at launch, including early community distribution and investor/partner unlocks.
 

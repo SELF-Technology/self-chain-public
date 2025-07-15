@@ -7,15 +7,15 @@ sidebar_position: 3
 
 The Super-App will run on the SELF Chain Testnet and each user's profile will be an individual node on the network, running their own private AI. The initial features will be:
 
-**SELF AI** - An advanced system that learns you, enriching your AI experience with persistent memory.
+**SELF AI** - An advanced system that learns about you and generates a unique user profile, enriching your AI experience with persistent memory.
 
-**SELF Browser** - With a built-in VPN, the SELF Browser is your personal web access without others accessing your data.
+**SELF Browser** - With a built-in VPN, the SELF Browser is your personal web access. Access SELF AI, personalisation features and SELF chain directly from the browser.
 
-**SELF Messenger** - Node-to-node messaging, meaning it's only you and the receiver involved.
+**SELF Messenger** - Node-to-node messaging, meaning it's only you and the receiver involved. Use your own SELF directly in the chat to plan things to do together.
 
 **SELF Rewards** - Earn SELF currency by using the service, and helping to secure the network.
 
-**SELF Wallet** - Store your SELF currency and others, enabling you to send, receive and convert.
+**SELF Wallet** - Store your SELF currency, other cryptocurrencies and stablecoins, enabling you to send, receive and convert.
 
 **SELF Experience** - No intrusive ads, no interruptions from businesses stealing your attention or information.
 
@@ -25,7 +25,7 @@ After the above has been established and the Super-App is in App Stores, we will
 
 ## Welcome to Your Privacy-First Digital Life
 
-SELF revolutionizes how you interact with technology by combining essential digital services in one privacy-focused Super-App. No ads, no data harvesting, just pure functionality powered by blockchain and AI.
+SELF revolutionises how you interact with technology by combining essential digital services in one privacy-focused Super-App. No ads, no data harvesting, just pure functionality powered by blockchain and AI.
 
 ---
 
