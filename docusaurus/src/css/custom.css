@@ -863,7 +863,7 @@ aside[class*="docSidebarContainer"] *::-webkit-scrollbar,
     padding: 0;
     padding-left: 0px; /* Moved left by reducing padding */
     margin-left: -25px; /* Move left by 15px to align with shifted galaxy */
-    margin-top: 320px; /* Move hero text down by additional 70px on mobile */
+    margin-top: 240px; /* Move hero text up by 80px (was 320px) */
     margin-bottom: 100px; /* Create space below hero text on mobile */
     border-radius: 0;
     backdrop-filter: none;
