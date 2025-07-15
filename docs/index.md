@@ -99,8 +99,8 @@ No corporate servers, no single points of failure - just a pure peer-to-peer net
 - [Self-Sovereign Alternative](Our%20Purpose/self-sov-alternative) - Breaking free from Big Tech
 - [Long Term](Our%20Purpose/long-term) - Our 100-year vision
 - [Creation Brand](Our%20Purpose/creation-brand) - Building a movement
-- [Team](Team/Jonathan%20MacDonald) - The people behind SELF
-- [Media](Media%20Coverage/Articles) - SELF in the news
+- [Team](https://www.self.app/#team) - The people behind SELF
+- [Media](https://www.self.app/#media) - Media Coverage and Ethics TV
 
 ---
 
@@ -125,7 +125,7 @@ Revolutionary consensus mechanism powered by AI
 Enterprise blockchain platform for launching sovereign chains
 - [Grid Compute](Technical%20Docs/Grid-Compute/Future-Vision)
 Distributed computing network for AI and resources
-- [Integration](Technical%20Docs/Integration/Coinbase_Integration)
+- [Integration](Technical%20Docs/Integration/Rosetta%20API%20Integration)
 Connect with other systems and blockchains
 - [Performance](Technical%20Docs/Performance/Advanced_TPS_Optimization)
 Scaling to 50,000 TPS and beyond
