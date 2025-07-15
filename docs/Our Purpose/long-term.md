@@ -7,6 +7,8 @@ sidebar_position: 4
 
 Over the decades to come, the ultimate goal is to create and maintain a sustainable, aesthetically coherent, secure, privacy-conscious and productivity-optimised operating system that is of tremendous value to the world; simplifying life for individuals and positively impacting industry in the process. This is the SELF Operating System (SELF OS).
 
+Primarily, this will be a “sideways” system that runs across whatever existing systems people may be using (e.g. swipe down and up with three fingers to shift between a traditional OS and SELF OS). Compatible with anything, translatable to everything, but with everyone’s personal sovereignty and intelligent connectivity at its core.
+
 SELF OS will be a set of combined applications developed on the SELF Chain by developers building on the SELF SDK. As the SELF Chain has an AI-Powered consensus mechanism [Proof-of-AI](https://docs.self.app/Technical%20Docs/Proof-of-AI), every application has the AI feature set built-in.
 
 Also, SELF Chain will enable a constellation of other blockchains to be developed in parallel, each of which can use their own unique configuration of the AI, and generate their own tokens.
