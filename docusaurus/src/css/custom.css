@@ -1250,11 +1250,6 @@ html[data-theme="dark"] [class*="footer"] {
   position: relative; /* For hero background positioning */
 }
 
-/* Hero alignment - simplified approach */
-.landing-page .hero-section-wrapper {
-  /* Keep full width for background */
-}
-
 /* CRITICAL: Force main containers to be transparent in dark mode */
 html[data-theme="dark"] #__docusaurus {
   overflow-x: hidden !important; /* Prevent horizontal scroll at root */
