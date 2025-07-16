@@ -546,9 +546,10 @@ html[data-theme="dark"] .opensource-links a {
   content: "";
   position: absolute;
   top: -60px; /* Extend 60px above to cover navbar area */
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 0;
-  width: 100%; /* Use percentage width */
+  width: 100vw; /* Use viewport width to extend beyond container */
   background-image: url("/img/SELF GALAXY transparent 620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp");
   background-position: center center; /* Center the galaxy */
   background-repeat: no-repeat;
@@ -563,6 +564,9 @@ html[data-theme="dark"] .opensource-links a {
   .hero-section-wrapper::before {
     background-attachment: scroll; /* Better performance on mobile */
     background-position: calc(50% - 150px) center; /* Move 150px to the left */
+    width: 100vw; /* Ensure full viewport width on mobile too */
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
