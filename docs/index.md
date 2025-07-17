@@ -1,6 +1,7 @@
 ---
-title: "SELF Documentation"
-description: "Creating the infrastructure for self-sovereign technology, privacy-first applications, and human-centric AI."
+title: "SELF Documentation - The People's Blockchain"
+description: "SELF Chain documentation - Build on the people's blockchain with Proof-of-AI consensus, post-quantum cryptography, and human-centric design. Open-source infrastructure for self-sovereign technology, privacy-first applications, and decentralized AI validation."
+keywords: ["self chain", "proof of ai", "poai consensus", "post quantum blockchain", "self sovereign technology", "decentralized ai", "people's blockchain", "privacy first", "color marker system", "hybrid cloud blockchain", "ai validator", "human rights technology", "web3 operating system", "blockchain super app"]
 sidebar_label: "Welcome"
 sidebar_position: 0
 hide_table_of_contents: true

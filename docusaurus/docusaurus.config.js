@@ -8,7 +8,7 @@ require('dotenv').config();
 
 const config = {
   title: 'SELF Documentation',
-  tagline: 'Creating the infrastructure for self-sovereign technology, privacy-first applications, and human-centric AI',
+  tagline: 'Build on the people\'s blockchain with Proof-of-AI consensus, post-quantum cryptography, and human-centric design',
   url: 'https://docs.self.app',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
@@ -125,6 +125,16 @@ const config = {
   ], */
 
   themeConfig: {
+    metadata: [
+      {name: 'description', content: 'SELF Chain documentation - Build on the people\'s blockchain with Proof-of-AI consensus, post-quantum cryptography, and human-centric design. Open-source infrastructure for self-sovereign technology, privacy-first applications, and decentralized AI validation.'},
+      {name: 'keywords', content: 'self chain, proof of ai blockchain, post quantum blockchain, self sovereign technology, decentralized ai validation, people\'s blockchain, privacy first blockchain, poai consensus, color marker system, hybrid cloud blockchain'},
+      {property: 'og:title', content: 'SELF Documentation - The People\'s Blockchain'},
+      {property: 'og:description', content: 'Build on SELF Chain with Proof-of-AI consensus, post-quantum cryptography, and human-centric design. Open-source infrastructure for self-sovereign technology.'},
+      {property: 'og:type', content: 'website'},
+      {name: 'twitter:card', content: 'summary_large_image'},
+      {name: 'twitter:title', content: 'SELF Documentation - The People\'s Blockchain'},
+      {name: 'twitter:description', content: 'Build on SELF Chain with Proof-of-AI consensus, post-quantum cryptography, and human-centric design.'},
+    ],
     // Always include Algolia config - it will work when deployed with GitHub secrets
     algolia: {
       appId: process.env.ALGOLIA_APP_ID || 'BH4D9OD16A', // Fallback to demo app ID for local dev
