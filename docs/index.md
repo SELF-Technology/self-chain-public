@@ -93,11 +93,11 @@ No corporate servers, no single points of failure - just a pure peer-to-peer net
 
 ## Our Purpose
 
-- [Manifesto](Our%20Purpose/manifesto) - Our declaration of digital independence
-- [Evolution](Our%20Purpose/evolution) - How technology has evolved
-- [Self-Sovereign Alternative](Our%20Purpose/self-sov-alternative) - Breaking free from Big Tech
-- [Long Term](Our%20Purpose/long-term) - Our 100-year vision
-- [Creation Brand](Our%20Purpose/creation-brand) - Building a movement
+- [Manifesto](/Our%20Purpose/manifesto) - Our declaration of digital independence
+- [Evolution](/Our%20Purpose/evolution) - How technology has evolved
+- [Self-Sovereign Alternative](/Our%20Purpose/self-sov-alternative) - Breaking free from Big Tech
+- [Long Term](/Our%20Purpose/long-term) - Our 100-year vision
+- [Creation Brand](/Our%20Purpose/creation-brand) - Building a movement
 - [Team](https://www.self.app/#team) - The people behind SELF
 - [Media](https://www.self.app/#media) - Media Coverage and Ethics TV
 
@@ -105,38 +105,38 @@ No corporate servers, no single points of failure - just a pure peer-to-peer net
 
 ## Roadmap
 
-- [Intro](Roadmap/Introduction) - Our journey
-- [Beta](Roadmap/Beta%20Web%20App) - Current phase
-- [Super-App & Testnet](Roadmap/Super-App%20Testnet) - Coming soon with complete user experience
-- [Token](Roadmap/Token/Overview) - SELF token economy
-- [SDK](Roadmap/SDK) - Developer tools
-- [Operating System](Roadmap/SELF%20OS) - SELF OS vision
+- [Intro](/Roadmap/Introduction) - Our journey
+- [Beta](/Roadmap/Beta%20Web%20App) - Current phase
+- [Super-App & Testnet](/Roadmap/Super-App%20Testnet) - Coming soon with complete user experience
+- [Token](/Roadmap/Token/Overview) - SELF token economy
+- [SDK](/Roadmap/SDK) - Developer tools
+- [Operating System](/Roadmap/SELF%20OS) - SELF OS vision
 
 ---
 
 ## Technology
 
-- [Architecture](Technical%20Docs/SELF%20Chain/SELF_Chain_Architecture)
+- [Architecture](/Technical%20Docs/SELF%20Chain/SELF_Chain_Architecture)
 Complete technical overview of the SELF ecosystem
-- [Proof-of-AI](Technical%20Docs/PoAI/Proof-of-AI)
+- [Proof-of-AI](/Technical%20Docs/PoAI/Proof-of-AI)
 Revolutionary consensus mechanism powered by AI
-- [Constellation](Technical%20Docs/Constellation/Overview)
+- [Constellation](/Technical%20Docs/Constellation/Overview)
 Enterprise blockchain platform for launching sovereign chains
-- [Grid Compute](Technical%20Docs/Grid-Compute/Future-Vision)
+- [Grid Compute](/Technical%20Docs/Grid-Compute/Future-Vision)
 Distributed computing network for AI and resources
-- [Integration](Technical%20Docs/Integration/Rosetta%20API%20Integration)
+- [Integration](/Technical%20Docs/Integration/Rosetta%20API%20Integration)
 Connect with other systems and blockchains
-- [Performance](Technical%20Docs/Performance/Advanced_TPS_Optimization)
+- [Performance](/Technical%20Docs/Performance/Advanced_TPS_Optimization)
 Scaling to 50,000 TPS and beyond
-- [Rewards](Technical%20Docs/PoAI/The%20Incentive)
+- [Rewards](/Technical%20Docs/PoAI/The%20Incentive)
 Earn while using the SELF ecosystem
-- [SDK](Roadmap/SDK)
+- [SDK](/Roadmap/SDK)
 Multi-language developer tools and libraries
-- [Security](Technical%20Docs/Security/Overview)
+- [Security](/Technical%20Docs/Security/Overview)
 Post-quantum cryptography and privacy guarantees
-- [Storage](Technical%20Docs/Storage/Hybrid_Architecture)
+- [Storage](/Technical%20Docs/Storage/Hybrid_Architecture)
 Hybrid distributed storage with IPFS and OrbitDB
-- [Validate](Technical%20Docs/Validate/)
+- [Validate](/Technical%20Docs/Validate/)
 Participate in network consensus as a validator
 
 ---
