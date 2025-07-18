@@ -418,15 +418,7 @@ try {
 
 ## Support & Resources
 
-### Getting Help
-- **Discord**: [Join #developers channel](https://discord.gg/selfchain)
-- **Forum**: [developers.self.app](https://developers.self.app)
-- **Email**: developers@self.app
-
-### Resources
-- [Example Apps](https://github.com/self-chain/examples)
-- [Video Tutorials](https://youtube.com/selfchain)
-- [API Status](https://status.self.app)
+- **Email**: devs@self.app
 
 ---
 
@@ -446,4 +438,4 @@ try {
 
 ---
 
-*This guide is for building on SELF, not building SELF itself. For contribution to core infrastructure, see our [GitHub](https://github.com/self-chain).*
+*This guide is for building on SELF, not building SELF itself. For contribution to core infrastructure, see our [GitHub](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Technical%20Docs/Developer%20Resources/Getting_Started_Testnet.md).*
