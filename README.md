@@ -1,4 +1,4 @@
-# SELF Chain
+![SELF Chain Logo](docusaurus/static/img/SELFwhitelogo.webp)
 
 <div align="center">
   <h3>The World's First AI-Native Blockchain - Built by the People, for the People</h3>
@@ -10,7 +10,7 @@
   [![GitHub Stars](https://img.shields.io/github/stars/SELF-Technology/self-chain-public?style=social)](https://github.com/SELF-Technology/self-chain-public/stargazers)
 </div>
 
-## 🌟 Overview: The People's Chain
+## 🌟 Overview: SELF - The Future Of Technology Is Yours
 
 SELF Chain represents a paradigm shift in blockchain technology, combining AI-powered validation with true self-sovereignty. We're building a future where personal data ownership isn't just a promise—it's a fundamental right encoded in our technology.
 
