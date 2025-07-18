@@ -83,7 +83,7 @@ You'll receive:
 - `APP_SECRET`: Your application secret (keep secure!)
 - Testnet access credentials
 
-### 2. Install the SDK
+### 2. Install the SDK ** The following is example code - when the SDK is released this will be updated **
 
 ```bash
 # JavaScript/TypeScript
@@ -96,7 +96,7 @@ pip install selfchain-sdk
 go get github.com/self-chain/sdk-go
 ```
 
-### 3. Initialize Your App
+### 3. Initialize Your App ** The following is example code - when the SDK is released this will be updated **
 
 ```javascript
 import { SELF } from '@selfchain/sdk';
@@ -397,9 +397,8 @@ await session.storage.set({
 ## SDK Reference
 
 ### JavaScript/TypeScript
-- [Full API Documentation](https://sdk.self.app/js)
-- [Example Apps](https://github.com/self-chain/sdk-examples)
-- [TypeScript Types](https://sdk.self.app/types)
+
+- Coming soon
 
 ### Error Handling
 ```javascript
