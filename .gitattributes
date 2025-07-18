@@ -1,0 +1,16 @@
+# Exclude node_modules from language statistics
+node_modules/** linguist-vendored
+docusaurus/node_modules/** linguist-vendored
+
+# Mark documentation as documentation
+docs/** linguist-documentation
+*.md linguist-documentation
+
+# Ensure Rust files are properly detected
+*.rs linguist-language=Rust
+Cargo.toml linguist-language=TOML
+Cargo.lock linguist-generated
+
+# Mark build artifacts as generated
+target/** linguist-generated
+build/** linguist-generated
