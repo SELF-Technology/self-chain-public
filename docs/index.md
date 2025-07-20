@@ -136,7 +136,7 @@ Multi-language developer tools and libraries
 Post-quantum cryptography and privacy guarantees
 - [Storage](/Technical%20Docs/Storage/Hybrid_Architecture)
 Hybrid distributed storage with IPFS and OrbitDB
-- [Validate](/Technical%20Docs/Validate/)
+- [Validate](/Technical%20Docs/Validate/README)
 Participate in network consensus as a validator
 
 ---
