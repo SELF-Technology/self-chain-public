@@ -1,5 +1,5 @@
-// Load environment variables
-require('dotenv').config({ path: './algolia.env' });
+// Load environment variables - Cloudflare Pages will provide these
+// require('dotenv').config({ path: './algolia.env' });
 
 // console.log('Algolia Config:', {
 //   appId: process.env.ALGOLIA_APP_ID,
@@ -82,16 +82,6 @@ const config = {
       },
     },
   ],
-
-  webpack: {
-    configure: (config, { isServer }) => {
-      // Disable eval in production for GitHub Pages CSP compatibility
-      if (config.mode === 'production') {
-        config.devtool = false;
-      }
-      return config;
-    },
-  },
 
   presets: [
     [
