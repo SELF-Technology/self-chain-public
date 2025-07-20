@@ -1134,7 +1134,7 @@ html[data-theme="dark"] div[class*="Layout"] {
   /* Sidebar fixed positioning handled by rule at top of file */
   .theme-doc-sidebar-container {
     height: calc(100vh - var(--ifm-navbar-height)) !important; /* Full height minus navbar */
-    padding-bottom: 100px !important; /* Space for logo at bottom */
+    padding-bottom: 0 !important; /* No gap at bottom - changed from 100px */
     overflow: hidden !important; /* Ensure no scrollbars */
   }
   

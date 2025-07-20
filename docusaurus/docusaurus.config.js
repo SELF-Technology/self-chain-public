@@ -1,5 +1,5 @@
 // Load environment variables
-require('dotenv').config();
+require('dotenv').config({ path: './algolia.env' });
 
 // console.log('Algolia Config:', {
 //   appId: process.env.ALGOLIA_APP_ID,
@@ -99,8 +99,9 @@ const config = {
     ],
   ],
 
-  /* plugins: [
-    [
+  plugins: [
+    /* '@docusaurus/plugin-debug', // Already included in preset */
+    /* [
       '@docusaurus/plugin-pwa',
       {
         offlineModeActivationStrategies: [
@@ -121,8 +122,8 @@ const config = {
           },
         ],
       },
-    ],
-  ], */
+    ], */
+  ],
 
   themeConfig: {
     metadata: [
@@ -135,18 +136,13 @@ const config = {
       {name: 'twitter:title', content: 'SELF Documentation - The People\'s Blockchain'},
       {name: 'twitter:description', content: 'Build on SELF Chain with Proof-of-AI consensus, post-quantum cryptography, and human-centric design.'},
     ],
-    // Always include Algolia config - it will work when deployed with GitHub secrets
-    algolia: {
-      appId: process.env.ALGOLIA_APP_ID || 'BH4D9OD16A', // Fallback to demo app ID for local dev
-      apiKey: process.env.ALGOLIA_SEARCH_API_KEY || 'demo-api-key', // Fallback for local dev
+    // Algolia search configuration
+    algolia: process.env.ALGOLIA_APP_ID && process.env.ALGOLIA_SEARCH_API_KEY ? {
+      appId: process.env.ALGOLIA_APP_ID,
+      apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
       indexName: 'self',
-      // Optional: Add contextualSearch to improve search relevance
       contextualSearch: true,
-      // Optional: Add searchParameters for more control
-      searchParameters: {},
-      // Optional: Path to custom search page
-      searchPagePath: 'search',
-    },
+    } : undefined,
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: true, // Theme toggle now in footer only
@@ -162,12 +158,12 @@ const config = {
         target: '_self', // Opens in same tab
       },
       hideOnScroll: false,
-      items: [
+      items: process.env.ALGOLIA_APP_ID && process.env.ALGOLIA_SEARCH_API_KEY ? [
         {
           type: 'search',
           position: 'right',
         },
-      ],
+      ] : [],
     },
     footer: {
       style: 'dark',

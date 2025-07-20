@@ -39,30 +39,16 @@
       "name": "Getting Started",
       "short_name": "Start",
       "description": "Quick start guide for SELF Chain",
-      "url": "/getting-started",
+      "url": "/Technical%20Docs/Developer%20Resources/Getting_Started_Testnet",
       "icons": [{ "src": "/img/icon-96x96.png", "sizes": "96x96" }]
     },
     {
-      "name": "API Reference",
-      "short_name": "API",
-      "description": "SELF Chain API documentation",
-      "url": "/api",
+      "name": "Architecture",
+      "short_name": "Architecture",
+      "description": "SELF Chain Architecture",
+      "url": "/Technical%20Docs/SELF%20Chain/SELF_Chain_Architecture",
       "icons": [{ "src": "/img/icon-96x96.png", "sizes": "96x96" }]
     }
   ],
-  "categories": ["developer", "documentation", "blockchain", "technology"],
-  "screenshots": [
-    {
-      "src": "/img/screenshot-desktop.png",
-      "sizes": "1280x720",
-      "type": "image/png",
-      "form_factor": "wide"
-    },
-    {
-      "src": "/img/screenshot-mobile.png",
-      "sizes": "720x1280",
-      "type": "image/png",
-      "form_factor": "narrow"
-    }
-  ]
+  "categories": ["developer", "documentation", "blockchain", "technology"]
 }
