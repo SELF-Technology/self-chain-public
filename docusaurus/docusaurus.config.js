@@ -17,14 +17,6 @@ const config = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   headTags: [
-    // Override GitHub Pages CSP to allow eval (required for Docusaurus)
-    {
-      tagName: 'meta',
-      attributes: {
-        'http-equiv': 'Content-Security-Policy',
-        content: "default-src * 'unsafe-inline' 'unsafe-eval' data: blob:; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';",
-      },
-    },
     {
       tagName: 'link',
       attributes: {
@@ -90,6 +82,16 @@ const config = {
       },
     },
   ],
+
+  webpack: {
+    configure: (config, { isServer }) => {
+      // Disable eval in production for GitHub Pages CSP compatibility
+      if (config.mode === 'production') {
+        config.devtool = false;
+      }
+      return config;
+    },
+  },
 
   presets: [
     [
