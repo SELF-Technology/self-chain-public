@@ -35,6 +35,16 @@ const config = {
         fetchpriority: 'high',
       },
     },
+    // Preload galaxy background for hero section
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preload',
+        href: '/img/SELF GALAXY transparent 620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp',
+        as: 'image',
+        fetchpriority: 'low',
+      },
+    },
     // Preload critical CSS
     {
       tagName: 'link',
