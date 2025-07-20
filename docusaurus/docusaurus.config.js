@@ -100,6 +100,21 @@ const config = {
   ],
 
   plugins: [
+    // Custom plugin to modify webpack config
+    function customWebpackPlugin(context, options) {
+      return {
+        name: 'custom-webpack-plugin',
+        configureWebpack(config, isServer, utils) {
+          // Disable eval-based source maps in production
+          if (config.mode === 'production') {
+            return {
+              devtool: 'source-map', // Use source-map instead of eval
+            };
+          }
+          return {};
+        },
+      };
+    },
     /* '@docusaurus/plugin-debug', // Already included in preset */
     /* [
       '@docusaurus/plugin-pwa',
