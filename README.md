@@ -1,4 +1,4 @@
-# SELF Chain - The People's Blockchain
+# SELF - Creating the Future of Self-Sovereign Technology
 
 ## The Problem
 
