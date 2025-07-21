@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Contributing to SELF Chain
 
 Welcome to SELF Chain! We're excited that you're interested in contributing to our open source blockchain ecosystem. This document provides guidelines and instructions for contributing to SELF Chain.
