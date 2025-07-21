@@ -5,7 +5,11 @@ sidebar_position: 1
 
 # Proof-of-AI
 
-We have invented a novel and patent-pending consensus mechanism known as [Proof-of-AI ](https://proofofai.com)(PoAI), enabling SELF Chain's decentralised validation and security. This section details the PoAI methodology.
+We have developed a novel consensus mechanism known as [Proof-of-AI ](https://proofofai.com)(PoAI), enabling SELF Chain's decentralised validation and security. This section details the PoAI methodology.
+
+:::info Implementation Note
+Proof-of-AI is among the first implementations of AI-driven blockchain consensus. While we believe it represents a significant innovation, similar approaches are being explored by other projects in the blockchain space.
+:::
 
 At its core, every part of PoAI drives efficiency, from the removal of human interference to, critically, the objective of the AI to fulfill its task in the most useful way, quite opposite to PoW (which is inefficient due to the mechanical compute involved) and PoS (which is increasingly centralised and therefore increasingly inefficient).
 
@@ -55,7 +59,7 @@ The PoAI system distributes rewards as follows:
 
 ### Performance Target
 
-SELF Chain targets 50,000 TPS through optimized AI consensus algorithms and efficient transaction processing.
+SELF Chain has a long-term target of 50,000 TPS through planned optimizations to AI consensus algorithms and transaction processing. Current testnet performance is ~1,000 TPS.
 
 ### Key Advantages
 

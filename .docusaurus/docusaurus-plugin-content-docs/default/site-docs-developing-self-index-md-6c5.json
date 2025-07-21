@@ -1,0 +1,23 @@
+{
+  "id": "Developing SELF/index",
+  "title": "Contributing to SELF Chain",
+  "description": "Welcome to SELF Chain! We're excited that you're interested in contributing to our open source blockchain ecosystem. This document provides guidelines and instructions for contributing to SELF Chain.",
+  "source": "@site/docs/Developing SELF/index.md",
+  "sourceDirName": "Developing SELF",
+  "slug": "/Developing SELF/",
+  "permalink": "/Developing SELF/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Security Policy",
+    "permalink": "/Developing SELF/security"
+  },
+  "next": {
+    "title": "SELF Chain Architecture",
+    "permalink": "/Technical Docs/SELF Chain/SELF_Chain_Architecture"
+  }
+}

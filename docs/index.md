@@ -14,192 +14,103 @@ slug: /
   <div className="hero-section">
     <div className="hero-content">
       <h1 className="hero-title">SELF<br />Documentation</h1>
-      <p className="hero-tagline">Built by the People, for the People</p>
+      <p className="hero-tagline">Creating the Future of Self-Sovereign Technology</p>
     </div>
   </div>
 </div>
 
-## Background
+## The Problem
 
-The internet began as a vision of decentralized communication - a network where no single entity held control. Over decades, this vision has been systematically eroded. Today's digital landscape is dominated by corporations that harvest data, control access, and dictate terms.
+Today's internet is broken. Tech giants harvest your data, control your digital life, and profit from your privacy. You've become the product.
 
-SELF represents a return to the original promise: technology that serves its users, not its overlords.
+## The Solution: SELF
 
-## 🌟 Overview
+SELF is reclaiming the internet for people. We're building the world's first **AI-powered blockchain** designed from the ground up for personal data sovereignty.
 
-SELF represents a paradigm shift in how technology serves humanity. We're building a complete ecosystem where personal data ownership isn't just a promise—it's a fundamental right encoded in every layer of our technology stack.
+### 🎯 Our Mission
 
-**This isn't just another tech project. It's a movement.** From our AI-powered blockchain (SELF Chain) to our upcoming Super-App and decentralized services, every component is designed with one principle: you own and control your digital life. SELF is built collaboratively by a global community of developers, researchers, and privacy advocates who believe in digital freedom.
+Every line of code, every design decision, every feature serves one purpose: **You own your digital life.**
 
-### Why SELF?
+### 🚀 What Makes SELF Different
 
-- **🤖 AI-First Design**: Our entire ecosystem leverages AI for validation, security, and user empowerment
-- **🔐 True Data Sovereignty**: Your data, your rules—enforced across every SELF service
-- **⚡ Complete Platform**: From blockchain infrastructure to user applications
-- **🌍 Open Source Core**: Transparent technology with community-driven development
-- **🤝 Community Owned**: No single entity controls SELF—it belongs to everyone
+**🤖 Proof-of-AI Technology**
+- World's first AI-driven blockchain consensus
+- Color Marker System for advanced validation
+- No energy-wasting mining
 
-## 🚀 Key Features
+**🔐 Privacy by Design**
+- Data sovereignty built into every layer
+- You control who sees what, always
+- No backdoors, no compromises
 
-### Revolutionary Consensus
-- **Proof-of-AI (PoAI)**: The world's first AI-driven consensus mechanism
-- **Color Marker System**: Advanced transaction validation through hexadecimal state tracking
-- **AI Validators**: Intelligent block validation replacing energy-intensive mining
+**🌍 True Decentralization**
+- 100% open source core protocol
+- Community governed, no corporate control
+- Transparent, auditable, trustless
 
-### Enterprise Ready
-- **Constellation Architecture**: Deploy industry-specific chains for any regulated sector
-- **Innovation Platform**: From healthcare to finance, build compliant blockchain solutions
-- **Grid Compute**: Distributed AI computation across the network
+**🚀 Ready to Scale**
+- Enterprise-grade Constellation architecture
+- Industry-specific blockchain deployment
+- Complete ecosystem from blockchain to apps
 
-### Developer First
-- **Multi-Language SDKs**: JavaScript, Rust, Python, and Go planned
-- **Private Testnet**: Core development testnet (public testnet coming Q4 2025)
-- **Extensive Documentation**: Comprehensive docs to guide your journey
+## 🚦 Current Status
 
-## 🚦 Current Status: Active Development
+### What's Available Now vs. Coming Soon
 
-**Core blockchain**: ✅ Working | **Public testnet**: 🔄 In development | **Developer tools**: 📅 Coming Q4 2025
+**✅ Available Today**
+- Run a local SELF Chain node
+- Explore the open source code
+- Contribute to core development
 
-> 📊 See our [Project Status](/project-status) page for detailed information about what's available today.
+**🔄 Coming Soon (Q3-Q4 2025)**
+- Public testnet access
+- JavaScript/TypeScript SDK
+- API Gateway
+- Token faucet
 
-## 🌍 The Open Source Revolution
+**📅 Coming Later (Q1-Q2 2026)**  
+- Python, Rust, Go SDKs
+- Block explorer
+- Production mainnet
 
-**SELF Chain's core protocol is open source** - because we believe that the fundamental infrastructure of digital freedom must be transparent and auditable. As everyone should own and control their own data, we believe that everyone should be able to help construct and verify the chain.
+> 📊 For complete details, see our [Project Status](/project-status) page.
 
-### Our Open Source Approach
 
-- **Core Protocol**: The blockchain, consensus, networking, and cryptography are fully open
-- **Security Balance**: Following best practices like Signal, some security parameters remain private
-- **Collaboration**: Developers worldwide contribute to make SELF better
-- **Community Audit**: The essential infrastructure is transparent and verifiable
-- **No Lock-in**: Fork the protocol, modify it, make it yours - true freedom
-
-### 🛠️ Get Involved
+## 🎬 Get Started
 
 <div className="button-container">
-  <a href="/Technical%20Docs/Developer%20Resources/Getting_Started_Testnet">Start Building</a>
-  <a href="https://github.com/SELF-Technology/self-chain-public">View on GitHub</a>
-  <a href="https://discord.gg/WdMdVpA4C8">Join Our Community</a>
+  <a href="/project-status">See What's Live</a>
+  <a href="/Building-on-SELF/getting-started">Start Building</a>
+  <a href="https://github.com/SELF-Technology/self-chain-public">Explore the Code</a>
 </div>
 
-### The Future: SELF DAO
+## 📚 Learn More
 
-In the future, we'll be creating **SELF DAO** to progressively decentralize governance, including oversight of security-critical components. This will ensure community control over the entire project. Every major decision, upgrade, and change will be voted on by the community.
+**Essential Reading**
+- [The SELF Manifesto](/About%20SELF/manifesto) - Our declaration of digital independence
+- [How PoAI Works](/Technical%20Docs/PoAI/Proof-of-AI) - Revolutionary AI consensus explained
+- [Project Roadmap](/Roadmap/Introduction) - Where we're going
 
-## 🛠️ Developer Preview
+**For Builders**
+- [Developer Guide](/Building-on-SELF/getting-started) - Start building on SELF
+- [Architecture Deep Dive](/Technical%20Docs/SELF%20Chain/SELF_Chain_Architecture) - Technical details
+- [Contribute to Core](/Developing%20SELF) - Help build SELF
 
-> 🚧 **EARLY ACCESS**: SELF Chain is in active development. Core blockchain functionality is working, but developer tools (SDKs, APIs, faucet) are currently in development. See our [Project Status](/project-status) for current capabilities.
 
-> ⚠️ **TESTNET WARNING**: SELF Chain is currently in testnet phase. Do not use real assets or deploy production applications. Testnet tokens have no value and the network may be reset at any time.
+## 🤝 Connect With Us
 
-### For Developers
+**Join the community building the future of self-sovereign technology:**
 
-**Note**: SELF Chain is currently running a private development testnet. Public testnet access is planned for Q4 2025. The instructions below are for developers who want to run a local node or contribute to core development.
-
-```bash
-# Clone the repository
-git clone https://github.com/SELF-Technology/self-chain-public.git
-cd self-chain-public
-
-# Build the project (requires Rust 1.70+)
-cargo build --release
-
-# Run a local development node
-cargo run --bin self-chain-node -- --dev
-
-# Note: Connecting to the testnet requires additional configuration
-# and is currently limited to core developers
-```
-
-> 📄 **Important**: These commands run a local development node only. For detailed setup instructions and current limitations, see our [testnet guide](/Technical%20Docs/Developer%20Resources/Getting_Started_Testnet).
-
-## 📚 Documentation
-
-### Getting Started
-- 📊 [Project Status](/project-status) - See what's working today
-- 🎯 [Quick Start Guide (Testnet)](/Technical%20Docs/Developer%20Resources/Getting_Started_Testnet)
-- 🏗️ [Architecture Overview](/Technical%20Docs/SELF%20Chain/SELF_Chain_Architecture)
-- 🤖 [Understanding PoAI](/Technical%20Docs/PoAI/Proof-of-AI)
-- 🎨 [Color Marker System](/Technical%20Docs/PoAI/Color%20Marker%20System)
-
-### Explore More
-- [Our Purpose](/Our%20Purpose/manifesto) - Declaration of digital independence
-- [Roadmap](/Roadmap/Introduction) - Our journey and future plans
-- [Technical Docs](/Technical%20Docs/SELF%20Chain/SELF_Chain_Architecture) - Deep dive into the technology
+- 💬 [Discord](https://discord.gg/WdMdVpA4C8) - Real-time discussions
+- 🐙 [GitHub](https://github.com/SELF-Technology) - Code & contributions
+- 🐦 [Twitter/X](https://x.com/self_hq) - Updates & announcements
+- 📧 [devs@self.app](mailto:devs@self.app) - Developer support
 
 ---
 
-## 🔓 Open Source Blockchain
-**SELF Chain - The People's Blockchain**
-
-### 🤝 Built Together
-This is more than code - it's a movement. Every contributor, every code review, every suggestion makes SELF stronger. We're building the infrastructure for human freedom, and we're doing it together.
-
-### 📂 Explore the Code
-Dive into our fully open source blockchain and contribute to the future:
-
-- **[Blockchain Core](https://github.com/SELF-Technology/self-chain-public/tree/main/src/blockchain)** - Core blockchain implementation
-  - Block structure, chain management, transaction processing
-- **[Consensus (PoAI)](https://github.com/SELF-Technology/self-chain-public/tree/main/src/consensus)** - Proof of AI consensus mechanism
-  - Validator logic, voting system, reputation management
-- **[Networking](https://github.com/SELF-Technology/self-chain-public/tree/main/src/network)** - P2P and cloud communication
-  - libp2p integration, TLS security, cloud protocol
-- **[Storage](https://github.com/SELF-Technology/self-chain-public/tree/main/src/storage)** - Hybrid distributed storage
-  - IPFS integration, OrbitDB, cloud storage adapters
-- **[Cryptography](https://github.com/SELF-Technology/self-chain-public/tree/main/src/crypto)** - Post-quantum security
-  - Kyber, SPHINCS+, hybrid cryptographic systems
-- **[AI Integration](https://github.com/SELF-Technology/self-chain-public/tree/main/src/ai)** - AI-powered validation system
-  - Pattern analysis, context management, validation services
-
-
-### 🔒 Security
-
-SELF Chain implements defense-in-depth security:
-
-- ✅ **Post-Quantum Cryptography**: Continuously evolving defenses against quantum threats
-- ✅ **AI-Powered Threat Detection**: Real-time anomaly detection
-- ✅ **Multi-Layer Validation**: Defense at every level
-- ✅ **Security First**: Comprehensive security architecture
-- ✅ **Responsible Disclosure**: Security contact: security@self.app
-
-## 🌟 Join the Revolution
-
-<div className="community-section">
-  <p>SELF isn't built by a faceless corporation - it's built by people like you who believe in digital freedom. Whether you're a developer, designer, writer, or just someone who cares about privacy, there's a place for you here.</p>
-  
-  <div className="opensource-links">
-    <h4>🚀 Developer Resources</h4>
-    <ul>
-      <li><a href="/Technical%20Docs/Developer%20Resources/Getting_Started_Testnet">Getting Started Guide</a> - Start building on SELF Chain today</li>
-      <li><a href="/Technical%20Docs/Developer%20Resources/PUBLIC_INTERFACES">API Documentation</a> - Public interfaces and SDKs</li>
-      <li><a href="/Contributing">Contribution Guide</a> - How to contribute</li>
-      <li><a href="https://github.com/SELF-Technology/self-chain-public/issues">Open Issues</a> - Find something to work on</li>
-    </ul>
-  </div>
+<div className="hero-footer">
+  <p><strong>SELF isn't built by a corporation. It's built by people who believe in digital freedom.</strong></p>
+  <p>Every line of code, every contribution, every community member makes us stronger.</p>
+  <p><em>This is how we win - together.</em></p>
 </div>
-
----
-
-## 📊 Project Status
-
-| Component | Status | Notes |
-|-----------|--------|-------|
-| Core Blockchain | ✅ Complete | Full transaction processing and state management |
-| PoAI Consensus | ✅ Complete | AI-driven validation working |
-| P2P Network | ✅ Complete | libp2p integration functional |
-| Storage Layer | 🚧 In Progress | IPFS integration ongoing |
-| SDKs | 📅 Planned | Multi-language support coming |
-
-## 🌐 Ecosystem
-
-### Official Resources & Channels
-- 🌍 [Website](https://self.app)
-- 📖 [Documentation](https://docs.self.app)
-- 🐙 [GitHub](https://github.com/SELF-Technology) - Primary developer hub
-- 💬 [Discord Community](https://discord.gg/WdMdVpA4C8) - Real-time chat
-- 🐦 [Twitter/X](https://x.com/self_hq) - Announcements and updates
-- 📺 [YouTube](https://www.youtube.com/@selfcommunityvideos) - Video content
-- 📧 Email: devs@self.app - Developer support
-
-> 📢 **Stay Updated**: Follow multiple channels to ensure you don't miss important announcements. Major updates are posted across all platforms.
 

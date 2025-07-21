@@ -1,0 +1,26 @@
+{
+  "id": "Developing SELF/security",
+  "title": "Security Policy",
+  "description": "Reporting Security Vulnerabilities",
+  "source": "@site/docs/Developing SELF/security.md",
+  "sourceDirName": "Developing SELF",
+  "slug": "/Developing SELF/security",
+  "permalink": "/Developing SELF/security",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Governance",
+    "permalink": "/Developing SELF/governance"
+  },
+  "next": {
+    "title": "Contributing to SELF Chain",
+    "permalink": "/Developing SELF/"
+  }
+}

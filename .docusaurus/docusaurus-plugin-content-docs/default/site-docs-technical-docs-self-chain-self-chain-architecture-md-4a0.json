@@ -1,0 +1,27 @@
+{
+  "id": "Technical Docs/SELF Chain/SELF_Chain_Architecture",
+  "title": "SELF Chain Architecture",
+  "description": "📂 Explore the Open Source Code",
+  "source": "@site/docs/Technical Docs/SELF Chain/SELF_Chain_Architecture.md",
+  "sourceDirName": "Technical Docs/SELF Chain",
+  "slug": "/Technical Docs/SELF Chain/SELF_Chain_Architecture",
+  "permalink": "/Technical Docs/SELF Chain/SELF_Chain_Architecture",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "SELF Chain Architecture",
+    "sidebar_position": 1
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Contributing to SELF Chain",
+    "permalink": "/Developing SELF/"
+  },
+  "next": {
+    "title": "Why We Built A Chain",
+    "permalink": "/Technical Docs/SELF Chain/Why Build A Blockchain"
+  }
+}

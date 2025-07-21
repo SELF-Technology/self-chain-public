@@ -1,37 +1,54 @@
 {
-  "name": "self-token-contracts",
-  "version": "1.0.0",
-  "description": "SELF Token ERC-20 Smart Contracts",
-  "main": "index.js",
+  "name": "docs",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "hardhat test",
-    "compile": "hardhat compile",
-    "deploy:mainnet": "hardhat run scripts/deploy.js --network mainnet",
-    "deploy:goerli": "hardhat run scripts/deploy.js --network goerli",
-    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
-    "coverage": "hardhat coverage",
-    "gas-report": "REPORT_GAS=true hardhat test"
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "npm run build && wrangler deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "safe-start": "npm run clear && npm start",
+    "dev": "nodemon",
+    "dev-old": "npm run clear && docusaurus start --no-open"
   },
-  "keywords": [
-    "self",
-    "blockchain",
-    "erc20",
-    "token"
-  ],
-  "author": "SELF Technology",
-  "license": "MIT",
+  "dependencies": {
+    "@docsearch/css": "^3.9.0",
+    "@docusaurus/core": "^3.8.1",
+    "@docusaurus/plugin-pwa": "^3.8.1",
+    "@docusaurus/preset-classic": "^3.8.1",
+    "@fontsource/bai-jamjuree": "^5.2.6",
+    "@mdx-js/react": "^3.0.0",
+    "clsx": "^2.0.0",
+    "dotenv": "^17.1.0",
+    "json-parse-even-better-errors": "^4.0.0",
+    "prism-react-renderer": "^2.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0"
+  },
   "devDependencies": {
-    "@nomiclabs/hardhat-ethers": "^2.2.3",
-    "@nomiclabs/hardhat-etherscan": "^3.1.7",
-    "@nomiclabs/hardhat-waffle": "^2.0.6",
-    "@openzeppelin/contracts": "^4.9.3",
-    "@chainlink/contracts": "^0.8.0",
-    "chai": "^4.3.7",
-    "dotenv": "^16.3.1",
-    "ethereum-waffle": "^4.0.10",
-    "ethers": "^5.7.2",
-    "hardhat": "^2.17.0",
-    "hardhat-gas-reporter": "^1.0.9",
-    "solidity-coverage": "^0.8.4"
+    "@fullhuman/postcss-purgecss": "^7.0.2",
+    "autoprefixer": "^10.4.21",
+    "esbuild-loader": "^4.3.0",
+    "nodemon": "^3.1.10"
   }
 }

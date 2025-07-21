@@ -1,7 +1,9 @@
 ---
-sidebar_label: "Why Build A Blockchain"
+sidebar_label: "Why We Built A Chain"
 sidebar_position: 2
 ---
+
+# Why We Built A Chain
 
 ## Do we need another blockchain?
 
