@@ -14,7 +14,7 @@ slug: /
   <div className="hero-section">
     <div className="hero-content">
       <h1 className="hero-title">SELF<br />Documentation</h1>
-      <p className="hero-tagline">The People's Technology Platform<br className="desktop-only" /> Built by the People, for the People</p>
+      <p className="hero-tagline">Built by the People, for the People</p>
     </div>
   </div>
 </div>
@@ -27,16 +27,16 @@ SELF represents a return to the original promise: technology that serves its use
 
 ## 🌟 Overview
 
-SELF Chain represents a paradigm shift in blockchain technology, combining AI-powered validation with true self-sovereignty. We're building a future where personal data ownership isn't just a promise—it's a fundamental right encoded in our technology.
+SELF represents a paradigm shift in how technology serves humanity. We're building a complete ecosystem where personal data ownership isn't just a promise—it's a fundamental right encoded in every layer of our technology stack.
 
-**This isn't just another blockchain. It's a movement.** As everyone should own and control their own data, we believe that everyone should be able to help construct and verify the chain. SELF Chain is built collaboratively by a global community of developers, researchers, and privacy advocates who believe in digital freedom.
+**This isn't just another tech project. It's a movement.** From our AI-powered blockchain (SELF Chain) to our upcoming Super-App and decentralized services, every component is designed with one principle: you own and control your digital life. SELF is built collaboratively by a global community of developers, researchers, and privacy advocates who believe in digital freedom.
 
-### Why SELF Chain?
+### Why SELF?
 
-- **🤖 AI-First Design**: Unlike blockchains that add AI as an afterthought, SELF Chain is built from the ground up with AI at its core
-- **🔐 True Data Sovereignty**: Your data, your rules—enforced by cryptography and AI
-- **⚡ High Performance**: Designed for real-world scale without compromising decentralization
-- **🌍 Open Source Core**: Transparent blockchain protocol with community-driven development
+- **🤖 AI-First Design**: Our entire ecosystem leverages AI for validation, security, and user empowerment
+- **🔐 True Data Sovereignty**: Your data, your rules—enforced across every SELF service
+- **⚡ Complete Platform**: From blockchain infrastructure to user applications
+- **🌍 Open Source Core**: Transparent technology with community-driven development
 - **🤝 Community Owned**: No single entity controls SELF—it belongs to everyone
 
 ## 🚀 Key Features
