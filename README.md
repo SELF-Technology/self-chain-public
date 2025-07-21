@@ -1,62 +1,120 @@
-# SELF Documentation Site (Docusaurus)
+# SELF Chain - The People's Blockchain
 
-This directory contains the Docusaurus configuration for docs.self.app.
+## The Problem
 
-## 🚀 Quick Start
+Today's internet is broken. Tech giants harvest your data, control your digital life, and profit from your privacy. You've become the product.
+
+## The Solution: SELF
+
+SELF is reclaiming the internet for people. We're building the world's first **AI-powered blockchain** designed from the ground up for personal data sovereignty.
+
+### 🎯 Our Mission
+
+Every line of code, every design decision, every feature serves one purpose: **You own your digital life.**
+
+### 🚀 What Makes SELF Different
+
+**🤖 Proof-of-AI Technology**
+- World's first AI-driven blockchain consensus
+- Color Marker System for advanced validation
+- No energy-wasting mining
+
+**🔐 Privacy by Design**
+- Data sovereignty built into every layer
+- You control who sees what, always
+- No backdoors, no compromises
+
+**🌍 True Decentralization**
+- 100% open source core protocol
+- Community governed, no corporate control
+- Transparent, auditable, trustless
+
+**🚀 Ready to Scale**
+- Enterprise-grade Constellation architecture
+- Industry-specific blockchain deployment
+- Complete ecosystem from blockchain to apps
+
+## 🚦 Current Status
+
+### What's Available Now vs. Coming Soon
+
+**✅ Available Today**
+- Run a local SELF Chain node
+- Explore the open source code
+- Contribute to core development
+
+**🔄 Coming Soon (Q3-Q4 2025)**
+- Public testnet access
+- JavaScript/TypeScript SDK
+- API Gateway
+- Token faucet
+
+**📅 Coming Later (Q1-Q2 2026)**  
+- Python, Rust, Go SDKs
+- Block explorer
+- Production mainnet
+
+> 📊 For complete details, see our [Project Status](docs/project-status/index.md) page.
+
+## 🎬 Get Started
+
+- **[📊 See What's Live](docs/project-status/index.md)** - Current capabilities and limitations
+- **[🚀 Start Building](docs/Building-on-SELF/getting-started.md)** - Developer guide
+- **[🐙 Explore the Code](https://github.com/SELF-Technology/self-chain-public)** - Dive into the source
+
+## 🏃 Quick Start
 
 ```bash
-# Install dependencies
-npm install
+# Clone the repository
+git clone https://github.com/SELF-Technology/self-chain-public.git
+cd self-chain-public
 
-# Start development server
-npm run start
+# Build the project (requires Rust 1.70+)
+cargo build --release
 
-# Build for production
-npm run build
+# Run a local development node
+cargo run --bin self-chain-node -- --dev
 ```
 
-## 📁 Structure
+> ⚠️ **Note**: This runs a local development node only. Testnet access is currently limited to core developers.
 
-- **Configuration**: This directory (`/docusaurus/`)
-- **Documentation**: Parent directory (`/docs/`)
-- **Output**: Will be deployed to docs.self.app
+## 📚 Documentation
 
-## 🔧 Configuration
+**Essential Reading**
+- [The SELF Manifesto](docs/About%20SELF/manifesto.md) - Our declaration of digital independence
+- [How PoAI Works](docs/Technical%20Docs/PoAI/Proof-of-AI.md) - Revolutionary AI consensus explained
+- [Project Roadmap](docs/Roadmap/Introduction.md) - Where we're going
 
-The site is configured to:
-- Use `/docs/` from the parent directory as content source
-- Serve documentation at the root path (`/`)
-- Support dark/light mode
-- Include SELF branding
-- Algolia DocSearch integration (requires API keys)
+**For Builders**
+- [Developer Guide](docs/Building-on-SELF/getting-started.md) - Start building on SELF
+- [Architecture Deep Dive](docs/Technical%20Docs/SELF%20Chain/SELF_Chain_Architecture.md) - Technical details
+- [Contribute to Core](docs/Developing%20SELF/index.md) - Help build SELF
 
-### Search Configuration
+**Full Documentation**: [docs.self.app](https://docs.self.app)
 
-To enable Algolia DocSearch:
+## 🤝 Connect With Us
 
-1. Copy `.env.example` to `.env`:
-   ```bash
-   cp .env.example .env
-   ```
+**Join the community building the future of self-sovereign technology:**
 
-2. Add your Algolia credentials to `.env`:
-   ```
-   ALGOLIA_APP_ID=your-algolia-app-id
-   ALGOLIA_SEARCH_API_KEY=your-algolia-search-api-key
-   ```
+- 💬 [Discord](https://discord.gg/WdMdVpA4C8) - Real-time discussions
+- 🐙 [GitHub](https://github.com/SELF-Technology) - Code & contributions
+- 🐦 [Twitter/X](https://x.com/self_hq) - Updates & announcements
+- 📧 [devs@self.app](mailto:devs@self.app) - Developer support
 
-3. The search will automatically appear in the navbar when valid credentials are provided
+## 🔒 Security
 
-## 📝 Editing Documentation
+Found a vulnerability? Please report it responsibly:
+- Email: security@self.app
+- See our [Security Policy](SECURITY.md) for details
 
-**Important**: Edit documentation files in the `/docs/` directory, NOT in this docusaurus folder.
+## 📄 License
 
-```
-self-chain-public/
-├── docs/           ← Edit documentation here
-└── docusaurus/     ← Docusaurus config only (don't edit docs here)
-```
+SELF Chain is open source software licensed under the [MIT License](LICENSE).
 
-## 🚢 Deployment
+---
 
-Coming soon: Automatic deployment to docs.self.app via GitHub Actions.
+**SELF isn't built by a corporation. It's built by people who believe in digital freedom.**
+
+Every line of code, every contribution, every community member makes us stronger.
+
+*This is how we win - together.*
