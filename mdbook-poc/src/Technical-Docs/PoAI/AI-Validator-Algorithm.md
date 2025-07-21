@@ -1,1 +1,0 @@
-# AI-Validator Algorithm
