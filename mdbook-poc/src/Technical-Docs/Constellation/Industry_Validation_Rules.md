@@ -1,1 +1,0 @@
-# Industry Validation Rules

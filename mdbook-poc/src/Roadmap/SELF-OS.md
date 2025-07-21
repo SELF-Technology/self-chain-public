@@ -1,1 +1,0 @@
-# 💻 SELF Operating System

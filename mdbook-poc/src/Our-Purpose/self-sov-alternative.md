@@ -1,1 +1,0 @@
-# 🔓 A Self-Sovereign Alternative
