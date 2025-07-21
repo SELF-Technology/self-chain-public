@@ -1,6 +1,6 @@
 ---
-title: "SELF Documentation - The People's Blockchain"
-description: "SELF Chain documentation - Build on the people's blockchain with Proof-of-AI consensus, post-quantum cryptography, and human-centric design. Open-source infrastructure for self-sovereign technology, privacy-first applications, and decentralized AI validation."
+title: "SELF Documentation - The People's Technology"
+description: "SELF documentation - Build with the people's technology platform featuring SELF Chain blockchain with Proof-of-AI consensus, post-quantum cryptography, and human-centric design. Open-source infrastructure for self-sovereign technology, privacy-first applications, and decentralized AI validation."
 keywords: ["self chain", "proof of ai", "poai consensus", "post quantum blockchain", "self sovereign technology", "decentralized ai", "people's blockchain", "privacy first", "color marker system", "hybrid cloud blockchain", "ai validator", "human rights technology", "web3 operating system", "blockchain super app"]
 sidebar_label: "Welcome"
 sidebar_position: 0
@@ -14,7 +14,7 @@ slug: /
   <div className="hero-section">
     <div className="hero-content">
       <h1 className="hero-title">SELF<br />Documentation</h1>
-      <p className="hero-tagline">The World's First AI-Native Blockchain<br className="desktop-only" /> Built by the People, for the People</p>
+      <p className="hero-tagline">The People's Technology Platform<br className="desktop-only" /> Built by the People, for the People</p>
     </div>
   </div>
 </div>
@@ -25,7 +25,7 @@ The internet began as a vision of decentralized communication - a network where 
 
 SELF represents a return to the original promise: technology that serves its users, not its overlords.
 
-## 🌟 Overview: SELF - The Future Of Technology Is Yours
+## 🌟 Overview
 
 SELF Chain represents a paradigm shift in blockchain technology, combining AI-powered validation with true self-sovereignty. We're building a future where personal data ownership isn't just a promise—it's a fundamental right encoded in our technology.
 
@@ -170,7 +170,7 @@ SELF Chain implements defense-in-depth security:
   <div className="opensource-links">
     <h4>🚀 Developer Resources</h4>
     <ul>
-      <li><a href="/Technical%20Docs/Developer%20Resources/Getting_Started_Testnet">Getting Started Guide</a> - Start building on SELF today</li>
+      <li><a href="/Technical%20Docs/Developer%20Resources/Getting_Started_Testnet">Getting Started Guide</a> - Start building on SELF Chain today</li>
       <li><a href="/Technical%20Docs/Developer%20Resources/PUBLIC_INTERFACES">API Documentation</a> - Public interfaces and SDKs</li>
       <li><a href="https://github.com/SELF-Technology/self-chain-public/blob/main/CONTRIBUTING.md">Contribution Guide</a> - How to contribute</li>
       <li><a href="https://github.com/SELF-Technology/self-chain-public/issues">Open Issues</a> - Find something to work on</li>

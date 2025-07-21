@@ -1,17 +1,17 @@
 ---
-title: Project Status - Current State of SELF Chain
+title: Project Status - Current State of SELF
 sidebar_position: 1
 ---
 
-# 📊 SELF Chain Project Status
+# 📊 SELF Project Status
 
 > **Last Updated**: July 2025
 
-This document provides a transparent, real-time view of what's currently working in SELF Chain, what's being developed, and what's planned for the future. We believe in honest communication about our development progress.
+This document provides a transparent, real-time view of what's currently working in SELF, what's being developed, and what's planned for the future. We believe in honest communication about our development progress.
 
 ## 🎯 Quick Summary
 
-SELF Chain is in **active development** with a working testnet demonstrating our revolutionary Proof-of-AI consensus. While core blockchain functionality is operational, many user-facing features are still being built.
+SELF is in **active development** with a working testnet demonstrating our revolutionary Proof-of-AI consensus on SELF Chain. While core blockchain functionality is operational, many user-facing features are still being built.
 
 **If you're looking to:**
 - ✅ **Run a testnet node** - You can do this today (with technical expertise)
