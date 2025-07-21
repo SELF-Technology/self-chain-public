@@ -17,8 +17,8 @@
   },
   "sidebar": "docs",
   "previous": {
-    "title": "💻 Operating System",
-    "permalink": "/Roadmap/SELF OS"
+    "title": "Building on SELF",
+    "permalink": "/Building-on-SELF/"
   },
   "next": {
     "title": "SDK Structure",

@@ -1,0 +1,39 @@
+/* Custom styling for category/index pages */
+
+/* Remove underlines from Docusaurus generated category page links */
+main article ul li a {
+  text-decoration: none !important;
+}
+
+main article ul li a:hover {
+  text-decoration: none !important;
+}
+
+/* Target the specific container for category pages */
+.theme-doc-markdown ul li a {
+  text-decoration: none !important;
+}
+
+.theme-doc-markdown ul li a:hover {
+  text-decoration: none !important;
+}
+
+/* Hide the default document icons on category pages */
+.cardContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocCard-styles-module svg,
+.cardContainer article h2 svg,
+article h2 svg.iconEdit_node_modules-\@docusaurus-theme-classic-lib-theme-DocCard-styles-module,
+.theme-doc-card svg,
+.card svg.docCardIcon,
+svg[class*="iconEdit"] {
+  display: none !important;
+}
+
+/* More specific targeting for generated index pages */
+main[class*="docMainContainer"] article h2 > svg:first-child {
+  display: none !important;
+}
+
+/* Hide any SVG that appears before the text in h2 elements */
+article.margin-top--lg h2 svg {
+  display: none !important;
+}

@@ -15,6 +15,13 @@ export default {
   "onBrokenMarkdownLinks": "warn",
   "headTags": [
     {
+      "tagName": "meta",
+      "attributes": {
+        "http-equiv": "Content-Security-Policy",
+        "content": "default-src * 'unsafe-inline' 'unsafe-eval' data: blob:;"
+      }
+    },
+    {
       "tagName": "link",
       "attributes": {
         "rel": "preload",
@@ -85,7 +92,7 @@ export default {
           "sidebarPath": "/Users/jmac/Documents/GitHub/self-chain-public/sidebars.js"
         },
         "theme": {
-          "customCss": "/Users/jmac/Documents/GitHub/self-chain-public/src-website/css/custom.css"
+          "customCss": "/Users/jmac/Documents/GitHub/self-chain-public/src/css/custom.css"
         }
       }
     ]
@@ -130,7 +137,7 @@ export default {
     ],
     "colorMode": {
       "defaultMode": "dark",
-      "disableSwitch": true,
+      "disableSwitch": false,
       "respectPrefersColorScheme": false
     },
     "navbar": {

@@ -1,0 +1,81 @@
+/* Fix breadcrumb z-index to ensure visibility over galaxy background */
+
+/* Force breadcrumbs to top layer */
+.theme-doc-breadcrumbs,
+nav[aria-label="Breadcrumbs"],
+.breadcrumbs,
+.breadcrumbs__list {
+  position: relative !important;
+  z-index: 9999 !important;
+}
+
+/* Ensure the entire breadcrumb container is above backgrounds */
+.theme-doc-page__aside nav,
+.thin-scrollbar {
+  z-index: 9998 !important;
+}
+
+/* Force galaxy/hero backgrounds to stay behind */
+.hero-section-wrapper,
+.hero-section,
+.landing-page .hero-section-wrapper,
+.landing-page::before,
+.landing-page::after {
+  position: relative;
+  z-index: 1 !important;
+}
+
+/* Additional specificity for mobile/tablet */
+@media (max-width: 996px) {
+  .theme-doc-breadcrumbs {
+    position: relative !important;
+    z-index: 10000 !important;
+  }
+  
+  /* Ensure navbar and breadcrumbs stay on top */
+  .navbar,
+  .navbar__inner,
+  nav[aria-label="Breadcrumbs"] {
+    position: relative !important;
+    z-index: 10001 !important;
+  }
+}
+
+/* Fix mobile menu overlap with breadcrumb */
+@media (max-width: 996px) {
+  /* When mobile menu is open, adjust breadcrumb positioning */
+  .navbar-sidebar--show ~ .main-wrapper .theme-doc-breadcrumbs,
+  .navbar-sidebar--show ~ main .theme-doc-breadcrumbs {
+    margin-left: 0 !important;
+    padding-left: 1rem !important;
+  }
+  
+  /* Hide breadcrumb when mobile menu is open to prevent overlap */
+  .navbar-sidebar--show ~ .main-wrapper nav[aria-label="Breadcrumbs"],
+  .navbar-sidebar--show ~ main nav[aria-label="Breadcrumbs"] {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Alternative: Push breadcrumb to the right when menu is open */
+  /*
+  .navbar-sidebar--show ~ .main-wrapper .theme-doc-breadcrumbs {
+    transform: translateX(250px);
+    transition: transform 0.3s ease;
+  }
+  */
+}
+
+/* Ensure proper spacing on mobile */
+@media (max-width: 768px) {
+  .theme-doc-breadcrumbs {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+  
+  /* Reduce breadcrumb container height on mobile */
+  nav[aria-label="Breadcrumbs"] {
+    min-height: auto;
+  }
+}

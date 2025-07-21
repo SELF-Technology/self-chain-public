@@ -1,0 +1,90 @@
+/* Footer content wrapper - flex container for social icons and theme toggle */
+.footer-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  position: relative;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Footer theme toggle - positioned far right like Vercel */
+.footer-theme-toggle-wrapper {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.footer-theme-toggle {
+  background: transparent;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.footer-theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  color: #999;
+  transition: color 0.2s ease;
+}
+
+/* Dark theme styles */
+[data-theme='dark'] .footer-theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .footer-theme-toggle svg {
+  color: #999;
+}
+
+[data-theme='dark'] .footer-theme-toggle:hover svg {
+  color: #fff;
+}
+
+/* Light theme styles */
+[data-theme='light'] .footer-theme-toggle:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='light'] .footer-theme-toggle svg {
+  color: #666;
+}
+
+[data-theme='light'] .footer-theme-toggle:hover svg {
+  color: #000;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .footer-content-wrapper {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .footer-theme-toggle-wrapper {
+    position: static;
+    transform: none;
+  }
+  
+  .footer-social-icons {
+    margin-bottom: 0;
+  }
+}

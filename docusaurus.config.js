@@ -8,7 +8,7 @@
 
 const config = {
   title: 'SELF Documentation',
-  tagline: 'Build on the people\'s blockchain with Proof-of-AI consensus, post-quantum cryptography, and human-centric design',
+  tagline: 'Creating the Future of Self-Sovereign Technology',
   url: 'https://docs.self.app',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
@@ -17,6 +17,16 @@ const config = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   headTags: [
+    // CSP meta tag to prevent eval warnings in development
+    {
+      tagName: 'meta',
+      attributes: {
+        'http-equiv': 'Content-Security-Policy',
+        content: process.env.NODE_ENV === 'development' 
+          ? "default-src * 'unsafe-inline' 'unsafe-eval' data: blob:;" 
+          : "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:;",
+      },
+    },
     {
       tagName: 'link',
       attributes: {
@@ -93,7 +103,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
         },
         theme: {
-          customCss: require.resolve('./src-website/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
@@ -105,10 +115,31 @@ const config = {
       return {
         name: 'custom-webpack-plugin',
         configureWebpack(config, isServer, utils) {
-          // Disable eval-based source maps in all environments
-          return {
-            devtool: config.mode === 'production' ? 'source-map' : 'cheap-module-source-map', // No eval
-          };
+          // Completely disable eval in all environments
+          if (!isServer) {
+            // Client-side specific config
+            config.devtool = 'source-map'; // Never use eval
+            
+            // Disable webpack's eval-based hot module replacement
+            if (config.optimization) {
+              config.optimization.moduleIds = 'deterministic';
+              config.optimization.chunkIds = 'deterministic';
+            }
+            
+            // Ensure no eval in development
+            if (config.mode === 'development') {
+              config.devtool = 'cheap-module-source-map';
+              // Remove any eval-based plugins
+              if (config.plugins) {
+                config.plugins = config.plugins.filter(plugin => {
+                  const name = plugin.constructor.name;
+                  return !name.includes('Eval');
+                });
+              }
+            }
+          }
+          
+          return {};
         },
       };
     },
@@ -157,7 +188,7 @@ const config = {
     } : undefined,
     colorMode: {
       defaultMode: 'dark',
-      disableSwitch: true, // Custom theme toggle in footer
+      disableSwitch: false, // Enable theme switching
       respectPrefersColorScheme: false,
     },
     navbar: {

@@ -46,8 +46,23 @@
               "sidebar": "docs"
             },
             {
+              "id": "Building-on-SELF/cloud-integration",
+              "path": "/Building-on-SELF/cloud-integration",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Building-on-SELF/cloud-integration 2",
+              "path": "/Building-on-SELF/cloud-integration 2",
+              "sidebar": "docs"
+            },
+            {
               "id": "Building-on-SELF/getting-started",
               "path": "/Building-on-SELF/getting-started",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Building-on-SELF/index",
+              "path": "/Building-on-SELF/",
               "sidebar": "docs"
             },
             {
@@ -131,6 +146,21 @@
               "sidebar": "docs"
             },
             {
+              "id": "Technical Docs/Cloud-Architecture/Developer-Integration",
+              "path": "/Technical Docs/Cloud-Architecture/Developer-Integration",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/Cloud-Architecture/Overview",
+              "path": "/Technical Docs/Cloud-Architecture/Overview",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/Cloud-Architecture/Running-Your-Own-Node",
+              "path": "/Technical Docs/Cloud-Architecture/Running-Your-Own-Node",
+              "sidebar": "docs"
+            },
+            {
               "id": "Technical Docs/Constellation/Industry_Validation_Rules",
               "path": "/Technical Docs/Constellation/Industry_Validation_Rules",
               "sidebar": "docs"
@@ -138,6 +168,16 @@
             {
               "id": "Technical Docs/Constellation/Overview",
               "path": "/Technical Docs/Constellation/Overview",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/Developer Resources/Getting_Started_Testnet",
+              "path": "/Technical Docs/Developer Resources/Getting_Started_Testnet",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/Developer Resources/PUBLIC_INTERFACES",
+              "path": "/Technical Docs/Developer Resources/PUBLIC_INTERFACES",
               "sidebar": "docs"
             },
             {
@@ -258,6 +298,11 @@
             {
               "id": "Technical Docs/Validate/index",
               "path": "/Technical Docs/Validate/",
+              "sidebar": "docs"
+            },
+            {
+              "id": "/category/️-cloud-architecture",
+              "path": "/category/️-cloud-architecture",
               "sidebar": "docs"
             }
           ],
