@@ -24,7 +24,7 @@ slug: /
 <div className="status-callout">
   <h3>🚧 SELF Chain is in Active Development</h3>
   <p>We believe in transparency about our progress. While our core blockchain and PoAI consensus are operational, many features are still being built.</p>
-  <p><strong>→ <a href="/PROJECT_STATUS">View Detailed Project Status</a></strong> - See what's working, what's coming, and current limitations</p>
+  <p><strong>→ <a href="/Getting%20Started">View Detailed Project Status</a></strong> - See what's working, what's coming, and current limitations</p>
 </div>
 
 ## Background
