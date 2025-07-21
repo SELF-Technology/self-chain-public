@@ -28,20 +28,25 @@ By participating in this project, you agree to abide by our [Code of Conduct](CO
 
 ## Getting Started
 
+> ⚠️ **Important**: SELF Chain is in active development. Please review our [Project Status](https://docs.self.app/Project%20Status) to understand what's currently available.
+
 1. **Join our Community**
    - Discord: [Join SELF Community](https://discord.gg/WdMdVpA4C8)
    - Follow us on [Twitter/X](https://x.com/self_hq)
    - Star and watch this repository
+   - GitHub Discussions for technical questions
 
 2. **Understand the Project**
    - Read our [documentation](https://docs.self.app)
-   - Review the [architecture overview](docs/Architecture/SELF_Chain_Architecture.md)
-   - Understand [Proof-of-AI consensus](docs/Technical%20Docs/PoAI/Proof-of-AI.md)
+   - Review the [Project Status](https://docs.self.app/Project%20Status) for current state
+   - Review the [architecture overview](https://docs.self.app/Technical%20Docs/SELF%20Chain/SELF_Chain_Architecture)
+   - Understand [Proof-of-AI consensus](https://docs.self.app/Technical%20Docs/PoAI/Proof-of-AI)
 
 3. **Find Your First Issue**
    - Look for issues labeled `good-first-issue`
    - Check `help-wanted` labels for areas needing assistance
-   - Join Discord to discuss ideas before starting major work
+   - Join Discord or start a GitHub Discussion before starting major work
+   - Note: Many components are still being developed - check feasibility first
 
 ## How to Contribute
 
@@ -50,18 +55,22 @@ By participating in this project, you agree to abide by our [Code of Conduct](CO
 Before creating bug reports, please check existing issues to avoid duplicates.
 
 **To report a bug:**
-1. Use the [Bug Report template](.github/ISSUE_TEMPLATE/bug_report.md)
+1. Create a new issue with a clear title
 2. Include detailed steps to reproduce
-3. Provide system information
+3. Provide system information (OS, Rust version, etc.)
 4. Add relevant logs or screenshots
+5. Tag the issue with `bug` label
 
 ### 💡 Suggesting Features
 
 We love new ideas! To suggest a feature:
-1. Use the [Feature Request template](.github/ISSUE_TEMPLATE/feature_request.md)
+1. Create a new issue with "[Feature Request]" prefix
 2. Explain the problem it solves
 3. Describe your proposed solution
 4. Consider alternatives you've thought about
+5. Tag the issue with `enhancement` label
+
+> **Note**: Check our [Project Status](https://docs.self.app/Project%20Status) first to see if the feature is already planned
 
 ### 📝 Improving Documentation
 
@@ -86,9 +95,10 @@ Documentation contributions are highly valued! You can:
    ```
 
 3. **Make Your Changes**
-   - Follow our [Code Style Guide](docs/Development/Code_Style_Guide.md)
+   - Follow Rust best practices and use `cargo fmt` and `cargo clippy`
    - Add tests for new functionality
    - Update documentation as needed
+   - Ensure your code builds without warnings
 
 4. **Commit Your Changes**
    ```bash
@@ -107,35 +117,34 @@ Documentation contributions are highly valued! You can:
 
 ### Prerequisites
 
-- Rust 1.70+ (for core blockchain)
-- Node.js 18+ (for SDK and tools)
-- Docker (for local development)
+- Rust 1.70+ (required for core blockchain)
 - Git
+- Optional: Docker (for containerized development)
+- Optional: Node.js 18+ (for future SDK development)
+
+> **Note**: The project is primarily Rust-based. SDKs in other languages are planned but not yet available.
 
 ### Local Development
 
-1. **Clone and Install**
+1. **Clone and Build**
    ```bash
    git clone https://github.com/SELF-Technology/self-chain-public.git
    cd self-chain-public
-   # Follow specific setup instructions in each component's README
+   cargo build
    ```
 
 2. **Run Tests**
    ```bash
-   # For Rust components
    cargo test
-   
-   # For JavaScript/TypeScript
-   npm test
    ```
 
-3. **Build Documentation**
+3. **Run a Local Node** (Advanced)
    ```bash
-   cd docs
-   npm install
-   npm run build
+   # Note: Requires additional setup - see documentation
+   cargo run --bin self-chain-node -- --dev
    ```
+
+> **Important**: Many features shown in documentation are planned but not yet implemented. Check [Project Status](https://docs.self.app/Project%20Status) for current capabilities.
 
 ## Contribution Areas
 
@@ -144,34 +153,35 @@ Documentation contributions are highly valued! You can:
 These areas welcome community contributions:
 
 - **Documentation**
-  - Tutorials and guides
-  - API documentation
-  - Example applications
-  - Translations
+  - Improving existing documentation clarity
+  - Adding code examples
+  - Creating architecture diagrams
+  - Fixing typos and errors
+  - Translations (once base docs are stable)
 
-- **Developer Tools**
-  - SDKs in various languages
-  - CLI tools
-  - IDE integrations
-  - Testing frameworks
+- **Core Blockchain** (with guidance)
+  - Bug fixes in non-security-critical areas
+  - Performance improvements
+  - Test coverage improvements
+  - Code refactoring for clarity
 
-- **UI/UX Components**
-  - Dashboard improvements
-  - Visualization tools
-  - Mobile interfaces
-  - Accessibility enhancements
+- **Future Development** (Planning Phase)
+  - SDK design proposals
+  - API specification feedback
+  - Tool requirements gathering
+  - Use case documentation
 
-- **Integrations**
-  - Exchange integrations
-  - Wallet support
-  - Third-party service connectors
-  - Blockchain bridges (non-security critical)
+- **Testing & Quality**
+  - Writing additional tests
+  - Benchmarking scenarios
+  - Bug reports with reproductions
+  - Code review assistance
 
-- **Performance**
-  - Benchmarking tools
-  - Optimization suggestions
-  - Load testing scenarios
-  - Monitoring solutions
+- **Community**
+  - Answering questions on Discord/GitHub
+  - Creating educational content
+  - Helping new contributors
+  - Improving onboarding docs
 
 ### 🔒 Restricted Areas
 
@@ -235,22 +245,24 @@ When contributing:
 
 - **Discord**: [SELF Community](https://discord.gg/WdMdVpA4C8) - Real-time chat
 - **GitHub Discussions**: Long-form technical discussions
+- **GitHub Issues**: Bug reports and feature requests
 - **Twitter/X**: [@self_hq](https://x.com/self_hq) - Updates and announcements
+- **Email**: devs@self.app for developer questions
 
 ### Recognition
 
 We value all contributions! Contributors are:
-- Listed in our [Contributors page](CONTRIBUTORS.md)
+- Recognized in pull request comments and releases
 - Eligible for special Discord roles
-- Invited to contributor-only events
-- Considered for bounty programs
+- Part of building the future of blockchain
 
 ### Getting Help
 
-- **Discord #dev-help**: Quick questions
+- **Discord**: General questions and community chat
 - **GitHub Discussions**: Technical deep-dives
+- **GitHub Issues**: Specific bugs or feature discussions
 - **Documentation**: [docs.self.app](https://docs.self.app)
-- **Office Hours**: Weekly developer calls (Thursdays 3PM UTC)
+- **Project Status**: [Current development state](https://docs.self.app/Project%20Status)
 
 ## License
 
