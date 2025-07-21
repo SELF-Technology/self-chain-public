@@ -28,7 +28,6 @@ Once the API Gateway is deployed:
 2. The endpoints will become functional
 3. Announcements will be made across multiple channels:
    - [GitHub Releases](https://github.com/SELF-Technology/self-chain-public/releases)
-   - [Discord Community](https://discord.gg/WdMdVpA4C8) (optional - no account required for updates)
    - Project website and social media
 4. The testnet connection guide will be updated with working examples
 
@@ -530,9 +529,8 @@ const client = new SELFClient('https://testnet-api.self.app');
 
 ### Getting Help
 
-- **Discord**: [#testnet-help](https://discord.gg/WdMdVpA4C8)
 - **GitHub Issues**: [Report bugs](https://github.com/SELF-Technology/self-chain-public/issues)
-- **Email**: testnet-support@self.app
+- **Email**: devs@self.app
 
 ### Providing Feedback
 
