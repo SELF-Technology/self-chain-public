@@ -14,7 +14,6 @@ info:
     **When Will This Be Available?**
     - Expected: Q3 2025
     - GitHub Releases: https://github.com/SELF-Technology/self-chain-public/releases
-    - Discord (optional): https://discord.gg/WdMdVpA4C8
     
     **⚠️ TESTNET WARNING**: Once deployed, this API will provide access to SELF Chain's testnet only. Do not send real assets or deploy production applications. All testnet tokens have no value.
     
@@ -23,12 +22,12 @@ info:
     - Authenticated: 500 requests/minute (burst: 1000)
     
     ## Support
-    - Discord: https://discord.gg/WdMdVpA4C8
     - GitHub: https://github.com/SELF-Technology/self-chain-public
+    - Email: devs@self.app
   version: 1.0.0-planned
   contact:
     name: SELF Chain Developer Support
-    email: testnet-support@self.app
+    email: devs@self.app
     url: https://docs.self.app
   license:
     name: MIT
