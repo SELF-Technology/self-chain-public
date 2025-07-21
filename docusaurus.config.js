@@ -105,13 +105,10 @@ const config = {
       return {
         name: 'custom-webpack-plugin',
         configureWebpack(config, isServer, utils) {
-          // Disable eval-based source maps in production
-          if (config.mode === 'production') {
-            return {
-              devtool: 'source-map', // Use source-map instead of eval
-            };
-          }
-          return {};
+          // Disable eval-based source maps in all environments
+          return {
+            devtool: config.mode === 'production' ? 'source-map' : 'cheap-module-source-map', // No eval
+          };
         },
       };
     },
