@@ -287,7 +287,7 @@ We value all contributions! Contributors are:
 
 ## License
 
-By contributing to SELF Chain, you agree that your contributions will be licensed under the [MIT License](LICENSE).
+By contributing to SELF Chain, you agree that your contributions will be licensed under the [MIT License](https://github.com/SELF-Technology/self-chain-public/blob/main/LICENSE).
 
 ## Thank You!
 
