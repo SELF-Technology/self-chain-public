@@ -1,33 +1,22 @@
-# PoAI Consensus Mechanism
+# PoAI Consensus Implementation
 
-The Proof-of-AI (PoAI) consensus mechanism is a novel, patent-pending blockchain consensus algorithm that leverages artificial intelligence to achieve decentralized validation through efficiency optimization. This implementation follows the principles outlined at https://proofofai.com.
+This directory contains the technical implementation of SELF Chain's Proof-of-AI (PoAI) consensus mechanism.
 
-## Overview
+:::info Documentation
+For comprehensive documentation about PoAI concepts, algorithms, and design principles, please see:
+- [Proof-of-AI Overview](/docs/Technical%20Docs/PoAI/Proof-of-AI.md)
+- [AI Block Builder Algorithm](/docs/Technical%20Docs/PoAI/AI%20Block%20Builder%20Algorithm.md)
+- [AI Validator Algorithm](/docs/Technical%20Docs/PoAI/AI-Validator%20Algorithm.md)
+- [Voting Algorithm](/docs/Technical%20Docs/PoAI/Voting%20Algorithm.md)
+:::
 
-PoAI drives efficiency by removing human interference and focusing on objective task fulfillment. Unlike Proof-of-Work (inefficient due to computational waste) and Proof-of-Stake (increasingly centralized), PoAI uses AI algorithms to maximize network efficiency.
+## Implementation Overview
 
-## Core Algorithms
-
-### 1. AI-Block Builder Algorithm
-Forms efficient blocks of transactions and generates efficiency coefficients:
-- Reviews transactions from mempool
-- Optimizes for maximum Points volume
-- Maintains PointPrice stability
-- Creates blocks with highest efficiency (Input minus Output)
-
-### 2. Voting Algorithm
-Orchestrates voting between AI algorithms to achieve consensus:
-- Manages validator selection
-- Coordinates voting rounds
-- Ensures fair participation
-- Distributes rewards according to protocol
-
-### 3. AI-Validator Algorithm
-Validates blocks and determines block entry permissions:
-- Performs hex color validation
-- Verifies efficiency metrics
-- Checks color marker transitions
-- Confirms block integrity
+This implementation provides:
+- AI-powered block building and validation
+- Color marker system for transaction validation
+- Voting mechanism for consensus
+- Reward distribution system
 
 ## Key Components
 
@@ -122,11 +111,7 @@ graph TD
 
 ## Reward Distribution
 
-Rewards are distributed to maintain network security and incentivize efficiency:
-- **Block Builder**: 90% for successful block creation
-- **AI Validators (Voters)**: 8% distributed among correct voters
-- **AI Validator (Color Checker)**: 1% for color scheme verification
-- **PoAI Reserve Fund**: 1% for system maintenance
+See [The Incentive](/docs/Technical%20Docs/PoAI/The%20Incentive.md) for detailed reward distribution information.
 
 ## Efficiency Metrics
 

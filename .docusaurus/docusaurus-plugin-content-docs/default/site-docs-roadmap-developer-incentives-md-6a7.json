@@ -1,0 +1,27 @@
+{
+  "id": "Roadmap/Developer Incentives",
+  "title": "Developer Incentives",
+  "description": "We intend to reward developers and teams who build on our cutting-edge, privacy-first, and AI-powered infrastructure.",
+  "source": "@site/docs/Roadmap/Developer Incentives.md",
+  "sourceDirName": "Roadmap",
+  "slug": "/Roadmap/Developer Incentives",
+  "permalink": "/Roadmap/Developer Incentives",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_label": "🎁 Developer Incentives",
+    "sidebar_position": 6
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "🛠️ SDK",
+    "permalink": "/Roadmap/SDK"
+  },
+  "next": {
+    "title": "💻 Operating System",
+    "permalink": "/Roadmap/SELF OS"
+  }
+}

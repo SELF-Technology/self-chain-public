@@ -20,3 +20,7 @@ The SELF SDK will be initially developed on the SELF Chain Testnet, enabling dev
 **Modularity** - The SDK should be modular, allowing developers to include only the components they need, which can reduce the complexity and size of the applications.
 
 **Continuous Validation** - The SDK should include tools for continuous testing and validation, helping developers to catch issues early and maintain high-quality code throughout the development process.
+
+## Learn More
+
+For detailed information about the planned SDK structure and implementation, see the [SDK Structure documentation](/Building-on-SELF/sdk-structure).

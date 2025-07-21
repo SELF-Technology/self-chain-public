@@ -1,0 +1,26 @@
+{
+  "id": "Building-on-SELF/sdk-structure",
+  "title": "SDK Structure",
+  "description": "This page describes the PLANNED structure for future SDKs. These SDKs do not exist yet and cannot be installed or used. All code examples are conceptual illustrations of the intended API design.",
+  "source": "@site/docs/Building-on-SELF/sdk-structure.md",
+  "sourceDirName": "Building-on-SELF",
+  "slug": "/Building-on-SELF/sdk-structure",
+  "permalink": "/Building-on-SELF/sdk-structure",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Getting Started",
+    "permalink": "/Building-on-SELF/getting-started"
+  },
+  "next": {
+    "title": "Testnet API Gateway",
+    "permalink": "/Building-on-SELF/api-gateway"
+  }
+}

@@ -1,6 +1,11 @@
 # Hello SELF - Basic Connection Example
 
-> ⚠️ **TESTNET ONLY**: This example only works with testnet. Never use real assets!
+:::warning TESTNET ONLY
+This example only works with testnet:
+- Never use real assets or production keys
+- Testnet tokens have ZERO monetary value
+- Network may reset at any time without notice
+:::
 
 ## Overview
 
@@ -31,8 +36,9 @@ node index.js
 ⚠️  SELF CHAIN TESTNET WARNING ⚠️
 ==============================================================
 You are connected to TESTNET. Important reminders:
-• Testnet tokens have NO VALUE
-• Network may be reset at any time
+• Testnet tokens have ZERO monetary value
+• Network may reset at any time without notice
+• All data is temporary and will be lost
 • Do not use real cryptocurrency
 • This is for testing and learning only
 ==============================================================
@@ -69,7 +75,7 @@ Next steps:
 2. Try the token transfer example
 3. Build something amazing (on testnet)!
 
-⚠️  Remember: This is TESTNET only! ⚠️  Remember: This is TESTNET only!
+⚠️  Remember: This is TESTNET only! ⚠️
 ```
 
 ## Code Structure

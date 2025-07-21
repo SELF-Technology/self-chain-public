@@ -81,7 +81,7 @@ This architecture provides:
 
 The post-quantum security roadmap follows a phased approach:
 
-1. **Phase 1** (Q2 2025): Module structure and Kyber integration design ◐
+1. **Phase 1** (Q4 2025): Module structure and Kyber integration design ◐
 2. **Phase 2** (Q3 2025): X25519+Kyber hybrid key exchange implementation ○
 3. **Phase 3** (Q4 2025): SPHINCS+ integration and hybrid signatures ○
 4. **Phase 4** (Q1 2026): Blockchain integration and performance optimizations ○
@@ -93,7 +93,7 @@ _Legend: ✓ Complete, ◐ In Progress, ○ Planned_
 
 In addition to the main roadmap, we have a specific timeline to enhance the X25519 implementation:
 
-1. **Q2 2025**: Design interim solution for improved X25519 key exchange functionality ◐
+1. **Q4 2025**: Design interim solution for improved X25519 key exchange functionality ◐
 2. **Q3 2025**: Implement X25519 enhancements or custom implementation ○
 3. **Q4 2025**: Final implementation of enhanced X25519 key exchange with proper deterministic behavior ○
 

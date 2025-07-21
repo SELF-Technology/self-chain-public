@@ -4,10 +4,14 @@ title: Advanced TPS Optimization
 
 # SELF Chain Advanced TPS Optimization
 
-> 🎯 **Performance Targets**: The metrics described in this document represent our performance optimization targets and architectural design goals. Actual performance may vary based on network conditions, hardware specifications, and implementation progress.
+:::warning Performance Targets
+The metrics described in this document represent theoretical performance optimization targets and architectural design goals, not achieved performance. These are aspirational targets based on our planned architecture.
+
+**Current Reality**: Testnet achieves ~1,000 TPS in controlled environments. The 50,000+ TPS target requires all optimizations described here to be fully implemented and tested.
+:::
 
 ## Overview
-This document outlines the advanced optimizations and benchmarking capabilities of SELF Chain, designed to target Solana-level performance (50,000+ TPS).
+This document outlines the planned advanced optimizations and benchmarking capabilities for SELF Chain, with a long-term goal of achieving high-performance transaction processing.
 
 ## Core Optimizations
 
@@ -60,9 +64,9 @@ struct BenchmarkSuite {
 }
 ```
 
-## Performance Targets
-- Target TPS: 50,000+ transactions per second (design goal)
-- Peak TPS Target: 100,000+ transactions per second (theoretical maximum)
+## Performance Targets (Aspirational)
+- Target TPS: 50,000+ transactions per second (long-term design goal, not yet achieved)
+- Peak TPS Target: 100,000+ transactions per second (theoretical maximum requiring all optimizations)
 - Target Average Latency: < 1ms (under optimal conditions)
 - Target Network Latency: < 10ms (datacenter environments)
 - Memory Usage: Optimization in progress

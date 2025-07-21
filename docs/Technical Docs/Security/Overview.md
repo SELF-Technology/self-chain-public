@@ -73,5 +73,5 @@ The SELF Chain implements a multi-layered security approach incorporating:
 ## 4. Security Contact
 
 For security-related inquiries or to report vulnerabilities, please contact:
-- Security Team Lead: [security-lead@selfchain.com](mailto:security-lead@selfchain.com)
-- Security Reporting Portal: [security.selfchain.com](https://security.selfchain.com)
+- Security Team: [security@self.app](mailto:security@self.app)
+- General Inquiries: [info@self.app](mailto:info@self.app)

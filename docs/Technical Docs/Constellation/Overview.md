@@ -9,7 +9,7 @@ sidebar_position: 1
 
 **Version:** 2.0.0  
 **Date:** July 2025  
-**Status:** Production Ready  
+**Status:** In Development  
 
 ---
 

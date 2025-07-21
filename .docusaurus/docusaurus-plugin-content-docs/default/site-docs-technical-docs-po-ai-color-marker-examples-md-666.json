@@ -1,0 +1,27 @@
+{
+  "id": "Technical Docs/PoAI/Color Marker Examples",
+  "title": "Color Marker System Examples",
+  "description": "This document provides practical examples and visualizations of how the Color Marker System works in SELF Chain.",
+  "source": "@site/docs/Technical Docs/PoAI/Color Marker Examples.md",
+  "sourceDirName": "Technical Docs/PoAI",
+  "slug": "/Technical Docs/PoAI/Color Marker Examples",
+  "permalink": "/Technical Docs/PoAI/Color Marker Examples",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_label": "Color Marker Examples",
+    "sidebar_position": 7
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Color Marker System",
+    "permalink": "/Technical Docs/PoAI/Color Marker System"
+  },
+  "next": {
+    "title": "Validation Process",
+    "permalink": "/Technical Docs/PoAI/Validation Process"
+  }
+}

@@ -1,6 +1,12 @@
 # SELF Chain Testnet Example Applications
 
-> ⚠️ **TESTNET ONLY**: These examples are for testnet use only. Do not use with real assets or in production environments.
+:::warning TESTNET ONLY
+These examples are for testnet use only:
+- Do not use with real assets or in production environments
+- Testnet tokens have ZERO monetary value
+- Network may reset at any time without notice
+- All data is temporary and will be lost
+:::
 
 ## Overview
 
@@ -17,7 +23,11 @@ Simple example showing how to connect to SELF Chain testnet and query basic info
 - Handling testnet warnings
 
 ### 2. Token Transfer Demo
-Demonstrates sending TEST tokens between accounts (testnet tokens have no value).
+Demonstrates sending TEST tokens between accounts.
+
+:::caution
+Testnet tokens have ZERO monetary value and cannot be exchanged for real assets.
+:::
 
 **What you'll learn**:
 - Creating transactions
@@ -38,12 +48,12 @@ A minimal block explorer showing recent blocks and transactions.
 Basic wallet interface for testnet operations.
 
 **What you'll learn**:
-- Key generation (testnet only)
+- Key generation (testnet only - NEVER use these keys for real assets)
 - Balance checking
 - Transaction history
 - QR code generation
 
-## ⚠️ Important Testnet Guidelines
+## Important Testnet Guidelines
 
 ### DO:
 - ✅ Use these examples to learn SELF Chain concepts
@@ -76,7 +86,7 @@ yarn install
 cp .env.example .env.testnet
 
 # Edit .env.testnet with your testnet configuration
-# NEVER use mainnet endpoints or keys!
+# WARNING: NEVER use mainnet endpoints or keys!
 ```
 
 ### Running Examples

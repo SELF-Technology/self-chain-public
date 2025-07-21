@@ -24,23 +24,26 @@ SELF is in **active development** with a working testnet demonstrating our revol
 ## ✅ What's Working Today
 
 ### Core Blockchain
-- **Status**: ✅ Operational
+- **Status**: ✅ Operational (Testnet)
 - **Details**: 
-  - Proof-of-AI (PoAI) consensus mechanism fully functional
-  - Block creation and validation working
-  - 3-node testnet successfully deployed on AWS
+  - Proof-of-AI (PoAI) consensus mechanism in testing phase
+  - Block creation and validation working in controlled environment
+  - 3-node testnet deployed on AWS for internal testing
   - Basic transaction processing operational
 - **Limitations**: 
+  - Testnet only - not production ready
   - Requires technical expertise to set up
   - No public API access yet
   - Manual configuration required
+  - Network may reset without notice
 
 ### Testnet Network
 - **Status**: ✅ Running (Limited Access)
 - **Details**:
   - Bootstrap node: `http://13.220.156.247:3030`
   - Peer nodes operational and syncing
-  - Network may be reset periodically
+  - **⚠️ WARNING**: Network resets frequently for testing
+  - **⚠️ WARNING**: All testnet data is temporary
 - **Access**: Currently requires manual node setup - no easy connection method
 
 ### Open Source Code
@@ -57,7 +60,7 @@ SELF is in **active development** with a working testnet demonstrating our revol
 - **Status**: 🔄 Active Development
 - **Progress**: Specification complete, implementation pending
 - **Blocking**: Developer access to testnet
-- **Details**: [API Gateway Documentation](/Technical%20Docs/Developer%20Resources/Testnet_API_Gateway)
+- **Details**: [API Gateway Documentation](/Building-on-SELF/api-gateway)
 
 ### Developer SDKs
 - **Status**: 🔄 Planning
@@ -118,20 +121,17 @@ SELF is in **active development** with a working testnet demonstrating our revol
 
 ### Q3 2025 (Current)
 - 🎯 Deploy Testnet API Gateway
+- 🎯 JavaScript/TypeScript SDK
+- 🎯 Token faucet system
 - 🎯 Release configuration templates
-- 🎯 Launch developer documentation
 
 ### Q4 2025
-- 📋 JavaScript/TypeScript SDK
-- 📋 Token faucet system
 - 📋 Basic block explorer
-
-### Q1 2026
-- 📋 Multi-language SDKs
-- 📋 Super-App beta launch
+- 📋 Multi-language SDKs (Python, Rust, Go)
 - 📋 Enhanced developer tools
+- 📋 Super-App beta launch
 
-### 2026 and Beyond
+### Q4 2025 and Beyond
 - 📋 Mainnet preparation
 - 📋 Grid Compute network
 - 📋 Full platform launch
@@ -184,7 +184,28 @@ Even in this early stage, you can contribute:
 - **Testing**: Run nodes and report issues
 - **Feedback**: Share your developer experience
 
-See our [Contributing Guide](/Contributing) for details.
+See our [Developing SELF Guide](/Developing%20SELF) for details.
+
+---
+
+---
+
+## ⚠️ Reality Check
+
+### Performance Claims
+- **50,000 TPS**: Theoretical target based on architecture design, not yet achieved in testing
+- **Current Performance**: ~1,000 TPS in controlled testnet environment
+- **Production Target**: Will be validated through progressive testing phases
+
+### Technology Status
+- **"World's First AI-driven Consensus"**: Among the first implementations, though other projects are exploring similar approaches
+- **Post-Quantum Security**: Planned feature, not yet implemented
+- **Grid Compute**: Conceptual design phase only
+
+### Timeline Disclaimers
+- All dates are estimates and subject to change
+- Features may be delayed based on testing results
+- Security and stability take priority over speed of delivery
 
 ---
 
