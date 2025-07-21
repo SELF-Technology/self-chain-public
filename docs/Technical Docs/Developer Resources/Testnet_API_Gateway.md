@@ -7,7 +7,7 @@ sidebar_position: 3
 
 > 🚧 **NOT YET DEPLOYED**: This API gateway is planned but not yet active. This documentation describes the intended implementation. The endpoints shown below are specifications and will not work until deployment is complete.
 
-> 📅 **EXPECTED DEPLOYMENT**: Q3 2025 (Check [Discord](https://discord.gg/WdMdVpA4C8) for updates)
+> 📅 **EXPECTED DEPLOYMENT**: Q3 2025 (Watch [GitHub Releases](https://github.com/SELF-Technology/self-chain-public/releases) for updates)
 
 > ⚠️ **TESTNET WARNING**: Once deployed, this API gateway will provide access to SELF Chain's testnet only. Do not send real assets or deploy production applications. All testnet tokens have no value.
 
@@ -22,11 +22,14 @@ sidebar_position: 3
 
 ## When Will This Be Available?
 
-The API Gateway deployment is tracked as **Task #27** in our development roadmap. Once deployed:
+Once the API Gateway is deployed:
 
 1. This documentation will be updated to remove all "NOT ACTIVE" warnings
 2. The endpoints will become functional
-3. An announcement will be made on [Discord](https://discord.gg/WdMdVpA4C8)
+3. Announcements will be made across multiple channels:
+   - [GitHub Releases](https://github.com/SELF-Technology/self-chain-public/releases)
+   - [Discord Community](https://discord.gg/WdMdVpA4C8) (optional - no account required for updates)
+   - Project website and social media
 4. The testnet connection guide will be updated with working examples
 
 **In the meantime**:
