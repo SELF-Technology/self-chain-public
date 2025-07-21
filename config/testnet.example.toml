@@ -1,21 +1,25 @@
 # SELF Chain Testnet Configuration
 # 
-# ⚠️  WARNING: This is a TESTNET configuration file
-# ⚠️  Do NOT use these settings for production
-# ⚠️  Testnet tokens have NO real value
+# ⚠️  WARNING: This is a TESTNET configuration template
+# ⚠️  The testnet is not yet publicly deployed
+# ⚠️  Expected deployment: Q3 2025
 #
-# Copy this file to testnet.toml and adjust settings as needed
+# This file documents the planned testnet configuration.
+# Copy this file to testnet.toml when the testnet launches.
 
 [network]
 # Network identifier
 chain_id = "self-testnet-001"
 network_name = "SELF Chain Testnet"
 
-# ⚠️  TESTNET WARNING: These are public test nodes - do not send real tokens!
+# ⚠️  PLANNED: These nodes are not yet deployed
+# When available, they will be public test nodes
 bootstrap_nodes = [
-    "http://13.220.156.247:3030",     # Bootstrap node (ap-southeast-2)
-    "http://34.203.202.6:3030",       # Peer node 1 (us-east-1)
-    "http://52.23.226.218:3030"       # Peer node 2 (us-east-1)
+    # Bootstrap nodes will be added when testnet launches
+    # Expected format:
+    # "https://testnet-1.self.app:8000",
+    # "https://testnet-2.self.app:8000",
+    # "https://testnet-3.self.app:8000"
 ]
 
 # P2P network settings
@@ -25,6 +29,7 @@ external_address = ""  # Leave empty for automatic detection
 
 [node]
 # Node type: "validator", "full", "light"
+# Note: Running a validator requires AI model setup
 node_type = "full"
 data_dir = "./testnet-data"
 
@@ -48,9 +53,10 @@ ai_validation_enabled = true
 private_key = ""
 keystore_path = "./testnet-keystore"
 
-# Testnet faucet for free tokens
-faucet_url = "https://faucet.testnet.self.app"  # Coming soon
-faucet_amount = "1000 TEST"  # 1000 testnet tokens per request
+# Testnet faucet (planned for Q3 2025)
+# The testnet currently operates without a token economy
+faucet_url = "https://faucet.testnet.self.app"  # Not yet available
+faucet_amount = "1000 TEST"  # Planned amount per request
 
 [storage]
 # Storage configuration
@@ -67,17 +73,18 @@ max_storage_gb = 10
 max_bandwidth_gb = 50
 
 [ai]
-# AI model configuration for testnet
-# ⚠️  TESTNET uses smaller models to reduce resource usage
+# AI model configuration for validators
+# ⚠️  REQUIRED: Validators must run their own AI models
+# Full nodes can operate without AI
 
-# Local AI endpoint (if running your own)
+# Local AI endpoint (Ollama recommended)
 ai_endpoint = "http://localhost:11434/v1"
-ai_model = "mistral:7b"  # Recommended for testnet
+ai_model = "mistral:7b"  # Minimum model for testnet
 
-# Fallback to testnet AI service (coming soon)
-use_testnet_ai = true
-testnet_ai_endpoint = "https://ai.testnet.self.app/v1"
-testnet_ai_api_key = ""  # Request from Discord
+# Future: Testnet AI service for light clients
+use_testnet_ai = false  # Not yet available
+testnet_ai_endpoint = "https://ai.testnet.self.app/v1"  # Planned
+testnet_ai_api_key = ""  # Will be distributed via GitHub, Discord, and social channels
 
 # AI resource limits
 max_tokens = 1024
@@ -85,11 +92,11 @@ temperature = 0.7
 timeout_seconds = 30
 
 [security]
-# ⚠️  TESTNET WARNING: Reduced security for easier testing
-tls_enabled = false  # Disabled for testnet
+# ⚠️  TESTNET: Reduced security for easier testing
+tls_enabled = false  # Will be enabled for public testnet
 jwt_expiration_hours = 24
 
-# API rate limiting (more permissive for testing)
+# API rate limiting
 rate_limit_per_minute = 100
 rate_limit_burst = 20
 
@@ -98,16 +105,17 @@ rate_limit_burst = 20
 metrics_enabled = true
 metrics_port = 9100
 
-# Testnet block explorer
-explorer_url = "https://explorer.testnet.self.app"  # Coming soon
+# Planned services (Q3 2025)
+explorer_url = "https://explorer.testnet.self.app"  # Not yet available
+status_url = "https://status.testnet.self.app"     # Not yet available
 
 # Health check
 health_check_interval = 30
 health_check_timeout = 10
 
 [logging]
-# Verbose logging for testnet
-log_level = "debug"
+# Logging configuration
+log_level = "info"  # Use "debug" for troubleshooting
 log_format = "json"
 log_file = "./testnet-logs/node.log"
 
@@ -117,90 +125,69 @@ max_log_files = 5
 
 [development]
 # Development features (testnet only)
-enable_debug_endpoints = true
-enable_test_commands = true
-mock_ai_responses = false  # Set to true if no AI endpoint available
+enable_debug_endpoints = false  # Set to true for debugging
+enable_test_commands = false    # Set to true for testing
+mock_ai_responses = false       # Set to true if no AI available
 
 # Test transaction generator
 auto_generate_transactions = false
 transaction_interval_seconds = 60
 
-[cloud]
-# Cloud provider settings for your own node
-
-# Oracle Cloud Free Tier (Recommended for MVP)
-# - 4 OCPU ARM Ampere A1
-# - 24 GB RAM
-# - 200 GB storage
-# - Always Free
-oracle_cloud = { 
-    enabled = false,
-    region = "us-ashburn-1",
-    shape = "VM.Standard.A1.Flex",
-    ocpus = 4,
-    memory_gb = 24
-}
-
-# AWS Free Tier (Limited to 750 hours/month)
-aws = {
-    enabled = false,
-    region = "us-east-1",
-    instance_type = "t2.micro",
-    ami_id = "ami-0c02fb55956c7d316"  # Amazon Linux 2
-}
-
-# Hetzner (Not free, but very affordable at €3.79/month)
-hetzner = {
-    enabled = false,
-    location = "fsn1",  # Falkenstein, Germany
-    server_type = "cx11",  # 1 vCPU, 2GB RAM
-    image = "ubuntu-22.04"
-}
-
-[upgrade]
-# Upgrade paths from testnet
-upgrade_options = [
-    "Oracle Cloud Free → Growth (8 OCPU, 48GB RAM)",
-    "AWS Free → t3.medium ($0.0416/hour)",
-    "Hetzner CX11 → CX21 (€5.83/month)",
-    "Free Tier → Your Own Cloud (BYOC)"
-]
-
-# Benefits of upgrading
-upgrade_benefits = [
-    "Larger AI models (13B+ parameters)",
-    "Faster inference speeds",
-    "More storage space",
-    "Priority support",
-    "Production-ready security"
-]
-
 # ============================================================================
-# QUICK START GUIDE
+# CURRENT STATUS (Q3 2025)
+# ============================================================================
+# 
+# ✅ What's Working:
+#    - Core blockchain implementation
+#    - Local node deployment
+#    - Basic PoAI consensus
+#    - Transaction processing
+#
+# 🚧 In Active Development (Q3 2025):
+#    - Public testnet deployment
+#    - API Gateway
+#    - Developer SDKs
+#    - Token distribution system
+#
+# 📅 Coming Soon (Q4 2025):
+#    - Public testnet launch
+#    - Token faucet activation
+#    - Block explorer
+#    - Full API documentation
+#
+# ============================================================================
+
+# QUICK START (When Testnet Launches)
 # ============================================================================
 # 
 # 1. Copy this file:
 #    cp testnet.example.toml testnet.toml
 #
-# 2. Connect to testnet:
-#    self-chain-node --config testnet.toml
+# 2. Install dependencies:
+#    - Rust 1.70+
+#    - IPFS daemon
+#    - Ollama (for AI validation)
 #
-# 3. Get testnet tokens:
+# 3. Build and run node:
+#    cargo build --release
+#    ./target/release/self-chain-node --config testnet.toml
+#
+# 4. Get testnet tokens (when available):
 #    self-chain-cli faucet request --amount 1000
 #
-# 4. Check node status:
-#    self-chain-cli node info
-#
-# 5. View testnet explorer:
-#    https://explorer.testnet.self.app
+# 5. Check node status:
+#    curl http://localhost:3030/status
 #
 # ============================================================================
-# TESTNET RESOURCES
+# DEVELOPER RESOURCES
 # ============================================================================
 #
-# Discord: https://discord.gg/selfchain (Request testnet tokens in #faucet)
-# Docs: https://docs.self.app/testnet
-# Status: https://status.testnet.self.app
-# API Docs: https://api-docs.testnet.self.app
+# Documentation: https://docs.self.app
+# GitHub: https://github.com/SELF-Technology/self-chain-public
+# Discord: https://discord.gg/WdMdVpA4C8
+# Email: devs@self.app
+#
+# For the latest testnet status, see:
+# https://docs.self.app/PROJECT_STATUS
 #
 # ============================================================================

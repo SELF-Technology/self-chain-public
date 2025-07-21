@@ -19,6 +19,14 @@ slug: /
   </div>
 </div>
 
+## 📊 Current Development Status
+
+<div className="status-callout">
+  <h3>🚧 SELF Chain is in Active Development</h3>
+  <p>We believe in transparency about our progress. While our core blockchain and PoAI consensus are operational, many features are still being built.</p>
+  <p><strong>→ <a href="/PROJECT_STATUS">View Detailed Project Status</a></strong> - See what's working, what's coming, and current limitations</p>
+</div>
+
 ## Background
 
 The internet began as a vision of decentralized communication - a network where no single entity held control. Over decades, this vision has been systematically eroded. Today's digital landscape is dominated by corporations that harvest data, control access, and dictate terms.
@@ -188,12 +196,16 @@ Dive into our fully open source blockchain and contribute to the future:
 
 | Component | Status | Details |
 |-----------|--------|---------|
-| **Open Source Blockchain** | ✅ Released | Fully auditable codebase |
-| **Constellation Network** | ✅ Available | Enterprise blockchain platform |
-| **Super-App Beta** | 🔄 Testing | Privacy-first services |
-| **SDK & APIs** | 📅 Planned | Multi-language support |
-| **Token Launch** | 📅 Planned | Economic model finalized |
-| **Grid Compute** | 🔄 2026 | Distributed AI network |
+| **Core Blockchain** | ✅ Operational | PoAI consensus working on testnet |
+| **Testnet Network** | ✅ Running | 3-node network, manual setup required |
+| **Developer API** | 🔄 In Development | Gateway specification complete |
+| **SDKs** | 📅 In Development | JavaScript first, then Python/Rust/Go |
+| **Token Faucet** | 📅 Coming Soon | Token distribution system |
+| **Block Explorer** | 📅 Q4 2025 | Web interface for testnet |
+| **Super-App** | 📅 2025 | User-facing applications |
+| **Grid Compute** | 📅 2026 | Distributed AI network |
+
+**Legend**: ✅ Available Now | 🔄 In Development | 📅 Planned
 
 </div>
 
