@@ -1,11 +1,9 @@
 name = "self-docs"
 compatibility_date = "2024-07-20"
+pages_build_output_dir = "build"
 
 [build]
 command = "npm run build"
-
-# Cloudflare Pages build output directory
-pages_build_output_dir = "build"
 
 [env.production]
 name = "self-docs"
