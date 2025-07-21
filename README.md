@@ -26,7 +26,7 @@ SELF Chain represents a paradigm shift in blockchain technology, combining AI-po
 
 - **🤖 AI-First Design**: Unlike blockchains that add AI as an afterthought, SELF Chain is built from the ground up with AI at its core
 - **🔐 True Data Sovereignty**: Your data, your rules—enforced by cryptography and AI
-- **⚡ 50,000 TPS Target**: Designed for real-world scale without compromising decentralization
+- **⚡ High Performance**: Designed for real-world scale without compromising decentralization
 - **🌍 Open Source Core**: Transparent blockchain protocol with community-driven development
 - **🤝 Community Owned**: No single entity controls SELF—it belongs to everyone
 
@@ -43,9 +43,9 @@ SELF Chain represents a paradigm shift in blockchain technology, combining AI-po
 - **Grid Compute**: Distributed AI computation across the network
 
 ### Developer First
-- **Comprehensive SDKs**: JavaScript, Rust, Python, and Go (coming soon)
-- **Testnet Available**: Early testnet for testing core functionality
-- **Extensive Documentation**: World-class docs to get you started quickly
+- **Multi-Language SDKs**: JavaScript, Rust, Python, and Go planned
+- **Private Testnet**: Core development testnet (public testnet coming Q4 2025)
+- **Extensive Documentation**: Comprehensive docs to guide your journey
 
 ## 🛠️ Developer Preview
 
@@ -55,24 +55,24 @@ SELF Chain represents a paradigm shift in blockchain technology, combining AI-po
 
 ### For Developers
 
-**Note**: The instructions below require blockchain development experience and manual configuration. Easy-access tools are coming soon.
+**Note**: SELF Chain is currently running a private development testnet. Public testnet access is planned for Q4 2025. The instructions below are for developers who want to run a local node or contribute to core development.
 
 ```bash
 # Clone the repository
 git clone https://github.com/SELF-Technology/self-chain-public.git
 cd self-chain-public
 
-# Copy testnet configuration (Template available, testnet not yet deployed)
-# cp config/testnet.example.toml config/testnet.toml
-
-# Build the project
+# Build the project (requires Rust 1.70+)
 cargo build --release
 
-# Run a testnet node (Note: Requires additional setup - see docs)
-cargo run --bin self-chain-node -- --testnet
+# Run a local development node
+cargo run --bin self-chain-node -- --dev
+
+# Note: Connecting to the testnet requires additional configuration
+# and is currently limited to core developers
 ```
 
-> 📄 **Important**: The above commands are provided for reference. Please see our [detailed testnet guide](https://docs.self.app/Technical%20Docs/Developer%20Resources/Getting_Started_Testnet) for complete setup instructions and current limitations.
+> 📄 **Important**: These commands run a local development node only. For detailed setup instructions and current limitations, see our [testnet guide](https://docs.self.app/Technical%20Docs/Developer%20Resources/Getting_Started_Testnet).
 
 ### Get Testnet Tokens
 
@@ -128,8 +128,8 @@ SELF Chain implements defense-in-depth security:
 - ✅ **Post-Quantum Cryptography**: Continuously evolving defenses against quantum threats
 - ✅ **AI-Powered Threat Detection**: Real-time anomaly detection
 - ✅ **Multi-Layer Validation**: Defense at every level
-- ✅ **Security Audits**: Regular third-party audits
-- ✅ **Bug Bounty Program**: Rewards for responsible disclosure
+- ✅ **Security First**: Comprehensive security architecture
+- ✅ **Responsible Disclosure**: Security contact: security@self.app
 
 See our [Security Policy](SECURITY.md) for details.
 
@@ -161,7 +161,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
 ## 🗺️ Roadmap
 
-> 📌 **Note**: For the most current and detailed status of all features, see our [Project Status](https://docs.self.app/project-status) page. Join our [Discord](https://discord.gg/WdMdVpA4C8) for the latest updates.
+> 📌 **Note**: For the most current and detailed status of all features, see our [Project Status](https://docs.self.app/project-status) page. Follow our official channels for the latest updates.
 
 ### Q1 2025 - Foundation ✅
 - [x] Core blockchain implementation
@@ -190,22 +190,26 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
 ## 📊 Project Status
 
-| Component | Status | Test Coverage |
-|-----------|--------|---------------|
-| Core Blockchain | ✅ Complete | 75% |
-| PoAI Consensus | ✅ Complete | 80% |
-| P2P Network | ✅ Complete | 70% |
-| Storage Layer | 🚧 In Progress | 60% |
-| SDKs | 📅 Planned | - |
+| Component | Status | Notes |
+|-----------|--------|-------|
+| Core Blockchain | ✅ Complete | Full transaction processing and state management |
+| PoAI Consensus | ✅ Complete | AI-driven validation working |
+| P2P Network | ✅ Complete | libp2p integration functional |
+| Storage Layer | 🚧 In Progress | IPFS integration ongoing |
+| SDKs | 📅 Planned | Multi-language support coming |
 
 ## 🌐 Ecosystem
 
-### Official Resources
+### Official Resources & Channels
 - 🌍 [Website](https://self.app)
 - 📖 [Documentation](https://docs.self.app)
-- 💬 [Discord Community](https://discord.gg/WdMdVpA4C8)
-- 🐦 [Twitter/X](https://x.com/self_hq)
-- 📺 [YouTube](https://www.youtube.com/@selfcommunityvideos)
+- 🐙 [GitHub](https://github.com/SELF-Technology) - Primary developer hub
+- 💬 [Discord Community](https://discord.gg/WdMdVpA4C8) - Real-time chat
+- 🐦 [Twitter/X](https://x.com/self_hq) - Announcements and updates
+- 📺 [YouTube](https://www.youtube.com/@selfcommunityvideos) - Video content
+- 📧 Email: devs@self.app - Developer support
+
+> 📢 **Stay Updated**: Follow multiple channels to ensure you don't miss important announcements. Major updates are posted across all platforms.
 
 ## 📜 License
 
@@ -246,8 +250,8 @@ SELF Chain stands on the shoulders of giants:
 ### For Developers
 1. ⭐ Star this repository
 2. 🍴 Fork and experiment
-3. 💬 Join our [Discord](https://discord.gg/WdMdVpA4C8)
-4. 🐛 Report bugs or request features
+3. 💬 Join our community channels
+4. 🐛 Report bugs or request features via GitHub Issues
 5. 🤝 Submit pull requests
 
 ### For Everyone
