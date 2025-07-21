@@ -83,7 +83,7 @@ You'll receive:
 - `APP_SECRET`: Your application secret (keep secure!)
 - Testnet access credentials
 
-### 2. Install the SDK ** The following is example code - when the SDK is released this will be updated **
+### 2. Install the SDK
 
 ```bash
 # JavaScript/TypeScript
@@ -96,7 +96,7 @@ pip install selfchain-sdk
 go get github.com/self-chain/sdk-go
 ```
 
-### 3. Initialize Your App ** The following is example code - when the SDK is released this will be updated **
+### 3. Initialize Your App
 
 ```javascript
 import { SELF } from '@selfchain/sdk';
@@ -397,8 +397,9 @@ await session.storage.set({
 ## SDK Reference
 
 ### JavaScript/TypeScript
-
-- Coming soon
+- [Full API Documentation](https://sdk.self.app/js)
+- [Example Apps](https://github.com/self-chain/sdk-examples)
+- [TypeScript Types](https://sdk.self.app/types)
 
 ### Error Handling
 ```javascript
@@ -417,7 +418,15 @@ try {
 
 ## Support & Resources
 
-- **Email**: devs@self.app
+### Getting Help
+- **Discord**: [Join #developers channel](https://discord.gg/selfchain)
+- **Forum**: [developers.self.app](https://developers.self.app)
+- **Email**: developers@self.app
+
+### Resources
+- [Example Apps](https://github.com/self-chain/examples)
+- [Video Tutorials](https://youtube.com/selfchain)
+- [API Status](https://status.self.app)
 
 ---
 
@@ -437,4 +446,4 @@ try {
 
 ---
 
-*This guide is for building on SELF, not building SELF itself. For contribution to core infrastructure, see our [GitHub](https://github.com/SELF-Technology/self-chain-public/blob/main/docs/Technical%20Docs/Developer%20Resources/Getting_Started_Testnet.md).*
+*This guide is for building on SELF, not building SELF itself. For contribution to core infrastructure, see our [GitHub](https://github.com/self-chain).*

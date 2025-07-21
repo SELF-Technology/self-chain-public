@@ -18,12 +18,6 @@ The SELF Token ($SELF) is the foundational utility and governance token powering
 
 Note: This figure includes all unlocked tokens, however only a smaller portion of the User Adoption, Developer Incentives and Ecosystem tokens will be circulating.
 
-**Estimated Initial Circulating Supply (excl. liquidity)**: 40.5m
-
-Note: This figure includes our current estimate of the initial circulating supply. It includes investor/partner unlocks and initial community/developer distributions.
-
-**Estimated Initial Circulating Supply** represents the portion of tokens anticipated to be actively traded at launch, including early community distribution and investor/partner unlocks.
-
 ## Token Distribution
 
 The total supply of SELF is strategically allocated across key areas to ensure robust ecosystem development, incentivize community participation, and maintain long-term stability.

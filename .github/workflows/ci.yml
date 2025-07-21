@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main, Stage, develop ]
     paths:
       - '**.rs'
       - 'Cargo.toml'
@@ -15,7 +15,7 @@ on:
       - '!docusaurus/**'
       - '!**.md'
   pull_request:
-    branches: [ main, develop ]
+    branches: [ main, Stage, develop ]
     paths:
       - '**.rs'
       - 'Cargo.toml'
