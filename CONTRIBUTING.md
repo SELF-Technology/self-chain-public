@@ -111,7 +111,7 @@ Documentation contributions are highly valued! You can:
    ```bash
    git push origin feature/your-feature-name
    ```
-   Then create a Pull Request on GitHub.
+   Then create a Pull Request to the **Stage** branch on GitHub.
 
 ## Development Setup
 
@@ -215,12 +215,31 @@ When contributing:
 
 ## Pull Request Process
 
+### 🔄 Branch Workflow
+
+We use a **Stage branch workflow** to ensure code quality:
+
+1. **Stage Branch** (`Stage`)
+   - All community PRs should target the `Stage` branch
+   - This is our testing and integration branch
+   - Requires 1 approval to merge
+   - All CI checks must pass
+
+2. **Main Branch** (`main`)
+   - Production-ready code only
+   - PRs from `Stage` to `main` after thorough testing
+   - Requires 1 approval to merge
+   - Stricter review process
+
+### 📋 PR Checklist
+
 1. **Before Submitting**
+   - [ ] Target branch is set to `Stage` (not `main`)
    - [ ] Code follows style guidelines
    - [ ] Tests pass locally
    - [ ] Documentation is updated
    - [ ] Commit messages follow conventions
-   - [ ] Branch is up-to-date with main
+   - [ ] Branch is up-to-date with Stage
 
 2. **PR Description**
    - Clearly describe what changes you made
@@ -229,7 +248,8 @@ When contributing:
    - List any breaking changes
 
 3. **Review Process**
-   - PRs require at least one maintainer approval
+   - PRs to `Stage` require at least 1 maintainer approval
+   - PRs to `main` require at least 1 maintainer approval
    - CI checks must pass
    - Security scan must complete
    - Documentation must be updated
@@ -237,6 +257,7 @@ When contributing:
 4. **After Merge**
    - Delete your feature branch
    - Update your local repository
+   - Your changes will be tested in Stage before going to main
    - Celebrate your contribution! 🎉
 
 ## Community

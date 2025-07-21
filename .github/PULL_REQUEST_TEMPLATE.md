@@ -1,3 +1,8 @@
+## Target Branch
+
+- [ ] This PR targets the `Stage` branch (required for all community contributions)
+- [ ] This PR targets the `main` branch (maintainers only, for Stage → main promotion)
+
 ## Description
 
 Please include a summary of the changes and which issue is fixed. Include relevant motivation and context.

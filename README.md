@@ -143,11 +143,23 @@ Whether you're a seasoned blockchain developer or just getting started, there's 
 
 ### How to Contribute
 
+**We use a Stage branch workflow for quality assurance:**
+
 1. 🍴 Fork the repository
 2. 🌿 Create your feature branch (`git checkout -b feature/amazing-feature`)
 3. 💻 Commit your changes (`git commit -m 'feat: add amazing feature'`)
 4. 📤 Push to the branch (`git push origin feature/amazing-feature`)
-5. 🎉 Open a Pull Request
+5. 🎯 Open a Pull Request to the **`Stage`** branch (not `main`!)
+6. 🔍 After review and testing, changes move from `Stage` → `main`
+
+**Important**: All community PRs should target the `Stage` branch for testing before merging to production.
+
+### Review & Approval Process
+
+- **Stage Branch**: PRs require 1 maintainer approval + passing CI tests
+- **Main Branch**: PRs require 1 maintainer approval (for production releases)
+- **Who can approve**: Only repository maintainers (currently SELF-HQ team)
+- **Timeline**: We aim to review PRs within 48-72 hours
 
 ### Contribution Ideas
 
