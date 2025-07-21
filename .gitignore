@@ -26,6 +26,15 @@ yarn-error.log*
 # Build directories
 build/
 dist/
+target/
+
+# Deployment scripts
+delete-*.sh
+*-deployment*.sh
+
+# Environment files with extensions
+*.env.txt
+*.env.*
 
 # Claude configuration
 .claude/
