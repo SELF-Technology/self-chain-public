@@ -7,7 +7,7 @@ sidebar_position: 3
 
 > 🚧 **NOT YET DEPLOYED**: This API gateway is planned but not yet active. This documentation describes the intended implementation. The endpoints shown below are specifications and will not work until deployment is complete.
 
-> 📅 **EXPECTED DEPLOYMENT**: Q3 2025 (Watch [GitHub Releases](https://github.com/SELF-Technology/self-chain-public/releases) for updates)
+> 📅 **EXPECTED DEPLOYMENT**: Q4 2025 (Watch [GitHub Releases](https://github.com/SELF-Technology/self-chain-public/releases) for updates)
 
 > ⚠️ **TESTNET WARNING**: Once deployed, this API gateway will provide access to SELF Chain's testnet only. Do not send real assets or deploy production applications. All testnet tokens have no value.
 
@@ -543,8 +543,8 @@ We value your feedback! Please report:
 ## Roadmap
 
 ### Current (Q3 2025)
-- ✅ Basic API gateway deployment
-- ✅ Rate limiting implementation
+- 🔄 API gateway development
+- 🔄 Rate limiting implementation
 - 🔄 WebSocket support
 - 🔄 Monitoring dashboard
 

@@ -31,7 +31,9 @@ Before you begin, ensure you have:
 - **Docker** (optional, for containerized development)
 - Basic understanding of blockchain concepts
 
-## Quick Start (Testnet)
+## Testnet Setup Guide
+
+> **Important**: This guide requires technical expertise. Easy-access developer tools (API, SDK, faucet) are currently in development. See [Project Status](/PROJECT_STATUS) for current limitations.
 
 ### 1. Clone the Repository
 
@@ -45,6 +47,8 @@ cd self-chain-public
 Create a testnet configuration file:
 
 ```bash
+# ⚠️ CONFIG TEMPLATE - Testnet not yet deployed
+# This example shows the planned configuration format
 cp config/testnet.example.toml config/testnet.toml
 ```
 
@@ -55,23 +59,69 @@ cp config/testnet.example.toml config/testnet.toml
 Testnet tokens are available from our faucet:
 
 ```bash
-# Coming soon - Discord faucet bot
-# Join our Discord: https://discord.gg/WdMdVpA4C8
-# Use command: !faucet <your_testnet_address>
+# ⚠️ NOT YET AVAILABLE
+# The testnet currently operates without a token economy
+# Token faucet will be available when the token system is implemented
+# See PROJECT_STATUS.md for updates
 ```
 
 ### 4. Connect to Testnet
 
 ```javascript
-// Example connection (JavaScript SDK - coming soon)
-const { SELFClient } = require('@self-chain/sdk');
+// ⚠️ CODE EXAMPLE - NOT YET FUNCTIONAL
+// JavaScript SDK is currently in development
+// This shows the planned API interface:
+
+const { SELFClient } = require('@self-chain/sdk'); // Package not yet published
 
 const client = new SELFClient({
   network: 'testnet',
-  endpoint: 'https://testnet-api.self.app', // Coming soon
+  endpoint: 'https://testnet-api.self.app', // API Gateway not yet deployed
   // WARNING: This is a testnet endpoint - do not send real assets!
 });
 ```
+
+## Developer Expectations
+
+### What You Can Do Today
+
+✅ **Available Now:**
+- Clone and build the SELF Chain node from source
+- Run a local development node for testing
+- Connect to the testnet by running your own node
+- Explore the open-source codebase
+- Test core blockchain functionality
+- Participate in consensus as a validator (requires AI setup)
+
+### What's Coming Soon
+
+🔄 **In Active Development:**
+- Public API Gateway for easy testnet access
+- JavaScript/TypeScript SDK
+- Token faucet for getting test tokens
+- Configuration templates and Docker images
+- Comprehensive developer documentation
+
+### What's Not Ready Yet
+
+❌ **Not Available:**
+- Production deployment (testnet only)
+- Direct API access without running a node
+- SDK packages (npm, crates.io, pip)
+- GUI tools or block explorer
+- Smart contract deployment
+- Stable network (expect resets)
+
+### Required Technical Skills
+
+To work with SELF Chain today, you should be comfortable with:
+- Building Rust projects from source
+- Running command-line blockchain nodes
+- Understanding P2P networking basics
+- Debugging configuration issues
+- Working without extensive documentation
+
+If this seems daunting, consider waiting for our developer tools release later this year, which will provide a much easier onboarding experience.
 
 ## Understanding PoAI Consensus
 
@@ -175,13 +225,17 @@ self-chain-cli --help
 # }
 ```
 
-### Faucet Issues
-- Faucet limits: 100 TEST tokens per day per address
-- If faucet is empty, notify us on Discord
+### Faucet Issues (When Available)
+- Planned faucet limits: 100 TEST tokens per day per address
+- Support channels: GitHub Issues, Discord, Email (devs@self.app)
 - Test tokens have NO value
 
 ### Network Resets
-- Announced 48 hours in advance on Discord
+- Will be announced via:
+  - GitHub Releases
+  - Discord community
+  - Social media channels
+- 48 hours advance notice
 - All testnet data will be wiped
 - New genesis block created
 
@@ -197,14 +251,21 @@ Even on testnet, follow security best practices:
 ## Getting Help
 
 ### Community Support
+- **GitHub**: [Issues & Discussions](https://github.com/SELF-Technology/self-chain-public)
+  - Report bugs and request features
+  - Technical discussions
+  - Community contributions
+
 - **Discord**: [Join our community](https://discord.gg/WdMdVpA4C8)
   - `#testnet-help` - Technical support
   - `#dev-general` - Development discussion
   - `#bug-reports` - Report issues
 
+- **Email**: devs@self.app for developer support
+
 ### Resources
-- [GitHub Issues](https://github.com/SELF-Technology/self-chain-public/issues)
 - [Documentation](https://docs.self.app)
+- [Project Status](https://docs.self.app/PROJECT_STATUS)
 - Testnet Explorer (Coming Soon)
 
 ## Contributing
@@ -220,23 +281,23 @@ See [CONTRIBUTING.md](https://github.com/SELF-Technology/self-chain-public/blob/
 
 ## Testnet Roadmap
 
-### Current (Q1 2024)
+### Completed (Q1-Q2 2025)
 - ✅ Basic PoAI consensus
 - ✅ Transaction processing
-- ✅ Developer tools
-- 🔄 Performance optimization
+- ✅ Core blockchain implementation
+- ✅ Documentation foundation
 
-### Next (Q2 2024)
-- Advanced smart contracts
-- Enhanced developer SDKs
-- Testnet stability improvements
-- Public testnet explorer
+### Current (Q3 2025) 
+- 🔄 Public testnet deployment preparation
+- 🔄 API Gateway development
+- 🔄 Developer SDK creation
+- 🔄 Infrastructure setup
 
-### Future (Q3-Q4 2024)
-- Feature freeze for mainnet
-- Security audits
-- Load testing
-- Mainnet preparation
+### Next (Q4 2025)
+- Public testnet launch
+- Token faucet activation
+- Block explorer deployment
+- Developer onboarding tools
 
 ## ⚠️ Important Reminders
 
@@ -248,11 +309,13 @@ See [CONTRIBUTING.md](https://github.com/SELF-Technology/self-chain-public/blob/
 
 ## Next Steps
 
-1. Join our [Discord](https://discord.gg/WdMdVpA4C8)
-2. Get testnet tokens from the faucet
-3. Try the Hello World Tutorial (Coming Soon)
+1. Join our community:
+   - [GitHub Discussions](https://github.com/SELF-Technology/self-chain-public/discussions)
+   - [Discord](https://discord.gg/WdMdVpA4C8)
+2. Review the [Project Status](https://docs.self.app/PROJECT_STATUS)
+3. Explore the codebase
 4. Build something amazing!
-5. Share your feedback
+5. Share your feedback via GitHub Issues or devs@self.app
 
 Welcome to the future of blockchain - powered by AI! 🚀
 

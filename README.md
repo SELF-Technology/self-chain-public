@@ -41,20 +41,22 @@ SELF Chain represents a paradigm shift in blockchain technology, combining AI-po
 - **Testnet Available**: Early testnet for testing core functionality
 - **Extensive Documentation**: World-class docs to get you started quickly
 
-## 🛠️ Quick Start
+## 🛠️ Developer Preview
 
-> 🚧 **BETA NOTICE**: These developer resources are currently in beta and under active development. Many features described here are coming soon. We're working hard to bring you a complete development experience!
+> 🚧 **EARLY ACCESS**: SELF Chain is in active development. Core blockchain functionality is working, but developer tools (SDKs, APIs, faucet) are currently in development. See our [Project Status](/docs/PROJECT_STATUS.md) for current capabilities.
 
 > ⚠️ **TESTNET WARNING**: SELF Chain is currently in testnet phase. Do not use real assets or deploy production applications. Testnet tokens have no value and the network may be reset at any time.
 
 ### For Developers
+
+**Note**: The instructions below require blockchain development experience and manual configuration. Easy-access tools are coming soon.
 
 ```bash
 # Clone the repository
 git clone https://github.com/SELF-Technology/self-chain-public.git
 cd self-chain-public
 
-# Copy testnet configuration (Coming soon - config file not yet available)
+# Copy testnet configuration (Template available, testnet not yet deployed)
 # cp config/testnet.example.toml config/testnet.toml
 
 # Build the project
@@ -68,7 +70,7 @@ cargo run --bin self-chain-node -- --testnet
 
 ### Get Testnet Tokens
 
-Join our [Discord](https://discord.gg/WdMdVpA4C8) and use the `!faucet` command to receive testnet tokens (faucet bot coming soon).
+> ⚠️ **Not Yet Available**: The testnet currently operates without a token economy. Token distribution via faucet is planned for the public testnet launch.
 
 ## 📚 Documentation
 
@@ -160,24 +162,24 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 - [x] Testnet deployment (early version)
 - [x] Basic documentation
 
-### Q2 2025 - Developer Experience 🚧 (Current Phase)
+### Q2 2025 - Foundation Expansion ✅
+- [x] Enhanced blockchain features
+- [x] Developer documentation foundation
+- [x] Community engagement
+- [x] Initial testing framework
+
+### Q3 2025 - Developer Experience 🚧 (Current Phase)
 - [ ] JavaScript/TypeScript SDK
 - [ ] Public API gateway
 - [ ] CLI tool distribution
-- [ ] Discord faucet bot
+- [ ] Token faucet system
 - [ ] Block explorer
 
-### Q3 2025 - Ecosystem Growth
-- [ ] Enhanced testnet features
-- [ ] Developer documentation expansion
-- [ ] Community tools and resources
-- [ ] Beta testing program
-
-### Q4 2025 - Mainnet Preparation
-- [ ] Security audits
-- [ ] Performance optimization
-- [ ] Mainnet candidate release
-- [ ] Final testing phase
+### Q4 2025 - Ecosystem Growth
+- [ ] Public testnet launch
+- [ ] Enhanced developer tools
+- [ ] Community programs
+- [ ] Beta testing initiative
 
 ## 📊 Project Status
 

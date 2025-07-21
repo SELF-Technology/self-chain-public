@@ -12,7 +12,7 @@ info:
     - ⏳ Endpoints not yet active
     
     **When Will This Be Available?**
-    - Expected: Q3 2025
+    - Expected: Q4 2025
     - GitHub Releases: https://github.com/SELF-Technology/self-chain-public/releases
     
     **⚠️ TESTNET WARNING**: Once deployed, this API will provide access to SELF Chain's testnet only. Do not send real assets or deploy production applications. All testnet tokens have no value.
