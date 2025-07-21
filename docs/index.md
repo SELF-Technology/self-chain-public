@@ -172,7 +172,7 @@ SELF Chain implements defense-in-depth security:
     <ul>
       <li><a href="/Technical%20Docs/Developer%20Resources/Getting_Started_Testnet">Getting Started Guide</a> - Start building on SELF Chain today</li>
       <li><a href="/Technical%20Docs/Developer%20Resources/PUBLIC_INTERFACES">API Documentation</a> - Public interfaces and SDKs</li>
-      <li><a href="https://github.com/SELF-Technology/self-chain-public/blob/main/CONTRIBUTING.md">Contribution Guide</a> - How to contribute</li>
+      <li><a href="/Contributing">Contribution Guide</a> - How to contribute</li>
       <li><a href="https://github.com/SELF-Technology/self-chain-public/issues">Open Issues</a> - Find something to work on</li>
     </ul>
   </div>

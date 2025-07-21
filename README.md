@@ -88,14 +88,14 @@ cargo run --bin self-chain-node -- --dev
 - 🎨 [Color Marker System](https://docs.self.app/Technical%20Docs/PoAI/Color%20Marker%20System)
 
 ### For Contributors
-- 🤝 [Contributing Guide](CONTRIBUTING.md) - Start here!
-- 📋 [Code of Conduct](CODE_OF_CONDUCT.md)
-- 🏛️ [Governance](GOVERNANCE.md)
-- 🔒 [Security Policy](SECURITY.md)
+- 🤝 [Contributing Guide](docs/Contributing/index.md) - Start here!
+- 📋 [Code of Conduct](docs/Contributing/code-of-conduct.md)
+- 🏛️ [Governance](docs/Contributing/governance.md)
+- 🔒 [Security Policy](docs/Contributing/security.md)
 
 ### Developer Resources
 - 📖 [API Reference](https://docs.self.app/Technical%20Docs/Developer%20Resources/PUBLIC_INTERFACES)
-- 🧩 [SDK Documentation](SDK_STRUCTURE.md)
+- 🧩 [SDK Documentation](docs/Contributing/sdk-structure.md)
 - 💡 [Example Applications](examples/testnet-demos/)
 - 🐛 [Good First Issues](.github/GOOD_FIRST_ISSUES.md)
 
@@ -131,7 +131,7 @@ SELF Chain implements defense-in-depth security:
 - ✅ **Security First**: Comprehensive security architecture
 - ✅ **Responsible Disclosure**: Security contact: security@self.app
 
-See our [Security Policy](SECURITY.md) for details.
+See our [Security Policy](docs/Contributing/security.md) for details.
 
 ## 🤝 Contributing: Build the Future Together
 
@@ -169,7 +169,7 @@ Whether you're a seasoned blockchain developer or just getting started, there's 
 - 🌍 **Translations**: Make SELF global
 - 🎨 **Examples**: Create sample applications
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+See [CONTRIBUTING.md](docs/Contributing/index.md) for detailed guidelines.
 
 ## 🗺️ Roadmap
 

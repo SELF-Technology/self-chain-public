@@ -277,7 +277,7 @@ We love contributions! Even in testnet phase, you can:
 3. **Write documentation** - Help others get started
 4. **Build example apps** - Show what's possible
 
-See [CONTRIBUTING.md](https://github.com/SELF-Technology/self-chain-public/blob/main/CONTRIBUTING.md) for guidelines.
+See [Contributing Guide](/Contributing) for guidelines.
 
 ## Testnet Roadmap
 
