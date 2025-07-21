@@ -7,7 +7,7 @@ sidebar_position: 3
 
 > 🚧 **NOT YET DEPLOYED**: This API gateway is planned but not yet active. This documentation describes the intended implementation. The endpoints shown below are specifications and will not work until deployment is complete.
 
-> 📅 **EXPECTED DEPLOYMENT**: Q1 2024 (Check [Discord](https://discord.gg/WdMdVpA4C8) for updates)
+> 📅 **EXPECTED DEPLOYMENT**: Q3 2025 (Check [Discord](https://discord.gg/WdMdVpA4C8) for updates)
 
 > ⚠️ **TESTNET WARNING**: Once deployed, this API gateway will provide access to SELF Chain's testnet only. Do not send real assets or deploy production applications. All testnet tokens have no value.
 
@@ -541,19 +541,19 @@ We value your feedback! Please report:
 
 ## Roadmap
 
-### Current (Q1 2024)
+### Current (Q3 2025)
 - ✅ Basic API gateway deployment
 - ✅ Rate limiting implementation
 - 🔄 WebSocket support
 - 🔄 Monitoring dashboard
 
-### Next (Q2 2024)
+### Next (Q4 2025)
 - GraphQL endpoint
 - Advanced query capabilities
 - Batch transaction support
 - Enhanced caching
 
-### Future
+### Future (2026)
 - Multi-region deployment
 - Custom rate limit tiers
 - Advanced analytics
