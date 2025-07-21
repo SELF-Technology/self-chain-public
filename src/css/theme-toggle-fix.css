@@ -1,0 +1,18 @@
+/**
+ * Hide any default theme toggle elements since we have a custom one in the footer
+ */
+
+/* Hide any default theme toggle that might appear */
+.colorModeToggle,
+[class*="colorModeToggle"],
+[class*="toggleButton"],
+.react-toggle {
+  display: none !important;
+}
+
+/* Also hide in mobile sidebar */
+.navbar-sidebar [class*="colorModeToggle"],
+.navbar-sidebar [class*="toggleButton"],
+.navbar-sidebar .react-toggle {
+  display: none !important;
+}

@@ -1,0 +1,26 @@
+{
+  "id": "Building-on-SELF/cloud-integration 2",
+  "title": "Developer Integration Guide",
+  "description": "CRITICAL: What This Guide Is About",
+  "source": "@site/docs/Building-on-SELF/cloud-integration 2.md",
+  "sourceDirName": "Building-on-SELF",
+  "slug": "/Building-on-SELF/cloud-integration 2",
+  "permalink": "/Building-on-SELF/cloud-integration 2",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Developer Integration Guide",
+    "permalink": "/Building-on-SELF/cloud-integration"
+  },
+  "next": {
+    "title": "Code of Conduct",
+    "permalink": "/Developing SELF/code-of-conduct"
+  }
+}

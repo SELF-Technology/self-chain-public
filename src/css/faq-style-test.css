@@ -1,0 +1,166 @@
+/* FAQ-style theme test for Docusaurus */
+/* This file tests applying self.app FAQ styling to docs.self.app */
+
+/* CRITICAL: Based on Mobile Menu Instructions.md
+ * DO NOT apply these properties to navbar or its containers:
+ * - overflow: hidden
+ * - fixed height
+ * - position: relative (that would trap the mobile sidebar)
+ */
+
+/* Step 1: Keep background transparent to use gradient from custom.css */
+html[data-theme="dark"] {
+  --ifm-background-color: transparent;
+  --ifm-background-surface-color: rgba(10, 14, 24, 0.3); /* Semi-transparent */
+}
+
+/* Desktop - transparent navbar via CSS variable */
+@media (min-width: 997px) {
+  html[data-theme="dark"] {
+    --ifm-navbar-background-color: transparent;
+  }
+}
+
+/* Mobile - solid navbar background */
+@media (max-width: 996px) {
+  html[data-theme="dark"] {
+    --ifm-navbar-background-color: rgba(10, 14, 24, 0.95);
+  }
+}
+
+/* Step 2: Keep main-wrapper transparent to show gradient */
+/* Apply ONLY in dark mode */
+html[data-theme="dark"] .main-wrapper {
+  position: relative;
+  background: transparent;
+}
+
+/* Mesh gradient overlay - DISABLED to use gradient from custom.css */
+html[data-theme="dark"] .main-wrapper::before {
+  display: none !important;
+}
+
+/* Light mode - keep default white background */
+html[data-theme="light"] .main-wrapper {
+  /* Use default Docusaurus light mode styling */
+  background: inherit;
+}
+
+/* Ensure content stays above gradient */
+.main-wrapper > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Step 3: No background for content - text directly on gradient */
+html[data-theme="dark"] .markdown {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  /* Keep padding for readability */
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+/* Light mode - standard appearance */
+html[data-theme="light"] .markdown {
+  /* Use default Docusaurus styling */
+  background: inherit;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+/* Step 4: Preserve mobile menu functionality */
+/* CRITICAL: Do NOT modify navbar container properties */
+@media (max-width: 996px) {
+  /* Ensure mobile menu works - taken from existing CSS */
+  .navbar-sidebar {
+    z-index: 1000 !important;
+    /* Portal should handle the rest */
+  }
+  
+  .navbar-sidebar__backdrop {
+    z-index: 999 !important;
+  }
+  
+  /* DO NOT add overflow, height, or position to navbar */
+  .navbar {
+    /* Keep existing properties only */
+  }
+}
+
+/* Step 5: Navbar transparency - but keep background for mobile menu */
+/* Desktop only - transparent navbar */
+@media (min-width: 997px) {
+  html[data-theme="dark"] .navbar {
+    background-color: transparent !important;
+    background: transparent !important;
+  }
+  
+  /* Also target parent containers on desktop */
+  html[data-theme="dark"] [class*="navbarHideable"],
+  html[data-theme="dark"] nav[role="navigation"] {
+    background-color: transparent !important;
+    background: transparent !important;
+  }
+}
+
+/* Mobile - keep dark background for menu visibility */
+@media (max-width: 996px) {
+  html[data-theme="dark"] .navbar {
+    background-color: rgba(10, 14, 24, 0.95) !important;
+    background: rgba(10, 14, 24, 0.95) !important;
+  }
+  
+  /* When mobile menu is open, ensure solid background */
+  html[data-theme="dark"] .navbar-sidebar--show + .navbar,
+  html[data-theme="dark"] .navbar-sidebar__backdrop + * .navbar {
+    background-color: rgba(10, 14, 24, 1) !important;
+    background: rgba(10, 14, 24, 1) !important;
+  }
+}
+
+/* Light mode - slight transparency on desktop, solid on mobile */
+@media (min-width: 997px) {
+  html[data-theme="light"] .navbar {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+  }
+}
+
+@media (max-width: 996px) {
+  html[data-theme="light"] .navbar {
+    background-color: rgba(255, 255, 255, 0.98) !important;
+    background: rgba(255, 255, 255, 0.98) !important;
+  }
+}
+
+/* Step 6: Allow hero background to be full width */
+/* Remove container constraints for landing page */
+.landing-page .main-wrapper {
+  overflow: visible !important;
+}
+
+.landing-page .container {
+  position: static !important; /* Don't create positioning context */
+}
+
+/* Step 7: Hide breadcrumb on landing page only */
+/* Target breadcrumb specifically without affecting navbar or mobile menu */
+.landing-page .theme-doc-breadcrumbs,
+.landing-page .breadcrumbs,
+.landing-page .breadcrumbs__item,
+.landing-page .breadcrumbs__link,
+.landing-page nav[aria-label="Breadcrumbs"],
+.landing-page nav[aria-label="breadcrumbs"],
+.landing-page [class*="breadcrumb"] {
+  display: none !important;
+}
+
+/* Also hide the breadcrumb container if it has padding/margin */
+.landing-page .theme-doc-breadcrumbs-container {
+  display: none !important;
+}
+
+/* Step 8: Test incremental changes */
+/* We'll add more styling after confirming mobile menu still works */

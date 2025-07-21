@@ -39,15 +39,15 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', 'ac5'),
+    component: ComponentCreator('/', '868'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '83c'),
+        component: ComponentCreator('/', '753'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', '85d'),
+            component: ComponentCreator('/', '7ed'),
             routes: [
               {
                 path: '/About SELF/creation-brand',
@@ -86,8 +86,26 @@ export default [
                 sidebar: "docs"
               },
               {
+                path: '/Building-on-SELF/',
+                component: ComponentCreator('/Building-on-SELF/', '588'),
+                exact: true,
+                sidebar: "docs"
+              },
+              {
                 path: '/Building-on-SELF/api-gateway',
                 component: ComponentCreator('/Building-on-SELF/api-gateway', '573'),
+                exact: true,
+                sidebar: "docs"
+              },
+              {
+                path: '/Building-on-SELF/cloud-integration',
+                component: ComponentCreator('/Building-on-SELF/cloud-integration', '4fb'),
+                exact: true,
+                sidebar: "docs"
+              },
+              {
+                path: '/Building-on-SELF/cloud-integration 2',
+                component: ComponentCreator('/Building-on-SELF/cloud-integration 2', '4cb'),
                 exact: true,
                 sidebar: "docs"
               },
@@ -100,6 +118,12 @@ export default [
               {
                 path: '/Building-on-SELF/sdk-structure',
                 component: ComponentCreator('/Building-on-SELF/sdk-structure', 'df2'),
+                exact: true,
+                sidebar: "docs"
+              },
+              {
+                path: '/category/️-cloud-architecture',
+                component: ComponentCreator('/category/️-cloud-architecture', 'ca7'),
                 exact: true,
                 sidebar: "docs"
               },
@@ -188,6 +212,24 @@ export default [
                 sidebar: "docs"
               },
               {
+                path: '/Technical Docs/Cloud-Architecture/Developer-Integration',
+                component: ComponentCreator('/Technical Docs/Cloud-Architecture/Developer-Integration', 'd5e'),
+                exact: true,
+                sidebar: "docs"
+              },
+              {
+                path: '/Technical Docs/Cloud-Architecture/Overview',
+                component: ComponentCreator('/Technical Docs/Cloud-Architecture/Overview', 'df1'),
+                exact: true,
+                sidebar: "docs"
+              },
+              {
+                path: '/Technical Docs/Cloud-Architecture/Running-Your-Own-Node',
+                component: ComponentCreator('/Technical Docs/Cloud-Architecture/Running-Your-Own-Node', '4ed'),
+                exact: true,
+                sidebar: "docs"
+              },
+              {
                 path: '/Technical Docs/Constellation/Industry_Validation_Rules',
                 component: ComponentCreator('/Technical Docs/Constellation/Industry_Validation_Rules', '678'),
                 exact: true,
@@ -196,6 +238,18 @@ export default [
               {
                 path: '/Technical Docs/Constellation/Overview',
                 component: ComponentCreator('/Technical Docs/Constellation/Overview', 'e6f'),
+                exact: true,
+                sidebar: "docs"
+              },
+              {
+                path: '/Technical Docs/Developer Resources/Getting_Started_Testnet',
+                component: ComponentCreator('/Technical Docs/Developer Resources/Getting_Started_Testnet', '253'),
+                exact: true,
+                sidebar: "docs"
+              },
+              {
+                path: '/Technical Docs/Developer Resources/PUBLIC_INTERFACES',
+                component: ComponentCreator('/Technical Docs/Developer Resources/PUBLIC_INTERFACES', '374'),
                 exact: true,
                 sidebar: "docs"
               },

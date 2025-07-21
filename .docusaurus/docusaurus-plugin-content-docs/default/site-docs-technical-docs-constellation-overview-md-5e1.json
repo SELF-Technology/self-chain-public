@@ -17,8 +17,8 @@
   },
   "sidebar": "docs",
   "previous": {
-    "title": "Governance Implementation",
-    "permalink": "/Technical Docs/PoAI/Governance_Implementation"
+    "title": "Running Your Own Node",
+    "permalink": "/Technical Docs/Cloud-Architecture/Running-Your-Own-Node"
   },
   "next": {
     "title": "Industry Validation Rules",

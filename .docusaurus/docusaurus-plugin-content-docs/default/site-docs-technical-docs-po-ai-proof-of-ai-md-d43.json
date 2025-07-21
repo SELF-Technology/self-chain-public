@@ -17,8 +17,8 @@
   },
   "sidebar": "docs",
   "previous": {
-    "title": "User Instance Architecture",
-    "permalink": "/Technical Docs/SELF Chain/User-Instance-Architecture"
+    "title": "Public Interfaces",
+    "permalink": "/Technical Docs/Developer Resources/PUBLIC_INTERFACES"
   },
   "next": {
     "title": "Taxonomy",
