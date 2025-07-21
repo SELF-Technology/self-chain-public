@@ -14,7 +14,7 @@
 
 **Core blockchain**: ✅ Working | **Public testnet**: 🔄 In development | **Developer tools**: 📅 Coming Q4 2025
 
-> 📊 See our [Project Status](https://docs.self.app/Project%20Status) page for detailed information about what's available today.
+> 📊 See our [Project Status](https://docs.self.app/project-status) page for detailed information about what's available today.
 
 ## 🌟 Overview: SELF - The Future Of Technology Is Yours
 
@@ -49,7 +49,7 @@ SELF Chain represents a paradigm shift in blockchain technology, combining AI-po
 
 ## 🛠️ Developer Preview
 
-> 🚧 **EARLY ACCESS**: SELF Chain is in active development. Core blockchain functionality is working, but developer tools (SDKs, APIs, faucet) are currently in development. See our [Project Status](https://docs.self.app/Project%20Status) for current capabilities.
+> 🚧 **EARLY ACCESS**: SELF Chain is in active development. Core blockchain functionality is working, but developer tools (SDKs, APIs, faucet) are currently in development. See our [Project Status](https://docs.self.app/project-status) for current capabilities.
 
 > ⚠️ **TESTNET WARNING**: SELF Chain is currently in testnet phase. Do not use real assets or deploy production applications. Testnet tokens have no value and the network may be reset at any time.
 
@@ -81,7 +81,7 @@ cargo run --bin self-chain-node -- --testnet
 ## 📚 Documentation
 
 ### Getting Started
-- 📊 [Project Status](https://docs.self.app/Project%20Status) - See what's working today
+- 📊 [Project Status](https://docs.self.app/project-status) - See what's working today
 - 🎯 [Quick Start Guide (Testnet)](https://docs.self.app/Technical%20Docs/Developer%20Resources/Getting_Started_Testnet)
 - 🏗️ [Architecture Overview](https://docs.self.app/Technical%20Docs/SELF%20Chain/SELF_Chain_Architecture)
 - 🤖 [Understanding PoAI](https://docs.self.app/Technical%20Docs/PoAI/Proof-of-AI)
@@ -161,7 +161,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
 ## 🗺️ Roadmap
 
-> 📌 **Note**: For the most current and detailed status of all features, see our [Project Status](https://docs.self.app/Project%20Status) page. Join our [Discord](https://discord.gg/WdMdVpA4C8) for the latest updates.
+> 📌 **Note**: For the most current and detailed status of all features, see our [Project Status](https://docs.self.app/project-status) page. Join our [Discord](https://discord.gg/WdMdVpA4C8) for the latest updates.
 
 ### Q1 2025 - Foundation ✅
 - [x] Core blockchain implementation
