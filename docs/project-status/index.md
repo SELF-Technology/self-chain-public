@@ -184,7 +184,7 @@ Even in this early stage, you can contribute:
 - **Testing**: Run nodes and report issues
 - **Feedback**: Share your developer experience
 
-See our [Contributing Guide](https://github.com/SELF-Technology/self-chain-public/blob/main/CONTRIBUTING.md) for details.
+See our [Contributing Guide](/Contributing) for details.
 
 ---
 

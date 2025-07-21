@@ -1,0 +1,7 @@
+{
+  "restrictions": {
+    "users": ["SELF-HQ"],
+    "teams": [],
+    "apps": []
+  }
+}
