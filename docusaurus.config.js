@@ -160,7 +160,7 @@ const config = {
     } : undefined,
     colorMode: {
       defaultMode: 'dark',
-      disableSwitch: true, // Theme toggle now in footer only
+      disableSwitch: false,
       respectPrefersColorScheme: false,
     },
     navbar: {
