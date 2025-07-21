@@ -234,7 +234,7 @@ We believe in radical transparency with pragmatic security. As everyone should o
 **The Future: SELF DAO**  
 We're working towards creating SELF DAO to progressively decentralize governance, including oversight of security-critical components. This will ensure community control over the entire project—making SELF truly owned by the people who use and build it.
 
-This approach, inspired by Signal, ensures both transparency and security while building towards complete community ownership.
+This approach ensures both transparency and security while building towards complete community ownership.
 
 ## 🙏 Acknowledgments
 
