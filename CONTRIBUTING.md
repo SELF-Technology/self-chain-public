@@ -28,7 +28,7 @@ By participating in this project, you agree to abide by our [Code of Conduct](CO
 
 ## Getting Started
 
-> ⚠️ **Important**: SELF Chain is in active development. Please review our [Project Status](https://docs.self.app/Project%20Status) to understand what's currently available.
+> ⚠️ **Important**: SELF Chain is in active development. Please review our [Project Status](https://docs.self.app/project-status) to understand what's currently available.
 
 1. **Join our Community**
    - Discord: [Join SELF Community](https://discord.gg/WdMdVpA4C8)
@@ -38,7 +38,7 @@ By participating in this project, you agree to abide by our [Code of Conduct](CO
 
 2. **Understand the Project**
    - Read our [documentation](https://docs.self.app)
-   - Review the [Project Status](https://docs.self.app/Project%20Status) for current state
+   - Review the [Project Status](https://docs.self.app/project-status) for current state
    - Review the [architecture overview](https://docs.self.app/Technical%20Docs/SELF%20Chain/SELF_Chain_Architecture)
    - Understand [Proof-of-AI consensus](https://docs.self.app/Technical%20Docs/PoAI/Proof-of-AI)
 
@@ -70,7 +70,7 @@ We love new ideas! To suggest a feature:
 4. Consider alternatives you've thought about
 5. Tag the issue with `enhancement` label
 
-> **Note**: Check our [Project Status](https://docs.self.app/Project%20Status) first to see if the feature is already planned
+> **Note**: Check our [Project Status](https://docs.self.app/project-status) first to see if the feature is already planned
 
 ### 📝 Improving Documentation
 
@@ -144,7 +144,7 @@ Documentation contributions are highly valued! You can:
    cargo run --bin self-chain-node -- --dev
    ```
 
-> **Important**: Many features shown in documentation are planned but not yet implemented. Check [Project Status](https://docs.self.app/Project%20Status) for current capabilities.
+> **Important**: Many features shown in documentation are planned but not yet implemented. Check [Project Status](https://docs.self.app/project-status) for current capabilities.
 
 ## Contribution Areas
 
@@ -262,7 +262,7 @@ We value all contributions! Contributors are:
 - **GitHub Discussions**: Technical deep-dives
 - **GitHub Issues**: Specific bugs or feature discussions
 - **Documentation**: [docs.self.app](https://docs.self.app)
-- **Project Status**: [Current development state](https://docs.self.app/Project%20Status)
+- **Project Status**: [Current development state](https://docs.self.app/project-status)
 
 ## License
 

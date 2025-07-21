@@ -33,7 +33,7 @@ Before you begin, ensure you have:
 
 ## Testnet Setup Guide
 
-> **Important**: This guide requires technical expertise. Easy-access developer tools (API, SDK, faucet) are currently in development. See [Project Status](/Project%20Status) for current limitations.
+> **Important**: This guide requires technical expertise. Easy-access developer tools (API, SDK, faucet) are currently in development. See [Project Status](/project-status) for current limitations.
 
 ### 1. Clone the Repository
 
@@ -265,7 +265,7 @@ Even on testnet, follow security best practices:
 
 ### Resources
 - [Documentation](https://docs.self.app)
-- [Project Status](https://docs.self.app/Project%20Status)
+- [Project Status](https://docs.self.app/project-status)
 - Testnet Explorer (Coming Soon)
 
 ## Contributing
@@ -312,7 +312,7 @@ See [CONTRIBUTING.md](https://github.com/SELF-Technology/self-chain-public/blob/
 1. Join our community:
    - [GitHub Discussions](https://github.com/SELF-Technology/self-chain-public/discussions)
    - [Discord](https://discord.gg/WdMdVpA4C8)
-2. Review the [Project Status](https://docs.self.app/Project%20Status)
+2. Review the [Project Status](https://docs.self.app/project-status)
 3. Explore the codebase
 4. Build something amazing!
 5. Share your feedback via GitHub Issues or devs@self.app
