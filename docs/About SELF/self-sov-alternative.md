@@ -1,6 +1,6 @@
 ---
 sidebar_label: "🔓 A Self-Sovereign Alternative"
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # A Self-Sovereign Alternative

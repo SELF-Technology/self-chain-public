@@ -41,6 +41,11 @@
               "sidebar": "docs"
             },
             {
+              "id": "About SELF/the-story",
+              "path": "/About SELF/the-story",
+              "sidebar": "docs"
+            },
+            {
               "id": "Building-on-SELF/api-gateway",
               "path": "/Building-on-SELF/api-gateway",
               "sidebar": "docs"

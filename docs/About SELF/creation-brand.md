@@ -1,6 +1,6 @@
 ---
 sidebar_label: "🎨 Creation of the SELF Brand"
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 # Creation of the SELF brand

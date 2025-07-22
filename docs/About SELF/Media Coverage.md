@@ -1,6 +1,6 @@
 ---
 sidebar_label: "🔈 Media Coverage"
-sidebar_position: 7
+sidebar_position: 8
 ---
 
 # Media Coverage

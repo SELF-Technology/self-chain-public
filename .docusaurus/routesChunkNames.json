@@ -1,247 +1,294 @@
 {
-  "/-e1e": {
-    "__comp": "5e95c892",
+  "/__docusaurus/debug-5ff": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "aba21aa0"
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
     }
   },
-  "/-04a": {
-    "__comp": "a7bd4aaa",
-    "__props": "22dd74f7"
+  "/__docusaurus/debug/config-5ba": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
   },
-  "/-465": {
-    "__comp": "a94703ab"
+  "/__docusaurus/debug/content-a2b": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    },
+    "__props": "__props---docusaurus-debug-content-3-c-0-be2"
+  },
+  "/__docusaurus/debug/globalData-c3c": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/metadata-156": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/registry-88c": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/routes-000": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/-eb1": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---aba-d70"
+    }
+  },
+  "/-8a9": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---22-d-307"
+  },
+  "/-67e": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/About SELF/creation-brand-dbc": {
-    "__comp": "17896441",
-    "content": "328dfaf2"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---about-self-creation-brand-328-531"
   },
   "/About SELF/evolution-df0": {
-    "__comp": "17896441",
-    "content": "3af0cfc6"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---about-self-evolution-3-af-dc6"
   },
   "/About SELF/long-term-75e": {
-    "__comp": "17896441",
-    "content": "0c34fd62"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---about-self-long-term-0-c-3-e45"
   },
   "/About SELF/manifesto-841": {
-    "__comp": "17896441",
-    "content": "e35c9113"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---about-self-manifestoe-35-262"
   },
   "/About SELF/Media Coverage-37f": {
-    "__comp": "17896441",
-    "content": "5ee7e0c4"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---about-self-media-coverage-5-ee-304"
   },
   "/About SELF/self-sov-alternative-1d2": {
-    "__comp": "17896441",
-    "content": "ae2d173b"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---about-self-self-sov-alternativeae-2-3ec"
+  },
+  "/About SELF/the-story-918": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---about-self-the-story-4-a-7-0cb"
   },
   "/Building-on-SELF/-588": {
-    "__comp": "17896441",
-    "content": "67426101"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---building-on-self-674-aa6"
   },
   "/Building-on-SELF/api-gateway-573": {
-    "__comp": "17896441",
-    "content": "5ad6948f"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---building-on-self-api-gateway-5-ad-51a"
   },
   "/Building-on-SELF/cloud-integration-4fb": {
-    "__comp": "17896441",
-    "content": "a1852d29"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---building-on-self-cloud-integrationa-18-ef7"
   },
   "/Building-on-SELF/getting-started-54a": {
-    "__comp": "17896441",
-    "content": "ae9ae2d0"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---building-on-self-getting-startedae-9-448"
   },
   "/Building-on-SELF/sdk-structure-df2": {
-    "__comp": "17896441",
-    "content": "10758286"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---building-on-self-sdk-structure-107-657"
   },
   "/category/️-cloud-architecture-ca7": {
-    "__comp": "14eb3368",
-    "__props": "df030b21"
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---category-️-cloud-architecturedf-0-c33"
   },
   "/Developing SELF/-87b": {
-    "__comp": "17896441",
-    "content": "6c5f58b0"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---developing-self-6-c-5-493"
   },
   "/Developing SELF/code-of-conduct-d4b": {
-    "__comp": "17896441",
-    "content": "c5a7be4b"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---developing-self-code-of-conductc-5-a-3f2"
   },
   "/Developing SELF/governance-bf4": {
-    "__comp": "17896441",
-    "content": "0cf1318e"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---developing-self-governance-0-cf-f47"
   },
   "/Developing SELF/security-03c": {
-    "__comp": "17896441",
-    "content": "506498ee"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---developing-self-security-506-173"
   },
   "/project-status/-1ce": {
-    "__comp": "17896441",
-    "content": "17c7465d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---project-status-17-c-2e7"
   },
   "/Roadmap/Beta Web App-181": {
-    "__comp": "17896441",
-    "content": "c564d16b"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---roadmap-beta-web-appc-56-78a"
   },
   "/Roadmap/Developer Incentives-e99": {
-    "__comp": "17896441",
-    "content": "6a74860d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---roadmap-developer-incentives-6-a-7-9ba"
   },
   "/Roadmap/Introduction-09b": {
-    "__comp": "17896441",
-    "content": "528b86f7"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---roadmap-introduction-528-e77"
   },
   "/Roadmap/SDK-b8f": {
-    "__comp": "17896441",
-    "content": "dd356c03"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---roadmap-sd-kdd-3-f55"
   },
   "/Roadmap/SELF OS-537": {
-    "__comp": "17896441",
-    "content": "7c6a1242"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---roadmap-self-os-7-c-6-6f0"
   },
   "/Roadmap/Super-App Testnet-978": {
-    "__comp": "17896441",
-    "content": "ca491451"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---roadmap-super-app-testnetca-4-253"
   },
   "/Roadmap/Token/Overview-d2b": {
-    "__comp": "17896441",
-    "content": "794724c6"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---roadmap-token-overview-794-596"
   },
   "/Roadmap/Token/Smart-Contract-Architecture-b03": {
-    "__comp": "17896441",
-    "content": "e003506e"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---roadmap-token-smart-contract-architecturee-00-385"
   },
   "/Roadmap/Token/Tokenomics-aea": {
-    "__comp": "17896441",
-    "content": "e599d823"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---roadmap-token-tokenomicse-59-5ad"
   },
   "/Technical Docs/Cloud-Architecture/Developer-Integration-d5e": {
-    "__comp": "17896441",
-    "content": "779461ac"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-cloud-architecture-developer-integration-779-be4"
   },
   "/Technical Docs/Cloud-Architecture/Overview-df1": {
-    "__comp": "17896441",
-    "content": "7eaf01f1"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-cloud-architecture-overview-7-ea-755"
   },
   "/Technical Docs/Cloud-Architecture/Running-Your-Own-Node-4ed": {
-    "__comp": "17896441",
-    "content": "0490238e"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-cloud-architecture-running-your-own-node-049-ce7"
   },
   "/Technical Docs/Constellation/Industry_Validation_Rules-678": {
-    "__comp": "17896441",
-    "content": "867e13dd"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-constellation-industry-validation-rules-867-312"
   },
   "/Technical Docs/Constellation/Overview-e6f": {
-    "__comp": "17896441",
-    "content": "5e1ebe5a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-constellation-overview-5-e-1-f27"
   },
   "/Technical Docs/Developer Resources/Getting_Started_Testnet-253": {
-    "__comp": "17896441",
-    "content": "283f14ca"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-developer-resources-getting-started-testnet-283-a0d"
   },
   "/Technical Docs/Developer Resources/PUBLIC_INTERFACES-374": {
-    "__comp": "17896441",
-    "content": "770c6e11"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-developer-resources-public-interfaces-770-e34"
   },
   "/Technical Docs/Grid-Compute/Future-Vision-101": {
-    "__comp": "17896441",
-    "content": "27fe1354"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-grid-compute-future-vision-27-f-949"
   },
   "/Technical Docs/Integration/Minima Integration-396": {
-    "__comp": "17896441",
-    "content": "4b338dd0"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-integration-minima-integration-4-b-3-fee"
   },
   "/Technical Docs/Integration/Rosetta API Integration-0d2": {
-    "__comp": "17896441",
-    "content": "1b6bb554"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-integration-rosetta-api-integration-1-b-6-672"
   },
   "/Technical Docs/Performance/Advanced_TPS_Optimization-d90": {
-    "__comp": "17896441",
-    "content": "63f2a45b"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-performance-advanced-tps-optimization-63-f-a33"
   },
   "/Technical Docs/PoAI/AI Block Builder Algorithm-013": {
-    "__comp": "17896441",
-    "content": "193c2be6"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-po-ai-ai-block-builder-algorithm-193-a60"
   },
   "/Technical Docs/PoAI/AI-Validator Algorithm-a39": {
-    "__comp": "17896441",
-    "content": "3ee9e72f"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-po-ai-ai-validator-algorithm-3-ee-1fe"
   },
   "/Technical Docs/PoAI/Color Marker Examples-16c": {
-    "__comp": "17896441",
-    "content": "666ea10f"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-po-ai-color-marker-examples-666-3e2"
   },
   "/Technical Docs/PoAI/Color Marker System-353": {
-    "__comp": "17896441",
-    "content": "735d4581"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-po-ai-color-marker-system-735-abd"
   },
   "/Technical Docs/PoAI/Governance_Implementation-905": {
-    "__comp": "17896441",
-    "content": "ba37067c"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-po-ai-governance-implementationba-3-cd1"
   },
   "/Technical Docs/PoAI/Proof-of-AI-74e": {
-    "__comp": "17896441",
-    "content": "d43ee37d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-po-ai-proof-of-a-id-43-23e"
   },
   "/Technical Docs/PoAI/Taxonomy-7d2": {
-    "__comp": "17896441",
-    "content": "6df429bd"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-po-ai-taxonomy-6-df-87e"
   },
   "/Technical Docs/PoAI/The Incentive-140": {
-    "__comp": "17896441",
-    "content": "a2a750b6"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-po-ai-the-incentivea-2-a-aa5"
   },
   "/Technical Docs/PoAI/Validation Process-050": {
-    "__comp": "17896441",
-    "content": "f10196df"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-po-ai-validation-processf-10-545"
   },
   "/Technical Docs/PoAI/Voting Algorithm-c6d": {
-    "__comp": "17896441",
-    "content": "e20572fa"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-po-ai-voting-algorithme-20-896"
   },
   "/Technical Docs/Security/AI_Capacity_Implementation-611": {
-    "__comp": "17896441",
-    "content": "8ed95c5c"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-security-ai-capacity-implementation-8-ed-d67"
   },
   "/Technical Docs/Security/Overview-cb9": {
-    "__comp": "17896441",
-    "content": "ece95bec"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-security-overviewece-006"
   },
   "/Technical Docs/Security/Pattern_Analysis_Security-048": {
-    "__comp": "17896441",
-    "content": "f987f056"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-security-pattern-analysis-securityf-98-29c"
   },
   "/Technical Docs/Security/Post_Quantum_Cryptography-662": {
-    "__comp": "17896441",
-    "content": "69ee36fd"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-security-post-quantum-cryptography-69-e-541"
   },
   "/Technical Docs/SELF Chain/SELF_Chain_Architecture-ab2": {
-    "__comp": "17896441",
-    "content": "4a011fcc"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-self-chain-self-chain-architecture-4-a-0-888"
   },
   "/Technical Docs/SELF Chain/User-Instance-Architecture-573": {
-    "__comp": "17896441",
-    "content": "03127ee8"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-self-chain-user-instance-architecture-031-2a4"
   },
   "/Technical Docs/SELF Chain/Why Build A Blockchain-410": {
-    "__comp": "17896441",
-    "content": "5c75859a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-self-chain-why-build-a-blockchain-5-c-7-79e"
   },
   "/Technical Docs/Storage/Hybrid_Architecture-a50": {
-    "__comp": "17896441",
-    "content": "49dab9b0"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-storage-hybrid-architecture-49-d-b68"
   },
   "/Technical Docs/Storage/Storage_Integration-d49": {
-    "__comp": "17896441",
-    "content": "6a87b694"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-storage-storage-integration-6-a-8-aea"
   },
   "/Technical Docs/Validate/-4fc": {
-    "__comp": "17896441",
-    "content": "76952c5f"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---technical-docs-validate-769-8f6"
   },
   "/-bea": {
-    "__comp": "17896441",
-    "content": "c377a04b"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---c-37-d02"
   }
 }

@@ -1,6 +1,6 @@
 ---
 sidebar_label: "🔭 The Long-Term Goal"
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # The Long-Term Goal

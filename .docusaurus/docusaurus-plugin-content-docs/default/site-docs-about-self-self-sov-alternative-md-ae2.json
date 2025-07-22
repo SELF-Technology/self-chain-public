@@ -10,10 +10,10 @@
   "unlisted": false,
   "tags": [],
   "version": "current",
-  "sidebarPosition": 3,
+  "sidebarPosition": 4,
   "frontMatter": {
     "sidebar_label": "🔓 A Self-Sovereign Alternative",
-    "sidebar_position": 3
+    "sidebar_position": 4
   },
   "sidebar": "docs",
   "previous": {
