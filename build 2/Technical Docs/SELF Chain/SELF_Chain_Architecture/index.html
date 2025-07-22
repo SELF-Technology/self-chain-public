@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Technical Docs/SELF Chain/SELF_Chain_Architecture" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">SELF Chain Architecture | SELF Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:url" content="https://docs.self.app/Technical Docs/SELF Chain/SELF_Chain_Architecture"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="keywords" content="self chain, proof of ai blockchain, post quantum blockchain, self sovereign technology, decentralized ai validation, people&#x27;s blockchain, privacy first blockchain, poai consensus, color marker system, hybrid cloud blockchain"><meta data-rh="true" property="og:type" content="website"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="twitter:title" content="SELF Documentation - The People&#x27;s Blockchain"><meta data-rh="true" name="twitter:description" content="Build on SELF Chain with Proof-of-AI consensus, post-quantum cryptography, and human-centric design."><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="SELF Chain Architecture | SELF Documentation"><meta data-rh="true" name="description" content="📂 Explore the Open Source Code"><meta data-rh="true" property="og:description" content="📂 Explore the Open Source Code"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.self.app/Technical Docs/SELF Chain/SELF_Chain_Architecture"><link data-rh="true" rel="alternate" href="https://docs.self.app/Technical Docs/SELF Chain/SELF_Chain_Architecture" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.self.app/Technical Docs/SELF Chain/SELF_Chain_Architecture" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"SELF Chain Architecture","item":"https://docs.self.app/Technical Docs/SELF Chain/SELF_Chain_Architecture"}]}</script><meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39; data: blob:; script-src &#39;self&#39; &#39;unsafe-inline&#39; https:; style-src &#39;self&#39; &#39;unsafe-inline&#39; https:; img-src &#39;self&#39; data: https: blob:; font-src &#39;self&#39; data: https:; connect-src &#39;self&#39; https:; frame-src &#39;self&#39; https:;">
+<link rel="preload" href="/img/SELF-BLACK.png" as="image" fetchpriority="high">
+<link rel="preload" href="/img/SELFwhitelogo.webp" as="image" fetchpriority="high">
+<link rel="preload" href="/img/SELF GALAXY transparent 620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp" as="image" fetchpriority="low">
+<link rel="preload" href="/css/vendor/docsearch.min.css" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;">
+<link rel="preload" href="/css/vendor/fontawesome-minimal.css" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;">
+<noscript><link rel="stylesheet" href="/css/vendor/docsearch.min.css"><link rel="stylesheet" href="/css/vendor/fontawesome-minimal.css"></noscript>
+<link rel="preload" href="/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.ca7c1519.css">
+<script src="/assets/js/runtime~main.a46b2822.js" defer="defer"></script>
+<script src="/assets/js/main.254b51b8.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="dark";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><a href="https://self.app" target="_self" rel="noopener noreferrer" class="navbar__brand"><div class="navbar__logo"><img src="/img/SELF-BLACK.png" alt="SELF Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/SELFwhitelogo.webp" alt="SELF Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"></b></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/">Welcome</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/project-status/">📊 Project Status</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/About SELF/manifesto">ℹ️ About SELF</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Roadmap/Introduction">📍 Roadmap</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Building-on-SELF/">🚀 Building on SELF</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Developing SELF/">🛠️ Developing SELF</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/Technical Docs/SELF Chain/SELF_Chain_Architecture">📚 Technical Docs</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/Technical Docs/SELF Chain/SELF_Chain_Architecture">⛓️ SELF Chain</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/Technical Docs/SELF Chain/SELF_Chain_Architecture">SELF Chain Architecture</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/Technical Docs/SELF Chain/Why Build A Blockchain">Why We Built A Chain</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/Technical Docs/SELF Chain/User-Instance-Architecture">User Instance Architecture</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/Technical Docs/Developer Resources/Getting_Started_Testnet">👨‍💻 Developer Resources</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/Technical Docs/PoAI/Proof-of-AI">🤖 PoAI</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/category/️-cloud-architecture">☁️ Cloud Architecture</a><button aria-label="Expand sidebar category &#x27;☁️ Cloud Architecture&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/Technical Docs/Constellation/Overview">🌌 Constellation</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/Technical Docs/Grid-Compute/Future-Vision">⚡ Grid Compute</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/Technical Docs/Security/Overview">🔒 Security</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/Technical Docs/Storage/Hybrid_Architecture">💾 Storage</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Technical Docs/Validate/">✅ Validate</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/Technical Docs/Integration/Rosetta API Integration">🔗 Integration</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/Technical Docs/Performance/Advanced_TPS_Optimization">🚀 Performance</a></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">📚 Technical Docs</span></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">⛓️ SELF Chain</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">SELF Chain Architecture</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>SELF Chain Public Architecture</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-explore-the-open-source-code">📂 Explore the Open Source Code<a href="#-explore-the-open-source-code" class="hash-link" aria-label="Direct link to 📂 Explore the Open Source Code" title="Direct link to 📂 Explore the Open Source Code">​</a></h2>
+<p>Our blockchain implementation is open source. Explore the core components:</p>
+<div class="opensource-links"><ul>
+<li><strong><a href="https://github.com/SELF-Technology/self-chain-public/tree/main/src/blockchain" target="_blank" rel="noopener noreferrer">Blockchain Core</a></strong> - Core blockchain implementation<!-- -->
+<ul>
+<li>Block structure, chain management, transaction processing</li>
+</ul>
+</li>
+<li><strong><a href="https://github.com/SELF-Technology/self-chain-public/tree/main/src/consensus" target="_blank" rel="noopener noreferrer">Consensus (PoAI)</a></strong> - Proof of AI consensus mechanism<!-- -->
+<ul>
+<li>Validator logic, voting system, reputation management</li>
+</ul>
+</li>
+<li><strong><a href="https://github.com/SELF-Technology/self-chain-public/tree/main/src/network" target="_blank" rel="noopener noreferrer">Networking</a></strong> - P2P and cloud communication<!-- -->
+<ul>
+<li>libp2p integration, TLS security, cloud protocol</li>
+</ul>
+</li>
+<li><strong><a href="https://github.com/SELF-Technology/self-chain-public/tree/main/src/storage" target="_blank" rel="noopener noreferrer">Storage</a></strong> - Hybrid distributed storage<!-- -->
+<ul>
+<li>IPFS integration, OrbitDB, cloud storage adapters</li>
+</ul>
+</li>
+<li><strong><a href="https://github.com/SELF-Technology/self-chain-public/tree/main/src/crypto" target="_blank" rel="noopener noreferrer">Cryptography</a></strong> - Post-quantum security<!-- -->
+<ul>
+<li>Kyber, SPHINCS+, hybrid cryptographic systems</li>
+</ul>
+</li>
+<li><strong><a href="https://github.com/SELF-Technology/self-chain-public/tree/main/src/ai" target="_blank" rel="noopener noreferrer">AI Integration</a></strong> - AI-powered validation system<!-- -->
+<ul>
+<li>Pattern analysis, context management, validation services</li>
+</ul>
+</li>
+</ul></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-developer-resources">👨‍💻 Developer Resources<a href="#-developer-resources" class="hash-link" aria-label="Direct link to 👨‍💻 Developer Resources" title="Direct link to 👨‍💻 Developer Resources">​</a></h3>
+<p>Get started building on SELF Chain:</p>
+<ul>
+<li><strong><a href="/Building-on-SELF/getting-started">Getting Started Guide (Testnet)</a></strong> - Begin your journey with SELF Chain development<!-- -->
+<ul>
+<li>Testnet setup, configuration, and safety guidelines</li>
+</ul>
+</li>
+<li><strong><a href="/Building-on-SELF/api-gateway">API Gateway Documentation</a></strong> - Security-safe APIs for developers<!-- -->
+<ul>
+<li>Understand what can be safely accessed and built upon</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="self-ecosystem-overview">SELF Ecosystem Overview<a href="#self-ecosystem-overview" class="hash-link" aria-label="Direct link to SELF Ecosystem Overview" title="Direct link to SELF Ecosystem Overview">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="SELF Chain Architecture" src="/assets/images/SELF Chain Architecture-91469f50a7344071167a752957becceb.png" width="5415" height="3390" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="saas-platform-model">SaaS Platform Model<a href="#saas-platform-model" class="hash-link" aria-label="Direct link to SaaS Platform Model" title="Direct link to SaaS Platform Model">​</a></h3>
+<p>SELF Chain operates as a managed service platform:</p>
+<ol>
+<li>
+<p><strong>User Node Provisioning</strong></p>
+<ul>
+<li>Automatic node deployment when users create a SELF account</li>
+<li>Free trial period with managed infrastructure</li>
+<li>Subscription-based model after trial period</li>
+<li>Seamless transition between free and paid tiers</li>
+</ul>
+</li>
+<li>
+<p><strong>AI Model Integration</strong></p>
+<ul>
+<li>Default AI model provided with each user account</li>
+<li>User-configurable AI preferences stored persistently</li>
+<li>Model upgrade options for subscription users</li>
+<li>Custom AI training with user preferences</li>
+</ul>
+</li>
+<li>
+<p><strong>Super-App Integration</strong></p>
+<ul>
+<li>Blockchain nodes integrated with SELF Super-App</li>
+<li>Cross-app communication protocols</li>
+<li>Persistent user data synchronization</li>
+<li>Unified authentication and authorization</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="b2b-constellation-architecture">B2B Constellation Architecture<a href="#b2b-constellation-architecture" class="hash-link" aria-label="Direct link to B2B Constellation Architecture" title="Direct link to B2B Constellation Architecture">​</a></h3>
+<p>SELF provides enterprise-grade blockchain solutions:</p>
+<ol>
+<li>
+<p><strong>Corporate Layer-1 Chains</strong></p>
+<ul>
+<li>Managed provisioning of parallel Layer-1 blockchains</li>
+<li>Similar to Polkadot parachains but for full Layer-1 chains</li>
+<li>Configurable AI model deployment for enterprise nodes</li>
+<li>Custom token generation capabilities</li>
+</ul>
+</li>
+<li>
+<p><strong>Enterprise Management</strong></p>
+<ul>
+<li>SaaS management of corporate blockchain infrastructure</li>
+<li>Monitoring and health dashboards for enterprise clients</li>
+<li>Resource allocation and scaling for business needs</li>
+<li>Enterprise billing and subscription management</li>
+</ul>
+</li>
+<li>
+<p><strong>Ecosystem Interoperability</strong></p>
+<ul>
+<li>Inter-chain communication between SELF and corporate chains</li>
+<li>Shared security and validation model</li>
+<li>Cross-chain transactions and data sharing</li>
+<li>Unified analytics and monitoring</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-core-architecture">1. Core Architecture<a href="#1-core-architecture" class="hash-link" aria-label="Direct link to 1. Core Architecture" title="Direct link to 1. Core Architecture">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="11-cloud-first-architecture">1.1 Cloud-First Architecture<a href="#11-cloud-first-architecture" class="hash-link" aria-label="Direct link to 1.1 Cloud-First Architecture" title="Direct link to 1.1 Cloud-First Architecture">​</a></h3>
+<p>SELF Chain operates exclusively in a cloud-first environment:</p>
+<ol>
+<li>
+<p><strong>Cloud Processing</strong></p>
+<ul>
+<li>All operations occur in the cloud</li>
+<li>Distributed cloud nodes</li>
+<li>Secure cloud storage</li>
+<li>Cloud-optimized processing</li>
+</ul>
+</li>
+<li>
+<p><strong>Cloud Infrastructure</strong></p>
+<ul>
+<li>Fully distributed cloud nodes</li>
+<li>Secure cloud storage</li>
+<li>Encrypted cloud communication</li>
+<li>Cloud-optimized infrastructure</li>
+</ul>
+</li>
+<li>
+<p><strong>Remote Access</strong></p>
+<ul>
+<li>Cloud-only interaction model</li>
+<li>Secure cloud APIs</li>
+<li>Remote-first user experience</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="12-network-architecture">1.2 Network Architecture<a href="#12-network-architecture" class="hash-link" aria-label="Direct link to 1.2 Network Architecture" title="Direct link to 1.2 Network Architecture">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="121-peer-discovery">1.2.1 Peer Discovery<a href="#121-peer-discovery" class="hash-link" aria-label="Direct link to 1.2.1 Peer Discovery" title="Direct link to 1.2.1 Peer Discovery">​</a></h4>
+<ul>
+<li>Periodic peer discovery from bootstrap nodes</li>
+<li>Peer-to-peer discovery through known peers</li>
+<li>Peer stats tracking and reliability scoring</li>
+<li>Network topology metrics</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="122-message-routing">1.2.2 Message Routing<a href="#122-message-routing" class="hash-link" aria-label="Direct link to 1.2.2 Message Routing" title="Direct link to 1.2.2 Message Routing">​</a></h4>
+<ul>
+<li>Gossipsub for message propagation</li>
+<li>Kademlia for peer discovery</li>
+<li>Routing table with peer statistics</li>
+<li>Message forwarding with TTL</li>
+<li>Flood threshold protection</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="123-connection-management">1.2.3 Connection Management<a href="#123-connection-management" class="hash-link" aria-label="Direct link to 1.2.3 Connection Management" title="Direct link to 1.2.3 Connection Management">​</a></h4>
+<ul>
+<li>Connection pooling per peer</li>
+<li>Connection timeout handling</li>
+<li>Active connection tracking</li>
+<li>Error handling and recovery</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="13-storage-architecture">1.3 Storage Architecture<a href="#13-storage-architecture" class="hash-link" aria-label="Direct link to 1.3 Storage Architecture" title="Direct link to 1.3 Storage Architecture">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="131-hybrid-storage">1.3.1 Hybrid Storage<a href="#131-hybrid-storage" class="hash-link" aria-label="Direct link to 1.3.1 Hybrid Storage" title="Direct link to 1.3.1 Hybrid Storage">​</a></h4>
+<ul>
+<li>Decentralized storage using IPFS</li>
+<li>Real-time database with OrbitDB</li>
+<li>Cross-chain data synchronization</li>
+<li>Secure data integrity</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="132-storage-features">1.3.2 Storage Features<a href="#132-storage-features" class="hash-link" aria-label="Direct link to 1.3.2 Storage Features" title="Direct link to 1.3.2 Storage Features">​</a></h4>
+<ul>
+<li>Distributed data storage</li>
+<li>Data versioning</li>
+<li>Data integrity verification</li>
+<li>Secure access control</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-security-architecture">2. Security Architecture<a href="#2-security-architecture" class="hash-link" aria-label="Direct link to 2. Security Architecture" title="Direct link to 2. Security Architecture">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="21-network-security">2.1 Network Security<a href="#21-network-security" class="hash-link" aria-label="Direct link to 2.1 Network Security" title="Direct link to 2.1 Network Security">​</a></h3>
+<ol>
+<li>
+<p><strong>Connection Security</strong></p>
+<ul>
+<li>TLS encryption for all peer connections</li>
+<li>Message signing and verification</li>
+<li>Peer authentication</li>
+<li>Network message validation</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Security</strong></p>
+<ul>
+<li>End-to-end encryption</li>
+<li>Message integrity verification</li>
+<li>Secure data storage</li>
+<li>Access control</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="22-ai-security">2.2 AI Security<a href="#22-ai-security" class="hash-link" aria-label="Direct link to 2.2 AI Security" title="Direct link to 2.2 AI Security">​</a></h3>
+<ol>
+<li>
+<p><strong>AI Validation</strong></p>
+<ul>
+<li>Ollama Cloud integration</li>
+<li>Context-aware validation</li>
+<li>Validator reputation system</li>
+<li>Secure AI processing</li>
+</ul>
+</li>
+<li>
+<p><strong>Security Features</strong></p>
+<ul>
+<li>Secure cloud APIs</li>
+<li>Encrypted cloud channels</li>
+<li>Cloud node authentication</li>
+<li>Distributed cloud security</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-performance-optimization">3. Performance Optimization<a href="#3-performance-optimization" class="hash-link" aria-label="Direct link to 3. Performance Optimization" title="Direct link to 3. Performance Optimization">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="31-network-optimization">3.1 Network Optimization<a href="#31-network-optimization" class="hash-link" aria-label="Direct link to 3.1 Network Optimization" title="Direct link to 3.1 Network Optimization">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="311-connection-pooling">3.1.1 Connection Pooling<a href="#311-connection-pooling" class="hash-link" aria-label="Direct link to 3.1.1 Connection Pooling" title="Direct link to 3.1.1 Connection Pooling">​</a></h4>
+<ul>
+<li>Limits concurrent connections per peer</li>
+<li>Prevents resource exhaustion</li>
+<li>Optimizes network bandwidth usage</li>
+<li>Reduces connection overhead</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="312-routing-optimization">3.1.2 Routing Optimization<a href="#312-routing-optimization" class="hash-link" aria-label="Direct link to 3.1.2 Routing Optimization" title="Direct link to 3.1.2 Routing Optimization">​</a></h4>
+<ul>
+<li>Intelligent peer selection</li>
+<li>Path optimization</li>
+<li>Load balancing</li>
+<li>Error recovery</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="32-storage-optimization">3.2 Storage Optimization<a href="#32-storage-optimization" class="hash-link" aria-label="Direct link to 3.2 Storage Optimization" title="Direct link to 3.2 Storage Optimization">​</a></h3>
+<ul>
+<li>Optimized data synchronization</li>
+<li>Efficient data retrieval</li>
+<li>Resource utilization</li>
+<li>Performance monitoring</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-monitoring-and-metrics">4. Monitoring and Metrics<a href="#4-monitoring-and-metrics" class="hash-link" aria-label="Direct link to 4. Monitoring and Metrics" title="Direct link to 4. Monitoring and Metrics">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="41-network-metrics">4.1 Network Metrics<a href="#41-network-metrics" class="hash-link" aria-label="Direct link to 4.1 Network Metrics" title="Direct link to 4.1 Network Metrics">​</a></h3>
+<ul>
+<li>Peer connection statistics</li>
+<li>Message latency</li>
+<li>Network throughput</li>
+<li>Error rates</li>
+<li>Peer reliability scores</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="42-performance-metrics">4.2 Performance Metrics<a href="#42-performance-metrics" class="hash-link" aria-label="Direct link to 4.2 Performance Metrics" title="Direct link to 4.2 Performance Metrics">​</a></h3>
+<ul>
+<li>Connection pool utilization</li>
+<li>Message delivery success rates</li>
+<li>Network congestion levels</li>
+<li>Resource usage</li>
+<li>Storage performance</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-future-enhancements">5. Future Enhancements<a href="#5-future-enhancements" class="hash-link" aria-label="Direct link to 5. Future Enhancements" title="Direct link to 5. Future Enhancements">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="51-network-improvements">5.1 Network Improvements<a href="#51-network-improvements" class="hash-link" aria-label="Direct link to 5.1 Network Improvements" title="Direct link to 5.1 Network Improvements">​</a></h3>
+<ul>
+<li>Advanced peer selection algorithms</li>
+<li>Dynamic routing optimization</li>
+<li>Enhanced security features</li>
+<li>Improved error recovery</li>
+<li>Advanced monitoring capabilities</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="52-storage-improvements">5.2 Storage Improvements<a href="#52-storage-improvements" class="hash-link" aria-label="Direct link to 5.2 Storage Improvements" title="Direct link to 5.2 Storage Improvements">​</a></h3>
+<ul>
+<li>Enhanced data synchronization</li>
+<li>Improved data integrity</li>
+<li>Optimized storage performance</li>
+<li>Advanced access control</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="53-security-enhancements">5.3 Security Enhancements<a href="#53-security-enhancements" class="hash-link" aria-label="Direct link to 5.3 Security Enhancements" title="Direct link to 5.3 Security Enhancements">​</a></h3>
+<ul>
+<li>Enhanced cloud security</li>
+<li>Improved encryption</li>
+<li>Better access controls</li>
+<li>Advanced monitoring</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-documentation-references">6. Documentation References<a href="#6-documentation-references" class="hash-link" aria-label="Direct link to 6. Documentation References" title="Direct link to 6. Documentation References">​</a></h2>
+<ul>
+<li>Ollama Cloud: <a href="https://ollama.ai/docs" target="_blank" rel="noopener noreferrer">https://ollama.ai/docs</a></li>
+<li>IPFS: <a href="https://docs.ipfs.tech/" target="_blank" rel="noopener noreferrer">https://docs.ipfs.tech/</a></li>
+<li>OrbitDB: <a href="https://orbitdb.org/docs/" target="_blank" rel="noopener noreferrer">https://orbitdb.org/docs/</a></li>
+<li>Network Protocols: <a href="https://libp2p.io/docs/" target="_blank" rel="noopener noreferrer">https://libp2p.io/docs/</a></li>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/Developing SELF/security"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Security Policy</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/Technical Docs/SELF Chain/Why Build A Blockchain"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Why We Built A Chain</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#-explore-the-open-source-code" class="table-of-contents__link toc-highlight">📂 Explore the Open Source Code</a><ul><li><a href="#-developer-resources" class="table-of-contents__link toc-highlight">👨‍💻 Developer Resources</a></li></ul></li><li><a href="#self-ecosystem-overview" class="table-of-contents__link toc-highlight">SELF Ecosystem Overview</a><ul><li><a href="#saas-platform-model" class="table-of-contents__link toc-highlight">SaaS Platform Model</a></li><li><a href="#b2b-constellation-architecture" class="table-of-contents__link toc-highlight">B2B Constellation Architecture</a></li></ul></li><li><a href="#1-core-architecture" class="table-of-contents__link toc-highlight">1. Core Architecture</a><ul><li><a href="#11-cloud-first-architecture" class="table-of-contents__link toc-highlight">1.1 Cloud-First Architecture</a></li><li><a href="#12-network-architecture" class="table-of-contents__link toc-highlight">1.2 Network Architecture</a></li><li><a href="#13-storage-architecture" class="table-of-contents__link toc-highlight">1.3 Storage Architecture</a></li></ul></li><li><a href="#2-security-architecture" class="table-of-contents__link toc-highlight">2. Security Architecture</a><ul><li><a href="#21-network-security" class="table-of-contents__link toc-highlight">2.1 Network Security</a></li><li><a href="#22-ai-security" class="table-of-contents__link toc-highlight">2.2 AI Security</a></li></ul></li><li><a href="#3-performance-optimization" class="table-of-contents__link toc-highlight">3. Performance Optimization</a><ul><li><a href="#31-network-optimization" class="table-of-contents__link toc-highlight">3.1 Network Optimization</a></li><li><a href="#32-storage-optimization" class="table-of-contents__link toc-highlight">3.2 Storage Optimization</a></li></ul></li><li><a href="#4-monitoring-and-metrics" class="table-of-contents__link toc-highlight">4. Monitoring and Metrics</a><ul><li><a href="#41-network-metrics" class="table-of-contents__link toc-highlight">4.1 Network Metrics</a></li><li><a href="#42-performance-metrics" class="table-of-contents__link toc-highlight">4.2 Performance Metrics</a></li></ul></li><li><a href="#5-future-enhancements" class="table-of-contents__link toc-highlight">5. Future Enhancements</a><ul><li><a href="#51-network-improvements" class="table-of-contents__link toc-highlight">5.1 Network Improvements</a></li><li><a href="#52-storage-improvements" class="table-of-contents__link toc-highlight">5.2 Storage Improvements</a></li><li><a href="#53-security-enhancements" class="table-of-contents__link toc-highlight">5.3 Security Enhancements</a></li></ul></li><li><a href="#6-documentation-references" class="table-of-contents__link toc-highlight">6. Documentation References</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">
+        <div class="footer-content-wrapper">
+          <div class="footer-social-icons">
+            <a href="https://discord.gg/WdMdVpA4C8" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+              <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://github.com/SELF-Technology/self-chain-public" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://x.com/self_hq" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://t.me/selfcommunitychat" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://instagram.com/selfappofficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@selfcommunityvideos" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/selftechnology/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+          <div class="footer-theme-toggle-wrapper"></div>
+        </div>
+        <div class="footer-copyright-text">
+          © SELF 2025 | 
+          <a href="https://self.app/terms" target="_blank">Terms & Conditions</a> | 
+          <a href="https://self.app/cookies" target="_blank">Cookie Policy</a> | 
+          <a href="https://self.app/privacy" target="_blank">Privacy Policy</a> | 
+          <a href="mailto:info@self.app?subject=Mail%20from%20site">Contact Us</a>
+        </div>
+      </div></div></div></footer></div>
+</body>
+</html>

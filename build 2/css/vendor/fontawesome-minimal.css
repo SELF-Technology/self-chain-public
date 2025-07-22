@@ -1,0 +1,35 @@
+/*!
+ * Font Awesome Free 6.5.1 - Minimal subset for SELF docs
+ * Only includes brand icons actually used
+ */
+
+@font-face {
+  font-family: 'Font Awesome 6 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/webfonts/fa-brands-400.woff2") format("woff2");
+}
+
+.fa,
+.fa-brands,
+.fab {
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Brand Icons */
+.fa-discord::before { content: "\f392"; }
+.fa-github::before { content: "\f09b"; }
+.fa-x-twitter::before { content: "\e61b"; }
+.fa-telegram::before { content: "\f2c6"; }
+.fa-instagram::before { content: "\f16d"; }
+.fa-youtube::before { content: "\f167"; }
+.fa-linkedin::before { content: "\f08c"; }

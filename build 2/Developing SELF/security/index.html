@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Developing SELF/security" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Security Policy | SELF Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:url" content="https://docs.self.app/Developing SELF/security"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="keywords" content="self chain, proof of ai blockchain, post quantum blockchain, self sovereign technology, decentralized ai validation, people&#x27;s blockchain, privacy first blockchain, poai consensus, color marker system, hybrid cloud blockchain"><meta data-rh="true" property="og:type" content="website"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="twitter:title" content="SELF Documentation - The People&#x27;s Blockchain"><meta data-rh="true" name="twitter:description" content="Build on SELF Chain with Proof-of-AI consensus, post-quantum cryptography, and human-centric design."><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Security Policy | SELF Documentation"><meta data-rh="true" name="description" content="Reporting Security Vulnerabilities"><meta data-rh="true" property="og:description" content="Reporting Security Vulnerabilities"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.self.app/Developing SELF/security"><link data-rh="true" rel="alternate" href="https://docs.self.app/Developing SELF/security" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.self.app/Developing SELF/security" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Security Policy","item":"https://docs.self.app/Developing SELF/security"}]}</script><meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39; data: blob:; script-src &#39;self&#39; &#39;unsafe-inline&#39; https:; style-src &#39;self&#39; &#39;unsafe-inline&#39; https:; img-src &#39;self&#39; data: https: blob:; font-src &#39;self&#39; data: https:; connect-src &#39;self&#39; https:; frame-src &#39;self&#39; https:;">
+<link rel="preload" href="/img/SELF-BLACK.png" as="image" fetchpriority="high">
+<link rel="preload" href="/img/SELFwhitelogo.webp" as="image" fetchpriority="high">
+<link rel="preload" href="/img/SELF GALAXY transparent 620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp" as="image" fetchpriority="low">
+<link rel="preload" href="/css/vendor/docsearch.min.css" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;">
+<link rel="preload" href="/css/vendor/fontawesome-minimal.css" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;">
+<noscript><link rel="stylesheet" href="/css/vendor/docsearch.min.css"><link rel="stylesheet" href="/css/vendor/fontawesome-minimal.css"></noscript>
+<link rel="preload" href="/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.ca7c1519.css">
+<script src="/assets/js/runtime~main.a46b2822.js" defer="defer"></script>
+<script src="/assets/js/main.254b51b8.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="dark";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><a href="https://self.app" target="_self" rel="noopener noreferrer" class="navbar__brand"><div class="navbar__logo"><img src="/img/SELF-BLACK.png" alt="SELF Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/SELFwhitelogo.webp" alt="SELF Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"></b></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/">Welcome</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/project-status/">📊 Project Status</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/About SELF/manifesto">ℹ️ About SELF</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Roadmap/Introduction">📍 Roadmap</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Building-on-SELF/">🚀 Building on SELF</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/Developing SELF/">🛠️ Developing SELF</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Developing SELF/">Contributing to SELF Chain</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Developing SELF/code-of-conduct">Code of Conduct</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Developing SELF/governance">Governance</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/Developing SELF/security">Security Policy</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Technical Docs/SELF Chain/SELF_Chain_Architecture">📚 Technical Docs</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">🛠️ Developing SELF</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Security Policy</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Security Policy</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="reporting-security-vulnerabilities">Reporting Security Vulnerabilities<a href="#reporting-security-vulnerabilities" class="hash-link" aria-label="Direct link to Reporting Security Vulnerabilities" title="Direct link to Reporting Security Vulnerabilities">​</a></h2>
+<p>We take the security of SELF seriously. If you believe you have found a security vulnerability in any SELF-owned repository, please report it to us as described below.</p>
+<p><strong>Please do not report security vulnerabilities through public GitHub issues.</strong></p>
+<p>Instead, please report them via email to <a href="mailto:devs@self.app" target="_blank" rel="noopener noreferrer">devs@self.app</a>. You should receive a response within 48 hours. If, for some reason you do not, please follow up via email to ensure we received your original message.</p>
+<p>Please include the requested information listed below (as much as you can provide) to help us better understand the nature and scope of the possible issue:</p>
+<ul>
+<li>Type of issue (e.g. buffer overflow, SQL injection, cross-site scripting, etc.)</li>
+<li>Full paths of source file(s) related to the manifestation of the issue</li>
+<li>The location of the affected source code (tag/branch/commit or direct URL)</li>
+<li>Any special configuration required to reproduce the issue</li>
+<li>Step-by-step instructions to reproduce the issue</li>
+<li>Proof-of-concept or exploit code (if possible)</li>
+<li>Impact of the issue, including how an attacker might exploit the issue</li>
+</ul>
+<p>This information will help us triage your report more quickly.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="open-source-model">Open Source Model<a href="#open-source-model" class="hash-link" aria-label="Direct link to Open Source Model" title="Direct link to Open Source Model">​</a></h2>
+<p>SELF follows a selective open source model inspired by Signal&#x27;s approach to security. The SELF Chain project is licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT License</a>.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-we-keep-open-source">What We Keep Open Source<a href="#what-we-keep-open-source" class="hash-link" aria-label="Direct link to What We Keep Open Source" title="Direct link to What We Keep Open Source">​</a></h3>
+<ul>
+<li><strong>Core Protocol</strong>: The fundamental blockchain and network protocols</li>
+<li><strong>Cryptographic Implementations</strong>: All encryption and post-quantum cryptography</li>
+<li><strong>Client Applications</strong>: Super-App interfaces and user-facing code</li>
+<li><strong>SDKs and APIs</strong>: Developer tools and integration libraries</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-remains-closed-source">What Remains Closed Source<a href="#what-remains-closed-source" class="hash-link" aria-label="Direct link to What Remains Closed Source" title="Direct link to What Remains Closed Source">​</a></h3>
+<p>Similar to how Signal keeps their anti-spam system private, we must depart from a totally-open posture for certain security-critical components:</p>
+<ul>
+<li><strong>AI Validation Rules</strong>: The specific thresholds and patterns used in our Proof-of-AI consensus</li>
+<li><strong>Pattern Matching Algorithms</strong>: Detection mechanisms that could be gamed if public</li>
+<li><strong>Security Thresholds</strong>: Specific values that determine consensus and validation</li>
+</ul>
+<p><strong>Why?</strong> Unlike cryptographic protocols which benefit from public scrutiny, AI validation systems are vulnerable to gaming. If malicious actors know the exact patterns and thresholds we use to validate transactions and detect attacks, they can craft exploits to bypass our security. Transparency here would be a major disadvantage to the security of the network.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="export-control-notice">Export Control Notice<a href="#export-control-notice" class="hash-link" aria-label="Direct link to Export Control Notice" title="Direct link to Export Control Notice">​</a></h2>
+<p>This distribution includes cryptographic software. The country in which you currently reside may have restrictions on the import, possession, use, and/or re-export to another country, of encryption software. BEFORE using any encryption software, please check your country&#x27;s laws, regulations and policies concerning the import, possession, or use, and re-export of encryption software, to see if this is permitted. See <a href="https://www.wassenaar.org/" target="_blank" rel="noopener noreferrer">https://www.wassenaar.org/</a> for more information.</p>
+<p>The U.S. Government Department of Commerce, Bureau of Industry and Security (BIS), has classified this software as Export Commodity Control Number (ECCN) 5D002.C.1, which includes information security software using or performing cryptographic functions with asymmetric algorithms. The form and manner of this distribution makes it eligible for export under the License Exception ENC Technology Software Unrestricted (TSU) exception (see the BIS Export Administration Regulations, Section 740.13) for both object code and source code.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="security-architecture">Security Architecture<a href="#security-architecture" class="hash-link" aria-label="Direct link to Security Architecture" title="Direct link to Security Architecture">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="core-security-components">Core Security Components<a href="#core-security-components" class="hash-link" aria-label="Direct link to Core Security Components" title="Direct link to Core Security Components">​</a></h3>
+<ol>
+<li>
+<p><strong>Blockchain Security</strong></p>
+<ul>
+<li>Proof of AI (PoAI) consensus mechanism</li>
+<li>Immutable blockchain structure</li>
+<li>Secure transaction validation</li>
+<li>Timestamp verification</li>
+</ul>
+</li>
+<li>
+<p><strong>Storage Security</strong></p>
+<ul>
+<li>IPFS content addressing</li>
+<li>OrbitDB P2P synchronization</li>
+<li>End-to-end encryption</li>
+<li>Content integrity verification</li>
+</ul>
+</li>
+<li>
+<p><strong>Network Security</strong></p>
+<ul>
+<li>TLS/SSL encryption for all communications</li>
+<li>Peer authentication</li>
+<li>Rate limiting</li>
+<li>DDoS protection</li>
+<li>Connection timeouts</li>
+</ul>
+</li>
+<li>
+<p><strong>AI Security</strong></p>
+<ul>
+<li>Trusted Execution Environment (TEE) isolation</li>
+<li>Model validation</li>
+<li>Input sanitization</li>
+<li>Output verification</li>
+</ul>
+</li>
+<li>
+<p><strong>Post-Quantum Cryptography</strong></p>
+<ul>
+<li>Kyber key encapsulation mechanism (KEM) implementation</li>
+<li>SPHINCS+ quantum-resistant digital signatures</li>
+<li>Hybrid cryptographic approach (classical + post-quantum)</li>
+<li>Cryptographic agility framework for algorithm transitions</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="security-features">Security Features<a href="#security-features" class="hash-link" aria-label="Direct link to Security Features" title="Direct link to Security Features">​</a></h3>
+<ol>
+<li>
+<p><strong>Encryption</strong></p>
+<ul>
+<li>AES-256 encryption for data at rest</li>
+<li>TLS 1.3 for data in transit</li>
+<li>Perfect Forward Secrecy (PFS)</li>
+<li>Secure key management</li>
+<li>Quantum-resistant key exchange protocols</li>
+</ul>
+</li>
+<li>
+<p><strong>Access Control</strong></p>
+<ul>
+<li>Role-based access control (RBAC)</li>
+<li>Token-based authentication</li>
+<li>Session management</li>
+<li>Rate limiting</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Integrity</strong></p>
+<ul>
+<li>SHA-256 hashing</li>
+<li>SHA3-256 quantum-resistant hashing</li>
+<li>Digital signatures (classical and post-quantum)</li>
+<li>Merkle tree validation</li>
+<li>Content addressable storage</li>
+</ul>
+</li>
+<li>
+<p><strong>Audit Logging</strong></p>
+<ul>
+<li>Immutable audit trails</li>
+<li>Event logging</li>
+<li>Access logging</li>
+<li>Error logging</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="quantum-security-approach">Quantum Security Approach<a href="#quantum-security-approach" class="hash-link" aria-label="Direct link to Quantum Security Approach" title="Direct link to Quantum Security Approach">​</a></h2>
+<p>The SELF Chain implements a forward-looking hybrid cryptographic approach that combines classical cryptographic algorithms with post-quantum resistant algorithms. This provides the security and performance benefits of well-established cryptographic methods while ensuring protection against future quantum computing threats.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="key-quantum-security-components">Key Quantum Security Components<a href="#key-quantum-security-components" class="hash-link" aria-label="Direct link to Key Quantum Security Components" title="Direct link to Key Quantum Security Components">​</a></h3>
+<ol>
+<li>
+<p><strong>Hybrid Cryptography Implementation</strong></p>
+<ul>
+<li>All sensitive data is protected using both classical (e.g., X25519, Ed25519) and post-quantum (e.g., Kyber, SPHINCS+) algorithms</li>
+<li>Fallback mechanisms ensure continued operation if vulnerabilities are discovered in any single algorithm</li>
+</ul>
+</li>
+<li>
+<p><strong>Algorithm Agility</strong></p>
+<ul>
+<li>Modular design allows for rapid replacement of cryptographic primitives</li>
+<li>Support for cryptographic algorithm negotiation during handshake</li>
+<li>Regular security audits to assess the need for algorithm updates</li>
+</ul>
+</li>
+<li>
+<p><strong>Post-Quantum Key Exchange</strong></p>
+<ul>
+<li>Implementation of Kyber key encapsulation mechanism</li>
+<li>Quantum-resistant shared secret establishment</li>
+<li>Hybrid key exchange combining classical and post-quantum methods</li>
+</ul>
+</li>
+<li>
+<p><strong>Quantum-Resistant Digital Signatures</strong></p>
+<ul>
+<li>SPHINCS+ hash-based signature scheme implementation</li>
+<li>Secure against both classical and quantum adversaries</li>
+<li>Used for critical verification operations in the blockchain</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="reporting-a-vulnerability">Reporting a Vulnerability<a href="#reporting-a-vulnerability" class="hash-link" aria-label="Direct link to Reporting a Vulnerability" title="Direct link to Reporting a Vulnerability">​</a></h2>
+<p>Please report security vulnerabilities by emailing <a href="mailto:devs@self.app" target="_blank" rel="noopener noreferrer">devs@self.app</a> as described at the top of this document.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="responsible-disclosure">Responsible Disclosure<a href="#responsible-disclosure" class="hash-link" aria-label="Direct link to Responsible Disclosure" title="Direct link to Responsible Disclosure">​</a></h3>
+<ol>
+<li>
+<p><strong>Initial Contact</strong></p>
+<ul>
+<li>Send a detailed vulnerability report</li>
+<li>Include proof of concept if possible</li>
+<li>Specify affected versions</li>
+<li>Provide contact information</li>
+</ul>
+</li>
+<li>
+<p><strong>Response Timeline</strong></p>
+<ul>
+<li>Initial acknowledgment within 24 hours</li>
+<li>Patch development within 7 days</li>
+<li>Public disclosure after patch release</li>
+</ul>
+</li>
+<li>
+<p><strong>Coordination</strong></p>
+<ul>
+<li>Keep communication private</li>
+<li>Provide updates on progress</li>
+<li>Coordinate patch release timing</li>
+<li>Acknowledge responsible disclosure</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="security-best-practices">Security Best Practices<a href="#security-best-practices" class="hash-link" aria-label="Direct link to Security Best Practices" title="Direct link to Security Best Practices">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="development">Development<a href="#development" class="hash-link" aria-label="Direct link to Development" title="Direct link to Development">​</a></h3>
+<ol>
+<li>
+<p><strong>Code Review</strong></p>
+<ul>
+<li>Mandatory security review for all code changes</li>
+<li>Static code analysis</li>
+<li>Dependency scanning</li>
+<li>Regular security audits</li>
+</ul>
+</li>
+<li>
+<p><strong>Testing</strong></p>
+<ul>
+<li>Security-focused unit tests</li>
+<li>Integration testing</li>
+<li>Penetration testing</li>
+<li>Fuzz testing</li>
+</ul>
+</li>
+<li>
+<p><strong>Dependencies</strong></p>
+<ul>
+<li>Regular dependency updates</li>
+<li>Security vulnerability scanning</li>
+<li>Minimal required permissions</li>
+<li>Regular security audits</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="deployment">Deployment<a href="#deployment" class="hash-link" aria-label="Direct link to Deployment" title="Direct link to Deployment">​</a></h3>
+<ol>
+<li>
+<p><strong>Environment</strong></p>
+<ul>
+<li>Secure infrastructure</li>
+<li>Regular security updates</li>
+<li>Monitoring and alerting</li>
+<li>Backup procedures</li>
+</ul>
+</li>
+<li>
+<p><strong>Configuration</strong></p>
+<ul>
+<li>Secure defaults</li>
+<li>Minimal permissions</li>
+<li>Regular security reviews</li>
+<li>Configuration validation</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="operations">Operations<a href="#operations" class="hash-link" aria-label="Direct link to Operations" title="Direct link to Operations">​</a></h3>
+<ol>
+<li>
+<p><strong>Monitoring</strong></p>
+<ul>
+<li>Continuous monitoring</li>
+<li>Alerting system</li>
+<li>Log analysis</li>
+<li>Regular security testing</li>
+</ul>
+</li>
+<li>
+<p><strong>Maintenance</strong></p>
+<ul>
+<li>Regular security updates</li>
+<li>Backup procedures</li>
+<li>Disaster recovery</li>
+<li>Incident response procedures</li>
+</ul>
+</li>
+<li>
+<p><strong>Compliance</strong></p>
+<ul>
+<li>OWASP Top 10 compliance</li>
+<li>Regular security audits</li>
+<li>Security policy updates</li>
+<li>Access control reviews</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="security-response">Security Response<a href="#security-response" class="hash-link" aria-label="Direct link to Security Response" title="Direct link to Security Response">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="response-times">Response Times<a href="#response-times" class="hash-link" aria-label="Direct link to Response Times" title="Direct link to Response Times">​</a></h3>
+<ul>
+<li>Critical vulnerabilities: &lt; 24 hours</li>
+<li>High severity: &lt; 48 hours</li>
+<li>Medium severity: &lt; 7 days</li>
+<li>Low severity: &lt; 14 days</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="response-process">Response Process<a href="#response-process" class="hash-link" aria-label="Direct link to Response Process" title="Direct link to Response Process">​</a></h3>
+<ol>
+<li>Initial triage and verification</li>
+<li>Root cause analysis</li>
+<li>Fix development</li>
+<li>Testing and verification</li>
+<li>Deployment</li>
+<li>Public disclosure (if applicable)</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="security-contact-information">Security Contact Information<a href="#security-contact-information" class="hash-link" aria-label="Direct link to Security Contact Information" title="Direct link to Security Contact Information">​</a></h2>
+<ul>
+<li>Security Team: <a href="mailto:devs@self.app" target="_blank" rel="noopener noreferrer">devs@self.app</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="legal-notice">Legal Notice<a href="#legal-notice" class="hash-link" aria-label="Direct link to Legal Notice" title="Direct link to Legal Notice">​</a></h2>
+<p>By submitting a security vulnerability, you agree to:</p>
+<ol>
+<li>Not publicly disclose the vulnerability until a patch is released</li>
+<li>Not exploit the vulnerability for malicious purposes</li>
+<li>Follow responsible disclosure guidelines</li>
+<li>Provide accurate and complete information</li>
+<li>Cooperate with our security team</li>
+</ol></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/Developing SELF/governance"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Governance</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/Technical Docs/SELF Chain/SELF_Chain_Architecture"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">SELF Chain Architecture</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#reporting-security-vulnerabilities" class="table-of-contents__link toc-highlight">Reporting Security Vulnerabilities</a></li><li><a href="#open-source-model" class="table-of-contents__link toc-highlight">Open Source Model</a><ul><li><a href="#what-we-keep-open-source" class="table-of-contents__link toc-highlight">What We Keep Open Source</a></li><li><a href="#what-remains-closed-source" class="table-of-contents__link toc-highlight">What Remains Closed Source</a></li></ul></li><li><a href="#export-control-notice" class="table-of-contents__link toc-highlight">Export Control Notice</a></li><li><a href="#security-architecture" class="table-of-contents__link toc-highlight">Security Architecture</a><ul><li><a href="#core-security-components" class="table-of-contents__link toc-highlight">Core Security Components</a></li><li><a href="#security-features" class="table-of-contents__link toc-highlight">Security Features</a></li></ul></li><li><a href="#quantum-security-approach" class="table-of-contents__link toc-highlight">Quantum Security Approach</a><ul><li><a href="#key-quantum-security-components" class="table-of-contents__link toc-highlight">Key Quantum Security Components</a></li></ul></li><li><a href="#reporting-a-vulnerability" class="table-of-contents__link toc-highlight">Reporting a Vulnerability</a><ul><li><a href="#responsible-disclosure" class="table-of-contents__link toc-highlight">Responsible Disclosure</a></li></ul></li><li><a href="#security-best-practices" class="table-of-contents__link toc-highlight">Security Best Practices</a><ul><li><a href="#development" class="table-of-contents__link toc-highlight">Development</a></li><li><a href="#deployment" class="table-of-contents__link toc-highlight">Deployment</a></li><li><a href="#operations" class="table-of-contents__link toc-highlight">Operations</a></li></ul></li><li><a href="#security-response" class="table-of-contents__link toc-highlight">Security Response</a><ul><li><a href="#response-times" class="table-of-contents__link toc-highlight">Response Times</a></li><li><a href="#response-process" class="table-of-contents__link toc-highlight">Response Process</a></li></ul></li><li><a href="#security-contact-information" class="table-of-contents__link toc-highlight">Security Contact Information</a></li><li><a href="#legal-notice" class="table-of-contents__link toc-highlight">Legal Notice</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">
+        <div class="footer-content-wrapper">
+          <div class="footer-social-icons">
+            <a href="https://discord.gg/WdMdVpA4C8" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+              <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://github.com/SELF-Technology/self-chain-public" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://x.com/self_hq" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://t.me/selfcommunitychat" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://instagram.com/selfappofficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@selfcommunityvideos" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/selftechnology/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+          <div class="footer-theme-toggle-wrapper"></div>
+        </div>
+        <div class="footer-copyright-text">
+          © SELF 2025 | 
+          <a href="https://self.app/terms" target="_blank">Terms & Conditions</a> | 
+          <a href="https://self.app/cookies" target="_blank">Cookie Policy</a> | 
+          <a href="https://self.app/privacy" target="_blank">Privacy Policy</a> | 
+          <a href="mailto:info@self.app?subject=Mail%20from%20site">Contact Us</a>
+        </div>
+      </div></div></div></footer></div>
+</body>
+</html>

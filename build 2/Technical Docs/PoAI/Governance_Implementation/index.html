@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Technical Docs/PoAI/Governance_Implementation" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Governance Implementation | SELF Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:url" content="https://docs.self.app/Technical Docs/PoAI/Governance_Implementation"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="keywords" content="self chain, proof of ai blockchain, post quantum blockchain, self sovereign technology, decentralized ai validation, people&#x27;s blockchain, privacy first blockchain, poai consensus, color marker system, hybrid cloud blockchain"><meta data-rh="true" property="og:type" content="website"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="twitter:title" content="SELF Documentation - The People&#x27;s Blockchain"><meta data-rh="true" name="twitter:description" content="Build on SELF Chain with Proof-of-AI consensus, post-quantum cryptography, and human-centric design."><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Governance Implementation | SELF Documentation"><meta data-rh="true" name="description" content="Overview"><meta data-rh="true" property="og:description" content="Overview"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.self.app/Technical Docs/PoAI/Governance_Implementation"><link data-rh="true" rel="alternate" href="https://docs.self.app/Technical Docs/PoAI/Governance_Implementation" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.self.app/Technical Docs/PoAI/Governance_Implementation" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Governance Implementation","item":"https://docs.self.app/Technical Docs/PoAI/Governance_Implementation"}]}</script><meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39; data: blob:; script-src &#39;self&#39; &#39;unsafe-inline&#39; https:; style-src &#39;self&#39; &#39;unsafe-inline&#39; https:; img-src &#39;self&#39; data: https: blob:; font-src &#39;self&#39; data: https:; connect-src &#39;self&#39; https:; frame-src &#39;self&#39; https:;">
+<link rel="preload" href="/img/SELF-BLACK.png" as="image" fetchpriority="high">
+<link rel="preload" href="/img/SELFwhitelogo.webp" as="image" fetchpriority="high">
+<link rel="preload" href="/img/SELF GALAXY transparent 620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp" as="image" fetchpriority="low">
+<link rel="preload" href="/css/vendor/docsearch.min.css" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;">
+<link rel="preload" href="/css/vendor/fontawesome-minimal.css" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;">
+<noscript><link rel="stylesheet" href="/css/vendor/docsearch.min.css"><link rel="stylesheet" href="/css/vendor/fontawesome-minimal.css"></noscript>
+<link rel="preload" href="/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.ca7c1519.css">
+<script src="/assets/js/runtime~main.a46b2822.js" defer="defer"></script>
+<script src="/assets/js/main.254b51b8.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="dark";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><a href="https://self.app" target="_self" rel="noopener noreferrer" class="navbar__brand"><div class="navbar__logo"><img src="/img/SELF-BLACK.png" alt="SELF Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/SELFwhitelogo.webp" alt="SELF Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"></b></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/">Welcome</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/project-status/">📊 Project Status</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/About SELF/manifesto">ℹ️ About SELF</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Roadmap/Introduction">📍 Roadmap</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Building-on-SELF/">🚀 Building on SELF</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Developing SELF/">🛠️ Developing SELF</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/Technical Docs/SELF Chain/SELF_Chain_Architecture">📚 Technical Docs</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/Technical Docs/SELF Chain/SELF_Chain_Architecture">⛓️ SELF Chain</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/Technical Docs/Developer Resources/Getting_Started_Testnet">👨‍💻 Developer Resources</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/Technical Docs/PoAI/Proof-of-AI">🤖 PoAI</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/Technical Docs/PoAI/Proof-of-AI">Proof-of-AI</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/Technical Docs/PoAI/Taxonomy">Taxonomy</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/Technical Docs/PoAI/AI Block Builder Algorithm">AI Block Builder Algorithm</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/Technical Docs/PoAI/Voting Algorithm">Voting Algorithm</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/Technical Docs/PoAI/AI-Validator Algorithm">AI-Validator Algorithm</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/Technical Docs/PoAI/Color Marker System">Color Marker System</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/Technical Docs/PoAI/Color Marker Examples">Color Marker Examples</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/Technical Docs/PoAI/Validation Process">Validation Process</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/Technical Docs/PoAI/The Incentive">The Incentive</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/Technical Docs/PoAI/Governance_Implementation">Governance Implementation</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/category/️-cloud-architecture">☁️ Cloud Architecture</a><button aria-label="Expand sidebar category &#x27;☁️ Cloud Architecture&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/Technical Docs/Constellation/Overview">🌌 Constellation</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/Technical Docs/Grid-Compute/Future-Vision">⚡ Grid Compute</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/Technical Docs/Security/Overview">🔒 Security</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/Technical Docs/Storage/Hybrid_Architecture">💾 Storage</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Technical Docs/Validate/">✅ Validate</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/Technical Docs/Integration/Rosetta API Integration">🔗 Integration</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/Technical Docs/Performance/Advanced_TPS_Optimization">🚀 Performance</a></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">📚 Technical Docs</span></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">🤖 PoAI</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Governance Implementation</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>PoAI Governance Implementation</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h2>
+<p>The governance system for SELF Chain operates through the Proof-of-AI consensus mechanism, where AI algorithms manage proposal evaluation and voting processes without human interference. This implementation ensures objective, efficiency-based decision making aligned with the network&#x27;s goals.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="core-components">Core Components<a href="#core-components" class="hash-link" aria-label="Direct link to Core Components" title="Direct link to Core Components">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-governance-through-ai-algorithms">1. Governance Through AI Algorithms<a href="#1-governance-through-ai-algorithms" class="hash-link" aria-label="Direct link to 1. Governance Through AI Algorithms" title="Direct link to 1. Governance Through AI Algorithms">​</a></h3>
+<p>The PoAI governance system leverages three core algorithms:</p>
+<ul>
+<li><strong>AI-Block Builder Algorithm</strong>: Evaluates governance proposals based on efficiency metrics</li>
+<li><strong>Voting Algorithm</strong>: Orchestrates the voting process among AI validators</li>
+<li><strong>AI-Validator Algorithm</strong>: Validates governance decisions using hex color verification</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-proposal-system">2. Proposal System<a href="#2-proposal-system" class="hash-link" aria-label="Direct link to 2. Proposal System" title="Direct link to 2. Proposal System">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="proposal-structure">Proposal Structure<a href="#proposal-structure" class="hash-link" aria-label="Direct link to Proposal Structure" title="Direct link to Proposal Structure">​</a></h4>
+<ul>
+<li><strong>Proposal ID</strong>: Unique hexadecimal identifier</li>
+<li><strong>Efficiency Target</strong>: Desired network efficiency improvement</li>
+<li><strong>Color Transition</strong>: Expected hex color state changes</li>
+<li><strong>Implementation Timeline</strong>: Block-based execution schedule</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="proposal-evaluation-metrics">Proposal Evaluation Metrics<a href="#proposal-evaluation-metrics" class="hash-link" aria-label="Direct link to Proposal Evaluation Metrics" title="Direct link to Proposal Evaluation Metrics">​</a></h4>
+<ul>
+<li>Network efficiency impact</li>
+<li>Transaction throughput improvements</li>
+<li>PointPrice stability effects</li>
+<li>Validator participation rates</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="governance-process">Governance Process<a href="#governance-process" class="hash-link" aria-label="Direct link to Governance Process" title="Direct link to Governance Process">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="phase-1-proposal-submission">Phase 1: Proposal Submission<a href="#phase-1-proposal-submission" class="hash-link" aria-label="Direct link to Phase 1: Proposal Submission" title="Direct link to Phase 1: Proposal Submission">​</a></h3>
+<p>Proposals can be submitted by:</p>
+<ul>
+<li>Active validators meeting stake requirements</li>
+<li>Network participants with sufficient Points balance</li>
+<li>AI algorithms detecting optimization opportunities</li>
+</ul>
+<p>Requirements:</p>
+<ul>
+<li><strong>Minimum Stake</strong>: 1000 Points</li>
+<li><strong>Proposal Fee</strong>: 100 Points (prevents spam)</li>
+<li><strong>Active Wallet</strong>: Transactions within last 24 hours</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="phase-2-ai-evaluation">Phase 2: AI Evaluation<a href="#phase-2-ai-evaluation" class="hash-link" aria-label="Direct link to Phase 2: AI Evaluation" title="Direct link to Phase 2: AI Evaluation">​</a></h3>
+<p>The AI-Block Builder Algorithm evaluates proposals by:</p>
+<ol>
+<li>
+<p><strong>Efficiency Analysis</strong></p>
+<ul>
+<li>Calculates potential efficiency coefficient improvements</li>
+<li>Compares against current network performance</li>
+<li>Projects resource utilization changes</li>
+</ul>
+</li>
+<li>
+<p><strong>Reference Comparison</strong></p>
+<ul>
+<li>Creates reference implementation</li>
+<li>Measures deviation from optimal state</li>
+<li>Assigns efficiency score (0-100%)</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="phase-3-validator-voting">Phase 3: Validator Voting<a href="#phase-3-validator-voting" class="hash-link" aria-label="Direct link to Phase 3: Validator Voting" title="Direct link to Phase 3: Validator Voting">​</a></h3>
+<p>The Voting Algorithm manages the voting process:</p>
+<ol>
+<li>
+<p><strong>Validator Selection</strong></p>
+<ul>
+<li>Random selection from active validators</li>
+<li>Weighted by stake and reputation</li>
+<li>Ensures geographic distribution</li>
+</ul>
+</li>
+<li>
+<p><strong>Voting Mechanism</strong></p>
+<ul>
+<li>Validators analyze hex color patterns</li>
+<li>Compare proposal effects on color transitions</li>
+<li>Submit weighted votes based on stake</li>
+</ul>
+</li>
+<li>
+<p><strong>Vote Validation</strong></p>
+<ul>
+<li>AI-Validator Algorithm verifies vote authenticity</li>
+<li>Checks hex color consistency</li>
+<li>Prevents double voting</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="phase-4-execution">Phase 4: Execution<a href="#phase-4-execution" class="hash-link" aria-label="Direct link to Phase 4: Execution" title="Direct link to Phase 4: Execution">​</a></h3>
+<p>Upon approval (&gt;51% weighted votes):</p>
+<ul>
+<li>Implementation scheduled in blocks</li>
+<li>Color markers updated progressively</li>
+<li>Network parameters adjusted</li>
+<li>Results tracked for future optimization</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="governance-parameters">Governance Parameters<a href="#governance-parameters" class="hash-link" aria-label="Direct link to Governance Parameters" title="Direct link to Governance Parameters">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="timing-parameters">Timing Parameters<a href="#timing-parameters" class="hash-link" aria-label="Direct link to Timing Parameters" title="Direct link to Timing Parameters">​</a></h3>
+<ul>
+<li><strong>Voting Period</strong>: 100,800 blocks (~7 days)</li>
+<li><strong>Execution Delay</strong>: 14,400 blocks (~24 hours)</li>
+<li><strong>Proposal Expiration</strong>: 201,600 blocks (~14 days)</li>
+<li><strong>Cooldown Period</strong>: 43,200 blocks (~3 days) between proposals</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="threshold-parameters">Threshold Parameters<a href="#threshold-parameters" class="hash-link" aria-label="Direct link to Threshold Parameters" title="Direct link to Threshold Parameters">​</a></h3>
+<ul>
+<li><strong>Quorum Requirement</strong>: 33% of active stake</li>
+<li><strong>Approval Threshold</strong>: 51% of votes cast</li>
+<li><strong>Emergency Threshold</strong>: 67% for critical updates</li>
+<li><strong>Veto Threshold</strong>: 33% can block proposal</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="economic-parameters">Economic Parameters<a href="#economic-parameters" class="hash-link" aria-label="Direct link to Economic Parameters" title="Direct link to Economic Parameters">​</a></h3>
+<ul>
+<li><strong>Proposal Fee Distribution</strong>:<!-- -->
+<ul>
+<li>50% burned</li>
+<li>30% to PoAI reserve fund</li>
+<li>20% to participating validators</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="implementation-architecture">Implementation Architecture<a href="#implementation-architecture" class="hash-link" aria-label="Direct link to Implementation Architecture" title="Direct link to Implementation Architecture">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="smart-contract-integration">Smart Contract Integration<a href="#smart-contract-integration" class="hash-link" aria-label="Direct link to Smart Contract Integration" title="Direct link to Smart Contract Integration">​</a></h3>
+<p>The governance system interfaces with blockchain through:</p>
+<div class="language-solidity codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-solidity codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">interface IPoAIGovernance {</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    function submitProposal(bytes32 proposalId, uint256 efficiency) external;</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    function validateProposal(bytes32 proposalId) external returns (bool);</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    function executeProposal(bytes32 proposalId) external;</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">}</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="color-based-validation">Color-Based Validation<a href="#color-based-validation" class="hash-link" aria-label="Direct link to Color-Based Validation" title="Direct link to Color-Based Validation">​</a></h3>
+<p>Proposals must specify color transitions:</p>
+<ul>
+<li><strong>Initial Color State</strong>: Current hex values</li>
+<li><strong>Target Color State</strong>: Expected post-execution values</li>
+<li><strong>Transition Path</strong>: Step-by-step color changes</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="efficiency-tracking">Efficiency Tracking<a href="#efficiency-tracking" class="hash-link" aria-label="Direct link to Efficiency Tracking" title="Direct link to Efficiency Tracking">​</a></h3>
+<p>Each proposal tracks:</p>
+<ul>
+<li>Pre-implementation efficiency</li>
+<li>Post-implementation efficiency</li>
+<li>Actual vs projected improvements</li>
+<li>Long-term stability metrics</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="security-considerations">Security Considerations<a href="#security-considerations" class="hash-link" aria-label="Direct link to Security Considerations" title="Direct link to Security Considerations">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="proposal-security">Proposal Security<a href="#proposal-security" class="hash-link" aria-label="Direct link to Proposal Security" title="Direct link to Proposal Security">​</a></h3>
+<ul>
+<li>Hex signature verification</li>
+<li>Stake slashing for malicious proposals</li>
+<li>Rate limiting per validator</li>
+<li>Automated spam detection</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="voting-security">Voting Security<a href="#voting-security" class="hash-link" aria-label="Direct link to Voting Security" title="Direct link to Voting Security">​</a></h3>
+<ul>
+<li>Cryptographic vote proofs</li>
+<li>Time-locked voting windows</li>
+<li>Stake-weighted influence caps</li>
+<li>Sybil attack prevention</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="execution-security">Execution Security<a href="#execution-security" class="hash-link" aria-label="Direct link to Execution Security" title="Direct link to Execution Security">​</a></h3>
+<ul>
+<li>Multi-block confirmation</li>
+<li>Rollback mechanisms</li>
+<li>Emergency pause functionality</li>
+<li>Gradual parameter changes</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="monitoring-and-metrics">Monitoring and Metrics<a href="#monitoring-and-metrics" class="hash-link" aria-label="Direct link to Monitoring and Metrics" title="Direct link to Monitoring and Metrics">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="key-performance-indicators">Key Performance Indicators<a href="#key-performance-indicators" class="hash-link" aria-label="Direct link to Key Performance Indicators" title="Direct link to Key Performance Indicators">​</a></h3>
+<ul>
+<li>Proposal success rate</li>
+<li>Average voting participation</li>
+<li>Efficiency improvement trends</li>
+<li>Network stability post-execution</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="alert-thresholds">Alert Thresholds<a href="#alert-thresholds" class="hash-link" aria-label="Direct link to Alert Thresholds" title="Direct link to Alert Thresholds">​</a></h3>
+<ul>
+<li>Low participation warnings (below 20%)</li>
+<li>Efficiency degradation alerts</li>
+<li>Unusual voting patterns</li>
+<li>Failed execution notifications</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="integration-points">Integration Points<a href="#integration-points" class="hash-link" aria-label="Direct link to Integration Points" title="Direct link to Integration Points">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="with-core-poai-system">With Core PoAI System<a href="#with-core-poai-system" class="hash-link" aria-label="Direct link to With Core PoAI System" title="Direct link to With Core PoAI System">​</a></h3>
+<ul>
+<li>Shares validator selection logic</li>
+<li>Uses same hex color validation</li>
+<li>Integrates with reward distribution</li>
+<li>Leverages efficiency calculations</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="with-network-operations">With Network Operations<a href="#with-network-operations" class="hash-link" aria-label="Direct link to With Network Operations" title="Direct link to With Network Operations">​</a></h3>
+<ul>
+<li>Coordinates with block building</li>
+<li>Synchronizes with mempool management</li>
+<li>Updates validator requirements</li>
+<li>Adjusts network parameters</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="future-enhancements">Future Enhancements<a href="#future-enhancements" class="hash-link" aria-label="Direct link to Future Enhancements" title="Direct link to Future Enhancements">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="planned-improvements">Planned Improvements<a href="#planned-improvements" class="hash-link" aria-label="Direct link to Planned Improvements" title="Direct link to Planned Improvements">​</a></h3>
+<ol>
+<li>
+<p><strong>Automated Proposal Generation</strong></p>
+<ul>
+<li>AI-driven optimization proposals</li>
+<li>Self-adjusting parameters</li>
+<li>Predictive governance</li>
+</ul>
+</li>
+<li>
+<p><strong>Enhanced Voting Mechanisms</strong></p>
+<ul>
+<li>Quadratic voting options</li>
+<li>Delegation capabilities</li>
+<li>Time-weighted voting power</li>
+</ul>
+</li>
+<li>
+<p><strong>Improved Efficiency Metrics</strong></p>
+<ul>
+<li>Multi-dimensional efficiency scoring</li>
+<li>Long-term impact modeling</li>
+<li>Cross-chain efficiency comparison</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Direct link to Best Practices" title="Direct link to Best Practices">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="for-validators">For Validators<a href="#for-validators" class="hash-link" aria-label="Direct link to For Validators" title="Direct link to For Validators">​</a></h3>
+<ul>
+<li>Maintain high uptime for voting eligibility</li>
+<li>Analyze proposals thoroughly before voting</li>
+<li>Monitor color transitions during execution</li>
+<li>Report anomalies promptly</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="for-proposal-creators">For Proposal Creators<a href="#for-proposal-creators" class="hash-link" aria-label="Direct link to For Proposal Creators" title="Direct link to For Proposal Creators">​</a></h3>
+<ul>
+<li>Provide clear efficiency projections</li>
+<li>Include comprehensive color transition maps</li>
+<li>Test proposals on testnet first</li>
+<li>Engage validator community early</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="for-network-operators">For Network Operators<a href="#for-network-operators" class="hash-link" aria-label="Direct link to For Network Operators" title="Direct link to For Network Operators">​</a></h3>
+<ul>
+<li>Monitor governance activity regularly</li>
+<li>Track efficiency improvements</li>
+<li>Maintain governance documentation</li>
+<li>Facilitate community discussions</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="testnet-implementation">Testnet Implementation<a href="#testnet-implementation" class="hash-link" aria-label="Direct link to Testnet Implementation" title="Direct link to Testnet Implementation">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="overview-1">Overview<a href="#overview-1" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h3>
+<p>The testnet environment provides a risk-free testing ground for PoAI governance mechanisms. Since the full PoAI consensus mechanism is simulated during testnet phase, specific adaptations are necessary to enable meaningful testing while maintaining realistic governance workflows.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="testnet-token-economics">Testnet Token Economics<a href="#testnet-token-economics" class="hash-link" aria-label="Direct link to Testnet Token Economics" title="Direct link to Testnet Token Economics">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="test-self-tself-tokens">Test SELF (tSELF) Tokens<a href="#test-self-tself-tokens" class="hash-link" aria-label="Direct link to Test SELF (tSELF) Tokens" title="Direct link to Test SELF (tSELF) Tokens">​</a></h4>
+<ul>
+<li><strong>Purpose</strong>: Valueless tokens for testing governance mechanics</li>
+<li><strong>Symbol</strong>: tSELF (test SELF)</li>
+<li><strong>Distribution</strong>: Free via faucet system</li>
+<li><strong>Clear Labeling</strong>: All interfaces must clearly indicate &quot;TESTNET - No Real Value&quot;</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="faucet-system">Faucet System<a href="#faucet-system" class="hash-link" aria-label="Direct link to Faucet System" title="Direct link to Faucet System">​</a></h4>
+<ul>
+<li><strong>Daily Allowance</strong>: 10,000 tSELF per wallet per day</li>
+<li><strong>Instant Distribution</strong>: No waiting period</li>
+<li><strong>Requirements</strong>: Valid wallet address only</li>
+<li><strong>Reset Option</strong>: Testnet can be reset if token supply issues arise</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="adjusted-testnet-parameters">Adjusted Testnet Parameters<a href="#adjusted-testnet-parameters" class="hash-link" aria-label="Direct link to Adjusted Testnet Parameters" title="Direct link to Adjusted Testnet Parameters">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="economic-requirements">Economic Requirements<a href="#economic-requirements" class="hash-link" aria-label="Direct link to Economic Requirements" title="Direct link to Economic Requirements">​</a></h4>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">Mainnet Requirements → Testnet Requirements</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">- Minimum Stake: 1000 Points → 1000 tSELF</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">- Proposal Fee: 100 Points → 100 tSELF  </span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">- Active Wallet: 24 hours → 72 hours</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">- Voting Period: 7 days → 2 days (accelerated)</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">- Execution Delay: 24 hours → 4 hours</span><br></span></code></pre></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="simulated-poai-behavior">Simulated PoAI Behavior<a href="#simulated-poai-behavior" class="hash-link" aria-label="Direct link to Simulated PoAI Behavior" title="Direct link to Simulated PoAI Behavior">​</a></h4>
+<p>Since full PoAI consensus isn&#x27;t available in testnet:</p>
+<ol>
+<li>
+<p><strong>Deterministic Validator Selection</strong></p>
+<ul>
+<li>Pseudo-random selection using block hash as seed</li>
+<li>Predictable for testing scenarios</li>
+<li>Configurable validator sets for specific tests</li>
+</ul>
+</li>
+<li>
+<p><strong>Simulated Hex Color Transitions</strong></p>
+<ul>
+<li>Pre-defined color progression patterns</li>
+<li>Deterministic based on transaction hashes</li>
+<li>Visual debugging tools to track color states</li>
+</ul>
+</li>
+<li>
+<p><strong>Mock Efficiency Calculations</strong></p>
+<ul>
+<li>Simplified efficiency scoring</li>
+<li>Configurable efficiency parameters</li>
+<li>Instant feedback on proposal impact</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="testnet-specific-features">Testnet-Specific Features<a href="#testnet-specific-features" class="hash-link" aria-label="Direct link to Testnet-Specific Features" title="Direct link to Testnet-Specific Features">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="debug-mode">Debug Mode<a href="#debug-mode" class="hash-link" aria-label="Direct link to Debug Mode" title="Direct link to Debug Mode">​</a></h4>
+<ul>
+<li><strong>PoAI Decision Visibility</strong>: Expose internal algorithm logic</li>
+<li><strong>Color State Inspector</strong>: Real-time hex color visualization</li>
+<li><strong>Efficiency Calculator</strong>: Interactive tool for testing proposals</li>
+<li><strong>Validator Console</strong>: Monitor selection and voting processes</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="time-acceleration">Time Acceleration<a href="#time-acceleration" class="hash-link" aria-label="Direct link to Time Acceleration" title="Direct link to Time Acceleration">​</a></h4>
+<ul>
+<li><strong>Fast Forward</strong>: Speed up governance cycles for rapid testing</li>
+<li><strong>Block Time Override</strong>: Reduce from 10s to 1s blocks</li>
+<li><strong>Batch Processing</strong>: Process multiple governance cycles quickly</li>
+<li><strong>Configurable Speed</strong>: 1x, 10x, or 100x normal speed</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="test-scenarios">Test Scenarios<a href="#test-scenarios" class="hash-link" aria-label="Direct link to Test Scenarios" title="Direct link to Test Scenarios">​</a></h4>
+<p>Pre-built proposal templates for common testing:</p>
+<ul>
+<li>Network parameter updates</li>
+<li>Efficiency threshold changes</li>
+<li>Validator requirement modifications</li>
+<li>Emergency response simulations</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="testing-workflows">Testing Workflows<a href="#testing-workflows" class="hash-link" aria-label="Direct link to Testing Workflows" title="Direct link to Testing Workflows">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="for-developers">For Developers<a href="#for-developers" class="hash-link" aria-label="Direct link to For Developers" title="Direct link to For Developers">​</a></h4>
+<ol>
+<li>Claim tSELF from faucet</li>
+<li>Create test proposals using templates</li>
+<li>Monitor simulated PoAI decisions</li>
+<li>Validate governance execution</li>
+<li>Reset and repeat as needed</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="for-validators-1">For Validators<a href="#for-validators-1" class="hash-link" aria-label="Direct link to For Validators" title="Direct link to For Validators">​</a></h4>
+<ol>
+<li>Register as testnet validator with tSELF stake</li>
+<li>Participate in accelerated voting cycles</li>
+<li>Test delegation mechanisms</li>
+<li>Verify reward distributions</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="metrics-and-monitoring">Metrics and Monitoring<a href="#metrics-and-monitoring" class="hash-link" aria-label="Direct link to Metrics and Monitoring" title="Direct link to Metrics and Monitoring">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="testnet-dashboard">Testnet Dashboard<a href="#testnet-dashboard" class="hash-link" aria-label="Direct link to Testnet Dashboard" title="Direct link to Testnet Dashboard">​</a></h4>
+<p>Real-time display of:</p>
+<ul>
+<li>Active proposals and voting status</li>
+<li>Simulated PoAI efficiency scores</li>
+<li>Hex color state transitions</li>
+<li>Validator participation rates</li>
+<li>Token distribution statistics</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="performance-metrics">Performance Metrics<a href="#performance-metrics" class="hash-link" aria-label="Direct link to Performance Metrics" title="Direct link to Performance Metrics">​</a></h4>
+<ul>
+<li>Proposal throughput capacity</li>
+<li>Voting mechanism stress tests</li>
+<li>Execution reliability</li>
+<li>Network stability under governance load</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="migration-to-mainnet">Migration to Mainnet<a href="#migration-to-mainnet" class="hash-link" aria-label="Direct link to Migration to Mainnet" title="Direct link to Migration to Mainnet">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="data-preservation">Data Preservation<a href="#data-preservation" class="hash-link" aria-label="Direct link to Data Preservation" title="Direct link to Data Preservation">​</a></h4>
+<ul>
+<li>Governance proposals marked as &quot;testnet-only&quot;</li>
+<li>No testnet data migrates to mainnet</li>
+<li>Lessons learned documented separately</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="configuration-changes">Configuration Changes<a href="#configuration-changes" class="hash-link" aria-label="Direct link to Configuration Changes" title="Direct link to Configuration Changes">​</a></h4>
+<p>When transitioning to mainnet:</p>
+<ol>
+<li>Replace tSELF with SELF Coin</li>
+<li>Remove time acceleration</li>
+<li>Enable full PoAI consensus</li>
+<li>Implement real economic stakes</li>
+<li>Activate mainnet parameters</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="security-considerations-1">Security Considerations<a href="#security-considerations-1" class="hash-link" aria-label="Direct link to Security Considerations" title="Direct link to Security Considerations">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="testnet-isolation">Testnet Isolation<a href="#testnet-isolation" class="hash-link" aria-label="Direct link to Testnet Isolation" title="Direct link to Testnet Isolation">​</a></h4>
+<ul>
+<li>Completely separate from mainnet</li>
+<li>No cross-chain bridges for tSELF</li>
+<li>Clear visual indicators on all interfaces</li>
+<li>Automatic wallet warnings for testnet</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="reset-procedures">Reset Procedures<a href="#reset-procedures" class="hash-link" aria-label="Direct link to Reset Procedures" title="Direct link to Reset Procedures">​</a></h4>
+<ul>
+<li>Scheduled resets every 90 days</li>
+<li>Emergency reset capabilities</li>
+<li>State snapshot before reset</li>
+<li>Announcement system for users</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="conclusion">Conclusion<a href="#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion">​</a></h2>
+<p>The PoAI governance system represents a paradigm shift in blockchain governance, removing human bias and focusing purely on network efficiency. By leveraging AI algorithms and hex color validation, the system ensures objective, measurable improvements to network performance while maintaining decentralization and security.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/Technical Docs/PoAI/The Incentive"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">The Incentive</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/category/️-cloud-architecture"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">☁️ Cloud Architecture</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#core-components" class="table-of-contents__link toc-highlight">Core Components</a><ul><li><a href="#1-governance-through-ai-algorithms" class="table-of-contents__link toc-highlight">1. Governance Through AI Algorithms</a></li><li><a href="#2-proposal-system" class="table-of-contents__link toc-highlight">2. Proposal System</a></li></ul></li><li><a href="#governance-process" class="table-of-contents__link toc-highlight">Governance Process</a><ul><li><a href="#phase-1-proposal-submission" class="table-of-contents__link toc-highlight">Phase 1: Proposal Submission</a></li><li><a href="#phase-2-ai-evaluation" class="table-of-contents__link toc-highlight">Phase 2: AI Evaluation</a></li><li><a href="#phase-3-validator-voting" class="table-of-contents__link toc-highlight">Phase 3: Validator Voting</a></li><li><a href="#phase-4-execution" class="table-of-contents__link toc-highlight">Phase 4: Execution</a></li></ul></li><li><a href="#governance-parameters" class="table-of-contents__link toc-highlight">Governance Parameters</a><ul><li><a href="#timing-parameters" class="table-of-contents__link toc-highlight">Timing Parameters</a></li><li><a href="#threshold-parameters" class="table-of-contents__link toc-highlight">Threshold Parameters</a></li><li><a href="#economic-parameters" class="table-of-contents__link toc-highlight">Economic Parameters</a></li></ul></li><li><a href="#implementation-architecture" class="table-of-contents__link toc-highlight">Implementation Architecture</a><ul><li><a href="#smart-contract-integration" class="table-of-contents__link toc-highlight">Smart Contract Integration</a></li><li><a href="#color-based-validation" class="table-of-contents__link toc-highlight">Color-Based Validation</a></li><li><a href="#efficiency-tracking" class="table-of-contents__link toc-highlight">Efficiency Tracking</a></li></ul></li><li><a href="#security-considerations" class="table-of-contents__link toc-highlight">Security Considerations</a><ul><li><a href="#proposal-security" class="table-of-contents__link toc-highlight">Proposal Security</a></li><li><a href="#voting-security" class="table-of-contents__link toc-highlight">Voting Security</a></li><li><a href="#execution-security" class="table-of-contents__link toc-highlight">Execution Security</a></li></ul></li><li><a href="#monitoring-and-metrics" class="table-of-contents__link toc-highlight">Monitoring and Metrics</a><ul><li><a href="#key-performance-indicators" class="table-of-contents__link toc-highlight">Key Performance Indicators</a></li><li><a href="#alert-thresholds" class="table-of-contents__link toc-highlight">Alert Thresholds</a></li></ul></li><li><a href="#integration-points" class="table-of-contents__link toc-highlight">Integration Points</a><ul><li><a href="#with-core-poai-system" class="table-of-contents__link toc-highlight">With Core PoAI System</a></li><li><a href="#with-network-operations" class="table-of-contents__link toc-highlight">With Network Operations</a></li></ul></li><li><a href="#future-enhancements" class="table-of-contents__link toc-highlight">Future Enhancements</a><ul><li><a href="#planned-improvements" class="table-of-contents__link toc-highlight">Planned Improvements</a></li></ul></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a><ul><li><a href="#for-validators" class="table-of-contents__link toc-highlight">For Validators</a></li><li><a href="#for-proposal-creators" class="table-of-contents__link toc-highlight">For Proposal Creators</a></li><li><a href="#for-network-operators" class="table-of-contents__link toc-highlight">For Network Operators</a></li></ul></li><li><a href="#testnet-implementation" class="table-of-contents__link toc-highlight">Testnet Implementation</a><ul><li><a href="#overview-1" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#testnet-token-economics" class="table-of-contents__link toc-highlight">Testnet Token Economics</a></li><li><a href="#adjusted-testnet-parameters" class="table-of-contents__link toc-highlight">Adjusted Testnet Parameters</a></li><li><a href="#testnet-specific-features" class="table-of-contents__link toc-highlight">Testnet-Specific Features</a></li><li><a href="#testing-workflows" class="table-of-contents__link toc-highlight">Testing Workflows</a></li><li><a href="#metrics-and-monitoring" class="table-of-contents__link toc-highlight">Metrics and Monitoring</a></li><li><a href="#migration-to-mainnet" class="table-of-contents__link toc-highlight">Migration to Mainnet</a></li><li><a href="#security-considerations-1" class="table-of-contents__link toc-highlight">Security Considerations</a></li></ul></li><li><a href="#conclusion" class="table-of-contents__link toc-highlight">Conclusion</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">
+        <div class="footer-content-wrapper">
+          <div class="footer-social-icons">
+            <a href="https://discord.gg/WdMdVpA4C8" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+              <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://github.com/SELF-Technology/self-chain-public" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://x.com/self_hq" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://t.me/selfcommunitychat" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://instagram.com/selfappofficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@selfcommunityvideos" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/selftechnology/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+          <div class="footer-theme-toggle-wrapper"></div>
+        </div>
+        <div class="footer-copyright-text">
+          © SELF 2025 | 
+          <a href="https://self.app/terms" target="_blank">Terms & Conditions</a> | 
+          <a href="https://self.app/cookies" target="_blank">Cookie Policy</a> | 
+          <a href="https://self.app/privacy" target="_blank">Privacy Policy</a> | 
+          <a href="mailto:info@self.app?subject=Mail%20from%20site">Contact Us</a>
+        </div>
+      </div></div></div></footer></div>
+</body>
+</html>
