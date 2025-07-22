@@ -5,9 +5,9 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start --host 0.0.0.0 --port 3000",
-    "build": "docusaurus build && mkdir -p docusaurus && cp -r build docusaurus/",
+    "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "npm run build && wrangler deploy",
+    "deploy": "npm run build",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve --host 0.0.0.0 --port 3000",
     "write-translations": "docusaurus write-translations",

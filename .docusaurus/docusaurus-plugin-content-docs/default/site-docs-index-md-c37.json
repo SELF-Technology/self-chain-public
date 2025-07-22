@@ -1,6 +1,6 @@
 {
   "id": "index",
-  "title": "SELF Documentation - The Future of Technology if Yours",
+  "title": "SELF Documentation - The Future Of Technology Is Yours",
   "description": "SELF documentation - Build with the people's technology platform featuring SELF Chain blockchain with Proof-of-AI consensus, post-quantum cryptography, and human-centric design. Open-source infrastructure for self-sovereign technology, privacy-first applications, and decentralized AI validation.",
   "source": "@site/docs/index.md",
   "sourceDirName": ".",
@@ -12,7 +12,7 @@
   "version": "current",
   "sidebarPosition": 0,
   "frontMatter": {
-    "title": "SELF Documentation - The Future of Technology if Yours",
+    "title": "SELF Documentation - The Future Of Technology Is Yours",
     "description": "SELF documentation - Build with the people's technology platform featuring SELF Chain blockchain with Proof-of-AI consensus, post-quantum cryptography, and human-centric design. Open-source infrastructure for self-sovereign technology, privacy-first applications, and decentralized AI validation.",
     "keywords": [
       "self chain",
