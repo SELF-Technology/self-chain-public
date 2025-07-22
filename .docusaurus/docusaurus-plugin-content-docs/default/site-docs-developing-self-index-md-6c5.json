@@ -10,14 +10,17 @@
   "unlisted": false,
   "tags": [],
   "version": "current",
-  "frontMatter": {},
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
   "sidebar": "docs",
   "previous": {
-    "title": "Security Policy",
-    "permalink": "/Developing SELF/security"
+    "title": "Developer Integration Guide",
+    "permalink": "/Building-on-SELF/cloud-integration"
   },
   "next": {
-    "title": "SELF Chain Architecture",
-    "permalink": "/Technical Docs/SELF Chain/SELF_Chain_Architecture"
+    "title": "Code of Conduct",
+    "permalink": "/Developing SELF/code-of-conduct"
   }
 }

@@ -24,7 +24,7 @@ const config = {
         'http-equiv': 'Content-Security-Policy',
         content: process.env.NODE_ENV === 'development' 
           ? "default-src * 'unsafe-inline' 'unsafe-eval' data: blob:;" 
-          : "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:;",
+          : "default-src 'self' data: blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https: blob:; font-src 'self' data: https:; connect-src 'self' https:; frame-src 'self' https:;",
       },
     },
     {
