@@ -1,0 +1,318 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/",
+          "mainDocId": "index",
+          "docs": [
+            {
+              "id": "About SELF/creation-brand",
+              "path": "/About SELF/creation-brand",
+              "sidebar": "docs"
+            },
+            {
+              "id": "About SELF/evolution",
+              "path": "/About SELF/evolution",
+              "sidebar": "docs"
+            },
+            {
+              "id": "About SELF/long-term",
+              "path": "/About SELF/long-term",
+              "sidebar": "docs"
+            },
+            {
+              "id": "About SELF/manifesto",
+              "path": "/About SELF/manifesto",
+              "sidebar": "docs"
+            },
+            {
+              "id": "About SELF/Media Coverage",
+              "path": "/About SELF/Media Coverage",
+              "sidebar": "docs"
+            },
+            {
+              "id": "About SELF/self-sov-alternative",
+              "path": "/About SELF/self-sov-alternative",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Building-on-SELF/api-gateway",
+              "path": "/Building-on-SELF/api-gateway",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Building-on-SELF/cloud-integration",
+              "path": "/Building-on-SELF/cloud-integration",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Building-on-SELF/getting-started",
+              "path": "/Building-on-SELF/getting-started",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Building-on-SELF/index",
+              "path": "/Building-on-SELF/",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Building-on-SELF/sdk-structure",
+              "path": "/Building-on-SELF/sdk-structure",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Developing SELF/code-of-conduct",
+              "path": "/Developing SELF/code-of-conduct",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Developing SELF/governance",
+              "path": "/Developing SELF/governance",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Developing SELF/index",
+              "path": "/Developing SELF/",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Developing SELF/security",
+              "path": "/Developing SELF/security",
+              "sidebar": "docs"
+            },
+            {
+              "id": "index",
+              "path": "/",
+              "sidebar": "docs"
+            },
+            {
+              "id": "project-status/index",
+              "path": "/project-status/",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Roadmap/Beta Web App",
+              "path": "/Roadmap/Beta Web App",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Roadmap/Developer Incentives",
+              "path": "/Roadmap/Developer Incentives",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Roadmap/Introduction",
+              "path": "/Roadmap/Introduction",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Roadmap/SDK",
+              "path": "/Roadmap/SDK",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Roadmap/SELF OS",
+              "path": "/Roadmap/SELF OS",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Roadmap/Super-App Testnet",
+              "path": "/Roadmap/Super-App Testnet",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Roadmap/Token/Overview",
+              "path": "/Roadmap/Token/Overview",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Roadmap/Token/Smart-Contract-Architecture",
+              "path": "/Roadmap/Token/Smart-Contract-Architecture",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Roadmap/Token/Tokenomics",
+              "path": "/Roadmap/Token/Tokenomics",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/Cloud-Architecture/Developer-Integration",
+              "path": "/Technical Docs/Cloud-Architecture/Developer-Integration",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/Cloud-Architecture/Overview",
+              "path": "/Technical Docs/Cloud-Architecture/Overview",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/Cloud-Architecture/Running-Your-Own-Node",
+              "path": "/Technical Docs/Cloud-Architecture/Running-Your-Own-Node",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/Constellation/Industry_Validation_Rules",
+              "path": "/Technical Docs/Constellation/Industry_Validation_Rules",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/Constellation/Overview",
+              "path": "/Technical Docs/Constellation/Overview",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/Developer Resources/Getting_Started_Testnet",
+              "path": "/Technical Docs/Developer Resources/Getting_Started_Testnet",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/Developer Resources/PUBLIC_INTERFACES",
+              "path": "/Technical Docs/Developer Resources/PUBLIC_INTERFACES",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/Grid-Compute/Future-Vision",
+              "path": "/Technical Docs/Grid-Compute/Future-Vision",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/Integration/Minima Integration",
+              "path": "/Technical Docs/Integration/Minima Integration",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/Integration/Rosetta API Integration",
+              "path": "/Technical Docs/Integration/Rosetta API Integration",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/Performance/Advanced_TPS_Optimization",
+              "path": "/Technical Docs/Performance/Advanced_TPS_Optimization",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/PoAI/AI Block Builder Algorithm",
+              "path": "/Technical Docs/PoAI/AI Block Builder Algorithm",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/PoAI/AI-Validator Algorithm",
+              "path": "/Technical Docs/PoAI/AI-Validator Algorithm",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/PoAI/Color Marker Examples",
+              "path": "/Technical Docs/PoAI/Color Marker Examples",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/PoAI/Color Marker System",
+              "path": "/Technical Docs/PoAI/Color Marker System",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/PoAI/Governance_Implementation",
+              "path": "/Technical Docs/PoAI/Governance_Implementation",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/PoAI/Proof-of-AI",
+              "path": "/Technical Docs/PoAI/Proof-of-AI",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/PoAI/Taxonomy",
+              "path": "/Technical Docs/PoAI/Taxonomy",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/PoAI/The Incentive",
+              "path": "/Technical Docs/PoAI/The Incentive",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/PoAI/Validation Process",
+              "path": "/Technical Docs/PoAI/Validation Process",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/PoAI/Voting Algorithm",
+              "path": "/Technical Docs/PoAI/Voting Algorithm",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/Security/AI_Capacity_Implementation",
+              "path": "/Technical Docs/Security/AI_Capacity_Implementation",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/Security/Overview",
+              "path": "/Technical Docs/Security/Overview",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/Security/Pattern_Analysis_Security",
+              "path": "/Technical Docs/Security/Pattern_Analysis_Security",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/Security/Post_Quantum_Cryptography",
+              "path": "/Technical Docs/Security/Post_Quantum_Cryptography",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/SELF Chain/SELF_Chain_Architecture",
+              "path": "/Technical Docs/SELF Chain/SELF_Chain_Architecture",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/SELF Chain/User-Instance-Architecture",
+              "path": "/Technical Docs/SELF Chain/User-Instance-Architecture",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/SELF Chain/Why Build A Blockchain",
+              "path": "/Technical Docs/SELF Chain/Why Build A Blockchain",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/Storage/Hybrid_Architecture",
+              "path": "/Technical Docs/Storage/Hybrid_Architecture",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/Storage/Storage_Integration",
+              "path": "/Technical Docs/Storage/Storage_Integration",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Technical Docs/Validate/index",
+              "path": "/Technical Docs/Validate/",
+              "sidebar": "docs"
+            },
+            {
+              "id": "/category/️-cloud-architecture",
+              "path": "/category/️-cloud-architecture",
+              "sidebar": "docs"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "docs": {
+              "link": {
+                "path": "/",
+                "label": "👋 Welcome"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}
