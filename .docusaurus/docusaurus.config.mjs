@@ -5,7 +5,7 @@
  */
 export default {
   "title": "SELF Documentation",
-  "tagline": "Build on the people's blockchain with Proof-of-AI consensus, post-quantum cryptography, and human-centric design",
+  "tagline": "Creating the Future of Self-Sovereign Technology",
   "url": "https://docs.self.app",
   "baseUrl": "/",
   "favicon": "img/favicon.ico",
@@ -18,7 +18,7 @@ export default {
       "tagName": "meta",
       "attributes": {
         "http-equiv": "Content-Security-Policy",
-        "content": "default-src * 'unsafe-inline' 'unsafe-eval' data: blob:;"
+        "content": "default-src 'self' data: blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https: blob:; font-src 'self' data: https:; connect-src 'self' https:; frame-src 'self' https:;"
       }
     },
     {
