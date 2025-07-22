@@ -18,7 +18,7 @@ export default {
       "tagName": "meta",
       "attributes": {
         "http-equiv": "Content-Security-Policy",
-        "content": "default-src 'self' data: blob:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https: blob:; font-src 'self' data: https:; connect-src 'self' https:; frame-src 'self' https:;"
+        "content": "default-src * 'unsafe-inline' data: blob:;"
       }
     },
     {
