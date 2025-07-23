@@ -5,7 +5,7 @@ sidebar_position: 5
 
 # The Long-Term Goal
 
-Over the decades to come, the ultimate goal is to create and maintain a sustainable, aesthetically coherent, secure, privacy-conscious and productivity-optimised operating system that is of tremendous value to the world; simplifying life for individuals and positively impacting industry in the process. This is the SELF Operating System (SELF OS).
+Over the decades to come, the ultimate goal is to create and maintain a sustainable, aesthetically coherent, secure, privacy-conscious and productivity-optimized operating system that is of tremendous value to the world; simplifying life for individuals and positively impacting industry in the process. This is the SELF Operating System (SELF OS).
 
 Primarily, this will be a “sideways” system that runs across whatever existing systems people may be using (e.g. swipe down and up with three fingers to shift between a traditional OS and SELF OS). Compatible with anything, translatable to everything, but with everyone’s personal sovereignty and intelligent connectivity at its core.
 
@@ -15,4 +15,4 @@ Also, SELF Chain will enable a constellation of other blockchains to be develope
 
 Every industry vertical has the potential to be positively advanced through the efficient and sustainable systems we will offer, using the infrastructure we’re building today and tomorrow. We believe that technological advancements should have a more positive impact on the world than they currently do. Our goal is to demonstrate how, and hopefully inspire others to do the same.
 
-The vision is huge and bold, yet we are confident that we will succeed in making our vision of an ethical, fair, and decentralised powerhouse a reality. Even if it takes longer than we would like, or we only achieve a fraction of our goals, our commitment will not waver. We will have demonstrated an alternative to a dystopican future and will have succeeded if we can achieve even the beginnings of such a demonstration. Future generations can be inspired by the direction and take this vision further. This is just the start.
+The vision is huge and bold, yet we are confident that we will succeed in making our vision of an ethical, fair, and decentralized powerhouse a reality. Even if it takes longer than we would like, or we only achieve a fraction of our goals, our commitment will not waver. We will have demonstrated an alternative to a dystopian future and will have succeeded if we can achieve even the beginnings of such a demonstration. Future generations can be inspired by the direction and take this vision further. This is just the start.

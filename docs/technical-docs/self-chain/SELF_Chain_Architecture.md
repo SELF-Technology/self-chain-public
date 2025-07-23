@@ -236,5 +236,5 @@ SELF Chain operates exclusively in a cloud-first environment:
 
 - OpenLLM: https://github.com/bentoml/OpenLLM
 - IPFS: https://docs.ipfs.tech/
-- OrbitDB: https://orbitdb.org/docs/
-- Network Protocols: https://libp2p.io/docs/
+- OrbitDB: https://github.com/orbitdb
+- Network Protocols: https://docs.ipfs.tech/
