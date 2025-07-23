@@ -16,7 +16,7 @@ The SELF Chain implements a multi-layered security approach incorporating:
    - Continuously evolving defenses against emerging quantum threats
 
 2. **AI-Powered Validation**
-   - Uses Ollama Cloud for AI validation
+   - Uses OpenLLM for AI validation
    - Context-aware validation system
    - Validator reputation tracking
 

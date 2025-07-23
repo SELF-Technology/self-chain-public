@@ -1,0 +1,27 @@
+{
+  "id": "Technical Docs/PoAI/AI Block Builder Algorithm",
+  "title": "AI Block Builder Algorithm",
+  "description": "Block builders are full blockchain nodes that store ready-made blocks of the blockchain and participate in forming and packaging new blocks. The block builder's basis is a Machine Learning (ML) model, which has the initial, specified parameters of the methodology for forming effective blocks from existing mempool transactions.",
+  "source": "@site/../docs/Technical Docs/PoAI/AI Block Builder Algorithm.md",
+  "sourceDirName": "Technical Docs/PoAI",
+  "slug": "/Technical Docs/PoAI/AI Block Builder Algorithm",
+  "permalink": "/Technical Docs/PoAI/AI Block Builder Algorithm",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_label": "AI Block Builder Algorithm",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Taxonomy",
+    "permalink": "/Technical Docs/PoAI/Taxonomy"
+  },
+  "next": {
+    "title": "Voting Algorithm",
+    "permalink": "/Technical Docs/PoAI/Voting Algorithm"
+  }
+}

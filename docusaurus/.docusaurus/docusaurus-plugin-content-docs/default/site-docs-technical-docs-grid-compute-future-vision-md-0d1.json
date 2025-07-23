@@ -1,0 +1,25 @@
+{
+  "id": "Technical Docs/Grid-Compute/Future-Vision",
+  "title": "Grid Compute Future Vision",
+  "description": "Executive Summary",
+  "source": "@site/../docs/Technical Docs/Grid-Compute/Future-Vision.md",
+  "sourceDirName": "Technical Docs/Grid-Compute",
+  "slug": "/Technical Docs/Grid-Compute/Future-Vision",
+  "permalink": "/Technical Docs/Grid-Compute/Future-Vision",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Grid Compute Future Vision"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Industry Validation Rules",
+    "permalink": "/Technical Docs/Constellation/Industry_Validation_Rules"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/Technical Docs/Security/Overview"
+  }
+}

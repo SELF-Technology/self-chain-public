@@ -1,0 +1,27 @@
+{
+  "id": "Our Purpose/self-sov-alternative",
+  "title": "A Self-Sovereign Alternative",
+  "description": "An ethically anchored philosophy that puts the user front and centre should be the fundamental basis for designing an operating system of the future. Such a system should not put an excessive focus on monetising its users and their data, but instead give users full control over their information. Users should have data privacy by default and be able to decide what to share and what to keep private.",
+  "source": "@site/../docs/Our Purpose/self-sov-alternative.md",
+  "sourceDirName": "Our Purpose",
+  "slug": "/Our Purpose/self-sov-alternative",
+  "permalink": "/Our Purpose/self-sov-alternative",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_label": "🔓 A Self-Sovereign Alternative",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🔄 The Evolution Of Technology",
+    "permalink": "/Our Purpose/evolution"
+  },
+  "next": {
+    "title": "🔭 The Long-Term Goal",
+    "permalink": "/Our Purpose/long-term"
+  }
+}

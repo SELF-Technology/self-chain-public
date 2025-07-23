@@ -1,0 +1,21 @@
+{
+  "id": "Technical Docs/Performance/Advanced_TPS_Optimization",
+  "title": "Advanced TPS Optimization",
+  "description": "🎯 Performance Targets: The metrics described in this document represent our performance optimization targets and architectural design goals. Actual performance may vary based on network conditions, hardware specifications, and implementation progress.",
+  "source": "@site/../docs/Technical Docs/Performance/Advanced_TPS_Optimization.md",
+  "sourceDirName": "Technical Docs/Performance",
+  "slug": "/Technical Docs/Performance/Advanced_TPS_Optimization",
+  "permalink": "/Technical Docs/Performance/Advanced_TPS_Optimization",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Advanced TPS Optimization"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Minima Integration",
+    "permalink": "/Technical Docs/Integration/Minima Integration"
+  }
+}

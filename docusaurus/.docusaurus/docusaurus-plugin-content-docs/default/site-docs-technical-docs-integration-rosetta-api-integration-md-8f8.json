@@ -1,0 +1,27 @@
+{
+  "id": "Technical Docs/Integration/Rosetta API Integration",
+  "title": "Rosetta API Integration",
+  "description": "Overview",
+  "source": "@site/../docs/Technical Docs/Integration/Rosetta API Integration.md",
+  "sourceDirName": "Technical Docs/Integration",
+  "slug": "/Technical Docs/Integration/Rosetta API Integration",
+  "permalink": "/Technical Docs/Integration/Rosetta API Integration",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_label": "Rosetta API Integration",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "✅ Validate",
+    "permalink": "/Technical Docs/Validate/"
+  },
+  "next": {
+    "title": "Minima Integration",
+    "permalink": "/Technical Docs/Integration/Minima Integration"
+  }
+}

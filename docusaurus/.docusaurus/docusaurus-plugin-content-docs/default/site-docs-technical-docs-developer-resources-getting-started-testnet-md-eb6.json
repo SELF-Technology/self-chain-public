@@ -1,0 +1,27 @@
+{
+  "id": "Technical Docs/Developer Resources/Getting_Started_Testnet",
+  "title": "Getting Started (Testnet)",
+  "description": "🚧 BETA NOTICE: These developer resources are currently in beta and under active development. Many features described here are coming soon. We're working hard to bring you a complete development experience!",
+  "source": "@site/../docs/Technical Docs/Developer Resources/Getting_Started_Testnet.md",
+  "sourceDirName": "Technical Docs/Developer Resources",
+  "slug": "/Technical Docs/Developer Resources/Getting_Started_Testnet",
+  "permalink": "/Technical Docs/Developer Resources/Getting_Started_Testnet",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Getting Started (Testnet)",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Why Build A Blockchain",
+    "permalink": "/Technical Docs/SELF Chain/Why Build A Blockchain"
+  },
+  "next": {
+    "title": "Public Interfaces",
+    "permalink": "/Technical Docs/Developer Resources/PUBLIC_INTERFACES"
+  }
+}
