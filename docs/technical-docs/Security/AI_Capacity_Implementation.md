@@ -21,7 +21,7 @@ This document outlines the implementation of AI-capacity classes throughout the 
 #### Governance System
 - **GovernanceContract**: Manages stake and proposal operations using AICapacityNumber
 - **GovernanceProposal**: Handles proposal creation and voting using AICapacityNumber
-- **ProposalEvaluator**: Evaluates proposals using AI metrics with AICapacityNumber (see [Proof-of-AI documentation](https://docs.self.app/Technical%20Docs/PoAI/Proof-of-AI))
+- **ProposalEvaluator**: Evaluates proposals using AI metrics with AICapacityNumber (see [Proof-of-AI documentation](https://docs.self.app/technical-docs/PoAI/proof-of-ai))
 - **MLModel**: Predicts proposal success using AI-capacity metrics
 - **PointBasedVoting**: Manages point-based voting operations with AICapacityNumber
 - **Proposal**: Manages proposal lifecycle with AICapacityNumber

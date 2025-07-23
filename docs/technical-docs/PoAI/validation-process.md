@@ -24,7 +24,7 @@ After the voting is completed and the winning block builder is determined, the P
 * The AI validator is active and valid according to the conditions listed above.
 * The AI validator did not vote for the winning block builder.
 
-Among the validators who voted, one validator is randomly selected from those who did not vote for the block that won the round. This validator will use [color validation](Color%20Marker%20System) to check all transactions in the block.
+Among the validators who voted, one validator is randomly selected from those who did not vote for the block that won the round. This validator will use [color validation](color-marker-system) to check all transactions in the block.
 
 <div>
 <img src="/img/Screenshot 2024-05-01 at 9.06.14 AM.png" alt="PoAI Color Validation"/>

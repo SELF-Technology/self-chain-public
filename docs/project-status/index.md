@@ -60,7 +60,7 @@ SELF is in **active development** with a working testnet demonstrating our revol
 - **Status**: 🔄 Active Development
 - **Progress**: Specification complete, implementation pending
 - **Blocking**: Developer access to testnet
-- **Details**: [API Gateway Documentation](/Building-on-SELF/api-gateway)
+- **Details**: [API Gateway Documentation](/building-on-self/api-gateway)
 
 ### Developer SDKs
 - **Status**: 🔄 Planning
@@ -184,7 +184,7 @@ Even in this early stage, you can contribute:
 - **Testing**: Run nodes and report issues
 - **Feedback**: Share your developer experience
 
-See our [Developing SELF Guide](/Developing%20SELF) for details.
+See our [Developing SELF Guide](/developing-self) for details.
 
 ---
 

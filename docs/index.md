@@ -80,21 +80,21 @@ Every line of code, every design decision, every feature serves one purpose: **Y
 
 <div className="button-container">
   <a href="/project-status">See What's Live</a>
-  <a href="/Building-on-SELF/getting-started">Start Building</a>
+  <a href="/building-on-self/getting-started">Start Building</a>
   <a href="https://github.com/SELF-Technology/self-chain-public">Explore the Code</a>
 </div>
 
 ## 📚 Learn More
 
 **Essential Reading**
-- [The SELF Manifesto](/About%20SELF/manifesto) - Our declaration of digital independence
-- [How PoAI Works](/Technical%20Docs/PoAI/Proof-of-AI) - Revolutionary AI consensus explained
-- [Project Roadmap](/Roadmap/Introduction) - Where we're going
+- [The SELF Manifesto](/about-self/manifesto) - Our declaration of digital independence
+- [How PoAI Works](/technical-docs/PoAI/Proof-of-AI) - Revolutionary AI consensus explained
+- [Project Roadmap](/roadmap/Introduction) - Where we're going
 
 **For Builders**
-- [Developer Guide](/Building-on-SELF/getting-started) - Start building on SELF
-- [Architecture Deep Dive](/Technical%20Docs/SELF%20Chain/SELF_Chain_Architecture) - Technical details
-- [Contribute to Core](/Developing%20SELF) - Help build SELF
+- [Developer Guide](/building-on-self/getting-started) - Start building on SELF
+- [Architecture Deep Dive](/technical-docs/self-chain/SELF_Chain_Architecture) - Technical details
+- [Contribute to Core](/developing-self) - Help build SELF
 
 
 ## 🤝 Connect With Us

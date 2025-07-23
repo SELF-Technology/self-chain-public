@@ -65,4 +65,4 @@ SELF Chain provides a unique architecture where every user has their own private
 
 ---
 
-*For information on building applications that interact with user instances, see the [Building on SELF](/Building-on-SELF/getting-started) guide.*
+*For information on building applications that interact with user instances, see the [Building on SELF](/building-on-self/getting-started) guide.*

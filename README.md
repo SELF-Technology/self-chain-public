@@ -59,7 +59,7 @@ Every line of code, every design decision, every feature serves one purpose: **Y
 ## 🎬 Get Started
 
 - **[📊 See What's Live](docs/project-status/index.md)** - Current capabilities and limitations
-- **[🚀 Start Building](docs/Building-on-SELF/getting-started.md)** - Developer guide
+- **[🚀 Start Building](docs/building-on-self/getting-started.md)** - Developer guide
 - **[🐙 Explore the Code](https://github.com/SELF-Technology/self-chain-public)** - Dive into the source
 
 ## 🏃 Quick Start
@@ -81,14 +81,14 @@ cargo run --bin self-chain-node -- --dev
 ## 📚 Documentation
 
 **Essential Reading**
-- [The SELF Manifesto](docs/About%20SELF/manifesto.md) - Our declaration of digital independence
-- [How PoAI Works](docs/Technical%20Docs/PoAI/Proof-of-AI.md) - Revolutionary AI consensus explained
-- [Project Roadmap](docs/Roadmap/Introduction.md) - Where we're going
+- [The SELF Manifesto](docs/about-self/manifesto.md) - Our declaration of digital independence
+- [How PoAI Works](docs/technical-docs/PoAI/Proof-of-AI.md) - Revolutionary AI consensus explained
+- [Project Roadmap](docs/roadmap/Introduction.md) - Where we're going
 
 **For Builders**
-- [Developer Guide](docs/Building-on-SELF/getting-started.md) - Start building on SELF
-- [Architecture Deep Dive](docs/Technical%20Docs/SELF%20Chain/SELF_Chain_Architecture.md) - Technical details
-- [Contribute to Core](docs/Developing%20SELF/index.md) - Help build SELF
+- [Developer Guide](docs/building-on-self/getting-started.md) - Start building on SELF
+- [Architecture Deep Dive](docs/technical-docs/self-chain/SELF_Chain_Architecture.md) - Technical details
+- [Contribute to Core](docs/developing-self/index.md) - Help build SELF
 
 **Full Documentation**: [docs.self.app](https://docs.self.app)
 

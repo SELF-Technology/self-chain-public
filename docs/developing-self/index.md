@@ -43,8 +43,8 @@ By participating in this project, you agree to abide by our [Code of Conduct](co
 2. **Understand the Project**
    - Read our [documentation](https://docs.self.app)
    - Review the [Project Status](https://docs.self.app/project-status) for current state
-   - Review the [architecture overview](https://docs.self.app/Technical%20Docs/SELF%20Chain/SELF_Chain_Architecture)
-   - Understand [Proof-of-AI consensus](https://docs.self.app/Technical%20Docs/PoAI/Proof-of-AI)
+   - Review the [architecture overview](https://docs.self.app/technical-docs/self-chain/self_chain_architecture)
+   - Understand [Proof-of-AI consensus](https://docs.self.app/technical-docs/PoAI/proof-of-ai)
 
 3. **Find Your First Issue**
    - Look for issues labeled `good-first-issue`

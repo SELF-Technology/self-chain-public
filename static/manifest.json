@@ -39,14 +39,14 @@
       "name": "Getting Started",
       "short_name": "Start",
       "description": "Quick start guide for SELF Chain",
-      "url": "/Technical%20Docs/Developer%20Resources/Getting_Started_Testnet",
+      "url": "/technical-docs/developer-resources/Getting_Started_Testnet",
       "icons": [{ "src": "/img/icon-96x96.png", "sizes": "96x96" }]
     },
     {
       "name": "Architecture",
       "short_name": "Architecture",
       "description": "SELF Chain Architecture",
-      "url": "/Technical%20Docs/SELF%20Chain/SELF_Chain_Architecture",
+      "url": "/technical-docs/self-chain/self_chain_architecture",
       "icons": [{ "src": "/img/icon-96x96.png", "sizes": "96x96" }]
     }
   ],
