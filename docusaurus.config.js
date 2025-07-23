@@ -50,7 +50,7 @@ const config = {
       tagName: 'link',
       attributes: {
         rel: 'preload',
-        href: '/img/SELF GALAXY transparent 620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp',
+        href: '/img/self-galaxy-transparent-620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp',
         as: 'image',
         fetchpriority: 'low',
       },
@@ -242,7 +242,7 @@ const config = {
           <a href="https://self.app/terms" target="_blank">Terms & Conditions</a> | 
           <a href="https://self.app/cookies" target="_blank">Cookie Policy</a> | 
           <a href="https://self.app/privacy" target="_blank">Privacy Policy</a> | 
-          <a href="mailto:info@self.app?subject=Mail%20from%20site">Contact Us</a>
+          <a href="mailto:info@self.app?subject=Mail-from-site">Contact Us</a>
         </div>
       `,
     },

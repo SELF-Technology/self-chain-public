@@ -32,4 +32,4 @@ Complete API specification in OpenAPI format.
 
 ## 🤝 Not What You're Looking For?
 
-If you want to contribute to SELF Chain's core development instead of building apps on it, see our [Developing SELF Guide](/Developing%20SELF).
+If you want to contribute to SELF Chain's core development instead of building apps on it, see our [Developing SELF Guide](/developing-self).

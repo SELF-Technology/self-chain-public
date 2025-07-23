@@ -5,7 +5,7 @@ sidebar_position: 5
 
 # AI-Validator Algorithm
 
-AI validators are lite blockchain nodes that store network wallet addresses and color markers. [Color markers](Color%20Marker%20System) are a key part of validation and connecting a block to the blockchain:
+AI validators are lite blockchain nodes that store network wallet addresses and color markers. [Color markers](color-marker-system) are a key part of validation and connecting a block to the blockchain:
 
 * Each wallet in the system is classed as a HEX wallet as it has a colour attributed to it using a hexadecimal value. When a user signs a transaction in their crypto-wallet, a hexidecimal hash is generated.
 * The AI validator stores information about the current color of the wallet.

@@ -141,7 +141,7 @@ SELF Chain uses Proof-of-AI (PoAI) consensus, which is fundamentally different f
 2. **Voting Algorithm** coordinates consensus
 3. **AI-Validators** determine the winning block
 
-Learn more: [Proof-of-AI Documentation](/Technical%20Docs/PoAI/Proof-of-AI)
+Learn more: [Proof-of-AI Documentation](/technical-docs/PoAI/Proof-of-AI)
 
 ## Testnet Limitations
 
@@ -215,8 +215,8 @@ self-chain-cli --help
 - **Go SDK**: For backend services
 
 ### Documentation
-- [Architecture Overview](/Technical%20Docs/SELF%20Chain/SELF_Chain_Architecture)
-- [PoAI Consensus](/Technical%20Docs/PoAI/Proof-of-AI)
+- [Architecture Overview](/technical-docs/self-chain/SELF_Chain_Architecture)
+- [PoAI Consensus](/technical-docs/PoAI/Proof-of-AI)
 - API Reference (Coming soon)
 
 ## Common Testnet Issues
@@ -287,7 +287,7 @@ We love contributions! Even in testnet phase, you can:
 3. **Write documentation** - Help others get started
 4. **Build example apps** - Show what's possible
 
-See [Developing SELF Guide](/Developing%20SELF) for guidelines.
+See [Developing SELF Guide](/developing-self) for guidelines.
 
 ## Testnet Roadmap
 

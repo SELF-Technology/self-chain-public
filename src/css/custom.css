@@ -540,7 +540,7 @@ html[data-theme="dark"] .opensource-links a {
   transform: translateX(-50%);
   bottom: 0;
   width: 100vw; /* Use viewport width to extend beyond container */
-  background-image: url("/img/SELF GALAXY transparent 620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp");
+  background-image: url("/img/self-galaxy-transparent-620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp");
   background-position: center center; /* Center the galaxy */
   background-repeat: no-repeat;
   background-size: cover; /* Cover the full area */
@@ -584,7 +584,7 @@ html[data-theme="dark"] .opensource-links a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("/img/SELF GALAXY transparent 620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp");
+  background-image: url("/img/self-galaxy-transparent-620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;

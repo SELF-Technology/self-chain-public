@@ -4,10 +4,10 @@ This directory contains the technical implementation of SELF Chain's Proof-of-AI
 
 :::info Documentation
 For comprehensive documentation about PoAI concepts, algorithms, and design principles, please see:
-- [Proof-of-AI Overview](/docs/Technical%20Docs/PoAI/Proof-of-AI.md)
-- [AI Block Builder Algorithm](/docs/Technical%20Docs/PoAI/AI%20Block%20Builder%20Algorithm.md)
-- [AI Validator Algorithm](/docs/Technical%20Docs/PoAI/AI-Validator%20Algorithm.md)
-- [Voting Algorithm](/docs/Technical%20Docs/PoAI/Voting%20Algorithm.md)
+- [Proof-of-AI Overview](/docs/technical-docs/PoAI/proof-of-ai.md)
+- [AI Block Builder Algorithm](/docs/technical-docs/PoAI/ai-block-builder-algorithm.md)
+- [AI Validator Algorithm](/docs/technical-docs/PoAI/ai-validator-algorithm.md)
+- [Voting Algorithm](/docs/technical-docs/PoAI/voting-algorithm.md)
 :::
 
 ## Implementation Overview
@@ -111,7 +111,7 @@ graph TD
 
 ## Reward Distribution
 
-See [The Incentive](/docs/Technical%20Docs/PoAI/The%20Incentive.md) for detailed reward distribution information.
+See [The Incentive](/docs/technical-docs/PoAI/the-incentive.md) for detailed reward distribution information.
 
 ## Efficiency Metrics
 
