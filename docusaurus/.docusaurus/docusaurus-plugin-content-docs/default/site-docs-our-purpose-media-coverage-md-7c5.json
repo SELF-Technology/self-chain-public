@@ -1,0 +1,27 @@
+{
+  "id": "Our Purpose/Media Coverage",
+  "title": "Media Coverage",
+  "description": "Podcasts",
+  "source": "@site/../docs/Our Purpose/Media Coverage.md",
+  "sourceDirName": "Our Purpose",
+  "slug": "/Our Purpose/Media Coverage",
+  "permalink": "/Our Purpose/Media Coverage",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_label": "🔈 Media Coverage",
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🎨 Creation of the SELF Brand",
+    "permalink": "/Our Purpose/creation-brand"
+  },
+  "next": {
+    "title": "📖 Introduction",
+    "permalink": "/Roadmap/Introduction"
+  }
+}

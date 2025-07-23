@@ -1,0 +1,23 @@
+{
+  "id": "Technical Docs/Cloud-Architecture/Running-Your-Own-Node",
+  "title": "Running Your Own Node",
+  "description": "IMPORTANT: Who This Guide Is For",
+  "source": "@site/../docs/Technical Docs/Cloud-Architecture/Running-Your-Own-Node.md",
+  "sourceDirName": "Technical Docs/Cloud-Architecture",
+  "slug": "/Technical Docs/Cloud-Architecture/Running-Your-Own-Node",
+  "permalink": "/Technical Docs/Cloud-Architecture/Running-Your-Own-Node",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Cloud Architecture Overview",
+    "permalink": "/Technical Docs/Cloud-Architecture/Overview"
+  },
+  "next": {
+    "title": "Proof-of-AI",
+    "permalink": "/Technical Docs/PoAI/Proof-of-AI"
+  }
+}

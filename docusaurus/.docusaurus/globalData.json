@@ -1,0 +1,273 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/",
+          "mainDocId": "index",
+          "docs": [
+            {
+              "id": "index",
+              "path": "/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Our Purpose/creation-brand",
+              "path": "/Our Purpose/creation-brand",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Our Purpose/evolution",
+              "path": "/Our Purpose/evolution",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Our Purpose/long-term",
+              "path": "/Our Purpose/long-term",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Our Purpose/manifesto",
+              "path": "/Our Purpose/manifesto",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Our Purpose/Media Coverage",
+              "path": "/Our Purpose/Media Coverage",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Our Purpose/self-sov-alternative",
+              "path": "/Our Purpose/self-sov-alternative",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project-status/index",
+              "path": "/project-status/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Roadmap/Beta Web App",
+              "path": "/Roadmap/Beta Web App",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Roadmap/Developer Incentives",
+              "path": "/Roadmap/Developer Incentives",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Roadmap/Introduction",
+              "path": "/Roadmap/Introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Roadmap/SDK",
+              "path": "/Roadmap/SDK",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Roadmap/SELF OS",
+              "path": "/Roadmap/SELF OS",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Roadmap/Super-App Testnet",
+              "path": "/Roadmap/Super-App Testnet",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Roadmap/Token/Overview",
+              "path": "/Roadmap/Token/Overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Roadmap/Token/Smart-Contract-Architecture",
+              "path": "/Roadmap/Token/Smart-Contract-Architecture",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Roadmap/Token/Tokenomics",
+              "path": "/Roadmap/Token/Tokenomics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/Cloud-Architecture/Developer-Integration",
+              "path": "/Technical Docs/Cloud-Architecture/Developer-Integration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/Cloud-Architecture/Overview",
+              "path": "/Technical Docs/Cloud-Architecture/Overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/Cloud-Architecture/Running-Your-Own-Node",
+              "path": "/Technical Docs/Cloud-Architecture/Running-Your-Own-Node",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/Constellation/Industry_Validation_Rules",
+              "path": "/Technical Docs/Constellation/Industry_Validation_Rules",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/Constellation/Overview",
+              "path": "/Technical Docs/Constellation/Overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/Developer Resources/Getting_Started_Testnet",
+              "path": "/Technical Docs/Developer Resources/Getting_Started_Testnet",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/Developer Resources/PUBLIC_INTERFACES",
+              "path": "/Technical Docs/Developer Resources/PUBLIC_INTERFACES",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/Developer Resources/Testnet_API_Gateway",
+              "path": "/Technical Docs/Developer Resources/Testnet_API_Gateway",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/Grid-Compute/Future-Vision",
+              "path": "/Technical Docs/Grid-Compute/Future-Vision",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/Integration/Minima Integration",
+              "path": "/Technical Docs/Integration/Minima Integration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/Integration/Rosetta API Integration",
+              "path": "/Technical Docs/Integration/Rosetta API Integration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/Performance/Advanced_TPS_Optimization",
+              "path": "/Technical Docs/Performance/Advanced_TPS_Optimization",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/PoAI/AI Block Builder Algorithm",
+              "path": "/Technical Docs/PoAI/AI Block Builder Algorithm",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/PoAI/AI-Validator Algorithm",
+              "path": "/Technical Docs/PoAI/AI-Validator Algorithm",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/PoAI/Color Marker Examples",
+              "path": "/Technical Docs/PoAI/Color Marker Examples",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/PoAI/Color Marker System",
+              "path": "/Technical Docs/PoAI/Color Marker System",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/PoAI/Governance_Implementation",
+              "path": "/Technical Docs/PoAI/Governance_Implementation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/PoAI/Proof-of-AI",
+              "path": "/Technical Docs/PoAI/Proof-of-AI",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/PoAI/Taxonomy",
+              "path": "/Technical Docs/PoAI/Taxonomy",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/PoAI/The Incentive",
+              "path": "/Technical Docs/PoAI/The Incentive",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/PoAI/Validation Process",
+              "path": "/Technical Docs/PoAI/Validation Process",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/PoAI/Voting Algorithm",
+              "path": "/Technical Docs/PoAI/Voting Algorithm",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/Security/AI_Capacity_Implementation",
+              "path": "/Technical Docs/Security/AI_Capacity_Implementation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/Security/Overview",
+              "path": "/Technical Docs/Security/Overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/Security/Pattern_Analysis_Security",
+              "path": "/Technical Docs/Security/Pattern_Analysis_Security",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/Security/Post_Quantum_Cryptography",
+              "path": "/Technical Docs/Security/Post_Quantum_Cryptography",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/SELF Chain/SELF_Chain_Architecture",
+              "path": "/Technical Docs/SELF Chain/SELF_Chain_Architecture",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/SELF Chain/Why Build A Blockchain",
+              "path": "/Technical Docs/SELF Chain/Why Build A Blockchain",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/Storage/Hybrid_Architecture",
+              "path": "/Technical Docs/Storage/Hybrid_Architecture",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/Storage/Storage_Integration",
+              "path": "/Technical Docs/Storage/Storage_Integration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical Docs/Validate/index",
+              "path": "/Technical Docs/Validate/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/️-cloud-architecture",
+              "path": "/category/️-cloud-architecture",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/",
+                "label": "Welcome"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

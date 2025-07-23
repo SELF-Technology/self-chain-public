@@ -1,0 +1,27 @@
+{
+  "id": "Technical Docs/PoAI/Governance_Implementation",
+  "title": "Governance Implementation",
+  "description": "Overview",
+  "source": "@site/../docs/Technical Docs/PoAI/Governance_Implementation.md",
+  "sourceDirName": "Technical Docs/PoAI",
+  "slug": "/Technical Docs/PoAI/Governance_Implementation",
+  "permalink": "/Technical Docs/PoAI/Governance_Implementation",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "title": "Governance Implementation",
+    "sidebar_position": 10
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "The Incentive",
+    "permalink": "/Technical Docs/PoAI/The Incentive"
+  },
+  "next": {
+    "title": "Constellation Overview & Architecture",
+    "permalink": "/Technical Docs/Constellation/Overview"
+  }
+}

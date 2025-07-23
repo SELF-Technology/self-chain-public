@@ -1,0 +1,27 @@
+{
+  "id": "Technical Docs/SELF Chain/Why Build A Blockchain",
+  "title": "Why Build A Blockchain",
+  "description": "Do we need another blockchain?",
+  "source": "@site/../docs/Technical Docs/SELF Chain/Why Build A Blockchain.md",
+  "sourceDirName": "Technical Docs/SELF Chain",
+  "slug": "/Technical Docs/SELF Chain/Why Build A Blockchain",
+  "permalink": "/Technical Docs/SELF Chain/Why Build A Blockchain",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_label": "Why Build A Blockchain",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SELF Chain Architecture",
+    "permalink": "/Technical Docs/SELF Chain/SELF_Chain_Architecture"
+  },
+  "next": {
+    "title": "Getting Started (Testnet)",
+    "permalink": "/Technical Docs/Developer Resources/Getting_Started_Testnet"
+  }
+}

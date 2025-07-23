@@ -77,7 +77,7 @@ max_bandwidth_gb = 50
 # ⚠️  REQUIRED: Validators must run their own AI models
 # Full nodes can operate without AI
 
-# Local AI endpoint (Ollama recommended)
+# Local AI endpoint (OpenLLM recommended)
 ai_endpoint = "http://localhost:11434/v1"
 ai_model = "mistral:7b"  # Minimum model for testnet
 
@@ -166,7 +166,7 @@ transaction_interval_seconds = 60
 # 2. Install dependencies:
 #    - Rust 1.70+
 #    - IPFS daemon
-#    - Ollama (for AI validation)
+#    - OpenLLM (for AI validation)
 #
 # 3. Build and run node:
 #    cargo build --release

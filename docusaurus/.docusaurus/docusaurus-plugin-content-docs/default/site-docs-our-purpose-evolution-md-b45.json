@@ -1,0 +1,27 @@
+{
+  "id": "Our Purpose/evolution",
+  "title": "The Evolution Of Technology",
+  "description": "Technology is evolving in two main directions; towards more centralised control, or towards decentralised, democratic, user-control. Humanity is at a crossroads and everyone has a choice:",
+  "source": "@site/../docs/Our Purpose/evolution.md",
+  "sourceDirName": "Our Purpose",
+  "slug": "/Our Purpose/evolution",
+  "permalink": "/Our Purpose/evolution",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_label": "🔄 The Evolution Of Technology",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "📜 Manifesto",
+    "permalink": "/Our Purpose/manifesto"
+  },
+  "next": {
+    "title": "🔓 A Self-Sovereign Alternative",
+    "permalink": "/Our Purpose/self-sov-alternative"
+  }
+}

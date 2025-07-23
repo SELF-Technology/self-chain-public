@@ -89,18 +89,16 @@ docker run -d \
 ### 3. Run Private LLM
 
 ```bash
-# Pull Ollama image
-docker pull ollama/ollama:latest
+# Pull OpenLLM image
+docker pull bentoml/openllm:latest
 
-# Run Ollama
+# Run OpenLLM
 docker run -d \
-  --name ollama \
+  --name openllm \
   -p 11434:11434 \
-  -v ~/ollama:/root/.ollama \
-  ollama/ollama:latest
-
-# Pull a model (e.g., Phi-3)
-docker exec -it ollama ollama pull phi3:mini
+  -v ~/openllm:/data \
+  bentoml/openllm:latest \
+  start --model-id microsoft/phi-3-mini-4k-instruct
 ```
 
 ## Configuration
@@ -164,17 +162,18 @@ services:
       - RUST_LOG=info
     restart: unless-stopped
     depends_on:
-      - ollama
+      - openllm
       - ipfs
 
-  ollama:
-    image: ollama/ollama:latest
-    container_name: ollama
+  openllm:
+    image: bentoml/openllm:latest
+    container_name: openllm
     ports:
       - "11434:11434"
     volumes:
-      - ./ollama:/root/.ollama
+      - ./openllm:/data
     restart: unless-stopped
+    command: start --model-id microsoft/phi-3-mini-4k-instruct
 
   ipfs:
     image: ipfs/kubo:latest
@@ -225,17 +224,14 @@ sudo bash install.sh
 ipfs init
 ```
 
-### 3. Install Ollama
+### 3. Install OpenLLM
 
 ```bash
-# Install Ollama
-curl -fsSL https://ollama.com/install.sh | sh
+# Install OpenLLM via pip
+pip install openllm
 
-# Start Ollama service
-sudo systemctl start ollama
-
-# Pull a model
-ollama pull phi3:mini
+# Download and start a model
+openllm start microsoft/phi-3-mini-4k-instruct
 ```
 
 ## Node Operations
@@ -254,7 +250,7 @@ docker logs self-node
 
 ```bash
 # Resource usage
-docker stats self-node ollama ipfs
+docker stats self-node openllm ipfs
 
 # Node metrics
 curl http://localhost:3030/metrics

@@ -1,0 +1,25 @@
+{
+  "id": "Technical Docs/Storage/Storage_Integration",
+  "title": "Storage Integration",
+  "description": "📦 SDK Notice: The code examples in this document represent the planned SDK interface design. The SELF SDK is currently under development and these APIs are subject to change.",
+  "source": "@site/../docs/Technical Docs/Storage/Storage_Integration.md",
+  "sourceDirName": "Technical Docs/Storage",
+  "slug": "/Technical Docs/Storage/Storage_Integration",
+  "permalink": "/Technical Docs/Storage/Storage_Integration",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Storage Integration"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Hybrid Architecture",
+    "permalink": "/Technical Docs/Storage/Hybrid_Architecture"
+  },
+  "next": {
+    "title": "✅ Validate",
+    "permalink": "/Technical Docs/Validate/"
+  }
+}

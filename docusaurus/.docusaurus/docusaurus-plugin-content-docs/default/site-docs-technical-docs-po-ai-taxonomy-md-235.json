@@ -1,0 +1,27 @@
+{
+  "id": "Technical Docs/PoAI/Taxonomy",
+  "title": "Taxonomy",
+  "description": "This document defines the core terminology and data structures used in the Proof-of-AI (PoAI) consensus mechanism. Understanding these components is essential for implementing and interacting with SELF Chain's AI-driven validation system.",
+  "source": "@site/../docs/Technical Docs/PoAI/Taxonomy.md",
+  "sourceDirName": "Technical Docs/PoAI",
+  "slug": "/Technical Docs/PoAI/Taxonomy",
+  "permalink": "/Technical Docs/PoAI/Taxonomy",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Taxonomy",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Proof-of-AI",
+    "permalink": "/Technical Docs/PoAI/Proof-of-AI"
+  },
+  "next": {
+    "title": "AI Block Builder Algorithm",
+    "permalink": "/Technical Docs/PoAI/AI Block Builder Algorithm"
+  }
+}

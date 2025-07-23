@@ -162,7 +162,7 @@ SELF Chain operates exclusively in a cloud-first environment:
 ### 2.2 AI Security
 
 1. **AI Validation**
-   - Ollama Cloud integration
+   - OpenLLM integration
    - Context-aware validation
    - Validator reputation system
    - Secure AI processing
@@ -234,7 +234,7 @@ SELF Chain operates exclusively in a cloud-first environment:
 
 ## 6. Documentation References
 
-- Ollama Cloud: https://ollama.ai/docs
+- OpenLLM: https://github.com/bentoml/OpenLLM
 - IPFS: https://docs.ipfs.tech/
 - OrbitDB: https://orbitdb.org/docs/
 - Network Protocols: https://libp2p.io/docs/

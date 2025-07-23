@@ -1,0 +1,25 @@
+{
+  "id": "Technical Docs/Validate/index",
+  "title": "Validate",
+  "description": "Overview",
+  "source": "@site/../docs/Technical Docs/Validate/index.md",
+  "sourceDirName": "Technical Docs/Validate",
+  "slug": "/Technical Docs/Validate/",
+  "permalink": "/Technical Docs/Validate/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Validate"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Storage Integration",
+    "permalink": "/Technical Docs/Storage/Storage_Integration"
+  },
+  "next": {
+    "title": "Rosetta API Integration",
+    "permalink": "/Technical Docs/Integration/Rosetta API Integration"
+  }
+}
