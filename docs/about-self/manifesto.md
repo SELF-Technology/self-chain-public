@@ -26,7 +26,7 @@ This suggests that a balance is required for all who wield freedom. Liberty (the
 
 There are many types of human freedoms; freedom of thought, speech, action, information, privacy, movement, and more. Depending on each individual's circumstance, one may be more important than another. This is in the context of experiencing freedom.
 
-Then there's the enablement of freedom. When an organisation has the option to enable freedom for others, it's often down to how much control the organisation desires.
+Then there's the enablement of freedom. When an organization has the option to enable freedom for others, it's often down to how much control the organization desires.
 
 Where is the line drawn between what is controlled by people, versus what is controlled for people?
 
@@ -36,7 +36,7 @@ It is my belief that we can build structures that enable people to be free, yet,
 
 1. To make decisions that are in accordance with human rights.
 ‍
-2. To not cause or enable harm whilst upholding those rights.
+2. To not cause or enable harm while upholding those rights.
 
 3. To enable people to have control and ownership of their own data, and decide how it is used.
 
@@ -50,7 +50,7 @@ With these commitments in mind, I believe we can bring something to the world th
 
 When I first experienced the Internet, I imagined endless possibilities. This was amplified by the launch of the Worldwide Web, years later. I naively thought the web would be our companion, our concierge, but despite the services attempting to help, the limited choice of content left me cold. I could input data, but the output wasn't contextually specific to me. Whether it was my fascination with Star Trek or vivid dreams, my view of what the Web should be, was significantly out of sync with how it was. And still is.
 
-Whilst the original decentralisation of the internet was more like how I imagined an equal network, the Web was soon populated and controlled by services that paraded "user value" but to me, it seemed that a bunch of increasingly large organisations were taking control of the information flow...manipulating our experience to what they wanted to gain, rather than what would ultimately benefit the people. This trend only increased over time. A summary of my backstory can be found in this post.
+While the original decentralization of the internet was more like how I imagined an equal network, the Web was soon populated and controlled by services that paraded "user value" but to me, it seemed that a bunch of increasingly large organizations were taking control of the information flow...manipulating our experience to what they wanted to gain, rather than what would ultimately benefit the people. This trend only increased over time. A summary of my backstory can be found in this post.
 
 I believe that the most disruptive thing that could happen in today's technology landscape, is a reversal of monopolistic and abusive structures that use humans as batteries and personal information as currency. Perhaps the most significant challenge will be to demonstrate that there is an alternative to the standard way of operating. After all, we have become somewhat immune to the way things are, and we have tolerated it for so long, that an escape hatch may be missed or misinterpreted. Often, to show there's a better solution, one has to show there's a problem in the first place. ‍ I believe it is our duty, our responsibility, to provide the human right to freedom back, across the full spectrum of experiential and enabled freedom. Freedom for your SELF.
 

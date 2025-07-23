@@ -9,7 +9,7 @@ sidebar_position: 2
 
 After looking at many alternatives, we concluded that building what we wanted to build on an existing blockchain would require us to make greater sacrifices than we were willing to make.
 
-Distributed ledger technology was never meant to favour the few – it was meant to be for the masses. The entire objective was that we shouldn't have to rely on third parties. There are, of course, great teams out there building unique and useful products; however, we have yet to find a project that has successfully solved the “blockchain trilemma” to a satisfying degree, due to lack of true decentralisation and democracy within standard consensus mechanisms. 
+Distributed ledger technology was never meant to favor the few – it was meant to be for the masses. The entire objective was that we shouldn't have to rely on third parties. There are, of course, great teams out there building unique and useful products; however, we have yet to find a project that has successfully solved the "blockchain trilemma" to a satisfying degree, due to lack of true decentralization and democracy within standard consensus mechanisms. 
 
 It eventually became clear to us that it was necessary to create our own blockchain; either from scratch, in partnership, or as a modification of an existing network. To give some background to this decision, let us go back a couple of decades to the very inception of blockchain technology. The history involved is a critical part of our reasoning.
 
@@ -45,13 +45,13 @@ Not only were investors becoming a part of the community, but mining began to be
 
 Slowly but surely, bitcoin and blockchain shifted from an opportunity to solve fundamental issues to a mechanism of wealth creation. Large corporations waded in, massive mining farms monopolised the market, and then, in 2024, bitcoin ETFs were approved by the SEC, followed by the Ethereum ETF approval in May 2024.
 
-## The erosion of the meaning of the term decentralisation
+## The erosion of the meaning of the term decentralization
 
-Another development that took place was that the term decentralisation became relative, as if decentralisation is a sliding scale (which it isn’t). This is in stark contrast to nature, where an organism is either centralised or not. A structure is only as decentralised as its most centralised component, and that component is the primary attack vector. If a few large mining farms are mining a network, they are in control and also susceptible to attacks and manipulation.
+Another development that took place was that the term decentralization became relative, as if decentralization is a sliding scale (which it isn't). This is in stark contrast to nature, where an organism is either centralized or not. A structure is only as decentralized as its most centralized component, and that component is the primary attack vector. If a few large mining farms are mining a network, they are in control and also susceptible to attacks and manipulation.
 
 ## Proof of Stake
 
-The same reality is apparent with Proof of Stake (PoS), an alternative consensus mechanism to PoW, now popularised by Ethereum. PoS was meant to incentivise honest behavior by rewarding those who put their crypto up as collateral in order to earn a yield. Again, the more money you have, the bigger influence you get. What this meant, however, was that the control of the network rapidly shifted into the hands of the few.
+The same reality is apparent with Proof of Stake (PoS), an alternative consensus mechanism to PoW, now popularized by Ethereum. PoS was meant to incentivize honest behavior by rewarding those who put their crypto up as collateral in order to earn a yield. Again, the more money you have, the bigger influence you get. What this meant, however, was that the control of the network rapidly shifted into the hands of the few.
 
 Ultimately, governance of any network is about power, and power is all about incentives. Today, there is a conflict of interest between the miners/validators and network users in PoW and PoS blockchains. Users would benefit from faster and cheaper transactions, but in general, this will decrease the profitability of miners and validators, reducing their profits.
 
@@ -67,4 +67,4 @@ One key factor of PoAI is that the algorithms constantly are in the process of l
 
 PoAI can sense and respond to attack vectors and attempts at manipulation and adjust accordingly to mitigate threats. This includes attempts to force gas fees to increase and slow down the network by spamming transactions.
 
-The mechanism can also be manually updated and improved by the core team, with transparently recorded audit trails of what is a) planned in terms of improvements and optimisation, b) why that plan is in place, c) the timeframe of making the adjustments and d) the intended outcome of the adjustments.
+The mechanism can also be manually updated and improved by the core team, with transparently recorded audit trails of what is a) planned in terms of improvements and optimization, b) why that plan is in place, c) the timeframe of making the adjustments and d) the intended outcome of the adjustments.

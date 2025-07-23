@@ -9,7 +9,7 @@ The Super-App will run on the SELF Chain Testnet and each user's profile will be
 
 **SELF AI** - An advanced system that learns about you and generates a unique user profile, enriching your AI experience with persistent memory.
 
-**SELF Browser** - With a built-in VPN, the SELF Browser is your personal web access. Access SELF AI, personalisation features and SELF chain directly from the browser.
+**SELF Browser** - With a built-in VPN, the SELF Browser is your personal web access. Access SELF AI, personalization features and SELF chain directly from the browser.
 
 **SELF Messenger** - Node-to-node messaging, meaning it's only you and the receiver involved. Use your own SELF directly in the chat to plan things to do together.
 
@@ -108,24 +108,24 @@ When you're ready to upgrade, choose your tier by staking SELF tokens:
 
 #### 1. "Privacy Seeker" (70% of users) → Star Tier ⭐
 **Sarah, Marketing Professional**
-- Wants: Ad-free experience, private browsing, secure messaging
-- Values: Simplicity, privacy, no corporate surveillance
-- Choice: Stakes $15 of SELF tokens monthly
-- Benefits: 2GB for all services, faster AI responses
+- **Wants**: Ad-free experience, private browsing, secure messaging
+- **Values**: Simplicity, privacy, no corporate surveillance
+- **Choice**: Stakes $15 of SELF tokens monthly
+- **Benefits**: 2GB for all services, faster AI responses
 
 #### 2. "Power User" (25% of users) → Galaxy Tier 🌌
 **Marcus, Software Developer**
-- Wants: Advanced AI for coding, secure development environment
-- Values: Performance, customization, API access
-- Choice: Stakes $50 of SELF tokens monthly
-- Benefits: 10GB allocation, SDK access, priority support
+- **Wants**: Advanced AI for coding, secure development environment
+- **Values**: Performance, customization, API access
+- **Choice**: Stakes $50 of SELF tokens monthly
+- **Benefits**: 10GB allocation, SDK access, priority support
 
 #### 3. "Web3 Pioneer" (5% of users) → Universe Tier 🪐
 **Priya, Crypto Entrepreneur**
-- Wants: Maximum AI capabilities, DeFi integration, future features
-- Values: Innovation, early access, governance participation
-- Choice: Stakes $150 of SELF tokens monthly
-- Benefits: 50GB allocation, beta features, voting rights
+- **Wants**: Maximum AI capabilities, DeFi integration, future features
+- **Values**: Innovation, early access, governance participation
+- **Choice**: Stakes $150 of SELF tokens monthly
+- **Benefits**: 50GB allocation, beta features, voting rights
 
 ### The Upgrade Experience
 ```javascript

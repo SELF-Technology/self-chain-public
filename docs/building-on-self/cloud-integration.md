@@ -419,9 +419,9 @@ await session.storage.set({
 ## SDK Reference
 
 ### JavaScript/TypeScript
-- [Full API Documentation](https://sdk.self.app/js)
-- [Example Apps](https://github.com/self-chain/sdk-examples)
-- [TypeScript Types](https://sdk.self.app/types)
+- Full API Documentation (Coming Soon)
+- Example Apps (Coming Soon)
+- TypeScript Types (Coming Soon)
 
 ### Error Handling
 ```javascript
@@ -441,14 +441,16 @@ try {
 ## Support & Resources
 
 ### Getting Help
-- **Discord**: [Join #developers channel](https://discord.gg/selfchain)
-- **Forum**: [developers.self.app](https://developers.self.app)
+- **Discord**: [Join our community](https://discord.gg/WdMdVpA4C8)
+- **GitHub**: [Issues & Discussions](https://github.com/SELF-Technology/self-chain-public)
 - **Email**: devs@self.app
 
 ### Resources
-- [Example Apps](https://github.com/self-chain/examples)
-- [Video Tutorials](https://youtube.com/selfchain)
-- [API Status](https://status.self.app)
+- [Documentation](https://docs.self.app)
+- [Project Status](https://docs.self.app/project-status)
+- Example Apps (Coming Soon)
+- Video Tutorials (Coming Soon)
+- API Status (Coming Soon)
 
 ---
 
@@ -468,4 +470,4 @@ try {
 
 ---
 
-*This guide is for building on SELF, not building SELF itself. For contribution to core infrastructure, see our [GitHub](https://github.com/self-chain).*
+*This guide is for building on SELF, not building SELF itself. For contribution to core infrastructure, see our [GitHub](https://github.com/SELF-Technology/self-chain-public).*

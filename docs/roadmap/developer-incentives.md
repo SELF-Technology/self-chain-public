@@ -38,15 +38,15 @@ Here are some initial ideas for the program.
 
 **Secure Document Storage and Sharing**
 
-- Store documents on the blockchain with encryption, share securely via SELF Messenger, and use SELF AI to organise them.
+- Store documents on the blockchain with encryption, share securely via SELF Messenger, and use SELF AI to organize them.
 
-**Decentralised Freelance Marketplace**
+**Decentralized Freelance Marketplace**
 
 - A platform where freelancers and clients connect, with smart contracts managing payments and the AI matching skills, using SELF Messenger for communication.
 
-**Decentralised Finance Applications**
+**Decentralized Finance Applications**
 
-- Access decentralised finance applications directly through the SELF app.
+- Access decentralized finance applications directly through the SELF app.
 
 **Footprint - Next Generation Social Media**
 
@@ -60,7 +60,7 @@ SELF will be working on behalf of each user, connecting two or more SELFs create
 
 - The ability to recall shared memories between two or more people.
 
-- The ability to organise and share content with specific connections.
+- The ability to organize and share content with specific connections.
 
 
 

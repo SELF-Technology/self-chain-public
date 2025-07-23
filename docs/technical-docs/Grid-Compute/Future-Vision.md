@@ -146,7 +146,7 @@ Grid Compute will evolve through stages:
 
 ### For Future Node Operators
 
-- **Stay Informed**: Follow our progress and announcements
+- **Stay Informed**: Follow our progress and announcements - [Join our waitlist](https://form.typeform.com/to/v86s7JS3)
 - **Prepare Infrastructure**: Consider future hardware requirements
 - **Engage with Community**: Help shape the network design
 - **Build Expertise**: Learn about distributed systems and AI
@@ -155,7 +155,7 @@ Grid Compute will evolve through stages:
 
 - **Design for Distribution**: Build applications that can leverage distributed compute
 - **Think Constellation**: Consider industry-specific use cases
-- **Contribute Ideas**: Help define APIs and interfaces
+- **Contribute Ideas**: Help define APIs and interfaces - [Join the discussion](https://github.com/SELF-Technology/self-chain-public/discussions)
 - **Experiment Today**: Test with our current infrastructure while planning for Grid Compute integration
 
 ### For Enterprises
@@ -184,10 +184,10 @@ Grid Compute represents more than distributed computing—it's about creating a 
 - **Data sovereignty is default**: Your data, your control, always
 - **Community owns infrastructure**: No single entity controls the network
 
-This vision aligns perfectly with SELF's mission: creating technology that serves humanity, not corporations.
+This vision aligns perfectly with SELF's mission to enable the future of technology to be yours.
 
 ---
 
 **Remember**: Grid Compute is a future vision that will be realized as our ecosystem grows. Today, we're building the foundation—a robust blockchain, thriving community, and revolutionary consensus mechanism. Each step brings us closer to this distributed future.
 
-*The future is collective. The future is sovereign. The future is SELF.*
+*The Future Of Technology Is Yours.*
