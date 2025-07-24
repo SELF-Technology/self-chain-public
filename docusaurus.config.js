@@ -185,6 +185,13 @@ const config = {
       apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
       indexName: 'self',
       contextualSearch: true,
+      // Ask AI configuration
+      askAi: process.env.ALGOLIA_ASSISTANT_ID ? {
+        assistantId: process.env.ALGOLIA_ASSISTANT_ID,
+        searchParameters: {
+          facetFilters: ['type:content']
+        }
+      } : undefined,
     } : undefined,
     colorMode: {
       defaultMode: 'dark',
