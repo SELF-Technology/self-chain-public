@@ -166,6 +166,7 @@ const config = {
         ],
       },
     ], */
+    './src/plugins/algolia-v4',
   ],
 
   themeConfig: {
@@ -179,20 +180,8 @@ const config = {
       {name: 'twitter:title', content: 'SELF Documentation - The People\'s Blockchain'},
       {name: 'twitter:description', content: 'Build on SELF Chain with Proof-of-AI consensus, post-quantum cryptography, and human-centric design.'},
     ],
-    // Algolia search configuration
-    algolia: process.env.ALGOLIA_APP_ID && process.env.ALGOLIA_SEARCH_API_KEY ? {
-      appId: process.env.ALGOLIA_APP_ID,
-      apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
-      indexName: 'self',
-      contextualSearch: true,
-      // Ask AI configuration
-      askAi: process.env.ALGOLIA_ASSISTANT_ID ? {
-        assistantId: process.env.ALGOLIA_ASSISTANT_ID,
-        searchParameters: {
-          facetFilters: ['type:content']
-        }
-      } : undefined,
-    } : undefined,
+    // Algolia search disabled - using custom SearchBar component with DocSearch v4
+    algolia: undefined,
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: false, // Enable theme switching
@@ -208,12 +197,13 @@ const config = {
         target: '_self', // Opens in same tab
       },
       hideOnScroll: false,
-      items: process.env.ALGOLIA_APP_ID && process.env.ALGOLIA_SEARCH_API_KEY ? [
+      items: [
         {
-          type: 'search',
+          type: 'html',
           position: 'right',
+          value: '<div id="docsearch"></div>',
         },
-      ] : [],
+      ],
     },
     footer: {
       style: 'dark',
