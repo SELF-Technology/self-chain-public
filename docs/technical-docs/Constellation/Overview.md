@@ -281,7 +281,7 @@ Go live in 3-5 weeks with:
 #### For Enterprises
 - **Innovation Focus**: Transform compliance into competitive advantage
 - **Flexible Deployment**: Start with exploration, scale to production
-- **Fast Development**: Production-ready in significantly less time than standard
+- **Fast Deployment**: Production-ready in significantly less time than standard
 - **Proven Technology**: Built on battle-tested infrastructure
 - **Unlimited Scalability**: Grow from pilot to enterprise-wide
 
@@ -315,7 +315,7 @@ Ready to launch your sovereign blockchain and transform your enterprise with AI-
 
 **SELF Chain Constellation - Where Innovation Meets Enterprise Blockchain**
 
-**Transform** regulatory compliance into competitive advantage. **Build** breakthrough blockchain solutions. **Lead** your industry's digital transformation.
+Transform regulatory compliance into competitive advantage. Build breakthrough blockchain solutions. Lead your industry's digital transformation.
 
 ---
 

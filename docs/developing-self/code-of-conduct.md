@@ -120,6 +120,7 @@ This Code of Conduct is adapted from the [Contributor Covenant](https://www.cont
 
 For questions about this Code of Conduct, please contact:
 - Email: devs@self.app
+- Discord: #community-guidelines channel
 
 ## Commitment
 

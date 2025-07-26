@@ -333,7 +333,7 @@ Before making any interface public:
 
 ## Conclusion
 
-These public interfaces provide a safe, useful API surface for developers while protecting SELF Chain's security-critical components. When in doubt, keep it private and consult the [security team](mailto:security@self.app).
+These public interfaces provide a safe, useful API surface for developers while protecting SELF Chain's security-critical components. When in doubt, keep it private and consult the security team.
 
 ---
 
