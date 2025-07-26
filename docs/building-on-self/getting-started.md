@@ -5,18 +5,18 @@ sidebar_position: 2
 
 # Getting Started
 
+:::danger SDKs NOT YET AVAILABLE
+The SELF SDK and MCP integration described in this documentation are planned but not yet released. Code examples shown are specifications that will work when the SDK is deployed.
+
+**Expected SDK Release**: Q4 2025 (Watch [GitHub Releases](https://github.com/SELF-Technology/self-chain-public/releases) for updates)
+:::
+
 :::warning TESTNET ONLY
 **SELF Chain is currently in testnet phase.** 
 - Do not use real assets or deploy production applications
 - Testnet tokens have ZERO monetary value
 - Network may reset at any time without notice
 - All data is temporary and will be lost
-:::
-
-:::danger SDKs NOT YET AVAILABLE
-The SELF SDK and MCP integration described in this documentation are planned but not yet released. Code examples shown are specifications that will work when the SDK is deployed.
-
-**Expected SDK Release**: Q4 2025 (Watch [GitHub Releases](https://github.com/SELF-Technology/self-chain-public/releases) for updates)
 :::
 
 :::info Development Status
