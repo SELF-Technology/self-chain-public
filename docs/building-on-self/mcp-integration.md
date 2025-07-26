@@ -5,6 +5,21 @@ sidebar_position: 4
 
 # Model Context Protocol (MCP) Integration
 
+:::danger NOT YET AVAILABLE
+The SELF MCP SDK and integration described in this documentation is planned but not yet released. The code examples and features shown are specifications only and will not work until the SDK is deployed.
+
+**Expected Release**: Q4 2025 (Watch [GitHub Releases](https://github.com/SELF-Technology/self-chain-public/releases) for updates)
+:::
+
+:::info Current Status
+- ✅ MCP specification complete
+- ✅ Architecture designed
+- ✅ Documentation ready
+- ❌ SDK implementation pending
+- ❌ MCP server integrations pending
+- ❌ Testing infrastructure pending
+:::
+
 ## Overview
 
 SELF Chain pioneers the integration of Model Context Protocol (MCP) as a core component of its AI-native blockchain platform. This integration enables developers to build sophisticated applications with built-in AI capabilities while maintaining user privacy and data sovereignty.
@@ -53,7 +68,7 @@ SELF MCP Architecture
 SELF MCP enables unique collaborative AI features while maintaining complete privacy:
 
 ```typescript
-// Example: Privacy-preserving collaboration
+// PLANNED API - Example of how privacy-preserving collaboration will work
 const collaborationSession = await mcp.createSession({
   type: 'collaborative',
   participants: ['alice.self', 'bob.self'],
@@ -76,7 +91,7 @@ const insights = await collaborationSession.analyze({
 One AI instance can work seamlessly across multiple applications:
 
 ```typescript
-// Browser app shares context with messaging app
+// PLANNED API - Browser app shares context with messaging app
 await mcp.shareContext({
   from: 'browser',
   to: 'messenger',
@@ -93,7 +108,7 @@ await mcp.shareContext({
 MCP automatically selects the right tools based on context:
 
 ```typescript
-// Developer writes naturally - MCP handles tool selection
+// PLANNED API - Developer writes naturally, MCP handles tool selection
 const result = await mcp.process({
   input: "Analyze this smart contract for security issues",
   context: { code: contractCode }
@@ -109,7 +124,7 @@ const result = await mcp.process({
 Each user maintains their own AI instance with full control:
 
 ```typescript
-// Personal AI configuration
+// PLANNED API - Personal AI configuration
 const personalAI = await mcp.initializeAI({
   storage: 'local-encrypted',
   memory: 'persistent',
@@ -129,6 +144,7 @@ npm install @self/mcp
 ### Basic Setup
 
 ```typescript
+// PLANNED API - Basic MCP setup
 import { SELFMCP } from '@self/mcp';
 
 const mcp = new SELFMCP({
@@ -308,12 +324,28 @@ Build AI services that:
 
 ## Getting Started
 
-While the full MCP SDK is coming in Q4 2025, developers can:
+:::warning Development Timeline
+The SELF MCP SDK is currently in development and not yet available for use. All code examples in this documentation are planned APIs that will be released in Q4 2025.
+:::
 
-1. **Learn**: Study MCP patterns and architecture
-2. **Design**: Plan MCP integration into your applications
-3. **Experiment**: Test with open-source MCP implementations
-4. **Prepare**: Design privacy-first application architectures
+While waiting for the MCP SDK release, developers can:
+
+1. **Learn**: Study MCP patterns and architecture from this specification
+2. **Design**: Plan how MCP will integrate into your future applications
+3. **Experiment**: Test with open-source MCP implementations to understand the protocol
+4. **Prepare**: Design privacy-first application architectures that will leverage SELF MCP
+
+### What You CAN Do Now:
+- ✅ Review the planned API and architecture
+- ✅ Understand MCP concepts and patterns
+- ✅ Design your application with MCP in mind
+- ✅ Join our community for updates
+
+### What You CANNOT Do Yet:
+- ❌ Install or use @self/mcp package
+- ❌ Connect to SELF MCP servers
+- ❌ Deploy MCP-powered applications
+- ❌ Access the features described in this documentation
 
 ## Resources
 
