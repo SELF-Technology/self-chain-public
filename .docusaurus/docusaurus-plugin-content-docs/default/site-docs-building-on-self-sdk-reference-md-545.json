@@ -1,7 +1,7 @@
 {
   "id": "building-on-self/sdk-reference",
   "title": "SDK Reference",
-  "description": "When released, these SDKs will be for testnet use only:",
+  "description": "The SDKs described in this documentation are planned but not yet available. All code examples and features shown are specifications only and will not work until the SDKs are released.",
   "source": "@site/docs/building-on-self/sdk-reference.md",
   "sourceDirName": "building-on-self",
   "slug": "/building-on-self/sdk-reference",

@@ -4,11 +4,27 @@ sidebar_position: 6
 
 # SDK Reference
 
+:::danger NOT YET RELEASED
+The SDKs described in this documentation are planned but not yet available. All code examples and features shown are specifications only and will not work until the SDKs are released.
+
+**Expected Release**: Q4 2025 for JavaScript/TypeScript SDK (Watch [GitHub Releases](https://github.com/SELF-Technology/self-chain-public/releases) for updates)
+:::
+
 :::warning TESTNET ONLY
 When released, these SDKs will be for testnet use only:
 - Do not use in production or with real assets
 - Testnet tokens have ZERO monetary value
 - Network may reset at any time without notice
+:::
+
+:::info Current Status
+- ✅ SDK architecture designed
+- ✅ API specifications complete
+- ✅ Documentation ready
+- ❌ JavaScript/TypeScript SDK pending (Q4 2025)
+- ❌ Rust SDK pending (Q1 2026)
+- ❌ Python SDK pending (Q2 2026)
+- ❌ Go SDK pending (Q2 2026)
 :::
 
 ## AI-Native SDK Overview
