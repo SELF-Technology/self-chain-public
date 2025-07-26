@@ -120,9 +120,9 @@ As governments and corporations tighten their grip on digital life, SELF provide
 ## 🎬 Get Started
 
 <div className="button-container">
-  <a href="/project-status">See What's Live</a>
-  <a href="/building-on-self/getting-started">Start Building</a>
-  <a href="https://github.com/SELF-Technology/self-chain-public">Explore the Code</a>
+  <a href="/project-status">Current Status</a>
+  <a href="/roadmap/Introduction">View Roadmap</a>
+  <a href="https://discord.gg/WdMdVpA4C8">Join Community</a>
 </div>
 
 ## 📚 Learn More
@@ -133,7 +133,8 @@ As governments and corporations tighten their grip on digital life, SELF provide
 - [Project Roadmap](/roadmap/Introduction) - Where we're going
 
 **For Builders**
-- [Developer Guide](/building-on-self/getting-started) - Start building on SELF
+- [Developer Roadmap](/roadmap/Introduction) - See what's coming for developers
+- [SELF MCP Vision](/building-on-self/mcp-integration) - Explore our AI-native development platform
 - [Architecture Deep Dive](/technical-docs/self-chain/SELF_Chain_Architecture) - Technical details
 - [Contribute to Core](/developing-self) - Help build SELF
 
