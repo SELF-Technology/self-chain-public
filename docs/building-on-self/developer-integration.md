@@ -4,9 +4,24 @@ sidebar_position: 3
 
 # Developer Integration Guide
 
-> 🚧 **NOT YET AVAILABLE**: This guide describes the PLANNED developer integration for SELF Chain. The features, APIs, and SDKs described here do not exist yet. This is a design specification for future implementation.
+:::danger NOT YET AVAILABLE
+This guide describes the PLANNED developer integration for SELF Chain. The features, APIs, and SDKs described here do not exist yet. This is a design specification for future implementation.
 
-> ⚠️ **DO NOT ATTEMPT**: The code examples and endpoints shown are conceptual. They will not work as the infrastructure is not yet deployed.
+**Expected Availability**: Q4 2025 (Watch [GitHub Releases](https://github.com/SELF-Technology/self-chain-public/releases) for updates)
+:::
+
+:::warning DO NOT ATTEMPT
+The code examples and endpoints shown are conceptual. They will not work as the infrastructure is not yet deployed.
+:::
+
+:::info Current Status
+- ✅ Integration patterns designed
+- ✅ API specifications complete
+- ✅ Documentation ready
+- ❌ SDK implementation pending
+- ❌ Infrastructure deployment pending
+- ❌ Testing environment pending
+:::
 
 ## SELF's MCP-Powered Development Platform
 

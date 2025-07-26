@@ -13,6 +13,12 @@ sidebar_position: 2
 - All data is temporary and will be lost
 :::
 
+:::danger SDKs NOT YET AVAILABLE
+The SELF SDK and MCP integration described in this documentation are planned but not yet released. Code examples shown are specifications that will work when the SDK is deployed.
+
+**Expected SDK Release**: Q4 2025 (Watch [GitHub Releases](https://github.com/SELF-Technology/self-chain-public/releases) for updates)
+:::
+
 :::info Development Status
 These developer resources are in beta. Many features are still being developed. See [Project Status](/project-status) for current capabilities.
 :::

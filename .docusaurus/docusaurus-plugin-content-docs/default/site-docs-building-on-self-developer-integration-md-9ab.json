@@ -1,7 +1,7 @@
 {
   "id": "building-on-self/developer-integration",
   "title": "Developer Integration Guide",
-  "description": "🚧 NOT YET AVAILABLE: This guide describes the PLANNED developer integration for SELF Chain. The features, APIs, and SDKs described here do not exist yet. This is a design specification for future implementation.",
+  "description": "This guide describes the PLANNED developer integration for SELF Chain. The features, APIs, and SDKs described here do not exist yet. This is a design specification for future implementation.",
   "source": "@site/docs/building-on-self/developer-integration.md",
   "sourceDirName": "building-on-self",
   "slug": "/building-on-self/developer-integration",
