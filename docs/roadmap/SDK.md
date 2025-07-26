@@ -23,4 +23,4 @@ The SELF SDK will be initially developed on the SELF Chain Testnet, enabling dev
 
 ## Learn More
 
-For detailed information about the planned SDK structure and implementation, see the [SDK Structure documentation](/building-on-self/sdk-structure).
+For detailed information about the planned SDK structure and implementation, see the [SDK Reference documentation](/building-on-self/sdk-reference).

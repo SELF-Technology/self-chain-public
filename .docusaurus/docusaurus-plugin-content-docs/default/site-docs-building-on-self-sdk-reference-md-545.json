@@ -1,0 +1,26 @@
+{
+  "id": "building-on-self/sdk-reference",
+  "title": "SDK Reference",
+  "description": "When released, these SDKs will be for testnet use only:",
+  "source": "@site/docs/building-on-self/sdk-reference.md",
+  "sourceDirName": "building-on-self",
+  "slug": "/building-on-self/sdk-reference",
+  "permalink": "/building-on-self/sdk-reference",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Testnet API Gateway",
+    "permalink": "/building-on-self/api-gateway"
+  },
+  "next": {
+    "title": "Contributing to SELF Chain",
+    "permalink": "/developing-self/"
+  }
+}

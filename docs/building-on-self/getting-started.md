@@ -17,9 +17,21 @@ sidebar_position: 2
 These developer resources are in beta. Many features are still being developed. See [Project Status](/project-status) for current capabilities.
 :::
 
-## Welcome Developers!
+## Welcome to AI-Native Blockchain Development!
 
-Welcome to SELF Chain - a revolutionary blockchain powered by Proof-of-AI (PoAI) consensus. This guide will help you start building on our testnet.
+SELF Chain isn't just another blockchain - it's the **world's first AI-native blockchain platform**. Built from the ground up with Proof-of-AI consensus, SELF radically simplifies blockchain development by making AI integration a core feature, not an afterthought.
+
+### 🤖 Why SELF is Different
+
+**AI-Native by Design:**
+- **Proof-of-AI Consensus**: AI validators and block builders ensure optimal network performance
+- **Built-in Intelligence**: Every transaction benefits from AI validation and optimization
+- **Radically Simplified Development**: No complex infrastructure setup - AI handles the complexity
+
+**For Developers, This Means:**
+- Focus on building great applications, not managing blockchain complexity
+- Native AI capabilities without third-party integrations
+- Privacy-preserving AI that works across your entire application ecosystem
 
 ## 🚧 Current Testnet Status
 
@@ -33,115 +45,66 @@ Welcome to SELF Chain - a revolutionary blockchain powered by Proof-of-AI (PoAI)
 
 Before you begin, ensure you have:
 
-- **Rust** 1.70 or higher
-- **Node.js** 18 or higher  
-- **Git**
-- **Docker** (optional, for containerized development)
+- **Node.js** 18 or higher (for future SDK usage)
+- **Git** (for version control)
 - Basic understanding of blockchain concepts
 
-## Testnet Setup Guide
+## Ready to Build with AI-Native Blockchain?
 
-:::caution Technical Expertise Required
-This guide requires blockchain development experience. Easy-access developer tools (API, SDK, faucet) are not yet available. See [Project Status](/project-status) for current limitations.
-:::
+**SELF Chain's Developer Tools Coming Q4 2025**
 
-### 1. Clone the Repository
+SELF Chain's AI-native SDKs and APIs are currently in final development. While we prepare the most advanced blockchain development platform, here's how to get ready:
 
-```bash
-git clone https://github.com/SELF-Technology/self-chain-public.git
-cd self-chain-public
-```
+### **What You Can Do Now:**
+- ✅ **Learn**: Explore SELF's [AI-native architecture](/technical-docs/PoAI/Proof-of-AI)
+- ✅ **Plan**: Design your application architecture  
+- ✅ **Connect**: Join our developer community for early access
+- ✅ **Prepare**: Get ready for radically simplified blockchain development
 
-### 2. Set Up Testnet Configuration
+### **Coming Soon (Q4 2025):**
+- 🔄 **JavaScript/TypeScript SDK**: `npm install @self/sdk`
+- 🔄 **Public API Gateway**: Direct testnet access without running nodes
+- 🔄 **AI-Native Tools**: Built-in SELF AI integration for intelligent development
+- 🔄 **Token Faucet**: Get test tokens instantly
+- 🔄 **Block Explorer**: Visual blockchain exploration
 
-Create a testnet configuration file:
+### **Want Early Access?**
+Join our developer community to be first in line:
+- **Discord**: [SELF Community](https://discord.gg/WdMdVpA4C8) - Get early access notifications
+- **GitHub**: [Follow releases](https://github.com/SELF-Technology/self-chain-public/releases)
+- **Email**: devs@self.app for direct developer updates
 
-```bash
-# WARNING: This is a template - adjust for your setup
-# This example shows the planned configuration format
-cp config/testnet.example.toml config/testnet.toml
-```
+## Why SELF's AI-Native Development Will Be Revolutionary
 
-> ⚠️ **IMPORTANT**: Never use mainnet keys or real funds on testnet!
+While you wait, understand what makes SELF different from every other blockchain platform:
 
-### 3. Get Testnet Tokens
+### **Traditional Blockchain Development Pain Points:**
+- Complex infrastructure setup
+- Manual security auditing
+- Fragmented tooling
+- Steep learning curves
+- No built-in intelligence
 
-Testnet tokens are available from our faucet:
+### **SELF's AI-Native Solution:**
+- **Zero Infrastructure Setup**: AI handles complexity
+- **Built-in Security**: Real-time vulnerability detection
+- **Integrated Tooling**: Everything works together seamlessly  
+- **Intelligent Assistance**: AI guides development process
+- **Cross-App Coordination**: Apps work together intelligently
 
-```bash
-# ⚠️ NOT YET AVAILABLE
-# The testnet currently operates without a token economy
-# Token faucet will be available when the token system is implemented
-# See Project Status section for updates
-```
+### **Revolutionary Use Cases You'll Build:**
 
-### 4. Connect to Testnet
+**🤖 Intelligent Personal Assistants**
+Your users' AI learns their preferences and helps across all their apps - calendar, messaging, finance, health - while keeping data completely private.
 
-```javascript
-// ⚠️ CODE EXAMPLE - NOT YET FUNCTIONAL
-// JavaScript SDK is currently in development
-// This shows the planned API interface:
+**🔒 Privacy-Preserving Collaboration**
+Teams can collaborate using AI without anyone's personal data leaving their control. Revolutionary for enterprise and creative projects.
 
-const { SELFClient } = require('@self-chain/sdk'); // Package not yet published
+**🌐 Self-Sovereign Web Services**
+Build applications where users truly own their data and AI, creating new business models based on user empowerment rather than data extraction.
 
-const client = new SELFClient({
-  network: 'testnet',
-  endpoint: 'https://testnet-api.self.app', // API Gateway not yet deployed
-  // WARNING: This is a testnet endpoint - do not send real assets!
-});
-```
-
-## Developer Expectations
-
-### What You Can Do Today
-
-✅ **Available Now:**
-- Clone and build the SELF Chain node from source
-- Run a local development node for testing
-- Connect to the testnet by running your own node
-- Explore the open source codebase
-- Test core blockchain functionality
-- Participate in consensus as a validator (requires AI setup)
-
-### What's Coming Soon
-
-🔄 **In Active Development:**
-- Public API Gateway for easy testnet access
-- JavaScript/TypeScript SDK
-- Token faucet for getting test tokens
-- Configuration templates and Docker images
-- Comprehensive developer documentation
-
-### What's Not Ready Yet
-
-❌ **Not Available:**
-- Production deployment (testnet only)
-- Direct API access without running a node
-- SDK packages (npm, crates.io, pip)
-- GUI tools or block explorer
-- Smart contract deployment
-- Stable network (expect resets)
-
-### Required Technical Skills
-
-To work with SELF Chain today, you should be comfortable with:
-- Building Rust projects from source
-- Running command-line blockchain nodes
-- Understanding P2P networking basics
-- Debugging configuration issues
-- Working without extensive documentation
-
-If this seems daunting, consider waiting for our developer tools release later this year, which will provide a much easier onboarding experience.
-
-## Understanding PoAI Consensus
-
-SELF Chain uses Proof-of-AI (PoAI) consensus, which is fundamentally different from traditional blockchains:
-
-1. **AI-Block Builders** create optimal blocks
-2. **Voting Algorithm** coordinates consensus
-3. **AI-Validators** determine the winning block
-
-Learn more: [Proof-of-AI Documentation](/technical-docs/PoAI/Proof-of-AI)
+**💡 AI-Enhanced Everything**
+Every blockchain interaction becomes intelligent - transactions optimize themselves, security scans happen automatically, and user experiences adapt in real-time.
 
 ## Testnet Limitations
 

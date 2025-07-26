@@ -1,26 +1,26 @@
 {
-  "id": "building-on-self/cloud-integration",
+  "id": "building-on-self/developer-integration",
   "title": "Developer Integration Guide",
   "description": "🚧 NOT YET AVAILABLE: This guide describes the PLANNED developer integration for SELF Chain. The features, APIs, and SDKs described here do not exist yet. This is a design specification for future implementation.",
-  "source": "@site/docs/building-on-self/cloud-integration.md",
+  "source": "@site/docs/building-on-self/developer-integration.md",
   "sourceDirName": "building-on-self",
-  "slug": "/building-on-self/cloud-integration",
-  "permalink": "/building-on-self/cloud-integration",
+  "slug": "/building-on-self/developer-integration",
+  "permalink": "/building-on-self/developer-integration",
   "draft": false,
   "unlisted": false,
   "tags": [],
   "version": "current",
-  "sidebarPosition": 5,
+  "sidebarPosition": 3,
   "frontMatter": {
-    "sidebar_position": 5
+    "sidebar_position": 3
   },
   "sidebar": "docs",
   "previous": {
-    "title": "Testnet API Gateway",
-    "permalink": "/building-on-self/api-gateway"
+    "title": "Getting Started",
+    "permalink": "/building-on-self/getting-started"
   },
   "next": {
-    "title": "Contributing to SELF Chain",
-    "permalink": "/developing-self/"
+    "title": "Testnet API Gateway",
+    "permalink": "/building-on-self/api-gateway"
   }
 }

@@ -39,15 +39,15 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '3eb'),
+    component: ComponentCreator('/', '68e'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '9e6'),
+        component: ComponentCreator('/', '1c7'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', 'eb2'),
+            component: ComponentCreator('/', '1e7'),
             routes: [
               {
                 path: '/about-self/creation-brand',
@@ -104,8 +104,8 @@ export default [
                 sidebar: "docs"
               },
               {
-                path: '/building-on-self/cloud-integration',
-                component: ComponentCreator('/building-on-self/cloud-integration', '981'),
+                path: '/building-on-self/developer-integration',
+                component: ComponentCreator('/building-on-self/developer-integration', 'dc5'),
                 exact: true,
                 sidebar: "docs"
               },
@@ -116,8 +116,8 @@ export default [
                 sidebar: "docs"
               },
               {
-                path: '/building-on-self/sdk-structure',
-                component: ComponentCreator('/building-on-self/sdk-structure', 'd95'),
+                path: '/building-on-self/sdk-reference',
+                component: ComponentCreator('/building-on-self/sdk-reference', '501'),
                 exact: true,
                 sidebar: "docs"
               },

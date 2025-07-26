@@ -17,11 +17,11 @@
   },
   "sidebar": "docs",
   "previous": {
-    "title": "Building on SELF",
+    "title": "Developer Guide Overview",
     "permalink": "/building-on-self/"
   },
   "next": {
-    "title": "SDK Structure",
-    "permalink": "/building-on-self/sdk-structure"
+    "title": "Developer Integration Guide",
+    "permalink": "/building-on-self/developer-integration"
   }
 }
