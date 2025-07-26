@@ -1,0 +1,27 @@
+{
+  "id": "technical-docs/Integration/minima-integration",
+  "title": "Minima Integration",
+  "description": "Overview",
+  "source": "@site/docs/technical-docs/Integration/minima-integration.md",
+  "sourceDirName": "technical-docs/Integration",
+  "slug": "/technical-docs/Integration/minima-integration",
+  "permalink": "/technical-docs/Integration/minima-integration",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_label": "Minima Integration",
+    "sidebar_position": 3
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Rosetta API Integration",
+    "permalink": "/technical-docs/Integration/rosetta-api-integration"
+  },
+  "next": {
+    "title": "Advanced TPS Optimization",
+    "permalink": "/technical-docs/Performance/Advanced_TPS_Optimization"
+  }
+}

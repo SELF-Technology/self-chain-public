@@ -1,0 +1,27 @@
+{
+  "id": "building-on-self/api-gateway",
+  "title": "Testnet API Gateway",
+  "description": "This API gateway is planned but not yet active. The endpoints shown below are specifications only and will not work until deployment is complete.",
+  "source": "@site/docs/building-on-self/api-gateway.md",
+  "sourceDirName": "building-on-self",
+  "slug": "/building-on-self/api-gateway",
+  "permalink": "/building-on-self/api-gateway",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Testnet API Gateway",
+    "sidebar_position": 4
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "SDK Structure",
+    "permalink": "/building-on-self/sdk-structure"
+  },
+  "next": {
+    "title": "Developer Integration Guide",
+    "permalink": "/building-on-self/cloud-integration"
+  }
+}

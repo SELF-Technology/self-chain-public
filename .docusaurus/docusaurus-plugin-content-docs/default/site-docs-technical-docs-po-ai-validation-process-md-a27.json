@@ -1,0 +1,27 @@
+{
+  "id": "technical-docs/PoAI/validation-process",
+  "title": "Validation Process",
+  "description": "AI validators participate in every vote to determine the block builder with each new round of block assembly. The AI validator votes independently, without user intervention, in the background. The AI validator's artificial intelligence model is being trained based on the results of previous voting and analysis of the participants' block builders' parameters, as well as the requested manual votes of the AI validator's owner.",
+  "source": "@site/docs/technical-docs/PoAI/validation-process.md",
+  "sourceDirName": "technical-docs/PoAI",
+  "slug": "/technical-docs/PoAI/validation-process",
+  "permalink": "/technical-docs/PoAI/validation-process",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_label": "Validation Process",
+    "sidebar_position": 8
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Color Marker Examples",
+    "permalink": "/technical-docs/PoAI/color-marker-examples"
+  },
+  "next": {
+    "title": "The Incentive",
+    "permalink": "/technical-docs/PoAI/the-incentive"
+  }
+}

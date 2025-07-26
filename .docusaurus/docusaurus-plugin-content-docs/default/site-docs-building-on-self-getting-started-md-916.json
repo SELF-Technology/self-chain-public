@@ -1,0 +1,27 @@
+{
+  "id": "building-on-self/getting-started",
+  "title": "Getting Started",
+  "description": "SELF Chain is currently in testnet phase.",
+  "source": "@site/docs/building-on-self/getting-started.md",
+  "sourceDirName": "building-on-self",
+  "slug": "/building-on-self/getting-started",
+  "permalink": "/building-on-self/getting-started",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Getting Started",
+    "sidebar_position": 2
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Building on SELF",
+    "permalink": "/building-on-self/"
+  },
+  "next": {
+    "title": "SDK Structure",
+    "permalink": "/building-on-self/sdk-structure"
+  }
+}

@@ -7,7 +7,7 @@ sidebar_position: 5
 
 AI validators are lite blockchain nodes that store network wallet addresses and color markers. [Color markers](color-marker-system) are a key part of validation and connecting a block to the blockchain:
 
-* Each wallet in the system is classed as a HEX wallet as it has a colour attributed to it using a hexadecimal value. When a user signs a transaction in their crypto-wallet, a hexidecimal hash is generated.
+* Each wallet in the system is classed as a HEX wallet as it has a color attributed to it using a hexadecimal value. When a user signs a transaction in their crypto-wallet, a hexidecimal hash is generated.
 * The AI validator stores information about the current color of the wallet.
 * The block builder divides the transaction hash into six parts. It divides each part into two and adds them until it gets a number of one character. Thus, it receives six numbers in HEX, which the block builder glues into a single number, which we term a HEX transaction. Next, the block builder adds the HEX wallet with the HEX transaction and receives a new HEX wallet.
 * The HEX of the new HEX wallet and the corresponding transaction hash are sent to the block for which AI validators are selected. AI validators are selected randomly among all those who voted for the AI builder in this round but only to those whose votes were not given to the winning AI builder (the random number is selected according to a special formula). AI validators also form the transaction hash into a transaction HEX and add it to the existing HEX wallet, obtaining a final HEX wallet.

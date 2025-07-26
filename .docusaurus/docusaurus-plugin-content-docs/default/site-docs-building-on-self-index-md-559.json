@@ -1,0 +1,27 @@
+{
+  "id": "building-on-self/index",
+  "title": "Building on SELF",
+  "description": "Welcome to the developer guide for building applications on SELF Chain! This section covers everything you need to know about creating apps that interact with SELF's infrastructure and user instances.",
+  "source": "@site/docs/building-on-self/index.md",
+  "sourceDirName": "building-on-self",
+  "slug": "/building-on-self/",
+  "permalink": "/building-on-self/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Building on SELF",
+    "sidebar_position": 1
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "💻 Operating System",
+    "permalink": "/roadmap/self-os"
+  },
+  "next": {
+    "title": "Getting Started",
+    "permalink": "/building-on-self/getting-started"
+  }
+}

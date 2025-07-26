@@ -42,250 +42,250 @@
       "plugin": "plugin---docusaurus-debugb-38-ad3"
     }
   },
-  "/-eb1": {
+  "/-3eb": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---aba-d70"
     }
   },
-  "/-8a9": {
+  "/-9e6": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---22-d-307"
   },
-  "/-67e": {
+  "/-eb2": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
-  "/About SELF/creation-brand-dbc": {
+  "/about-self/creation-brand-2e2": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---about-self-creation-brand-328-531"
+    "content": "content---about-self-creation-brand-676-913"
   },
-  "/About SELF/evolution-df0": {
+  "/about-self/evolution-13d": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---about-self-evolution-3-af-dc6"
+    "content": "content---about-self-evolution-084-0cf"
   },
-  "/About SELF/long-term-75e": {
+  "/about-self/long-term-96c": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---about-self-long-term-0-c-3-e45"
+    "content": "content---about-self-long-termb-4-f-ad2"
   },
-  "/About SELF/manifesto-841": {
+  "/about-self/manifesto-b23": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---about-self-manifestoe-35-262"
+    "content": "content---about-self-manifestoba-3-7b6"
   },
-  "/About SELF/Media Coverage-37f": {
+  "/about-self/media-coverage-49c": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---about-self-media-coverage-5-ee-304"
+    "content": "content---about-self-media-coverage-9-d-0-756"
   },
-  "/About SELF/self-sov-alternative-1d2": {
+  "/about-self/self-sov-alternative-03e": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---about-self-self-sov-alternativeae-2-3ec"
+    "content": "content---about-self-self-sov-alternative-02-c-b1b"
   },
-  "/About SELF/the-story-918": {
+  "/about-self/the-story-7e6": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---about-self-the-story-4-a-7-0cb"
+    "content": "content---about-self-the-story-3-c-3-e00"
   },
-  "/Building-on-SELF/-588": {
+  "/building-on-self/-21e": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---building-on-self-674-aa6"
+    "content": "content---building-on-self-559-0c2"
   },
-  "/Building-on-SELF/api-gateway-573": {
+  "/building-on-self/api-gateway-795": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---building-on-self-api-gateway-5-ad-51a"
+    "content": "content---building-on-self-api-gateway-5-cf-c60"
   },
-  "/Building-on-SELF/cloud-integration-4fb": {
+  "/building-on-self/cloud-integration-981": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---building-on-self-cloud-integrationa-18-ef7"
+    "content": "content---building-on-self-cloud-integrationf-5-b-e1d"
   },
-  "/Building-on-SELF/getting-started-54a": {
+  "/building-on-self/getting-started-353": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---building-on-self-getting-startedae-9-448"
+    "content": "content---building-on-self-getting-started-916-ad8"
   },
-  "/Building-on-SELF/sdk-structure-df2": {
+  "/building-on-self/sdk-structure-d95": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---building-on-self-sdk-structure-107-657"
+    "content": "content---building-on-self-sdk-structure-071-c37"
   },
   "/category/️-cloud-architecture-ca7": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---category-️-cloud-architecturedf-0-c33"
   },
-  "/Developing SELF/-87b": {
+  "/developing-self/-a82": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---developing-self-6-c-5-493"
+    "content": "content---developing-self-293-3b1"
   },
-  "/Developing SELF/code-of-conduct-d4b": {
+  "/developing-self/code-of-conduct-dca": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---developing-self-code-of-conductc-5-a-3f2"
+    "content": "content---developing-self-code-of-conductf-74-096"
   },
-  "/Developing SELF/governance-bf4": {
+  "/developing-self/governance-7bd": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---developing-self-governance-0-cf-f47"
+    "content": "content---developing-self-governance-42-f-fc4"
   },
-  "/Developing SELF/security-03c": {
+  "/developing-self/security-85b": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---developing-self-security-506-173"
+    "content": "content---developing-self-security-61-c-100"
   },
   "/project-status/-1ce": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---project-status-17-c-2e7"
   },
-  "/Roadmap/Beta Web App-181": {
+  "/roadmap/beta-web-app-354": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---roadmap-beta-web-appc-56-78a"
+    "content": "content---roadmap-beta-web-app-827-b9f"
   },
-  "/Roadmap/Developer Incentives-e99": {
+  "/roadmap/developer-incentives-884": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---roadmap-developer-incentives-6-a-7-9ba"
+    "content": "content---roadmap-developer-incentivesd-2-b-58b"
   },
-  "/Roadmap/Introduction-09b": {
+  "/roadmap/Introduction-4f0": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---roadmap-introduction-528-e77"
+    "content": "content---roadmap-introduction-6-ad-6b7"
   },
-  "/Roadmap/SDK-b8f": {
+  "/roadmap/SDK-21f": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---roadmap-sd-kdd-3-f55"
+    "content": "content---roadmap-sdk-133-d7f"
   },
-  "/Roadmap/SELF OS-537": {
+  "/roadmap/self-os-897": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---roadmap-self-os-7-c-6-6f0"
+    "content": "content---roadmap-self-os-678-8ae"
   },
-  "/Roadmap/Super-App Testnet-978": {
+  "/roadmap/super-app-testnet-43d": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---roadmap-super-app-testnetca-4-253"
+    "content": "content---roadmap-super-app-testnet-00-e-4f8"
   },
-  "/Roadmap/Token/Overview-d2b": {
+  "/roadmap/Token/Overview-5af": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---roadmap-token-overview-794-596"
+    "content": "content---roadmap-token-overviewa-54-500"
   },
-  "/Roadmap/Token/Smart-Contract-Architecture-b03": {
+  "/roadmap/Token/Smart-Contract-Architecture-4bc": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---roadmap-token-smart-contract-architecturee-00-385"
+    "content": "content---roadmap-token-smart-contract-architecture-5-ed-0cb"
   },
-  "/Roadmap/Token/Tokenomics-aea": {
+  "/roadmap/Token/Tokenomics-141": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---roadmap-token-tokenomicse-59-5ad"
+    "content": "content---roadmap-token-tokenomics-337-76d"
   },
-  "/Technical Docs/Cloud-Architecture/Developer-Integration-d5e": {
+  "/technical-docs/Cloud-Architecture/Developer-Integration-4d4": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-cloud-architecture-developer-integration-779-be4"
+    "content": "content---technical-docs-cloud-architecture-developer-integrationfb-9-ec8"
   },
-  "/Technical Docs/Cloud-Architecture/Overview-df1": {
+  "/technical-docs/Cloud-Architecture/Overview-69d": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-cloud-architecture-overview-7-ea-755"
+    "content": "content---technical-docs-cloud-architecture-overview-090-1ae"
   },
-  "/Technical Docs/Cloud-Architecture/Running-Your-Own-Node-4ed": {
+  "/technical-docs/Cloud-Architecture/Running-Your-Own-Node-33e": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-cloud-architecture-running-your-own-node-049-ce7"
+    "content": "content---technical-docs-cloud-architecture-running-your-own-node-15-f-791"
   },
-  "/Technical Docs/Constellation/Industry_Validation_Rules-678": {
+  "/technical-docs/Constellation/Industry_Validation_Rules-556": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-constellation-industry-validation-rules-867-312"
+    "content": "content---technical-docs-constellation-industry-validation-rules-763-9b9"
   },
-  "/Technical Docs/Constellation/Overview-e6f": {
+  "/technical-docs/Constellation/Overview-5a3": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-constellation-overview-5-e-1-f27"
+    "content": "content---technical-docs-constellation-overview-1-fc-602"
   },
-  "/Technical Docs/Developer Resources/Getting_Started_Testnet-253": {
+  "/technical-docs/developer-resources/Getting_Started_Testnet-f88": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-developer-resources-getting-started-testnet-283-a0d"
+    "content": "content---technical-docs-developer-resources-getting-started-testnet-80-b-396"
   },
-  "/Technical Docs/Developer Resources/PUBLIC_INTERFACES-374": {
+  "/technical-docs/developer-resources/PUBLIC_INTERFACES-de1": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-developer-resources-public-interfaces-770-e34"
+    "content": "content---technical-docs-developer-resources-public-interface-sc-3-d-cf3"
   },
-  "/Technical Docs/Grid-Compute/Future-Vision-101": {
+  "/technical-docs/Grid-Compute/Future-Vision-09a": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-grid-compute-future-vision-27-f-949"
+    "content": "content---technical-docs-grid-compute-future-vision-728-a09"
   },
-  "/Technical Docs/Integration/Minima Integration-396": {
+  "/technical-docs/Integration/minima-integration-b1c": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-integration-minima-integration-4-b-3-fee"
+    "content": "content---technical-docs-integration-minima-integratione-22-926"
   },
-  "/Technical Docs/Integration/Rosetta API Integration-0d2": {
+  "/technical-docs/Integration/rosetta-api-integration-8af": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-integration-rosetta-api-integration-1-b-6-672"
+    "content": "content---technical-docs-integration-rosetta-api-integrationbf-3-191"
   },
-  "/Technical Docs/Performance/Advanced_TPS_Optimization-d90": {
+  "/technical-docs/Performance/Advanced_TPS_Optimization-3be": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-performance-advanced-tps-optimization-63-f-a33"
+    "content": "content---technical-docs-performance-advanced-tps-optimizationc-76-5a6"
   },
-  "/Technical Docs/PoAI/AI Block Builder Algorithm-013": {
+  "/technical-docs/PoAI/ai-block-builder-algorithm-a2d": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-po-ai-ai-block-builder-algorithm-193-a60"
+    "content": "content---technical-docs-po-ai-ai-block-builder-algorithm-33-b-057"
   },
-  "/Technical Docs/PoAI/AI-Validator Algorithm-a39": {
+  "/technical-docs/PoAI/ai-validator-algorithm-e34": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-po-ai-ai-validator-algorithm-3-ee-1fe"
+    "content": "content---technical-docs-po-ai-ai-validator-algorithm-8-c-0-2ba"
   },
-  "/Technical Docs/PoAI/Color Marker Examples-16c": {
+  "/technical-docs/PoAI/color-marker-examples-33e": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-po-ai-color-marker-examples-666-3e2"
+    "content": "content---technical-docs-po-ai-color-marker-examples-818-6f2"
   },
-  "/Technical Docs/PoAI/Color Marker System-353": {
+  "/technical-docs/PoAI/color-marker-system-02c": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-po-ai-color-marker-system-735-abd"
+    "content": "content---technical-docs-po-ai-color-marker-system-6-f-3-24d"
   },
-  "/Technical Docs/PoAI/Governance_Implementation-905": {
+  "/technical-docs/PoAI/Governance_Implementation-b79": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-po-ai-governance-implementationba-3-cd1"
+    "content": "content---technical-docs-po-ai-governance-implementationaf-2-879"
   },
-  "/Technical Docs/PoAI/Proof-of-AI-74e": {
+  "/technical-docs/PoAI/Proof-of-AI-9fd": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-po-ai-proof-of-a-id-43-23e"
+    "content": "content---technical-docs-po-ai-proof-of-ai-2-d-4-644"
   },
-  "/Technical Docs/PoAI/Taxonomy-7d2": {
+  "/technical-docs/PoAI/Taxonomy-427": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-po-ai-taxonomy-6-df-87e"
+    "content": "content---technical-docs-po-ai-taxonomy-6-b-7-c56"
   },
-  "/Technical Docs/PoAI/The Incentive-140": {
+  "/technical-docs/PoAI/the-incentive-9dd": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-po-ai-the-incentivea-2-a-aa5"
+    "content": "content---technical-docs-po-ai-the-incentive-100-32c"
   },
-  "/Technical Docs/PoAI/Validation Process-050": {
+  "/technical-docs/PoAI/validation-process-212": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-po-ai-validation-processf-10-545"
+    "content": "content---technical-docs-po-ai-validation-processa-27-039"
   },
-  "/Technical Docs/PoAI/Voting Algorithm-c6d": {
+  "/technical-docs/PoAI/voting-algorithm-824": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-po-ai-voting-algorithme-20-896"
+    "content": "content---technical-docs-po-ai-voting-algorithmb-57-168"
   },
-  "/Technical Docs/Security/AI_Capacity_Implementation-611": {
+  "/technical-docs/Security/AI_Capacity_Implementation-143": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-security-ai-capacity-implementation-8-ed-d67"
+    "content": "content---technical-docs-security-ai-capacity-implementation-1-ed-49b"
   },
-  "/Technical Docs/Security/Overview-cb9": {
+  "/technical-docs/Security/Overview-608": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-security-overviewece-006"
+    "content": "content---technical-docs-security-overviewc-3-b-054"
   },
-  "/Technical Docs/Security/Pattern_Analysis_Security-048": {
+  "/technical-docs/Security/Pattern_Analysis_Security-984": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-security-pattern-analysis-securityf-98-29c"
+    "content": "content---technical-docs-security-pattern-analysis-security-752-2bd"
   },
-  "/Technical Docs/Security/Post_Quantum_Cryptography-662": {
+  "/technical-docs/Security/Post_Quantum_Cryptography-d59": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-security-post-quantum-cryptography-69-e-541"
+    "content": "content---technical-docs-security-post-quantum-cryptography-990-41c"
   },
-  "/Technical Docs/SELF Chain/SELF_Chain_Architecture-ab2": {
+  "/technical-docs/self-chain/SELF_Chain_Architecture-bed": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-self-chain-self-chain-architecture-4-a-0-888"
+    "content": "content---technical-docs-self-chain-self-chain-architecture-6-e-8-3af"
   },
-  "/Technical Docs/SELF Chain/User-Instance-Architecture-573": {
+  "/technical-docs/self-chain/User-Instance-Architecture-133": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-self-chain-user-instance-architecture-031-2a4"
+    "content": "content---technical-docs-self-chain-user-instance-architecture-797-bd5"
   },
-  "/Technical Docs/SELF Chain/Why Build A Blockchain-410": {
+  "/technical-docs/self-chain/why-build-a-blockchain-fe1": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-self-chain-why-build-a-blockchain-5-c-7-79e"
+    "content": "content---technical-docs-self-chain-why-build-a-blockchainb-18-357"
   },
-  "/Technical Docs/Storage/Hybrid_Architecture-a50": {
+  "/technical-docs/Storage/Hybrid_Architecture-b4d": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-storage-hybrid-architecture-49-d-b68"
+    "content": "content---technical-docs-storage-hybrid-architecture-352-fe6"
   },
-  "/Technical Docs/Storage/Storage_Integration-d49": {
+  "/technical-docs/Storage/Storage_Integration-5d2": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-storage-storage-integration-6-a-8-aea"
+    "content": "content---technical-docs-storage-storage-integrationa-88-2e1"
   },
-  "/Technical Docs/Validate/-4fc": {
+  "/technical-docs/Validate/-994": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---technical-docs-validate-769-8f6"
+    "content": "content---technical-docs-validate-10-f-736"
   },
   "/-bea": {
     "__comp": "__comp---theme-doc-item-178-a40",
