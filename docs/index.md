@@ -122,7 +122,7 @@ As governments and corporations tighten their grip on digital life, SELF provide
 <div className="button-container">
   <a href="/project-status">Current Status</a>
   <a href="/roadmap/Introduction">View Roadmap</a>
-  <a href="https://discord.gg/WdMdVpA4C8">Join Community</a>
+  <a href="https://github.com/SELF-Technology/self-chain-public">View on GitHub</a>
 </div>
 
 ## 📚 Learn More
