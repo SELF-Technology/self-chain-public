@@ -4,6 +4,10 @@ sidebar_position: 3
 
 # Governance
 
+:::info Current Status
+SELF Chain governance is currently in **Phase 1: Foundation** with core team leadership. Future governance features including DAO, token voting, and full decentralization are planned but not yet implemented.
+:::
+
 ## Overview
 
 SELF Chain follows a progressive decentralization model, moving from core team leadership to community governance. This document outlines our current governance structure and future roadmap.
@@ -108,19 +112,23 @@ Requirements:
 
 ## Future Governance Roadmap
 
-### Phase 2: Community Expansion (6-12 months)
+:::warning PLANNED FEATURES
+The following governance phases describe planned developments that are not yet implemented. Timelines are estimates and subject to change based on project progress and community needs.
+:::
+
+### Phase 2: Community Expansion (Estimated: 6-12 months)
 - Technical Advisory Board formation
 - Community grants program
 - Formal RFC process
 - Contributor DAO experiments
 
-### Phase 3: Decentralized Governance (12-24 months)
+### Phase 3: Decentralized Governance (Estimated: 12-24 months)
 - On-chain governance implementation
 - Token-weighted voting for protocol changes
 - Community treasury management
 - Fully decentralized decision making
 
-### Phase 4: Full DAO Transition (24+ months)
+### Phase 4: Full DAO Transition (Estimated: 24+ months)
 - Complete decentralization
 - Community-owned infrastructure
 - Autonomous funding mechanisms

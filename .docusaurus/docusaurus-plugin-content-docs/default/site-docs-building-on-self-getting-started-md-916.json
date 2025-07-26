@@ -1,7 +1,7 @@
 {
   "id": "building-on-self/getting-started",
   "title": "Getting Started",
-  "description": "SELF Chain is currently in testnet phase.",
+  "description": "The SELF SDK and MCP integration described in this documentation are planned but not yet released. Code examples shown are specifications that will work when the SDK is deployed.",
   "source": "@site/docs/building-on-self/getting-started.md",
   "sourceDirName": "building-on-self",
   "slug": "/building-on-self/getting-started",
