@@ -1,0 +1,26 @@
+{
+  "id": "developing-self/governance",
+  "title": "Governance",
+  "description": "Overview",
+  "source": "@site/docs/developing-self/governance.md",
+  "sourceDirName": "developing-self",
+  "slug": "/developing-self/governance",
+  "permalink": "/developing-self/governance",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Code of Conduct",
+    "permalink": "/developing-self/code-of-conduct"
+  },
+  "next": {
+    "title": "Security Policy",
+    "permalink": "/developing-self/security"
+  }
+}

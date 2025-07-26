@@ -39,85 +39,85 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', 'eb1'),
+    component: ComponentCreator('/', '3eb'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '8a9'),
+        component: ComponentCreator('/', '9e6'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', '67e'),
+            component: ComponentCreator('/', 'eb2'),
             routes: [
               {
-                path: '/About SELF/creation-brand',
-                component: ComponentCreator('/About SELF/creation-brand', 'dbc'),
+                path: '/about-self/creation-brand',
+                component: ComponentCreator('/about-self/creation-brand', '2e2'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/About SELF/evolution',
-                component: ComponentCreator('/About SELF/evolution', 'df0'),
+                path: '/about-self/evolution',
+                component: ComponentCreator('/about-self/evolution', '13d'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/About SELF/long-term',
-                component: ComponentCreator('/About SELF/long-term', '75e'),
+                path: '/about-self/long-term',
+                component: ComponentCreator('/about-self/long-term', '96c'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/About SELF/manifesto',
-                component: ComponentCreator('/About SELF/manifesto', '841'),
+                path: '/about-self/manifesto',
+                component: ComponentCreator('/about-self/manifesto', 'b23'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/About SELF/Media Coverage',
-                component: ComponentCreator('/About SELF/Media Coverage', '37f'),
+                path: '/about-self/media-coverage',
+                component: ComponentCreator('/about-self/media-coverage', '49c'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/About SELF/self-sov-alternative',
-                component: ComponentCreator('/About SELF/self-sov-alternative', '1d2'),
+                path: '/about-self/self-sov-alternative',
+                component: ComponentCreator('/about-self/self-sov-alternative', '03e'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/About SELF/the-story',
-                component: ComponentCreator('/About SELF/the-story', '918'),
+                path: '/about-self/the-story',
+                component: ComponentCreator('/about-self/the-story', '7e6'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Building-on-SELF/',
-                component: ComponentCreator('/Building-on-SELF/', '588'),
+                path: '/building-on-self/',
+                component: ComponentCreator('/building-on-self/', '21e'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Building-on-SELF/api-gateway',
-                component: ComponentCreator('/Building-on-SELF/api-gateway', '573'),
+                path: '/building-on-self/api-gateway',
+                component: ComponentCreator('/building-on-self/api-gateway', '795'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Building-on-SELF/cloud-integration',
-                component: ComponentCreator('/Building-on-SELF/cloud-integration', '4fb'),
+                path: '/building-on-self/cloud-integration',
+                component: ComponentCreator('/building-on-self/cloud-integration', '981'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Building-on-SELF/getting-started',
-                component: ComponentCreator('/Building-on-SELF/getting-started', '54a'),
+                path: '/building-on-self/getting-started',
+                component: ComponentCreator('/building-on-self/getting-started', '353'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Building-on-SELF/sdk-structure',
-                component: ComponentCreator('/Building-on-SELF/sdk-structure', 'df2'),
+                path: '/building-on-self/sdk-structure',
+                component: ComponentCreator('/building-on-self/sdk-structure', 'd95'),
                 exact: true,
                 sidebar: "docs"
               },
@@ -128,26 +128,26 @@ export default [
                 sidebar: "docs"
               },
               {
-                path: '/Developing SELF/',
-                component: ComponentCreator('/Developing SELF/', '87b'),
+                path: '/developing-self/',
+                component: ComponentCreator('/developing-self/', 'a82'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Developing SELF/code-of-conduct',
-                component: ComponentCreator('/Developing SELF/code-of-conduct', 'd4b'),
+                path: '/developing-self/code-of-conduct',
+                component: ComponentCreator('/developing-self/code-of-conduct', 'dca'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Developing SELF/governance',
-                component: ComponentCreator('/Developing SELF/governance', 'bf4'),
+                path: '/developing-self/governance',
+                component: ComponentCreator('/developing-self/governance', '7bd'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Developing SELF/security',
-                component: ComponentCreator('/Developing SELF/security', '03c'),
+                path: '/developing-self/security',
+                component: ComponentCreator('/developing-self/security', '85b'),
                 exact: true,
                 sidebar: "docs"
               },
@@ -158,242 +158,242 @@ export default [
                 sidebar: "docs"
               },
               {
-                path: '/Roadmap/Beta Web App',
-                component: ComponentCreator('/Roadmap/Beta Web App', '181'),
+                path: '/roadmap/beta-web-app',
+                component: ComponentCreator('/roadmap/beta-web-app', '354'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Roadmap/Developer Incentives',
-                component: ComponentCreator('/Roadmap/Developer Incentives', 'e99'),
+                path: '/roadmap/developer-incentives',
+                component: ComponentCreator('/roadmap/developer-incentives', '884'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Roadmap/Introduction',
-                component: ComponentCreator('/Roadmap/Introduction', '09b'),
+                path: '/roadmap/Introduction',
+                component: ComponentCreator('/roadmap/Introduction', '4f0'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Roadmap/SDK',
-                component: ComponentCreator('/Roadmap/SDK', 'b8f'),
+                path: '/roadmap/SDK',
+                component: ComponentCreator('/roadmap/SDK', '21f'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Roadmap/SELF OS',
-                component: ComponentCreator('/Roadmap/SELF OS', '537'),
+                path: '/roadmap/self-os',
+                component: ComponentCreator('/roadmap/self-os', '897'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Roadmap/Super-App Testnet',
-                component: ComponentCreator('/Roadmap/Super-App Testnet', '978'),
+                path: '/roadmap/super-app-testnet',
+                component: ComponentCreator('/roadmap/super-app-testnet', '43d'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Roadmap/Token/Overview',
-                component: ComponentCreator('/Roadmap/Token/Overview', 'd2b'),
+                path: '/roadmap/Token/Overview',
+                component: ComponentCreator('/roadmap/Token/Overview', '5af'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Roadmap/Token/Smart-Contract-Architecture',
-                component: ComponentCreator('/Roadmap/Token/Smart-Contract-Architecture', 'b03'),
+                path: '/roadmap/Token/Smart-Contract-Architecture',
+                component: ComponentCreator('/roadmap/Token/Smart-Contract-Architecture', '4bc'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Roadmap/Token/Tokenomics',
-                component: ComponentCreator('/Roadmap/Token/Tokenomics', 'aea'),
+                path: '/roadmap/Token/Tokenomics',
+                component: ComponentCreator('/roadmap/Token/Tokenomics', '141'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/Cloud-Architecture/Developer-Integration',
-                component: ComponentCreator('/Technical Docs/Cloud-Architecture/Developer-Integration', 'd5e'),
+                path: '/technical-docs/Cloud-Architecture/Developer-Integration',
+                component: ComponentCreator('/technical-docs/Cloud-Architecture/Developer-Integration', '4d4'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/Cloud-Architecture/Overview',
-                component: ComponentCreator('/Technical Docs/Cloud-Architecture/Overview', 'df1'),
+                path: '/technical-docs/Cloud-Architecture/Overview',
+                component: ComponentCreator('/technical-docs/Cloud-Architecture/Overview', '69d'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/Cloud-Architecture/Running-Your-Own-Node',
-                component: ComponentCreator('/Technical Docs/Cloud-Architecture/Running-Your-Own-Node', '4ed'),
+                path: '/technical-docs/Cloud-Architecture/Running-Your-Own-Node',
+                component: ComponentCreator('/technical-docs/Cloud-Architecture/Running-Your-Own-Node', '33e'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/Constellation/Industry_Validation_Rules',
-                component: ComponentCreator('/Technical Docs/Constellation/Industry_Validation_Rules', '678'),
+                path: '/technical-docs/Constellation/Industry_Validation_Rules',
+                component: ComponentCreator('/technical-docs/Constellation/Industry_Validation_Rules', '556'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/Constellation/Overview',
-                component: ComponentCreator('/Technical Docs/Constellation/Overview', 'e6f'),
+                path: '/technical-docs/Constellation/Overview',
+                component: ComponentCreator('/technical-docs/Constellation/Overview', '5a3'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/Developer Resources/Getting_Started_Testnet',
-                component: ComponentCreator('/Technical Docs/Developer Resources/Getting_Started_Testnet', '253'),
+                path: '/technical-docs/developer-resources/Getting_Started_Testnet',
+                component: ComponentCreator('/technical-docs/developer-resources/Getting_Started_Testnet', 'f88'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/Developer Resources/PUBLIC_INTERFACES',
-                component: ComponentCreator('/Technical Docs/Developer Resources/PUBLIC_INTERFACES', '374'),
+                path: '/technical-docs/developer-resources/PUBLIC_INTERFACES',
+                component: ComponentCreator('/technical-docs/developer-resources/PUBLIC_INTERFACES', 'de1'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/Grid-Compute/Future-Vision',
-                component: ComponentCreator('/Technical Docs/Grid-Compute/Future-Vision', '101'),
+                path: '/technical-docs/Grid-Compute/Future-Vision',
+                component: ComponentCreator('/technical-docs/Grid-Compute/Future-Vision', '09a'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/Integration/Minima Integration',
-                component: ComponentCreator('/Technical Docs/Integration/Minima Integration', '396'),
+                path: '/technical-docs/Integration/minima-integration',
+                component: ComponentCreator('/technical-docs/Integration/minima-integration', 'b1c'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/Integration/Rosetta API Integration',
-                component: ComponentCreator('/Technical Docs/Integration/Rosetta API Integration', '0d2'),
+                path: '/technical-docs/Integration/rosetta-api-integration',
+                component: ComponentCreator('/technical-docs/Integration/rosetta-api-integration', '8af'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/Performance/Advanced_TPS_Optimization',
-                component: ComponentCreator('/Technical Docs/Performance/Advanced_TPS_Optimization', 'd90'),
+                path: '/technical-docs/Performance/Advanced_TPS_Optimization',
+                component: ComponentCreator('/technical-docs/Performance/Advanced_TPS_Optimization', '3be'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/PoAI/AI Block Builder Algorithm',
-                component: ComponentCreator('/Technical Docs/PoAI/AI Block Builder Algorithm', '013'),
+                path: '/technical-docs/PoAI/ai-block-builder-algorithm',
+                component: ComponentCreator('/technical-docs/PoAI/ai-block-builder-algorithm', 'a2d'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/PoAI/AI-Validator Algorithm',
-                component: ComponentCreator('/Technical Docs/PoAI/AI-Validator Algorithm', 'a39'),
+                path: '/technical-docs/PoAI/ai-validator-algorithm',
+                component: ComponentCreator('/technical-docs/PoAI/ai-validator-algorithm', 'e34'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/PoAI/Color Marker Examples',
-                component: ComponentCreator('/Technical Docs/PoAI/Color Marker Examples', '16c'),
+                path: '/technical-docs/PoAI/color-marker-examples',
+                component: ComponentCreator('/technical-docs/PoAI/color-marker-examples', '33e'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/PoAI/Color Marker System',
-                component: ComponentCreator('/Technical Docs/PoAI/Color Marker System', '353'),
+                path: '/technical-docs/PoAI/color-marker-system',
+                component: ComponentCreator('/technical-docs/PoAI/color-marker-system', '02c'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/PoAI/Governance_Implementation',
-                component: ComponentCreator('/Technical Docs/PoAI/Governance_Implementation', '905'),
+                path: '/technical-docs/PoAI/Governance_Implementation',
+                component: ComponentCreator('/technical-docs/PoAI/Governance_Implementation', 'b79'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/PoAI/Proof-of-AI',
-                component: ComponentCreator('/Technical Docs/PoAI/Proof-of-AI', '74e'),
+                path: '/technical-docs/PoAI/Proof-of-AI',
+                component: ComponentCreator('/technical-docs/PoAI/Proof-of-AI', '9fd'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/PoAI/Taxonomy',
-                component: ComponentCreator('/Technical Docs/PoAI/Taxonomy', '7d2'),
+                path: '/technical-docs/PoAI/Taxonomy',
+                component: ComponentCreator('/technical-docs/PoAI/Taxonomy', '427'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/PoAI/The Incentive',
-                component: ComponentCreator('/Technical Docs/PoAI/The Incentive', '140'),
+                path: '/technical-docs/PoAI/the-incentive',
+                component: ComponentCreator('/technical-docs/PoAI/the-incentive', '9dd'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/PoAI/Validation Process',
-                component: ComponentCreator('/Technical Docs/PoAI/Validation Process', '050'),
+                path: '/technical-docs/PoAI/validation-process',
+                component: ComponentCreator('/technical-docs/PoAI/validation-process', '212'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/PoAI/Voting Algorithm',
-                component: ComponentCreator('/Technical Docs/PoAI/Voting Algorithm', 'c6d'),
+                path: '/technical-docs/PoAI/voting-algorithm',
+                component: ComponentCreator('/technical-docs/PoAI/voting-algorithm', '824'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/Security/AI_Capacity_Implementation',
-                component: ComponentCreator('/Technical Docs/Security/AI_Capacity_Implementation', '611'),
+                path: '/technical-docs/Security/AI_Capacity_Implementation',
+                component: ComponentCreator('/technical-docs/Security/AI_Capacity_Implementation', '143'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/Security/Overview',
-                component: ComponentCreator('/Technical Docs/Security/Overview', 'cb9'),
+                path: '/technical-docs/Security/Overview',
+                component: ComponentCreator('/technical-docs/Security/Overview', '608'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/Security/Pattern_Analysis_Security',
-                component: ComponentCreator('/Technical Docs/Security/Pattern_Analysis_Security', '048'),
+                path: '/technical-docs/Security/Pattern_Analysis_Security',
+                component: ComponentCreator('/technical-docs/Security/Pattern_Analysis_Security', '984'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/Security/Post_Quantum_Cryptography',
-                component: ComponentCreator('/Technical Docs/Security/Post_Quantum_Cryptography', '662'),
+                path: '/technical-docs/Security/Post_Quantum_Cryptography',
+                component: ComponentCreator('/technical-docs/Security/Post_Quantum_Cryptography', 'd59'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/SELF Chain/SELF_Chain_Architecture',
-                component: ComponentCreator('/Technical Docs/SELF Chain/SELF_Chain_Architecture', 'ab2'),
+                path: '/technical-docs/self-chain/SELF_Chain_Architecture',
+                component: ComponentCreator('/technical-docs/self-chain/SELF_Chain_Architecture', 'bed'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/SELF Chain/User-Instance-Architecture',
-                component: ComponentCreator('/Technical Docs/SELF Chain/User-Instance-Architecture', '573'),
+                path: '/technical-docs/self-chain/User-Instance-Architecture',
+                component: ComponentCreator('/technical-docs/self-chain/User-Instance-Architecture', '133'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/SELF Chain/Why Build A Blockchain',
-                component: ComponentCreator('/Technical Docs/SELF Chain/Why Build A Blockchain', '410'),
+                path: '/technical-docs/self-chain/why-build-a-blockchain',
+                component: ComponentCreator('/technical-docs/self-chain/why-build-a-blockchain', 'fe1'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/Storage/Hybrid_Architecture',
-                component: ComponentCreator('/Technical Docs/Storage/Hybrid_Architecture', 'a50'),
+                path: '/technical-docs/Storage/Hybrid_Architecture',
+                component: ComponentCreator('/technical-docs/Storage/Hybrid_Architecture', 'b4d'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/Storage/Storage_Integration',
-                component: ComponentCreator('/Technical Docs/Storage/Storage_Integration', 'd49'),
+                path: '/technical-docs/Storage/Storage_Integration',
+                component: ComponentCreator('/technical-docs/Storage/Storage_Integration', '5d2'),
                 exact: true,
                 sidebar: "docs"
               },
               {
-                path: '/Technical Docs/Validate/',
-                component: ComponentCreator('/Technical Docs/Validate/', '4fc'),
+                path: '/technical-docs/Validate/',
+                component: ComponentCreator('/technical-docs/Validate/', '994'),
                 exact: true,
                 sidebar: "docs"
               },

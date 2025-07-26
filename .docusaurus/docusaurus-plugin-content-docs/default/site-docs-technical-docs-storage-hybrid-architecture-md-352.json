@@ -1,0 +1,25 @@
+{
+  "id": "technical-docs/Storage/Hybrid_Architecture",
+  "title": "Hybrid Architecture",
+  "description": "🏛️ Architectural Vision: This document describes the planned hybrid storage architecture for SELF Chain. Implementation is ongoing as we build towards this comprehensive decentralized storage vision.",
+  "source": "@site/docs/technical-docs/Storage/Hybrid_Architecture.md",
+  "sourceDirName": "technical-docs/Storage",
+  "slug": "/technical-docs/Storage/Hybrid_Architecture",
+  "permalink": "/technical-docs/Storage/Hybrid_Architecture",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Hybrid Architecture"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Pattern Analysis Security",
+    "permalink": "/technical-docs/Security/Pattern_Analysis_Security"
+  },
+  "next": {
+    "title": "Storage Integration",
+    "permalink": "/technical-docs/Storage/Storage_Integration"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "roadmap/Introduction",
+  "title": "Introduction",
+  "description": "The blockchain world must offer a user experience that surpasses centralised platforms in every area. This requires a holistic approach, where functionality and decentralisation benefits go hand-in-hand. User experience needs to be front and centre. Most blockchain projects are isolated islands, not part of a unified and functioning ecosystem. There are certainly many unification and interoperability efforts ongoing, but we’ve yet to see a solution in the form of an operating system that glues it all together. Nor an operating system, outside of the usual suspects, that is beautiful to use. In our view, any player in the space who wishes to scale an alternative vision needs to embrace a holistic and unified approach with outstanding user experience.",
+  "source": "@site/docs/roadmap/Introduction.md",
+  "sourceDirName": "roadmap",
+  "slug": "/roadmap/Introduction",
+  "permalink": "/roadmap/Introduction",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_label": "📖 Introduction",
+    "sidebar_position": 1
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "🔈 Media Coverage",
+    "permalink": "/about-self/media-coverage"
+  },
+  "next": {
+    "title": "🧪 Beta Web App",
+    "permalink": "/roadmap/beta-web-app"
+  }
+}

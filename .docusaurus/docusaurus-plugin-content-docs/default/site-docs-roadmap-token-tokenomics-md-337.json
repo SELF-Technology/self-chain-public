@@ -1,0 +1,27 @@
+{
+  "id": "roadmap/Token/Tokenomics",
+  "title": "SELF Tokenomics",
+  "description": "The SELF Token ($SELF) is the core utility and governance token of the SELF ecosystem. It powers the upcoming super-app, future SELF-related products (whether developed in-house or by external teams), the SELF Constellation, and SELF Chain governance. Designed for long-term sustainability and value accrual, $SELF enables network operations, rewards participation, and incentivizes ecosystem growth.",
+  "source": "@site/docs/roadmap/Token/Tokenomics.md",
+  "sourceDirName": "roadmap/Token",
+  "slug": "/roadmap/Token/Tokenomics",
+  "permalink": "/roadmap/Token/Tokenomics",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_label": "📊 Tokenomics",
+    "sidebar_position": 4
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "🔗 Smart Contract Architecture",
+    "permalink": "/roadmap/Token/Smart-Contract-Architecture"
+  },
+  "next": {
+    "title": "🛠️ SDK",
+    "permalink": "/roadmap/SDK"
+  }
+}

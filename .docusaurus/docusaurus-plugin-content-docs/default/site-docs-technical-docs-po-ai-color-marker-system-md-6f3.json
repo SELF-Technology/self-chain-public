@@ -1,0 +1,27 @@
+{
+  "id": "technical-docs/PoAI/color-marker-system",
+  "title": "Color Marker System",
+  "description": "The Color Marker System is a unique cryptographic validation mechanism in SELF Chain's Proof of AI (PoAI) consensus that provides an additional layer of security and state tracking for wallet addresses and transactions.",
+  "source": "@site/docs/technical-docs/PoAI/color-marker-system.md",
+  "sourceDirName": "technical-docs/PoAI",
+  "slug": "/technical-docs/PoAI/color-marker-system",
+  "permalink": "/technical-docs/PoAI/color-marker-system",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_label": "Color Marker System",
+    "sidebar_position": 6
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "AI-Validator Algorithm",
+    "permalink": "/technical-docs/PoAI/ai-validator-algorithm"
+  },
+  "next": {
+    "title": "Color Marker Examples",
+    "permalink": "/technical-docs/PoAI/color-marker-examples"
+  }
+}
