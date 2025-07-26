@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # SELF Tokenomics
 
-The SELF Token ($SELF) is the core utility and governance token of the SELF ecosystem. It powers the upcoming super-app, future SELF-related products (whether developed in-house or by external teams), the SELF Constellation, and SELF Chain governance. Designed for long-term sustainability and value accrual, $SELF enables network operations, rewards participation, and incentivizes ecosystem growth.
+The SELF Token ($SELF) is the foundational utility and governance token powering the SELF ecosystem, the upcoming super-app, any future SELF-related products developed in-house or by external teams, SELF Constellation and SELF chain governance. Designed for long-term sustainability and value accrual, $SELF facilitates network operations, rewards participation, and incentivizes growth. 
 
 ## Token Overview
 

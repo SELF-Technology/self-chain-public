@@ -201,4 +201,4 @@ We believe in progressive decentralization as the path to a truly community-owne
 
 ---
 
-*"In decentralization we trust — governance is how we verify."* – SELF Chain Community
+*"In decentralization we trust, but verify through governance."* - SELF Chain Community

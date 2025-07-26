@@ -5,7 +5,7 @@ sidebar_position: 5
 
 # SDK
 
-The SELF SDK will first launch on the SELF Chain Testnet, giving developers the tools to start building for the Super-App—and ultimately, the full SELF OS. All versions of the SDK will follow these core principles:
+The SELF SDK will be initially developed on the SELF Chain Testnet, enabling developers to build apps for the Super-App and, therefore, the eventual OS. Here are the guiding principles for all versions of the SDK:
 
 **Simplicity** - The SDK should be easy to understand and use, with clear documentation and examples that enable developers to get started quickly and efficiently.
 

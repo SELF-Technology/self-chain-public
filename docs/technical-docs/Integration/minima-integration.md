@@ -7,7 +7,7 @@ sidebar_position: 3
 
 ## Overview
 
-SELF Chain and [Minima](https://minima.global/) represent two distinct blockchain architectures with fundamentally different consensus mechanisms:
+SELF Chain and Minima represent two distinct blockchain architectures with fundamentally different consensus mechanisms:
 
 - **SELF Chain**: Uses Proof-of-AI (PoAI) consensus exclusively
 - **Minima**: Uses Proof-of-Work (TxPOW) consensus

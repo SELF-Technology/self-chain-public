@@ -5,9 +5,9 @@ sidebar_position: 2
 
 # Beta Web App
 
-The Beta Web App is currently available to try free-of-charge, [click here to sign up.](https://your.self.app). You can check the uptime status by [clicking here](https://status.self.app/). The purpose of this is to simply test the agentic experience where SELF learns about each user during conversations (likes, dislikes, traits, habits, goals, dreams etc.), and generates a user profile. You may also create your profile through manual input.
+The Beta Web App is currently available to try free-of-charge, [click here to sign up.](https://your.self.app). You can check the uptime status by [clicking here](https://status.self.app/). This purpose of this is to simply test the agentic experience where SELF learns about each user during conversations (likes, dislikes, traits, habits, places you've been, goals, dreams etc.), and generates a user profile. You may also create your profile through manual input.
 
-The current SELF default in the Beta Web App is to keep responses clean and concise, focusing on essentials. This will be more functional in later versions.
+The current SELF default setting is to keep responses as clean and concise as possible, unless specified to do otherwise. SELF is all about honing in on the essentials, reducing noise while elevating signal. Later versions will introduce a slider functionality that allows users to regulate how concise or detailed SELF’s responses are.
 
 The Web app is not symbolic of the forthcoming Super-App but enabled us to gain user feedback as we configured how people tend to use AI assistants. The following is the user guide in case you want to test the interface.
 
@@ -25,7 +25,7 @@ It's also possible to sign up through Google (all Google can see is your email a
 
 ## Set Up Your User Profile
 
-SELF aims to deliver a unique approach to personalization and how it  organizes its memory. It automatically learns about each user during conversations and generates a unique User Profile, with the goal of filtering the experience of the web into a personalized signal.
+SELF aims to deliver a unique approach to personalisation and how it  organises its memory. It automatically learns about each user during conversations and generates a unique User Profile, with the goal of filtering the experience of the web into a personalised signal.
 
 It's likely that you'll gain the most benefit from using SELF, if you take 5-10 minutes to setup your SELF user profile.  
 
@@ -37,7 +37,7 @@ The more SELF knows about you, the more useful it becomes. It may be tempting to
 
 SELF is eager to learn anything from your likes, dislikes, and future plans to personality traits, habits and the names of your significant others and stores this information in your User Profile.
 
-You may find you use SELF to get personalized suggestions and recommendations, or to summarize information and produce summarized product reviews, based on what you've already told SELF you prefer. Or perhaps you use SELF as a advisor, offering personalized guidance and support.
+You may find you use SELF to get personalised suggestions and recommendations, or to summarise information and produce summarised product reviews, based on what you've already told SELF you prefer. Or perhaps you use SELF as a advisor, offering personalised guidance and support.
 
 ## Examples Of What To Add In Your Preferences
 
@@ -58,7 +58,7 @@ How do you spend your free time?
 ‍
 Hobbies or interests?
 
-Favorite way to spend your weekend?
+Favourite way to spend your weekend?
 
 Preferred way to relax and unwind?
 </details>
@@ -70,9 +70,9 @@ Favorite movies?
 
 Favorite TV shows?
 
-Favorite music artists?
+Favourite music artists?
 
-Favorites books?
+Favourites books?
 
 What's on your to watch/to read/to listen to list?
 
@@ -89,7 +89,7 @@ What are you passionate about?
 
 What calms you down?
 
-What gets you energized?
+What gets you energised?
 
 What factors contribute to a good day?
 
@@ -104,9 +104,9 @@ Where do you see yourself in five years?
 <details>
 <summary><h2>Travel & Food Preferences</h2></summary>
 
-Top 5 favorite foods?
+Top 5 favourite foods?
 
-Top 5 favorite dishes?
+Top 5 favourite dishes?
 
 What type of diet do you want SELF to take into account when making dining recommendations?
 
@@ -131,7 +131,7 @@ What kinds of climates do you enjoy?
 
 “I’d like to write a poem about spending a rainy day in front of the fireplace, wrapped in a blanket, reading a great book. Could you provide me with some ideas for inspiration?”
 
-"You know what usually gets me stressed out. What can I do to minimize the chance that these things occur and decrease my reaction to them?"
+"You know what usually gets me stressed out. What can I do to minimise the chance that these things occur and decrease my reaction to them?"
 
 “Do you have any tips, based on what you know about me, for how to find more peace and balance in my life?”
 
@@ -144,7 +144,7 @@ What kinds of climates do you enjoy?
 <details>
 <summary><h2>Personalised Recommendations</h2></summary>
 
-“I’m in [insert city] for a few days. Any tips for co-working spaces that aligns with my preferences?”
+“I’m in [insert city] for a few days. Any tips for coworking spaces that aligns with my preferences?”
 
 “I don’t know what to do today... any tips? I don’t want to do the usual things... surprise me with some unusual ideas for activities under $100 in total.”
 
@@ -163,15 +163,15 @@ What kinds of climates do you enjoy?
 </details>
 
 <details>
-<summary><h2>Summarize Information</h2></summary>
+<summary><h2>Summarise Information</h2></summary>
 
-"Summarize this webpage and highlight key insights: [insert link]"
+“Summarise this webpage and highlight key insights: [insert link]”
 
-“Can you provide me with an overview of the five most popular to-do list applications and a summarized review of each?”
+“Can you provide me with an overview of the five most popular to-do list applications and a summarised review of each?”
 
 “Provide me with review summaries of 5 of the best VPN providers, with 5 pros, 3 cons, 3 quotes with links and some additional info.”
 
-"Summarize the benefits of all my weekly practices."
+“Summarise the benefits of all my weekly practices.”
 
 “I’m always getting distracted when I’m at the computer… I’d like summary reviews of the five most popular applications intended to help me focus and block out distractions?”
 
