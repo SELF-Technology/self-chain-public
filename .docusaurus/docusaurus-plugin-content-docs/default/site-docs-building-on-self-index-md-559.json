@@ -1,7 +1,7 @@
 {
   "id": "building-on-self/index",
   "title": "Developer Guide Overview",
-  "description": "Welcome to the developer guide for building applications on SELF Chain! This section covers everything you need to know about creating AI-native apps that harness SELF's revolutionary blockchain platform.",
+  "description": "Welcome to the developer guide for building applications on SELF Chain! This section covers everything you need to know about creating AI-native apps that harness SELF's revolutionary blockchain platform powered by Model Context Protocol (MCP).",
   "source": "@site/docs/building-on-self/index.md",
   "sourceDirName": "building-on-self",
   "slug": "/building-on-self/",

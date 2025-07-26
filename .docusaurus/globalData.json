@@ -66,6 +66,11 @@
               "sidebar": "docs"
             },
             {
+              "id": "building-on-self/mcp-integration",
+              "path": "/building-on-self/mcp-integration",
+              "sidebar": "docs"
+            },
+            {
               "id": "building-on-self/sdk-reference",
               "path": "/building-on-self/sdk-reference",
               "sidebar": "docs"

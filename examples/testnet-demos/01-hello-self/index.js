@@ -12,7 +12,7 @@
  */
 
 // Simulated SDK imports (SDK not yet released)
-// In real usage: import { SELFClient } from '@self-chain/sdk';
+// In real usage: import { SELFClient } from '@self/sdk';
 
 class TestnetWarning {
   static display() {

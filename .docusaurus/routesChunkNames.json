@@ -42,17 +42,17 @@
       "plugin": "plugin---docusaurus-debugb-38-ad3"
     }
   },
-  "/-68e": {
+  "/-ba7": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---aba-d70"
     }
   },
-  "/-1c7": {
+  "/-b8b": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---22-d-307"
   },
-  "/-1e7": {
+  "/-321": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/about-self/creation-brand-2e2": {
@@ -98,6 +98,10 @@
   "/building-on-self/getting-started-353": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---building-on-self-getting-started-916-ad8"
+  },
+  "/building-on-self/mcp-integration-3e6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---building-on-self-mcp-integration-4-f-9-c1b"
   },
   "/building-on-self/sdk-reference-501": {
     "__comp": "__comp---theme-doc-item-178-a40",

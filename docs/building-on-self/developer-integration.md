@@ -8,77 +8,85 @@ sidebar_position: 3
 
 > ⚠️ **DO NOT ATTEMPT**: The code examples and endpoints shown are conceptual. They will not work as the infrastructure is not yet deployed.
 
-## SELF's AI-Native Development Platform
+## SELF's MCP-Powered Development Platform
 
-SELF Chain revolutionizes blockchain development by making AI integration native to the platform. Unlike traditional blockchains where you must integrate external AI services, SELF provides built-in AI capabilities that radically simplify development.
+SELF Chain revolutionizes blockchain development through Model Context Protocol (MCP) integration, making AI capabilities native to the platform. Unlike traditional blockchains where you must integrate external AI services, SELF provides built-in MCP-powered tools that radically simplify development.
 
 ### 🤖 What Makes SELF Different
 
 **Traditional Blockchain Development:**
 ```
-Your App → Blockchain APIs → External AI APIs → Third-party Tools
+Your App → Blockchain APIs → External AI APIs → Third-party Tools → Manual Integration
 ```
 
-**SELF Chain AI-Native Development:**
+**SELF Chain MCP-Native Development:**
 ```
-Your App ↔ SELF Platform (AI + Blockchain + Tools Integrated)
+Your App ↔ SELF MCP Platform (AI + Blockchain + Tools Automatically Orchestrated)
 ```
 
 **Key Benefits:**
-- **Radically Simplified Architecture**: One platform, all capabilities
-- **Native AI Integration**: No external dependencies or API keys
-- **Privacy-Preserving**: AI processing respects user sovereignty  
-- **Cross-App Coordination**: AI works seamlessly across applications
+- **MCP Integration**: Model Context Protocol built directly into the blockchain platform
+- **Automated Tool Orchestration**: AI automatically selects and invokes the right tools
+- **Privacy-Preserving**: All MCP operations respect user sovereignty and data privacy
+- **Cross-App Intelligence**: MCP enables seamless AI coordination across applications
 
 ---
 
-## AI-Native Development Patterns
+## MCP-Powered Development Patterns
 
-### SELF AI Tool Integration
+### Model Context Protocol Integration
 
-SELF Chain pioneers seamless AI tool integration for radically simplified development:
+SELF Chain pioneers blockchain-native MCP integration for radically simplified development:
 
 ```javascript
-// PLANNED API - Shows how SELF AI tool integration will work
-import { SELF } from '@self/sdk';
+// PLANNED API - Shows how SELF MCP integration will work
+import { SELFMCP } from '@self/mcp';
 
-const app = new SELF.App({
+const mcp = new SELFMCP({
   appId: process.env.APP_ID,
-  aiTools: {
-    // Automatic AI tool coordination
-    enabled: true,
-    tools: ['security-analysis', 'documentation', 'testing']
+  mcpServers: {
+    // MCP servers are automatically orchestrated
+    security: 'semgrep-mcp',
+    documentation: 'context7-mcp',
+    testing: 'playwright-mcp',
+    webAnalysis: 'firecrawl-mcp'
   }
 });
 
-// AI automatically handles complex tasks
-const result = await app.ai.analyze({
-  code: sourceCode,
-  // SELF automatically routes to appropriate tools:
-  // - Security scanning via SELF Security Tools
-  // - Documentation lookup via SELF Documentation Tools  
-  // - Testing suggestions via analysis
+// MCP automatically handles complex tasks through context-aware tool selection
+const result = await mcp.process({
+  input: sourceCode,
+  intent: 'security-review',
+  // MCP automatically orchestrates:
+  // - Security scanning via Semgrep MCP
+  // - Documentation lookup via Context7 MCP  
+  // - Testing suggestions via Playwright MCP
+  // - Web content analysis via Firecrawl MCP
 });
 ```
 
-### Rule-Based AI Automation
+### MCP-Based Automation Rules
 
-SELF enables intelligent, rule-based automation that understands developer context:
+SELF MCP enables intelligent, rule-based automation that understands developer context:
 
 ```javascript
-// Configure AI automation rules
-const automationRules = {
-  "when user provides URLs": "extract-content",
-  "when security mentioned": "run-security-scan", 
-  "when documentation needed": "fetch-api-references",
-  "when testing required": "generate-test-scenarios"
+// Configure MCP automation rules
+const mcpRules = {
+  "when URLs detected": "firecrawl-mcp",
+  "when security analysis needed": "semgrep-mcp", 
+  "when documentation requested": "context7-mcp",
+  "when testing mentioned": "playwright-mcp",
+  "when web content needed": "firecrawl-mcp"
 };
 
-// AI automatically applies rules without manual invocation
-const response = await session.ai.chat({
+// MCP automatically applies rules without manual tool invocation
+const response = await mcp.chat({
   message: "Help me analyze this smart contract for security issues",
   context: { code: contractCode },
-  // AI automatically triggers security scanning
+  // MCP automatically triggers:
+  // - Semgrep MCP for security scanning
+  // - Context7 MCP for best practices
+  // - Firecrawl MCP for external references
 });
 ```
 

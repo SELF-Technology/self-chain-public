@@ -26,12 +26,41 @@ SELF Chain isn't just another blockchain - it's the **world's first AI-native bl
 **AI-Native by Design:**
 - **Proof-of-AI Consensus**: AI validators and block builders ensure optimal network performance
 - **Built-in Intelligence**: Every transaction benefits from AI validation and optimization
-- **Radically Simplified Development**: No complex infrastructure setup - AI handles the complexity
+- **Model Context Protocol (MCP)**: Native integration of AI tools and services directly into the blockchain platform
 
 **For Developers, This Means:**
 - Focus on building great applications, not managing blockchain complexity
-- Native AI capabilities without third-party integrations
+- Native AI capabilities through MCP - no third-party integrations needed
 - Privacy-preserving AI that works across your entire application ecosystem
+- Automatic tool orchestration that understands your development context
+
+### 🚀 MCP: AI-Native Development
+
+SELF Chain's Model Context Protocol integration revolutionizes blockchain development:
+
+**Automated Intelligence:**
+- **Smart Tool Selection**: AI automatically invokes the right tools based on your code and context
+- **Security-First**: Real-time vulnerability detection and security analysis built into the development flow
+- **Living Documentation**: Context-aware API references and code examples that update as you work
+- **Privacy by Design**: All AI operations respect user sovereignty and data privacy
+
+**Example MCP Workflow:**
+```typescript
+// Coming Q4 2025 - Example of MCP in action
+import { SELFMCP } from '@self/mcp';
+
+const mcp = new SELFMCP({ appId: 'your-app-id' });
+
+// Write naturally - MCP handles complexity
+const result = await mcp.develop({
+  task: "Create a secure token transfer function",
+  // MCP automatically:
+  // - Generates secure code patterns
+  // - Runs security analysis
+  // - Provides optimization suggestions
+  // - Ensures best practices
+});
+```
 
 ## 🚧 Current Testnet Status
 
@@ -62,11 +91,12 @@ SELF Chain's AI-native SDKs and APIs are currently in final development. While w
 - ✅ **Prepare**: Get ready for radically simplified blockchain development
 
 ### **Coming Soon (Q4 2025):**
-- 🔄 **JavaScript/TypeScript SDK**: `npm install @self/sdk`
+- 🔄 **MCP Integration SDK**: `npm install @self/mcp` - Full Model Context Protocol support
+- 🔄 **JavaScript/TypeScript SDK**: `npm install @self/sdk` - Core blockchain SDK
 - 🔄 **Public API Gateway**: Direct testnet access without running nodes
-- 🔄 **AI-Native Tools**: Built-in SELF AI integration for intelligent development
+- 🔄 **AI-Native Tools**: Built-in MCP-powered development assistance
 - 🔄 **Token Faucet**: Get test tokens instantly
-- 🔄 **Block Explorer**: Visual blockchain exploration
+- 🔄 **Block Explorer**: Visual blockchain exploration with AI insights
 
 ### **Want Early Access?**
 Join our developer community to be first in line:
