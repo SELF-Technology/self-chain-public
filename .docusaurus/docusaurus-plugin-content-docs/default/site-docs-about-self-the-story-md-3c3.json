@@ -14,7 +14,8 @@
   "frontMatter": {
     "title": "The Story",
     "sidebar_label": "📖 The Story",
-    "sidebar_position": 2
+    "sidebar_position": 2,
+    "unlisted": true
   },
   "sidebar": "docs",
   "previous": {

@@ -51,8 +51,8 @@
               "sidebar": "docs"
             },
             {
-              "id": "building-on-self/cloud-integration",
-              "path": "/building-on-self/cloud-integration",
+              "id": "building-on-self/developer-integration",
+              "path": "/building-on-self/developer-integration",
               "sidebar": "docs"
             },
             {
@@ -66,8 +66,8 @@
               "sidebar": "docs"
             },
             {
-              "id": "building-on-self/sdk-structure",
-              "path": "/building-on-self/sdk-structure",
+              "id": "building-on-self/sdk-reference",
+              "path": "/building-on-self/sdk-reference",
               "sidebar": "docs"
             },
             {

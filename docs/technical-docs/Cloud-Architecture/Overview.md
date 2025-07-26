@@ -163,12 +163,12 @@ curl -X POST https://testnet.self.app/developers/register \
 
 ### 2. Install SDK
 ```bash
-npm install @selfchain/sdk
+npm install @self/sdk
 ```
 
 ### 3. Build Your First App
 ```javascript
-import { SELFClient } from '@selfchain/sdk';
+import { SELFClient } from '@self/sdk';
 
 const client = new SELFClient({
   appId: 'your-app-id',

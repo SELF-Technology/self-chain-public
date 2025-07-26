@@ -86,20 +86,22 @@ You'll receive:
 ### 2. Install the SDK
 
 ```bash
-# JavaScript/TypeScript
-npm install @selfchain/sdk
+# JavaScript/TypeScript (planned)
+npm install @self/sdk  # NOT AVAILABLE
 
-# Python
-pip install selfchain-sdk
+# Python (planned)
+pip install self-sdk   # NOT AVAILABLE
 
-# Go
-go get github.com/self-chain/sdk-go
+# Go (planned)
+go get github.com/self-chain/sdk-go  # NOT AVAILABLE
 ```
 
-### 3. Initialize Your App
+### 3. Initialize Your App (Conceptual)
 
 ```javascript
-import { SELF } from '@selfchain/sdk';
+// CONCEPTUAL CODE - Shows planned API design
+// This will not work as the SDK doesn't exist yet
+import { SELF } from '@self/sdk';
 
 const app = new SELF.App({
   appId: process.env.APP_ID,
