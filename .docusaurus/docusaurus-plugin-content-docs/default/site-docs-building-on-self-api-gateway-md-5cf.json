@@ -10,15 +10,15 @@
   "unlisted": false,
   "tags": [],
   "version": "current",
-  "sidebarPosition": 4,
+  "sidebarPosition": 5,
   "frontMatter": {
     "title": "Testnet API Gateway",
-    "sidebar_position": 4
+    "sidebar_position": 5
   },
   "sidebar": "docs",
   "previous": {
-    "title": "Developer Integration Guide",
-    "permalink": "/building-on-self/developer-integration"
+    "title": "SELF MCP",
+    "permalink": "/building-on-self/mcp-integration"
   },
   "next": {
     "title": "SDK Reference",

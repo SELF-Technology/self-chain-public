@@ -64,7 +64,7 @@ Testnet tokens are available from our faucet:
 
 ```javascript
 // Example connection (JavaScript SDK - coming soon)
-const { SELFClient } = require('@self-chain/sdk');
+const { SELFClient } = require('@self/sdk');
 
 const client = new SELFClient({
   network: 'testnet',

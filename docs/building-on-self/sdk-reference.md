@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 # SDK Reference
@@ -13,16 +13,26 @@ When released, these SDKs will be for testnet use only:
 
 ## AI-Native SDK Overview
 
-SELF Chain SDKs are designed for AI-native development, providing built-in AI capabilities alongside traditional blockchain functionality.
+SELF Chain SDKs are designed for AI-native development through Model Context Protocol (MCP) integration, providing built-in AI capabilities alongside traditional blockchain functionality.
 
 ### Available SDKs (Planned)
 
-| Language | Package | Status | AI Features |
-|----------|---------|--------|-------------|
-| **JavaScript/TypeScript** | `@self/sdk` | In Development | Full SELF AI integration |
-| **Rust** | `self-sdk` | Planned Q1 2026 | Native AI bindings |
-| **Python** | `self-sdk` | Planned Q2 2026 | AI/ML optimized |
-| **Go** | `self-go-sdk` | Planned Q2 2026 | Enterprise focused |
+| Language | Package | Status | Features |
+|----------|---------|--------|----------|
+| **JavaScript/TypeScript** | `@self/sdk` | In Development | Full MCP integration, SELF AI |
+| **Rust** | `self-sdk` | Planned Q1 2026 | Native MCP bindings |
+| **Python** | `self-sdk` | Planned Q2 2026 | MCP + AI/ML optimized |
+| **Go** | `self-go-sdk` | Planned Q2 2026 | Enterprise MCP support |
+
+### MCP Integration
+
+The SELF SDK includes native Model Context Protocol (MCP) support, enabling:
+- **Automatic Tool Orchestration**: AI selects and invokes appropriate development tools
+- **Security Analysis**: Real-time vulnerability detection through MCP servers
+- **Documentation Access**: Context-aware API references and examples
+- **Cross-App Coordination**: Seamless MCP-powered app integration
+
+For detailed MCP documentation, see [MCP Integration Guide](mcp-integration.md).
 
 ## Quick Start (When Available)
 
@@ -90,7 +100,8 @@ SELF SDK
 │   ├── Queries
 │   └── Events
 ├── AI-Native Layer
-│   ├── SELF AI Integration
+│   ├── MCP Integration
+│   ├── SELF AI Services
 │   ├── Rule-Based Automation
 │   └── Cross-App Coordination
 └── Developer Experience

@@ -39,15 +39,15 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '68e'),
+    component: ComponentCreator('/', 'ba7'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '1c7'),
+        component: ComponentCreator('/', 'b8b'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', '1e7'),
+            component: ComponentCreator('/', '321'),
             routes: [
               {
                 path: '/about-self/creation-brand',
@@ -112,6 +112,12 @@ export default [
               {
                 path: '/building-on-self/getting-started',
                 component: ComponentCreator('/building-on-self/getting-started', '353'),
+                exact: true,
+                sidebar: "docs"
+              },
+              {
+                path: '/building-on-self/mcp-integration',
+                component: ComponentCreator('/building-on-self/mcp-integration', '3e6'),
                 exact: true,
                 sidebar: "docs"
               },

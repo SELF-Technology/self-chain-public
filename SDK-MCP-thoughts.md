@@ -50,11 +50,11 @@ self-dev-os/self-mcp/
 
 ## 🏗️ SELF MCP Architecture Vision
 
-### **Core Product: `@selfchain/mcp`**
+### **Core Product: `@self/mcp`**
 
 **One-Line Install Experience:**
 ```bash
-npx @selfchain/mcp init my-dapp
+npx @self/mcp init my-dapp
 # → Full SELF Chain app with AI tooling in 30 seconds
 ```
 
@@ -64,7 +64,7 @@ npx @selfchain/mcp init my-dapp
 - 🔐 **Security Automation** - Real-time vulnerability detection
 - 📚 **Living Documentation** - Context-aware API references
 - 🎭 **Browser Testing** - End-to-end automation for dApps
-- 🧠 **AI Memory** - Persistent development context
+- 🌐 **Cross-App Context** - Seamless context sharing between applications
 - 🌐 **Web Intelligence** - Automatic content analysis
 
 ### **Bundled MCP Strategy:**
@@ -72,13 +72,13 @@ npx @selfchain/mcp init my-dapp
 **Curated Developer Stacks:**
 ```bash
 # Security-first development
-npx @selfchain/mcp-security
+npx @self/mcp-security
 
 # Full-stack web3 development  
-npx @selfchain/mcp-fullstack
+npx @self/mcp-fullstack
 
 # DeFi-specific tooling
-npx @selfchain/mcp-defi
+npx @self/mcp-defi
 ```
 
 ## 🎨 Developer Experience Design
@@ -170,7 +170,6 @@ SELF Chain is pioneering the integration of **Model Context Protocol (MCP)** as 
 - **Security-First Development**: Real-time code analysis and vulnerability detection via Semgrep MCP  
 - **Living Documentation**: Up-to-date API references and code examples via Context7 MCP
 - **Comprehensive Testing**: End-to-end browser automation and UI testing via Playwright MCP
-- **Contextual Memory**: Persistent workflow context and historical insights via Pieces MCP
 
 #### **🌟 Competitive Differentiation**
 
@@ -255,7 +254,6 @@ SELF Chain is pioneering the integration of **Model Context Protocol (MCP)** as 
 | **Semgrep** | Security & code analysis | stdio | • Code quality automation<br>• Security-first development patterns<br>• Integration with CI/CD workflows |
 | **Context7** | Documentation & library info | stdio | • Real-time documentation access<br>• Version-aware API references<br>• Knowledge graph patterns |
 | **Playwright** | Browser automation & testing | stdio | • End-to-end testing patterns<br>• UI interaction automation<br>• Cross-browser compatibility |
-| **Pieces** | Long-term memory & context | SSE | • Workflow context persistence<br>• Historical data patterns<br>• Personal knowledge management |
 
 ### Transport Layer Insights
 
@@ -289,7 +287,7 @@ Successful patterns for automatic MCP invocation:
 2. **Security Keywords**: `"security, vulnerabilities, code analysis"` → Semgrep  
 3. **Documentation Requests**: `"code examples, API references"` → Context7
 4. **Browser Actions**: `"testing, screenshots, automation"` → Playwright
-5. **Historical Context**: `"past work, previous conversations"` → Pieces
+5. **Cross-App Context**: `"share between apps, context coordination"` → SELF MCP
 
 ### Best Practices for Rules
 - Be specific but not overly restrictive
@@ -335,7 +333,7 @@ self-chain-sdk/
 - Decentralized storage integration
 
 **Privacy & Security**:
-- Local-first MCP servers (like Pieces)
+- Local-first MCP processing
 - Encrypted transport for sensitive data
 - Permission-based MCP access controls
 - Audit trails for MCP interactions
@@ -348,7 +346,7 @@ self-chain-sdk/
 2. **Security Integration**: Code analysis during development is valuable
 3. **Documentation Context**: Real-time API docs save significant time
 4. **Browser Automation**: Testing and screenshot workflows are powerful
-5. **Historical Context**: Long-term memory dramatically improves AI assistance
+5. **Cross-App Integration**: Seamless context sharing enhances AI assistance
 
 ### ⚠️ Challenges & Solutions
 
