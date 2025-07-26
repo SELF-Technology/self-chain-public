@@ -19,6 +19,11 @@ Every line of code, every design decision, every feature serves one purpose: **Y
 - Color Marker System for advanced validation
 - No energy-wasting mining
 
+**🚀 Model Context Protocol (MCP)**
+- World's first blockchain-native AI development platform
+- Privacy-preserving collaboration without sharing personal data
+- One AI working seamlessly across all your applications
+
 **🔐 Privacy by Design**
 - Data sovereignty built into every layer
 - You control who sees what, always
@@ -43,10 +48,11 @@ Every line of code, every design decision, every feature serves one purpose: **Y
 - Explore the open source code
 - Contribute to core development
 
-**🔄 Coming Soon (Q3-Q4 2025)**
+**🔄 Coming Soon (Q4 2025)**
+- SELF MCP SDK (@self/mcp)
+- JavaScript/TypeScript SDK (@self/sdk)
+- API Gateway (Q3-Q4 2025)
 - Public testnet access
-- JavaScript/TypeScript SDK
-- API Gateway
 - Token faucet
 
 **📅 Coming Later (Q1-Q2 2026)**  
@@ -77,6 +83,8 @@ cargo run --bin self-chain-node -- --dev
 ```
 
 > ⚠️ **Note**: This runs a local development node only. Testnet access is currently limited to core developers.
+> 
+> 📦 **Coming Q4 2025**: SELF MCP SDK will enable AI-native blockchain development.
 
 ## 📚 Documentation
 
@@ -87,6 +95,7 @@ cargo run --bin self-chain-node -- --dev
 
 **For Builders**
 - [Developer Guide](docs/building-on-self/getting-started.md) - Start building on SELF
+- [SELF MCP](docs/building-on-self/mcp-integration.md) - Revolutionary AI-native development
 - [Architecture Deep Dive](docs/technical-docs/self-chain/SELF_Chain_Architecture.md) - Technical details
 - [Contribute to Core](docs/developing-self/index.md) - Help build SELF
 
