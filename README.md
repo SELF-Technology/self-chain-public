@@ -65,7 +65,7 @@ Every line of code, every design decision, every feature serves one purpose: **Y
 ## 🎬 Get Started
 
 - **[📊 See What's Live](docs/project-status/index.md)** - Current capabilities and limitations
-- **[🚀 Start Building](docs/building-on-self/getting-started.md)** - Developer guide
+- **[📅 Join Early Access](https://discord.gg/WdMdVpA4C8)** - Get notified when SDKs launch
 - **[🐙 Explore the Code](https://github.com/SELF-Technology/self-chain-public)** - Dive into the source
 
 ## 🏃 Quick Start
@@ -94,9 +94,9 @@ cargo run --bin self-chain-node -- --dev
 - [Project Roadmap](docs/roadmap/Introduction.md) - Where we're going
 
 **For Builders**
-- [Developer Guide](docs/building-on-self/getting-started.md) - Start building on SELF
-- [SELF MCP](docs/building-on-self/mcp-integration.md) - Revolutionary AI-native development
-- [Architecture Deep Dive](docs/technical-docs/self-chain/SELF_Chain_Architecture.md) - Technical details
+- [Technical Architecture](docs/technical-docs/self-chain/SELF_Chain_Architecture.md) - Understand the technology
+- [SELF MCP Vision](docs/building-on-self/mcp-integration.md) - Revolutionary AI-native development (Coming Q4 2025)
+- [Developer Community](https://discord.gg/WdMdVpA4C8) - Connect with future builders
 - [Contribute to Core](docs/developing-self/index.md) - Help build SELF
 
 **Full Documentation**: [docs.self.app](https://docs.self.app)
