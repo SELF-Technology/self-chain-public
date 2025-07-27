@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # Beta Web App
 
-The Beta Web App is currently available to try free-of-charge, [click here to sign up.](https://your.self.app). You can check the uptime status by [clicking here](https://status.self.app/). This purpose of this is to simply test the agentic experience where SELF learns about each user during conversations (likes, dislikes, traits, habits, places you've been, goals, dreams etc.), and generates a user profile. You may also create your profile through manual input.
+The Beta Web App is currently available to try free-of-charge, [click here to sign up.](https://your.self.app). This purpose of this is to simply test the agentic experience where SELF learns about each user during conversations (likes, dislikes, traits, habits, places you've been, goals, dreams etc.), and generates a user profile. You may also create your profile through manual input.
 
 The current SELF default setting is to keep responses as clean and concise as possible, unless specified to do otherwise. SELF is all about honing in on the essentials, reducing noise while elevating signal. Later versions will introduce a slider functionality that allows users to regulate how concise or detailed SELF’s responses are.
 
