@@ -1,0 +1,368 @@
+openapi: 3.0.0
+info:
+  title: SELF Chain Public API
+  description: Public API for interacting with the SELF blockchain
+  version: 1.0.0
+  contact:
+    name: SELF Technology
+    url: https://self.tech
+    email: support@self.tech
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+
+servers:
+  - url: https://api.self.tech/v1
+    description: Production API
+  - url: https://testnet-api.self.tech/v1
+    description: Testnet API
+  - url: http://localhost:8080/v1
+    description: Local development
+
+paths:
+  /status:
+    get:
+      summary: Get blockchain status
+      description: Returns current blockchain status including height, network info, and sync status
+      responses:
+        '200':
+          description: Blockchain status
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BlockchainStatus'
+
+  /blocks:
+    get:
+      summary: List recent blocks
+      description: Returns a paginated list of recent blocks
+      parameters:
+        - name: limit
+          in: query
+          description: Number of blocks to return
+          required: false
+          schema:
+            type: integer
+            default: 20
+            maximum: 100
+        - name: offset
+          in: query
+          description: Number of blocks to skip
+          required: false
+          schema:
+            type: integer
+            default: 0
+      responses:
+        '200':
+          description: List of blocks
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  blocks:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Block'
+                  total:
+                    type: integer
+                  limit:
+                    type: integer
+                  offset:
+                    type: integer
+
+  /blocks/{blockHash}:
+    get:
+      summary: Get block by hash
+      description: Returns detailed information about a specific block
+      parameters:
+        - name: blockHash
+          in: path
+          description: Block hash
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Block details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Block'
+        '404':
+          description: Block not found
+
+  /transactions:
+    post:
+      summary: Submit transaction
+      description: Submit a new transaction to the blockchain
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TransactionRequest'
+      responses:
+        '201':
+          description: Transaction submitted successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TransactionResponse'
+        '400':
+          description: Invalid transaction
+
+  /transactions/{txHash}:
+    get:
+      summary: Get transaction by hash
+      description: Returns detailed information about a specific transaction
+      parameters:
+        - name: txHash
+          in: path
+          description: Transaction hash
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Transaction details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Transaction'
+        '404':
+          description: Transaction not found
+
+  /accounts/{address}:
+    get:
+      summary: Get account information
+      description: Returns account balance and information
+      parameters:
+        - name: address
+          in: path
+          description: Account address
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Account information
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Account'
+
+  /validators:
+    get:
+      summary: List active validators
+      description: Returns list of active validators in the network
+      responses:
+        '200':
+          description: List of validators
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  validators:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Validator'
+                  total:
+                    type: integer
+
+components:
+  schemas:
+    BlockchainStatus:
+      type: object
+      properties:
+        height:
+          type: integer
+          description: Current blockchain height
+        hash:
+          type: string
+          description: Current block hash
+        time:
+          type: string
+          format: date-time
+          description: Current block time
+        network:
+          type: string
+          description: Network identifier
+        version:
+          type: string
+          description: Node version
+        peers:
+          type: integer
+          description: Number of connected peers
+        syncing:
+          type: boolean
+          description: Whether node is syncing
+
+    Block:
+      type: object
+      properties:
+        height:
+          type: integer
+          description: Block height
+        hash:
+          type: string
+          description: Block hash
+        previousHash:
+          type: string
+          description: Previous block hash
+        timestamp:
+          type: string
+          format: date-time
+          description: Block timestamp
+        validator:
+          type: string
+          description: Block validator address
+        transactions:
+          type: array
+          items:
+            type: string
+          description: Transaction hashes in this block
+        size:
+          type: integer
+          description: Block size in bytes
+
+    Transaction:
+      type: object
+      properties:
+        hash:
+          type: string
+          description: Transaction hash
+        from:
+          type: string
+          description: Sender address
+        to:
+          type: string
+          description: Recipient address
+        value:
+          type: string
+          description: Transaction value
+        fee:
+          type: string
+          description: Transaction fee
+        nonce:
+          type: integer
+          description: Transaction nonce
+        data:
+          type: string
+          description: Transaction data (hex encoded)
+        signature:
+          type: string
+          description: Transaction signature
+        blockHash:
+          type: string
+          description: Block hash containing this transaction
+        blockHeight:
+          type: integer
+          description: Block height containing this transaction
+        status:
+          type: string
+          enum: [pending, confirmed, failed]
+          description: Transaction status
+
+    TransactionRequest:
+      type: object
+      required:
+        - from
+        - to
+        - value
+        - nonce
+        - signature
+      properties:
+        from:
+          type: string
+          description: Sender address
+        to:
+          type: string
+          description: Recipient address
+        value:
+          type: string
+          description: Transaction value
+        fee:
+          type: string
+          description: Transaction fee (optional, will be estimated if not provided)
+        nonce:
+          type: integer
+          description: Transaction nonce
+        data:
+          type: string
+          description: Transaction data (hex encoded)
+        signature:
+          type: string
+          description: Transaction signature
+
+    TransactionResponse:
+      type: object
+      properties:
+        hash:
+          type: string
+          description: Transaction hash
+        status:
+          type: string
+          description: Initial transaction status
+        estimatedFee:
+          type: string
+          description: Estimated transaction fee
+
+    Account:
+      type: object
+      properties:
+        address:
+          type: string
+          description: Account address
+        balance:
+          type: string
+          description: Account balance
+        nonce:
+          type: integer
+          description: Account nonce
+        isValidator:
+          type: boolean
+          description: Whether account is a validator
+        createdAt:
+          type: string
+          format: date-time
+          description: Account creation time
+
+    Validator:
+      type: object
+      properties:
+        address:
+          type: string
+          description: Validator address
+        stake:
+          type: string
+          description: Validator stake amount
+        reputation:
+          type: number
+          format: double
+          description: Validator reputation score
+        uptime:
+          type: number
+          format: double
+          description: Validator uptime percentage
+        blocksProposed:
+          type: integer
+          description: Number of blocks proposed
+        isActive:
+          type: boolean
+          description: Whether validator is currently active
+
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+security:
+  - ApiKeyAuth: []
+  - BearerAuth: []
