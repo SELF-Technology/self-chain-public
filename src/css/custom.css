@@ -4,14 +4,19 @@
  * work well for content-centric websites.
  */
 
-/* External CSS now loaded via link tags for better performance */
+/* Font loading handled separately for performance */
+/* @import "./fonts.css"; - loaded asynchronously */
+
+/* Mobile performance loaded conditionally */
+@import "./mobile-performance.css" screen and (max-width: 768px);
+
+/* External CSS - TODO: Convert these to <link> tags for better performance */
 @import "./category-pages.css";
 @import "./breadcrumb-fix.css";
 @import "./social-icons.css";
 @import "./footer-social.css";
 @import "./theme-toggle-fix.css";
 @import "./custom-theme-toggle.css";
-/* @import './mobile-performance.css'; */
 
 /* Global box-sizing to prevent width calculation issues */
 *, *::before, *::after {
