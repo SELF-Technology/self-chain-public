@@ -1,9 +1,10 @@
 ---
-title: Getting Started
+title: SDK Preparation Guide
+sidebar_label: "📚 SDK Preparation Guide"
 sidebar_position: 2
 ---
 
-# Getting Started
+# SDK Preparation Guide
 
 :::danger SDKs NOT YET AVAILABLE
 The SELF SDK and MCP integration described in this documentation are planned but not yet released. Code examples shown are specifications that will work when the SDK is deployed.
@@ -23,9 +24,9 @@ The SELF SDK and MCP integration described in this documentation are planned but
 These developer resources are in beta. Many features are still being developed. See [Project Status](/project-status) for current capabilities.
 :::
 
-## Welcome to AI-Native Blockchain Development!
+## Prepare for AI-Native Development
 
-SELF Chain isn't just another blockchain - it's the **world's first AI-native blockchain platform**. Built from the ground up with Proof-of-AI consensus, SELF radically simplifies blockchain development by making AI integration a core feature, not an afterthought.
+While SELF's SDKs are in final development, use this guide to prepare for the most advanced blockchain development experience available. SELF Chain's AI-native architecture will revolutionize how you build applications.
 
 ### 🤖 Why SELF is Different
 
@@ -158,53 +159,65 @@ Every blockchain interaction becomes intelligent - transactions optimize themsel
 - ❌ Rely on uptime guarantees
 - ❌ Transfer testnet tokens to mainnet
 
-## Development Workflow
+## Development Workflow (Coming Q4 2025)
 
 ### 1. Local Development
 
-For local testing without connecting to testnet:
+When SDKs are released, you'll develop locally using:
 
-```bash
-# Start local development node
-cargo run --bin self-chain-node -- --dev
+```typescript
+// Initialize SELF SDK
+import { SelfClient } from '@self/sdk';
 
-# This runs a local instance with:
-# - Instant block production
-# - Pre-funded test accounts
-# - No real PoAI consensus (simplified for development)
+const client = new SelfClient({ 
+  network: 'testnet',
+  apiKey: 'your-api-key' 
+});
+
+// Deploy your application
+const deployment = await client.deploy({
+  name: 'MyApp',
+  code: appCode,
+  config: appConfig
+});
 ```
 
 ### 2. Testnet Deployment
 
-When ready to test on the actual testnet:
+Deploy to testnet through the SDK:
 
-```bash
-# Build your application
-cargo build --release
+```typescript
+// Deploy to testnet
+const tx = await client.createTransaction({
+  to: contractAddress,
+  data: deploymentData
+});
 
-# Deploy to testnet (example)
-self-chain-cli deploy --network testnet --contract ./target/wasm32-unknown-unknown/release/my_contract.wasm
+console.log(`Deployed at: ${tx.hash}`);
 ```
 
 ### 3. Monitoring Your Application
 
-```bash
-# Check transaction status
-self-chain-cli tx status <tx_hash> --network testnet
+```typescript
+// Monitor transactions
+const subscription = client.subscribeToTransactions((tx) => {
+  console.log(`New transaction: ${tx.hash}`);
+});
 
-# Monitor blocks
-self-chain-cli blocks watch --network testnet
+// Check blockchain status
+const status = await client.getStatus();
+console.log(`Current height: ${status.height}`);
 ```
 
 ## Available Tools & Resources
 
 ### Command Line Interface (CLI)
 ```bash
-# Install CLI
-cargo install self-chain-cli
+# Coming Q4 2025
+# npm install -g @self/cli
 
-# View available commands
-self-chain-cli --help
+# View available commands (when released)
+# self-cli --help
 ```
 
 ### SDKs (Coming Soon)
@@ -286,7 +299,7 @@ We love contributions! Even in testnet phase, you can:
 3. **Write documentation** - Help others get started
 4. **Build example apps** - Show what's possible
 
-See [Developing SELF Guide](/developing-self) for guidelines.
+Contact us at devs@self.app for contribution guidelines.
 
 ## Testnet Roadmap
 
@@ -325,6 +338,24 @@ See [Developing SELF Guide](/developing-self) for guidelines.
 3. Explore the codebase
 4. Build something amazing!
 5. Share your feedback via GitHub Issues or devs@self.app
+
+## 🎯 SELF SDK Design Principles
+
+When released, the SELF SDK will follow these core principles:
+
+**🔧 Simplicity** - Easy to understand and use, with clear documentation and examples that enable developers to get started quickly and efficiently.
+
+**🔐 Security** - Robust security features to protect user data and ensure the integrity of applications.
+
+**⚡ Reliability** - Stable and reliable infrastructure with minimal downtime and consistent performance.
+
+**👥 Usability** - Designed with the end-user in mind, ensuring applications are intuitive and provide seamless user experiences.
+
+**♻️ Code Reusability** - Write code once and use it across multiple parts of your application or different projects.
+
+**📦 Modularity** - Include only the components you need, reducing complexity and application size.
+
+**🧪 Continuous Validation** - Built-in tools for continuous testing and validation to catch issues early and maintain high-quality code.
 
 Welcome to the future of blockchain - powered by AI! 🚀
 

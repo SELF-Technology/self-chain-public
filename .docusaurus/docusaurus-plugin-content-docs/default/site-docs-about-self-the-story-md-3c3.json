@@ -1,0 +1,28 @@
+{
+  "id": "about-self/the-story",
+  "title": "The Story",
+  "description": "The Problem: Our Digital Lives Are No Longer Our Own",
+  "source": "@site/docs/about-self/the-story.md",
+  "sourceDirName": "about-self",
+  "slug": "/about-self/the-story",
+  "permalink": "/about-self/the-story",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "The Story",
+    "sidebar_label": "📖 The Story",
+    "sidebar_position": 2
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "📜 Manifesto",
+    "permalink": "/about-self/manifesto"
+  },
+  "next": {
+    "title": "🔄 The Evolution Of Technology",
+    "permalink": "/about-self/evolution"
+  }
+}

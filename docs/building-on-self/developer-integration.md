@@ -1,5 +1,7 @@
 ---
-sidebar_position: 3
+title: Developer Integration Guide
+sidebar_label: "🔧 Developer Integration"
+sidebar_position: 4
 ---
 
 # Developer Integration Guide
@@ -459,7 +461,7 @@ const helpSession = await session.ai.offerHelp({
 
 ### Documentation
 - [Getting Started](/building-on-self/getting-started)
-- [SDK Reference](/building-on-self/sdk-reference)
+- [SDK Documentation](/building-on-self)
 - [Proof-of-AI Technical Docs](/technical-docs/PoAI/Proof-of-AI)
 
 ### Support
@@ -481,4 +483,4 @@ const helpSession = await session.ai.offerHelp({
 
 ---
 
-*This guide is for building on SELF, not building SELF itself. For contribution to core infrastructure, see our [Developing SELF Guide](/developing-self).*
+*This guide is for building applications on SELF using SDKs. For questions about core infrastructure, contact us at devs@self.app.*

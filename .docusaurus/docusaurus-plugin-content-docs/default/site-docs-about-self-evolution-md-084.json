@@ -1,0 +1,27 @@
+{
+  "id": "about-self/evolution",
+  "title": "The Evolution Of Technology",
+  "description": "Technology is evolving in two main directions; towards more centralised control, or towards decentralised, democratic, user-control. Humanity is at a crossroads and everyone has a choice:",
+  "source": "@site/docs/about-self/evolution.md",
+  "sourceDirName": "about-self",
+  "slug": "/about-self/evolution",
+  "permalink": "/about-self/evolution",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_label": "🔄 The Evolution Of Technology",
+    "sidebar_position": 3
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "📖 The Story",
+    "permalink": "/about-self/the-story"
+  },
+  "next": {
+    "title": "🔓 A Self-Sovereign Alternative",
+    "permalink": "/about-self/self-sov-alternative"
+  }
+}

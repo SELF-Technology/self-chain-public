@@ -63,11 +63,11 @@ SELF Chain implements a hybrid key exchange mechanism combining X25519 (classica
 SELF Chain's cryptographic implementation follows a modular architecture:
 
 ```
-src/crypto/
-├── classic/     # Classical cryptography (ECDSA, etc.)
-├── quantum/     # Post-quantum algorithms (Kyber, SPHINCS+)
-├── hybrid/      # Combined classical+quantum approaches
-└── common/      # Shared traits and utilities
+Cryptographic Modules:
+├── Classical     # Traditional cryptography (ECDSA, etc.)
+├── Quantum       # Post-quantum algorithms (Kyber, SPHINCS+)
+├── Hybrid        # Combined classical+quantum approaches
+└── Common        # Shared interfaces and utilities
 ```
 
 This architecture provides:

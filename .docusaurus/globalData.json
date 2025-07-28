@@ -1,0 +1,243 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/",
+          "mainDocId": "index",
+          "docs": [
+            {
+              "id": "about-self/creation-brand",
+              "path": "/about-self/creation-brand",
+              "sidebar": "docs"
+            },
+            {
+              "id": "about-self/evolution",
+              "path": "/about-self/evolution",
+              "sidebar": "docs"
+            },
+            {
+              "id": "about-self/long-term",
+              "path": "/about-self/long-term",
+              "sidebar": "docs"
+            },
+            {
+              "id": "about-self/manifesto",
+              "path": "/about-self/manifesto",
+              "sidebar": "docs"
+            },
+            {
+              "id": "about-self/media-coverage",
+              "path": "/about-self/media-coverage",
+              "sidebar": "docs"
+            },
+            {
+              "id": "about-self/open-ecosystem-model",
+              "path": "/about-self/open-ecosystem-model",
+              "sidebar": "docs"
+            },
+            {
+              "id": "about-self/self-sov-alternative",
+              "path": "/about-self/self-sov-alternative",
+              "sidebar": "docs"
+            },
+            {
+              "id": "about-self/the-story",
+              "path": "/about-self/the-story",
+              "sidebar": "docs"
+            },
+            {
+              "id": "building-on-self/developer-incentives",
+              "path": "/building-on-self/developer-incentives",
+              "sidebar": "docs"
+            },
+            {
+              "id": "building-on-self/developer-integration",
+              "path": "/building-on-self/developer-integration",
+              "sidebar": "docs"
+            },
+            {
+              "id": "building-on-self/getting-started",
+              "path": "/building-on-self/getting-started",
+              "sidebar": "docs"
+            },
+            {
+              "id": "building-on-self/index",
+              "path": "/building-on-self/",
+              "sidebar": "docs"
+            },
+            {
+              "id": "building-on-self/mcp-integration",
+              "path": "/building-on-self/mcp-integration",
+              "sidebar": "docs"
+            },
+            {
+              "id": "index",
+              "path": "/",
+              "sidebar": "docs"
+            },
+            {
+              "id": "project-status/index",
+              "path": "/project-status/",
+              "sidebar": "docs"
+            },
+            {
+              "id": "roadmap/beta-web-app",
+              "path": "/roadmap/beta-web-app",
+              "sidebar": "docs"
+            },
+            {
+              "id": "roadmap/Introduction",
+              "path": "/roadmap/Introduction",
+              "sidebar": "docs"
+            },
+            {
+              "id": "roadmap/self-os",
+              "path": "/roadmap/self-os",
+              "sidebar": "docs"
+            },
+            {
+              "id": "roadmap/super-app-testnet",
+              "path": "/roadmap/super-app-testnet",
+              "sidebar": "docs"
+            },
+            {
+              "id": "roadmap/Token/Overview",
+              "path": "/roadmap/Token/Overview",
+              "sidebar": "docs"
+            },
+            {
+              "id": "roadmap/Token/Smart-Contract-Architecture",
+              "path": "/roadmap/Token/Smart-Contract-Architecture",
+              "sidebar": "docs"
+            },
+            {
+              "id": "roadmap/Token/Tokenomics",
+              "path": "/roadmap/Token/Tokenomics",
+              "sidebar": "docs"
+            },
+            {
+              "id": "technical-docs/Constellation/Industry_Validation_Rules",
+              "path": "/technical-docs/Constellation/Industry_Validation_Rules",
+              "sidebar": "docs"
+            },
+            {
+              "id": "technical-docs/Constellation/Overview",
+              "path": "/technical-docs/Constellation/Overview",
+              "sidebar": "docs"
+            },
+            {
+              "id": "technical-docs/Grid-Compute/Future-Vision",
+              "path": "/technical-docs/Grid-Compute/Future-Vision",
+              "sidebar": "docs"
+            },
+            {
+              "id": "technical-docs/Integration/minima-integration",
+              "path": "/technical-docs/Integration/minima-integration",
+              "sidebar": "docs"
+            },
+            {
+              "id": "technical-docs/Integration/rosetta-api-integration",
+              "path": "/technical-docs/Integration/rosetta-api-integration",
+              "sidebar": "docs"
+            },
+            {
+              "id": "technical-docs/Performance/Advanced_TPS_Optimization",
+              "path": "/technical-docs/Performance/Advanced_TPS_Optimization",
+              "sidebar": "docs"
+            },
+            {
+              "id": "technical-docs/PoAI/ai-block-builder-algorithm",
+              "path": "/technical-docs/PoAI/ai-block-builder-algorithm",
+              "sidebar": "docs"
+            },
+            {
+              "id": "technical-docs/PoAI/ai-validator-algorithm",
+              "path": "/technical-docs/PoAI/ai-validator-algorithm",
+              "sidebar": "docs"
+            },
+            {
+              "id": "technical-docs/PoAI/color-marker-system",
+              "path": "/technical-docs/PoAI/color-marker-system",
+              "sidebar": "docs"
+            },
+            {
+              "id": "technical-docs/PoAI/Proof-of-AI",
+              "path": "/technical-docs/PoAI/Proof-of-AI",
+              "sidebar": "docs"
+            },
+            {
+              "id": "technical-docs/PoAI/Taxonomy",
+              "path": "/technical-docs/PoAI/Taxonomy",
+              "sidebar": "docs"
+            },
+            {
+              "id": "technical-docs/PoAI/the-incentive",
+              "path": "/technical-docs/PoAI/the-incentive",
+              "sidebar": "docs"
+            },
+            {
+              "id": "technical-docs/PoAI/validation-process",
+              "path": "/technical-docs/PoAI/validation-process",
+              "sidebar": "docs"
+            },
+            {
+              "id": "technical-docs/PoAI/voting-algorithm",
+              "path": "/technical-docs/PoAI/voting-algorithm",
+              "sidebar": "docs"
+            },
+            {
+              "id": "technical-docs/Security/Overview",
+              "path": "/technical-docs/Security/Overview",
+              "sidebar": "docs"
+            },
+            {
+              "id": "technical-docs/Security/Post_Quantum_Cryptography",
+              "path": "/technical-docs/Security/Post_Quantum_Cryptography",
+              "sidebar": "docs"
+            },
+            {
+              "id": "technical-docs/self-chain/SELF_Chain_Architecture",
+              "path": "/technical-docs/self-chain/SELF_Chain_Architecture",
+              "sidebar": "docs"
+            },
+            {
+              "id": "technical-docs/self-chain/User-Instance-Architecture",
+              "path": "/technical-docs/self-chain/User-Instance-Architecture",
+              "sidebar": "docs"
+            },
+            {
+              "id": "technical-docs/self-chain/why-build-a-blockchain",
+              "path": "/technical-docs/self-chain/why-build-a-blockchain",
+              "sidebar": "docs"
+            },
+            {
+              "id": "technical-docs/Validate/index",
+              "path": "/technical-docs/Validate/",
+              "sidebar": "docs"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "docs": {
+              "link": {
+                "path": "/",
+                "label": "👋 Welcome"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  },
+  "critical-css-plugin": {
+    "default": {
+      "criticalCss": "/* Critical CSS - Minimal above-the-fold styles only */\n\n/* Essential CSS custom properties for immediate render */\n:root {\n  --ifm-color-primary: #0658f7;\n  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;\n}\n\n/* Prevent layout shift - critical measurements */\nhtml {\n  font-family: var(--ifm-font-family-base);\n}\n\nbody {\n  margin: 0;\n}\n\n/* Navbar placeholder to prevent layout shift */\n.navbar {\n  height: 60px;\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  z-index: 1000;\n  background: #fff;\n}\n\n/* Main wrapper to account for fixed navbar */\n.main-wrapper {\n  padding-top: 60px;\n}\n\n/* Hero section - only for landing page */\n.landing-page .hero-section-wrapper {\n  min-height: 400px;\n  background: #0658f7;\n}\n\n/* Dark mode critical styles */\n[data-theme='dark'] .navbar {\n  background: #1a1a1a;\n}\n\n/* Mobile critical viewport */\n@media (max-width: 768px) {\n  .navbar {\n    height: 56px;\n  }\n  .main-wrapper {\n    padding-top: 56px;\n  }\n}"
+    }
+  }
+}

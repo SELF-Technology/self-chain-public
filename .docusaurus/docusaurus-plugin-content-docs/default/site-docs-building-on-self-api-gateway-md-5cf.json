@@ -1,0 +1,27 @@
+{
+  "id": "building-on-self/api-gateway",
+  "title": "Testnet API Gateway",
+  "description": "This API gateway is planned but not yet active. The endpoints shown below are specifications only and will not work until deployment is complete.",
+  "source": "@site/docs/building-on-self/api-gateway.md",
+  "sourceDirName": "building-on-self",
+  "slug": "/building-on-self/api-gateway",
+  "permalink": "/building-on-self/api-gateway",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Testnet API Gateway",
+    "sidebar_position": 5
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "SELF MCP",
+    "permalink": "/building-on-self/mcp-integration"
+  },
+  "next": {
+    "title": "SDK Reference",
+    "permalink": "/building-on-self/sdk-reference"
+  }
+}

@@ -5,35 +5,62 @@ sidebar_position: 1
 
 # SELF Chain Public Architecture
 
-## 📂 Explore the Open Source Code
+## 🏗️ Architecture Components
 
-Our blockchain implementation is open source. Explore the core components:
+SELF Chain implements a revolutionary architecture combining AI and blockchain:
 
-<div className="opensource-links">
+<div className="architecture-components">
 
-- **[Blockchain Core](https://github.com/SELF-Technology/self-chain-public/tree/main/src/blockchain)** - Core blockchain implementation
-  - Block structure, chain management, transaction processing
-- **[Consensus (PoAI)](https://github.com/SELF-Technology/self-chain-public/tree/main/src/consensus)** - Proof of AI consensus mechanism
-  - Validator logic, voting system, reputation management
-- **[Networking](https://github.com/SELF-Technology/self-chain-public/tree/main/src/network)** - P2P and cloud communication
-  - libp2p integration, TLS security, cloud protocol
-- **[Storage](https://github.com/SELF-Technology/self-chain-public/tree/main/src/storage)** - Hybrid distributed storage
-  - IPFS integration, OrbitDB, cloud storage adapters
-- **[Cryptography](https://github.com/SELF-Technology/self-chain-public/tree/main/src/crypto)** - Post-quantum security
-  - Kyber, SPHINCS+, hybrid cryptographic systems
-- **[AI Integration](https://github.com/SELF-Technology/self-chain-public/tree/main/src/ai)** - AI-powered validation system
-  - Pattern analysis, context management, validation services
+- **Blockchain Core** - Advanced blockchain implementation
+  - Block structure with AI-enhanced validation
+  - Chain management with Proof of AI consensus
+  - High-performance transaction processing
+  
+- **Consensus (PoAI)** - World's first Proof of AI mechanism
+  - AI-powered validator selection
+  - Reputation-based voting system
+  - Energy-efficient consensus
+  
+- **Networking** - Enterprise-grade communication layer
+  - Secure P2P protocols
+  - TLS encryption throughout
+  - Cloud-optimized architecture
+  
+- **Storage** - Hybrid distributed storage system
+  - IPFS for decentralized content
+  - OrbitDB for real-time data
+  - Privacy-preserving storage layers
+  
+- **Cryptography** - Post-quantum security
+  - Kyber key encapsulation
+  - SPHINCS+ signatures
+  - Hybrid cryptographic approach
+  
+- **AI Integration** - Native AI validation system
+  - Pattern analysis for security
+  - Context management for transactions
+  - Intelligent validation services
 
 </div>
 
 ### 👨‍💻 Developer Resources
 
-Get started building on SELF Chain:
+Build on SELF Chain using our comprehensive SDKs:
 
-- **[Getting Started Guide (Testnet)](/building-on-self/getting-started)** - Begin your journey with SELF Chain development
-  - Testnet setup, configuration, and safety guidelines
-- **[API Gateway Documentation](/building-on-self/api-gateway)** - Security-safe APIs for developers
-  - Understand what can be safely accessed and built upon
+- **[Developer Guide Overview](/building-on-self)** - Start here to understand SELF's capabilities
+  - AI-native blockchain platform overview
+  - What you can build with SELF
+  - Current development status
+  
+- **[SDK Preparation Guide](/building-on-self/getting-started)** - Prepare for SDK development
+  - SDK installation and configuration (coming Q4 2025)
+  - Design principles and architecture
+  - Getting ready for development
+  
+- **[MCP Integration](/building-on-self/mcp-integration)** - AI-native development concepts
+  - Model Context Protocol for blockchain
+  - Privacy-preserving AI collaboration
+  - Cross-application intelligence
 
 ---
 

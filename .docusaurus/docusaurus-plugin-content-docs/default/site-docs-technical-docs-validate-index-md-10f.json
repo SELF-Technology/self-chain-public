@@ -1,0 +1,25 @@
+{
+  "id": "technical-docs/Validate/index",
+  "title": "Validate",
+  "description": "Overview",
+  "source": "@site/docs/technical-docs/Validate/index.md",
+  "sourceDirName": "technical-docs/Validate",
+  "slug": "/technical-docs/Validate/",
+  "permalink": "/technical-docs/Validate/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Validate"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Post Quantum Cryptography",
+    "permalink": "/technical-docs/Security/Post_Quantum_Cryptography"
+  },
+  "next": {
+    "title": "Rosetta API Integration",
+    "permalink": "/technical-docs/Integration/rosetta-api-integration"
+  }
+}

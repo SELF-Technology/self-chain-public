@@ -1,0 +1,27 @@
+{
+  "id": "roadmap/super-app-testnet",
+  "title": "Super-App & SELF Chain Testnet",
+  "description": "The Super-App will run on the SELF Chain Testnet and each user's profile will be an individual node on the network, running their own private AI. The initial features will be:",
+  "source": "@site/docs/roadmap/super-app-testnet.md",
+  "sourceDirName": "roadmap",
+  "slug": "/roadmap/super-app-testnet",
+  "permalink": "/roadmap/super-app-testnet",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_label": "📱 Super-App & Testnet",
+    "sidebar_position": 3
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "🧪 Beta Web App",
+    "permalink": "/roadmap/beta-web-app"
+  },
+  "next": {
+    "title": "🌟 Overview",
+    "permalink": "/roadmap/Token/Overview"
+  }
+}

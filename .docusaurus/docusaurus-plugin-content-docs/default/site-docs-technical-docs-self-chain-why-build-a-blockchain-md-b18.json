@@ -1,0 +1,27 @@
+{
+  "id": "technical-docs/self-chain/why-build-a-blockchain",
+  "title": "Why We Built A Chain",
+  "description": "Do we need another blockchain?",
+  "source": "@site/docs/technical-docs/self-chain/why-build-a-blockchain.md",
+  "sourceDirName": "technical-docs/self-chain",
+  "slug": "/technical-docs/self-chain/why-build-a-blockchain",
+  "permalink": "/technical-docs/self-chain/why-build-a-blockchain",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_label": "Why We Built A Chain",
+    "sidebar_position": 2
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "SELF Chain Architecture",
+    "permalink": "/technical-docs/self-chain/SELF_Chain_Architecture"
+  },
+  "next": {
+    "title": "User Instance Architecture",
+    "permalink": "/technical-docs/self-chain/User-Instance-Architecture"
+  }
+}

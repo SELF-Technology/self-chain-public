@@ -1,0 +1,27 @@
+{
+  "id": "technical-docs/PoAI/the-incentive",
+  "title": "The Incentive",
+  "description": "The reward for participation is generated as a native coin, earned by helping to assemble a new block among participants in the consensus process. An example reward distribution is as follows:",
+  "source": "@site/docs/technical-docs/PoAI/the-incentive.md",
+  "sourceDirName": "technical-docs/PoAI",
+  "slug": "/technical-docs/PoAI/the-incentive",
+  "permalink": "/technical-docs/PoAI/the-incentive",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "sidebar_label": "The Incentive",
+    "sidebar_position": 9
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Validation Process",
+    "permalink": "/technical-docs/PoAI/validation-process"
+  },
+  "next": {
+    "title": "Constellation Overview & Architecture",
+    "permalink": "/technical-docs/Constellation/Overview"
+  }
+}

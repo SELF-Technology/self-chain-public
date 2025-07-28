@@ -39,7 +39,7 @@ After the above has been established and the Super-App is in App Stores, we will
 - **Rewards API**: Enable apps to participate in the SELF token economy
 
 ### **Developer Resources**
-- **[SDK Reference](/building-on-self/sdk-reference)**: AI-native development tools and frameworks
+- **[Developer Guide](/building-on-self)**: AI-native development tools and frameworks
 - **[Integration Guide](/building-on-self/developer-integration)**: Step-by-step integration tutorials
 
 > **Note**: All developer APIs will launch on testnet first, enabling thorough testing before mainnet deployment. The APIs are designed from the ground up to be AI-native, making development radically simplified compared to traditional blockchain platforms.

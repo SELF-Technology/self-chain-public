@@ -1,0 +1,27 @@
+{
+  "id": "roadmap/Token/Overview",
+  "title": "SELF Token Overview",
+  "description": "Leverage Your Data",
+  "source": "@site/docs/roadmap/Token/Overview.md",
+  "sourceDirName": "roadmap/Token",
+  "slug": "/roadmap/Token/Overview",
+  "permalink": "/roadmap/Token/Overview",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_label": "🌟 Overview",
+    "sidebar_position": 1
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "📱 Super-App & Testnet",
+    "permalink": "/roadmap/super-app-testnet"
+  },
+  "next": {
+    "title": "🔗 Smart Contract Architecture",
+    "permalink": "/roadmap/Token/Smart-Contract-Architecture"
+  }
+}
