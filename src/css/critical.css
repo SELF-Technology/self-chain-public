@@ -1,142 +1,53 @@
-/* Critical CSS - Above-the-fold styles */
+/* Critical CSS - Minimal above-the-fold styles only */
 
-/* Base reset and typography */
+/* Essential CSS custom properties for immediate render */
 :root {
   --ifm-color-primary: #0658f7;
-  --ifm-color-primary-dark: #044ac5;
-  --ifm-color-primary-darker: #0346b8;
-  --ifm-color-primary-darkest: #023999;
-  --ifm-color-primary-light: #296bfb;
-  --ifm-color-primary-lighter: #3673fb;
-  --ifm-color-primary-lightest: #5e8ffc;
-  --ifm-font-family-base: 'Thicccboi', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* Font loading - critical weights only */
-@font-face {
-  font-family: 'Thicccboi';
-  src: url('/fonts/thicccboi/THICCCBOI-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Thicccboi';
-  src: url('/fonts/thicccboi/THICCCBOI-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* Base layout */
+/* Prevent layout shift - critical measurements */
 html {
   font-family: var(--ifm-font-family-base);
 }
 
 body {
   margin: 0;
-  font-family: var(--ifm-font-family-base);
 }
 
-/* Hero section - critical for landing page */
-.hero-section-wrapper {
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(135deg, #0658f7 0%, #023999 100%);
-}
-
-.hero-section {
-  padding: 4rem 1rem;
-  text-align: center;
-  color: white;
-}
-
-.hero-title {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: white;
-}
-
-.hero-tagline {
-  font-size: 1.5rem;
-  font-weight: 400;
-  opacity: 0.9;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-/* Main navigation */
+/* Navbar placeholder to prevent layout shift */
 .navbar {
-  background-color: var(--ifm-navbar-background-color);
-  box-shadow: var(--ifm-navbar-shadow);
-  height: var(--ifm-navbar-height);
-  padding: var(--ifm-navbar-padding-vertical) var(--ifm-navbar-padding-horizontal);
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #fff;
 }
 
-/* Button styles - critical for CTA */
-.button-container {
-  text-align: center;
-  margin: 2rem 0;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+/* Main wrapper to account for fixed navbar */
+.main-wrapper {
+  padding-top: 60px;
 }
 
-.button-container a {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.5rem 1.25rem;
-  font-size: 0.95rem;
-  font-weight: 500;
-  text-decoration: none !important;
-  border-radius: 6px;
-  transition: all 0.2s ease;
-  border: 1px solid transparent;
+/* Hero section - only for landing page */
+.landing-page .hero-section-wrapper {
+  min-height: 400px;
+  background: #0658f7;
 }
 
-/* First button - primary CTA */
-.button-container a:nth-child(1) {
-  background-color: #1f35ff;
-  color: white !important;
-  border-color: #1f35ff;
+/* Dark mode critical styles */
+[data-theme='dark'] .navbar {
+  background: #1a1a1a;
 }
 
-/* Content layout */
-.container {
-  margin: 0 auto;
-  max-width: var(--ifm-container-width);
-  padding: 0 var(--ifm-spacing-horizontal);
-  width: 100%;
-}
-
-/* Dark mode adjustments */
-[data-theme='dark'] {
-  --ifm-color-primary: #eff1f6;
-  --ifm-background-color: #1a1a1a;
-}
-
-/* Mobile responsive */
+/* Mobile critical viewport */
 @media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.5rem;
+  .navbar {
+    height: 56px;
   }
-  
-  .hero-tagline {
-    font-size: 1.2rem;
-  }
-  
-  .button-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .button-container a {
-    width: 100%;
-    max-width: 300px;
+  .main-wrapper {
+    padding-top: 56px;
   }
 }

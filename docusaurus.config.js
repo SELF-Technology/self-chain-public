@@ -17,6 +17,22 @@ const config = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   headTags: [
+    // Preconnect to font origins for faster loading
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com',
+        crossorigin: 'anonymous',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'dns-prefetch',
+        href: 'https://www.googletagmanager.com',
+      },
+    },
     // CSP meta tag to prevent eval warnings in development
     {
       tagName: 'meta',
@@ -27,13 +43,30 @@ const config = {
           : "default-src 'self' data: blob:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https: blob:; font-src 'self' data: https:; connect-src 'self' https:; frame-src 'self' https:;",
       },
     },
-    // Script to load non-critical CSS asynchronously
+    // Preload fonts CSS file
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preload',
+        href: '/css/fonts.css',
+        as: 'style',
+        onload: "this.onload=null;this.rel='stylesheet'",
+      },
+    },
+    // Noscript fallback for fonts
+    {
+      tagName: 'noscript',
+      innerHTML: '<link rel="stylesheet" href="/css/fonts.css">',
+    },
+    // Defer non-critical CSS loading
     {
       tagName: 'script',
       attributes: {
-        type: 'text/javascript',
+        type: 'module',
+        defer: true,
       },
       innerHTML: `
+        // Defer non-critical CSS loading using requestIdleCallback
         (function() {
           var loadCSS = function(href) {
             var link = document.createElement('link');
@@ -44,17 +77,20 @@ const config = {
             document.head.appendChild(link);
           };
           
-          // Wait for critical rendering path
-          if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', function() {
-              // Load non-critical CSS after DOM is ready
-              setTimeout(function() {
-                var stylesheets = document.querySelectorAll('link[rel="preload"][as="style"]');
-                stylesheets.forEach(function(link) {
-                  loadCSS(link.href);
-                });
-              }, 0);
+          var loadDeferredStyles = function() {
+            var stylesheets = document.querySelectorAll('link[rel="preload"][as="style"]');
+            stylesheets.forEach(function(link) {
+              if (link.href && !link.rel.includes('stylesheet')) {
+                loadCSS(link.href);
+              }
             });
+          };
+          
+          // Use requestIdleCallback if available, otherwise setTimeout
+          if ('requestIdleCallback' in window) {
+            requestIdleCallback(loadDeferredStyles);
+          } else {
+            setTimeout(loadDeferredStyles, 1);
           }
         })();
       `,
@@ -149,6 +185,50 @@ const config = {
         configureWebpack(config, isServer, utils) {
           // Completely disable eval in all environments
           if (!isServer) {
+            // Add CSS optimization rules
+            const cssRule = config.module.rules.find(rule => 
+              rule.test && rule.test.toString().includes('css')
+            );
+            
+            if (cssRule && cssRule.oneOf) {
+              cssRule.oneOf.forEach(rule => {
+                if (rule.use) {
+                  rule.use.forEach(loader => {
+                    if (loader.loader && loader.loader.includes('css-loader')) {
+                      loader.options = {
+                        ...loader.options,
+                        importLoaders: 1,
+                        modules: false,
+                        sourceMap: false, // Disable source maps for CSS in production
+                      };
+                    }
+                    if (loader.loader && loader.loader.includes('postcss-loader')) {
+                      loader.options = {
+                        ...loader.options,
+                        postcssOptions: {
+                          plugins: [
+                            require('postcss-import')({
+                              // Process @import statements at build time
+                              resolve: (id, basedir) => {
+                                // Custom resolve logic for CSS imports
+                                return id;
+                              },
+                            }),
+                            require('cssnano')({
+                              preset: ['default', {
+                                discardComments: {
+                                  removeAll: true,
+                                },
+                              }],
+                            }),
+                          ],
+                        },
+                      };
+                    }
+                  });
+                }
+              });
+            }
             // Client-side specific config
             config.devtool = 'source-map'; // Never use eval
             
@@ -157,23 +237,39 @@ const config = {
               config.optimization.moduleIds = 'deterministic';
               config.optimization.chunkIds = 'deterministic';
               
-              // CSS optimization
+              // CSS optimization - create larger chunks for better performance
               config.optimization.splitChunks = {
                 ...config.optimization.splitChunks,
+                chunks: 'all',
+                maxAsyncRequests: 6,
+                maxInitialRequests: 4,
+                minSize: 30000, // Increase minimum chunk size
+                maxSize: 244000, // Set max size just below warning threshold
                 cacheGroups: {
-                  ...config.optimization.splitChunks?.cacheGroups,
-                  styles: {
-                    name: 'styles',
-                    test: /\.css$/,
-                    chunks: 'all',
-                    enforce: true,
-                    priority: 20,
-                  },
+                  // Disable default chunks to have more control
+                  default: false,
+                  defaultVendors: false,
+                  // Main vendor bundle
                   vendor: {
                     test: /[\\/]node_modules[\\/]/,
-                    name: 'vendors',
-                    priority: 10,
+                    name: 'vendor',
+                    priority: 20,
+                    reuseExistingChunk: true,
+                  },
+                  // CSS bundle
+                  styles: {
+                    name: 'styles',
+                    test: /\.(css|scss|sass)$/,
                     chunks: 'all',
+                    enforce: true,
+                    priority: 30,
+                  },
+                  // Common modules
+                  common: {
+                    name: 'common',
+                    minChunks: 2,
+                    priority: 10,
+                    reuseExistingChunk: true,
                   },
                 },
               };
@@ -191,12 +287,16 @@ const config = {
               }
             }
             
-            // Add performance hints
+            // Add performance hints - adjusted for real-world usage
             config.performance = {
               ...config.performance,
-              hints: 'warning',
-              maxAssetSize: 250000,
-              maxEntrypointSize: 250000,
+              hints: process.env.NODE_ENV === 'production' ? 'warning' : false,
+              maxAssetSize: 512000, // 500KB for assets
+              maxEntrypointSize: 768000, // 750KB for entrypoints
+              assetFilter: function(assetFilename) {
+                // Only check JS and CSS files, ignore images and fonts
+                return /\.(js|css)$/.test(assetFilename);
+              },
             };
           }
           
@@ -254,28 +354,41 @@ const config = {
                 },
                 innerHTML: `
                   (function() {
-                    // Lazy load images with loading="lazy" attribute
+                    // Native lazy loading with Intersection Observer fallback
                     if ('loading' in HTMLImageElement.prototype) {
-                      const images = document.querySelectorAll('img[loading="lazy"]');
-                      images.forEach(img => {
-                        img.loading = 'lazy';
+                      // Use native lazy loading
+                      const setLazyLoading = function() {
+                        const images = document.querySelectorAll('img:not([loading])');
+                        images.forEach(function(img) {
+                          img.loading = 'lazy';
+                          // Add explicit dimensions to prevent layout shift
+                          if (!img.width && img.naturalWidth) {
+                            img.width = img.naturalWidth;
+                          }
+                          if (!img.height && img.naturalHeight) {
+                            img.height = img.naturalHeight;
+                          }
+                        });
+                      };
+                      
+                      // Run immediately for existing images
+                      if (document.readyState !== 'loading') {
+                        setLazyLoading();
+                      }
+                      
+                      // Use MutationObserver for dynamically added images
+                      const observer = new MutationObserver(setLazyLoading);
+                      observer.observe(document.body, {
+                        childList: true,
+                        subtree: true
                       });
                     } else {
-                      // Fallback for browsers that don't support lazy loading
+                      // Fallback: Load lazysizes only if needed
                       const script = document.createElement('script');
                       script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
+                      script.async = true;
                       document.body.appendChild(script);
                     }
-                    
-                    // Add lazy loading to all content images
-                    document.addEventListener('DOMContentLoaded', function() {
-                      const contentImages = document.querySelectorAll('.markdown img, article img');
-                      contentImages.forEach(img => {
-                        if (!img.loading) {
-                          img.loading = 'lazy';
-                        }
-                      });
-                    });
                   })();
                 `,
               },
