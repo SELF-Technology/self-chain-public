@@ -43,60 +43,6 @@ const config = {
           : "default-src 'self' data: blob:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https: blob:; font-src 'self' data: https:; connect-src 'self' https:; frame-src 'self' https:;",
       },
     },
-    // Preload fonts CSS file
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preload',
-        href: '/css/fonts.css',
-        as: 'style',
-        onload: "this.onload=null;this.rel='stylesheet'",
-        fetchpriority: 'high',
-      },
-    },
-    // Noscript fallback for fonts
-    {
-      tagName: 'noscript',
-      attributes: {},
-      innerHTML: '<link rel="stylesheet" href="/css/fonts.css">',
-    },
-    // Defer non-critical CSS loading
-    {
-      tagName: 'script',
-      attributes: {
-        type: 'module',
-        defer: 'defer',
-      },
-      innerHTML: `
-        // Defer non-critical CSS loading using requestIdleCallback
-        (function() {
-          var loadCSS = function(href) {
-            var link = document.createElement('link');
-            link.rel = 'stylesheet';
-            link.href = href;
-            link.media = 'print';
-            link.onload = function() { this.media = 'all'; };
-            document.head.appendChild(link);
-          };
-          
-          var loadDeferredStyles = function() {
-            var stylesheets = document.querySelectorAll('link[rel="preload"][as="style"]');
-            stylesheets.forEach(function(link) {
-              if (link.href && !link.rel.includes('stylesheet')) {
-                loadCSS(link.href);
-              }
-            });
-          };
-          
-          // Use requestIdleCallback if available, otherwise setTimeout
-          if ('requestIdleCallback' in window) {
-            requestIdleCallback(loadDeferredStyles);
-          } else {
-            setTimeout(loadDeferredStyles, 1);
-          }
-        })();
-      `,
-    },
     {
       tagName: 'link',
       attributes: {
@@ -123,86 +69,6 @@ const config = {
         href: '/img/self-galaxy-transparent-620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp',
         as: 'image',
         fetchpriority: 'low',
-      },
-    },
-    // Preload critical CSS
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preload',
-        href: '/css/vendor/docsearch.min.css',
-        as: 'style',
-        onload: "this.onload=null;this.rel='stylesheet'",
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preload',
-        href: '/css/vendor/fontawesome-minimal.css',
-        as: 'style',
-        onload: "this.onload=null;this.rel='stylesheet'",
-      },
-    },
-    // Fallback for no-JS
-    {
-      tagName: 'noscript',
-      attributes: {},
-      innerHTML: '<link rel="stylesheet" href="/css/vendor/docsearch.min.css"><link rel="stylesheet" href="/css/vendor/fontawesome-minimal.css">',
-    },
-    // Async load non-critical CSS files
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preload',
-        href: '/css/category-pages.css',
-        as: 'style',
-        onload: "this.onload=null;this.rel='stylesheet'",
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preload',
-        href: '/css/breadcrumb-fix.css',
-        as: 'style',
-        onload: "this.onload=null;this.rel='stylesheet'",
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preload',
-        href: '/css/social-icons.css',
-        as: 'style',
-        onload: "this.onload=null;this.rel='stylesheet'",
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preload',
-        href: '/css/footer-social.css',
-        as: 'style',
-        onload: "this.onload=null;this.rel='stylesheet'",
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preload',
-        href: '/css/theme-toggle-fix.css',
-        as: 'style',
-        onload: "this.onload=null;this.rel='stylesheet'",
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preload',
-        href: '/css/custom-theme-toggle.css',
-        as: 'style',
-        onload: "this.onload=null;this.rel='stylesheet'",
       },
     },
     // Preload critical THICCCBOI fonts
@@ -236,31 +102,6 @@ const config = {
         type: 'font/woff2',
         crossorigin: 'anonymous',
       },
-    },
-    // Prevent Cloudflare email decode from blocking render
-    {
-      tagName: 'script',
-      attributes: {},
-      innerHTML: `
-        // Defer Cloudflare email decode script
-        window.addEventListener('load', function() {
-          var script = document.createElement('script');
-          script.src = '/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js';
-          script.defer = true;
-          document.body.appendChild(script);
-        });
-        
-        // Defer non-critical stylesheets
-        document.addEventListener('DOMContentLoaded', function() {
-          var links = document.querySelectorAll('link[rel="stylesheet"]');
-          links.forEach(function(link) {
-            if (link.href.includes('styles.') && !link.hasAttribute('data-critical')) {
-              link.media = 'print';
-              link.onload = function() { this.media = 'all'; };
-            }
-          });
-        });
-      `,
     },
   ],
 
