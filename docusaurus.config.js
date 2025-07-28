@@ -237,6 +237,31 @@ const config = {
         crossorigin: 'anonymous',
       },
     },
+    // Prevent Cloudflare email decode from blocking render
+    {
+      tagName: 'script',
+      attributes: {},
+      innerHTML: `
+        // Defer Cloudflare email decode script
+        window.addEventListener('load', function() {
+          var script = document.createElement('script');
+          script.src = '/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js';
+          script.defer = true;
+          document.body.appendChild(script);
+        });
+        
+        // Defer non-critical stylesheets
+        document.addEventListener('DOMContentLoaded', function() {
+          var links = document.querySelectorAll('link[rel="stylesheet"]');
+          links.forEach(function(link) {
+            if (link.href.includes('styles.') && !link.hasAttribute('data-critical')) {
+              link.media = 'print';
+              link.onload = function() { this.media = 'all'; };
+            }
+          });
+        });
+      `,
+    },
   ],
 
   presets: [
@@ -528,9 +553,12 @@ const config = {
       logo: {
         alt: 'SELF Logo',
         src: 'img/SELF-BLACK.png',
-        srcDark: 'img/SELFwhitelogo.webp',
+        srcDark: 'img/SELFwhitelogo.png',
         href: 'https://self.app',
         target: '_self', // Opens in same tab
+        width: 32,
+        height: 32,
+        style: 'height: 32px; width: auto;',
       },
       hideOnScroll: false,
       items: process.env.ALGOLIA_APP_ID && process.env.ALGOLIA_SEARCH_API_KEY ? [
