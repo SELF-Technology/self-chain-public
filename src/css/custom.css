@@ -10,13 +10,8 @@
 /* Mobile performance loaded conditionally */
 @import "./mobile-performance.css" screen and (max-width: 768px);
 
-/* External CSS - TODO: Convert these to <link> tags for better performance */
-@import "./category-pages.css";
-@import "./breadcrumb-fix.css";
-@import "./social-icons.css";
-@import "./footer-social.css";
-@import "./theme-toggle-fix.css";
-@import "./custom-theme-toggle.css";
+/* Critical CSS only - non-critical styles loaded via separate files */
+/* These imports have been moved to separate link tags for better performance */
 
 /* Global box-sizing to prevent width calculation issues */
 *, *::before, *::after {
@@ -74,31 +69,11 @@
 /* FAQ style test - comment out to disable */
 /* @import "./faq-style-test.css"; */
 
-@font-face {
-  font-family: "THICCCBOI";
-  src: url("/fonts/thicccboi/THICCCBOI-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  /* Font metric overrides to reduce layout shift */
-  ascent-override: 95%;
-  descent-override: 25%;
-  line-gap-override: 0%;
-}
-@font-face {
-  font-family: "THICCCBOI";
-  src: url("/fonts/thicccboi/THICCCBOI-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  /* Font metric overrides to reduce layout shift */
-  ascent-override: 95%;
-  descent-override: 25%;
-  line-gap-override: 0%;
-}
+/* Fonts moved to fonts.css for async loading */
 
 body {
-  font-family: "THICCCBOI", sans-serif;
+  /* Use system font stack as fallback to reduce layout shift */
+  font-family: "THICCCBOI", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
