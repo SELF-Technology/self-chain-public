@@ -22,7 +22,7 @@ A critical component of PoAI is the **[Color Marker System](color-marker-system)
 An overview of the PoAI architecture is shown below:
 
 <div>
-<img src="/img/screenshot-2024-05-01-at-8.59.57 am.png" alt="PoAI Architecture"/>
+<img src="/img/PoAI-Overview.png" alt="PoAI Architecture"/>
 </div>
 
 

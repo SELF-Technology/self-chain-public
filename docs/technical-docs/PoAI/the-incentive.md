@@ -15,5 +15,5 @@ The reward for participation is generated as a native coin, earned by helping to
 These percentages can be revised to reflect each consensus participant's labor costs and contribution to its implementation. The example above is illustrated below:
 
 <div>
-<img src="/img/Screenshot 2024-05-01 at 9.07.55 AM.png" alt="PoAI Incentives"/>
+<img src="/img/PoAI-Incentives.png" alt="PoAI Incentives"/>
 </div>

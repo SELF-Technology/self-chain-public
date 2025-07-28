@@ -22,5 +22,5 @@ Lite nodes can also send and receive transactions to power the blockchain wallet
 The figure below illustrates how PoAI determines which validators are eligible to vote in the round:
 
 <div>
-<img src="/img/Screenshot 2024-05-01 at 9.04.40 AM.png" alt="PoAI Validator Selection"/>
+<img src="/img/PoAI-Validator-Selection.png" alt="PoAI Validator Selection"/>
 </div>
