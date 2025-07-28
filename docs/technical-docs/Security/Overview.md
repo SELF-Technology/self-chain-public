@@ -16,9 +16,9 @@ The SELF Chain implements a multi-layered security approach incorporating:
    - Continuously evolving defenses against emerging quantum threats
 
 2. **AI-Powered Validation**
-   - Uses OpenLLM for AI validation
-   - Context-aware validation system
-   - Validator reputation tracking
+   - Advanced AI validation system
+   - Context-aware transaction analysis
+   - Reputation-based validator selection
 
 3. **Consensus Security**
    - PoAI (Proof-of-AI) consensus mechanism

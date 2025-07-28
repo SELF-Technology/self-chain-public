@@ -19,26 +19,28 @@ slug: /
   </div>
 </div>
 
-## The Problem: Our Digital Lives Are No Longer Our Own
+## 🚀 Build on SELF
 
-Today's internet is broken. Tech giants harvest your data, control your digital life, and profit from your privacy. We think you should be in control of your own data, and this is what we've created to address that.
+SELF provides open source SDKs and comprehensive documentation for building AI-native applications on the world's first AI-powered blockchain.
 
-In 2025, every click, message, and interaction feeds an insatiable surveillance apparatus. Tech giants harvest our most intimate data, governments monitor our every move, and AI systems know us better than we know ourselves. **We've traded our privacy for convenience, and we're paying with our freedom.**
+### 📦 Official SDKs (Coming Q4 2025)
 
-The current digital landscape is fundamentally broken:
-- **Personal data** is commoditized and sold without true consent
-- **Private communications** are intercepted and stored indefinitely  
-- **Individual browsing** leaves permanent trails across corporate servers
-- **Personal AI assistants** send your thoughts to Big Tech data centers
-- **Centralized platforms** control what we see, say, and think
+SDKs for multiple languages are in final development:
 
-This isn't just about privacy—**it's about human autonomy in the digital age.**
+- **@self/sdk** - TypeScript/JavaScript SDK
+- **self-sdk** - Python SDK  
+- **self-sdk** - Rust SDK
+- **self-sdk-go** - Go SDK
 
-## The Solution: SELF
+> 🚧 **Development Status**: SDKs are in final development. [Watch GitHub releases](https://github.com/SELF-Technology/self-chain-public/releases) for updates.
 
-SELF represents a fundamental shift from surveillance capitalism to digital sovereignty. We're building the world's first **AI-powered blockchain** designed from the ground up for personal data sovereignty.
+### 🛠️ What You'll Be Able To Build
 
-**Our mission is simple**: Give every individual, developer, and organization the tools to build and operate in a truly decentralized, privacy-first digital ecosystem.
+When SDKs are released, you'll be able to create applications that:
+- **Leverage Personal AI** - Users' AI agents enhance your app experience
+- **Preserve Privacy** - AI collaboration without exposing personal data
+- **Enable Sovereignty** - Users control their data and AI
+- **Scale Globally** - Built on enterprise-grade blockchain infrastructure
 
 ### 🎯 What Makes SELF Different
 
@@ -62,46 +64,46 @@ SELF represents a fundamental shift from surveillance capitalism to digital sove
 - Industry-specific blockchain deployment
 - Complete ecosystem from blockchain to apps
 
-### The SELF Advantage: True Digital Autonomy
+## 🎯 Getting Ready
 
-Unlike partial privacy solutions, SELF provides complete digital sovereignty:
+While SDKs are in development, here's how to prepare:
 
-1. **Your Data Never Leaves Your Control** - Not stored on our servers, not accessible to us or anyone else
-2. **Your AI Works for You Alone** - Personal AI that learns from your data but never shares it
-3. **Your Communications Are Truly Private** - End-to-end encryption with no corporate intermediaries
-4. **Your Digital Identity is Yours** - One identity across all platforms, controlled entirely by you
-5. **Your Economic Activity is Private** - Transactions and financial data that remain confidential
+**✅ Available Now:**
+- 📚 [Review SDK documentation](/building-on-self) and specifications
+- 🏗️ [Study the architecture](/technical-docs/self-chain/SELF_Chain_Architecture) 
+- 👁️ [Watch the repository](https://github.com/SELF-Technology/self-chain-public) for SDK updates
 
-**This isn't just better privacy—it's a fundamentally different relationship with technology.**
+**🔄 Coming Q4 2025:**
+- SDK installations via npm, pip, cargo, and go get
+- Public API gateway access
+- Test token faucet
 
-### Why Now? The Urgent Need for Digital Sovereignty
+## 🌟 The Open Ecosystem Model
 
-Each day, surveillance systems become more sophisticated and entrenched. **We have a narrow window to build alternatives before digital authoritarianism becomes irreversible.**
+SELF follows a selective open source approach:
 
-**Traditional solutions fall short:**
-- **VPNs and Proxies**: Only hide your browsing, don't address data ownership
-- **Signal and Similar**: Excellent for messaging but limited ecosystem
-- **Crypto Wallets**: Handle transactions but not comprehensive digital life
-- **Privacy Browsers**: Protect browsing but don't integrate other digital activities
+### ✅ What Will Be Open Source
+- **All SDKs** - Complete client libraries for every language
+- **API Specifications** - Full OpenAPI documentation  
+- **Documentation** - Comprehensive guides and references
+- **Example Applications** - Sample code and tutorials
+- **Development Tools** - CLI tools, testing utilities
 
-### The Path Forward
+### 🔒 What Remains Private
+- **Core Blockchain** - Security-critical consensus implementation
+- **AI Validation** - Proprietary validation algorithms
+- **Infrastructure** - Production deployment configurations
 
-SELF isn't just another crypto project or privacy tool. **We're building the infrastructure for human freedom in the digital age.**
-
-As governments and corporations tighten their grip on digital life, SELF provides the escape route—not to drop out of the digital world, but to participate in it on your own terms.
-
-**The choice is clear**: Accept increasing surveillance and control, or build a better future where technology serves human freedom.
-
-**SELF is that future. The question isn't whether we need it—it's whether we'll build it fast enough.**
+This model ensures developers have everything they need while protecting the network's security.
 
 ## 🚦 Current Status
 
 ### What's Available Now vs. Coming Soon
 
 **✅ Available Today**
-- Run a local SELF Chain node
-- Explore the open source code
-- Contribute to core development
+- Explore SDK documentation and API specifications
+- Review technical architecture
+- Join the developer community
 
 **🔄 Coming Soon (Q3-Q4 2025)**
 - Public testnet access
@@ -116,6 +118,15 @@ As governments and corporations tighten their grip on digital life, SELF provide
 
 > 📊 For complete details, see our [Project Status](/project-status) page.
 
+
+## 🤝 Community
+
+**Join the developers building the future:**
+
+- 🐙 [GitHub](https://github.com/SELF-Technology/self-chain-public) - Source code & releases
+- 💬 [Discord](https://discord.gg/WdMdVpA4C8) - Real-time discussions
+- 🐦 [Twitter/X](https://x.com/self_hq) - Updates & announcements
+- 📧 [devs@self.app](mailto:devs@self.app) - Developer support
 
 ## 🎬 Get Started
 
@@ -133,26 +144,15 @@ As governments and corporations tighten their grip on digital life, SELF provide
 - [Project Roadmap](/roadmap/Introduction) - Where we're going
 
 **For Builders**
-- [Developer Roadmap](/roadmap/Introduction) - See what's coming for developers
+- [Developer Guide](/building-on-self) - Learn about building on SELF
 - [SELF MCP Vision](/building-on-self/mcp-integration) - Explore our AI-native development platform
 - [Architecture Deep Dive](/technical-docs/self-chain/SELF_Chain_Architecture) - Technical details
-- [Contribute to Core](/developing-self) - Help build SELF
+- [Open Ecosystem Model](/about-self/open-ecosystem-model) - Understand our open source approach
 
-
-## 🤝 Connect With Us
-
-**Join the community building the future of self-sovereign technology:**
-
-- 💬 [Discord](https://discord.gg/WdMdVpA4C8) - Real-time discussions
-- 🐙 [GitHub](https://github.com/SELF-Technology) - Code & contributions
-- 🐦 [Twitter/X](https://x.com/self_hq) - Updates & announcements
-- 📧 [devs@self.app](mailto:devs@self.app) - Developer support
 
 ---
 
-<div className="hero-footer">
-  <p><strong>SELF isn't built by a corporation. It's built by people who believe in digital freedom.</strong></p>
-  <p>Every line of code, every contribution, every community member makes us stronger.</p>
-  <p><em>This is how we win - together.</em></p>
-</div>
+**Build the future of self-sovereign technology with SELF.**
+
+Every application you create strengthens the ecosystem of user empowerment.
 

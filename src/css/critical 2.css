@@ -1,0 +1,53 @@
+/* Critical CSS - Minimal above-the-fold styles only */
+
+/* Essential CSS custom properties for immediate render */
+:root {
+  --ifm-color-primary: #0658f7;
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Prevent layout shift - critical measurements */
+html {
+  font-family: var(--ifm-font-family-base);
+}
+
+body {
+  margin: 0;
+}
+
+/* Navbar placeholder to prevent layout shift */
+.navbar {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #fff;
+}
+
+/* Main wrapper to account for fixed navbar */
+.main-wrapper {
+  padding-top: 60px;
+}
+
+/* Hero section - only for landing page */
+.landing-page .hero-section-wrapper {
+  min-height: 400px;
+  background: #0658f7;
+}
+
+/* Dark mode critical styles */
+[data-theme='dark'] .navbar {
+  background: #1a1a1a;
+}
+
+/* Mobile critical viewport */
+@media (max-width: 768px) {
+  .navbar {
+    height: 56px;
+  }
+  .main-wrapper {
+    padding-top: 56px;
+  }
+}

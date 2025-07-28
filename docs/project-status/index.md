@@ -14,8 +14,7 @@ This document provides a transparent, real-time view of what's currently working
 SELF is in **active development** with a working testnet demonstrating our revolutionary Proof-of-AI consensus on SELF Chain. While core blockchain functionality is operational, many user-facing features are still being built.
 
 **If you're looking to:**
-- ✅ **Run a testnet node** - You can do this today (with technical expertise)
-- ⏳ **Use developer tools (SDK/API)** - Coming soon
+- ⏳ **Build applications with SDKs** - Coming Q4 2025
 - ⏳ **Get testnet tokens** - Faucet coming soon
 - ❌ **Deploy production applications** - Not ready yet
 
@@ -38,35 +37,29 @@ SELF is in **active development** with a working testnet demonstrating our revol
   - Network may reset without notice
 
 ### Testnet Network
-- **Status**: ✅ Running (Limited Access)
+- **Status**: ✅ Running (Internal Testing)
 - **Details**:
-  - Bootstrap node: `http://13.220.156.247:3030`
-  - Peer nodes operational and syncing
+  - Internal testnet operational for development
   - **⚠️ WARNING**: Network resets frequently for testing
   - **⚠️ WARNING**: All testnet data is temporary
-- **Access**: Currently requires manual node setup - no easy connection method
+- **Developer Access**: Coming Q3 2025 via API Gateway (no node setup required)
 
-### Open Source Code
-- **Status**: ✅ Available
+### SDK & Documentation
+- **Status**: 📚 Documentation Available, SDKs Coming Q4 2025
 - **Repository**: [github.com/SELF-Technology/self-chain-public](https://github.com/SELF-Technology/self-chain-public)
-- **Includes**: Blockchain core, consensus, networking, storage, cryptography
-- **Note**: Some security-critical components remain private
+- **Available Now**: SDK specifications, API documentation, developer guides
+- **Coming Q4 2025**: Actual SDK implementations for TypeScript, Python, Rust, Go
 
 ---
 
 ## 🔄 In Active Development
 
-### Testnet API Gateway
+### Developer Tools & SDKs
 - **Status**: 🔄 Active Development
-- **Progress**: Specification complete, implementation pending
-- **Blocking**: Developer access to testnet
-- **Details**: [API Gateway Documentation](/building-on-self/api-gateway)
-
-### Developer SDKs
-- **Status**: 🔄 Planning
+- **Progress**: API specifications complete, SDK implementation in progress
 - **Languages**: JavaScript/TypeScript (first), Python, Rust, Go
-- **Timeline**: Following API Gateway deployment
-- **Current State**: Architecture designed, waiting on API
+- **Timeline**: Q4 2025 release
+- **Details**: SDKs will handle all API communication internally
 
 ### Configuration & Setup Tools
 - **Status**: 🔄 In Progress
@@ -77,7 +70,7 @@ SELF is in **active development** with a working testnet demonstrating our revol
 
 ---
 
-## 📅 Planned Features (Not Started)
+## 📅 Planned Features
 
 ### Developer Experience
 - **Token Faucet**: Discord bot for testnet token distribution
@@ -105,10 +98,9 @@ SELF is in **active development** with a working testnet demonstrating our revol
 2. **No Token Value**: Testnet tokens have zero monetary value
 3. **Unstable Network**: Expect resets, downtime, and breaking changes
 4. **Limited Documentation**: Many features documented but not yet implemented
-5. **High Technical Bar**: Currently requires blockchain development experience
+5. **Development Phase**: SDKs will abstract blockchain complexity for easy development
 
 ### What You Cannot Do Yet
-- ❌ Connect to testnet via public API
 - ❌ Use SDKs to build applications
 - ❌ Get testnet tokens from a faucet
 - ❌ View transactions in a block explorer
@@ -120,8 +112,7 @@ SELF is in **active development** with a working testnet demonstrating our revol
 ## 📈 Development Roadmap
 
 ### Q3 2025 (Current)
-- 🎯 Deploy Testnet API Gateway
-- 🎯 JavaScript/TypeScript SDK
+- 🎯 JavaScript/TypeScript SDK development
 - 🎯 Token faucet system
 - 🎯 Release configuration templates
 
@@ -142,27 +133,24 @@ SELF is in **active development** with a working testnet demonstrating our revol
 
 ### What You Can Do Today
 
-1. **Clone and Build the Node**
-   ```bash
-   git clone https://github.com/SELF-Technology/self-chain-public.git
-   cd self-chain-public
-   cargo build --release
-   ```
+1. **Review SDK Documentation**
+   - Study the planned SDK interfaces
+   - Understand SDK capabilities
+   - Plan your application architecture
 
-2. **Run a Local Test Node**
-   ```bash
-   cargo run --bin self-chain-node -- --dev
-   ```
+2. **Follow Development on GitHub**
+   - Watch the [repository](https://github.com/SELF-Technology/self-chain-public) for release notifications
+   - Star it if you like the project
+   - Get early access to SDKs
 
-3. **Explore the Codebase**
-   - Review the open source implementation
-   - Understand the architecture
-   - Prepare for SDK release
+3. **Prepare Your Project**
+   - Design your application
+   - Choose your preferred SDK language
+   - Plan integration with SELF's AI features
 
 ### What's Coming Soon
 
-- **Easy Testnet Access**: Connect without running a full node
-- **Developer Tools**: SDKs, APIs, and documentation
+- **Developer Tools**: SDKs and documentation
 - **Test Tokens**: Faucet for development and testing
 - **Support Channels**: Active developer community
 
@@ -176,15 +164,13 @@ SELF is in **active development** with a working testnet demonstrating our revol
 
 ---
 
-## 💡 Contributing
+## 💡 Get Ready
 
-Even in this early stage, you can contribute:
-- **Code Review**: Help improve the core blockchain
-- **Documentation**: Identify gaps and submit improvements
-- **Testing**: Run nodes and report issues
-- **Feedback**: Share your developer experience
-
-See our [Developing SELF Guide](/developing-self) for details.
+Prepare for SDK launch:
+- **Watch on GitHub**: Get release notifications and updates
+- **Review Documentation**: Understand SELF's capabilities
+- **Plan Your App**: Design AI-native applications
+- **Follow Progress**: Track our development milestones
 
 ---
 

@@ -56,6 +56,7 @@ const config = {
     // Noscript fallback for fonts
     {
       tagName: 'noscript',
+      attributes: {},
       innerHTML: '<link rel="stylesheet" href="/css/fonts.css">',
     },
     // Defer non-critical CSS loading
@@ -63,7 +64,7 @@ const config = {
       tagName: 'script',
       attributes: {
         type: 'module',
-        defer: true,
+        defer: 'defer',
       },
       innerHTML: `
         // Defer non-critical CSS loading using requestIdleCallback

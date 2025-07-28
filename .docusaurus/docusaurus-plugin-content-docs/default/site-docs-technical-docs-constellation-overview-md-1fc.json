@@ -1,0 +1,27 @@
+{
+  "id": "technical-docs/Constellation/Overview",
+  "title": "Constellation Overview & Architecture",
+  "description": "Configure Your Own AI-Powered Layer-1 Blockchain",
+  "source": "@site/docs/technical-docs/Constellation/Overview.md",
+  "sourceDirName": "technical-docs/Constellation",
+  "slug": "/technical-docs/Constellation/Overview",
+  "permalink": "/technical-docs/Constellation/Overview",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Constellation Overview & Architecture",
+    "sidebar_position": 1
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "The Incentive",
+    "permalink": "/technical-docs/PoAI/the-incentive"
+  },
+  "next": {
+    "title": "Industry Validation Rules",
+    "permalink": "/technical-docs/Constellation/Industry_Validation_Rules"
+  }
+}

@@ -2,7 +2,6 @@
 title: "The Story"
 sidebar_label: "📖 The Story"
 sidebar_position: 2
-unlisted: true
 ---
 
 # SELF: Reclaiming Digital Sovereignty in an Age of Surveillance

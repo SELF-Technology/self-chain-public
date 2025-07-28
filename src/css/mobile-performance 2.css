@@ -1,0 +1,100 @@
+/* Mobile-specific performance optimizations */
+
+/* Enable GPU acceleration for smooth scrolling */
+@media (max-width: 768px) {
+  /* Optimize scrolling performance */
+  .main-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+  }
+  
+  /* Use CSS containment to limit repaints */
+  .navbar,
+  .footer,
+  article section {
+    contain: layout style paint;
+  }
+  
+  /* Optimize touch interactions */
+  a, button, input, select, textarea {
+    touch-action: manipulation; /* Disable double-tap zoom delay */
+  }
+  
+  /* Reduce motion for users who prefer it */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  
+  /* Optimize images for mobile */
+  img {
+    max-width: 100%;
+    height: auto;
+    content-visibility: auto; /* Defer offscreen rendering */
+  }
+  
+  /* Reduce font weights on mobile to load fewer font files */
+  body {
+    font-weight: 400; /* Use only regular weight */
+  }
+  
+  h1, h2, h3, h4, h5, h6, strong, b {
+    font-weight: 600; /* Use semi-bold instead of bold */
+  }
+  
+  /* Simplify shadows and effects on mobile */
+  .navbar,
+  .dropdown__menu,
+  .card {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Disable hover effects on touch devices */
+  @media (hover: none) {
+    a:hover,
+    button:hover {
+      color: inherit;
+      background-color: inherit;
+    }
+  }
+  
+  /* Optimize sidebar performance */
+  aside[class*="docSidebarContainer"] {
+    will-change: transform;
+    contain: layout style paint;
+  }
+  
+  /* Reduce complexity of code blocks on mobile */
+  pre {
+    tab-size: 2;
+    font-size: 0.875rem;
+  }
+  
+  /* Hide non-essential elements on very small screens */
+  @media (max-width: 480px) {
+    .hash-link,
+    .theme-code-block-copied-button {
+      display: none;
+    }
+  }
+}
+
+/* Network-aware loading */
+@media (max-width: 768px) and (prefers-reduced-data: reduce) {
+  /* Hide decorative images on slow connections */
+  .hero-section-wrapper::before,
+  [class*="background-image"] {
+    background-image: none !important;
+  }
+  
+  /* Use system fonts on slow connections */
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif !important;
+  }
+}

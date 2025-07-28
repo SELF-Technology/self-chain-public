@@ -1,6 +1,7 @@
 ---
 title: SELF MCP
-sidebar_position: 4
+sidebar_label: "🤖 SELF MCP"
+sidebar_position: 3
 ---
 
 # Model Context Protocol (MCP) Integration

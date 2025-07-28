@@ -7,10 +7,6 @@ sidebar_position: 1
 
 We have developed a novel consensus mechanism known as [Proof-of-AI ](https://proofofai.com)(PoAI), enabling SELF Chain's decentralized validation and security. This section details the PoAI methodology.
 
-:::info Implementation Note
-Proof-of-AI is among the first implementations of AI-driven blockchain consensus. While we believe it represents a significant innovation, similar approaches are being explored by other projects in the blockchain space.
-:::
-
 At its core, PoAI is all about efficiency. It removes human interference and focuses the AI on completing tasks in the most useful way—unlike PoW, which wastes energy, or PoS, which becomes increasingly centralized and less efficient over time.
 
 In contrast, PoAI is based on the work of the following three algorithms that carry out their work independently, enabling blockchain consensus to be achieved.

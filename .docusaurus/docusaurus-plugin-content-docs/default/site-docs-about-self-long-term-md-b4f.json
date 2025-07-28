@@ -1,0 +1,27 @@
+{
+  "id": "about-self/long-term",
+  "title": "The Long-Term Goal",
+  "description": "Over the decades to come, the ultimate goal is to create and maintain a sustainable, aesthetically coherent, secure, privacy-conscious and productivity-optimised operating system that is of tremendous value to the world; simplifying life for individuals and positively impacting industry in the process. This is the SELF Operating System (SELF OS).",
+  "source": "@site/docs/about-self/long-term.md",
+  "sourceDirName": "about-self",
+  "slug": "/about-self/long-term",
+  "permalink": "/about-self/long-term",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_label": "🔭 The Long-Term Goal",
+    "sidebar_position": 5
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "🔓 A Self-Sovereign Alternative",
+    "permalink": "/about-self/self-sov-alternative"
+  },
+  "next": {
+    "title": "🌐 Open Ecosystem Model",
+    "permalink": "/about-self/open-ecosystem-model"
+  }
+}

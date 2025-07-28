@@ -1,129 +1,83 @@
-# SELF - Creating the Future of Self-Sovereign Technology
+<div align="center">
+  <img src="static/img/SELFwhitelogo.png" alt="SELF Logo" width="200" />
+</div>
 
-## The Problem
+# SELF - Open Source SDKs & Documentation
 
-Today's internet is broken. Tech giants harvest your data, control your digital life, and profit from your privacy. You've become the product.
+## 🚀 Build on SELF
 
-## The Solution: SELF
+SELF provides open source SDKs and comprehensive documentation for building AI-native applications on the world's first AI-powered blockchain.
 
-SELF is reclaiming the internet for people. We're building the world's first **AI-powered blockchain** designed from the ground up for personal data sovereignty.
+### 📦 Official SDKs (Coming Q4 2025)
 
-### 🎯 Our Mission
+SDKs for multiple languages are in final development:
 
-Every line of code, every design decision, every feature serves one purpose: **You own your digital life.**
+- **@self/sdk** - TypeScript/JavaScript SDK
+- **self-sdk** - Python SDK  
+- **self-sdk** - Rust SDK
+- **self-sdk-go** - Go SDK
 
-### 🚀 What Makes SELF Different
+> 🚧 **Development Status**: SDKs are in final development. [Watch GitHub releases](https://github.com/SELF-Technology/self-chain-public/releases) for updates.
 
-**🤖 Proof-of-AI Technology**
-- World's first AI-driven blockchain consensus
-- Color Marker System for advanced validation
-- No energy-wasting mining
-
-**🚀 Model Context Protocol (MCP)**
-- World's first blockchain-native AI development platform
-- Privacy-preserving collaboration without sharing personal data
-- One AI working seamlessly across all your applications
-
-**🔐 Privacy by Design**
-- Data sovereignty built into every layer
-- You control who sees what, always
-- No backdoors, no compromises
-
-**🌍 True Decentralization**
-- 100% open source core protocol
-- Community governed, no corporate control
-- Transparent, auditable, trustless
-
-**🚀 Ready to Scale**
-- Enterprise-grade Constellation architecture
-- Industry-specific blockchain deployment
-- Complete ecosystem from blockchain to apps
-
-## 🚦 Current Status
-
-### What's Available Now vs. Coming Soon
-
-**✅ Available Today**
-- Run a local SELF Chain node
-- Explore the open source code
-- Contribute to core development
-
-**🔄 Coming Soon (Q4 2025)**
-- SELF MCP SDK (@self/mcp)
-- JavaScript/TypeScript SDK (@self/sdk)
-- API Gateway (Q3-Q4 2025)
-- Public testnet access
-- Token faucet
-
-**📅 Coming Later (Q1-Q2 2026)**  
-- Python, Rust, Go SDKs
-- Block explorer
-- Production mainnet
-
-> 📊 For complete details, see our [Project Status](docs/project-status/index.md) page.
-
-## 🎬 Get Started
-
-- **[📊 See What's Live](docs/project-status/index.md)** - Current capabilities and limitations
-- **[📅 Join Early Access](https://discord.gg/WdMdVpA4C8)** - Get notified when SDKs launch
-- **[🐙 Explore the Code](https://github.com/SELF-Technology/self-chain-public)** - Dive into the source
-
-## 🏃 Quick Start
-
-```bash
-# Clone the repository
-git clone https://github.com/SELF-Technology/self-chain-public.git
-cd self-chain-public
-
-# Build the project (requires Rust 1.70+)
-cargo build --release
-
-# Run a local development node
-cargo run --bin self-chain-node -- --dev
-```
-
-> ⚠️ **Note**: This runs a local development node only. Testnet access is currently limited to core developers.
-> 
-> 📦 **Coming Q4 2025**: SELF MCP SDK will enable AI-native blockchain development.
-
-## 📚 Documentation
-
-**Essential Reading**
-- [The SELF Manifesto](docs/about-self/manifesto.md) - Our declaration of digital independence
-- [How PoAI Works](docs/technical-docs/PoAI/Proof-of-AI.md) - Revolutionary AI consensus explained
-- [Project Roadmap](docs/roadmap/Introduction.md) - Where we're going
-
-**For Builders**
-- [Technical Architecture](docs/technical-docs/self-chain/SELF_Chain_Architecture.md) - Understand the technology
-- [SELF MCP Vision](docs/building-on-self/mcp-integration.md) - Revolutionary AI-native development (Coming Q4 2025)
-- [Developer Community](https://discord.gg/WdMdVpA4C8) - Connect with future builders
-- [Contribute to Core](docs/developing-self/index.md) - Help build SELF
+### 📚 Documentation
 
 **Full Documentation**: [docs.self.app](https://docs.self.app)
 
-## 🤝 Connect With Us
+### 🛠️ What You'll Be Able to Build
 
-**Join the community building the future of self-sovereign technology:**
+When SDKs are released, you'll be able to create applications that:
+- **Leverage Personal AI** - Users' AI agents enhance your app experience
+- **Preserve Privacy** - AI collaboration without exposing personal data
+- **Enable Sovereignty** - Users control their data and AI
+- **Scale Globally** - Built on enterprise-grade blockchain infrastructure
+
+## 🎯 Getting Ready
+
+While SDKs are in development, here's how to prepare:
+
+**✅ Available Now:**
+- 📚 Review SDK documentation and specifications at [docs.self.app](https://docs.self.app)
+- 🏗️ Study the technical architecture
+- 👁️ [Watch the repository](https://github.com/SELF-Technology/self-chain-public) for SDK updates
+
+**🔄 Coming Q4 2025:**
+- SDK installations via npm, pip, cargo, and go get
+- Public API gateway access
+- Test token faucet
+
+## 🌟 The Open Ecosystem Model
+
+SELF follows a selective open source approach:
+
+### ✅ What Will Be Open Source
+- **All SDKs** - Complete client libraries for every language
+- **API Specifications** - Full OpenAPI documentation
+- **Documentation** - Comprehensive guides and references
+- **Example Applications** - Sample code and tutorials
+- **Development Tools** - CLI tools, testing utilities
+
+### 🔒 What Remains Private
+- **Core Blockchain** - Security-critical consensus implementation
+- **AI Validation** - Proprietary validation algorithms
+- **Infrastructure** - Production deployment configurations
+
+This model ensures developers have everything they need while protecting the network's security.
+
+## 🤝 Community
+
+**Join the developers building the future:**
 
 - 💬 [Discord](https://discord.gg/WdMdVpA4C8) - Real-time discussions
-- 🐙 [GitHub](https://github.com/SELF-Technology) - Code & contributions
+- 🐙 [GitHub](https://github.com/SELF-Technology) - Source code
 - 🐦 [Twitter/X](https://x.com/self_hq) - Updates & announcements
 - 📧 [devs@self.app](mailto:devs@self.app) - Developer support
 
-## 🔒 Security
-
-Found a vulnerability? Please report it responsibly:
-- Email: security@self.app
-- See our [Security Policy](SECURITY.md) for details
-
 ## 📄 License
 
-SELF Chain is open source software licensed under the [MIT License](LICENSE).
+All SELF SDKs and documentation are open source under the [MIT License](LICENSE).
 
 ---
 
-**SELF isn't built by a corporation. It's built by people who believe in digital freedom.**
+**Build the future of self-sovereign technology with SELF.**
 
-Every line of code, every contribution, every community member makes us stronger.
-
-*This is how we win - together.*
+Every application you create strengthens the ecosystem of user empowerment.
