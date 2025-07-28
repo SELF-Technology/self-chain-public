@@ -558,7 +558,10 @@ const config = {
         target: '_self', // Opens in same tab
         width: 32,
         height: 32,
-        style: 'height: 32px; width: auto;',
+        style: {
+          height: '32px',
+          width: 'auto',
+        },
       },
       hideOnScroll: false,
       items: process.env.ALGOLIA_APP_ID && process.env.ALGOLIA_SEARCH_API_KEY ? [
