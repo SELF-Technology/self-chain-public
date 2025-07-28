@@ -240,6 +240,50 @@ const config = {
         },
       };
     },
+    // Custom plugin for lazy loading images
+    function lazyLoadImagesPlugin(context, options) {
+      return {
+        name: 'lazy-load-images-plugin',
+        injectHtmlTags() {
+          return {
+            postBodyTags: [
+              {
+                tagName: 'script',
+                attributes: {
+                  type: 'text/javascript',
+                },
+                innerHTML: `
+                  (function() {
+                    // Lazy load images with loading="lazy" attribute
+                    if ('loading' in HTMLImageElement.prototype) {
+                      const images = document.querySelectorAll('img[loading="lazy"]');
+                      images.forEach(img => {
+                        img.loading = 'lazy';
+                      });
+                    } else {
+                      // Fallback for browsers that don't support lazy loading
+                      const script = document.createElement('script');
+                      script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
+                      document.body.appendChild(script);
+                    }
+                    
+                    // Add lazy loading to all content images
+                    document.addEventListener('DOMContentLoaded', function() {
+                      const contentImages = document.querySelectorAll('.markdown img, article img');
+                      contentImages.forEach(img => {
+                        if (!img.loading) {
+                          img.loading = 'lazy';
+                        }
+                      });
+                    });
+                  })();
+                `,
+              },
+            ],
+          };
+        },
+      };
+    },
     /* '@docusaurus/plugin-debug', // Already included in preset */
     /* [
       '@docusaurus/plugin-pwa',

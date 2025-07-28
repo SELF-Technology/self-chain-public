@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test - Performance and Accessibility Changes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Original GitHub button style */
+        .button-original {
+            background-color: #a0a9bd;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+        }
+        
+        /* New GitHub button style */
+        .button-new {
+            background-color: #333333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+        }
+        
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        
+        .email-section {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testing Performance and Accessibility Improvements</h1>
+    
+    <div class="test-section">
+        <h2>1. Accessibility Test - GitHub Button Contrast</h2>
+        <p>The contrast ratio must be at least 4.5:1 for WCAG AA compliance.</p>
+        
+        <h3>Original Button (Poor Contrast)</h3>
+        <a href="#" class="button-original">View on GitHub</a>
+        <p>Background: #a0a9bd on white - Contrast ratio: ~2.5:1 ❌</p>
+        
+        <h3>New Button (Good Contrast)</h3>
+        <a href="#" class="button-new">View on GitHub</a>
+        <p>Background: #333333 on white - Contrast ratio: 12.6:1 ✅</p>
+    </div>
+    
+    <div class="test-section">
+        <h2>2. Email Protection Test</h2>
+        <p>The email link has been converted to use JavaScript to prevent Cloudflare from injecting its script.</p>
+        
+        <div class="email-section">
+            <h3>Original (Triggers Cloudflare)</h3>
+            <code>&lt;a href="mailto:info@self.app"&gt;Contact Us&lt;/a&gt;</code>
+            
+            <h3>New (Bypasses Cloudflare)</h3>
+            <code>&lt;a href="#" onclick="window.location.href='mailto:' + 'info' + '@' + 'self.app'; return false;"&gt;Contact Us&lt;/a&gt;</code>
+            
+            <p>Test link: <a href="#" onclick="window.location.href='mailto:' + 'info' + '@' + 'self.app' + '?subject=Mail-from-site'; return false;">Contact Us</a></p>
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>3. CSS Optimization Changes</h2>
+        <ul>
+            <li>✅ Added CSS code splitting in webpack configuration</li>
+            <li>✅ Created critical.css with above-the-fold styles</li>
+            <li>✅ Added async loading script for non-critical CSS</li>
+            <li>✅ Configured webpack for better performance hints</li>
+        </ul>
+        
+        <h3>Expected Performance Improvements:</h3>
+        <ul>
+            <li>Reduced render-blocking CSS from 23.9 KiB to ~5 KiB (critical CSS only)</li>
+            <li>Eliminated Cloudflare email decode script (1.2 KiB, 480ms)</li>
+            <li>Improved LCP (Largest Contentful Paint) by ~500ms</li>
+            <li>Better code splitting for CSS chunks</li>
+        </ul>
+    </div>
+    
+    <div class="test-section">
+        <h2>Summary of Changes</h2>
+        <ol>
+            <li><strong>docusaurus.config.js</strong>
+                <ul>
+                    <li>Modified email link to use JavaScript onclick</li>
+                    <li>Enhanced webpack configuration for CSS optimization</li>
+                    <li>Added critical CSS plugin</li>
+                    <li>Added async CSS loading script</li>
+                </ul>
+            </li>
+            <li><strong>src/css/custom.css</strong>
+                <ul>
+                    <li>Changed GitHub button background from #a0a9bd to #333333</li>
+                    <li>Updated hover state colors</li>
+                </ul>
+            </li>
+            <li><strong>src/css/critical.css</strong> (new file)
+                <ul>
+                    <li>Extracted critical above-the-fold styles</li>
+                    <li>Includes base typography, hero section, and primary buttons</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
