@@ -46,9 +46,9 @@ hex = "0.4.3" # For hex encoding/decoding
 base64 = "0.22" # For base64 encoding/decoding
 thiserror = "2.0" # For error handling
 zeroize = "1.6.0" # For secure memory wiping
-sqlx = { version = "0.7", features = ["runtime-tokio-rustls", "postgres", "uuid", "chrono"] } # Database
+sqlx = { version = "0.8", features = ["runtime-tokio-rustls", "postgres", "uuid", "chrono"] } # Database
 warp = "0.3" # HTTP server for testnet node
-dotenv = "0.15" # Environment variables
+dotenvy = "0.15" # Environment variables (maintained fork of dotenv)
 bitcoin_hashes = "0.16.0"
 x25519-dalek = { version = "2.0.0", features = [
     "reusable_secrets",
@@ -59,7 +59,7 @@ tempfile = "3.8.1" # Modern replacement for deprecated tempdir
 axum = { version = "0.7", features = ["multipart"] }
 tower = "0.4"
 tower-http = { version = "0.5", features = ["cors", "trace"] }
-pqcrypto-kyber = "0.8.1" # TODO: Replace with pqcrypto-mlkem when a stable version is available
+pqcrypto-mlkem = "0.1" # TODO: Replace with pqcrypto-mlkem when a stable version is available
 # Pin the versions of security-related dependencies with secure versions
 ring = { version = "0.17.5", features = ["std"] }
 webpki = { version = "0.22.0", features = ["std"] }
