@@ -42,7 +42,7 @@ jobs:
           - stable
           - 1.70.0  # MSRV
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       
       - name: Install Rust
         uses: actions-rs/toolchain@v1
@@ -53,7 +53,7 @@ jobs:
           components: rustfmt, clippy
       
       - name: Cache cargo
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: |
             ~/.cargo/bin/
@@ -82,7 +82,7 @@ jobs:
     name: Security Audit
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       
       - name: Install cargo-audit
         run: cargo install cargo-audit
@@ -94,7 +94,7 @@ jobs:
     name: Code Coverage
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       
       - name: Install Rust
         uses: actions-rs/toolchain@v1
@@ -110,7 +110,7 @@ jobs:
         run: cargo tarpaulin --verbose --all-features --workspace --timeout 300 --out Xml
       
       - name: Upload coverage
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v4
         with:
           files: ./cobertura.xml
 
@@ -128,7 +128,7 @@ jobs:
           - os: macos-latest
             target: x86_64-apple-darwin
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       
       - name: Install Rust
         uses: actions-rs/toolchain@v1
@@ -142,7 +142,7 @@ jobs:
         run: cargo build --release --target ${{ matrix.target }}
       
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: self-chain-${{ matrix.target }}
           path: target/${{ matrix.target }}/release/self-chain*
