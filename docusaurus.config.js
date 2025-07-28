@@ -51,6 +51,7 @@ const config = {
         href: '/css/fonts.css',
         as: 'style',
         onload: "this.onload=null;this.rel='stylesheet'",
+        fetchpriority: 'high',
       },
     },
     // Noscript fallback for fonts
@@ -148,6 +149,82 @@ const config = {
       tagName: 'noscript',
       attributes: {},
       innerHTML: '<link rel="stylesheet" href="/css/vendor/docsearch.min.css"><link rel="stylesheet" href="/css/vendor/fontawesome-minimal.css">',
+    },
+    // Async load non-critical CSS files
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preload',
+        href: '/css/category-pages.css',
+        as: 'style',
+        onload: "this.onload=null;this.rel='stylesheet'",
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preload',
+        href: '/css/breadcrumb-fix.css',
+        as: 'style',
+        onload: "this.onload=null;this.rel='stylesheet'",
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preload',
+        href: '/css/social-icons.css',
+        as: 'style',
+        onload: "this.onload=null;this.rel='stylesheet'",
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preload',
+        href: '/css/footer-social.css',
+        as: 'style',
+        onload: "this.onload=null;this.rel='stylesheet'",
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preload',
+        href: '/css/theme-toggle-fix.css',
+        as: 'style',
+        onload: "this.onload=null;this.rel='stylesheet'",
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preload',
+        href: '/css/custom-theme-toggle.css',
+        as: 'style',
+        onload: "this.onload=null;this.rel='stylesheet'",
+      },
+    },
+    // Preload critical THICCCBOI fonts
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preload',
+        href: '/fonts/thicccboi/THICCCBOI-Regular.woff2',
+        as: 'font',
+        type: 'font/woff2',
+        crossorigin: 'anonymous',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preload',
+        href: '/fonts/thicccboi/THICCCBOI-Bold.woff2',
+        as: 'font',
+        type: 'font/woff2',
+        crossorigin: 'anonymous',
+      },
     },
     // Preload Font Awesome font
     {
