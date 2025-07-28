@@ -15,48 +15,11 @@ export default {
   "onBrokenMarkdownLinks": "warn",
   "headTags": [
     {
-      "tagName": "link",
-      "attributes": {
-        "rel": "preconnect",
-        "href": "https://fonts.gstatic.com",
-        "crossorigin": "anonymous"
-      }
-    },
-    {
-      "tagName": "link",
-      "attributes": {
-        "rel": "dns-prefetch",
-        "href": "https://www.googletagmanager.com"
-      }
-    },
-    {
       "tagName": "meta",
       "attributes": {
         "http-equiv": "Content-Security-Policy",
         "content": "default-src * 'unsafe-inline' data: blob:;"
       }
-    },
-    {
-      "tagName": "link",
-      "attributes": {
-        "rel": "preload",
-        "href": "/css/fonts.css",
-        "as": "style",
-        "onload": "this.onload=null;this.rel='stylesheet'"
-      }
-    },
-    {
-      "tagName": "noscript",
-      "attributes": {},
-      "innerHTML": "<link rel=\"stylesheet\" href=\"/css/fonts.css\">"
-    },
-    {
-      "tagName": "script",
-      "attributes": {
-        "type": "module",
-        "defer": "defer"
-      },
-      "innerHTML": "\n        // Defer non-critical CSS loading using requestIdleCallback\n        (function() {\n          var loadCSS = function(href) {\n            var link = document.createElement('link');\n            link.rel = 'stylesheet';\n            link.href = href;\n            link.media = 'print';\n            link.onload = function() { this.media = 'all'; };\n            document.head.appendChild(link);\n          };\n          \n          var loadDeferredStyles = function() {\n            var stylesheets = document.querySelectorAll('link[rel=\"preload\"][as=\"style\"]');\n            stylesheets.forEach(function(link) {\n              if (link.href && !link.rel.includes('stylesheet')) {\n                loadCSS(link.href);\n              }\n            });\n          };\n          \n          // Use requestIdleCallback if available, otherwise setTimeout\n          if ('requestIdleCallback' in window) {\n            requestIdleCallback(loadDeferredStyles);\n          } else {\n            setTimeout(loadDeferredStyles, 1);\n          }\n        })();\n      "
     },
     {
       "tagName": "link",
@@ -135,8 +98,6 @@ export default {
     ]
   ],
   "plugins": [
-    null,
-    null,
     null
   ],
   "themeConfig": {
@@ -193,7 +154,7 @@ export default {
     },
     "footer": {
       "style": "dark",
-      "copyright": "\n        <div class=\"footer-content-wrapper\">\n          <div class=\"footer-social-icons\">\n            <a href=\"https://discord.gg/WdMdVpA4C8\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Discord\">\n              <i class=\"fab fa-discord\"></i>\n            </a>\n            <a href=\"https://github.com/SELF-Technology/self-chain-public\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"GitHub\">\n              <i class=\"fab fa-github\"></i>\n            </a>\n            <a href=\"https://x.com/self_hq\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"X\">\n              <i class=\"fab fa-x-twitter\"></i>\n            </a>\n            <a href=\"https://t.me/selfcommunitychat\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telegram\">\n              <i class=\"fab fa-telegram\"></i>\n            </a>\n            <a href=\"https://instagram.com/selfappofficial\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Instagram\">\n              <i class=\"fab fa-instagram\"></i>\n            </a>\n            <a href=\"https://www.youtube.com/@selfcommunityvideos\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"YouTube\">\n              <i class=\"fab fa-youtube\"></i>\n            </a>\n            <a href=\"https://www.linkedin.com/company/selftechnology/\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"LinkedIn\">\n              <i class=\"fab fa-linkedin\"></i>\n            </a>\n          </div>\n          <div class=\"footer-theme-toggle-wrapper\"></div>\n        </div>\n        <div class=\"footer-copyright-text\">\n          © SELF 2025 | \n          <a href=\"https://self.app/terms\" target=\"_blank\">Terms & Conditions</a> | \n          <a href=\"https://self.app/cookies\" target=\"_blank\">Cookie Policy</a> | \n          <a href=\"https://self.app/privacy\" target=\"_blank\">Privacy Policy</a> | \n          <a href=\"#\" onclick=\"window.location.href='mailto:' + 'info' + '@' + 'self.app' + '?subject=Mail-from-site'; return false;\">Contact Us</a>\n        </div>\n      ",
+      "copyright": "\n        <div class=\"footer-content-wrapper\">\n          <div class=\"footer-social-icons\">\n            <a href=\"https://discord.gg/WdMdVpA4C8\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Discord\">\n              <i class=\"fab fa-discord\"></i>\n            </a>\n            <a href=\"https://github.com/SELF-Technology/self-chain-public\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"GitHub\">\n              <i class=\"fab fa-github\"></i>\n            </a>\n            <a href=\"https://x.com/self_hq\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"X\">\n              <i class=\"fab fa-x-twitter\"></i>\n            </a>\n            <a href=\"https://t.me/selfcommunitychat\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telegram\">\n              <i class=\"fab fa-telegram\"></i>\n            </a>\n            <a href=\"https://instagram.com/selfappofficial\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Instagram\">\n              <i class=\"fab fa-instagram\"></i>\n            </a>\n            <a href=\"https://www.youtube.com/@selfcommunityvideos\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"YouTube\">\n              <i class=\"fab fa-youtube\"></i>\n            </a>\n            <a href=\"https://www.linkedin.com/company/selftechnology/\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"LinkedIn\">\n              <i class=\"fab fa-linkedin\"></i>\n            </a>\n          </div>\n          <div class=\"footer-theme-toggle-wrapper\"></div>\n        </div>\n        <div class=\"footer-copyright-text\">\n          © SELF 2025 | \n          <a href=\"https://self.app/terms\" target=\"_blank\">Terms & Conditions</a> | \n          <a href=\"https://self.app/cookies\" target=\"_blank\">Cookie Policy</a> | \n          <a href=\"https://self.app/privacy\" target=\"_blank\">Privacy Policy</a> | \n          <a href=\"mailto:info@self.app?subject=Mail-from-site\">Contact Us</a>\n        </div>\n      ",
       "links": []
     },
     "docs": {

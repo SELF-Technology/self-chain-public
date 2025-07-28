@@ -23,7 +23,7 @@ An effective block is any block assembled so that the average PointPrice is clos
 In contrast, other networks choose the highest gas fees, leading to a negative user experience. The alternative version provided by PoAI is illustrated below, where the vertical axis is the PointPrice, and the horizontal is the data length. The center of the target is the chosen price by the algorithm:
 
 <div>
-<img src="/img/Screenshot 2024-05-01 at 9.01.05 AM.png" alt="PoAI PointPrice"/>
+<img src="/img/PoAI-Point-Price.png" alt="PoAI PointPrice"/>
 </div>
 
 The effectiveness of the ML model depends on the server's technical resources and the frequency of block assembly. A block builder's ML model is trained based on its work in selecting transactions for a block, comparing its results with those of other block builders, and the final voting result, which determines whose block will be sent to the chain.
@@ -40,5 +40,5 @@ The effectiveness of the ML model depends on the server's technical resources an
 The below figure illustrates how PoAI selects which block builders can participate in the round:
 
 <div>
-<img src="/img/Screenshot 2024-05-01 at 9.02.20 AM.png" alt="PoAI Block Builder Selection"/>
+<img src="/img/PoAI-Block-Builder-Selection.png" alt="PoAI Block Builder Selection"/>
 </div>

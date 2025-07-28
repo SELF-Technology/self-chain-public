@@ -16,7 +16,7 @@ AI validators participate in every vote to determine the block builder with each
 Validators admitted to the voting process select the block for the round as illustrated below:
 
 <div>
-<img src="/img/Screenshot 2024-05-01 at 9.05.29 AM.png" alt="PoAI Block Selection"/>
+<img src="/img/PoAI-Block-Selection.png" alt="PoAI Block Selection"/>
 </div>
 
 After the voting is completed and the winning block builder is determined, the PoAI mechanism selects one from the active AI validators. The validators additionally double-check the collected block before placing it on the blockchain. The AI validator for color-marker validation of block transactions is selected according to the following parameters:
@@ -27,11 +27,11 @@ After the voting is completed and the winning block builder is determined, the P
 Among the validators who voted, one validator is randomly selected from those who did not vote for the block that won the round. This validator will use [color validation](color-marker-system) to check all transactions in the block.
 
 <div>
-<img src="/img/Screenshot 2024-05-01 at 9.06.14 AM.png" alt="PoAI Color Validation"/>
+<img src="/img/PoAI-Color-Validation.png" alt="PoAI Color Validation"/>
 </div>
 
 Based on the formula for calculating the random value, the serial number of the AI validator is determined from the list of voters, which will perform color-marker validation of block transactions. The following image illustrates these concepts.
 
 <div>
-<img src="/img/Screenshot 2024-05-01 at 9.07.01 AM.png" alt="PoAI Validator Calculation"/>
+<img src="/img/PoAI-Validator-Calculation.png" alt="PoAI Validator Calculation"/>
 </div>

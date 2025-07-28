@@ -234,10 +234,5 @@
       ],
       "breadcrumbs": true
     }
-  },
-  "critical-css-plugin": {
-    "default": {
-      "criticalCss": "/* Critical CSS - Minimal above-the-fold styles only */\n\n/* Essential CSS custom properties for immediate render */\n:root {\n  --ifm-color-primary: #0658f7;\n  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;\n}\n\n/* Prevent layout shift - critical measurements */\nhtml {\n  font-family: var(--ifm-font-family-base);\n}\n\nbody {\n  margin: 0;\n}\n\n/* Navbar placeholder to prevent layout shift */\n.navbar {\n  height: 60px;\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  z-index: 1000;\n  background: #fff;\n}\n\n/* Main wrapper to account for fixed navbar */\n.main-wrapper {\n  padding-top: 60px;\n}\n\n/* Hero section - only for landing page */\n.landing-page .hero-section-wrapper {\n  min-height: 400px;\n  background: #0658f7;\n}\n\n/* Dark mode critical styles */\n[data-theme='dark'] .navbar {\n  background: #1a1a1a;\n}\n\n/* Mobile critical viewport */\n@media (max-width: 768px) {\n  .navbar {\n    height: 56px;\n  }\n  .main-wrapper {\n    padding-top: 56px;\n  }\n}"
-    }
   }
 }

@@ -34,12 +34,6 @@
     },
     "custom-webpack-plugin": {
       "type": "local"
-    },
-    "critical-css-plugin": {
-      "type": "local"
-    },
-    "lazy-load-images-plugin": {
-      "type": "local"
     }
   }
 }
