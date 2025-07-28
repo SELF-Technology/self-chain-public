@@ -31,6 +31,28 @@ When SDKs are released, you'll be able to create applications that:
 - **Enable Sovereignty** - Users control their data and AI
 - **Scale Globally** - Built on enterprise-grade blockchain infrastructure
 
+### 🎯 What Makes SELF Different
+
+**🤖 AI-Native Blockchain Platform**
+- World's first blockchain designed from the ground up for AI integration
+- Proof-of-AI consensus with intelligent validators and block builders
+- Radically simplified development through built-in AI capabilities
+
+**🔐 Privacy by Design**
+- Data sovereignty built into every layer
+- You control who sees what, always
+- No backdoors, no compromises
+
+**🌍 True Decentralization**
+- 100% open source core protocol
+- Community governed, no corporate control
+- Transparent, auditable, trustless
+
+**🚀 Ready to Scale**
+- Enterprise-grade Constellation architecture
+- Industry-specific blockchain deployment
+- Complete ecosystem from blockchain to apps
+
 ## 🎯 Getting Ready
 
 While SDKs are in development, here's how to prepare:
@@ -63,12 +85,32 @@ SELF follows a selective open source approach:
 
 This model ensures developers have everything they need while protecting the network's security.
 
+## 🚦 Current Status
+
+### What's Available Now vs. Coming Soon
+
+**✅ Available Today**
+- Explore SDK documentation and API specifications
+- Review technical architecture
+- Join the developer community
+
+**🔄 Coming Soon (Q3-Q4 2025)**
+- Public testnet access
+- JavaScript/TypeScript SDK
+- API Gateway
+- Token faucet
+
+**📅 Coming Later (Q1-Q2 2026)**  
+- Python, Rust, Go SDKs
+- Block explorer
+- Production mainnet
+
 ## 🤝 Community
 
 **Join the developers building the future:**
 
+- 🐙 [GitHub](https://github.com/SELF-Technology/self-chain-public) - Source code & releases
 - 💬 [Discord](https://discord.gg/WdMdVpA4C8) - Real-time discussions
-- 🐙 [GitHub](https://github.com/SELF-Technology) - Source code
 - 🐦 [Twitter/X](https://x.com/self_hq) - Updates & announcements
 - 📧 [devs@self.app](mailto:devs@self.app) - Developer support
 
