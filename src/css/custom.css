@@ -4,23 +4,14 @@
  * work well for content-centric websites.
  */
 
-/* Font loading */
-@import "./fonts.css";
-
-/* Vendor CSS */
-@import "/css/vendor/docsearch.min.css";
-@import "/css/vendor/fontawesome-minimal.css";
-
-/* Mobile performance loaded conditionally */
-@import "./mobile-performance.css" screen and (max-width: 768px);
-
-/* External CSS */
+/* External CSS now loaded via link tags for better performance */
 @import "./category-pages.css";
 @import "./breadcrumb-fix.css";
 @import "./social-icons.css";
 @import "./footer-social.css";
 @import "./theme-toggle-fix.css";
 @import "./custom-theme-toggle.css";
+/* @import './mobile-performance.css'; */
 
 /* Global box-sizing to prevent width calculation issues */
 *, *::before, *::after {
@@ -78,11 +69,31 @@
 /* FAQ style test - comment out to disable */
 /* @import "./faq-style-test.css"; */
 
-/* Fonts moved to fonts.css for async loading */
+@font-face {
+  font-family: "THICCCBOI";
+  src: url("/fonts/thicccboi/THICCCBOI-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  /* Font metric overrides to reduce layout shift */
+  ascent-override: 95%;
+  descent-override: 25%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "THICCCBOI";
+  src: url("/fonts/thicccboi/THICCCBOI-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  /* Font metric overrides to reduce layout shift */
+  ascent-override: 95%;
+  descent-override: 25%;
+  line-gap-override: 0%;
+}
 
 body {
-  /* Use system font stack as fallback to reduce layout shift */
-  font-family: "THICCCBOI", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "THICCCBOI", sans-serif;
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
@@ -423,16 +434,16 @@ details > summary:hover::after {
 
 /* Third button - Open Source */
 .button-container a:nth-child(3) {
-  background-color: #333333;
+  background-color: #a0a9bd;
   color: white !important;
-  border-color: #333333;
+  border-color: #a0a9bd;
 }
 
 .button-container a:nth-child(3):hover {
-  background-color: #1a1a1a;
-  border-color: #1a1a1a;
+  background-color: #8b94a8;
+  border-color: #8b94a8;
   transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 8px rgba(160, 169, 189, 0.25);
 }
 
 /* Community section styles */
