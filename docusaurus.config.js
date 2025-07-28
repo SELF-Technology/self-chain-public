@@ -27,6 +27,38 @@ const config = {
           : "default-src 'self' data: blob:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https: blob:; font-src 'self' data: https:; connect-src 'self' https:; frame-src 'self' https:;",
       },
     },
+    // Script to load non-critical CSS asynchronously
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'text/javascript',
+      },
+      innerHTML: `
+        (function() {
+          var loadCSS = function(href) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = href;
+            link.media = 'print';
+            link.onload = function() { this.media = 'all'; };
+            document.head.appendChild(link);
+          };
+          
+          // Wait for critical rendering path
+          if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', function() {
+              // Load non-critical CSS after DOM is ready
+              setTimeout(function() {
+                var stylesheets = document.querySelectorAll('link[rel="preload"][as="style"]');
+                stylesheets.forEach(function(link) {
+                  loadCSS(link.href);
+                });
+              }, 0);
+            });
+          }
+        })();
+      `,
+    },
     {
       tagName: 'link',
       attributes: {
@@ -124,6 +156,27 @@ const config = {
             if (config.optimization) {
               config.optimization.moduleIds = 'deterministic';
               config.optimization.chunkIds = 'deterministic';
+              
+              // CSS optimization
+              config.optimization.splitChunks = {
+                ...config.optimization.splitChunks,
+                cacheGroups: {
+                  ...config.optimization.splitChunks?.cacheGroups,
+                  styles: {
+                    name: 'styles',
+                    test: /\.css$/,
+                    chunks: 'all',
+                    enforce: true,
+                    priority: 20,
+                  },
+                  vendor: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: 'vendors',
+                    priority: 10,
+                    chunks: 'all',
+                  },
+                },
+              };
             }
             
             // Ensure no eval in development
@@ -137,9 +190,53 @@ const config = {
                 });
               }
             }
+            
+            // Add performance hints
+            config.performance = {
+              ...config.performance,
+              hints: 'warning',
+              maxAssetSize: 250000,
+              maxEntrypointSize: 250000,
+            };
           }
           
           return {};
+        },
+      };
+    },
+    // Custom plugin to inline critical CSS
+    function criticalCSSPlugin(context, options) {
+      return {
+        name: 'critical-css-plugin',
+        async loadContent() {
+          const fs = require('fs').promises;
+          const path = require('path');
+          try {
+            const criticalCssPath = path.join(__dirname, 'src/css/critical.css');
+            const criticalCss = await fs.readFile(criticalCssPath, 'utf8');
+            return criticalCss;
+          } catch (error) {
+            console.warn('Critical CSS file not found:', error);
+            return '';
+          }
+        },
+        async contentLoaded({content, actions}) {
+          const {setGlobalData} = actions;
+          setGlobalData({criticalCss: content});
+        },
+        injectHtmlTags({content}) {
+          if (!content) return {};
+          return {
+            headTags: [
+              {
+                tagName: 'style',
+                attributes: {
+                  'data-critical': 'true',
+                },
+                innerHTML: content,
+              },
+            ],
+          };
         },
       };
     },
@@ -242,7 +339,7 @@ const config = {
           <a href="https://self.app/terms" target="_blank">Terms & Conditions</a> | 
           <a href="https://self.app/cookies" target="_blank">Cookie Policy</a> | 
           <a href="https://self.app/privacy" target="_blank">Privacy Policy</a> | 
-          <a href="mailto:info@self.app?subject=Mail-from-site">Contact Us</a>
+          <a href="#" onclick="window.location.href='mailto:' + 'info' + '@' + 'self.app' + '?subject=Mail-from-site'; return false;">Contact Us</a>
         </div>
       `,
     },

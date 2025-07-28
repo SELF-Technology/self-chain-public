@@ -434,16 +434,16 @@ details > summary:hover::after {
 
 /* Third button - Open Source */
 .button-container a:nth-child(3) {
-  background-color: #a0a9bd;
+  background-color: #333333;
   color: white !important;
-  border-color: #a0a9bd;
+  border-color: #333333;
 }
 
 .button-container a:nth-child(3):hover {
-  background-color: #8b94a8;
-  border-color: #8b94a8;
+  background-color: #1a1a1a;
+  border-color: #1a1a1a;
   transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(160, 169, 189, 0.25);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 /* Community section styles */
