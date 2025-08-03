@@ -16,6 +16,7 @@ const config = {
   projectName: 'self-docs',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
+  trailingSlash: false,
   headTags: [
     // CSP meta tag to prevent eval warnings in development
     {

@@ -6,23 +6,24 @@ sidebar_position: 4
 
 # Developer Integration Guide
 
-:::danger NOT YET AVAILABLE
-This guide describes the PLANNED developer integration for SELF Chain. The features, APIs, and SDKs described here do not exist yet. This is a design specification for future implementation.
+:::warning EARLY ACCESS
+This guide covers developer integration for SELF Chain. While core SDKs are available, the full platform infrastructure is still being deployed.
 
-**Expected Availability**: Q4 2025 (Watch [GitHub Releases](https://github.com/SELF-Technology/self-chain-public/releases) for updates)
+**Current Status**: Early Access Testnet
 :::
 
-:::warning DO NOT ATTEMPT
-The code examples and endpoints shown are conceptual. They will not work as the infrastructure is not yet deployed.
-:::
-
-:::info Current Status
-- ✅ Integration patterns designed
+:::info What's Available Now
+- ⏳ TypeScript SDK (in development)
+- ⏳ Python SDK (in development)
 - ✅ API specifications complete
-- ✅ Documentation ready
-- ❌ SDK implementation pending
-- ❌ Infrastructure deployment pending
-- ❌ Testing environment pending
+- ✅ Documentation and examples
+- ⏳ Full testnet deployment in progress
+- ⏳ MCP integration coming Q4 2025
+- ❌ Production deployment pending
+:::
+
+:::caution Coming Soon
+SDKs are currently in development. Once available, they will be for development and testing only initially.
 :::
 
 ## SELF's MCP-Powered Development Platform

@@ -1,0 +1,8 @@
+{
+  "label": "📢 Updates",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Important updates and migrations for the SELF platform."
+  }
+}

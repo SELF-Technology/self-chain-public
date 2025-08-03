@@ -1,6 +1,8 @@
 ---
 sidebar_label: "Proof-of-AI"
 sidebar_position: 1
+slug: Proof-of-AI
+canonical_url: https://docs.self.app/technical-docs/PoAI/Proof-of-AI
 ---
 
 # Proof-of-AI

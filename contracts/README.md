@@ -39,7 +39,7 @@ Price oracle for USD-based subscription pricing:
 #### 2. Subscription System
 - **Three tiers** with increasing benefits
 - **Token burns**: 50% of subscription cost is burned
-- **Shine tracking**: Usage percentage monitoring
+- **AI Power monitoring**: Usage tracking and resource management
 - **USD-based pricing**: Dynamic token amounts via oracle
 
 #### 3. Security Features

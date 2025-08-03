@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Exclude Cloudflare email protection endpoints
+Disallow: /cdn-cgi/
+
+# Standard exclusions for documentation sites
+Disallow: /_next/
+Disallow: /build/
+Disallow: /.docusaurus/
+
+# Sitemap
+Sitemap: https://docs.self.app/sitemap.xml

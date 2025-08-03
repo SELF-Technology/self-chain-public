@@ -14,7 +14,7 @@ This document provides a transparent, real-time view of what's currently working
 SELF is in **active development** with a working testnet demonstrating our revolutionary Proof-of-AI consensus on SELF Chain. While core blockchain functionality is operational, many user-facing features are still being built.
 
 **If you're looking to:**
-- ⏳ **Build applications with SDKs** - Coming Q4 2025
+- ⏳ **Explore SDK documentation** - Coming Q4 2025
 - ⏳ **Get testnet tokens** - Faucet coming soon
 - ❌ **Deploy production applications** - Not ready yet
 
@@ -45,21 +45,28 @@ SELF is in **active development** with a working testnet demonstrating our revol
 - **Developer Access**: Coming Q3 2025 via API Gateway (no node setup required)
 
 ### SDK & Documentation
-- **Status**: 📚 Documentation Available, SDKs Coming Q4 2025
+- **Status**: 🔄 Coming Q4 2025
 - **Repository**: [github.com/SELF-Technology/self-chain-public](https://github.com/SELF-Technology/self-chain-public)
-- **Available Now**: SDK specifications, API documentation, developer guides
-- **Coming Q4 2025**: Actual SDK implementations for TypeScript, Python, Rust, Go
+- **Planned Features**: 
+  - TypeScript SDK with basic blockchain interaction
+  - Python SDK for AI/data science integration
+  - API specifications and developer guides
+  - Comprehensive SDK documentation
+- **Timeline**: Q4 2025 release with Rust and Go SDKs, full MCP integration
 
 ---
 
 ## 🔄 In Active Development
 
-### Developer Tools & SDKs
+### Enhanced Developer Tools
 - **Status**: 🔄 Active Development
-- **Progress**: API specifications complete, SDK implementation in progress
-- **Languages**: JavaScript/TypeScript (first), Python, Rust, Go
-- **Timeline**: Q4 2025 release
-- **Details**: SDKs will handle all API communication internally
+- **Progress**: 
+  - SDK development in progress
+  - Core architecture design complete
+  - MCP integration planned
+- **Planned Languages**: TypeScript, Python, Rust, Go
+- **Timeline**: Full SDK release Q4 2025
+- **Details**: SDKs will include MCP support and advanced blockchain features
 
 ### Configuration & Setup Tools
 - **Status**: 🔄 In Progress
@@ -118,7 +125,7 @@ SELF is in **active development** with a working testnet demonstrating our revol
 
 ### Q4 2025
 - 📋 Basic block explorer
-- 📋 Multi-language SDKs (Python, Rust, Go)
+- 📋 Multi-language SDKs (TypeScript, Python, Rust, Go)
 - 📋 Enhanced developer tools
 - 📋 Super-App beta launch
 
