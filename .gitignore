@@ -43,4 +43,4 @@ delete-*.sh
 SDK-MCP-thoughts.md
 
 # Private/internal files backup
-.private/
+.private/.agent-os/
