@@ -37,5 +37,10 @@ delete-*.sh
 *.env.txt
 *.env.*
 
-# Claude configuration
+# Development tools and internal documentation
 .claude/
+.agent-os/
+SDK-MCP-thoughts.md
+
+# Private/internal files backup
+.private/
