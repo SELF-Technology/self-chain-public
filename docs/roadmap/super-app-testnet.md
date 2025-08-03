@@ -66,7 +66,7 @@ New users discover SELF through:
 - ✅ **Private Messenger** for secure communications
 - ✅ **Secure Browser** with built-in VPN
 - ✅ **Crypto Wallet** for digital assets
-- ✅ **100% Shine** to explore all features
+- ✅ **100% AI Power** to explore all features
 
 **Usage Limits:**
 - 100 minutes of AI assistant time
@@ -99,28 +99,36 @@ Night: Check your SELF tokens
 
 ## 🌟 Stage 2: Understanding Token Subscriptions
 
-### The Shine % System
-As you use SELF, your Shine % depletes from 100% to 0%:
+### The AI Power System
+As you use SELF, your AI Power depletes from 100% to 0%:
 - **AI conversations**: ~1% per extended session
 - **VPN browsing**: ~0.5% per GB
 - **Messaging**: ~0.1% per message
 - **Wallet transactions**: ~0.2% per transaction
 
-### Token-Based Tiers
-When you're ready to upgrade, choose your tier by staking SELF tokens:
+### Subscription Tiers
+When you're ready to upgrade, choose your tier through multiple payment options:
 
-| Tier | Token Value | Monthly Benefits |
+| Tier | Estimated Pricing* | Monthly Benefits |
 |------|-------------|------------------|
 | **Free 💫** | $0 | 100 minutes AI, basic features |
-| **Star ⭐** | $15 | 2GB data/compute, priority AI |
-| **Galaxy 🌌** | $50 | 10GB data/compute, advanced AI models |
-| **Universe 🪐** | $150 | 50GB data/compute, unlimited AI |
-| **Multiverse 🌠** | $10K+ | Access across entire Constellation |
+| **Star ⭐** | ~$15 | 2GB data/compute, priority AI |
+| **Galaxy 🌌** | ~$50 | 10GB data/compute, advanced AI models |
+| **Universe 🪐** | ~$150 | 50GB data/compute, unlimited AI |
+| **Multiverse 🌠** | ~$10K+ | Access across entire Constellation |
 
-### Why Tokens?
+**Pricing subject to change based on market conditions and user feedback*
+
+### Payment Options
+- **SELF Token Staking**: Stake tokens for tier access (preferred method)
+- **Traditional Payments**: Credit cards, PayPal, and other standard methods
+- **Crypto Payments**: Bitcoin, Ethereum, stablecoins, and other cryptocurrencies
+- **Hybrid Approach**: Combine token staking with supplemental payments
+
+### Benefits of Token Staking
 - **Earn by participating**: Use the app, earn SELF tokens
-- **No credit cards**: Crypto-native payments
-- **Global access**: No geographic restrictions
+- **Potential token appreciation**: Benefit from network growth
+- **Global access**: No geographic payment restrictions
 - **Aligned incentives**: Success of network = token value
 
 ---
@@ -153,7 +161,7 @@ When you're ready to upgrade, choose your tier by staking SELF tokens:
 ### The Upgrade Experience
 ```javascript
 // Simple upgrade flow
-1. Check Shine % remaining
+1. Check AI Power remaining
 2. Choose desired tier
 3. Stake required SELF tokens
 4. Instant activation

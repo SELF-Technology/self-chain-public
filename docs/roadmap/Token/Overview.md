@@ -57,7 +57,7 @@ SELF Chain implements a revolutionary token-based subscription model that aligns
 
 | Tier | Token Value | Monthly Benefits | Target Users |
 |------|-------------|------------------|--------------|
-| **Free Tier** 💫 | $0 | 100 minutes AI, basic features, 100% Shine to start | New users exploring SELF |
+| **Free Tier** 💫 | $0 | 100 minutes AI, basic features, 100% AI Power to start | New users exploring SELF |
 | **Star Tier** ⭐ | $15 worth of SELF | 2GB data/compute, priority AI, faster responses | Privacy seekers (70% of users) |
 | **Galaxy Tier** 🌌 | $50 worth of SELF | 10GB data/compute, advanced AI models, SDK access | Power users & developers (25%) |
 | **Universe Tier** 🪐 | $150 worth of SELF | 50GB data/compute, unlimited AI, beta features | Web3 pioneers (5%) |
@@ -72,21 +72,21 @@ Since SELF is not a stablecoin, subscription tiers are priced in USD equivalent:
 
 ## 📊 Key Concepts
 
-### Shine % System
+### AI Power System
 
-**Shine %** represents your monthly usage allowance:
+**AI Power** represents your monthly usage allowance:
 - **Always starts at 100%** each billing cycle for all tiers
 - **Depletes based on usage** (not time):
   - AI conversations: ~1% per extended session
   - VPN browsing: ~0.5% per GB
   - Messaging: ~0.1% per message
   - Wallet transactions: ~0.2% per transaction
-- **When Shine reaches 0%**, service pauses until next billing cycle or tier upgrade
+- **When AI Power reaches 0%**, service pauses until next billing cycle or tier upgrade
 
-### Subscription Tiers vs Shine %
-- **Tier** = Your usage limits before Shine depletes
-- **Shine %** = How much of your monthly allowance remains
-- Higher tiers have the same 100% Shine but it depletes more slowly
+### Subscription Tiers vs AI Power
+- **Tier** = Your usage limits before AI Power depletes
+- **AI Power** = How much of your monthly allowance remains
+- Higher tiers have the same 100% AI Power but it depletes more slowly
 
 ## 🔄 Token Utility Model
 
@@ -114,7 +114,7 @@ The Multiverse Tier represents the pinnacle of individual SELF Chain participati
 ### Core Multiverse Features
 - **Universal Chain Access**: Use one identity across every Constellation Chain
 - **Cross-Chain Compute Credits**: Your staked tokens provide compute on any chain
-- **Unlimited Multi-Chain Shine %**: No usage limits across the entire ecosystem
+- **Unlimited Multi-Chain AI Power**: No usage limits across the entire ecosystem
 - **Portfolio Dashboard**: Monitor all your cross-chain activities
 - **Priority Bridge Access**: Fast inter-chain transfers and communications
 - **Early Access Program**: First to use newly launched Constellation Chains
@@ -155,7 +155,7 @@ All with one subscription, one identity, and instant interoperability.
 ### Long-Term Commitments
 - 10% discount for annual staking
 - Volume discounts for enterprise
-- Early adopter rewards: Bonus Shine % for beta users
+- Early adopter rewards: Bonus AI Power for beta users
 
 ### Alternative Payment Options
 For users who prefer traditional payments:
