@@ -15,11 +15,11 @@ Every SELF user gets their own private instance that includes a blockchain node,
 Each user's cloud instance includes:
 
 ```
-User's Private Cloud Instance
+User's Private Cloud Instance (Hetzner VPS)
 ├── SELF Chain Node (Blockchain participation)
-├── Private LLM (AI assistant)
-├── OrbitDB (Decentralized database)
-├── IPFS Node (Distributed storage)
+├── Private LLM (AI assistant via OpenLLM)
+├── Local Database (SQLite/RocksDB - sovereign storage)
+├── Optional Backup System (User-controlled replication)
 └── API Gateway (Secure access point)
 ```
 

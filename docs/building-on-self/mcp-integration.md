@@ -200,7 +200,7 @@ const helpSession = await mcp.offerHelp({
   requester: 'user-needing-help.self',
   expertise: 'smart-contract-development',
   compensation: {
-    type: 'shine-percentage',
+    type: 'ai-power-percentage',
     amount: 10
   }
 });

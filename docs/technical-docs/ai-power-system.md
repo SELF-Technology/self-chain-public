@@ -9,7 +9,7 @@ The AI Power system is SELF's revolutionary approach to managing cloud compute r
 
 ## Overview
 
-**AI Power** replaces the traditional "Shine %" concept with a more intuitive system that directly represents your cloud compute resources and AI capabilities.
+**AI Power** is an intuitive system that directly represents your cloud compute resources and AI capabilities.
 
 ### Key Concepts
 
@@ -155,30 +155,6 @@ const helpSession = await selfSDK.collaboration.offer({
 - **Resource Optimization**: Direct correlation with actual cloud costs
 - **Flexible Pricing**: Easy to adjust rates based on infrastructure costs
 
-## Migration from Shine %
-
-### Terminology Mapping
-
-| Old (Shine %) | New (AI Power) |
-|---------------|----------------|
-| 100% Shine | 100% AI Power |
-| Shine depletion | Power consumption |
-| Shine tracking | Power monitoring |
-| Shine economy | Power sharing |
-
-### Smart Contract Updates
-
-The transition requires updating smart contract interfaces:
-
-```solidity
-// Old
-uint256 shinePercentUsed;
-event ShineUsageUpdated(address indexed user, uint256 newUsage);
-
-// New
-uint256 aiPowerUsed;
-event AIPowerUsageUpdated(address indexed user, uint256 newUsage);
-```
 
 ## Future Enhancements
 

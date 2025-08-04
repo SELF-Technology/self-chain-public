@@ -26,10 +26,11 @@ SELF Chain implements a revolutionary architecture combining AI and blockchain:
   - TLS encryption throughout
   - Cloud-optimized architecture
   
-- **Storage** - Hybrid distributed storage system
-  - IPFS for decentralized content
-  - OrbitDB for real-time data
-  - Privacy-preserving storage layers
+- **Storage** - Local-first storage architecture
+  - User-controlled local databases (SQLite/RocksDB)
+  - SELF Chain for metadata and node discovery
+  - Optional user-controlled backup systems
+  - True data sovereignty without external dependencies
   
 - **Cryptography** - Post-quantum security
   - Kyber key encapsulation
@@ -112,6 +113,45 @@ SELF provides enterprise-grade blockchain solutions:
    - Cross-chain transactions and data sharing
    - Unified analytics and monitoring
 
+## 🗄️ Storage Architecture Revolution
+
+### Local-First Storage (Updated 2025-08-04)
+
+SELF has adopted a **Local-First Storage Architecture** that prioritizes true data sovereignty and performance:
+
+#### Core Principles
+- **Your Data, Your Server**: All user data stays on their personal Hetzner VPS
+- **No External Dependencies**: No reliance on IPFS, OrbitDB, or token-based storage
+- **Performance First**: Local database queries in milliseconds, not seconds
+- **Optional Backups**: Users choose who to trust with encrypted backups
+
+#### Architecture Components
+
+```
+User's Personal Node (Hetzner VPS):
+├── Local Database (SQLite/RocksDB)  ← Primary data storage
+├── SELF Chain Connection            ← Node discovery & metadata
+├── AI Processing (OpenLLM)          ← Local or cloud AI
+└── Backup System (Optional)         ← User-controlled replication
+```
+
+#### Benefits Over Distributed Storage
+- **🚀 Performance**: 100x faster queries (local vs. distributed)
+- **🔒 True Privacy**: Data never leaves your control
+- **💰 No Fees**: No token economics or storage provider costs
+- **🛡️ Security**: No central coordination servers to attack
+- **🔧 Simplicity**: Standard database operations, no complex protocols
+
+#### How It Works
+1. **Data Storage**: Your conversations, settings, and files live in your local database
+2. **Node Discovery**: SELF Chain blockchain stores only metadata (IP addresses, public keys)
+3. **Communication**: Direct encrypted connections between user nodes
+4. **Backups**: Optional encrypted replication to nodes you trust
+
+This architecture delivers on SELF's core promise: **true self-sovereignty with radical simplicity**.
+
+---
+
 ## 1. Core Architecture
 
 ### 1.1 Cloud-First Architecture
@@ -158,11 +198,11 @@ SELF Chain operates exclusively in a cloud-first environment:
 
 ### 1.3 Storage Architecture
 
-#### 1.3.1 Hybrid Storage
-- Decentralized storage using IPFS
-- Real-time database with OrbitDB
-- Cross-chain data synchronization
-- Secure data integrity
+#### 1.3.1 Local-First Storage
+- User-controlled local databases (SQLite/RocksDB)
+- SELF Chain for metadata and node discovery only
+- Optional encrypted backups to user-chosen nodes
+- True data sovereignty and integrity
 
 #### 1.3.2 Storage Features
 - Distributed data storage
@@ -262,6 +302,6 @@ SELF Chain operates exclusively in a cloud-first environment:
 ## 6. Documentation References
 
 - OpenLLM: https://github.com/bentoml/OpenLLM
-- IPFS: https://docs.ipfs.tech/
-- OrbitDB: https://github.com/orbitdb
-- Network Protocols: https://docs.ipfs.tech/
+- SQLite: https://www.sqlite.org/docs.html
+- RocksDB: https://rocksdb.org/
+- Local-First Storage: See the Storage Architecture Revolution section above for full details
