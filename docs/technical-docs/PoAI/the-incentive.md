@@ -1,6 +1,8 @@
 ---
 sidebar_label: "The Incentive"
 sidebar_position: 9
+slug: /technical-docs/PoAI/the-incentive
+canonical_url: https://docs.self.app/technical-docs/PoAI/the-incentive
 ---
 
 # The Incentive

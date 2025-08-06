@@ -1,6 +1,8 @@
 ---
 sidebar_label: "Validation Process"
 sidebar_position: 8
+slug: /technical-docs/PoAI/validation-process
+canonical_url: https://docs.self.app/technical-docs/PoAI/validation-process
 ---
 
 # Validation Process

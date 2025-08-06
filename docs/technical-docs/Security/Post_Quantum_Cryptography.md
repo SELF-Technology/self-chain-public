@@ -1,6 +1,8 @@
 ---
 title: Post Quantum Cryptography
 sidebar_position: 2
+slug: /technical-docs/Security/Post_Quantum_Cryptography
+canonical_url: https://docs.self.app/technical-docs/Security/Post_Quantum_Cryptography
 ---
 
 # SELF Chain Post-Quantum Cryptography

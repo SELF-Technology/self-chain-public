@@ -2,6 +2,7 @@
 title: Developer Guide Overview
 sidebar_label: "🗺️ Developer Guide Overview"
 sidebar_position: 1
+slug: /building-on-self
 ---
 
 # Developer Guide Overview

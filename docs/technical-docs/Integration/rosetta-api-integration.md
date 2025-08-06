@@ -1,6 +1,8 @@
 ---
 sidebar_label: "Rosetta API Integration"
 sidebar_position: 2
+slug: /technical-docs/Integration/rosetta-api-integration
+canonical_url: https://docs.self.app/technical-docs/Integration/rosetta-api-integration
 ---
 
 # Rosetta API Integration

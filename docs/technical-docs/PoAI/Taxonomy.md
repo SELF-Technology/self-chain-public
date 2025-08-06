@@ -1,6 +1,8 @@
 ---
 title: Taxonomy
 sidebar_position: 2
+slug: /technical-docs/PoAI/Taxonomy
+canonical_url: https://docs.self.app/technical-docs/PoAI/Taxonomy
 ---
 
 # PoAI Taxonomy

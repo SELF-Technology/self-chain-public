@@ -1,0 +1,23 @@
+# Redirects for Google Search Console fixes
+
+# Handle the old Proof-of-AI URL format
+/technical-docs/PoAI/Proof-of-AI /technical-docs/PoAI/proof-of-ai 301
+/technical-docs/PoAI/Proof-of-AI/ /technical-docs/PoAI/proof-of-ai 301
+
+# Ensure consistent URL patterns for indexed pages
+/building-on-self/ /building-on-self 301
+/project-status/ /project-status 301
+/technical-docs/Security/Post_Quantum_Cryptography/ /technical-docs/Security/Post_Quantum_Cryptography 301
+/technical-docs/Security/Overview/ /technical-docs/Security/Overview 301
+/technical-docs/PoAI/Taxonomy/ /technical-docs/PoAI/Taxonomy 301
+/technical-docs/Integration/rosetta-api-integration/ /technical-docs/Integration/rosetta-api-integration 301
+/technical-docs/Constellation/Industry_Validation_Rules/ /technical-docs/Constellation/Industry_Validation_Rules 301
+/technical-docs/Validate/ /technical-docs/Validate 301
+/technical-docs/PoAI/the-incentive/ /technical-docs/PoAI/the-incentive 301
+/technical-docs/PoAI/validation-process/ /technical-docs/PoAI/validation-process 301
+
+# Handle evolution page
+/about-self/evolution/ /about-self/evolution 301
+
+# Handle beta-web-app page
+/roadmap/beta-web-app/ /roadmap/beta-web-app 301

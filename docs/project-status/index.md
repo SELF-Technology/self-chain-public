@@ -1,6 +1,7 @@
 ---
 title: Project Status - Current State of SELF
 sidebar_position: 1
+slug: /project-status
 ---
 
 # 📊 SELF Project Status

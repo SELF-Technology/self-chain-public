@@ -1,6 +1,8 @@
 ---
 title: Overview
 sidebar_position: 1
+slug: /technical-docs/Security/Overview
+canonical_url: https://docs.self.app/technical-docs/Security/Overview
 ---
 
 # SELF Chain Security Overview

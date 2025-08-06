@@ -1,6 +1,8 @@
 ---
 title: Industry Validation Rules
 sidebar_position: 3
+slug: /technical-docs/Constellation/Industry_Validation_Rules
+canonical_url: https://docs.self.app/technical-docs/Constellation/Industry_Validation_Rules
 ---
 
 # 🏛️ Industry Validation Rules

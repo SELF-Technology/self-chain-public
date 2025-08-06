@@ -1,5 +1,7 @@
 ---
 title: Validate
+slug: /technical-docs/Validate
+canonical_url: https://docs.self.app/technical-docs/Validate
 ---
 
 # SELF Validate
