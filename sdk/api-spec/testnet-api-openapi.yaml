@@ -1,0 +1,570 @@
+openapi: 3.0.3
+info:
+  title: SELF Chain Testnet API (PLANNED - NOT YET ACTIVE)
+  description: |
+    **⚠️ IMPORTANT: This API is not yet deployed. This specification describes the planned implementation.**
+    
+    API gateway for SELF Chain testnet blockchain network (coming soon).
+    
+    **Current Status**: 
+    - ✅ Specification complete
+    - ⏳ Deployment pending
+    - ⏳ Endpoints not yet active
+    
+    **When Will This Be Available?**
+    - Expected: Q4 2025
+    - GitHub Releases: https://github.com/SELF-Technology/self-chain-public/releases
+    
+    **⚠️ TESTNET WARNING**: Once deployed, this API will provide access to SELF Chain's testnet only. Do not send real assets or deploy production applications. All testnet tokens have no value.
+    
+    ## Rate Limiting (Planned)
+    - Default: 100 requests/minute (burst: 200)
+    - Authenticated: 500 requests/minute (burst: 1000)
+    
+    ## Support
+    - GitHub: https://github.com/SELF-Technology/self-chain-public
+    - Email: devs@self.app
+  version: 1.0.0-planned
+  contact:
+    name: SELF Chain Developer Support
+    email: devs@self.app
+    url: https://docs.self.app
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+
+servers:
+  - url: https://testnet-api.self.app
+    description: Primary testnet API gateway (NOT ACTIVE YET)
+  - url: https://testnet-api-us.self.app
+    description: US region backup (NOT ACTIVE YET)
+  - url: https://testnet-api-eu.self.app
+    description: EU region backup (NOT ACTIVE YET)
+  - url: https://testnet-api-ap.self.app
+    description: Asia Pacific backup (NOT ACTIVE YET)
+
+tags:
+  - name: Health
+    description: Health check and status endpoints (planned)
+  - name: Blockchain
+    description: Blockchain query operations (planned)
+  - name: Transactions
+    description: Transaction operations (planned)
+  - name: Accounts
+    description: Account information (planned)
+  - name: WebSocket
+    description: Real-time event subscriptions (planned)
+
+paths:
+  /health:
+    get:
+      summary: Gateway health check (PLANNED)
+      description: Check if the API gateway is operational (not yet implemented)
+      tags:
+        - Health
+      responses:
+        '200':
+          description: Gateway is healthy
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+        '503':
+          description: Service unavailable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /v1/status:
+    get:
+      summary: Get network status (PLANNED)
+      description: Retrieve current testnet network status and node information (not yet implemented)
+      tags:
+        - Health
+      responses:
+        '200':
+          description: Network status retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NetworkStatus'
+        '429':
+          $ref: '#/components/responses/RateLimitError'
+        '500':
+          $ref: '#/components/responses/InternalError'
+
+  /v1/blocks/{height}:
+    get:
+      summary: Get block by height (PLANNED)
+      description: Retrieve a specific block by its height (not yet implemented)
+      tags:
+        - Blockchain
+      parameters:
+        - name: height
+          in: path
+          required: true
+          schema:
+            type: integer
+            minimum: 1
+          description: Block height
+      responses:
+        '200':
+          description: Block found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Block'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+        '429':
+          $ref: '#/components/responses/RateLimitError'
+
+  /v1/blocks/hash/{hash}:
+    get:
+      summary: Get block by hash (PLANNED)
+      description: Retrieve a specific block by its hash (not yet implemented)
+      tags:
+        - Blockchain
+      parameters:
+        - name: hash
+          in: path
+          required: true
+          schema:
+            type: string
+            pattern: '^0x[a-fA-F0-9]{64}$'
+          description: Block hash
+      responses:
+        '200':
+          description: Block found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Block'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+        '429':
+          $ref: '#/components/responses/RateLimitError'
+
+  /v1/blocks/latest:
+    get:
+      summary: Get latest block (PLANNED)
+      description: Retrieve the most recent block (not yet implemented)
+      tags:
+        - Blockchain
+      responses:
+        '200':
+          description: Latest block retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Block'
+        '429':
+          $ref: '#/components/responses/RateLimitError'
+
+  /v1/transactions/{hash}:
+    get:
+      summary: Get transaction (PLANNED)
+      description: Retrieve a specific transaction by its hash (not yet implemented)
+      tags:
+        - Transactions
+      parameters:
+        - name: hash
+          in: path
+          required: true
+          schema:
+            type: string
+            pattern: '^0x[a-fA-F0-9]{64}$'
+          description: Transaction hash
+      responses:
+        '200':
+          description: Transaction found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Transaction'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+        '429':
+          $ref: '#/components/responses/RateLimitError'
+
+  /v1/transactions:
+    post:
+      summary: Submit transaction (PLANNED)
+      description: Submit a signed transaction to the testnet (not yet implemented)
+      tags:
+        - Transactions
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - tx
+              properties:
+                tx:
+                  type: string
+                  description: Base64 encoded signed transaction
+                  example: "eyJ0eXBlIjoidHJhbnNmZXIiLCJmcm9tIjoiLi4uIn0="
+      responses:
+        '200':
+          description: Transaction submitted successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TransactionSubmitResponse'
+        '400':
+          $ref: '#/components/responses/BadRequestError'
+        '429':
+          $ref: '#/components/responses/RateLimitError'
+
+  /v1/accounts/{address}:
+    get:
+      summary: Get account information (PLANNED)
+      description: Retrieve account details including balance and nonce (not yet implemented)
+      tags:
+        - Accounts
+      parameters:
+        - name: address
+          in: path
+          required: true
+          schema:
+            type: string
+            pattern: '^self[a-z0-9]{39}$'
+          description: Account address
+      responses:
+        '200':
+          description: Account information retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Account'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+        '429':
+          $ref: '#/components/responses/RateLimitError'
+
+  /v1/accounts/{address}/balance:
+    get:
+      summary: Get account balance (PLANNED)
+      description: Retrieve account balance only (not yet implemented)
+      tags:
+        - Accounts
+      parameters:
+        - name: address
+          in: path
+          required: true
+          schema:
+            type: string
+            pattern: '^self[a-z0-9]{39}$'
+          description: Account address
+      responses:
+        '200':
+          description: Balance retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Balance'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+        '429':
+          $ref: '#/components/responses/RateLimitError'
+
+  /v1/accounts/{address}/transactions:
+    get:
+      summary: Get account transactions (PLANNED)
+      description: Retrieve transaction history for an account (not yet implemented)
+      tags:
+        - Accounts
+      parameters:
+        - name: address
+          in: path
+          required: true
+          schema:
+            type: string
+            pattern: '^self[a-z0-9]{39}$'
+          description: Account address
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 20
+          description: Number of transactions to return
+        - name: offset
+          in: query
+          schema:
+            type: integer
+            minimum: 0
+            default: 0
+          description: Number of transactions to skip
+      responses:
+        '200':
+          description: Transactions retrieved
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  transactions:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Transaction'
+                  total:
+                    type: integer
+                  limit:
+                    type: integer
+                  offset:
+                    type: integer
+        '429':
+          $ref: '#/components/responses/RateLimitError'
+
+  /v1/ws:
+    get:
+      summary: WebSocket connection (PLANNED)
+      description: |
+        Establish WebSocket connection for real-time events (not yet implemented).
+        
+        ## Connection URL (Future)
+        ```
+        wss://testnet-api.self.app/v1/ws
+        ```
+        
+        ## Message Format (Planned)
+        ```json
+        {
+          "type": "subscribe",
+          "channel": "blocks"
+        }
+        ```
+        
+        ## Available Channels (Planned)
+        - `blocks` - New block events
+        - `transactions` - Transaction confirmations
+        - `validators` - Validator set changes
+      tags:
+        - WebSocket
+      responses:
+        '101':
+          description: Switching Protocols
+        '429':
+          $ref: '#/components/responses/RateLimitError'
+
+components:
+  schemas:
+    HealthResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          enum: [healthy, degraded, unhealthy]
+        timestamp:
+          type: string
+          format: date-time
+        version:
+          type: string
+
+    NetworkStatus:
+      type: object
+      properties:
+        network:
+          type: string
+          enum: [testnet, mainnet]
+        status:
+          type: string
+          enum: [operational, degraded, maintenance]
+        chain_id:
+          type: string
+        latest_block:
+          type: object
+          properties:
+            height:
+              type: integer
+            hash:
+              type: string
+            timestamp:
+              type: string
+              format: date-time
+        node_info:
+          type: object
+          properties:
+            version:
+              type: string
+            peer_count:
+              type: integer
+            syncing:
+              type: boolean
+        warning:
+          type: string
+          example: "This is a test network - do not use real assets"
+
+    Block:
+      type: object
+      properties:
+        height:
+          type: integer
+        hash:
+          type: string
+        previous_hash:
+          type: string
+        timestamp:
+          type: string
+          format: date-time
+        transactions:
+          type: array
+          items:
+            type: string
+          description: Transaction hashes
+        validator:
+          type: string
+
+    Transaction:
+      type: object
+      properties:
+        hash:
+          type: string
+        from:
+          type: string
+        to:
+          type: string
+        amount:
+          type: string
+        fee:
+          type: string
+        nonce:
+          type: integer
+        timestamp:
+          type: string
+          format: date-time
+        status:
+          type: string
+          enum: [pending, confirmed, failed]
+        block_height:
+          type: integer
+          nullable: true
+
+    TransactionSubmitResponse:
+      type: object
+      properties:
+        hash:
+          type: string
+        status:
+          type: string
+          enum: [pending, accepted, rejected]
+        estimated_confirmation:
+          type: integer
+          description: Estimated blocks until confirmation
+
+    Account:
+      type: object
+      properties:
+        address:
+          type: string
+        balance:
+          type: string
+        nonce:
+          type: integer
+        created_at:
+          type: string
+          format: date-time
+
+    Balance:
+      type: object
+      properties:
+        amount:
+          type: string
+        denom:
+          type: string
+          example: "TEST"
+
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+        message:
+          type: string
+        details:
+          type: object
+          additionalProperties: true
+
+    RateLimitError:
+      type: object
+      properties:
+        error:
+          type: string
+          example: "rate_limit_exceeded"
+        message:
+          type: string
+          example: "Too many requests. Please retry after 60 seconds."
+        retry_after:
+          type: integer
+          example: 60
+
+  responses:
+    NotFoundError:
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            error: "not_found"
+            message: "The requested resource was not found"
+
+    BadRequestError:
+      description: Invalid request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            error: "invalid_request"
+            message: "The request was invalid or malformed"
+
+    RateLimitError:
+      description: Rate limit exceeded
+      headers:
+        X-RateLimit-Limit:
+          schema:
+            type: integer
+          description: Request limit per minute
+        X-RateLimit-Remaining:
+          schema:
+            type: integer
+          description: Remaining requests in current window
+        X-RateLimit-Reset:
+          schema:
+            type: integer
+          description: Unix timestamp when limit resets
+        Retry-After:
+          schema:
+            type: integer
+          description: Seconds to wait before retry
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/RateLimitError'
+
+    InternalError:
+      description: Internal server error
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            error: "internal_error"
+            message: "An internal server error occurred"
+
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: Bearer token authentication (optional for higher rate limits) - not yet implemented
+
+security:
+  - {}  # No auth required by default
+  - ApiKeyAuth: []  # Optional authentication (future)
