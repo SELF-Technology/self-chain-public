@@ -13,7 +13,7 @@ The Super-App will run on the SELF Chain Testnet and each user's profile will be
 
 **SELF Messenger** - Node-to-node messaging, meaning it's only you and the receiver involved. Use your own SELF directly in the chat to plan things to do together.
 
-**SELF Rewards** - Earn SELF currency by using the service, and helping to secure the network.
+**SELF Calendar** - Integrate with any popular calendar provider while maintaining privacy. AI-enabled scheduling and smart event management.
 
 **SELF Wallet** - Store your SELF currency, other cryptocurrencies and stablecoins, enabling you to send, receive and convert.
 
@@ -65,6 +65,7 @@ New users discover SELF through:
 - ✅ **Personal AI Assistant** with persistent memory
 - ✅ **Private Messenger** for secure communications
 - ✅ **Secure Browser** with built-in VPN
+- ✅ **SELF Calendar** with AI-enabled scheduling
 - ✅ **Crypto Wallet** for digital assets
 - ✅ **100% AI Power** to explore all features
 
