@@ -24,13 +24,12 @@ The AI Power system is SELF's revolutionary approach to managing cloud compute r
 
 Each subscription tier provides different AI Power allocations:
 
-| Tier | Monthly AI Power | Equivalent Cloud Resources |
-|------|------------------|----------------------------|
-| **Free** 💫 | 100 units | Basic cloud node access |
-| **Star** ⭐ | 500 units | 2GB compute allocation |
-| **Galaxy** 🌌 | 2,500 units | 10GB compute allocation |
-| **Universe** 🪐 | 12,500 units | 50GB compute allocation |
-| **Multiverse** 🌠 | Unlimited | Cross-constellation access |
+| Tier | Monthly Price | Cloud Infrastructure |
+|------|---------------|---------------------|
+| **Free Trial** 💫 | $0 | 30-day trial node (100MB RAM, 0.1 vCPU) |
+| **SELF Cloud Starter** 🚀 | $8.99 | 1 vCPU, 2GB RAM, 40GB SSD, 20TB bandwidth |
+| **SELF Cloud Pro** ⭐ | $12.99 | 1 vCPU, 1GB RAM, 25GB SSD, 1TB bandwidth |
+| **SELF Cloud Pro+** 🌟 | $24.99 | 1 vCPU, 2GB RAM, 50GB SSD, 2TB bandwidth |
 
 ### Usage Consumption
 

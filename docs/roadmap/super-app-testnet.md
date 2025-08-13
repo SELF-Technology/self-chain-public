@@ -60,20 +60,21 @@ New users discover SELF through:
 - **Super-App convenience**: "All your essential services in one secure place"
 - **AI innovation**: "Personal AI that actually remembers you"
 
-### Your First 30 Days - Free Tier 💫
+### Your First 30 Days - Free Trial 💫
 **What You Get:**
-- ✅ **Personal AI Assistant** with persistent memory
-- ✅ **Private Messenger** for secure communications
+- ✅ **Real Node Infrastructure** - Your own cloud node from day one
+- ✅ **Personal AI Assistant** with persistent memory and unlimited usage
+- ✅ **Private Messenger** for secure node-to-node communications
 - ✅ **Secure Browser** with built-in VPN
 - ✅ **SELF Calendar** with AI-enabled scheduling
 - ✅ **Crypto Wallet** for digital assets
-- ✅ **100% AI Power** to explore all features
+- ✅ **Full Network Participation** - Contribute to network growth immediately
 
-**Usage Limits:**
-- 100 minutes of AI assistant time
-- Basic VPN bandwidth
-- Standard message encryption
-- Essential wallet features
+**No Usage Limits:**
+- Unlimited AI assistant usage during trial period
+- Full VPN access and bandwidth
+- Complete message encryption features
+- All wallet functionality available
 
 ### Daily Experience
 ```
@@ -110,13 +111,12 @@ As you use SELF, your AI Power depletes from 100% to 0%:
 ### Subscription Tiers
 When you're ready to upgrade, choose your tier through multiple payment options:
 
-| Tier | Estimated Pricing* | Monthly Benefits |
+| Tier | Monthly Price | Cloud Infrastructure |
 |------|-------------|------------------|
-| **Free 💫** | $0 | 100 minutes AI, basic features |
-| **Star ⭐** | ~$15 | 2GB data/compute, priority AI |
-| **Galaxy 🌌** | ~$50 | 10GB data/compute, advanced AI models |
-| **Universe 🪐** | ~$150 | 50GB data/compute, unlimited AI |
-| **Multiverse 🌠** | ~$10K+ | Access across entire Constellation |
+| **Free Trial 💫** | $0 | 30-day trial node, basic AI features |
+| **SELF Cloud Starter 🚀** | $8.99 | 1 vCPU, 2GB RAM, 40GB SSD, unlimited AI |
+| **SELF Cloud Pro ⭐** | $12.99 | 1 vCPU, 1GB RAM, 25GB SSD, unlimited AI |
+| **SELF Cloud Pro+ 🌟** | $24.99 | 1 vCPU, 2GB RAM, 50GB SSD, unlimited AI |
 
 **Pricing subject to change based on market conditions and user feedback*
 
@@ -138,26 +138,26 @@ When you're ready to upgrade, choose your tier through multiple payment options:
 
 ### Three User Profiles Emerge
 
-#### 1. "Privacy Seeker" (70% of users) → Star Tier ⭐
+#### 1. "Budget-Conscious User" (40% of users) → SELF Cloud Starter 🚀
 **Sarah, Marketing Professional**
 - Wants: Ad-free experience, private browsing, secure messaging
-- Values: Simplicity, privacy, no corporate surveillance
-- Choice: Stakes $15 of SELF tokens monthly
-- Benefits: 2GB for all services, faster AI responses
+- Values: Simplicity, privacy, affordable pricing
+- Choice: $8.99/month subscription
+- Benefits: Private cloud infrastructure, unlimited AI usage
 
-#### 2. "Power User" (25% of users) → Galaxy Tier 🌌
+#### 2. "Professional User" (45% of users) → SELF Cloud Pro ⭐
 **Marcus, Software Developer**
-- Wants: Advanced AI for coding, secure development environment
-- Values: Performance, customization, API access
-- Choice: Stakes $50 of SELF tokens monthly
-- Benefits: 10GB allocation, SDK access, priority support
+- Wants: Reliable AI for work, secure development environment
+- Values: Performance, consistency, professional features
+- Choice: $12.99/month subscription
+- Benefits: Enhanced infrastructure, priority support, unlimited AI
 
-#### 3. "Web3 Pioneer" (5% of users) → Universe Tier 🪐
-**Priya, Crypto Entrepreneur**
-- Wants: Maximum AI capabilities, DeFi integration, future features
-- Values: Innovation, early access, governance participation
-- Choice: Stakes $150 of SELF tokens monthly
-- Benefits: 50GB allocation, beta features, voting rights
+#### 3. "Power User" (15% of users) → SELF Cloud Pro+ 🌟
+**Priya, Tech Executive**
+- Wants: Maximum performance, advanced AI capabilities
+- Values: Top-tier infrastructure, cutting-edge features
+- Choice: $24.99/month subscription
+- Benefits: Premium infrastructure, beta access, unlimited AI
 
 ### The Upgrade Experience
 ```javascript
@@ -173,7 +173,7 @@ When you're ready to upgrade, choose your tier through multiple payment options:
 
 ## 💎 Stage 4: Daily Super-App Life
 
-### Star Tier Daily Experience ⭐
+### SELF Cloud Daily Experience ⭐
 **Morning Routine:**
 - AI briefs you on overnight updates (remembers your interests)
 - Check secure messages from family

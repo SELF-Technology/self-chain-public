@@ -55,20 +55,19 @@ SELF Chain implements a revolutionary token-based subscription model that aligns
 
 ### Tier Structure & Pricing
 
-| Tier | Token Value | Monthly Benefits | Target Users |
-|------|-------------|------------------|--------------|
-| **Free Tier** 💫 | $0 | 100 minutes AI, basic features, 100% AI Power to start | New users exploring SELF |
-| **Star Tier** ⭐ | $15 worth of SELF | 2GB data/compute, priority AI, faster responses | Privacy seekers (70% of users) |
-| **Galaxy Tier** 🌌 | $50 worth of SELF | 10GB data/compute, advanced AI models, SDK access | Power users & developers (25%) |
-| **Universe Tier** 🪐 | $150 worth of SELF | 50GB data/compute, unlimited AI, beta features | Web3 pioneers (5%) |
-| **Multiverse Tier** 🌠 | $10K+ staked | Cross-Constellation access, enterprise features | Enterprise power users |
+| Tier | Monthly Price | Cloud Infrastructure | Target Users |
+|------|---------------|---------------------|--------------|
+| **Free Trial** 💫 | $0 | 30-day trial node, basic AI features | New users exploring SELF |
+| **SELF Cloud Starter** 🚀 | $8.99/month | 1 vCPU, 2GB RAM, 40GB SSD, unlimited AI | Budget-conscious users |
+| **SELF Cloud Pro** ⭐ | $12.99/month | 1 vCPU, 1GB RAM, 25GB SSD, unlimited AI | Professional users |
+| **SELF Cloud Pro+** 🌟 | $24.99/month | 1 vCPU, 2GB RAM, 50GB SSD, unlimited AI | Power users & developers |
 
 ### Dynamic Token Pricing
 
 Since SELF is not a stablecoin, subscription tiers are priced in USD equivalent:
 - Users purchase **$X worth** of SELF tokens, not a fixed token amount
 - Real-time price feeds determine exact token quantity at purchase time
-- Example: "Star Tier: $15/month (currently ~X.XX SELF tokens)"
+- Example: "SELF Cloud Pro: $12.99/month (currently ~X.XX SELF tokens)"
 
 ## 📊 Key Concepts
 
