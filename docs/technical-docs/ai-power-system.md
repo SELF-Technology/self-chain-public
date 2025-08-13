@@ -25,7 +25,7 @@ Each subscription tier provides different AI Power allocations:
 
 | Tier | Monthly Price | Cloud Infrastructure |
 |------|---------------|---------------------|
-| **Free Trial** 💫 | $0 | 30-day trial node (100MB RAM, 0.1 vCPU) |
+| **Premium Preview** 💫🚀 | $0 | 14-day enterprise node: DeepSeek R1, Qwen3 Coder, Gemini 2.0 Flash (unlimited AI processing) |
 | **SELF Cloud Starter** 🚀 | $8.99 | 1 vCPU, 2GB RAM, 40GB SSD, 20TB bandwidth |
 | **SELF Cloud Pro** ⭐ | $12.99 | 1 vCPU, 1GB RAM, 25GB SSD, 1TB bandwidth |
 | **SELF Cloud Pro+** 🌟 | $24.99 | 1 vCPU, 2GB RAM, 50GB SSD, 2TB bandwidth |

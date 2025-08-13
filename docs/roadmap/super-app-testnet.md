@@ -60,60 +60,45 @@ New users discover SELF through:
 - **Super-App convenience**: "All your essential services in one secure place"
 - **AI innovation**: "Personal AI that actually remembers you"
 
-### Your First 30 Days - Free Trial 💫
-**What You Get:**
-- ✅ **Real Node Infrastructure** - Your own cloud node from day one
-- ✅ **Personal AI Assistant** with persistent memory and unlimited usage
-- ✅ **Private Messenger** for secure node-to-node communications
-- ✅ **Secure Browser** with built-in VPN
-- ✅ **SELF Calendar** with AI-enabled scheduling
-- ✅ **Crypto Wallet** for digital assets
-- ✅ **Full Network Participation** - Contribute to network growth immediately
+### Your Transformative 14-Day Premium Preview 🚀💫
+**What You Experience:**
+- ✅ **Enterprise-Grade Cloud Node** - Dedicated infrastructure from minute one
+- ✅ **Cutting-Edge AI Models** - Access to DeepSeek R1, Qwen3 Coder, Gemini 2.0 Flash and premium OpenRouter models
+- ✅ **Lightning-Fast AI Processing** - Sub-second response times with advanced reasoning capabilities  
+- ✅ **Private Messenger** with quantum-secure node-to-node encryption
+- ✅ **Zero-Surveillance Browser** with military-grade VPN protection
+- ✅ **AI-Powered Calendar** with intelligent scheduling and life optimization
+- ✅ **Multi-Chain Crypto Wallet** supporting all major cryptocurrencies
+- ✅ **Immediate Network Power** - Full peer-to-peer capabilities from day one
 
-**No Usage Limits:**
-- Unlimited AI assistant usage during trial period
-- Full VPN access and bandwidth
-- Complete message encryption features
-- All wallet functionality available
+**Premium Experience Guarantee:**
+- **Unlimited premium AI usage** - No throttling, no caps, no compromises
+- **Maximum bandwidth and performance** - Full enterprise-level access
+- **Complete feature suite** - Every capability available from day one
+- **Priority infrastructure** - Dedicated resources, no sharing
 
-### Daily Experience
-```
-Morning: "Good morning! Based on our conversations yesterday..."
-- Your AI remembers context across sessions
+> **⚡ This isn't a typical "trial" - it's 14 days of premium SELF Cloud Pro+ experience to show you what digital sovereignty actually feels like.**
 
-Afternoon: Private message a friend
-- True end-to-end encryption, node-to-node
-
-Evening: Browse privately
-- No tracking, no ads, just content
-
-Night: Check your SELF tokens
-- Earned just by using the app today!
-```
-
-**Success Metrics:**
-- 85% activate AI assistant within first day
-- 70% use all four core services within first week
-- 92% appreciate ad-free experience
-- 65% earn their first SELF tokens
 
 ---
 
 ## 🌟 Stage 2: Understanding Token Subscriptions
 
-### The AI Power System
-As you use SELF, your AI Power depletes from 100% to 0%:
-- **AI conversations**: ~1% per extended session
-- **VPN browsing**: ~0.5% per GB
-- **Messaging**: ~0.1% per message
-- **Wallet transactions**: ~0.2% per transaction
+### AI Power System For Paid Tiers
+Once you upgrade from the Premium Preview, your subscription includes AI Power that depletes based on usage (not time):
+- **AI conversations**: ~1% per extended session*
+- **VPN browsing**: ~0.5% per GB*
+- **Messaging**: ~0.1% per message*
+- **Wallet transactions**: ~0.2% per transaction*
+
+*Usage rates are preliminary and subject to optimization based on user feedback and infrastructure costs.
 
 ### Subscription Tiers
 When you're ready to upgrade, choose your tier through multiple payment options:
 
 | Tier | Monthly Price | Cloud Infrastructure |
 |------|-------------|------------------|
-| **Free Trial 💫** | $0 | 30-day trial node, basic AI features |
+| **Premium Preview 💫🚀** | $0 | 14-day enterprise experience: DeepSeek R1, Qwen3 Coder, Gemini 2.0 Flash, unlimited AI |
 | **SELF Cloud Starter 🚀** | $8.99 | 1 vCPU, 2GB RAM, 40GB SSD, unlimited AI |
 | **SELF Cloud Pro ⭐** | $12.99 | 1 vCPU, 1GB RAM, 25GB SSD, unlimited AI |
 | **SELF Cloud Pro+ 🌟** | $24.99 | 1 vCPU, 2GB RAM, 50GB SSD, unlimited AI |
@@ -234,11 +219,16 @@ Earn More → Stake More → Access Premium Features
 - **45%** earn tokens through app usage
 - **15%** become compute contributors (future)
 
-### Progression Patterns
+### Accelerated User Journey
 ```
-Free Tier (30 days avg) → Star Tier (6 months avg) → 
-Galaxy Tier (for power features) → Universe Tier (for maximalists)
+Premium Preview (14 days) → Immediate Conversion (65% within 14 days) → 
+Cloud Starter/Pro (3-6 months) → Pro+ (power users) → Long-term Advocates
 ```
+
+**Why 14 Days Works:**
+- **Days 1-3**: "Wow" experience with enterprise-grade AI
+- **Days 4-10**: Deep feature discovery and dependency building  
+- **Days 11-14**: Conversion urgency as premium access expires
 
 ---
 

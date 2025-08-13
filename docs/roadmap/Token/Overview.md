@@ -57,7 +57,7 @@ SELF Chain implements a revolutionary token-based subscription model that aligns
 
 | Tier | Monthly Price | Cloud Infrastructure | Target Users |
 |------|---------------|---------------------|--------------|
-| **Free Trial** 💫 | $0 | 30-day trial node, basic AI features | New users exploring SELF |
+| **Premium Preview** 💫🚀 | $0 | 14-day enterprise experience: DeepSeek R1, unlimited premium AI | New users experiencing digital sovereignty |
 | **SELF Cloud Starter** 🚀 | $8.99/month | 1 vCPU, 2GB RAM, 40GB SSD, unlimited AI | Budget-conscious users |
 | **SELF Cloud Pro** ⭐ | $12.99/month | 1 vCPU, 1GB RAM, 25GB SSD, unlimited AI | Professional users |
 | **SELF Cloud Pro+** 🌟 | $24.99/month | 1 vCPU, 2GB RAM, 50GB SSD, unlimited AI | Power users & developers |
