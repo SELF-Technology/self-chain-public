@@ -16,7 +16,6 @@ The AI Power system is SELF's revolutionary approach to managing cloud compute r
 - **AI Power**: Your allocated cloud compute resources for AI processing
 - **Power Depletion**: Natural consumption as you use AI services
 - **Power Regeneration**: Monthly reset based on your subscription tier
-- **Power Orb**: Visual representation in the desktop app interface
 
 ## How AI Power Works
 
@@ -48,38 +47,6 @@ const aiPowerUsage = {
 };
 ```
 
-## AI Power Orb Visualization
-
-### Desktop Interface
-
-The AI Power Orb is the central visual element in the SELF desktop app:
-
-- **Neural Network Design**: Flowing energy patterns represent active AI processing
-- **SELF Logo Integration**: Centered logo with optimal opacity
-- **Dynamic Animations**: Pulsing effects that respond to usage
-- **Percentage Display**: Clear remaining power indication
-- **Theme Compatibility**: Works in both light and dark modes
-
-### Visual States
-
-```css
-.ai-power-orb {
-  /* High Power (75-100%) */
-  --energy-flow: rapid;
-  --glow-intensity: high;
-  --color-primary: #3B82F6;
-  
-  /* Medium Power (25-74%) */
-  --energy-flow: moderate;
-  --glow-intensity: medium;
-  --color-primary: #F59E0B;
-  
-  /* Low Power (0-24%) */
-  --energy-flow: slow;
-  --glow-intensity: low;
-  --color-primary: #EF4444;
-}
-```
 
 ## Cloud Architecture Integration
 
@@ -121,7 +88,7 @@ const result = await selfSDK.ai.process({
 
 // Monitor power consumption
 selfSDK.aiPower.onConsumption((usage) => {
-  updatePowerOrb(usage.remaining);
+  updatePowerDisplay(usage.remaining);
 });
 ```
 
@@ -145,7 +112,7 @@ const helpSession = await selfSDK.collaboration.offer({
 ### User Experience
 
 - **Intuitive Understanding**: "Power" is more relatable than "percentage"
-- **Visual Appeal**: Neural network orb is more engaging than progress bars
+- **Visual Appeal**: Clear visual feedback is more engaging than numeric displays
 - **Purpose Clarity**: Directly represents computational capability
 
 ### Technical Advantages
@@ -178,7 +145,7 @@ As SELF evolves to include user-contributed compute:
 
 The AI Power system is fully integrated into the SELF desktop app:
 
-- **Real-time Updates**: Power Orb reflects current usage
+- **Real-time Updates**: Power display reflects current usage
 - **Notifications**: Alerts when power is running low
 - **Upgrade Prompts**: Easy tier upgrades when needed
 - **Usage Analytics**: Detailed consumption tracking
