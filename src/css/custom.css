@@ -69,31 +69,10 @@
 /* FAQ style test - comment out to disable */
 /* @import "./faq-style-test.css"; */
 
-@font-face {
-  font-family: "THICCCBOI";
-  src: url("/fonts/thicccboi/THICCCBOI-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  /* Font metric overrides to reduce layout shift */
-  ascent-override: 95%;
-  descent-override: 25%;
-  line-gap-override: 0%;
-}
-@font-face {
-  font-family: "THICCCBOI";
-  src: url("/fonts/thicccboi/THICCCBOI-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  /* Font metric overrides to reduce layout shift */
-  ascent-override: 95%;
-  descent-override: 25%;
-  line-gap-override: 0%;
-}
+/* Font faces now handled by Google Fonts import in fonts.css */
 
 body {
-  font-family: "THICCCBOI", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
@@ -103,7 +82,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "THICCCBOI", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 /* You can override the default Infima variables here. */
@@ -133,7 +112,7 @@ h6 {
   --ifm-color-primary-lighter: #000000;
   --ifm-color-primary-lightest: #000000;
   --ifm-code-font-size: 95%;
-  --ifm-font-family-base: "THICCCBOI", "Montserrat", sans-serif;
+  --ifm-font-family-base: "Plus Jakarta Sans", "Montserrat", sans-serif;
 
   --docusaurus-highlighted-code-line-bg: #121212(0, 0, 0, 0.1);
 }
