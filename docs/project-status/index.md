@@ -41,12 +41,15 @@ SELF is in **active development** across three main areas: **SELF Chain** testne
   - SELF Studio integration for app building
 
 ### SELF Studio (Built Into Super-App)
-- **What It Is**: Revolutionary AI-native development environment
+- **What It Is**: Revolutionary AI-native development environment with dual-mode development
 - **Key Features**:
   - ❤️ Vibe coding - code by feeling, not fighting
+  - ⚡ Manual mode - traditional craftsmanship with complete control
+  - 🔄 Hybrid mode - context-aware switching between modes
   - 🤖 AI pair programming and collaboration
   - 🗣️ Natural language to app conversion
   - 🎨 Beautiful design generation
+  - 🎮 Developer choice - choose your development style
 
 ### DAO Governance
 - **What It Is**: Community-driven decision making
