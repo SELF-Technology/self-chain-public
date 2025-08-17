@@ -371,7 +371,7 @@ struct NetworkManager {
 
 ## 🚀 The Possibilities Are Endless
 
-These examples show just a fraction of what's possible with SELF Studio's dual-mode development approach. Whether you're a vibe coder focused on rapid prototyping, a traditional developer valuing craftsmanship, or a hybrid developer seeking the best of both worlds, SELF Studio adapts to your style and needs.
+These examples show just a fraction of what's possible with SELF Studio's multi-mode development approach. Whether you're a vibe coder focused on rapid prototyping, a traditional developer valuing craftsmanship, or a hybrid developer seeking the best of both worlds, SELF Studio adapts to your style and needs.
 
 **What will you build? The future of app development starts with your imagination and your preferred development style.**
 

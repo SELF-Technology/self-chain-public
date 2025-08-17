@@ -4,7 +4,7 @@ title: 🏠 Overview
 sidebar_label: 🏠 Overview
 sidebar_position: 1
 slug: /studio
-description: The revolutionary AI-native development environment with dual-mode development
+description: The revolutionary AI-native development environment with multi-mode development
 ---
 
 # 🏠 SELF Studio Overview
@@ -13,7 +13,7 @@ description: The revolutionary AI-native development environment with dual-mode 
 
 SELF Studio is not just another IDE—it's the revolutionary AI-native development environment that transforms software development from a solitary, error-prone process into an intelligent, collaborative, and joyful experience where AI and humans work together to create amazing software.
 
-## 🎮 Dual-Mode Development: Your Choice, Your Control
+## 🎮 Multi-Mode Development: Your Choice, Your Control
 
 SELF Studio respects that different tasks, developers, and moments require different approaches. We provide complete control over AI involvement, from zero assistance to full collaborative development.
 
