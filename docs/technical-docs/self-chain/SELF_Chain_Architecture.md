@@ -46,22 +46,22 @@ SELF Chain implements a revolutionary architecture combining AI and blockchain:
 
 ### 👨‍💻 Developer Resources
 
-Build on SELF Chain using our comprehensive SDKs:
+Build on SELF Chain using SELF Studio:
 
-- **[Developer Guide Overview](/building-on-self)** - Start here to understand SELF's capabilities
-  - AI-native blockchain platform overview
-  - What you can build with SELF
+- **[SELF Studio Overview](/studio)** - Revolutionary AI-native development environment
+  - Vibe coding and AI collaboration
+  - What you can build with SELF Studio
   - Current development status
   
-- **[SDK Preparation Guide](/building-on-self/getting-started)** - Prepare for SDK development
-  - SDK installation and configuration (coming Q4 2025)
-  - Design principles and architecture
-  - Getting ready for development
+- **[AI-Native Development](/studio/ai-features)** - Code by feeling, not fighting
+  - Natural language programming
+  - AI pair programming
+  - Beautiful design generation
   
-- **[MCP Integration](/building-on-self/mcp-integration)** - AI-native development concepts
-  - Model Context Protocol for blockchain
-  - Privacy-preserving AI collaboration
-  - Cross-application intelligence
+- **[DAO Governance](/studio/dao-governance)** - Community-driven development
+  - Democratic decision making
+  - App approval process
+  - Collective intelligence
 
 ---
 

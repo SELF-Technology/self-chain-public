@@ -19,7 +19,7 @@ As the broader SELF ecosystem develops, the token will be the primary trading cu
 
 ## Staking
 
-Lock up tokens as a user or business client, to receive a staking APR and possibly discounts, whitelist and airdrops from ecosystem partners and teams building with the SELF SDK (subject to change, TBD).
+Lock up tokens as a user or business client, to receive a staking APR and possibly discounts, whitelist and airdrops from ecosystem partners and teams building with SELF Studio (subject to change, TBD).
 
 ## Referral Scheme and Points Program
 

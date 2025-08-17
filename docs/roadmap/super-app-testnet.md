@@ -19,30 +19,22 @@ The Super-App will run on the SELF Chain Testnet and each user's profile will be
 
 **SELF Experience** - No intrusive ads, no interruptions from businesses stealing your attention or information.
 
-After the above has been established and the Super-App is in App Stores, we will begin Phase 2 with the developer outreach and SDK.
+After the above has been established and the Super-App is in App Stores, we will begin Phase 2 with the developer outreach and SELF Studio.
 
-## 🛠️ Developer APIs for Super-App Integration
+## 🎯 SELF Studio Integration
 
-**Coming Q4 2025**: SELF Chain will provide comprehensive developer APIs to enable third-party integrations with the Super-App ecosystem.
+**Coming Q4 2025**: SELF Studio will be integrated directly into the Super-App, enabling developers to build applications using vibe coding and AI collaboration.
 
-### **API Gateway Features**
-- **AI-Native Integration**: Built-in support for SELF AI tools and intelligent automation
-- **Privacy-Preserving**: All APIs respect user sovereignty and data control
-- **Cross-App Coordination**: Enable apps to work together intelligently
-- **Testnet Access**: Full testing environment with comprehensive documentation
-
-### **Available APIs (Planned)**
-- **SELF AI API**: Integrate with users' personal AI assistants (with permission)
-- **Secure Messaging API**: Enable apps to send private, encrypted communications
-- **Wallet Integration API**: Facilitate secure cryptocurrency transactions
-- **Browser Extension API**: Create privacy-first browser enhancements
-- **Rewards API**: Enable apps to participate in the SELF token economy
+### **SELF Studio Features**
+- **❤️ Vibe Coding**: Code by feeling, not fighting - natural language programming
+- **🤖 AI Collaboration**: True partnership between human creativity and AI capability
+- **🏛️ DAO Governance**: Community-driven app approval and governance
+- **🔒 Privacy-First**: Built-in security and user sovereignty
 
 ### **Developer Resources**
-- **[Developer Guide](/building-on-self)**: AI-native development tools and frameworks
-- **[Integration Guide](/building-on-self/developer-integration)**: Step-by-step integration tutorials
+- **[SELF Studio](/studio)**: Revolutionary AI-native development environment for vibe coding and AI collaboration
 
-> **Note**: All developer APIs will launch on testnet first, enabling thorough testing before mainnet deployment. The APIs are designed from the ground up to be AI-native, making development radically simplified compared to traditional blockchain platforms.
+> **Note**: SELF Studio will launch as part of the Super-App in Q4 2025, making app development accessible to everyone through natural language and AI collaboration.
 
 # 🌟 SELF Super-App User Journey
 
@@ -414,7 +406,7 @@ The evolution from Super-App to Operating System will follow a phased approach:
    - Boot management
    - Device lifecycle management
    - System-level services
-   - Developer SDK and platform
+   - SELF Studio development environment
 
 ### Key OS Components
 
@@ -426,7 +418,7 @@ The evolution from Super-App to Operating System will follow a phased approach:
    - Hardware abstraction
 
 2. **Developer Platform**
-   - SDK and API documentation
+   - SELF Studio and documentation
    - Development tools and frameworks
    - App store and distribution system
    - Security and compliance tools

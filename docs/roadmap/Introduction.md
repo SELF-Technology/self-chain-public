@@ -21,7 +21,7 @@ Following the beta testing of the AI assistant web app [still accessible here fo
 
 ## Phase 2 (2026)
 
-As the SELF Chain Testnet matures and usage of the Super-App grows, developers will be incentivised to build applications on the SELF SDK. This may include various forms of bounties, hackathons and grants. Organisations will be able to have their own Layer-1 blockchains as part of a constellation of chains running our PoAI consensus, enabling unique AI configuration and token generation.
+As the SELF Chain Testnet matures and usage of the Super-App grows, developers will be incentivised to build applications with SELF Studio. This may include various forms of bounties, hackathons and grants. Organisations will be able to have their own Layer-1 blockchains as part of a constellation of chains running our PoAI consensus, enabling unique AI configuration and token generation.
 
 ## Phase 3 (2027)
 

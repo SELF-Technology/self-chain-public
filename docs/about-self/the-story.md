@@ -41,9 +41,9 @@ Every SELF user gets their own personal cloud infrastructure—not rented server
 *Target: Privacy-conscious individuals, professionals handling sensitive data, anyone tired of being surveilled*
 
 ### 👩‍💻 **Developers: Building the Future of Privacy**
-**SDK and Development Platform**
+**SELF Studio Development Environment**
 
-Developers build privacy-first applications using the SELF SDK, creating:
+Developers build privacy-first applications using SELF Studio, creating:
 - **Native Apps**: Core functionality like messaging, browsing, and AI interaction
 - **Third-Party Applications**: Games, productivity tools, social platforms—all privacy-first
 - **Cross-Platform Integration**: Apps that work seamlessly across the SELF ecosystem

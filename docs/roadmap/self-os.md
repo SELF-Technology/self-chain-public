@@ -9,7 +9,7 @@ SELF OS will work similarly to a typical operating system in terms of having num
 
 Typically, using a messaging app is unlinked to what you’re looking to buy. However, on SELF OS, you could exchange messages with your friend to discuss what to buy for tonight’s dinner, and your SELF would be checking where and how to buy those items while discussing them. As another example, if a user wants to use SELF to plan out their upcoming week, the operating system will take what they verbally say and crossmatch that with every application the user has installed on SELF OS. If any applications can assist the user, the applications are triggered in the background by the user’s SELF. The user is then told what tasks are pending completion and which are completed.
 
-The SDK developer community that builds the applications for SELF OS may be part of a DAO that can raise funds to support the development of the applications and the maintenance of the network.
+The SELF Studio developer community that builds the applications for SELF OS may be part of a DAO that can raise funds to support the development of the applications and the maintenance of the network.
 
 ## Hardware Products & Infrastructure
 
