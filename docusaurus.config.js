@@ -92,6 +92,17 @@ const config = {
         crossorigin: 'anonymous',
       },
     },
+    // Preload Exo 2 font
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preload',
+        href: '/fonts/Exo_2/Exo2-VariableFont_wght.woff2',
+        as: 'font',
+        type: 'font/woff2',
+        crossorigin: 'anonymous',
+      },
+    },
   ],
 
   presets: [

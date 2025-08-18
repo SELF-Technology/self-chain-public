@@ -1,0 +1,43 @@
+### Practical tips for smooth usage — Exo 2
+
+- **Get the right files**: Use the variable WOFF2 (wght 100–900; ital if needed).
+- **Self‑host for Tauri/offline**: Bundle WOFF2 in your app; prefer variable over multiple static weights.
+- **Keep payload small**: Limit to 1–2 weights (e.g., 400/600) or a narrow variable range; subset to Latin if that’s all you need.
+- **Preload + swap**: Preload your main face and set `font-display: swap` to avoid FOIT.
+- **Fallback stack**: `Exo 2, Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif`.
+- **UI tuning**: Body 15–16px with `line-height: 1.5–1.6`; headings `line-height: 1.2–1.3`. Add `letter-spacing: 0.005–0.02em` for small sizes; slight negative tracking for big display (-0.005–0.01em).
+- **Numbers in data**: If available, use `font-variant-numeric: tabular-nums` for aligned digits.
+- **Docs parity**: In Google Docs, add “Exo 2” via “More fonts,” then set as default for Normal text/Headings.
+
+Example CSS (variable font):
+```css
+/* File name often uses Exo_2; the CSS family is "Exo 2" */
+@font-face {
+	font-family: "Exo 2";
+	src: local("Exo 2"),
+	     url("/fonts/exo2-latin-wght.woff2") format("woff2-variations");
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Exo 2";
+	src: local("Exo 2 Italic"),
+	     url("/fonts/exo2-latin-italic-wght.woff2") format("woff2-variations");
+	font-weight: 100 900;
+	font-style: italic;
+	font-display: swap;
+}
+
+/* Usage */
+:root { --font-sans: "Exo 2", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+body { font-family: var(--font-sans); font-weight: 400; }
+h1, h2, h3 { font-weight: 600; }
+```
+
+HTML preload:
+```html
+<link rel="preload" as="font" type="font/woff2" href="/fonts/exo2-latin-wght.woff2" crossorigin="anonymous">
+```
+
+- **Subsetting**: Use a tool (e.g., glyph subsetter) to create `latin`/`latin-ext` subsets if needed.
