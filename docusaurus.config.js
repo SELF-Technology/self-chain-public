@@ -51,7 +51,7 @@ const config = {
       tagName: 'link',
       attributes: {
         rel: 'preload',
-        href: '/img/self-galaxy-transparent-620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp',
+        href: '/img/SELF-WHEEL-WHITE.png',
         as: 'image',
         fetchpriority: 'low',
       },

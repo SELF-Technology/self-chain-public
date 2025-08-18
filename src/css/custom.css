@@ -534,25 +534,32 @@ html[data-theme="dark"] .opensource-links a {
   transform: translateX(-50%);
   bottom: 0;
   width: 100vw; /* Use viewport width to extend beyond container */
-  background-image: url("/img/self-galaxy-transparent-620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp");
-  background-position: center center; /* Center the galaxy */
+  background-image: url("/img/SELF-WHEEL-WHITE.png");
+  background-position: 125% center; /* Move wheel so 25% is off screen */
   background-repeat: no-repeat;
-  background-size: cover; /* Cover the full area */
+  background-size: 56.25%; /* Make wheel 75% of current size (75% * 75% = 56.25%) */
+  opacity: 0.25; /* Make wheel 75% transparent (half of 50%) */
   z-index: 0;
   pointer-events: none;
   box-sizing: border-box;
 }
 
-/* Mobile-specific fix for galaxy background */
+/* Mobile-specific fix for wheel background */
 @media (max-width: 768px) {
   .hero-section-wrapper::before {
-    background-attachment: scroll; /* Better performance on mobile */
-    background-position: calc(50% - 150px) center; /* Move 150px to the left */
+    background-attachment: scroll !important; /* Better performance on mobile */
+    background-position: 230px 140px !important; /* Set vertical position to 140px from top */
+    background-size: 101.25% !important; /* Make wheel 20% smaller (126.56% * 0.8 = 101.25%) */
+    opacity: 0.25 !important; /* Same as desktop - wheel 75% transparent */
+    background-image: url("/img/SELF-WHEEL-WHITE.png") !important; /* Force wheel image */
+    background-repeat: no-repeat !important;
     width: 100vw; /* Ensure full viewport width on mobile too */
     left: 50%;
     transform: translateX(-50%);
     will-change: transform; /* Optimize for mobile scrolling */
   }
+  
+
 }
 
 /* Keep the background pseudo-element visible */
@@ -570,7 +577,7 @@ html[data-theme="dark"] .opensource-links a {
   pointer-events: none;
 } */
 
-/* TEMPORARILY DISABLED - Add galaxy background to the entire landing page */
+/* TEMPORARILY DISABLED - Add wheel background to the entire landing page */
 /* .landing-page::before {
   content: "";
   position: fixed;
@@ -578,7 +585,7 @@ html[data-theme="dark"] .opensource-links a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("/img/self-galaxy-transparent-620kb-0c8f1dfb7fdbf680cc47164363e1e089.webp");
+  background-image: url("/img/SELF-WHEEL-WHITE.png");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -836,7 +843,7 @@ aside[class*="docSidebarContainer"] *::-webkit-scrollbar,
     min-height: 70vh;
   }
 
-  /* Keep galaxy image on tablet - removed gradient override */
+  /* Keep wheel image on tablet - removed gradient override */
 }
 
 @media (max-width: 768px) {
@@ -851,7 +858,7 @@ aside[class*="docSidebarContainer"] *::-webkit-scrollbar,
     background: transparent;
     padding: 0;
     padding-left: 0px; /* Moved left by reducing padding */
-    margin-left: -25px; /* Move left by 15px to align with shifted galaxy */
+    margin-left: -25px; /* Move left by 15px to align with shifted wheel */
     margin-top: 240px; /* Move hero text up by 80px (was 320px) */
     margin-bottom: 100px; /* Create space below hero text on mobile */
     border-radius: 0;
@@ -874,15 +881,21 @@ aside[class*="docSidebarContainer"] *::-webkit-scrollbar,
   }
 
   .hero-section-wrapper {
-    background-size: 200%; /* Zoom in to make galaxy prominent */
-    background-position: center center; /* Center the galaxy for transparent version */
+    background-size: 168.75%; /* Make wheel twice as big on mobile */
+    background-position: 125% center; /* Move wheel so 25% is off screen on mobile */
     min-height: 60vh;
     margin-top: 0; /* Remove negative margin on mobile */
     padding-top: 0;
     position: relative; /* Ensure proper stacking context */
   }
+  
+  .hero-section-wrapper::before {
+    opacity: 0.25 !important; /* Force wheel transparency on mobile */
+    background-size: 168.75% !important; /* Make wheel twice as big on mobile */
+    background-position: 125% center !important; /* Force wheel position on mobile */
+  }
 
-  /* Keep galaxy image on mobile - removed gradient override */
+  /* Keep wheel image on mobile - removed gradient override */
 }
 
 /* Only hide the theme toggle in mobile menu */
@@ -1159,7 +1172,7 @@ html[data-theme="dark"] [class*="footer"] {
 }
 
 
-/* Galaxy image - centered on all devices */
+/* Wheel image - centered on all devices */
 
 /* Shift galaxy image left on mobile */
 @media (max-width: 768px) {
@@ -1305,4 +1318,30 @@ html[data-theme="dark"] pre {
   width: 100%;
   max-width: 1200px;
   margin: 2rem auto;
+}
+
+/* CRITICAL: Force mobile wheel background with maximum specificity and priority */
+@media (max-width: 768px) {
+  .hero-section-wrapper::before {
+    background-image: url("/img/SELF-WHEEL-WHITE.png") !important;
+    background-position: 230px 140px !important;
+    background-size: 101.25% !important;
+    opacity: 0.25 !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    z-index: 0 !important;
+    pointer-events: none !important;
+  }
+  
+  /* Additional specificity for landing page */
+  .landing-page .hero-section-wrapper::before {
+    background-image: url("/img/SELF-WHEEL-WHITE.png") !important;
+    background-position: 230px 140px !important;
+    background-size: 101.25% !important;
+    opacity: 0.25 !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    z-index: 0 !important;
+    pointer-events: none !important;
+  }
 }

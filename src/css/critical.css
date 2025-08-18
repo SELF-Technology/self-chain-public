@@ -34,7 +34,7 @@ body {
 /* Hero section - only for landing page */
 .landing-page .hero-section-wrapper {
   min-height: 400px;
-  background: #0658f7;
+  /* Remove background color to allow wheel background to show */
 }
 
 /* Dark mode critical styles */
