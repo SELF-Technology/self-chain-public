@@ -29,14 +29,14 @@ SELF represents a fundamental shift from surveillance capitalism to digital sove
 
 ## The SELF Ecosystem: Four Pillars of Digital Freedom
 
-### 🏠 **Individual Users: Your Personal Digital Fortress**
+### 🏠 **Individual Users: Private Digital Universe**
 **The Super-App with Personal Cloud Node**
 
 Every SELF user gets their own personal cloud infrastructure—not rented server space, but a true personal node that hosts:
-- **Private AI Assistant**: Your personal AI runs on YOUR hardware, learning from YOUR data, serving only YOU
-- **Encrypted Messaging**: Signal-level security with seamless integration to other SELF users and services
-- **Private Browsing**: Web browsing that leaves no trace on corporate servers
-- **Personal Data Vault**: All your information stays under your control, encrypted and accessible only to you
+- **SELF AI**: A smart system that remembers your preferences, improving your AI experience with every interaction
+- **SELF Cloud**: Private, encrypted storage for your files and data, integrated with your AI. Keep everything in SELF Cloud and share context across apps without giving up control
+- **SELF Messenger**: Node-to-node messaging, meaning it's only you and the receiver involved
+- **SELF Calendar**: Integrate with any popular calendar provider while maintaining privacy. AI-enabled scheduling and smart event management
 
 *Target: Privacy-conscious individuals, professionals handling sensitive data, anyone tired of being surveilled*
 
@@ -44,7 +44,6 @@ Every SELF user gets their own personal cloud infrastructure—not rented server
 **SELF Studio Development Environment**
 
 Developers build privacy-first applications using SELF Studio, creating:
-- **Native Apps**: Core functionality like messaging, browsing, and AI interaction
 - **Third-Party Applications**: Games, productivity tools, social platforms—all privacy-first
 - **Cross-Platform Integration**: Apps that work seamlessly across the SELF ecosystem
 - **Incentive Structures**: Built-in monetization that rewards developers while protecting users
@@ -87,7 +86,7 @@ The SELF ecosystem thrives through collaborative development:
 - **VPNs and Proxies**: Only hide your browsing, don't address data ownership
 - **Signal and Similar**: Excellent for messaging but limited ecosystem
 - **Crypto Wallets**: Handle transactions but not comprehensive digital life
-- **Privacy Browsers**: Protect browsing but don't integrate other digital activities
+- **Privacy Browsers**: Useful for web privacy but don't integrate storage, messaging, and AI context
 
 ### The Window is Closing
 Each day, surveillance systems become more sophisticated and entrenched. **We have a narrow window to build alternatives before digital authoritarianism becomes irreversible.**

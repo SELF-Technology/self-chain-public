@@ -17,7 +17,7 @@ SELF will not be designed to coerce the user into wasting hours scrolling throug
 
 ## Phase 1 (2025)
 
-Following the beta testing of the AI assistant web app [still accessible here for test purposes](https://your.self.app), SELF will launch a Super-App that's linked to the Testnet of SELF Chain. The Super-App will include a messenger, browser, wallet and rewards system. Each user's profile is an individual node on the network which also runs their own private AI. We will also launch the SELF token as the Super-App currency.
+Following the beta testing of the AI assistant web app [still accessible here for test purposes](https://your.self.app), SELF will launch a Super-App that's linked to the Testnet of SELF Chain. The Super-App will include a messenger, SELF Cloud storage, wallet and rewards system. Each user's profile is an individual node on the network which also runs their own private AI. We will also launch the SELF token as the Super-App currency.
 
 ## Phase 2 (2026)
 

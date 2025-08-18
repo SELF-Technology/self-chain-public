@@ -9,7 +9,7 @@ The Super-App will run on the SELF Chain Testnet and each user's profile will be
 
 **SELF AI** - An advanced system that learns about you and generates a unique user profile, enriching your AI experience with persistent memory.
 
-**SELF Browser** - With a built-in VPN, the SELF Browser is your personal web access. Access SELF AI, personalisation features and SELF chain directly from the browser.
+**SELF Cloud** - Private, encrypted storage for your files and data, integrated with your AI. Keep everything in SELF Cloud and share context across apps without giving up control.
 
 **SELF Messenger** - Node-to-node messaging, meaning it's only you and the receiver involved. Use your own SELF directly in the chat to plan things to do together.
 
@@ -58,7 +58,7 @@ New users discover SELF through:
 - ✅ **Cutting-Edge AI Models** - Access to DeepSeek R1, Qwen3 Coder, Gemini 2.0 Flash and premium OpenRouter models
 - ✅ **Lightning-Fast AI Processing** - Sub-second response times with advanced reasoning capabilities  
 - ✅ **Private Messenger** with quantum-secure node-to-node encryption
-- ✅ **Zero-Surveillance Browser** with military-grade VPN protection
+- ✅ **SELF Cloud Storage** with end-to-end encryption and AI integration
 - ✅ **AI-Powered Calendar** with intelligent scheduling and life optimization
 - ✅ **Multi-Chain Crypto Wallet** supporting all major cryptocurrencies
 - ✅ **Immediate Network Power** - Full peer-to-peer capabilities from day one

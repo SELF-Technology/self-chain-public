@@ -42,7 +42,7 @@ const aiPowerUsage = {
   codeGeneration: 3,       // Programming assistance
   imageAnalysis: 4,        // Visual AI processing
   documentProcessing: 2,   // Text analysis
-  browserAutomation: 2,    // Web interaction
+  filesAutomation: 2,      // Cloud files and context actions
   secureMessaging: 1       // Encrypted communications
 };
 ```

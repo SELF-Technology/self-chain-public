@@ -35,7 +35,7 @@ SELF is in **active development** across three main areas: **SELF Chain** testne
 - **What It Is**: Your privacy-first digital life platform
 - **Key Features**:
   - SELF AI assistant with persistent memory
-  - SELF Browser with built-in VPN
+  - SELF Cloud storage integrated with AI
   - SELF Messenger for private communication
   - SELF Wallet for secure transactions
   - SELF Studio integration for app building
