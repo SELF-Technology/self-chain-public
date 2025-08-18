@@ -70,24 +70,24 @@
 /* @import "./faq-style-test.css"; */
 
 @font-face {
-  font-family: "Exo 2";
-  src: local("Exo 2"),
-       url("/fonts/Exo_2/Exo2-VariableFont_wght.woff2") format("woff2-variations");
-  font-weight: 100 900;
+  font-family: "Plus Jakarta Sans";
+  src: local("Plus Jakarta Sans"),
+       url("/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf") format("truetype-variations");
+  font-weight: 200 800;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Exo 2";
-  src: local("Exo 2 Italic"),
-       url("/fonts/Exo_2/Exo2-Italic-VariableFont_wght.woff2") format("woff2-variations");
-  font-weight: 100 900;
+  font-family: "Plus Jakarta Sans";
+  src: local("Plus Jakarta Sans Italic"),
+       url("/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("truetype-variations");
+  font-weight: 200 800;
   font-style: italic;
   font-display: swap;
 }
 
 body {
-  font-family: "Exo 2", Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Plus Jakarta Sans", Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
@@ -97,7 +97,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Exo 2", Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Plus Jakarta Sans", Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 /* You can override the default Infima variables here. */
@@ -127,7 +127,7 @@ h6 {
   --ifm-color-primary-lighter: #000000;
   --ifm-color-primary-lightest: #000000;
   --ifm-code-font-size: 95%;
-  --ifm-font-family-base: "Exo 2", Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --ifm-font-family-base: "Plus Jakarta Sans", Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
   --docusaurus-highlighted-code-line-bg: #121212(0, 0, 0, 0.1);
 }

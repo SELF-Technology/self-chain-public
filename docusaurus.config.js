@@ -92,14 +92,14 @@ const config = {
         crossorigin: 'anonymous',
       },
     },
-    // Preload Exo 2 font
+    // Preload Plus Jakarta Sans font
     {
       tagName: 'link',
       attributes: {
         rel: 'preload',
-        href: '/fonts/Exo_2/Exo2-VariableFont_wght.woff2',
+        href: '/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf',
         as: 'font',
-        type: 'font/woff2',
+        type: 'font/ttf',
         crossorigin: 'anonymous',
       },
     },
