@@ -14,7 +14,7 @@ slug: /
   <div className="hero-section">
     <div className="hero-content">
       <h1 className="hero-title">SELF<br />Documentation</h1>
-      <p className="hero-tagline">Your Private Digital Universe</p>
+      <p className="hero-tagline">The Future Of Technology Belongs To You</p>
     </div>
   </div>
 </div>
