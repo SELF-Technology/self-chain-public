@@ -139,14 +139,14 @@ All with one subscription, one identity, and instant interoperability.
 
 ## 🚀 Implementation Phases
 
-### Phase 1: ERC-20 Token (Mobile App Launch)
-- Deploy SELF as ERC-20 token on Ethereum/Polygon
+### Phase 1: BEP-20 Token (Mobile App Launch)
+- Deploy SELF as BEP-20 token on Binance Smart Chain
 - Integrate with DEXs for liquidity
 - Accept USDC/USDT for initial token purchases
 
 ### Phase 2: Native Coin (Mainnet)
 - Migrate to native SELF Chain coin
-- Implement bridge for ERC-20 → Native conversion
+- Implement bridge for BEP-20 → Native conversion
 - Full integration with compute rewards
 
 ## 📈 Future Considerations

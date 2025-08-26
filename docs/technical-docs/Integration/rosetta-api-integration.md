@@ -16,7 +16,7 @@ SELF Chain implements the Rosetta API standard to ensure compatibility with majo
 The Rosetta API integration serves critical functions for SELF Chain:
 
 1. **Exchange Compatibility**: Enable listing on major exchanges like Coinbase
-2. **Native SELF Coin Support**: Direct integration for the native SELF coin (not just ERC-20 tokens)
+2. **Native SELF Coin Support**: Direct integration for the native SELF coin (not just BEP-20 tokens)
 3. **PoAI Transparency**: Expose PoAI consensus operations through standard APIs
 4. **Ecosystem Growth**: Facilitate adoption by reducing integration complexity
 
@@ -147,12 +147,12 @@ The Rosetta API translates SELF Chain's unique PoAI operations into standard blo
    - Track AI validation scores for transaction confidence
    - Use construction API for exchange operations
 
-### Migration from ERC-20
+### Migration from BEP-20
 
-While SELF may initially launch as an ERC-20 token for accessibility, the Rosetta API ensures smooth transition to the native SELF coin on the PoAI-powered mainnet:
+While SELF may initially launch as a BEP-20 token for accessibility, the Rosetta API ensures smooth transition to the native SELF coin on the PoAI-powered mainnet:
 
 1. **Dual Support Period**
-   - ERC-20 SELF tokens on Ethereum
+   - BEP-20 SELF tokens on Binance Smart Chain
    - Native SELF coins on SELF Chain
    - Bridge service for conversion
 

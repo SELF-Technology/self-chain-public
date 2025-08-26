@@ -11,7 +11,7 @@ The SELF Token ($SELF) is the core utility and governance token of the SELF ecos
 
 - **Token Symbol**: $SELF
 - **Total Supply**: 500,000,000 (500 Million)
-- **Token Standard**: ERC-20 
+- **Token Standard**: BEP-20 
 - **Public Sale Price**: $0.06 ($30m Fully Diluted Valuation)
 - **Listing Price**: TBC
 - **Available Supply at TGE (excl. liquidity)**: 55.5m
