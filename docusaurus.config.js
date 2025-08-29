@@ -184,11 +184,11 @@ const config = {
     metadata: [
       {name: 'description', content: 'SELF Chain documentation - Build on the people\'s blockchain with Proof-of-AI consensus, post-quantum cryptography, and human-centric design. Open-source infrastructure for your private digital universe, privacy-first applications, and decentralized AI validation.'},
       {name: 'keywords', content: 'self chain, proof of ai blockchain, post quantum blockchain, self sovereign technology, decentralized ai validation, people\'s blockchain, privacy first blockchain, poai consensus, color marker system, hybrid cloud blockchain'},
-      {property: 'og:title', content: 'SELF Documentation - The Future Of Technology Belongs To You'},
+      {property: 'og:title', content: 'SELF Documentation - Your Private Operating System'},
       {property: 'og:description', content: 'Build on SELF Chain with Proof-of-AI consensus, post-quantum cryptography, and human-centric design. Open-source infrastructure for your private digital universe.'},
       {property: 'og:type', content: 'website'},
       {name: 'twitter:card', content: 'summary_large_image'},
-      {name: 'twitter:title', content: 'SELF Documentation - The Future Of Technology Belongs To You'},
+      {name: 'twitter:title', content: 'SELF Documentation - Your Private Operating System'},
       {name: 'twitter:description', content: 'Build on SELF Chain with Proof-of-AI consensus, post-quantum cryptography, and human-centric design.'},
     ],
     // Algolia search configuration
