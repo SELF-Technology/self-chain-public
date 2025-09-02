@@ -11,7 +11,7 @@ This document describes planned smart contract architecture. Implementation deta
 
 ## Overview
 
-The SELF token smart contract system will be designed with modularity, security, and future migration in mind. Built on Binance Smart Chain as a BEP-20 token, it will include advanced features for staking, subscriptions, and governance while preparing for eventual migration to SELF Chain.
+The SELF token smart contract system will be designed with modularity, security, and future migration in mind. Built on Ethereum as an ERC-20 token, it will include advanced features for staking, subscriptions, and governance while preparing for eventual migration to SELF Chain.
 
 ## Contract Structure
 
@@ -19,7 +19,7 @@ The SELF token smart contract system will be designed with modularity, security,
 
 ```
 contracts/
-├── SELFToken.sol           # Main BEP-20 token contract
+├── SELFToken.sol           # Main ERC-20 token contract
 ├── SELFOracle.sol          # Price oracle for USD conversions
 ├── interfaces/
 │   └── ISELFToken.sol      # Interface for integrations
@@ -77,7 +77,7 @@ Multiple burn mechanisms create deflationary pressure:
 ## Integration Guide
 
 ### For DEXs
-Standard BEP-20 interface will ensure compatibility with existing DeFi protocols on BSC.
+Standard ERC-20 interface will ensure compatibility with existing DeFi protocols on Ethereum.
 
 ### For Applications
 APIs will be provided to check user tiers and subscription status.
@@ -118,7 +118,7 @@ The contract will be optimized for:
 
 ## Contract Addresses
 
-### Testnet (BSC Testnet)
+### Testnet (Goerli/Sepolia)
 - Token: `[To be deployed]`
 - Oracle: `[To be deployed]`
 
