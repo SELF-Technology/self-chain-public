@@ -7,6 +7,8 @@ sidebar_position: 4
 
 The SELF Token ($SELF) is the core utility and governance token of the SELF ecosystem. It powers the upcoming super-app, future SELF-related products (whether developed in-house or by external teams), the SELF Constellation, and SELF Chain governance. Designed for long-term sustainability and value accrual, $SELF enables network operations, rewards participation, and incentivizes ecosystem growth.
 
+> Note: The Stellar Network introduces a user growth model where daily usage is measured via non-transferable credits called "Stars". **Stars ≠ Tokens**. Stars reflect engagement; tokens represent transferable economic and governance value.
+
 ## Token Overview
 
 - **Token Symbol**: $SELF
@@ -98,6 +100,15 @@ Available only as a one-time boost, for pre-seed/seed investors who lock their T
 - Participate in DAO decisions
 - Influence feature development
 - Cross-Constellation governance (Multiverse tier)
+
+## Stellar Network Rewards (Subject to DAO ratification)
+
+- **Protostar Onboarding Reward**: 100 SELF when a user becomes a paid subscriber (Protostar)
+- **Invite Reward**: 100 SELF per verified invite
+- **Network Bonus**: 1 SELF per 1,000 Stars used by your invited network
+- **Event Bonuses**: Time-bound challenges (e.g., Meteor Streaks)
+
+Distribution guardrails and emissions from these rewards are sourced from the **User Adoption (75M)** and **Developer Incentives (75M)** pools, stewarded by the SELF DAO. Exact parameters (caps, schedules) will be finalized through governance.
 
 ## Deflationary Mechanisms
 

@@ -139,7 +139,7 @@ SELF Chain Constellation Ecosystem
           │   (Main Network)  │   │ C │   │   (Customer A)    │
           │                   │   │ B │   │                   │
           │ • Individual Users│   └─┬─┘   │ • Custom Genesis   │
-          │ • AI Power System │     │     │ • Industry AI      │
+          │ • Stellar Network │     │     │ • Industry AI      │
           │ • AWS Free Tier   │     │     │ • Corporate Tokens │
           └───────────────────┘     │     └───────────────────┘
                                     │

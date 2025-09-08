@@ -18,6 +18,10 @@ Instead, respecting the human right to freedom would involve a reversal of how o
 
 It would involve adopting a philosophical position that begins with the first human right, and upholds that throughout every step of creation. This piece details that position, to embed the constant direction for all things that follow.
 
+## A User-Sovereign Growth Model
+
+Respecting freedom also means rejecting extractive growth tactics. SELF introduces the **Stellar Network**: a subscription-based model where real users are verified through payment, the first 100,000 subscribers (Protostars) become founding members of the **SELF DAO**, and daily engagement is measured through non-transferable **Stars** (usage credits). Stars are not tokens; they simply reflect contribution and activity. Token rewards (from DAO-managed pools) are allocated transparently by community vote, aligning incentives with long-term responsibility.
+
 The author Jack Parsons wrote in 1946:
 ‍
 "Freedom is a two-edged sword of which one edge is liberty and the other, responsibility. Both edges are exceedingly sharp and the weapon is not suited to casual, cowardly or treacherous hands."

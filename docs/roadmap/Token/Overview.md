@@ -55,12 +55,15 @@ SELF Chain implements a revolutionary token-based subscription model that aligns
 
 ### Tier Structure & Pricing
 
-| Tier | Monthly Price | Cloud Infrastructure | Target Users |
-|------|---------------|---------------------|--------------|
-| **Premium Preview** 💫🚀 | $0 | 14-day enterprise experience: DeepSeek R1, unlimited premium AI | New users experiencing digital sovereignty |
-| **SELF Cloud Starter** 🚀 | $8.99/month | 1 vCPU, 2GB RAM, 40GB SSD, unlimited AI | Budget-conscious users |
-| **SELF Cloud Pro** ⭐ | $12.99/month | 1 vCPU, 1GB RAM, 25GB SSD, unlimited AI | Professional users |
-| **SELF Cloud Pro+** 🌟 | $24.99/month | 1 vCPU, 2GB RAM, 50GB SSD, unlimited AI | Power users & developers |
+| Tier | Monthly_Price | Storage | Egress_Cap | AWS_Cost | Margin | Markup |
+| -- | -- | -- | -- | -- | -- | -- |
+| **SELF Zero** | **$0 (Free Forever)** | **Local only (0GB)** |  |  |  |  |
+| **SELF Lite** | **$5.00** | **25GB** | **2.5GB** |  |  |  |
+| **SELF Standard** | **$10.00** | **50GB** | **5GB** |  |  |  |
+| **SELF Pro** | **$20.00** | **100GB** | **10GB** |  |  |  |
+| **SELF Pro+** | **$40.00** | **250GB** | **25GB** |  |  |  |
+| **SELF Business** | **$80.00** | **500GB** | **50GB** |  |  |  |
+| **SELF Enterprise** | **$160.00** | **1TB** | **100GB** |  |  |  |
 
 ### Dynamic Token Pricing
 
@@ -71,21 +74,12 @@ Since SELF is not a stablecoin, subscription tiers are priced in USD equivalent:
 
 ## 📊 Key Concepts
 
-### AI Power System
+### Stellar Network Participation
 
-**AI Power** represents your monthly usage allowance:
-- **Always starts at 100%** each billing cycle for all tiers
-- **Depletes based on usage** (not time):
-  - AI conversations: ~1% per extended session
-  - VPN browsing: ~0.5% per GB
-  - Messaging: ~0.1% per message
-  - Wallet transactions: ~0.2% per transaction
-- **When AI Power reaches 0%**, service pauses until next billing cycle or tier upgrade
-
-### Subscription Tiers vs AI Power
-- **Tier** = Your usage limits before AI Power depletes
-- **AI Power** = How much of your monthly allowance remains
-- Higher tiers have the same 100% AI Power but it depletes more slowly
+**Stars** represent daily usage credits for engagement (not tokens, non-transferable):
+- Daily accrual by tier: 30/60/90/120/150
+- Invites expand network; verified usage contributes to network bonus
+- 1 SELF per 1,000 Stars used by your network (subject to governance)
 
 ## 🔄 Token Utility Model
 

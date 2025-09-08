@@ -44,7 +44,7 @@ SELF revolutionises how you interact with technology by combining essential digi
 
 ---
 
-## 🚀 Stage 1: Discovery & Free Trial
+## 🚀 Stage 1: Discovery
 
 ### First Contact
 New users discover SELF through:
@@ -52,50 +52,29 @@ New users discover SELF through:
 - **Super-App convenience**: "All your essential services in one secure place"
 - **AI innovation**: "Personal AI that actually remembers you"
 
-### Your Transformative 14-Day Premium Preview 🚀💫
-**What You Experience:**
-- ✅ **Enterprise-Grade Cloud Node** - Dedicated infrastructure from minute one
-- ✅ **Cutting-Edge AI Models** - Access to DeepSeek R1, Qwen3 Coder, Gemini 2.0 Flash and premium OpenRouter models
-- ✅ **Lightning-Fast AI Processing** - Sub-second response times with advanced reasoning capabilities  
-- ✅ **Private Messenger** with quantum-secure node-to-node encryption
-- ✅ **SELF Cloud Storage** with end-to-end encryption and AI integration
-- ✅ **AI-Powered Calendar** with intelligent scheduling and life optimization
-- ✅ **Multi-Chain Crypto Wallet** supporting all major cryptocurrencies
-- ✅ **Immediate Network Power** - Full peer-to-peer capabilities from day one
-
-**Premium Experience Guarantee:**
-- **Unlimited premium AI usage** - No throttling, no caps, no compromises
-- **Maximum bandwidth and performance** - Full enterprise-level access
-- **Complete feature suite** - Every capability available from day one
-- **Priority infrastructure** - Dedicated resources, no sharing
-
-> **⚡ This isn't a typical "trial" - it's 14 days of premium SELF Cloud Pro+ experience to show you what digital sovereignty actually feels like.**
+### Getting Started Experience
+You can begin with **SELF Zero (Free Forever)** to explore the Super-App with local-only storage, then upgrade anytime to a paid tier to unlock cloud storage and egress.
 
 
 ---
 
 ## 🌟 Stage 2: Understanding Token Subscriptions
 
-### AI Power System For Paid Tiers
-Once you upgrade from the Premium Preview, your subscription includes AI Power that depletes based on usage (not time):
-- **AI conversations**: ~1% per extended session*
-- **VPN browsing**: ~0.5% per GB*
-- **Messaging**: ~0.1% per message*
-- **Wallet transactions**: ~0.2% per transaction*
-
-*Usage rates are preliminary and subject to optimization based on user feedback and infrastructure costs.
+### Stellar Network Participation
+Once you upgrade from SELF Zero, your subscription contributes to Stellar Network participation with daily **Stars** accrual. Stars are usage credits (not tokens) used to measure engagement and network bonus eligibility.
 
 ### Subscription Tiers
 When you're ready to upgrade, choose your tier through multiple payment options:
 
-| Tier | Monthly Price | Cloud Infrastructure |
-|------|-------------|------------------|
-| **Premium Preview 💫🚀** | $0 | 14-day enterprise experience: DeepSeek R1, Qwen3 Coder, Gemini 2.0 Flash, unlimited AI |
-| **SELF Cloud Starter 🚀** | $8.99 | 1 vCPU, 2GB RAM, 40GB SSD, unlimited AI |
-| **SELF Cloud Pro ⭐** | $12.99 | 1 vCPU, 1GB RAM, 25GB SSD, unlimited AI |
-| **SELF Cloud Pro+ 🌟** | $24.99 | 1 vCPU, 2GB RAM, 50GB SSD, unlimited AI |
-
-**Pricing subject to change based on market conditions and user feedback*
+| Tier | Monthly_Price | Storage | Egress_Cap | AWS_Cost | Margin | Markup |
+| -- | -- | -- | -- | -- | -- | -- |
+| **SELF Zero** | **$0 (Free Forever)** | **Local only (0GB)** |  |  |  |  |
+| **SELF Lite** | **$5.00** | **25GB** | **2.5GB** |  |  |  |
+| **SELF Standard** | **$10.00** | **50GB** | **5GB** |  |  |  |
+| **SELF Pro** | **$20.00** | **100GB** | **10GB** |  |  |  |
+| **SELF Pro+** | **$40.00** | **250GB** | **25GB** |  |  |  |
+| **SELF Business** | **$80.00** | **500GB** | **50GB** |  |  |  |
+| **SELF Enterprise** | **$160.00** | **1TB** | **100GB** |  |  |  |
 
 ### Payment Options
 - **SELF Token Staking**: Stake tokens for tier access (preferred method)

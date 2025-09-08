@@ -12,4 +12,9 @@ This document outlines the security measures and privacy commitments of the SELF
 - Decentralized architecture ensures data sovereignty
 - Transparent data handling practices
 
-Last updated: 2025-08-03
+## Anti-Gaming and Verification
+- Subscription payment verification functions as real-user verification; we do not store full payment details beyond what is required by the processor
+- Economic deterrence: a minimum cost to game the system reduces sybil attacks
+- DAO voting rights are cryptographically bound to an active subscription (non-custodial identity binding) without leaking PII
+
+Last updated: 2025-09-08

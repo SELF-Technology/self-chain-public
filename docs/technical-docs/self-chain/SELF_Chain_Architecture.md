@@ -120,7 +120,7 @@ SELF provides enterprise-grade blockchain solutions:
 SELF has adopted a **Local-First Storage Architecture** that prioritizes true data sovereignty and performance:
 
 #### Core Principles
-- **Your Data, Your Server**: All user data stays on their personal Hetzner VPS
+- **Your Data, Your Server**: All user data stays on the user's personal private cloud instance
 - **No External Dependencies**: No reliance on IPFS, OrbitDB, or token-based storage
 - **Performance First**: Local database queries in milliseconds, not seconds
 - **Optional Backups**: Users choose who to trust with encrypted backups
@@ -128,7 +128,7 @@ SELF has adopted a **Local-First Storage Architecture** that prioritizes true da
 #### Architecture Components
 
 ```
-User's Personal Node (Hetzner VPS):
+User's Personal Node (Private Cloud Instance):
 ├── Local Database (SQLite/RocksDB)  ← Primary data storage
 ├── SELF Chain Connection            ← Node discovery & metadata
 ├── AI Processing (OpenLLM)          ← Local or cloud AI

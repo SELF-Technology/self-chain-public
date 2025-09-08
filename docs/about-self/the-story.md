@@ -74,6 +74,12 @@ The SELF ecosystem thrives through collaborative development:
 
 ---
 
+## The Stellar Network: Growth with Integrity
+
+To ensure growth aligns with user sovereignty, SELF uses a **subscription-based** model called the Stellar Network. The first 100,000 paid subscribers (Protostars) receive DAO membership, provided their subscription remains active. Daily engagement is measured via **Stars** (non-transferable usage credits) with tiers (Stardust 30/day, Protostar 60/day, Rising 90/day, Supernova 120/day, Hypernova 150/day). Stars are distinct from tokens; token rewards for onboarding and network activity are governed transparently by the DAO from designated pools.
+
+---
+
 ## Why Now? The Urgent Need for Digital Sovereignty
 
 ### The Surveillance State is Here

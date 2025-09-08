@@ -11,6 +11,8 @@ description: Participate in SELF Studio's DAO governance and earn rewards
 
 SELF Studio is governed by a decentralized autonomous organization (DAO) where developers, users, and contributors participate in decision-making and shape the future of software development.
 
+> Membership: The first **100,000** paid subscribers (Protostars) form the initial SELF DAO. Voting rights require an active subscription; churned seats are automatically replaced by the next eligible user in the queue.
+
 ## 🌍 What is SELF DAO?
 
 SELF DAO represents a fundamental shift in how technology is built and governed. Instead of decisions being made behind closed doors by corporations, the community collectively determines SELF Studio's evolution, features, and direction.
@@ -44,6 +46,27 @@ The SELF DAO makes decisions about:
 - **Platform Direction**: How should the ecosystem evolve to best serve developers?
 - **Community Standards**: What values and practices define our shared culture?
 
+### **Treasury Authority**
+- User Adoption Pool (75M SELF): feature prioritization, dev resourcing, community rewards
+- Developer Incentives Pool (75M SELF): SELF Studio app funding, SELF Store approvals, builder rewards
+
+### **Proposal Lifecycle (Spec)**
+1. Draft submission (public forum + spec template)
+2. Founder/maintainer shortlist for feasibility and scope
+3. On-chain/off-chain signaling (TBD) and formal vote
+4. Milestone-based execution with transparent reporting
+5. Post-mortem and learnings archive
+
+### **Quorum & Thresholds (TBD)**
+- Quorum: proposed X% of eligible Protostar voters
+- Passing threshold: proposed simple majority; supermajority for treasury reallocations
+- Emergency veto: narrow scope, time-limited, with public justification
+
+### **Conflict of Interest**
+- Mandatory disclosure for proposers/beneficiaries
+- Recusal rules for direct beneficiaries
+- Transparent treasury flows and reporting cadence
+
 ### **Democratic Participation**
 
 Every community member can:
@@ -74,4 +97,4 @@ Through the DAO, we're creating a future where:
 
 ---
 
-*The SELF DAO will launch alongside SELF Studio in Q4 2025, marking the beginning of a new era in decentralized software development.*
+*The SELF DAO will launch alongside SELF Studio in Q4 2025. Specific quorum/threshold values and implementation details will be finalized prior to launch and reflected here.*
