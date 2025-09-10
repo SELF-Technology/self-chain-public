@@ -1,0 +1,44 @@
+# SELF Rewards & Subscriptions
+
+## One-line explanation: *"Subscribe and invite friends to earn SELF tokens, with bonuses for loyalty and network building"*
+
+### SELF Rewards
+
+**Core Actions (Payment-Protected):**
+- **Subscribe**: 100 SELF tokens (one-time on first subscription)
+- **Each verified invite**: 100 SELF tokens (verified = when a friend subscribes using the inviter's code)
+
+**Time-Based Loyalty Rewards:**
+- **30-day anniversary**: 50 SELF tokens
+- **6-month milestone**: 100 SELF tokens
+- **1-year loyalty**: 200 SELF tokens
+
+**Network Quality Bonuses:**
+- **First 5 verified invites**: 250 SELF bonus (on top of per-invite rewards)
+- **Reach 10 verified invites**: 500 SELF milestone bonus
+- **Network builder (when a user hits 25 verified invites)**: 1,000 SELF one-off bonus
+
+## Use Case Summary
+
+  1. Subscribe (100 SELF)
+  2. 30-day anniversary (50 SELF)
+  3. First 5 verified invites (250 SELF bonus)
+  4. 6-month milestone (100 SELF)
+  5. Reach 10 verified invites (500 SELF bonus)
+  6. 1-year loyalty (200 SELF)
+  7. Network builder 25+ invites (1,000 SELF bonus)
+
+These are the clear achievement points users can track and understand, combining subscription, loyalty, and network building.
+
+## SELF Subscriptions
+
+**The complete lineup:**
+- **SELF Zero** (free) - Local only
+- **SELF Connect** ($1) - Join the network
+- **SELF Connect+** ($2) - Enhanced connection
+- **SELF Lite** ($5) - Light usage
+- **SELF Essential** ($10) - Everything you need
+- **SELF Pro** ($20) - Professional power
+- **SELF Pro+** ($40) - Advanced professional
+- **SELF Business** ($80) - Business operations
+- **SELF Enterprise** ($160) - Enterprise scale

@@ -5,18 +5,16 @@ sidebar_position: 4
 
 # SELF Tokenomics
 
-The SELF Token ($SELF) is the core utility and governance token of the SELF ecosystem. It powers the upcoming super-app, future SELF-related products (whether developed in-house or by external teams), the SELF Constellation, and SELF Chain governance. Designed for long-term sustainability and value accrual, $SELF enables network operations, rewards participation, and incentivizes ecosystem growth.
-
-> Note: The Stellar Network introduces a user growth model where daily usage is measured via non-transferable credits called "Stars". **Stars ≠ Tokens**. Stars reflect engagement; tokens represent transferable economic and governance value.
+The SELF Token (SELF) is the core utility token of the SELF ecosystem. It powers the upcoming super-app, future SELF-related products (whether developed in-house or by external teams), and SELF Chain operations. Designed for long-term sustainability and value accrual, SELF enables network operations, rewards participation, and incentivizes ecosystem growth.
 
 ## Token Overview
 
-- **Token Symbol**: $SELF
+- **Token Symbol**: SELF
 - **Total Supply**: 500,000,000 (500 Million)
 - **Token Standard**: ERC-20 
 - **Public Sale Price**: $0.06 ($30m Fully Diluted Valuation)
 - **Listing Price**: TBC
-- **Available Supply at TGE (excl. liquidity)**: 55.5m
+- **Available Supply at TGE**: 106.5m
 
 Note: This figure includes all unlocked tokens, however only a smaller portion of the User Adoption, Developer Incentives and Ecosystem tokens will be circulating.
 
@@ -77,60 +75,44 @@ Available only as a one-time boost, for pre-seed/seed investors who lock their T
 
 *Example: Locking 1,000 tokens for 3 months gives you 1,200 tokens total*
 
-## Token Utility
 
-### 1. **Subscription Payments**
-- Purchase SELF subscriptions with token discounts (TBC)
-- Dynamic USD-based pricing with token payments
-- Tier access based on staked amount
+## SELF Rewards Program
 
-### 2. **Staking Benefits**
-- Earn APR on staked tokens
-- Access higher service tiers (TBC)
-- Receive partner airdrops (TBC)
+### Core Actions (Payment-Protected)
+- **Subscribe**: 100 SELF tokens (one-time on first subscription)
+- **Each verified invite**: 100 SELF tokens (verified = when a friend subscribes using the inviter's code)
 
-### 3. **Ecosystem Currency**
-- Primary currency within SELF ecosystem
-- Payment for services and features
-- Cross-chain transaction fees (on SELF Chain)
-- Trading within decentralized applications
+### Time-Based Loyalty Rewards
+- **30-day anniversary**: 50 SELF tokens
+- **6-month milestone**: 100 SELF tokens
+- **1-year loyalty**: 200 SELF tokens
 
-### 4. **Governance (TBC)**
-- Vote on protocol upgrades
-- Participate in DAO decisions
-- Influence feature development
-- Cross-Constellation governance (Multiverse tier)
+### Network Quality Bonuses
+- **First 5 verified invites**: 250 SELF bonus (on top of per-invite rewards)
+- **Reach 10 verified invites**: 500 SELF milestone bonus
+- **Network builder (when a user hits 25 verified invites)**: 1,000 SELF one-off bonus
 
-## Stellar Network Rewards (Subject to DAO ratification)
+Distribution from these rewards are sourced from the **User Adoption (75M)** and **Developer Incentives (75M)** pools.
 
-- **Protostar Onboarding Reward**: 100 SELF when a user becomes a paid subscriber (Protostar)
-- **Invite Reward**: 100 SELF per verified invite
-- **Network Bonus**: 1 SELF per 1,000 Stars used by your invited network
-- **Event Bonuses**: Time-bound challenges (e.g., Meteor Streaks)
+## SELF Subscriptions
 
-Distribution guardrails and emissions from these rewards are sourced from the **User Adoption (75M)** and **Developer Incentives (75M)** pools, stewarded by the SELF DAO. Exact parameters (caps, schedules) will be finalized through governance.
+**The complete lineup:**
+- **SELF Zero** (free) - Local only
+- **SELF Connect** ($1) - Join the network
+- **SELF Connect+** ($2) - Enhanced connection
+- **SELF Lite** ($5) - Light usage
+- **SELF Essential** ($10) - Everything you need
+- **SELF Pro** ($20) - Professional power
+- **SELF Pro+** ($40) - Advanced professional
+- **SELF Business** ($80) - Business operations
+- **SELF Enterprise** ($160) - Enterprise scale
 
-## Deflationary Mechanisms
-
-### 1. **Subscription Burns**
-- % of subscription payments are burned (TBC)
-- Reduces circulating supply over time
-
-### 2. **Buyback & Burn**
-A percentage of the revenue from SELF services is used for buybacks:
-- 40% of buyback tokens are burned (TBC)
-- 40% distributed to stakers (TBC)
-- 20% for premium user rebates (TBC)
-
-### 3. **Transaction Burns**
-- Small percentage of SELF Chain transactions burned (TBC)
-- Increases scarcity as network usage grows
 
 ## Tokenomics Highlights
 
 - Real significant utility from day one
 - Continuously evolving utility long-term
-- Robust multi-faceted deflationary mechanisms
+- Clear rewards program for community engagement
 - 61% of total supply dedicated to ecosystem growth, developer incentives and user adoption
 - Team tokens vested for 39 months
 - Quality market maker and CEX partnerships

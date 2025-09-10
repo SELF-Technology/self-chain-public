@@ -58,7 +58,7 @@ Build on SELF Chain using SELF Studio:
   - AI pair programming
   - Beautiful design generation
   
-- **[DAO Governance](/studio/dao-governance)** - Community-driven development
+- **[SELF Studio](/roadmap/studio)** - AI-native development environment
   - Democratic decision making
   - App approval process
   - Collective intelligence

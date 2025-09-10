@@ -9,7 +9,7 @@ description: The revolutionary AI-native development environment with multi-mode
 
 # 🏠 SELF Studio Overview
 
-**SELF Studio is the future of software development.** A revolutionary AI-native development environment that reimagines development as an AI-human collaborative experience, governed by DAO consensus, and designed for the multi-lingual, privacy-first future.
+**SELF Studio is the future of software development.** A revolutionary AI-native development environment that reimagines development as an AI-human collaborative experience, designed for the multi-lingual, privacy-first future.
 
 SELF Studio is not just another IDE—it's the revolutionary AI-native development environment that transforms software development from a solitary, error-prone process into an intelligent, collaborative, and joyful experience where AI and humans work together to create amazing software.
 
@@ -43,9 +43,9 @@ SELF Studio respects that different tasks, developers, and moments require diffe
 - **🎮 Developer Choice**: Choose manual, vibe, or hybrid modes
 - **⚡ 10x Faster Development**: Intent-based development with AI pair programming
 - **🔒 Privacy-First**: No telemetry, local processing, complete data sovereignty
-- **🏛️ DAO-Governed**: Community-driven development with token incentives
+- **🌍 Community-Driven**: Built by developers, for developers
 - **🌍 Multi-Language**: True language-agnostic development
-- **🏛️ DAO App Approval**: Community reviews and approves your applications
+- **🎯 Community App Store**: Share and discover applications built by the community
 
 
 
@@ -72,7 +72,6 @@ SELF Studio respects that different tasks, developers, and moments require diffe
 ## 🚀 Learn More
 
 - **[💡 Examples & Use Cases](/studio/examples)** - Real-world examples
-- **[🏛️ DAO Governance](/studio/dao-governance)** - Community governance and app approval
 
 ---
 

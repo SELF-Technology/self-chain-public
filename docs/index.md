@@ -19,7 +19,4 @@ slug: /
   </div>
 </div>
 
-:::info
-New: Explore the Stellar Network growth model — Protostar cohort (first 100k subscribers), daily Stars (usage credits), and DAO governance over 150M tokens. See Project Status and Tokenomics for details.
-:::
 

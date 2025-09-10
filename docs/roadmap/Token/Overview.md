@@ -5,160 +5,85 @@ sidebar_position: 1
 
 # SELF Token Overview
 
-## Leverage Your Data
+## Current Token Utility
 
-The ultimate objective of the token is to help users recognize and harness the value of their personal data. This stands in stark contrast to how modern technology typically works—platforms profit increasingly as users surrender more of their data.
+The SELF token (SELF) is the core utility token of the SELF ecosystem, designed for long-term sustainability and value accrual. Currently, the primary use cases are:
 
-## Purchase subscriptions and services with a discount
+### 1. **Staking Program** (Currently Active)
+Lock up tokens to receive staking APR with various lock periods:
+- **No lockup**: 6% APR
+- **3 months**: 10% APR  
+- **6 months**: 14% APR
+- **9 months**: 18% APR
+- **12 months**: 20% APR
+- **18 months**: 22% APR
+- **24 months**: 25% APR
 
-The SELF token will be used to purchase premium subscription to SELF and additional services with a discount.
+### 2. **SELF Rewards Program** (Coming Q4 2025)
+Comprehensive rewards system for subscription and network building:
 
-## Trading Currency within the SELF Ecosystem
+**Core Actions (Payment-Protected):**
+- **Subscribe**: 100 SELF tokens (one-time on first subscription)
+- **Each verified invite**: 100 SELF tokens (verified = when a friend subscribes using the inviter's code)
 
-As the broader SELF ecosystem develops, the token will be the primary trading currency. This includes purchases, payments, decentralized applications on SELF chain and usage within SELF OS.
+**Time-Based Loyalty Rewards:**
+- **30-day anniversary**: 50 SELF tokens
+- **6-month milestone**: 100 SELF tokens
+- **1-year loyalty**: 200 SELF tokens
 
-## Staking
+**Network Quality Bonuses:**
+- **First 5 verified invites**: 250 SELF bonus (on top of per-invite rewards)
+- **Reach 10 verified invites**: 500 SELF milestone bonus
+- **Network builder (when a user hits 25 verified invites)**: 1,000 SELF one-off bonus
 
-Lock up tokens as a user or business client, to receive a staking APR and possibly discounts, whitelist and airdrops from ecosystem partners and teams building with SELF Studio (subject to change, TBD).
+### 3. **Future Utility** (Planned)
+- Subscription payments with token discounts
+- Primary currency within SELF ecosystem
 
-## Referral Scheme and Points Program
-
-SELF will incentivize activities that are beneficial to the development of the ecosystem via the referral scheme and our in-depth points program. More information to follow soon.
-
-## Buyback Process
-
-The buyback process is where a percentage of SELF's different revenue streams is used to buy the SELF token on exchanges, generating perpetual buy pressure. Of the tokens purchased, the usage will be split as follows:‍
-
-1. **Burning** (reducing distributed supply)
-2. **Staking** (increasing APR for token holders)
-3. **Premium** subscription rebates (reducing costs or enabling users to spend within the system)
-
-The long-term goal for the SELF token is to become deflationary through such mechanisms.
-
-## Earn Mechanism
-
-A key feature of future SELF apps is the Earn mechanism. SELF will form affiliate partnerships across industries—travel, health, software, entertainment, and more—eventually numbering in the thousands.
-
-When users ask SELF for purchase help (e.g. recommendations or reviews), responses may include referral links. If a purchase is made, an off-chain process confirms payment and triggers an automatic buy of SELF tokens on a decentralized exchange. A large portion of the referral commission is used for this, with some tokens burned.
-
-SELF tokens are credited to the user’s wallet quarterly, after refund windows close to prevent abuse. Tokens will be temporarily locked to ensure system integrity.
-
-This creates consistent buy pressure on the SELF token, potentially supporting its value (though not guaranteed). Users will also be incentivized to hold rather than sell their tokens.
-
-# 💎 SELF Token-Based Subscription Model
+# 💎 SELF Subscriptions
 
 ## Overview
 
-SELF Chain implements a revolutionary token-based subscription model that aligns with our decentralized vision and creates stronger community incentives. Instead of traditional credit card payments, users stake SELF tokens to access different service tiers.
+SELF offers a comprehensive subscription model with 8 tiers designed to serve users from individual developers to enterprise organizations. Each tier provides increasing capabilities and features.
 
 ## 🌟 Subscription Tiers
 
-### Tier Structure & Pricing
+### Complete Tier Structure
 
-| Tier | Monthly_Price | Storage | Egress_Cap | AWS_Cost | Margin | Markup |
-| -- | -- | -- | -- | -- | -- | -- |
-| **SELF Zero** | **$0 (Free Forever)** | **Local only (0GB)** |  |  |  |  |
-| **SELF Lite** | **$5.00** | **25GB** | **2.5GB** |  |  |  |
-| **SELF Standard** | **$10.00** | **50GB** | **5GB** |  |  |  |
-| **SELF Pro** | **$20.00** | **100GB** | **10GB** |  |  |  |
-| **SELF Pro+** | **$40.00** | **250GB** | **25GB** |  |  |  |
-| **SELF Business** | **$80.00** | **500GB** | **50GB** |  |  |  |
-| **SELF Enterprise** | **$160.00** | **1TB** | **100GB** |  |  |  |
+| Tier | Monthly Price | Description |
+| -- | -- | -- |
+| **SELF Zero** | **Free** | Local only |
+| **SELF Connect** | **$1** | Join the network |
+| **SELF Connect+** | **$2** | Enhanced connection |
+| **SELF Lite** | **$5** | Light usage |
+| **SELF Essential** | **$10** | Everything you need |
+| **SELF Pro** | **$20** | Professional power |
+| **SELF Pro+** | **$40** | Advanced professional |
+| **SELF Business** | **$80** | Business operations |
+| **SELF Enterprise** | **$160** | Enterprise scale |
 
-### Dynamic Token Pricing
+## 🎯 Key Benefits
 
-Since SELF is not a stablecoin, subscription tiers are priced in USD equivalent:
-- Users purchase **$X worth** of SELF tokens, not a fixed token amount
-- Real-time price feeds determine exact token quantity at purchase time
-- Example: "SELF Cloud Pro: $12.99/month (currently ~X.XX SELF tokens)"
+### For Users
+- **Clear Progression**: Easy to understand tier structure from free to enterprise
+- **Rewards Integration**: Subscription unlocks SELF Rewards program participation
+- **Flexible Pricing**: Options for every budget and use case
+- **Network Building**: Invite system with verified rewards
 
-## 📊 Key Concepts
+### For the Ecosystem
+- **Revenue Foundation**: Sustainable subscription-based model
+- **Anti-Gaming**: Payment verification reduces sybil attacks
+- **Network Growth**: Incentivized referral system
+- **Community Building**: Rewards encourage long-term engagement
 
-### Stellar Network Participation
+## 🚀 Implementation Timeline
 
-**Stars** represent daily usage credits for engagement (not tokens, non-transferable):
-- Daily accrual by tier: 30/60/90/120/150
-- Invites expand network; verified usage contributes to network bonus
-- 1 SELF per 1,000 Stars used by your network (subject to governance)
+### Q4 2025: Launch
+- SELF Subscriptions go live with all 8 tiers
+- SELF Rewards program activation
+- Integration with SELF Super-App and SELF Studio
 
-## 🔄 Token Utility Model
-
-### Staking Model (Preferred)
-- **Stake tokens for tier access** (don't spend them)
-- **Tokens remain in your wallet**, providing ongoing utility
-- **Unstaking downgrades tier** after current period
-- **Earn staking rewards** while subscribed
-
-### Circular Economy
-1. **Run node** → Earn SELF tokens
-2. **Use tokens** → Upgrade subscription tier
-3. **Higher tier** → Access more features
-4. **More usage** → Greater network participation
-
-## 🌌 Multiverse Tier - Cross-Constellation Access
-
-The Multiverse Tier represents the pinnacle of individual SELF Chain participation, granting premium access across the entire Constellation ecosystem.
-
-### Understanding the Constellation
-- **Constellation Partners**: Enterprise organizations (Fortune 500, governments) that launch their own L1 chains
-- **Constellation Chains**: Sovereign L1 blockchains created by partners
-- **Multiverse Subscribers**: Individual power users with access across ALL Constellation Chains
-
-### Core Multiverse Features
-- **Universal Chain Access**: Use one identity across every Constellation Chain
-- **Cross-Chain Compute Credits**: Your staked tokens provide compute on any chain
-- **Unlimited Multi-Chain AI Power**: No usage limits across the entire ecosystem
-- **Portfolio Dashboard**: Monitor all your cross-chain activities
-- **Priority Bridge Access**: Fast inter-chain transfers and communications
-- **Early Access Program**: First to use newly launched Constellation Chains
-- **Cross-Chain Governance**: Voting power that spans the entire ecosystem
-- **Universal AI Access**: Use specialized AI models from any Constellation Chain
-
-### Use Case Examples
-A Multiverse subscriber could seamlessly:
-1. **Execute** trades on a Finance Constellation Chain
-2. **Verify** shipments on a Supply Chain Constellation Chain
-3. **Access** medical records on a Healthcare Constellation Chain
-4. **Vote** on governance across multiple chains
-
-All with one subscription, one identity, and instant interoperability.
-
-## 💰 Benefits Over Traditional Subscriptions
-
-1. **No Geographic Restrictions**: Global access without payment processor limitations
-2. **User Investment**: Token holders become stakeholders in network growth
-3. **Aligned Incentives**: Compute providers earn tokens, creating natural demand
-4. **Decentralization**: No dependency on traditional finance infrastructure
-5. **Network Effects**: Early adopters benefit from token appreciation
-
-## 🚀 Implementation Phases
-
-### Phase 1: ERC-20 Token (Mobile App Launch)
-- Deploy SELF as ERC-20 token on Ethereum
-- Integrate with DEXs for liquidity
-- Accept USDC/USDT for initial token purchases
-
-### Phase 2: Native Coin (Mainnet)
-- Migrate to native SELF Chain coin
-- Implement bridge for ERC-20 → Native conversion
-- Full integration with compute rewards
-
-## 📈 Future Considerations
-
-### Long-Term Commitments
-- 10% discount for annual staking
-- Volume discounts for enterprise
-- Early adopter rewards: Bonus AI Power for beta users
-
-### Alternative Payment Options
-For users who prefer traditional payments:
-- **Crypto Payment Processors**: Coinbase Commerce, BitPay for stablecoin payments
-- **Partner Exchanges**: Direct fiat-to-SELF conversion partnerships
-- **Corporate Accounts**: Separate entity for enterprise fiat billing (future)
-
-## 🎯 Success Metrics
-- Token holder retention rate
-- Compute provider participation
-- Average tier upgrade velocity
-- Token circulation vs. staking ratio
-- Network growth correlation with token adoption
+### Future Enhancements
+- Token-based payment discounts (TBC)
+- Advanced tier features and capabilities
+- Enterprise-specific features and support

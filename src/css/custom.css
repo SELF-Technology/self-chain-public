@@ -157,21 +157,52 @@ html[data-theme='light'] {
   background-color: #ffffff !important;
 }
 
-/* Dark theme specific backgrounds - Single consistent gradient */
+/* Dark theme specific backgrounds - Black background */
 html[data-theme='dark'] {
-  /* Darker gradient for entire page */
-  background: 
-    linear-gradient(135deg, #0138ae 0%, #1b2e49 25%, #070d1a 50%, #0d1520 75%, #011c57 100%) !important;
+  background-color: #000000 !important;
   background-attachment: fixed !important;
   min-height: 100vh !important;
   overflow-x: hidden !important; /* Prevent horizontal scroll */
 }
 
+/* Dark mode text styling - ensure light fonts */
+html[data-theme='dark'] {
+  color: #ffffff !important;
+}
 
 html[data-theme='dark'] body {
-  background: transparent !important;
+  color: #ffffff !important;
+}
+
+html[data-theme='dark'] h1,
+html[data-theme='dark'] h2,
+html[data-theme='dark'] h3,
+html[data-theme='dark'] h4,
+html[data-theme='dark'] h5,
+html[data-theme='dark'] h6 {
+  color: #ffffff !important;
+}
+
+html[data-theme='dark'] p,
+html[data-theme='dark'] div,
+html[data-theme='dark'] span,
+html[data-theme='dark'] a {
+  color: #ffffff !important;
+}
+
+/* Dark mode text styling */
+html[data-theme='dark'] body {
+  color: #ffffff !important;
   min-height: 100vh !important;
 }
+
+/* Dark mode wheel - exact same positioning as light mode */
+html[data-theme='dark'] .hero-section-wrapper::before {
+  background-image: url("/img/SELF-WHEEL-WHITE.png") !important;
+}
+
+
+
 
 /* Body inherits gradient from above rule */
 
@@ -534,7 +565,7 @@ html[data-theme="dark"] .opensource-links a {
   transform: translateX(-50%);
   bottom: 0;
   width: 100vw; /* Use viewport width to extend beyond container */
-  background-image: url("/img/SELF-WHEEL-WHITE.png");
+  background-image: url("/img/self-wheel-black.webp");
   background-position: 125% center; /* Move wheel so 25% is off screen */
   background-repeat: no-repeat;
   background-size: 56.25%; /* Make wheel 75% of current size (75% * 75% = 56.25%) */
@@ -551,7 +582,7 @@ html[data-theme="dark"] .opensource-links a {
     background-position: 230px 140px !important; /* Set vertical position to 140px from top */
     background-size: 101.25% !important; /* Make wheel 20% smaller (126.56% * 0.8 = 101.25%) */
     opacity: 0.25 !important; /* Same as desktop - wheel 75% transparent */
-    background-image: url("/img/SELF-WHEEL-WHITE.png") !important; /* Force wheel image */
+    background-image: url("/img/self-wheel-black.webp") !important; /* Force wheel image */
     background-repeat: no-repeat !important;
     width: 100vw; /* Ensure full viewport width on mobile too */
     left: 50%;
@@ -585,7 +616,7 @@ html[data-theme="dark"] .opensource-links a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("/img/SELF-WHEEL-WHITE.png");
+  background-image: url("/img/self-wheel-black.webp");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1323,7 +1354,7 @@ html[data-theme="dark"] pre {
 /* CRITICAL: Force mobile wheel background with maximum specificity and priority */
 @media (max-width: 768px) {
   .hero-section-wrapper::before {
-    background-image: url("/img/SELF-WHEEL-WHITE.png") !important;
+    background-image: url("/img/self-wheel-black.webp") !important;
     background-position: 230px 140px !important;
     background-size: 101.25% !important;
     opacity: 0.25 !important;
@@ -1335,7 +1366,7 @@ html[data-theme="dark"] pre {
   
   /* Additional specificity for landing page */
   .landing-page .hero-section-wrapper::before {
-    background-image: url("/img/SELF-WHEEL-WHITE.png") !important;
+    background-image: url("/img/self-wheel-black.webp") !important;
     background-position: 230px 140px !important;
     background-size: 101.25% !important;
     opacity: 0.25 !important;
