@@ -14,7 +14,7 @@ The SELF Token (SELF) is the core utility token of the SELF ecosystem. It powers
 - **Token Standard**: ERC-20 
 - **Public Sale Price**: $0.06 ($30m Fully Diluted Valuation)
 - **Listing Price**: TBC
-- **Available Supply at TGE**: 106.5m
+- **Available Supply at TGE**: 108m
 
 Note: This figure includes all unlocked tokens, however only a smaller portion of the User Adoption, Developer Incentives and Ecosystem tokens will be circulating.
 
@@ -27,13 +27,13 @@ The total supply of SELF is strategically allocated across key areas to ensure r
 | **Pre-Seed** | 10% | 50,000,000 | 50% (25M) | 10 months linear |
 | **Seed** | 2% | 10,000,000 | 25% (2.5M) | 12 months linear |
 | **Private** | 2% | 10,000,000 | 25% (2.5M) | 1 month cliff, 12 months linear |
-| **Public** | 1% | 5,000,000 | 20% (1M) | 1 month cliff, 10 months linear |
+| **Public** | 2% | 10,000,000 | 25% (2.5M) | 10 months linear |
 | **Partners** | 4% | 20,000,000 | 10% (2M) | 3 month cliff, 15 months linear |
 | **Team & Advisors** | 10% | 50,000,000 | 0% | 3 month cliff, 36 months linear |
 | **Liquidity** | 10% | 50,000,000 | 100% (50M) | For DEX/CEX liquidity |
 | **User Adoption** | 15% | 75,000,000 | 10% (7.5M) | 48 months linear |
 | **Developer Incentives** | 15% | 75,000,000 | 10% (7.5M) | 48 months linear |
-| **Ecosystem** | 15% | 75,000,000 | 10% (7.5M) | 48 months linear |
+| **Ecosystem** | 14% | 70,000,000 | 10% (7M) | 48 months linear |
 | **Staking** | 16% | 80,000,000 | 0% | 36 months linear |
 
 
@@ -44,8 +44,8 @@ The total supply of SELF is strategically allocated across key areas to ensure r
 | Pre-Seed | $0.03 | $1,500,000 | $15M FDV |
 | Seed | $0.04 | $400,000 | $20M FDV |
 | Private | $0.05 | $500,000 | $25M FDV |
-| Public | $0.06 | $300,000 | $30M FDV |
-| **Total Raise** | - | **$2,700,000** | - |
+| Public | $0.06 | $600,000 | $30M FDV |
+| **Total Raise** | - | **$3,000,000** | - |
 
 ## Staking Program
 
