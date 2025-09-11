@@ -520,7 +520,7 @@ html[data-theme="dark"] .opensource-links a {
   bottom: 0;
   width: 100vw; /* Use viewport width to extend beyond container */
   background-image: url("/img/SELF-WHEEL-WHITE.png");
-  background-position: 125% center; /* Move wheel so 25% is off screen */
+  background-position: 125% 80px; /* Move wheel down by 80px to compensate for text movement */
   background-repeat: no-repeat;
   background-size: 56.25%; /* Make wheel 75% of current size (75% * 75% = 56.25%) */
   opacity: 0.25; /* Make wheel 75% transparent (half of 50%) */
@@ -533,7 +533,7 @@ html[data-theme="dark"] .opensource-links a {
 @media (max-width: 768px) {
   .hero-section-wrapper::before {
     background-attachment: scroll; /* Better performance on mobile */
-    background-position: 175% center !important; /* Move wheel 75% to the right (125% + 50% = 175%) */
+    background-position: 175% 80px !important; /* Move wheel down by 80px to compensate for text movement */
     background-size: 168.75% !important; /* Make wheel twice as big (84.375% * 2 = 168.75%) */
     opacity: 0.25 !important; /* Same as desktop - wheel 75% transparent */
     background-image: url("/img/SELF-WHEEL-WHITE.png") !important; /* Force wheel image */
@@ -589,7 +589,7 @@ html[data-theme="dark"] .opensource-links a {
 .hero-content {
   /* Let landing page override this */
   padding-left: 0px; /* Reduced by 200px to move text left on desktop */
-  padding-top: 340px; /* Move hero text up by 50px from 390px */
+  padding-top: 260px; /* Move hero text up by 80px from 340px */
 }
 
 .hero-title {

@@ -566,7 +566,7 @@ html[data-theme="dark"] .opensource-links a {
   bottom: 0;
   width: 100vw; /* Use viewport width to extend beyond container */
   background-image: url("/img/self-wheel-black.webp");
-  background-position: 125% center; /* Move wheel so 25% is off screen */
+  background-position: 125% 80px; /* Move wheel down by 80px to compensate for text movement */
   background-repeat: no-repeat;
   background-size: 56.25%; /* Make wheel 75% of current size (75% * 75% = 56.25%) */
   opacity: 0.25; /* Make wheel 75% transparent (half of 50%) */
@@ -579,7 +579,7 @@ html[data-theme="dark"] .opensource-links a {
 @media (max-width: 768px) {
   .hero-section-wrapper::before {
     background-attachment: scroll !important; /* Better performance on mobile */
-    background-position: 230px 140px !important; /* Set vertical position to 140px from top */
+    background-position: 230px 220px !important; /* Move wheel down by 80px to compensate for text movement */
     background-size: 101.25% !important; /* Make wheel 20% smaller (126.56% * 0.8 = 101.25%) */
     opacity: 0.25 !important; /* Same as desktop - wheel 75% transparent */
     background-image: url("/img/self-wheel-black.webp") !important; /* Force wheel image */
@@ -637,7 +637,7 @@ html[data-theme="dark"] .opensource-links a {
 .hero-content {
   /* Let landing page override this */
   padding-left: 0px; /* Reduced by 200px to move text left on desktop */
-  padding-top: 340px; /* Move hero text up by 50px from 390px */
+  padding-top: 260px; /* Move hero text up by 80px from 340px */
 }
 
 .hero-title {
@@ -1355,7 +1355,7 @@ html[data-theme="dark"] pre {
 @media (max-width: 768px) {
   .hero-section-wrapper::before {
     background-image: url("/img/self-wheel-black.webp") !important;
-    background-position: 230px 140px !important;
+    background-position: 230px 220px !important;
     background-size: 101.25% !important;
     opacity: 0.25 !important;
     background-repeat: no-repeat !important;
@@ -1367,7 +1367,7 @@ html[data-theme="dark"] pre {
   /* Additional specificity for landing page */
   .landing-page .hero-section-wrapper::before {
     background-image: url("/img/self-wheel-black.webp") !important;
-    background-position: 230px 140px !important;
+    background-position: 230px 220px !important;
     background-size: 101.25% !important;
     opacity: 0.25 !important;
     background-repeat: no-repeat !important;
