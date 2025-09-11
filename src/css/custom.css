@@ -157,9 +157,11 @@ html[data-theme='light'] {
   background-color: #ffffff !important;
 }
 
-/* Dark theme specific backgrounds - Black background */
+/* Dark theme specific backgrounds - Single consistent gradient */
 html[data-theme='dark'] {
-  background-color: #000000 !important;
+  /* Darker gradient for entire page */
+  background: 
+    linear-gradient(135deg, #0138ae 0%, #1b2e49 25%, #070d1a 50%, #0d1520 75%, #011c57 100%) !important;
   background-attachment: fixed !important;
   min-height: 100vh !important;
   overflow-x: hidden !important; /* Prevent horizontal scroll */
@@ -192,7 +194,7 @@ html[data-theme='dark'] a {
 
 /* Dark mode text styling */
 html[data-theme='dark'] body {
-  color: #ffffff !important;
+  background: transparent !important;
   min-height: 100vh !important;
 }
 
@@ -556,42 +558,40 @@ html[data-theme="dark"] .opensource-links a {
   box-sizing: border-box; /* Include padding in width calculation */
 }
 
-/* Add background as pseudo-element to extend it behind navbar */
-.hero-section-wrapper::before {
+/* DISABLED - Wheel background removed */
+/* .hero-section-wrapper::before {
   content: "";
   position: absolute;
-  top: -60px; /* Extend 60px above to cover navbar area */
+  top: -60px;
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
-  width: 100vw; /* Use viewport width to extend beyond container */
+  width: 100vw;
   background-image: url("/img/self-wheel-black.webp");
-  background-position: 125% 80px; /* Move wheel down by 80px to compensate for text movement */
+  background-position: 125% 80px;
   background-repeat: no-repeat;
-  background-size: 56.25%; /* Make wheel 75% of current size (75% * 75% = 56.25%) */
-  opacity: 0.25; /* Make wheel 75% transparent (half of 50%) */
+  background-size: 56.25%;
+  opacity: 0.25;
   z-index: 0;
   pointer-events: none;
   box-sizing: border-box;
-}
+} */
 
-/* Mobile-specific fix for wheel background */
-@media (max-width: 768px) {
+/* DISABLED - Mobile wheel background removed */
+/* @media (max-width: 768px) {
   .hero-section-wrapper::before {
-    background-attachment: scroll !important; /* Better performance on mobile */
-    background-position: 230px 220px !important; /* Move wheel down by 80px to compensate for text movement */
-    background-size: 101.25% !important; /* Make wheel 20% smaller (126.56% * 0.8 = 101.25%) */
-    opacity: 0.25 !important; /* Same as desktop - wheel 75% transparent */
-    background-image: url("/img/self-wheel-black.webp") !important; /* Force wheel image */
+    background-attachment: scroll !important;
+    background-position: 230px 220px !important;
+    background-size: 101.25% !important;
+    opacity: 0.25 !important;
+    background-image: url("/img/self-wheel-black.webp") !important;
     background-repeat: no-repeat !important;
-    width: 100vw; /* Ensure full viewport width on mobile too */
+    width: 100vw;
     left: 50%;
     transform: translateX(-50%);
-    will-change: transform; /* Optimize for mobile scrolling */
+    will-change: transform;
   }
-  
-
-}
+} */
 
 /* Keep the background pseudo-element visible */
 
@@ -637,7 +637,7 @@ html[data-theme="dark"] .opensource-links a {
 .hero-content {
   /* Let landing page override this */
   padding-left: 0px; /* Reduced by 200px to move text left on desktop */
-  padding-top: 260px; /* Move hero text up by 80px from 340px */
+  padding-top: 420px; /* Move hero text lower on the page */
 }
 
 .hero-title {
@@ -1351,8 +1351,8 @@ html[data-theme="dark"] pre {
   margin: 2rem auto;
 }
 
-/* CRITICAL: Force mobile wheel background with maximum specificity and priority */
-@media (max-width: 768px) {
+/* DISABLED - Critical mobile wheel background removed */
+/* @media (max-width: 768px) {
   .hero-section-wrapper::before {
     background-image: url("/img/self-wheel-black.webp") !important;
     background-position: 230px 220px !important;
@@ -1364,7 +1364,6 @@ html[data-theme="dark"] pre {
     pointer-events: none !important;
   }
   
-  /* Additional specificity for landing page */
   .landing-page .hero-section-wrapper::before {
     background-image: url("/img/self-wheel-black.webp") !important;
     background-position: 230px 220px !important;
@@ -1375,4 +1374,4 @@ html[data-theme="dark"] pre {
     z-index: 0 !important;
     pointer-events: none !important;
   }
-}
+} */

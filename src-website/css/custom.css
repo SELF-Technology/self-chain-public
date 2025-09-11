@@ -510,40 +510,40 @@ html[data-theme="dark"] .opensource-links a {
   box-sizing: border-box; /* Include padding in width calculation */
 }
 
-/* Add background as pseudo-element to extend it behind navbar */
-.hero-section-wrapper::before {
+/* DISABLED - Wheel background removed */
+/* .hero-section-wrapper::before {
   content: "";
   position: absolute;
-  top: -60px; /* Extend 60px above to cover navbar area */
+  top: -60px;
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
-  width: 100vw; /* Use viewport width to extend beyond container */
+  width: 100vw;
   background-image: url("/img/SELF-WHEEL-WHITE.png");
-  background-position: 125% 80px; /* Move wheel down by 80px to compensate for text movement */
+  background-position: 125% 80px;
   background-repeat: no-repeat;
-  background-size: 56.25%; /* Make wheel 75% of current size (75% * 75% = 56.25%) */
-  opacity: 0.25; /* Make wheel 75% transparent (half of 50%) */
+  background-size: 56.25%;
+  opacity: 0.25;
   z-index: 0;
   pointer-events: none;
   box-sizing: border-box;
-}
+} */
 
-/* Mobile-specific fix for wheel background */
-@media (max-width: 768px) {
+/* DISABLED - Mobile wheel background removed */
+/* @media (max-width: 768px) {
   .hero-section-wrapper::before {
-    background-attachment: scroll; /* Better performance on mobile */
-    background-position: 175% 80px !important; /* Move wheel down by 80px to compensate for text movement */
-    background-size: 168.75% !important; /* Make wheel twice as big (84.375% * 2 = 168.75%) */
-    opacity: 0.25 !important; /* Same as desktop - wheel 75% transparent */
-    background-image: url("/img/SELF-WHEEL-WHITE.png") !important; /* Force wheel image */
+    background-attachment: scroll;
+    background-position: 175% 80px !important;
+    background-size: 168.75% !important;
+    opacity: 0.25 !important;
+    background-image: url("/img/SELF-WHEEL-WHITE.png") !important;
     background-repeat: no-repeat !important;
-    width: 100vw; /* Ensure full viewport width on mobile too */
+    width: 100vw;
     left: 50%;
     transform: translateX(-50%);
-    will-change: transform; /* Optimize for mobile scrolling */
+    will-change: transform;
   }
-}
+} */
 
 /* Keep the background pseudo-element visible */
 
@@ -589,7 +589,7 @@ html[data-theme="dark"] .opensource-links a {
 .hero-content {
   /* Let landing page override this */
   padding-left: 0px; /* Reduced by 200px to move text left on desktop */
-  padding-top: 260px; /* Move hero text up by 80px from 340px */
+  padding-top: 420px; /* Move hero text lower on the page */
 }
 
 .hero-title {
